@@ -49,22 +49,22 @@ jobs:
           if isinstance(narrative, str):
               narrative = [narrative]
 
-          daily = {
-              "date": now.strftime("%B %d, %Y"),
-              "time": now.strftime("%I:%M %p PT"),
-              "composite": raw.get("composite_score", 60),
-              "status": raw.get("status", "Stable"),
-              "domains": {
-                  "housing": raw.get("scores", {}).get("housing_affordability", 55),
-                  "affordability": raw.get("scores", {}).get("cost_of_living", 60),
-                  "employment": raw.get("scores", {}).get("employment", 70),
-                  "morale": raw.get("scores", {}).get("health_wellbeing", 60),
-                  "benefits": raw.get("scores", {}).get("benefits_processing", 50),
-                  "media": raw.get("scores", {}).get("media_environment", 50)
-              },
-              "summary": narrative,
-              "pdf": "#"
-          }
+daily = {
+    "date": now.strftime("%B %d, %Y"),
+    "time": now.strftime("%I:%M %p PT"),
+    "composite": raw.get("composite_score", 60),
+    "status": raw.get("status", "Stable"),
+    "domains": {
+        "housing": raw.get("scores", {}).get("housing", 55),
+        "affordability": raw.get("scores", {}).get("cost_of_living", 60),
+        "employment": raw.get("scores", {}).get("employment", 70),
+        "morale": raw.get("scores", {}).get("morale", 58),
+        "benefits": raw.get("scores", {}).get("benefits", 50),
+        "media": raw.get("scores", {}).get("media", 45),
+    },
+    "summary": raw.get("summary", raw.get("narrative", ["System stable"])),
+    "pdf": "#"
+}
 
           with open("daily.json", "w") as f:
               json.dump(daily, f, indent=2)
