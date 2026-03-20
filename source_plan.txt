@@ -1,0 +1,32 @@
+USAVET Source Plan
+
+Tier 1
+- https://news.va.gov
+- https://www.va.gov/opa/pressrel
+- https://www.defense.gov/News
+- https://www.federalregister.gov
+- https://www.congress.gov
+- https://www.veterans.senate.gov
+- https://veterans.house.gov
+- https://www.stripes.com
+- https://www.military.com
+- https://www.militarytimes.com
+
+Tier 2
+- https://taskandpurpose.com
+- https://www.defensenews.com
+- https://www.defenseone.com
+- https://www.army.mil/news
+- https://www.navy.mil/Press-Office/News-Stories
+- https://www.af.mil/News
+- https://www.marines.mil/News
+- https://www.spaceforce.mil/News
+- https://www.nrd.gov
+- https://www.militaryonesource.mil
+
+Tier 3
+- Reddit sources
+- blogs
+- advocacy/news org pages
+- support/community sites
+- aggregators
