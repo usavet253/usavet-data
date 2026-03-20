@@ -1,71 +1,31 @@
-name: USAVET Daily Automation
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 8 * * *"
-
-permissions:
-  contents: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
-
-      - name: Run real data engine
-        run: |
-          python usavet_real_data_engine_v1.py
-
       - name: Convert to website format
         run: |
           python - <<'PY'
-import json
-from datetime import datetime
+          import json
+          from datetime import datetime
 
-with open("usavet_real_data_v1.json", "r") as f:
-    raw = json.load(f)
+          with open("usavet_real_data_v1.json", "r") as f:
+              raw = json.load(f)
 
-now = datetime.now()
+          now = datetime.now()
 
-daily = {
-    "date": now.strftime("%B %d, %Y"),
-    "time": now.strftime("%I:%M %p PT"),
-    "composite": raw.get("composite_score", 60),
-    "status": raw.get("status", "Stable"),
-    "domains": {
-        "housing": raw.get("scores", {}).get("housing_affordability", 55),
-        "affordability": raw.get("scores", {}).get("cost_of_living", 60),
-        "employment": raw.get("scores", {}).get("employment", 70),
-        "morale": raw.get("scores", {}).get("health_wellbeing", 60),
-        "benefits": raw.get("scores", {}).get("benefits_processing", 50),
-        "media": 46
-    },
-    "summary": raw.get("narrative", ["System stable"]),
-    "pdf": "#"
-}
+          daily = {
+              "date": now.strftime("%B %d, %Y"),
+              "time": now.strftime("%I:%M %p PT"),
+              "composite": raw.get("composite_score", 60),
+              "status": raw.get("status", "Stable"),
+              "domains": {
+                  "housing": raw.get("scores", {}).get("housing_affordability", 55),
+                  "affordability": raw.get("scores", {}).get("cost_of_living", 60),
+                  "employment": raw.get("scores", {}).get("employment", 70),
+                  "morale": raw.get("scores", {}).get("health_wellbeing", 60),
+                  "benefits": raw.get("scores", {}).get("benefits_processing", 50),
+                  "media": 46
+              },
+              "summary": raw.get("narrative", ["System stable"]),
+              "pdf": "#"
+          }
 
-with open("daily.json", "w") as f:
-    json.dump(daily, f, indent=2)
-PY
-
-      - name: Commit update
-        run: |
-          git config user.name "usavet-bot"
-          git config user.email "bot@usavet.ai"
-          git add daily.json
-          git commit -m "Automated daily update" || echo "No changes"
-          git push
+          with open("daily.json", "w") as f:
+              json.dump(daily, f, indent=2)
+          PY
