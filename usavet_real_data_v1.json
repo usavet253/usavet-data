@@ -1,22 +1,28 @@
 {
-  "timestamp": "2026-03-20T04:22:45.883052",
-  "composite_score": 50,
-  "status": "Moderate Pressure",
+  "timestamp": "2026-03-20T05:13:54.798107+00:00",
+  "composite_score": 38,
+  "status": "High Pressure",
   "scores": {
-    "housing_affordability": 50,
-    "cost_of_living": 40,
-    "employment": 60,
-    "health_wellbeing": 55,
+    "housing_affordability": 27,
+    "cost_of_living": 12,
+    "employment": 63,
+    "health_wellbeing": 34,
     "benefits_processing": 50,
     "media_environment": 50
   },
   "narrative": [
-    "CPI index level is 327.46, previous 326.588.",
-    "Unemployment rate is 4.4%, previous 4.3%.",
-    "Composite score is 50/100 indicating moderate pressure."
+    "CPI index level is 327.46, previous 326.59, indicating affordability conditions are deteriorating.",
+    "Unemployment rate is 4.4%, previous 4.3%, indicating labor conditions are deteriorating.",
+    "Composite score is 38/100 indicating high pressure."
   ],
   "sources": {
     "cpi": "FRED CPIAUCSL",
     "unemployment": "FRED UNRATE"
+  },
+  "raw_inputs": {
+    "cpi_latest": 327.46,
+    "cpi_previous": 326.588,
+    "unemployment_latest": 4.4,
+    "unemployment_previous": 4.3
   }
 }

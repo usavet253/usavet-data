@@ -1,20 +1,20 @@
 {
   "date": "March 20, 2026",
-  "time": "04:22 AM PT",
-  "composite": 50,
-  "status": "Moderate Pressure",
+  "time": "05:13 AM PT",
+  "composite": 38,
+  "status": "High Pressure",
   "domains": {
-    "housing": 50,
-    "affordability": 40,
-    "employment": 60,
-    "morale": 55,
+    "housing": 27,
+    "affordability": 12,
+    "employment": 63,
+    "morale": 34,
     "benefits": 50,
     "media": 50
   },
   "summary": [
-    "CPI index level is 327.46, previous 326.588.",
-    "Unemployment rate is 4.4%, previous 4.3%.",
-    "Composite score is 50/100 indicating moderate pressure."
+    "CPI index level is 327.46, previous 326.59, indicating affordability conditions are deteriorating.",
+    "Unemployment rate is 4.4%, previous 4.3%, indicating labor conditions are deteriorating.",
+    "Composite score is 38/100 indicating high pressure."
   ],
   "pdf": "#"
 }
