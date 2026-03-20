@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-03-20T06:44:11.012924+00:00",
+  "timestamp": "2026-03-20T07:28:22.327834+00:00",
   "data_status": "live",
-  "composite_score": 40,
-  "status": "High Pressure",
+  "composite_score": 47,
+  "status": "Moderate Pressure",
   "scores": {
-    "housing_affordability": 23,
-    "cost_of_living": 0,
+    "housing_affordability": 35,
+    "cost_of_living": 23,
     "employment": 62,
     "interest_rates": 45,
     "wage_growth": 61,
     "consumer_sentiment": 56,
     "health_wellbeing": 59,
     "benefits_processing": 50,
-    "media_environment": 0
+    "media_environment": 27
   },
   "narrative": [
     "CPI index level is 327.46, previous 326.59, indicating affordability conditions are deteriorating.",
@@ -20,7 +20,7 @@
     "Average hourly earnings index is 37.32, previous 37.17, indicating wage conditions are improving.",
     "Federal funds rate is 3.64 and consumer sentiment is 56.4.",
     "Benefits signal suggests contained friction; media signal suggests high narrative pressure.",
-    "Composite score is 40/100 indicating high pressure."
+    "Composite score is 47/100 indicating moderate pressure."
   ],
   "sources": {
     "cpi": "FRED CPIAUCSL",
