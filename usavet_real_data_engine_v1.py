@@ -7,8 +7,10 @@ from email.utils import parsedate_to_datetime
 import requests
 
 OUTPUT_FILE = "usavet_real_data_v1.json"
+HISTORY_FILE = "history.json"
 SOURCE_PLAN_FILE = "source_plan.txt"
 REQUEST_TIMEOUT = 20
+HISTORY_LIMIT = 90
 
 FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
 
@@ -16,11 +18,10 @@ HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/123.0 Safari/537.36 USAVET-Index/2.0"
+        "Chrome/123.0 Safari/537.36 USAVET-Index/3.0"
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
-
 
 DOMAIN_KEYWORDS = {
     "housing": [
@@ -89,6 +90,8 @@ TIER_WEIGHTS = {
     "unknown": 0.80,
 }
 
+DOMAINS = ["housing", "cost_of_living", "employment", "morale", "benefits", "media"]
+
 
 def clamp(value, low=0, high=100):
     return max(low, min(high, int(round(value))))
@@ -128,8 +131,7 @@ def extract_sources_with_tiers(path):
                 continue
 
             if line.startswith("- http://") or line.startswith("- https://"):
-                url = line[2:].strip()
-                items.append({"url": url, "tier": current_tier})
+                items.append({"url": line[2:].strip(), "tier": current_tier})
             elif line.startswith("http://") or line.startswith("https://"):
                 items.append({"url": line, "tier": current_tier})
 
@@ -301,7 +303,6 @@ def fred_get_series_latest(series_id):
                 return float(value)
             except ValueError:
                 continue
-
     return None
 
 
@@ -328,7 +329,6 @@ def fred_adjustments(fred):
     sentiment = fred.get("consumer_sentiment_proxy")
 
     if cpi is not None:
-        # CPI index level is long-run rising, so use a mild static pressure contribution only
         adjustments["cost_of_living"] += 4
         adjustments["housing"] += 2
 
@@ -360,11 +360,7 @@ def fred_adjustments(fred):
 
 def apply_fred_adjustments(scores, fred):
     adjustments = fred_adjustments(fred)
-    adjusted = {}
-
-    for domain, value in scores.items():
-        adjusted[domain] = clamp(value + adjustments.get(domain, 0))
-
+    adjusted = {domain: clamp(value + adjustments.get(domain, 0)) for domain, value in scores.items()}
     return adjusted, adjustments
 
 
@@ -384,40 +380,6 @@ def status_from_composite(value):
     return "Stable"
 
 
-def build_narrative(scores, composite, analyzed_count, total_count, fred):
-    notes = []
-
-    ordered = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-    highest = ordered[:2]
-    lowest = ordered[-1]
-
-    notes.append(f"Composite pressure score: {composite}.")
-    notes.append(
-        f"Primary pressure domain: {highest[0][0].replace('_', ' ')} ({highest[0][1]})."
-    )
-    if len(highest) > 1:
-        notes.append(
-            f"Secondary pressure domain: {highest[1][0].replace('_', ' ')} ({highest[1][1]})."
-        )
-
-    if lowest:
-        notes.append(
-            f"Most stable domain: {lowest[0].replace('_', ' ')} ({lowest[1]})."
-        )
-
-    notes.append(f"Sources analyzed successfully: {analyzed_count} of {total_count}.")
-
-    if fred.get("unemployment") is not None:
-        notes.append(f"FRED unemployment reference: {fred['unemployment']:.1f}%.")
-
-    if fred.get("consumer_sentiment_proxy") is not None:
-        notes.append(
-            f"Consumer sentiment proxy reference: {fred['consumer_sentiment_proxy']:.1f}."
-        )
-
-    return notes[:6]
-
-
 def build_summary_bullets(scores, composite):
     bullets = []
 
@@ -432,14 +394,14 @@ def build_summary_bullets(scores, composite):
     else:
         bullets.append("System stable")
 
-    if scores["housing"] >= 60:
-        bullets.append("Housing strain elevated")
     if scores["cost_of_living"] >= 60:
         bullets.append("Affordability pressure elevated")
-    if scores["employment"] >= 60:
-        bullets.append("Employment stress elevated")
     if scores["morale"] >= 60:
         bullets.append("Morale stress elevated")
+    if scores["housing"] >= 60:
+        bullets.append("Housing strain elevated")
+    if scores["employment"] >= 60:
+        bullets.append("Employment stress elevated")
     if scores["benefits"] >= 60:
         bullets.append("Benefits friction elevated")
     if scores["media"] >= 60:
@@ -451,42 +413,148 @@ def build_summary_bullets(scores, composite):
     return bullets[:4]
 
 
-def load_previous_output(path):
-    if not os.path.exists(path):
-        return None
+def build_narrative(scores, composite, analyzed_count, total_count, fred):
+    notes = []
+    ordered = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
+    notes.append(f"Composite pressure score: {composite}.")
+    notes.append(f"Primary pressure domain: {ordered[0][0].replace('_', ' ')} ({ordered[0][1]}).")
+    notes.append(f"Secondary pressure domain: {ordered[1][0].replace('_', ' ')} ({ordered[1][1]}).")
+    notes.append(f"Most stable domain: {ordered[-1][0].replace('_', ' ')} ({ordered[-1][1]}).")
+    notes.append(f"Sources analyzed successfully: {analyzed_count} of {total_count}.")
+    if fred.get("unemployment") is not None:
+        notes.append(f"FRED unemployment reference: {fred['unemployment']:.1f}%.")
+
+    return notes[:6]
+
+
+def load_json_file(path, default_value):
+    if not os.path.exists(path):
+        return default_value
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception:
-        return None
+        return default_value
 
 
-def trend_from_previous(previous, current_composite):
-    if not previous:
-        return {"delta_composite": 0, "direction": "flat"}
+def save_json_file(path, payload):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
 
-    previous_value = previous.get("composite_score")
-    if previous_value is None:
-        return {"delta_composite": 0, "direction": "flat"}
 
-    delta = current_composite - int(previous_value)
-    if delta > 2:
-        direction = "up"
-    elif delta < -2:
-        direction = "down"
-    else:
-        direction = "flat"
-
+def build_history_entry(timestamp, composite, scores, status):
     return {
-        "delta_composite": delta,
-        "direction": direction,
+        "generated_at": timestamp,
+        "date": timestamp[:10],
+        "composite_score": composite,
+        "status": status,
+        "scores": scores,
     }
 
 
+def update_history(history, entry):
+    if not isinstance(history, list):
+        history = []
+
+    history.append(entry)
+
+    deduped = []
+    seen = set()
+    for item in history:
+        key = item.get("generated_at")
+        if key and key not in seen:
+            deduped.append(item)
+            seen.add(key)
+
+    return deduped[-HISTORY_LIMIT:]
+
+
+def get_series(history, key):
+    values = []
+    for item in history:
+        if key == "composite_score":
+            value = item.get("composite_score")
+        else:
+            value = item.get("scores", {}).get(key)
+        if isinstance(value, (int, float)):
+            values.append(int(round(value)))
+    return values
+
+
+def last_n(values, n):
+    return values[-n:] if len(values) >= n else values[:]
+
+
+def compute_delta(values, lookback=7):
+    if len(values) < 2:
+        return 0
+
+    window = last_n(values, lookback)
+    if len(window) < 2:
+        return 0
+
+    return int(round(window[-1] - window[0]))
+
+
+def movement_symbol(delta):
+    if delta >= 2:
+        return "up"
+    if delta <= -2:
+        return "down"
+    return "flat"
+
+
+def movement_arrow(delta):
+    if delta >= 2:
+        return "▲"
+    if delta <= -2:
+        return "▼"
+    return "→"
+
+
+def movement_color(delta):
+    if delta >= 2:
+        return "red"
+    if delta <= -2:
+        return "green"
+    return "yellow"
+
+
+def sparkline(values, points=14):
+    window = last_n(values, points)
+    return [int(round(v)) for v in window]
+
+
+def build_trend_object(values):
+    delta_7 = compute_delta(values, 7)
+    delta_30 = compute_delta(values, 30)
+
+    return {
+        "current": values[-1] if values else None,
+        "delta_7": delta_7,
+        "delta_30": delta_30,
+        "direction": movement_symbol(delta_7),
+        "arrow": movement_arrow(delta_7),
+        "color": movement_color(delta_7),
+        "sparkline": sparkline(values, 14),
+    }
+
+
+def build_display_trends(history):
+    output = {
+        "composite": build_trend_object(get_series(history, "composite_score"))
+    }
+
+    for domain in DOMAINS:
+        output[domain] = build_trend_object(get_series(history, domain))
+
+    return output
+
+
 def main():
-    previous = load_previous_output(OUTPUT_FILE)
     source_items = extract_sources_with_tiers(SOURCE_PLAN_FILE)
+    history = load_json_file(HISTORY_FILE, [])
 
     if not source_items:
         fallback_scores = {
@@ -498,15 +566,23 @@ def main():
             "media": 32,
         }
         composite = composite_from_scores(fallback_scores)
+        status = status_from_composite(composite)
+        timestamp = datetime.utcnow().replace(tzinfo=timezone.utc).isoformat()
 
-        fallback = {
-            "generated_at": datetime.utcnow().replace(tzinfo=timezone.utc).isoformat(),
-            "status": status_from_composite(composite),
+        history = update_history(
+            history,
+            build_history_entry(timestamp, composite, fallback_scores, status)
+        )
+        save_json_file(HISTORY_FILE, history)
+
+        result = {
+            "generated_at": timestamp,
+            "status": status,
             "composite_score": composite,
             "scores": fallback_scores,
             "narrative": ["No source URLs found in source_plan.txt"],
             "summary": build_summary_bullets(fallback_scores, composite),
-            "trend": trend_from_previous(previous, composite),
+            "display_trends": build_display_trends(history),
             "meta": {
                 "source_count": 0,
                 "successful_sources": 0,
@@ -514,9 +590,7 @@ def main():
             },
         }
 
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump(fallback, f, indent=2)
-
+        save_json_file(OUTPUT_FILE, result)
         print(f"Wrote fallback output to {OUTPUT_FILE}")
         return
 
@@ -533,18 +607,25 @@ def main():
 
     composite = composite_from_scores(final_scores)
     status = status_from_composite(composite)
-    narrative = build_narrative(final_scores, composite, successful_sources, len(source_items), fred)
     summary = build_summary_bullets(final_scores, composite)
-    trend = trend_from_previous(previous, composite)
+    narrative = build_narrative(final_scores, composite, successful_sources, len(source_items), fred)
+
+    timestamp = datetime.utcnow().replace(tzinfo=timezone.utc).isoformat()
+
+    history = update_history(
+        history,
+        build_history_entry(timestamp, composite, final_scores, status)
+    )
+    save_json_file(HISTORY_FILE, history)
 
     result = {
-        "generated_at": datetime.utcnow().replace(tzinfo=timezone.utc).isoformat(),
+        "generated_at": timestamp,
         "status": status,
         "composite_score": composite,
         "scores": final_scores,
-        "narrative": narrative,
         "summary": summary,
-        "trend": trend,
+        "narrative": narrative,
+        "display_trends": build_display_trends(history),
         "meta": {
             "source_count": len(source_items),
             "successful_sources": successful_sources,
@@ -555,6 +636,7 @@ def main():
                 "tier_2": sum(1 for s in source_items if s["tier"] == "tier_2"),
                 "tier_3": sum(1 for s in source_items if s["tier"] == "tier_3"),
             },
+            "history_points": len(history),
         },
         "fred": fred,
         "fred_domain_adjustments": fred_domain_adjustments,
@@ -570,10 +652,9 @@ def main():
         ],
     }
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=2)
-
+    save_json_file(OUTPUT_FILE, result)
     print(f"Wrote {OUTPUT_FILE}")
+    print(f"Wrote {HISTORY_FILE}")
     print(json.dumps(result["meta"], indent=2))
 
 
