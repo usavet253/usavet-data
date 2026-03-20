@@ -1,4 +1,4 @@
-  name: USAVET Daily Automation
+name: USAVET Daily Automation
 
 on:
   workflow_dispatch:
