@@ -86,16 +86,41 @@ def score_employment(unrate_latest: float, unrate_previous: float) -> int:
     return clamp(score)
 
 
-def score_housing(affordability_score: int, employment_score: int) -> int:
-    return clamp((affordability_score * 0.7) + (employment_score * 0.3))
+def score_interest_rate(fed_rate: float) -> int:
+    score = 90
+    score -= fed_rate * 12.0
+    return clamp(score)
 
 
-def score_morale(affordability_score: int, employment_score: int, housing_score: int) -> int:
-    return clamp(
-        affordability_score * 0.35
-        + employment_score * 0.35
-        + housing_score * 0.30
+def score_wages(wage_latest: float, wage_previous: float) -> int:
+    change = wage_latest - wage_previous
+
+    score = 60
+    score += change * 15.0
+
+    return clamp(score)
+
+
+def score_sentiment(sentiment: float) -> int:
+    return clamp(sentiment)
+
+
+def score_housing(affordability_score: int, employment_score: int, interest_score: int) -> int:
+    score = (
+        affordability_score * 0.5
+        + employment_score * 0.2
+        + interest_score * 0.3
     )
+    return clamp(score)
+
+
+def score_morale(sentiment_score: int, wage_score: int, employment_score: int) -> int:
+    score = (
+        sentiment_score * 0.5
+        + wage_score * 0.2
+        + employment_score * 0.3
+    )
+    return clamp(score)
 
 
 def score_benefits() -> int:
@@ -108,12 +133,15 @@ def score_media() -> int:
 
 def composite_score(scores: dict) -> int:
     return clamp(
-        scores["housing_affordability"] * 0.20
-        + scores["cost_of_living"] * 0.25
-        + scores["employment"] * 0.25
-        + scores["health_wellbeing"] * 0.10
-        + scores["benefits_processing"] * 0.10
-        + scores["media_environment"] * 0.10
+        scores["cost_of_living"] * 0.20
+        + scores["employment"] * 0.20
+        + scores["interest_rates"] * 0.15
+        + scores["wage_growth"] * 0.15
+        + scores["consumer_sentiment"] * 0.10
+        + scores["housing_affordability"] * 0.10
+        + scores["health_wellbeing"] * 0.05
+        + scores["benefits_processing"] * 0.025
+        + scores["media_environment"] * 0.025
     )
 
 
@@ -130,26 +158,57 @@ def status_from_score(score: int) -> str:
 def direction_label(latest: float, previous: float, inverse_good: bool = False) -> str:
     if latest == previous:
         return "stable"
+
     improving = latest < previous if inverse_good else latest > previous
     return "improving" if improving else "deteriorating"
 
 
-def build_narrative(cpi_latest, cpi_previous, unrate_latest, unrate_previous, composite, status):
+def build_narrative(
+    cpi_latest,
+    cpi_previous,
+    unrate_latest,
+    unrate_previous,
+    fed_rate,
+    wage_latest,
+    wage_previous,
+    sentiment,
+    composite,
+    status,
+):
     cpi_direction = direction_label(cpi_latest, cpi_previous, inverse_good=True)
     unrate_direction = direction_label(unrate_latest, unrate_previous, inverse_good=True)
+    wage_direction = direction_label(wage_latest, wage_previous, inverse_good=False)
 
     return [
         f"CPI index level is {cpi_latest:.2f}, previous {cpi_previous:.2f}, indicating affordability conditions are {cpi_direction}.",
         f"Unemployment rate is {unrate_latest:.1f}%, previous {unrate_previous:.1f}%, indicating labor conditions are {unrate_direction}.",
+        f"Average hourly earnings index is {wage_latest:.2f}, previous {wage_previous:.2f}, indicating wage conditions are {wage_direction}.",
+        f"Federal funds rate is {fed_rate:.2f} and consumer sentiment is {sentiment:.1f}.",
         f"Composite score is {composite}/100 indicating {status.lower()}."
     ]
 
 
-def build_output(cpi_latest, cpi_previous, unrate_latest, unrate_previous, data_status, error_message=None):
+def build_output(
+    cpi_latest,
+    cpi_previous,
+    unrate_latest,
+    unrate_previous,
+    fed_rate,
+    wage_latest,
+    wage_previous,
+    sentiment,
+    data_status,
+    error_message=None,
+):
     affordability_score = score_affordability(cpi_latest, cpi_previous)
     employment_score = score_employment(unrate_latest, unrate_previous)
-    housing_score = score_housing(affordability_score, employment_score)
-    morale_score = score_morale(affordability_score, employment_score, housing_score)
+    interest_score = score_interest_rate(fed_rate)
+    wage_score = score_wages(wage_latest, wage_previous)
+    sentiment_score = score_sentiment(sentiment)
+
+    housing_score = score_housing(affordability_score, employment_score, interest_score)
+    morale_score = score_morale(sentiment_score, wage_score, employment_score)
+
     benefits_score = score_benefits()
     media_score = score_media()
 
@@ -157,6 +216,9 @@ def build_output(cpi_latest, cpi_previous, unrate_latest, unrate_previous, data_
         "housing_affordability": housing_score,
         "cost_of_living": affordability_score,
         "employment": employment_score,
+        "interest_rates": interest_score,
+        "wage_growth": wage_score,
+        "consumer_sentiment": sentiment_score,
         "health_wellbeing": morale_score,
         "benefits_processing": benefits_score,
         "media_environment": media_score,
@@ -176,18 +238,29 @@ def build_output(cpi_latest, cpi_previous, unrate_latest, unrate_previous, data_
             cpi_previous,
             unrate_latest,
             unrate_previous,
+            fed_rate,
+            wage_latest,
+            wage_previous,
+            sentiment,
             composite,
             status,
         ),
         "sources": {
             "cpi": "FRED CPIAUCSL",
             "unemployment": "FRED UNRATE",
+            "fed_funds_rate": "FRED FEDFUNDS",
+            "hourly_earnings": "FRED CES0500000003",
+            "consumer_sentiment": "FRED UMCSENT",
         },
         "raw_inputs": {
             "cpi_latest": cpi_latest,
             "cpi_previous": cpi_previous,
             "unemployment_latest": unrate_latest,
             "unemployment_previous": unrate_previous,
+            "fed_rate": fed_rate,
+            "wage_latest": wage_latest,
+            "wage_previous": wage_previous,
+            "sentiment": sentiment,
         },
     }
 
@@ -203,11 +276,19 @@ def main():
     try:
         cpi_latest, cpi_previous = get_fred_series("CPIAUCSL")
         unrate_latest, unrate_previous = get_fred_series("UNRATE")
+        fed_rate, _ = get_fred_series("FEDFUNDS")
+        wage_latest, wage_previous = get_fred_series("CES0500000003")
+        sentiment, _ = get_fred_series("UMCSENT")
+
         output = build_output(
             cpi_latest,
             cpi_previous,
             unrate_latest,
             unrate_previous,
+            fed_rate,
+            wage_latest,
+            wage_previous,
+            sentiment,
             data_status="live"
         )
 
@@ -219,6 +300,10 @@ def main():
                 raw["cpi_previous"],
                 raw["unemployment_latest"],
                 raw["unemployment_previous"],
+                raw.get("fed_rate", 5.0),
+                raw.get("wage_latest", 1.0),
+                raw.get("wage_previous", 1.0),
+                raw.get("sentiment", 65.0),
                 data_status="fallback_cached",
                 error_message=str(e),
             )
