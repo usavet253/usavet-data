@@ -52,7 +52,7 @@ jobs:
                   "employment": raw.get("scores", {}).get("employment", 70),
                   "morale": raw.get("scores", {}).get("health_wellbeing", 60),
                   "benefits": raw.get("scores", {}).get("benefits_processing", 50),
-                  "media": 46
+                  "media": raw.get("scores", {}).get("media_environment", 46)
               },
               "summary": raw.get("narrative", ["System stable"]),
               "pdf": "#"
