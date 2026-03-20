@@ -60,14 +60,14 @@ def clamp(value: float, low: int = 0, high: int = 100) -> int:
 def score_affordability(cpi_latest: float, cpi_previous: float) -> int:
     change = cpi_latest - cpi_previous
 
-    score = 80
-    score -= max(0, (cpi_latest - 300.0) * 0.9)
-    score -= max(0, change * 40.0)
+    score = 78
+    score -= max(0, (cpi_latest - 295.0) * 1.1)
+    score -= max(0, change * 55.0)
 
     if change > 0:
-        score -= 8
+        score -= 10
     elif change < 0:
-        score += 5
+        score += 6
 
     return clamp(score)
 
@@ -75,28 +75,28 @@ def score_affordability(cpi_latest: float, cpi_previous: float) -> int:
 def score_employment(unrate_latest: float, unrate_previous: float) -> int:
     change = unrate_latest - unrate_previous
 
-    score = 85
-    score -= max(0, (unrate_latest - 3.5) * 18.0)
+    score = 88
+    score -= max(0, (unrate_latest - 3.5) * 20.0)
 
     if change > 0:
-        score -= min(change * 60.0, 15.0)
+        score -= min(change * 75.0, 18.0)
     elif change < 0:
-        score += min(abs(change) * 40.0, 8.0)
+        score += min(abs(change) * 50.0, 10.0)
 
     return clamp(score)
 
 
 def score_interest_rate(fed_rate: float) -> int:
-    score = 90
-    score -= fed_rate * 12.0
+    score = 92
+    score -= fed_rate * 13.0
     return clamp(score)
 
 
 def score_wages(wage_latest: float, wage_previous: float) -> int:
     change = wage_latest - wage_previous
 
-    score = 60
-    score += change * 15.0
+    score = 58
+    score += change * 22.0
 
     return clamp(score)
 
@@ -107,50 +107,83 @@ def score_sentiment(sentiment: float) -> int:
 
 def score_housing(affordability_score: int, employment_score: int, interest_score: int) -> int:
     score = (
-        affordability_score * 0.5
-        + employment_score * 0.2
-        + interest_score * 0.3
+        affordability_score * 0.55
+        + employment_score * 0.15
+        + interest_score * 0.30
     )
     return clamp(score)
 
 
 def score_morale(sentiment_score: int, wage_score: int, employment_score: int) -> int:
     score = (
-        sentiment_score * 0.5
-        + wage_score * 0.2
-        + employment_score * 0.3
+        sentiment_score * 0.50
+        + wage_score * 0.20
+        + employment_score * 0.30
     )
     return clamp(score)
 
 
-def score_benefits() -> int:
-    return 50
+def score_benefits_signal(unrate_latest: float, unrate_previous: float, sentiment: float) -> int:
+    """
+    Signal-detection proxy until live VA backlog source is added.
+    Rising unemployment and weak sentiment increase expected strain on systems.
+    """
+    change = unrate_latest - unrate_previous
+
+    score = 65
+    score -= max(0, (unrate_latest - 4.0) * 10.0)
+    score -= max(0, change * 60.0)
+
+    if sentiment < 70:
+        score -= (70 - sentiment) * 0.35
+
+    return clamp(score)
 
 
-def score_media() -> int:
-    return 50
+def score_media_signal(
+    cpi_latest: float,
+    cpi_previous: float,
+    unrate_latest: float,
+    unrate_previous: float,
+    sentiment: float
+) -> int:
+    """
+    Signal-detection media proxy:
+    the more deterioration in inflation + labor + sentiment,
+    the more likely issue intensity and narrative pressure rise.
+    """
+    cpi_change = cpi_latest - cpi_previous
+    unrate_change = unrate_latest - unrate_previous
+
+    pressure = 50.0
+    pressure += max(0, cpi_change * 120.0)
+    pressure += max(0, unrate_change * 120.0)
+    pressure += max(0, (70.0 - sentiment) * 0.5)
+
+    score = 100.0 - pressure
+    return clamp(score)
 
 
 def composite_score(scores: dict) -> int:
     return clamp(
-        scores["cost_of_living"] * 0.20
-        + scores["employment"] * 0.20
-        + scores["interest_rates"] * 0.15
-        + scores["wage_growth"] * 0.15
+        scores["cost_of_living"] * 0.18
+        + scores["employment"] * 0.18
+        + scores["interest_rates"] * 0.14
+        + scores["wage_growth"] * 0.12
         + scores["consumer_sentiment"] * 0.10
         + scores["housing_affordability"] * 0.10
-        + scores["health_wellbeing"] * 0.05
-        + scores["benefits_processing"] * 0.025
-        + scores["media_environment"] * 0.025
+        + scores["health_wellbeing"] * 0.08
+        + scores["benefits_processing"] * 0.05
+        + scores["media_environment"] * 0.05
     )
 
 
 def status_from_score(score: int) -> str:
-    if score >= 70:
+    if score >= 72:
         return "Stable"
-    if score >= 55:
+    if score >= 58:
         return "Watchful"
-    if score >= 40:
+    if score >= 42:
         return "Moderate Pressure"
     return "High Pressure"
 
@@ -172,6 +205,8 @@ def build_narrative(
     wage_latest,
     wage_previous,
     sentiment,
+    benefits_score,
+    media_score,
     composite,
     status,
 ):
@@ -179,11 +214,15 @@ def build_narrative(
     unrate_direction = direction_label(unrate_latest, unrate_previous, inverse_good=True)
     wage_direction = direction_label(wage_latest, wage_previous, inverse_good=False)
 
+    benefits_signal = "elevated friction" if benefits_score < 45 else "contained friction"
+    media_signal = "high narrative pressure" if media_score < 45 else "contained narrative pressure"
+
     return [
         f"CPI index level is {cpi_latest:.2f}, previous {cpi_previous:.2f}, indicating affordability conditions are {cpi_direction}.",
         f"Unemployment rate is {unrate_latest:.1f}%, previous {unrate_previous:.1f}%, indicating labor conditions are {unrate_direction}.",
         f"Average hourly earnings index is {wage_latest:.2f}, previous {wage_previous:.2f}, indicating wage conditions are {wage_direction}.",
         f"Federal funds rate is {fed_rate:.2f} and consumer sentiment is {sentiment:.1f}.",
+        f"Benefits signal suggests {benefits_signal}; media signal suggests {media_signal}.",
         f"Composite score is {composite}/100 indicating {status.lower()}."
     ]
 
@@ -209,8 +248,14 @@ def build_output(
     housing_score = score_housing(affordability_score, employment_score, interest_score)
     morale_score = score_morale(sentiment_score, wage_score, employment_score)
 
-    benefits_score = score_benefits()
-    media_score = score_media()
+    benefits_score = score_benefits_signal(unrate_latest, unrate_previous, sentiment)
+    media_score = score_media_signal(
+        cpi_latest,
+        cpi_previous,
+        unrate_latest,
+        unrate_previous,
+        sentiment
+    )
 
     scores = {
         "housing_affordability": housing_score,
@@ -242,6 +287,8 @@ def build_output(
             wage_latest,
             wage_previous,
             sentiment,
+            benefits_score,
+            media_score,
             composite,
             status,
         ),
@@ -251,6 +298,8 @@ def build_output(
             "fed_funds_rate": "FRED FEDFUNDS",
             "hourly_earnings": "FRED CES0500000003",
             "consumer_sentiment": "FRED UMCSENT",
+            "benefits_processing": "proxy from labor + sentiment stress model",
+            "media_environment": "proxy from inflation + labor + sentiment pressure model",
         },
         "raw_inputs": {
             "cpi_latest": cpi_latest,
