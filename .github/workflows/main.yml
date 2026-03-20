@@ -68,4 +68,5 @@ jobs:
           git config user.email "bot@usavet.ai"
           git add daily.json
           git commit -m "Automated daily update" || echo "No changes"
-          git push
+          git pull --rebase origin main
+          git push origin main
