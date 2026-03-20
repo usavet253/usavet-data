@@ -1,10 +1,10 @@
 {
   "date": "March 20, 2026",
-  "time": "10:04 AM PT",
-  "composite": 47,
-  "status": "Moderate Pressure",
+  "time": "08:40 PM PT",
+  "composite": 41,
+  "status": "High Pressure",
   "domains": {
-    "housing": 35,
+    "housing": 5,
     "affordability": 23,
     "employment": 62,
     "morale": 59,
@@ -12,12 +12,7 @@
     "media": 27
   },
   "summary": [
-    "CPI index level is 327.46, previous 326.59, indicating affordability conditions are deteriorating.",
-    "Unemployment rate is 4.4%, previous 4.3%, indicating labor conditions are deteriorating.",
-    "Average hourly earnings index is 37.32, previous 37.17, indicating wage conditions are improving.",
-    "Federal funds rate is 3.64 and consumer sentiment is 56.4.",
-    "Benefits signal suggests contained friction; media signal suggests high narrative pressure.",
-    "Composite score is 47/100 indicating moderate pressure."
+    "System stable"
   ],
   "pdf": "#"
 }
