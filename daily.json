@@ -1,0 +1,20 @@
+{
+  "date": "March 19, 2026",
+  "time": "08:15 AM PT",
+  "composite": 59,
+  "status": "Elevated but Stable",
+  "domains": {
+    "housing": 57,
+    "affordability": 60,
+    "employment": 72,
+    "morale": 57,
+    "benefits": 48,
+    "media": 46
+  },
+  "summary": [
+    "Housing affordability remains the primary system pressure.",
+    "Employment conditions remain stable but uneven.",
+    "Veteran systems show partial resilience."
+  ],
+  "pdf": "#"
+}
