@@ -60,16 +60,16 @@ def clamp(value: float, low: int = 0, high: int = 100) -> int:
 def score_affordability(cpi_latest: float, cpi_previous: float) -> int:
     change = cpi_latest - cpi_previous
 
-    score = 78
-    score -= max(0, (cpi_latest - 295.0) * 1.1)
-    score -= max(0, change * 55.0)
+    score = 75
+    score -= max(0, (cpi_latest - 295.0) * 0.6)
+    score -= max(0, change * 30.0)
 
     if change > 0:
-        score -= 10
+        score -= 6
     elif change < 0:
-        score += 6
+        score += 4
 
-    return clamp(score)
+    return clamp(score, 10, 100)
 
 
 def score_employment(unrate_latest: float, unrate_previous: float) -> int:
@@ -125,8 +125,8 @@ def score_morale(sentiment_score: int, wage_score: int, employment_score: int) -
 
 def score_benefits_signal(unrate_latest: float, unrate_previous: float, sentiment: float) -> int:
     """
-    Signal-detection proxy until live VA backlog source is added.
-    Rising unemployment and weak sentiment increase expected strain on systems.
+    Proxy until live VA backlog / throughput source is added.
+    Rising unemployment and weak sentiment increase expected strain.
     """
     change = unrate_latest - unrate_previous
 
@@ -148,20 +148,20 @@ def score_media_signal(
     sentiment: float
 ) -> int:
     """
-    Signal-detection media proxy:
-    the more deterioration in inflation + labor + sentiment,
-    the more likely issue intensity and narrative pressure rise.
+    Proxy until live media ingestion is added.
+    More deterioration in inflation + labor + sentiment
+    means higher narrative pressure and lower score.
     """
     cpi_change = cpi_latest - cpi_previous
     unrate_change = unrate_latest - unrate_previous
 
-    pressure = 50.0
-    pressure += max(0, cpi_change * 120.0)
-    pressure += max(0, unrate_change * 120.0)
-    pressure += max(0, (70.0 - sentiment) * 0.5)
+    pressure = 40.0
+    pressure += min(max(0.0, cpi_change * 80.0), 20.0)
+    pressure += min(max(0.0, unrate_change * 80.0), 20.0)
+    pressure += max(0.0, (70.0 - sentiment) * 0.4)
 
     score = 100.0 - pressure
-    return clamp(score)
+    return clamp(score, 15, 100)
 
 
 def composite_score(scores: dict) -> int:
