@@ -4,19 +4,16 @@ from datetime import datetime, timezone
 
 import requests
 
-
 FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
 OUTPUT_FILE = "usavet_real_data_v1.json"
 
 
-def load_previous_output():
-    if not os.path.exists(OUTPUT_FILE):
-        return None
-    try:
-        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return None
+# -----------------------
+# UTIL
+# -----------------------
+
+def clamp(value: float, low: int = 0, high: int = 100) -> int:
+    return max(low, min(high, int(round(value))))
 
 
 def get_fred_series(series_id: str):
@@ -39,30 +36,24 @@ def get_fred_series(series_id: str):
     observations = data.get("observations", [])
 
     if len(observations) < 2:
-        raise ValueError(f"Not enough observations returned for {series_id}")
+        raise ValueError(f"Not enough data for {series_id}")
 
-    latest_raw = observations[0].get("value")
-    previous_raw = observations[1].get("value")
-
-    if latest_raw in (None, ".", "") or previous_raw in (None, ".", ""):
-        raise ValueError(f"Invalid observation values returned for {series_id}")
-
-    latest = float(latest_raw)
-    previous = float(previous_raw)
+    latest = float(observations[0]["value"])
+    previous = float(observations[1]["value"])
 
     return latest, previous
 
 
-def clamp(value: float, low: int = 0, high: int = 100) -> int:
-    return max(low, min(high, int(round(value))))
+# -----------------------
+# SCORING FUNCTIONS
+# -----------------------
 
-
-def score_affordability(cpi_latest: float, cpi_previous: float) -> int:
+def score_affordability(cpi_latest, cpi_previous):
     change = cpi_latest - cpi_previous
 
     score = 75
-    score -= max(0, (cpi_latest - 295.0) * 0.6)
-    score -= max(0, change * 30.0)
+    score -= max(0, (cpi_latest - 295) * 0.6)
+    score -= max(0, change * 30)
 
     if change > 0:
         score -= 6
@@ -72,67 +63,74 @@ def score_affordability(cpi_latest: float, cpi_previous: float) -> int:
     return clamp(score, 10, 100)
 
 
-def score_employment(unrate_latest: float, unrate_previous: float) -> int:
+def score_employment(unrate_latest, unrate_previous):
     change = unrate_latest - unrate_previous
 
     score = 88
-    score -= max(0, (unrate_latest - 3.5) * 20.0)
+    score -= max(0, (unrate_latest - 3.5) * 20)
 
     if change > 0:
-        score -= min(change * 75.0, 18.0)
+        score -= min(change * 75, 18)
     elif change < 0:
-        score += min(abs(change) * 50.0, 10.0)
+        score += min(abs(change) * 50, 10)
 
     return clamp(score)
 
 
-def score_interest_rate(fed_rate: float) -> int:
+def score_interest_rate(fed_rate):
     score = 92
-    score -= fed_rate * 13.0
+    score -= fed_rate * 13
     return clamp(score)
 
 
-def score_wages(wage_latest: float, wage_previous: float) -> int:
+def score_wages(wage_latest, wage_previous):
     change = wage_latest - wage_previous
-
-    score = 58
-    score += change * 22.0
-
+    score = 58 + (change * 22)
     return clamp(score)
 
 
-def score_sentiment(sentiment: float) -> int:
+def score_sentiment(sentiment):
     return clamp(sentiment)
 
 
-def score_housing(affordability_score: int, employment_score: int, interest_score: int) -> int:
-    score = (
-        affordability_score * 0.55
-        + employment_score * 0.15
-        + interest_score * 0.30
-    )
+# -----------------------
+# 🚨 NEW: HOUSING LEADING SIGNAL
+# -----------------------
+
+def score_housing_leading(case_shiller_latest, case_shiller_prev, mortgage_rate):
+    price_change = case_shiller_latest - case_shiller_prev
+
+    score = 70
+
+    # Home price acceleration (bad if rising too fast)
+    if price_change > 0:
+        score -= min(price_change * 25, 20)
+
+    # Mortgage pressure (VERY strong signal)
+    score -= mortgage_rate * 6
+
+    # nonlinear stress trigger
+    if mortgage_rate > 6:
+        score -= 10
+
+    return clamp(score, 5, 100)
+
+
+# -----------------------
+# DERIVED SYSTEMS
+# -----------------------
+
+def score_morale(sentiment, wages, employment):
+    score = sentiment * 0.5 + wages * 0.2 + employment * 0.3
     return clamp(score)
 
 
-def score_morale(sentiment_score: int, wage_score: int, employment_score: int) -> int:
-    score = (
-        sentiment_score * 0.50
-        + wage_score * 0.20
-        + employment_score * 0.30
-    )
-    return clamp(score)
-
-
-def score_benefits_signal(unrate_latest: float, unrate_previous: float, sentiment: float) -> int:
-    """
-    Proxy until live VA backlog / throughput source is added.
-    Rising unemployment and weak sentiment increase expected strain.
-    """
+def score_benefits(unrate_latest, unrate_previous, sentiment):
     change = unrate_latest - unrate_previous
 
     score = 65
-    score -= max(0, (unrate_latest - 4.0) * 10.0)
-    score -= max(0, change * 60.0)
+    score -= max(0, (unrate_latest - 4.0) * 10)
+    score -= max(0, change * 60)
 
     if sentiment < 70:
         score -= (70 - sentiment) * 0.35
@@ -140,45 +138,37 @@ def score_benefits_signal(unrate_latest: float, unrate_previous: float, sentimen
     return clamp(score)
 
 
-def score_media_signal(
-    cpi_latest: float,
-    cpi_previous: float,
-    unrate_latest: float,
-    unrate_previous: float,
-    sentiment: float
-) -> int:
-    """
-    Proxy until live media ingestion is added.
-    More deterioration in inflation + labor + sentiment
-    means higher narrative pressure and lower score.
-    """
+def score_media(cpi_latest, cpi_previous, unrate_latest, unrate_previous, sentiment):
     cpi_change = cpi_latest - cpi_previous
     unrate_change = unrate_latest - unrate_previous
 
-    pressure = 40.0
-    pressure += min(max(0.0, cpi_change * 80.0), 20.0)
-    pressure += min(max(0.0, unrate_change * 80.0), 20.0)
-    pressure += max(0.0, (70.0 - sentiment) * 0.4)
+    pressure = 40
+    pressure += min(cpi_change * 80, 20)
+    pressure += min(unrate_change * 80, 20)
+    pressure += max(0, (70 - sentiment) * 0.4)
 
-    score = 100.0 - pressure
-    return clamp(score, 15, 100)
+    return clamp(100 - pressure, 15, 100)
 
 
-def composite_score(scores: dict) -> int:
+# -----------------------
+# COMPOSITE
+# -----------------------
+
+def composite_score(scores):
     return clamp(
-        scores["cost_of_living"] * 0.18
-        + scores["employment"] * 0.18
-        + scores["interest_rates"] * 0.14
-        + scores["wage_growth"] * 0.12
-        + scores["consumer_sentiment"] * 0.10
-        + scores["housing_affordability"] * 0.10
-        + scores["health_wellbeing"] * 0.08
-        + scores["benefits_processing"] * 0.05
-        + scores["media_environment"] * 0.05
+        scores["cost_of_living"] * 0.18 +
+        scores["employment"] * 0.18 +
+        scores["interest_rates"] * 0.14 +
+        scores["housing_affordability"] * 0.14 +  # ↑ increased weight
+        scores["wage_growth"] * 0.10 +
+        scores["consumer_sentiment"] * 0.08 +
+        scores["health_wellbeing"] * 0.07 +
+        scores["benefits_processing"] * 0.06 +
+        scores["media_environment"] * 0.05
     )
 
 
-def status_from_score(score: int) -> str:
+def status(score):
     if score >= 72:
         return "Stable"
     if score >= 58:
@@ -188,181 +178,71 @@ def status_from_score(score: int) -> str:
     return "High Pressure"
 
 
-def direction_label(latest: float, previous: float, inverse_good: bool = False) -> str:
-    if latest == previous:
-        return "stable"
+# -----------------------
+# MAIN
+# -----------------------
 
-    improving = latest < previous if inverse_good else latest > previous
-    return "improving" if improving else "deteriorating"
+def main():
 
+    # Core economic
+    cpi_latest, cpi_prev = get_fred_series("CPIAUCSL")
+    un_latest, un_prev = get_fred_series("UNRATE")
+    fed_rate, _ = get_fred_series("FEDFUNDS")
+    wage_latest, wage_prev = get_fred_series("CES0500000003")
+    sentiment, _ = get_fred_series("UMCSENT")
 
-def build_narrative(
-    cpi_latest,
-    cpi_previous,
-    unrate_latest,
-    unrate_previous,
-    fed_rate,
-    wage_latest,
-    wage_previous,
-    sentiment,
-    benefits_score,
-    media_score,
-    composite,
-    status,
-):
-    cpi_direction = direction_label(cpi_latest, cpi_previous, inverse_good=True)
-    unrate_direction = direction_label(unrate_latest, unrate_previous, inverse_good=True)
-    wage_direction = direction_label(wage_latest, wage_previous, inverse_good=False)
+    # 🚨 NEW housing data
+    housing_price, housing_prev = get_fred_series("CSUSHPISA")
+    mortgage_rate, _ = get_fred_series("MORTGAGE30US")
 
-    benefits_signal = "elevated friction" if benefits_score < 45 else "contained friction"
-    media_signal = "high narrative pressure" if media_score < 45 else "contained narrative pressure"
-
-    return [
-        f"CPI index level is {cpi_latest:.2f}, previous {cpi_previous:.2f}, indicating affordability conditions are {cpi_direction}.",
-        f"Unemployment rate is {unrate_latest:.1f}%, previous {unrate_previous:.1f}%, indicating labor conditions are {unrate_direction}.",
-        f"Average hourly earnings index is {wage_latest:.2f}, previous {wage_previous:.2f}, indicating wage conditions are {wage_direction}.",
-        f"Federal funds rate is {fed_rate:.2f} and consumer sentiment is {sentiment:.1f}.",
-        f"Benefits signal suggests {benefits_signal}; media signal suggests {media_signal}.",
-        f"Composite score is {composite}/100 indicating {status.lower()}."
-    ]
-
-
-def build_output(
-    cpi_latest,
-    cpi_previous,
-    unrate_latest,
-    unrate_previous,
-    fed_rate,
-    wage_latest,
-    wage_previous,
-    sentiment,
-    data_status,
-    error_message=None,
-):
-    affordability_score = score_affordability(cpi_latest, cpi_previous)
-    employment_score = score_employment(unrate_latest, unrate_previous)
-    interest_score = score_interest_rate(fed_rate)
-    wage_score = score_wages(wage_latest, wage_previous)
+    # Scores
+    affordability = score_affordability(cpi_latest, cpi_prev)
+    employment = score_employment(un_latest, un_prev)
+    interest = score_interest_rate(fed_rate)
+    wages = score_wages(wage_latest, wage_prev)
     sentiment_score = score_sentiment(sentiment)
 
-    housing_score = score_housing(affordability_score, employment_score, interest_score)
-    morale_score = score_morale(sentiment_score, wage_score, employment_score)
+    housing = score_housing_leading(housing_price, housing_prev, mortgage_rate)
 
-    benefits_score = score_benefits_signal(unrate_latest, unrate_previous, sentiment)
-    media_score = score_media_signal(
-        cpi_latest,
-        cpi_previous,
-        unrate_latest,
-        unrate_previous,
-        sentiment
-    )
+    morale = score_morale(sentiment_score, wages, employment)
+    benefits = score_benefits(un_latest, un_prev, sentiment)
+    media = score_media(cpi_latest, cpi_prev, un_latest, un_prev, sentiment)
 
     scores = {
-        "housing_affordability": housing_score,
-        "cost_of_living": affordability_score,
-        "employment": employment_score,
-        "interest_rates": interest_score,
-        "wage_growth": wage_score,
+        "housing_affordability": housing,
+        "cost_of_living": affordability,
+        "employment": employment,
+        "interest_rates": interest,
+        "wage_growth": wages,
         "consumer_sentiment": sentiment_score,
-        "health_wellbeing": morale_score,
-        "benefits_processing": benefits_score,
-        "media_environment": media_score,
+        "health_wellbeing": morale,
+        "benefits_processing": benefits,
+        "media_environment": media,
     }
 
-    composite = composite_score(scores)
-    status = status_from_score(composite)
+    comp = composite_score(scores)
 
     output = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "data_status": data_status,
-        "composite_score": composite,
-        "status": status,
+        "data_status": "live",
+        "composite_score": comp,
+        "status": status(comp),
         "scores": scores,
-        "narrative": build_narrative(
-            cpi_latest,
-            cpi_previous,
-            unrate_latest,
-            unrate_previous,
-            fed_rate,
-            wage_latest,
-            wage_previous,
-            sentiment,
-            benefits_score,
-            media_score,
-            composite,
-            status,
-        ),
         "sources": {
             "cpi": "FRED CPIAUCSL",
             "unemployment": "FRED UNRATE",
             "fed_funds_rate": "FRED FEDFUNDS",
-            "hourly_earnings": "FRED CES0500000003",
-            "consumer_sentiment": "FRED UMCSENT",
-            "benefits_processing": "proxy from labor + sentiment stress model",
-            "media_environment": "proxy from inflation + labor + sentiment pressure model",
-        },
-        "raw_inputs": {
-            "cpi_latest": cpi_latest,
-            "cpi_previous": cpi_previous,
-            "unemployment_latest": unrate_latest,
-            "unemployment_previous": unrate_previous,
-            "fed_rate": fed_rate,
-            "wage_latest": wage_latest,
-            "wage_previous": wage_previous,
-            "sentiment": sentiment,
-        },
+            "wages": "FRED CES0500000003",
+            "sentiment": "FRED UMCSENT",
+            "housing_prices": "FRED CSUSHPISA",
+            "mortgage_rate": "FRED MORTGAGE30US"
+        }
     }
 
-    if error_message:
-        output["warning"] = error_message
-
-    return output
-
-
-def main():
-    previous = load_previous_output()
-
-    try:
-        cpi_latest, cpi_previous = get_fred_series("CPIAUCSL")
-        unrate_latest, unrate_previous = get_fred_series("UNRATE")
-        fed_rate, _ = get_fred_series("FEDFUNDS")
-        wage_latest, wage_previous = get_fred_series("CES0500000003")
-        sentiment, _ = get_fred_series("UMCSENT")
-
-        output = build_output(
-            cpi_latest,
-            cpi_previous,
-            unrate_latest,
-            unrate_previous,
-            fed_rate,
-            wage_latest,
-            wage_previous,
-            sentiment,
-            data_status="live"
-        )
-
-    except Exception as e:
-        if previous and "raw_inputs" in previous:
-            raw = previous["raw_inputs"]
-            output = build_output(
-                raw["cpi_latest"],
-                raw["cpi_previous"],
-                raw["unemployment_latest"],
-                raw["unemployment_previous"],
-                raw.get("fed_rate", 5.0),
-                raw.get("wage_latest", 1.0),
-                raw.get("wage_previous", 1.0),
-                raw.get("sentiment", 65.0),
-                data_status="fallback_cached",
-                error_message=str(e),
-            )
-        else:
-            raise
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    with open(OUTPUT_FILE, "w") as f:
         json.dump(output, f, indent=2)
 
-    print("Real data file generated")
+    print("System updated with housing leading indicator")
 
 
 if __name__ == "__main__":
