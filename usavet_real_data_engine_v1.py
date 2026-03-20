@@ -1,126 +1,216 @@
+import json
+import os
+from datetime import datetime, timezone
+
 import requests
-from datetime import datetime
 
-# -------------------------
-# CONFIG
-# -------------------------
-FRED_API_KEY = "f9850438b30dc86c085d6980a9088d6e"  # <-- replace this
+FRED_API_KEY = os.getenv("FRED_API_KEY")
 
-def get_fred_series(series_id):
-    url = f"https://api.stlouisfed.org/fred/series/observations"
+
+def get_fred_series(series_id: str):
+    if not FRED_API_KEY:
+        raise ValueError("FRED_API_KEY is not set")
+
+    url = "https://api.stlouisfed.org/fred/series/observations"
     params = {
         "series_id": series_id,
         "api_key": FRED_API_KEY,
         "file_type": "json",
         "sort_order": "desc",
-        "limit": 2
+        "limit": 2,
     }
 
-    response = requests.get(url, params=params)
+    response = requests.get(url, params=params, timeout=30)
+    response.raise_for_status()
+
     data = response.json()
-
     observations = data.get("observations", [])
-    if len(observations) < 2:
-        return None, None
 
-    latest = float(observations[0]["value"])
-    previous = float(observations[1]["value"])
+    if len(observations) < 2:
+        raise ValueError(f"Not enough observations returned for {series_id}")
+
+    latest_raw = observations[0].get("value")
+    previous_raw = observations[1].get("value")
+
+    if latest_raw in (None, ".", "") or previous_raw in (None, ".", ""):
+        raise ValueError(f"Invalid observation values returned for {series_id}")
+
+    latest = float(latest_raw)
+    previous = float(previous_raw)
 
     return latest, previous
 
 
-# -------------------------
-# FETCH REAL DATA
-# -------------------------
-cpi, cpi_prev = get_fred_series("CPIAUCSL")
-unrate, unrate_prev = get_fred_series("UNRATE")
-
-# -------------------------
-# SCORING LOGIC
-# -------------------------
-def score_affordability(cpi):
-    if cpi is None:
-        return 50
-    if cpi > 310:
-        return 40
-    elif cpi > 300:
-        return 60
-    else:
-        return 80
+def clamp(value: float, low: int = 0, high: int = 100) -> int:
+    return max(low, min(high, int(round(value))))
 
 
-def score_employment(unrate):
-    if unrate is None:
-        return 50
-    if unrate > 6:
-        return 40
-    elif unrate > 4:
-        return 60
-    else:
-        return 80
+def score_affordability(cpi_latest: float, cpi_previous: float) -> int:
+    """
+    Higher CPI level and rising CPI both hurt affordability.
+    """
+    change = cpi_latest - cpi_previous
+
+    score = 80
+    score -= max(0, (cpi_latest - 300.0) * 0.9)
+    score -= max(0, change * 40.0)
+
+    if change > 0:
+        score -= 8
+    elif change < 0:
+        score += 5
+
+    return clamp(score)
 
 
-affordability_score = score_affordability(cpi)
-employment_score = score_employment(unrate)
+def score_employment(unrate_latest: float, unrate_previous: float) -> int:
+    """
+    Lower unemployment and improving direction help employment score.
+    """
+    change = unrate_latest - unrate_previous
 
-housing_score = 50
-morale_score = 55
-benefits_score = 50
-media_score = 50
+    score = 85
+    score -= max(0, (unrate_latest - 3.5) * 18.0)
 
-composite = int(
-    (housing_score +
-     affordability_score +
-     employment_score +
-     morale_score +
-     benefits_score +
-     media_score) / 6
-)
+    if change > 0:
+        score -= min(change * 60.0, 15.0)
+    elif change < 0:
+        score += min(abs(change) * 40.0, 8.0)
 
-# -------------------------
-# STATUS
-# -------------------------
-if composite < 40:
-    status = "High Pressure"
-elif composite < 60:
-    status = "Moderate Pressure"
-else:
-    status = "Stable"
+    return clamp(score)
 
-# -------------------------
-# NARRATIVE
-# -------------------------
-narrative = [
-    f"CPI index level is {cpi}, previous {cpi_prev}.",
-    f"Unemployment rate is {unrate}%, previous {unrate_prev}%.",
-    f"Composite score is {composite}/100 indicating {status.lower()}."
-]
 
-# -------------------------
-# OUTPUT
-# -------------------------
-output = {
-    "timestamp": datetime.utcnow().isoformat(),
-    "composite_score": composite,
-    "status": status,
-    "scores": {
+def score_housing(affordability_score: int, employment_score: int) -> int:
+    """
+    Housing is affected by affordability most, employment second.
+    """
+    score = (affordability_score * 0.7) + (employment_score * 0.3)
+    return clamp(score)
+
+
+def score_morale(affordability_score: int, employment_score: int, housing_score: int) -> int:
+    """
+    Morale reflects pressure from affordability + labor conditions + housing.
+    """
+    score = (
+        affordability_score * 0.35
+        + employment_score * 0.35
+        + housing_score * 0.30
+    )
+    return clamp(score)
+
+
+def score_benefits() -> int:
+    """
+    Placeholder until live VA backlog / throughput source is connected.
+    """
+    return 50
+
+
+def score_media() -> int:
+    """
+    Placeholder until multi-source media sentiment engine is connected.
+    """
+    return 50
+
+
+def composite_score(scores: dict) -> int:
+    """
+    Weighted composite. Affordability and employment carry the most weight.
+    """
+    score = (
+        scores["housing_affordability"] * 0.20
+        + scores["cost_of_living"] * 0.25
+        + scores["employment"] * 0.25
+        + scores["health_wellbeing"] * 0.10
+        + scores["benefits_processing"] * 0.10
+        + scores["media_environment"] * 0.10
+    )
+    return clamp(score)
+
+
+def status_from_score(score: int) -> str:
+    if score >= 70:
+        return "Stable"
+    if score >= 55:
+        return "Watchful"
+    if score >= 40:
+        return "Moderate Pressure"
+    return "High Pressure"
+
+
+def direction_label(latest: float, previous: float, inverse_good: bool = False) -> str:
+    if latest == previous:
+        return "stable"
+
+    improving = latest < previous if inverse_good else latest > previous
+    return "improving" if improving else "deteriorating"
+
+
+def build_narrative(cpi_latest, cpi_previous, unrate_latest, unrate_previous, composite, status):
+    cpi_direction = direction_label(cpi_latest, cpi_previous, inverse_good=True)
+    unrate_direction = direction_label(unrate_latest, unrate_previous, inverse_good=True)
+
+    return [
+        f"CPI index level is {cpi_latest:.2f}, previous {cpi_previous:.2f}, indicating affordability conditions are {cpi_direction}.",
+        f"Unemployment rate is {unrate_latest:.1f}%, previous {unrate_previous:.1f}%, indicating labor conditions are {unrate_direction}.",
+        f"Composite score is {composite}/100 indicating {status.lower()}."
+    ]
+
+
+def main():
+    cpi_latest, cpi_previous = get_fred_series("CPIAUCSL")
+    unrate_latest, unrate_previous = get_fred_series("UNRATE")
+
+    affordability_score = score_affordability(cpi_latest, cpi_previous)
+    employment_score = score_employment(unrate_latest, unrate_previous)
+    housing_score = score_housing(affordability_score, employment_score)
+    morale_score = score_morale(affordability_score, employment_score, housing_score)
+    benefits_score = score_benefits()
+    media_score = score_media()
+
+    scores = {
         "housing_affordability": housing_score,
         "cost_of_living": affordability_score,
         "employment": employment_score,
         "health_wellbeing": morale_score,
         "benefits_processing": benefits_score,
-        "media_environment": media_score
-    },
-    "narrative": narrative,
-    "sources": {
-        "cpi": "FRED CPIAUCSL",
-        "unemployment": "FRED UNRATE"
+        "media_environment": media_score,
     }
-}
 
-# save file
-import json
-with open("usavet_real_data_v1.json", "w") as f:
-    json.dump(output, f, indent=2)
+    composite = composite_score(scores)
+    status = status_from_score(composite)
 
-print("Real data file generated")
+    output = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "composite_score": composite,
+        "status": status,
+        "scores": scores,
+        "narrative": build_narrative(
+            cpi_latest,
+            cpi_previous,
+            unrate_latest,
+            unrate_previous,
+            composite,
+            status,
+        ),
+        "sources": {
+            "cpi": "FRED CPIAUCSL",
+            "unemployment": "FRED UNRATE",
+        },
+        "raw_inputs": {
+            "cpi_latest": cpi_latest,
+            "cpi_previous": cpi_previous,
+            "unemployment_latest": unrate_latest,
+            "unemployment_previous": unrate_previous,
+        },
+    }
+
+    with open("usavet_real_data_v1.json", "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2)
+
+    print("Real data file generated")
+
+
+if __name__ == "__main__":
+    main()
