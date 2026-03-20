@@ -1,20 +1,98 @@
 {
   "date": "March 20, 2026",
-  "time": "09:46 PM PT",
+  "time": "10:15 PM PT",
   "composite": 56,
   "status": "High Pressure",
   "domains": {
     "housing": 52,
-    "affordability": 66,
+    "affordability": 65,
     "employment": 54,
     "morale": 60,
-    "benefits": 52,
-    "media": 55
+    "benefits": 53,
+    "media": 54
   },
   "summary": [
     "System under high pressure",
     "Affordability pressure elevated",
     "Morale stress elevated"
   ],
-  "pdf": "#"
+  "trend": {
+    "composite": {
+      "current": 56,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        56
+      ]
+    },
+    "housing": {
+      "current": 52,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        52
+      ]
+    },
+    "affordability": {
+      "current": 65,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        65
+      ]
+    },
+    "employment": {
+      "current": 54,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        54
+      ]
+    },
+    "morale": {
+      "current": 60,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        60
+      ]
+    },
+    "benefits": {
+      "current": 53,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        53
+      ]
+    },
+    "media": {
+      "current": 54,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        54
+      ]
+    }
+  }
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "generated_at": "2026-03-20T22:15:12.629883+00:00",
+    "date": "2026-03-20",
+    "composite_score": 56,
+    "status": "High Pressure",
+    "scores": {
+      "housing": 52,
+      "cost_of_living": 65,
+      "employment": 54,
+      "morale": 60,
+      "benefits": 53,
+      "media": 54
+    }
+  }
+]

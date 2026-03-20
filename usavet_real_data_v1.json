@@ -1,31 +1,106 @@
 {
-  "generated_at": "2026-03-20T21:46:10.368485+00:00",
+  "generated_at": "2026-03-20T22:15:12.629883+00:00",
   "status": "High Pressure",
   "composite_score": 56,
   "scores": {
     "housing": 52,
-    "cost_of_living": 66,
+    "cost_of_living": 65,
     "employment": 54,
     "morale": 60,
-    "benefits": 52,
-    "media": 55
+    "benefits": 53,
+    "media": 54
   },
-  "narrative": [
-    "Composite pressure score: 56.",
-    "Primary pressure domain: cost of living (66).",
-    "Secondary pressure domain: morale (60).",
-    "Most stable domain: benefits (52).",
-    "Sources analyzed successfully: 13 of 20.",
-    "FRED unemployment reference: 4.4%."
-  ],
   "summary": [
     "System under high pressure",
     "Affordability pressure elevated",
     "Morale stress elevated"
   ],
-  "trend": {
-    "delta_composite": -1,
-    "direction": "flat"
+  "narrative": [
+    "Composite pressure score: 56.",
+    "Primary pressure domain: cost of living (65).",
+    "Secondary pressure domain: morale (60).",
+    "Most stable domain: housing (52).",
+    "Sources analyzed successfully: 13 of 20.",
+    "FRED unemployment reference: 4.4%."
+  ],
+  "display_trends": {
+    "composite": {
+      "current": 56,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        56
+      ]
+    },
+    "housing": {
+      "current": 52,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        52
+      ]
+    },
+    "cost_of_living": {
+      "current": 65,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        65
+      ]
+    },
+    "employment": {
+      "current": 54,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        54
+      ]
+    },
+    "morale": {
+      "current": 60,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        60
+      ]
+    },
+    "benefits": {
+      "current": 53,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        53
+      ]
+    },
+    "media": {
+      "current": 54,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
+      "sparkline": [
+        54
+      ]
+    }
   },
   "meta": {
     "source_count": 20,
@@ -36,7 +111,8 @@
       "tier_1": 10,
       "tier_2": 10,
       "tier_3": 0
-    }
+    },
+    "history_points": 1
   },
   "fred": {
     "cpi": 327.46,
