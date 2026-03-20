@@ -29,6 +29,8 @@ jobs:
           pip install requests
 
       - name: Run real data engine
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: |
           python usavet_real_data_engine_v1.py
 
@@ -38,18 +40,14 @@ jobs:
           import json
           from datetime import datetime
 
-          with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
+          with open("usavet_real_data_v1.json", "r") as f:
               raw = json.load(f)
 
           now = datetime.now()
 
-          narrative = raw.get("narrative", "System stable")
+          narrative = raw.get("narrative", ["System stable"])
           if isinstance(narrative, str):
-              summary = [narrative]
-          elif isinstance(narrative, list):
-              summary = narrative
-          else:
-              summary = ["System stable"]
+              narrative = [narrative]
 
           daily = {
               "date": now.strftime("%B %d, %Y"),
@@ -62,18 +60,17 @@ jobs:
                   "employment": raw.get("scores", {}).get("employment", 70),
                   "morale": raw.get("scores", {}).get("health_wellbeing", 60),
                   "benefits": raw.get("scores", {}).get("benefits_processing", 50),
-                  "media": raw.get("scores", {}).get("media_environment", 46)
+                  "media": raw.get("scores", {}).get("media_environment", 50)
               },
-              "summary": summary,
+              "summary": narrative,
               "pdf": "#"
           }
 
-          with open("daily.json", "w", encoding="utf-8") as f:
+          with open("daily.json", "w") as f:
               json.dump(daily, f, indent=2)
           PY
 
       - name: Commit and push update
-        shell: bash
         run: |
           git config user.name "usavet-bot"
           git config user.email "bot@usavet.ai"
@@ -87,6 +84,4 @@ jobs:
 
           git commit -m "Automated daily update"
 
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          git push origin main --force
