@@ -1,9 +1,12 @@
 name: USAVET Daily Automation
 
 on:
-  schedule:
-    - cron: '0 8 * * *'   # Midnight Pacific (UTC 8)
   workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * *"
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -11,57 +14,68 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install Python
-        uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
-          pip install -r requirements_usavet_index.txt
+          python -m pip install --upgrade pip
+          pip install requests python-dateutil reportlab pypdf
 
       - name: Run real data engine
         run: |
-          python usavet_real_data_engine_v1.py
+          python usavet_real_data_engine_v1.py --output usavet_real_data_v1.json
 
-      - name: Convert to website format
+      - name: Convert engine output to website daily.json
         run: |
-          python - <<EOF
-import json
-from datetime import datetime
+          python - <<'PY'
+          import json
+          from datetime import datetime
 
-with open("usavet_real_data_v1.json") as f:
-    raw = json.load(f)
+          with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
+              raw = json.load(f)
 
-now = datetime.now()
+          now = datetime.now()
 
-daily = {
-    "date": now.strftime("%B %d, %Y"),
-    "time": now.strftime("%I:%M %p PT"),
-    "composite": raw.get("composite_score", 60),
-    "status": raw.get("status", "Stable"),
-    "domains": {
-        "housing": raw["scores"].get("housing_affordability", 55),
-        "affordability": raw["scores"].get("cost_of_living", 60),
-        "employment": raw["scores"].get("employment", 70),
-        "morale": raw["scores"].get("health_wellbeing", 60),
-        "benefits": raw["scores"].get("benefits_processing", 50),
-        "media": 46
-    },
-    "summary": raw.get("narrative", ["System stable"]),
-    "pdf": "#"
-}
+          narrative = raw.get("narrative", "System stable")
+          if isinstance(narrative, str):
+              summary = [narrative]
+          elif isinstance(narrative, list):
+              summary = narrative
+          else:
+              summary = ["System stable"]
 
-with open("daily.json", "w") as f:
-    json.dump(daily, f, indent=2)
-EOF
+          scores = raw.get("scores", {})
 
-      - name: Commit update
+          daily = {
+              "date": now.strftime("%B %d, %Y"),
+              "time": now.strftime("%I:%M %p PT"),
+              "composite": raw.get("composite_score", 60),
+              "status": raw.get("status", "Stable"),
+              "domains": {
+                  "housing": scores.get("housing_stability", 55),
+                  "affordability": scores.get("cost_of_living_pressure", 60),
+                  "employment": scores.get("employment_opportunity", 70),
+                  "morale": scores.get("veteran_morale_community", 60),
+                  "benefits": 50,
+                  "media": 46
+              },
+              "summary": summary,
+              "pdf": "#"
+          }
+
+          with open("daily.json", "w", encoding="utf-8") as f:
+              json.dump(daily, f, indent=2)
+          PY
+
+      - name: Commit and push updated daily.json
         run: |
           git config user.name "usavet-bot"
           git config user.email "bot@usavet.ai"
           git add daily.json
-          git commit -m "Automated daily update" || echo "No changes"
+          git diff --cached --quiet || git commit -m "Automated daily update"
           git push
