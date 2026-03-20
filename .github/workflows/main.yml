@@ -44,6 +44,7 @@ jobs:
               raw = json.load(f)
 
           now = datetime.now()
+          trends = raw.get("display_trends", {})
 
           daily = {
               "date": now.strftime("%B %d, %Y"),
@@ -59,7 +60,15 @@ jobs:
                   "media": raw.get("scores", {}).get("media", 45)
               },
               "summary": raw.get("summary", raw.get("narrative", ["System stable"])),
-              "pdf": "#"
+              "trend": {
+                  "composite": trends.get("composite", {}),
+                  "housing": trends.get("housing", {}),
+                  "affordability": trends.get("cost_of_living", {}),
+                  "employment": trends.get("employment", {}),
+                  "morale": trends.get("morale", {}),
+                  "benefits": trends.get("benefits", {}),
+                  "media": trends.get("media", {})
+              }
           }
 
           with open("daily.json", "w", encoding="utf-8") as f:
@@ -72,6 +81,6 @@ jobs:
         run: |
           git config user.name "usavet-bot"
           git config user.email "actions@github.com"
-          git add daily.json usavet_real_data_v1.json
+          git add daily.json usavet_real_data_v1.json history.json
           git diff --staged --quiet || git commit -m "Automated daily update"
           git push
