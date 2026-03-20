@@ -1,248 +1,415 @@
 import json
 import os
+import re
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 
 import requests
 
-FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
+
 OUTPUT_FILE = "usavet_real_data_v1.json"
+SOURCE_PLAN_FILE = "source_plan.txt"
+REQUEST_TIMEOUT = 20
+
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/123.0 Safari/537.36 USAVET-Index/1.0"
+)
+
+HEADERS = {
+    "User-Agent": USER_AGENT,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+}
 
 
-# -----------------------
-# UTIL
-# -----------------------
+DOMAIN_KEYWORDS = {
+    "housing": [
+        "housing",
+        "rent",
+        "mortgage",
+        "eviction",
+        "homeless",
+        "shelter",
+        "foreclosure",
+        "affordable housing",
+        "barracks",
+        "base housing",
+    ],
+    "cost_of_living": [
+        "inflation",
+        "price",
+        "prices",
+        "cost of living",
+        "grocery",
+        "food cost",
+        "gas prices",
+        "fuel",
+        "utility bills",
+        "energy costs",
+        "affordability",
+    ],
+    "employment": [
+        "employment",
+        "job",
+        "jobs",
+        "hiring",
+        "layoff",
+        "layoffs",
+        "unemployment",
+        "workforce",
+        "career",
+        "careers",
+        "labor market",
+    ],
+    "morale": [
+        "morale",
+        "stress",
+        "burnout",
+        "mental health",
+        "suicide",
+        "well-being",
+        "resilience",
+        "readiness",
+        "quality of life",
+        "community support",
+    ],
+    "benefits": [
+        "benefits",
+        "va benefits",
+        "claims",
+        "disability",
+        "tricare",
+        "gi bill",
+        "caregiver",
+        "pension",
+        "compensation",
+        "eligibility",
+    ],
+    "media": [
+        "investigation",
+        "hearing",
+        "report",
+        "controversy",
+        "lawsuit",
+        "policy",
+        "rule",
+        "federal register",
+        "congress",
+        "oversight",
+    ],
+}
 
-def clamp(value: float, low: int = 0, high: int = 100) -> int:
+NEGATIVE_HINTS = {
+    "housing": ["eviction", "homeless", "foreclosure", "crisis", "shortage"],
+    "cost_of_living": ["inflation", "higher prices", "surge", "shortage", "expensive"],
+    "employment": ["layoff", "layoffs", "unemployment", "job cuts", "strike"],
+    "morale": ["stress", "burnout", "suicide", "crisis", "fatigue"],
+    "benefits": ["delay", "backlog", "denial", "confusion", "shortfall"],
+    "media": ["controversy", "lawsuit", "investigation", "oversight", "hearing"],
+}
+
+POSITIVE_HINTS = {
+    "housing": ["improvement", "expansion", "support", "funding"],
+    "cost_of_living": ["relief", "lower prices", "reduction", "support"],
+    "employment": ["hiring", "growth", "jobs added", "expansion"],
+    "morale": ["support", "resilience", "well-being", "improved"],
+    "benefits": ["expanded", "improved", "faster", "streamlined"],
+    "media": ["clarified", "resolved", "support", "funding"],
+}
+
+
+def clamp(value, low=0, high=100):
     return max(low, min(high, int(round(value))))
 
 
-def get_fred_series(series_id: str):
-    if not FRED_API_KEY:
-        raise ValueError("FRED_API_KEY is not set")
+def safe_get(url):
+    try:
+        response = requests.get(
+            url,
+            headers=HEADERS,
+            timeout=REQUEST_TIMEOUT,
+            allow_redirects=True,
+        )
+        return response
+    except requests.RequestException:
+        return None
 
-    url = "https://api.stlouisfed.org/fred/series/observations"
-    params = {
-        "series_id": series_id,
-        "api_key": FRED_API_KEY,
-        "file_type": "json",
-        "sort_order": "desc",
-        "limit": 2,
+
+def extract_sources(path):
+    urls = []
+    if not os.path.exists(path):
+        return urls
+
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith("- http://") or line.startswith("- https://"):
+                urls.append(line[2:].strip())
+            elif line.startswith("http://") or line.startswith("https://"):
+                urls.append(line)
+
+    return urls
+
+
+def strip_html(html):
+    html = re.sub(r"(?is)<script.*?>.*?</script>", " ", html)
+    html = re.sub(r"(?is)<style.*?>.*?</style>", " ", html)
+    html = re.sub(r"(?s)<[^>]+>", " ", html)
+    html = re.sub(r"&nbsp;|&#160;", " ", html)
+    html = re.sub(r"&amp;", "&", html)
+    html = re.sub(r"&lt;", "<", html)
+    html = re.sub(r"&gt;", ">", " ", html)
+    html = re.sub(r"\s+", " ", html)
+    return html.strip()
+
+
+def count_keyword_hits(text, keywords):
+    total = 0
+    lowered = text.lower()
+    for keyword in keywords:
+        total += len(re.findall(r"\b" + re.escape(keyword.lower()) + r"\b", lowered))
+    return total
+
+
+def parse_last_modified(response):
+    if not response:
+        return None
+
+    value = response.headers.get("Last-Modified")
+    if not value:
+        return None
+
+    try:
+        dt = parsedate_to_datetime(value)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except Exception:
+        return None
+
+
+def freshness_score(last_modified):
+    if not last_modified:
+        return 50
+
+    now = datetime.now(timezone.utc)
+    age_days = (now - last_modified).days
+
+    if age_days <= 1:
+        return 95
+    if age_days <= 3:
+        return 88
+    if age_days <= 7:
+        return 80
+    if age_days <= 14:
+        return 72
+    if age_days <= 30:
+        return 64
+    if age_days <= 60:
+        return 56
+    if age_days <= 90:
+        return 48
+    return 40
+
+
+def analyze_source(url):
+    response = safe_get(url)
+    if response is None:
+        return {
+            "url": url,
+            "ok": False,
+            "status_code": None,
+            "freshness": 35,
+            "domain_hits": {k: 0 for k in DOMAIN_KEYWORDS},
+            "negative_hits": {k: 0 for k in DOMAIN_KEYWORDS},
+            "positive_hits": {k: 0 for k in DOMAIN_KEYWORDS},
+        }
+
+    text = strip_html(response.text[:600000])
+
+    domain_hits = {}
+    negative_hits = {}
+    positive_hits = {}
+
+    for domain, keywords in DOMAIN_KEYWORDS.items():
+        domain_hits[domain] = count_keyword_hits(text, keywords)
+        negative_hits[domain] = count_keyword_hits(text, NEGATIVE_HINTS[domain])
+        positive_hits[domain] = count_keyword_hits(text, POSITIVE_HINTS[domain])
+
+    return {
+        "url": url,
+        "ok": response.ok,
+        "status_code": response.status_code,
+        "freshness": freshness_score(parse_last_modified(response)),
+        "domain_hits": domain_hits,
+        "negative_hits": negative_hits,
+        "positive_hits": positive_hits,
     }
 
-    response = requests.get(url, params=params, timeout=30)
-    response.raise_for_status()
 
-    data = response.json()
-    observations = data.get("observations", [])
+def score_domain(source_results, domain_name, baseline):
+    if not source_results:
+        return baseline
 
-    if len(observations) < 2:
-        raise ValueError(f"Not enough data for {series_id}")
+    total_hits = sum(item["domain_hits"][domain_name] for item in source_results)
+    negative = sum(item["negative_hits"][domain_name] for item in source_results)
+    positive = sum(item["positive_hits"][domain_name] for item in source_results)
+    avg_freshness = sum(item["freshness"] for item in source_results) / len(source_results)
 
-    latest = float(observations[0]["value"])
-    previous = float(observations[1]["value"])
+    # Pressure score model:
+    # higher negative coverage = more pressure
+    # positive/supportive coverage reduces pressure
+    raw = baseline
+    raw += min(total_hits * 1.5, 18)
+    raw += min(negative * 2.5, 20)
+    raw -= min(positive * 2.0, 12)
+    raw += (avg_freshness - 50) * 0.20
 
-    return latest, previous
-
-
-# -----------------------
-# SCORING FUNCTIONS
-# -----------------------
-
-def score_affordability(cpi_latest, cpi_previous):
-    change = cpi_latest - cpi_previous
-
-    score = 75
-    score -= max(0, (cpi_latest - 295) * 0.6)
-    score -= max(0, change * 30)
-
-    if change > 0:
-        score -= 6
-    elif change < 0:
-        score += 4
-
-    return clamp(score, 10, 100)
+    return clamp(raw)
 
 
-def score_employment(unrate_latest, unrate_previous):
-    change = unrate_latest - unrate_previous
-
-    score = 88
-    score -= max(0, (unrate_latest - 3.5) * 20)
-
-    if change > 0:
-        score -= min(change * 75, 18)
-    elif change < 0:
-        score += min(abs(change) * 50, 10)
-
-    return clamp(score)
+def composite_from_scores(scores):
+    ordered = [
+        scores["housing"],
+        scores["cost_of_living"],
+        scores["employment"],
+        scores["morale"],
+        scores["benefits"],
+        scores["media"],
+    ]
+    return clamp(sum(ordered) / len(ordered))
 
 
-def score_interest_rate(fed_rate):
-    score = 92
-    score -= fed_rate * 13
-    return clamp(score)
+def status_from_composite(value):
+    if value >= 75:
+        return "Severe Pressure"
+    if value >= 60:
+        return "Elevated Pressure"
+    if value >= 45:
+        return "High Pressure"
+    if value >= 30:
+        return "Watch"
+    return "Stable"
 
 
-def score_wages(wage_latest, wage_previous):
-    change = wage_latest - wage_previous
-    score = 58 + (change * 22)
-    return clamp(score)
+def build_narrative(scores, analyzed_count, total_count):
+    notes = []
 
+    highest = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:2]
+    lowest = sorted(scores.items(), key=lambda x: x[1])[:1]
 
-def score_sentiment(sentiment):
-    return clamp(sentiment)
+    if highest:
+        notes.append(
+            f"Top pressure domains: {highest[0][0].replace('_', ' ')} ({highest[0][1]})"
+        )
+    if len(highest) > 1:
+        notes.append(
+            f"Secondary pressure domain: {highest[1][0].replace('_', ' ')} ({highest[1][1]})"
+        )
+    if lowest:
+        notes.append(
+            f"Most stable domain: {lowest[0][0].replace('_', ' ')} ({lowest[0][1]})"
+        )
 
+    notes.append(f"Sources analyzed successfully: {analyzed_count} of {total_count}")
 
-# -----------------------
-# 🚨 NEW: HOUSING LEADING SIGNAL
-# -----------------------
+    if scores["housing"] >= 60:
+        notes.append("Housing strain indicators remain elevated.")
+    if scores["cost_of_living"] >= 60:
+        notes.append("Affordability and cost-of-living pressure remain elevated.")
+    if scores["employment"] >= 60:
+        notes.append("Employment and workforce stress signals are elevated.")
+    if scores["benefits"] >= 60:
+        notes.append("Benefits and claims-related friction is elevated.")
+    if scores["morale"] >= 60:
+        notes.append("Morale and well-being indicators deserve closer watch.")
 
-def score_housing_leading(case_shiller_latest, case_shiller_prev, mortgage_rate):
-    price_change = case_shiller_latest - case_shiller_prev
+    if not notes:
+        notes.append("System stable")
 
-    score = 70
+    return notes[:6]
 
-    # Home price acceleration (bad if rising too fast)
-    if price_change > 0:
-        score -= min(price_change * 25, 20)
-
-    # Mortgage pressure (VERY strong signal)
-    score -= mortgage_rate * 6
-
-    # nonlinear stress trigger
-    if mortgage_rate > 6:
-        score -= 10
-
-    return clamp(score, 5, 100)
-
-
-# -----------------------
-# DERIVED SYSTEMS
-# -----------------------
-
-def score_morale(sentiment, wages, employment):
-    score = sentiment * 0.5 + wages * 0.2 + employment * 0.3
-    return clamp(score)
-
-
-def score_benefits(unrate_latest, unrate_previous, sentiment):
-    change = unrate_latest - unrate_previous
-
-    score = 65
-    score -= max(0, (unrate_latest - 4.0) * 10)
-    score -= max(0, change * 60)
-
-    if sentiment < 70:
-        score -= (70 - sentiment) * 0.35
-
-    return clamp(score)
-
-
-def score_media(cpi_latest, cpi_previous, unrate_latest, unrate_previous, sentiment):
-    cpi_change = cpi_latest - cpi_previous
-    unrate_change = unrate_latest - unrate_previous
-
-    pressure = 40
-    pressure += min(cpi_change * 80, 20)
-    pressure += min(unrate_change * 80, 20)
-    pressure += max(0, (70 - sentiment) * 0.4)
-
-    return clamp(100 - pressure, 15, 100)
-
-
-# -----------------------
-# COMPOSITE
-# -----------------------
-
-def composite_score(scores):
-    return clamp(
-        scores["cost_of_living"] * 0.18 +
-        scores["employment"] * 0.18 +
-        scores["interest_rates"] * 0.14 +
-        scores["housing_affordability"] * 0.14 +  # ↑ increased weight
-        scores["wage_growth"] * 0.10 +
-        scores["consumer_sentiment"] * 0.08 +
-        scores["health_wellbeing"] * 0.07 +
-        scores["benefits_processing"] * 0.06 +
-        scores["media_environment"] * 0.05
-    )
-
-
-def status(score):
-    if score >= 72:
-        return "Stable"
-    if score >= 58:
-        return "Watchful"
-    if score >= 42:
-        return "Moderate Pressure"
-    return "High Pressure"
-
-
-# -----------------------
-# MAIN
-# -----------------------
 
 def main():
+    urls = extract_sources(SOURCE_PLAN_FILE)
 
-    # Core economic
-    cpi_latest, cpi_prev = get_fred_series("CPIAUCSL")
-    un_latest, un_prev = get_fred_series("UNRATE")
-    fed_rate, _ = get_fred_series("FEDFUNDS")
-    wage_latest, wage_prev = get_fred_series("CES0500000003")
-    sentiment, _ = get_fred_series("UMCSENT")
+    if not urls:
+        fallback = {
+            "generated_at": datetime.utcnow().isoformat() + "Z",
+            "status": "Stable",
+            "composite_score": 35,
+            "scores": {
+                "housing": 35,
+                "cost_of_living": 40,
+                "employment": 38,
+                "morale": 36,
+                "benefits": 34,
+                "media": 32,
+            },
+            "narrative": ["No source URLs found in source_plan.txt"],
+            "meta": {
+                "source_count": 0,
+                "successful_sources": 0,
+                "fred_api_key_present": bool(os.getenv("FRED_API_KEY")),
+            },
+        }
 
-    # 🚨 NEW housing data
-    housing_price, housing_prev = get_fred_series("CSUSHPISA")
-    mortgage_rate, _ = get_fred_series("MORTGAGE30US")
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            json.dump(fallback, f, indent=2)
 
-    # Scores
-    affordability = score_affordability(cpi_latest, cpi_prev)
-    employment = score_employment(un_latest, un_prev)
-    interest = score_interest_rate(fed_rate)
-    wages = score_wages(wage_latest, wage_prev)
-    sentiment_score = score_sentiment(sentiment)
+        print(f"Wrote fallback output to {OUTPUT_FILE}")
+        return
 
-    housing = score_housing_leading(housing_price, housing_prev, mortgage_rate)
+    source_results = [analyze_source(url) for url in urls]
+    successful_sources = sum(1 for x in source_results if x["ok"])
 
-    morale = score_morale(sentiment_score, wages, employment)
-    benefits = score_benefits(un_latest, un_prev, sentiment)
-    media = score_media(cpi_latest, cpi_prev, un_latest, un_prev, sentiment)
+    baselines = {
+        "housing": 48,
+        "cost_of_living": 52,
+        "employment": 46,
+        "morale": 44,
+        "benefits": 42,
+        "media": 40,
+    }
 
     scores = {
-        "housing_affordability": housing,
-        "cost_of_living": affordability,
-        "employment": employment,
-        "interest_rates": interest,
-        "wage_growth": wages,
-        "consumer_sentiment": sentiment_score,
-        "health_wellbeing": morale,
-        "benefits_processing": benefits,
-        "media_environment": media,
+        domain: score_domain(source_results, domain, baseline)
+        for domain, baseline in baselines.items()
     }
 
-    comp = composite_score(scores)
+    composite = composite_from_scores(scores)
+    status = status_from_composite(composite)
+    narrative = build_narrative(scores, successful_sources, len(urls))
 
-    output = {
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "data_status": "live",
-        "composite_score": comp,
-        "status": status(comp),
+    result = {
+        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "status": status,
+        "composite_score": composite,
         "scores": scores,
-        "sources": {
-            "cpi": "FRED CPIAUCSL",
-            "unemployment": "FRED UNRATE",
-            "fed_funds_rate": "FRED FEDFUNDS",
-            "wages": "FRED CES0500000003",
-            "sentiment": "FRED UMCSENT",
-            "housing_prices": "FRED CSUSHPISA",
-            "mortgage_rate": "FRED MORTGAGE30US"
-        }
+        "narrative": narrative,
+        "meta": {
+            "source_count": len(urls),
+            "successful_sources": successful_sources,
+            "failed_sources": len(urls) - successful_sources,
+            "fred_api_key_present": bool(os.getenv("FRED_API_KEY")),
+        },
+        "sources": [
+            {
+                "url": item["url"],
+                "ok": item["ok"],
+                "status_code": item["status_code"],
+                "freshness": item["freshness"],
+            }
+            for item in source_results
+        ],
     }
 
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(output, f, indent=2)
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2)
 
-    print("System updated with housing leading indicator")
+    print(f"Wrote {OUTPUT_FILE}")
+    print(json.dumps(result["meta"], indent=2))
 
 
 if __name__ == "__main__":
