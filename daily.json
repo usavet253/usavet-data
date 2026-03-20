@@ -1,18 +1,20 @@
 {
   "date": "March 20, 2026",
-  "time": "09:30 PM PT",
-  "composite": 57,
+  "time": "09:46 PM PT",
+  "composite": 56,
   "status": "High Pressure",
   "domains": {
-    "housing": 55,
-    "affordability": 51,
-    "employment": 52,
+    "housing": 52,
+    "affordability": 66,
+    "employment": 54,
     "morale": 60,
-    "benefits": 50,
-    "media": 50
+    "benefits": 52,
+    "media": 55
   },
   "summary": [
-    "System stable"
+    "System under high pressure",
+    "Affordability pressure elevated",
+    "Morale stress elevated"
   ],
   "pdf": "#"
 }

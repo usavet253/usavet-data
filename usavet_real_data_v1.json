@@ -1,13 +1,196 @@
 {
-  "generated_at": "2026-03-20T21:30:24.014848",
+  "generated_at": "2026-03-20T21:46:10.368485+00:00",
   "status": "High Pressure",
-  "composite_score": 57,
+  "composite_score": 56,
   "scores": {
-    "housing": 59,
-    "cost_of_living": 51,
-    "employment": 52,
-    "morale": 50,
-    "benefits": 73,
+    "housing": 52,
+    "cost_of_living": 66,
+    "employment": 54,
+    "morale": 60,
+    "benefits": 52,
     "media": 55
-  }
+  },
+  "narrative": [
+    "Composite pressure score: 56.",
+    "Primary pressure domain: cost of living (66).",
+    "Secondary pressure domain: morale (60).",
+    "Most stable domain: benefits (52).",
+    "Sources analyzed successfully: 13 of 20.",
+    "FRED unemployment reference: 4.4%."
+  ],
+  "summary": [
+    "System under high pressure",
+    "Affordability pressure elevated",
+    "Morale stress elevated"
+  ],
+  "trend": {
+    "delta_composite": -1,
+    "direction": "flat"
+  },
+  "meta": {
+    "source_count": 20,
+    "successful_sources": 13,
+    "failed_sources": 7,
+    "fred_api_key_present": true,
+    "tier_counts": {
+      "tier_1": 10,
+      "tier_2": 10,
+      "tier_3": 0
+    }
+  },
+  "fred": {
+    "cpi": 327.46,
+    "unemployment": 4.4,
+    "consumer_sentiment_proxy": 56.4
+  },
+  "fred_domain_adjustments": {
+    "housing": 2,
+    "cost_of_living": 8,
+    "employment": 0,
+    "morale": 10,
+    "benefits": 0,
+    "media": 0
+  },
+  "sources": [
+    {
+      "url": "https://news.va.gov",
+      "tier": "tier_1",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.va.gov/opa/pressrel",
+      "tier": "tier_1",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.defense.gov/News",
+      "tier": "tier_1",
+      "ok": false,
+      "status_code": 403,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.federalregister.gov",
+      "tier": "tier_1",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.congress.gov",
+      "tier": "tier_1",
+      "ok": false,
+      "status_code": 403,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.veterans.senate.gov",
+      "tier": "tier_1",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 50
+    },
+    {
+      "url": "https://veterans.house.gov",
+      "tier": "tier_1",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 95
+    },
+    {
+      "url": "https://www.stripes.com",
+      "tier": "tier_1",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 95
+    },
+    {
+      "url": "https://www.military.com",
+      "tier": "tier_1",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 95
+    },
+    {
+      "url": "https://www.militarytimes.com",
+      "tier": "tier_1",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 95
+    },
+    {
+      "url": "https://taskandpurpose.com",
+      "tier": "tier_2",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.defensenews.com",
+      "tier": "tier_2",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 95
+    },
+    {
+      "url": "https://www.defenseone.com",
+      "tier": "tier_2",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 95
+    },
+    {
+      "url": "https://www.army.mil/news",
+      "tier": "tier_2",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.navy.mil/Press-Office/News-Stories",
+      "tier": "tier_2",
+      "ok": false,
+      "status_code": 403,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.af.mil/News",
+      "tier": "tier_2",
+      "ok": false,
+      "status_code": 403,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.marines.mil/News",
+      "tier": "tier_2",
+      "ok": false,
+      "status_code": 403,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.spaceforce.mil/News",
+      "tier": "tier_2",
+      "ok": false,
+      "status_code": 403,
+      "freshness": 50
+    },
+    {
+      "url": "https://www.nrd.gov",
+      "tier": "tier_2",
+      "ok": true,
+      "status_code": 200,
+      "freshness": 64
+    },
+    {
+      "url": "https://www.militaryonesource.mil",
+      "tier": "tier_2",
+      "ok": false,
+      "status_code": 403,
+      "freshness": 50
+    }
+  ]
 }
