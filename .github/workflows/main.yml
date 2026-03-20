@@ -24,58 +24,48 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests python-dateutil reportlab pypdf
+          pip install requests
 
       - name: Run real data engine
         run: |
-          python usavet_real_data_engine_v1.py --output usavet_real_data_v1.json
+          python usavet_real_data_engine_v1.py
 
-      - name: Convert engine output to website daily.json
+      - name: Convert to website format
         run: |
           python - <<'PY'
-          import json
-          from datetime import datetime
+import json
+from datetime import datetime
 
-          with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
-              raw = json.load(f)
+with open("usavet_real_data_v1.json", "r") as f:
+    raw = json.load(f)
 
-          now = datetime.now()
+now = datetime.now()
 
-          narrative = raw.get("narrative", "System stable")
-          if isinstance(narrative, str):
-              summary = [narrative]
-          elif isinstance(narrative, list):
-              summary = narrative
-          else:
-              summary = ["System stable"]
+daily = {
+    "date": now.strftime("%B %d, %Y"),
+    "time": now.strftime("%I:%M %p PT"),
+    "composite": raw.get("composite_score", 60),
+    "status": raw.get("status", "Stable"),
+    "domains": {
+        "housing": raw.get("scores", {}).get("housing_affordability", 55),
+        "affordability": raw.get("scores", {}).get("cost_of_living", 60),
+        "employment": raw.get("scores", {}).get("employment", 70),
+        "morale": raw.get("scores", {}).get("health_wellbeing", 60),
+        "benefits": raw.get("scores", {}).get("benefits_processing", 50),
+        "media": 46
+    },
+    "summary": raw.get("narrative", ["System stable"]),
+    "pdf": "#"
+}
 
-          scores = raw.get("scores", {})
+with open("daily.json", "w") as f:
+    json.dump(daily, f, indent=2)
+PY
 
-          daily = {
-              "date": now.strftime("%B %d, %Y"),
-              "time": now.strftime("%I:%M %p PT"),
-              "composite": raw.get("composite_score", 60),
-              "status": raw.get("status", "Stable"),
-              "domains": {
-                  "housing": scores.get("housing_stability", 55),
-                  "affordability": scores.get("cost_of_living_pressure", 60),
-                  "employment": scores.get("employment_opportunity", 70),
-                  "morale": scores.get("veteran_morale_community", 60),
-                  "benefits": 50,
-                  "media": 46
-              },
-              "summary": summary,
-              "pdf": "#"
-          }
-
-          with open("daily.json", "w", encoding="utf-8") as f:
-              json.dump(daily, f, indent=2)
-          PY
-
-      - name: Commit and push updated daily.json
+      - name: Commit update
         run: |
           git config user.name "usavet-bot"
           git config user.email "bot@usavet.ai"
           git add daily.json
-          git diff --cached --quiet || git commit -m "Automated daily update"
+          git commit -m "Automated daily update" || echo "No changes"
           git push
