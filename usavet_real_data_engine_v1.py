@@ -4,7 +4,8 @@ from datetime import datetime, timezone
 
 import requests
 
-FRED_API_KEY = os.getenv("FRED_API_KEY")
+
+FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
 
 
 def get_fred_series(series_id: str):
@@ -46,9 +47,6 @@ def clamp(value: float, low: int = 0, high: int = 100) -> int:
 
 
 def score_affordability(cpi_latest: float, cpi_previous: float) -> int:
-    """
-    Higher CPI level and rising CPI both hurt affordability.
-    """
     change = cpi_latest - cpi_previous
 
     score = 80
@@ -64,9 +62,6 @@ def score_affordability(cpi_latest: float, cpi_previous: float) -> int:
 
 
 def score_employment(unrate_latest: float, unrate_previous: float) -> int:
-    """
-    Lower unemployment and improving direction help employment score.
-    """
     change = unrate_latest - unrate_previous
 
     score = 85
@@ -81,17 +76,11 @@ def score_employment(unrate_latest: float, unrate_previous: float) -> int:
 
 
 def score_housing(affordability_score: int, employment_score: int) -> int:
-    """
-    Housing is affected by affordability most, employment second.
-    """
     score = (affordability_score * 0.7) + (employment_score * 0.3)
     return clamp(score)
 
 
 def score_morale(affordability_score: int, employment_score: int, housing_score: int) -> int:
-    """
-    Morale reflects pressure from affordability + labor conditions + housing.
-    """
     score = (
         affordability_score * 0.35
         + employment_score * 0.35
@@ -101,23 +90,14 @@ def score_morale(affordability_score: int, employment_score: int, housing_score:
 
 
 def score_benefits() -> int:
-    """
-    Placeholder until live VA backlog / throughput source is connected.
-    """
     return 50
 
 
 def score_media() -> int:
-    """
-    Placeholder until multi-source media sentiment engine is connected.
-    """
     return 50
 
 
 def composite_score(scores: dict) -> int:
-    """
-    Weighted composite. Affordability and employment carry the most weight.
-    """
     score = (
         scores["housing_affordability"] * 0.20
         + scores["cost_of_living"] * 0.25
