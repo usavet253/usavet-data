@@ -1,18 +1,20 @@
 {
   "date": "March 20, 2026",
-  "time": "03:11 AM PT",
-  "composite": 32,
-  "status": "High Pressure",
+  "time": "04:22 AM PT",
+  "composite": 50,
+  "status": "Moderate Pressure",
   "domains": {
-    "housing": 38,
-    "affordability": 0,
-    "employment": 38,
-    "morale": 57,
+    "housing": 50,
+    "affordability": 40,
+    "employment": 60,
+    "morale": 55,
     "benefits": 50,
-    "media": 48
+    "media": 50
   },
   "summary": [
-    "Composite conditions are high pressure at 32/100. Headline CPI was 2.4% year over year in 2026-02, with shelter at 3.0% and medical care services at 4.1%. The unemployment rate stood at 4.4%, while total nonfarm payrolls changed by -92.0 thousand month over month. Employment is deteriorating and price pressure is deteriorating. VA news signal volume was 30 items with 4 issue-pressure hits, informing media and benefits pressure."
+    "CPI index level is 327.46, previous 326.588.",
+    "Unemployment rate is 4.4%, previous 4.3%.",
+    "Composite score is 50/100 indicating moderate pressure."
   ],
   "pdf": "#"
 }

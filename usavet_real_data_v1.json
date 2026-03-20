@@ -1,135 +1,22 @@
 {
-  "engine_version": "v1.1",
-  "run_utc": "2026-03-20T03:11:33Z",
-  "source_family": "BLS Public Data API v2 + VA News RSS",
-  "metrics": {
-    "cpi_all_items": {
-      "series_id": "CUUR0000SA0",
-      "label": "CPI-U All Items",
-      "latest_period": "2026-02",
-      "latest_value": 326.785,
-      "prev_period": "2026-01",
-      "prev_value": 325.252,
-      "yoy_period": "2025-02",
-      "yoy_value": 319.082,
-      "mom_change": 1.5330000000000155,
-      "yoy_change": 2.4141129866304056,
-      "unit": "index"
-    },
-    "cpi_shelter": {
-      "series_id": "CUSR0000SAH1",
-      "label": "CPI-U Shelter",
-      "latest_period": "2026-02",
-      "latest_value": 422.942,
-      "prev_period": "2026-01",
-      "prev_value": 421.965,
-      "yoy_period": "2025-02",
-      "yoy_value": 410.793,
-      "mom_change": 0.9770000000000323,
-      "yoy_change": 2.9574505894696355,
-      "unit": "index"
-    },
-    "cpi_medical_services": {
-      "series_id": "CUSR0000SAM2",
-      "label": "CPI-U Medical Care Services",
-      "latest_period": "2026-02",
-      "latest_value": 648.884,
-      "prev_period": "2026-01",
-      "prev_value": 644.926,
-      "yoy_period": "2025-02",
-      "yoy_value": 623.344,
-      "mom_change": 3.95799999999997,
-      "yoy_change": 4.097256089735357,
-      "unit": "index"
-    },
-    "unemployment_rate": {
-      "series_id": "LNS14000000",
-      "label": "Unemployment Rate",
-      "latest_period": "2026-02",
-      "latest_value": 4.4,
-      "prev_period": "2026-01",
-      "prev_value": 4.3,
-      "yoy_period": "2025-02",
-      "yoy_value": 4.2,
-      "mom_change": 0.10000000000000053,
-      "yoy_change": 0.20000000000000018,
-      "unit": "percent"
-    },
-    "nonfarm_payrolls": {
-      "series_id": "CES0000000001",
-      "label": "All Employees, Total Nonfarm",
-      "latest_period": "2026-02",
-      "latest_value": 158466.0,
-      "prev_period": "2026-01",
-      "prev_value": 158558.0,
-      "yoy_period": "2025-02",
-      "yoy_value": 158310.0,
-      "mom_change": -92.0,
-      "yoy_change": 156.0,
-      "unit": "thousands"
-    }
-  },
-  "va_news_signal": {
-    "source": "VA News RSS",
-    "url": "https://news.va.gov/feed/",
-    "article_count": 30,
-    "negative_hits": 4,
-    "media_score": 48,
-    "benefits_score": 50,
-    "sample_titles": [
-      "Team RWB\u2019s inflection point: Why every movement must be reborn",
-      "What to expect when you call: A look at the National Call Center for Homeless Veterans",
-      "The Native American Direct Loan and one Veteran\u2019s journey to stability",
-      "VA announces fiscal year 2027 suicide prevention grant funding opportunity",
-      "Women Veterans leading change at VA"
-    ]
-  },
+  "timestamp": "2026-03-20T04:22:45.883052",
+  "composite_score": 50,
+  "status": "Moderate Pressure",
   "scores": {
-    "housing_stability": 38,
-    "cost_of_living_pressure": 0,
-    "employment_opportunity": 38,
-    "healthcare_system_signals": 57,
+    "housing_affordability": 50,
+    "cost_of_living": 40,
+    "employment": 60,
+    "health_wellbeing": 55,
     "benefits_processing": 50,
-    "media_environment": 48,
-    "veteran_morale_community": 30,
-    "housing_affordability": 38,
-    "cost_of_living": 0,
-    "employment": 38,
-    "health_wellbeing": 57,
-    "morale": 30,
-    "media": 48
+    "media_environment": 50
   },
-  "composite_score": 32,
-  "status": "High Pressure",
-  "narrative": "Composite conditions are high pressure at 32/100. Headline CPI was 2.4% year over year in 2026-02, with shelter at 3.0% and medical care services at 4.1%. The unemployment rate stood at 4.4%, while total nonfarm payrolls changed by -92.0 thousand month over month. Employment is deteriorating and price pressure is deteriorating. VA news signal volume was 30 items with 4 issue-pressure hits, informing media and benefits pressure.",
-  "source_index": [
-    {
-      "name": "BLS Public Data API v2",
-      "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/"
-    },
-    {
-      "name": "VA News RSS",
-      "url": "https://news.va.gov/feed/"
-    },
-    {
-      "name": "Series: CPI-U All Items",
-      "series_id": "CUUR0000SA0"
-    },
-    {
-      "name": "Series: CPI-U Shelter",
-      "series_id": "CUSR0000SAH1"
-    },
-    {
-      "name": "Series: CPI-U Medical Care Services",
-      "series_id": "CUSR0000SAM2"
-    },
-    {
-      "name": "Series: Unemployment Rate",
-      "series_id": "LNS14000000"
-    },
-    {
-      "name": "Series: All Employees, Total Nonfarm",
-      "series_id": "CES0000000001"
-    }
-  ]
+  "narrative": [
+    "CPI index level is 327.46, previous 326.588.",
+    "Unemployment rate is 4.4%, previous 4.3%.",
+    "Composite score is 50/100 indicating moderate pressure."
+  ],
+  "sources": {
+    "cpi": "FRED CPIAUCSL",
+    "unemployment": "FRED UNRATE"
+  }
 }
