@@ -1,20 +1,16 @@
 {
-  "date": "March 19, 2026",
-  "time": "08:15 AM PT",
-  "composite": 61,
-  "status": "Elevated but Stable",
+  "date": "March 20, 2026",
+  "time": "01:18 AM PT",
+  "composite": 30,
+  "status": "High Pressure",
   "domains": {
-    "housing": 57,
+    "housing": 55,
     "affordability": 60,
-    "employment": 72,
-    "morale": 57,
-    "benefits": 48,
+    "employment": 70,
+    "morale": 60,
+    "benefits": 50,
     "media": 46
   },
-  "summary": [
-    "Housing affordability remains the primary system pressure.",
-    "Employment conditions remain stable but uneven.",
-    "Veteran systems show partial resilience."
-  ],
+  "summary": "Composite conditions are high pressure at 30/100. Headline CPI was 2.4% year over year in 2026-02, with shelter at 3.0% and medical care services at 4.1%. The unemployment rate stood at 4.4%, while total nonfarm payrolls changed by -92.0 thousand month over month. Employment is deteriorating and price pressure is deteriorating, leaving household conditions stable only where labor resilience offsets housing and medical-cost drag.",
   "pdf": "#"
 }
