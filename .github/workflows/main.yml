@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -36,10 +38,18 @@ jobs:
           import json
           from datetime import datetime
 
-          with open("usavet_real_data_v1.json", "r") as f:
+          with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
               raw = json.load(f)
 
           now = datetime.now()
+
+          narrative = raw.get("narrative", "System stable")
+          if isinstance(narrative, str):
+              summary = [narrative]
+          elif isinstance(narrative, list):
+              summary = narrative
+          else:
+              summary = ["System stable"]
 
           daily = {
               "date": now.strftime("%B %d, %Y"),
@@ -54,19 +64,29 @@ jobs:
                   "benefits": raw.get("scores", {}).get("benefits_processing", 50),
                   "media": raw.get("scores", {}).get("media_environment", 46)
               },
-              "summary": raw.get("narrative", ["System stable"]),
+              "summary": summary,
               "pdf": "#"
           }
 
-          with open("daily.json", "w") as f:
+          with open("daily.json", "w", encoding="utf-8") as f:
               json.dump(daily, f, indent=2)
           PY
 
-      - name: Commit update
+      - name: Commit and push update
+        shell: bash
         run: |
           git config user.name "usavet-bot"
           git config user.email "bot@usavet.ai"
-          git add daily.json
-          git commit -m "Automated daily update" || echo "No changes"
-          git pull --rebase origin main
-          git push origin main
+
+          git add daily.json usavet_real_data_v1.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Automated daily update"
+
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
