@@ -1,26 +1,13 @@
 {
-  "timestamp": "2026-03-20T20:40:12.777734+00:00",
-  "data_status": "live",
-  "composite_score": 41,
+  "generated_at": "2026-03-20T21:30:24.014848",
   "status": "High Pressure",
+  "composite_score": 57,
   "scores": {
-    "housing_affordability": 5,
-    "cost_of_living": 23,
-    "employment": 62,
-    "interest_rates": 45,
-    "wage_growth": 61,
-    "consumer_sentiment": 56,
-    "health_wellbeing": 59,
-    "benefits_processing": 50,
-    "media_environment": 27
-  },
-  "sources": {
-    "cpi": "FRED CPIAUCSL",
-    "unemployment": "FRED UNRATE",
-    "fed_funds_rate": "FRED FEDFUNDS",
-    "wages": "FRED CES0500000003",
-    "sentiment": "FRED UMCSENT",
-    "housing_prices": "FRED CSUSHPISA",
-    "mortgage_rate": "FRED MORTGAGE30US"
+    "housing": 59,
+    "cost_of_living": 51,
+    "employment": 52,
+    "morale": 50,
+    "benefits": 73,
+    "media": 55
   }
 }

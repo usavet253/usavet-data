@@ -1,15 +1,15 @@
 {
   "date": "March 20, 2026",
-  "time": "08:40 PM PT",
-  "composite": 41,
+  "time": "09:30 PM PT",
+  "composite": 57,
   "status": "High Pressure",
   "domains": {
-    "housing": 5,
-    "affordability": 23,
-    "employment": 62,
-    "morale": 59,
+    "housing": 55,
+    "affordability": 51,
+    "employment": 52,
+    "morale": 60,
     "benefits": 50,
-    "media": 27
+    "media": 50
   },
   "summary": [
     "System stable"
