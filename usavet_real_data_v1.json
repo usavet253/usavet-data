@@ -1,32 +1,35 @@
 {
-  "timestamp": "2026-03-20T06:02:07.844097+00:00",
+  "timestamp": "2026-03-20T06:44:11.012924+00:00",
   "data_status": "live",
-  "composite_score": 45,
-  "status": "Moderate Pressure",
+  "composite_score": 40,
+  "status": "High Pressure",
   "scores": {
-    "housing_affordability": 32,
-    "cost_of_living": 12,
-    "employment": 63,
-    "interest_rates": 46,
-    "wage_growth": 62,
+    "housing_affordability": 23,
+    "cost_of_living": 0,
+    "employment": 62,
+    "interest_rates": 45,
+    "wage_growth": 61,
     "consumer_sentiment": 56,
     "health_wellbeing": 59,
     "benefits_processing": 50,
-    "media_environment": 50
+    "media_environment": 0
   },
   "narrative": [
     "CPI index level is 327.46, previous 326.59, indicating affordability conditions are deteriorating.",
     "Unemployment rate is 4.4%, previous 4.3%, indicating labor conditions are deteriorating.",
     "Average hourly earnings index is 37.32, previous 37.17, indicating wage conditions are improving.",
     "Federal funds rate is 3.64 and consumer sentiment is 56.4.",
-    "Composite score is 45/100 indicating moderate pressure."
+    "Benefits signal suggests contained friction; media signal suggests high narrative pressure.",
+    "Composite score is 40/100 indicating high pressure."
   ],
   "sources": {
     "cpi": "FRED CPIAUCSL",
     "unemployment": "FRED UNRATE",
     "fed_funds_rate": "FRED FEDFUNDS",
     "hourly_earnings": "FRED CES0500000003",
-    "consumer_sentiment": "FRED UMCSENT"
+    "consumer_sentiment": "FRED UMCSENT",
+    "benefits_processing": "proxy from labor + sentiment stress model",
+    "media_environment": "proxy from inflation + labor + sentiment pressure model"
   },
   "raw_inputs": {
     "cpi_latest": 327.46,
