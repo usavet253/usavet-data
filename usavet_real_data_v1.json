@@ -1,7 +1,7 @@
 {
-  "engine_version": "v1",
-  "run_utc": "2026-03-19T19:02:57Z",
-  "source_family": "BLS Public Data API v2",
+  "engine_version": "v1.1",
+  "run_utc": "2026-03-20T03:11:33Z",
+  "source_family": "BLS Public Data API v2 + VA News RSS",
   "metrics": {
     "cpi_all_items": {
       "series_id": "CUUR0000SA0",
@@ -69,20 +69,47 @@
       "unit": "thousands"
     }
   },
+  "va_news_signal": {
+    "source": "VA News RSS",
+    "url": "https://news.va.gov/feed/",
+    "article_count": 30,
+    "negative_hits": 4,
+    "media_score": 48,
+    "benefits_score": 50,
+    "sample_titles": [
+      "Team RWB\u2019s inflection point: Why every movement must be reborn",
+      "What to expect when you call: A look at the National Call Center for Homeless Veterans",
+      "The Native American Direct Loan and one Veteran\u2019s journey to stability",
+      "VA announces fiscal year 2027 suicide prevention grant funding opportunity",
+      "Women Veterans leading change at VA"
+    ]
+  },
   "scores": {
     "housing_stability": 38,
     "cost_of_living_pressure": 0,
     "employment_opportunity": 38,
     "healthcare_system_signals": 57,
-    "veteran_morale_community": 27
+    "benefits_processing": 50,
+    "media_environment": 48,
+    "veteran_morale_community": 30,
+    "housing_affordability": 38,
+    "cost_of_living": 0,
+    "employment": 38,
+    "health_wellbeing": 57,
+    "morale": 30,
+    "media": 48
   },
-  "composite_score": 30,
+  "composite_score": 32,
   "status": "High Pressure",
-  "narrative": "Composite conditions are high pressure at 30/100. Headline CPI was 2.4% year over year in 2026-02, with shelter at 3.0% and medical care services at 4.1%. The unemployment rate stood at 4.4%, while total nonfarm payrolls changed by -92.0 thousand month over month. Employment is deteriorating and price pressure is deteriorating, leaving household conditions stable only where labor resilience offsets housing and medical-cost drag.",
+  "narrative": "Composite conditions are high pressure at 32/100. Headline CPI was 2.4% year over year in 2026-02, with shelter at 3.0% and medical care services at 4.1%. The unemployment rate stood at 4.4%, while total nonfarm payrolls changed by -92.0 thousand month over month. Employment is deteriorating and price pressure is deteriorating. VA news signal volume was 30 items with 4 issue-pressure hits, informing media and benefits pressure.",
   "source_index": [
     {
       "name": "BLS Public Data API v2",
       "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+    },
+    {
+      "name": "VA News RSS",
+      "url": "https://news.va.gov/feed/"
     },
     {
       "name": "Series: CPI-U All Items",
