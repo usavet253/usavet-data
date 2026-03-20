@@ -6,6 +6,17 @@ import requests
 
 
 FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
+OUTPUT_FILE = "usavet_real_data_v1.json"
+
+
+def load_previous_output():
+    if not os.path.exists(OUTPUT_FILE):
+        return None
+    try:
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
 
 
 def get_fred_series(series_id: str):
@@ -76,17 +87,15 @@ def score_employment(unrate_latest: float, unrate_previous: float) -> int:
 
 
 def score_housing(affordability_score: int, employment_score: int) -> int:
-    score = (affordability_score * 0.7) + (employment_score * 0.3)
-    return clamp(score)
+    return clamp((affordability_score * 0.7) + (employment_score * 0.3))
 
 
 def score_morale(affordability_score: int, employment_score: int, housing_score: int) -> int:
-    score = (
+    return clamp(
         affordability_score * 0.35
         + employment_score * 0.35
         + housing_score * 0.30
     )
-    return clamp(score)
 
 
 def score_benefits() -> int:
@@ -98,7 +107,7 @@ def score_media() -> int:
 
 
 def composite_score(scores: dict) -> int:
-    score = (
+    return clamp(
         scores["housing_affordability"] * 0.20
         + scores["cost_of_living"] * 0.25
         + scores["employment"] * 0.25
@@ -106,7 +115,6 @@ def composite_score(scores: dict) -> int:
         + scores["benefits_processing"] * 0.10
         + scores["media_environment"] * 0.10
     )
-    return clamp(score)
 
 
 def status_from_score(score: int) -> str:
@@ -122,7 +130,6 @@ def status_from_score(score: int) -> str:
 def direction_label(latest: float, previous: float, inverse_good: bool = False) -> str:
     if latest == previous:
         return "stable"
-
     improving = latest < previous if inverse_good else latest > previous
     return "improving" if improving else "deteriorating"
 
@@ -138,10 +145,7 @@ def build_narrative(cpi_latest, cpi_previous, unrate_latest, unrate_previous, co
     ]
 
 
-def main():
-    cpi_latest, cpi_previous = get_fred_series("CPIAUCSL")
-    unrate_latest, unrate_previous = get_fred_series("UNRATE")
-
+def build_output(cpi_latest, cpi_previous, unrate_latest, unrate_previous, data_status, error_message=None):
     affordability_score = score_affordability(cpi_latest, cpi_previous)
     employment_score = score_employment(unrate_latest, unrate_previous)
     housing_score = score_housing(affordability_score, employment_score)
@@ -163,6 +167,7 @@ def main():
 
     output = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
+        "data_status": data_status,
         "composite_score": composite,
         "status": status,
         "scores": scores,
@@ -186,7 +191,41 @@ def main():
         },
     }
 
-    with open("usavet_real_data_v1.json", "w", encoding="utf-8") as f:
+    if error_message:
+        output["warning"] = error_message
+
+    return output
+
+
+def main():
+    previous = load_previous_output()
+
+    try:
+        cpi_latest, cpi_previous = get_fred_series("CPIAUCSL")
+        unrate_latest, unrate_previous = get_fred_series("UNRATE")
+        output = build_output(
+            cpi_latest,
+            cpi_previous,
+            unrate_latest,
+            unrate_previous,
+            data_status="live"
+        )
+
+    except Exception as e:
+        if previous and "raw_inputs" in previous:
+            raw = previous["raw_inputs"]
+            output = build_output(
+                raw["cpi_latest"],
+                raw["cpi_previous"],
+                raw["unemployment_latest"],
+                raw["unemployment_previous"],
+                data_status="fallback_cached",
+                error_message=str(e),
+            )
+        else:
+            raise
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
 
     print("Real data file generated")
