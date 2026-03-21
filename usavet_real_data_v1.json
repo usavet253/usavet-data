@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-21T06:08:35.127992+00:00",
+  "generated_at": "2026-03-21T06:28:07.980274+00:00",
   "status": "Elevated Pressure",
-  "composite_score": 53,
+  "composite_score": 54,
   "scores": {
     "housing": 54,
-    "cost_of_living": 56,
-    "employment": 54,
-    "morale": 40,
-    "benefits": 61,
-    "media": 54
+    "cost_of_living": 58,
+    "employment": 55,
+    "morale": 41,
+    "benefits": 60,
+    "media": 56
   },
   "summary": [
     "System under elevated pressure",
@@ -17,18 +17,18 @@
     "Employment strain elevated"
   ],
   "narrative": [
-    "Composite score: 53.",
-    "Highest pressure domain: benefits (61).",
-    "Second highest pressure domain: cost of living (56).",
-    "Most stable domain: morale (40).",
+    "Composite score: 54.",
+    "Highest pressure domain: benefits (60).",
+    "Second highest pressure domain: cost of living (58).",
+    "Most stable domain: morale (41).",
     "Sources analyzed successfully: 13 of 20.",
-    "NewsAPI articles used: 13."
+    "NewsAPI kept 7 of 13 articles after relevance filtering."
   ],
   "display_trends": {
     "composite": {
-      "current": 53,
-      "delta_7": -1,
-      "delta_30": -3,
+      "current": 54,
+      "delta_7": 0,
+      "delta_30": -2,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
@@ -41,7 +41,8 @@
         53,
         53,
         54,
-        53
+        53,
+        54
       ]
     },
     "housing": {
@@ -60,16 +61,17 @@
         55,
         54,
         55,
+        54,
         54
       ]
     },
     "cost_of_living": {
-      "current": 56,
-      "delta_7": -2,
-      "delta_30": -9,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
+      "current": 58,
+      "delta_7": -1,
+      "delta_30": -7,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
         65,
         58,
@@ -79,16 +81,17 @@
         58,
         58,
         56,
-        56
+        56,
+        58
       ]
     },
     "employment": {
-      "current": 54,
-      "delta_7": -2,
-      "delta_30": 0,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
+      "current": 55,
+      "delta_7": -1,
+      "delta_30": 1,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
         54,
         56,
@@ -98,13 +101,14 @@
         54,
         54,
         54,
-        54
+        54,
+        55
       ]
     },
     "morale": {
-      "current": 40,
+      "current": 41,
       "delta_7": -1,
-      "delta_30": -20,
+      "delta_30": -19,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
@@ -117,13 +121,14 @@
         43,
         41,
         43,
-        40
+        40,
+        41
       ]
     },
     "benefits": {
-      "current": 61,
-      "delta_7": 4,
-      "delta_30": 8,
+      "current": 60,
+      "delta_7": 3,
+      "delta_30": 7,
       "direction": "up",
       "arrow": "\u25b2",
       "color": "green",
@@ -136,16 +141,17 @@
         58,
         58,
         61,
-        61
+        61,
+        60
       ]
     },
     "media": {
-      "current": 54,
-      "delta_7": -3,
-      "delta_30": 0,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
+      "current": 56,
+      "delta_7": 0,
+      "delta_30": 2,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
         54,
         57,
@@ -155,7 +161,8 @@
         52,
         53,
         53,
-        54
+        54,
+        56
       ]
     }
   },
@@ -177,7 +184,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 9,
+    "history_points": 10,
     "source_signal_map_loaded": true
   },
   "fred": {
@@ -197,19 +204,30 @@
     "enabled": true,
     "queries_run": 6,
     "articles_used": 13,
+    "articles_kept": 7,
+    "articles_dropped": 6,
     "errors": [],
     "tier_counts": {
       "tier_1": 1,
-      "tier_2": 6,
-      "tier_3": 6
+      "tier_2": 4,
+      "tier_3": 2
     },
     "type_counts": {
       "policy": 0,
       "operational": 0,
-      "media": 7,
-      "sentiment": 6
+      "media": 5,
+      "sentiment": 2
     },
-    "tier_3_guardrails_enabled": true
+    "tier_3_guardrails_enabled": true,
+    "domain_relevance_filtering_enabled": true,
+    "domain_drop_counts": {
+      "housing": 0,
+      "cost_of_living": 1,
+      "employment": 0,
+      "morale": 0,
+      "benefits": 5,
+      "media": 0
+    }
   },
   "sources": [
     {
@@ -435,50 +453,6 @@
   ],
   "newsapi_sources": [
     {
-      "key": "newsapi_cost_of_living",
-      "url": "https://www.rawstory.com/rfk-jr-2675367214/",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "cost_of_living",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "Raw Story",
-      "title": "RFK sparks firestorm with new advice for broke Americans to eat 'peasant food'"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://www.commondreams.org/news/republicans-balanced-budget-amendment",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "benefits",
-      "freshness": 95,
-      "source_kind": "newsapi",
-      "source_name": "Common Dreams",
-      "title": "Nearly Every House Republican Votes for Amendment That Would Slash Medicare, Social Security"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://channel4news.substack.com/p/the-nottingham-inquiry-what-lessons/comment/215640700",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "benefits",
-      "freshness": 80,
-      "source_kind": "newsapi",
-      "source_name": "Substack.com",
-      "title": "Comments - How the Nottingham inquiry shines a spotlight on other key mental health care failings"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://www.rawstory.com/doj-2675699117/",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "benefits",
-      "freshness": 72,
-      "source_kind": "newsapi",
-      "source_name": "Raw Story",
-      "title": "Trump DOJ attorney humiliated as\u00a0 bogus quotes exposed in court"
-    },
-    {
       "key": "newsapi_benefits",
       "url": "https://economictimes.indiatimes.com/news/international/us/social-security-changes-march-7-new-ssa-national-system-will-affect-70-million-americans-heres-what-exactly-changes-for-beneficiaries/articleshow/129101752.cms",
       "tier": "tier_2",
@@ -535,17 +509,6 @@
     },
     {
       "key": "newsapi_benefits",
-      "url": "https://www.globenewswire.com/news-release/2026/02/24/3243928/0/en/INVESTOR-ALERT-Class-Action-Lawsuit-Filed-on-Behalf-of-Zynex-Inc-ZYXIQ-Investors-Holzer-Holzer-LLC-Encourages-Investors-With-Significant-Losses-to-Contact-the-Firm.html",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "GlobeNewswire",
-      "title": "INVESTOR ALERT: Class Action Lawsuit Filed on Behalf of Zynex, Inc. (ZYXIQ)\u00a0Investors \u2013 Holzer & Holzer, LLC Encourages Investors With Significant Losses to Contact the Firm"
-    },
-    {
-      "key": "newsapi_benefits",
       "url": "https://freerepublic.com/focus/f-vetscor/4367925/posts",
       "tier": "tier_3",
       "type": "sentiment",
@@ -557,17 +520,6 @@
     },
     {
       "key": "newsapi_benefits",
-      "url": "https://soldiersystems.net/2026/02/21/va-undoes-decades-old-wrong-and-protects-veterans-second-amendment-rights/",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "Soldiersystems.net",
-      "title": "VA Undoes Decades-Old Wrong and Protects Veterans\u2019 Second Amendment Rights"
-    },
-    {
-      "key": "newsapi_benefits",
       "url": "https://www.kpbs.org/news/local/2026/02/20/va-reverses-course-on-disability-rule-change-advocates-warn-its-not-going-away",
       "tier": "tier_2",
       "type": "media",
@@ -576,6 +528,74 @@
       "source_kind": "newsapi",
       "source_name": "KPBS",
       "title": "VA reverses course on disability rule change; advocates warn it's not going away"
+    }
+  ],
+  "newsapi_dropped_sources": [
+    {
+      "key": "newsapi_cost_of_living",
+      "url": "https://www.rawstory.com/rfk-jr-2675367214/",
+      "tier": "tier_3",
+      "type": "sentiment",
+      "mapped_domain": "cost_of_living",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "Raw Story",
+      "title": "RFK sparks firestorm with new advice for broke Americans to eat 'peasant food'"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.commondreams.org/news/republicans-balanced-budget-amendment",
+      "tier": "tier_3",
+      "type": "sentiment",
+      "mapped_domain": "benefits",
+      "freshness": 95,
+      "source_kind": "newsapi",
+      "source_name": "Common Dreams",
+      "title": "Nearly Every House Republican Votes for Amendment That Would Slash Medicare, Social Security"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://channel4news.substack.com/p/the-nottingham-inquiry-what-lessons/comment/215640700",
+      "tier": "tier_3",
+      "type": "sentiment",
+      "mapped_domain": "benefits",
+      "freshness": 80,
+      "source_kind": "newsapi",
+      "source_name": "Substack.com",
+      "title": "Comments - How the Nottingham inquiry shines a spotlight on other key mental health care failings"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.rawstory.com/doj-2675699117/",
+      "tier": "tier_3",
+      "type": "sentiment",
+      "mapped_domain": "benefits",
+      "freshness": 72,
+      "source_kind": "newsapi",
+      "source_name": "Raw Story",
+      "title": "Trump DOJ attorney humiliated as\u00a0 bogus quotes exposed in court"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.globenewswire.com/news-release/2026/02/24/3243928/0/en/INVESTOR-ALERT-Class-Action-Lawsuit-Filed-on-Behalf-of-Zynex-Inc-ZYXIQ-Investors-Holzer-Holzer-LLC-Encourages-Investors-With-Significant-Losses-to-Contact-the-Firm.html",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "GlobeNewswire",
+      "title": "INVESTOR ALERT: Class Action Lawsuit Filed on Behalf of Zynex, Inc. (ZYXIQ)\u00a0Investors \u2013 Holzer & Holzer, LLC Encourages Investors With Significant Losses to Contact the Firm"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://soldiersystems.net/2026/02/21/va-undoes-decades-old-wrong-and-protects-veterans-second-amendment-rights/",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "Soldiersystems.net",
+      "title": "VA Undoes Decades-Old Wrong and Protects Veterans\u2019 Second Amendment Rights"
     }
   ]
 }
