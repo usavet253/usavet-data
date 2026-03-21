@@ -23,7 +23,7 @@ HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/123.0 Safari/537.36 USAVET-Index/5.0"
+        "Chrome/123.0 Safari/537.36 USAVET-Index/6.0"
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
@@ -131,6 +131,53 @@ NEWSAPI_QUERIES = {
     "morale": '"veterans" OR "military families" OR "service members" morale stress burnout mental health readiness',
     "benefits": '"VA benefits" OR "veterans benefits" OR "claims backlog" OR "GI Bill" OR "TRICARE" OR "disability claims"',
     "media": '"veterans" OR "military families" oversight hearing investigation lawsuit policy congress VA DoD',
+}
+
+# News outlet classification for NewsAPI sources
+# Goal: tier high-trust outlets above noisy aggregators/blogs
+NEWS_SOURCE_TIER_RULES = {
+    "tier_1": {
+        "npr": "media",
+        "associated press": "media",
+        "ap news": "media",
+        "reuters": "media",
+        "stars and stripes": "media",
+        "military times": "media",
+        "military.com": "media",
+        "defense.gov": "operational",
+        "department of defense": "operational",
+        "va news": "operational",
+        "u.s. department of veterans affairs": "operational",
+        "veterans affairs": "operational",
+        "federal register": "policy",
+        "congress.gov": "policy",
+    },
+    "tier_2": {
+        "defense news": "media",
+        "defensenews": "media",
+        "defense one": "media",
+        "task & purpose": "media",
+        "task and purpose": "media",
+        "fox news": "media",
+        "nypost": "media",
+        "new york post": "media",
+        "washington examiner": "media",
+        "the hill": "media",
+        "newsweek": "media",
+        "usa today": "media",
+        "kpbs": "media",
+        "globenewswire": "media",
+        "times of india": "media",
+        "soldiersystems.net": "media",
+    },
+    "tier_3": {
+        "substack": "sentiment",
+        "raw story": "sentiment",
+        "common dreams": "sentiment",
+        "free republic": "sentiment",
+        "freerepublic.com": "sentiment",
+        "blog": "sentiment",
+    },
 }
 
 
@@ -399,6 +446,24 @@ def newsapi_headers():
     }
 
 
+def classify_newsapi_source(source_name):
+    name = normalize_whitespace((source_name or "")).lower()
+
+    for key, source_type in NEWS_SOURCE_TIER_RULES["tier_1"].items():
+        if key in name:
+            return "tier_1", source_type
+
+    for key, source_type in NEWS_SOURCE_TIER_RULES["tier_2"].items():
+        if key in name:
+            return "tier_2", source_type
+
+    for key, source_type in NEWS_SOURCE_TIER_RULES["tier_3"].items():
+        if key in name:
+            return "tier_3", source_type
+
+    return "tier_3", "sentiment"
+
+
 def fetch_newsapi_articles_for_domain(domain_name, query):
     if not NEWS_API_KEY:
         return {"ok": False, "status": "missing_api_key", "articles": []}
@@ -441,6 +506,7 @@ def fetch_newsapi_articles_for_domain(domain_name, query):
             source_name = source.get("name") or ""
 
         published_at = parse_iso_datetime(article.get("publishedAt"))
+        tier, source_type = classify_newsapi_source(source_name)
 
         normalized.append({
             "title": title,
@@ -449,6 +515,8 @@ def fetch_newsapi_articles_for_domain(domain_name, query):
             "published_at": published_at,
             "url": article.get("url") or "",
             "domain_name": domain_name,
+            "tier": tier,
+            "type": source_type,
         })
 
     return {"ok": True, "status": "ok", "articles": normalized}
@@ -473,8 +541,8 @@ def analyze_newsapi_article(article):
     return {
         "key": f"newsapi_{article.get('domain_name', 'general')}",
         "url": article.get("url", ""),
-        "tier": "tier_2",
-        "type": "media",
+        "tier": article.get("tier", "tier_3"),
+        "type": article.get("type", "sentiment"),
         "mapped_domain": article.get("domain_name", "general"),
         "ok": True,
         "status_code": 200,
@@ -495,6 +563,8 @@ def fetch_and_analyze_newsapi():
             "queries_run": 0,
             "articles_used": 0,
             "errors": ["missing_api_key"],
+            "tier_counts": {"tier_1": 0, "tier_2": 0, "tier_3": 0},
+            "type_counts": {"policy": 0, "operational": 0, "media": 0, "sentiment": 0},
         }
 
     results = []
@@ -512,11 +582,26 @@ def fetch_and_analyze_newsapi():
         for article in payload["articles"]:
             results.append(analyze_newsapi_article(article))
 
+    tier_counts = {
+        "tier_1": sum(1 for x in results if x["tier"] == "tier_1"),
+        "tier_2": sum(1 for x in results if x["tier"] == "tier_2"),
+        "tier_3": sum(1 for x in results if x["tier"] == "tier_3"),
+    }
+
+    type_counts = {
+        "policy": sum(1 for x in results if x["type"] == "policy"),
+        "operational": sum(1 for x in results if x["type"] == "operational"),
+        "media": sum(1 for x in results if x["type"] == "media"),
+        "sentiment": sum(1 for x in results if x["type"] == "sentiment"),
+    }
+
     meta = {
         "enabled": True,
         "queries_run": queries_run,
         "articles_used": len(results),
         "errors": errors,
+        "tier_counts": tier_counts,
+        "type_counts": type_counts,
     }
 
     return results, meta
@@ -573,7 +658,12 @@ def score_domain(source_results, domain_name, baseline):
         score += mapped_domain_bonus(item, domain_name)
 
         if item.get("source_kind") == "newsapi":
-            score += 2
+            if item["tier"] == "tier_1":
+                score += 5
+            elif item["tier"] == "tier_2":
+                score += 2
+            elif item["tier"] == "tier_3":
+                score -= 1
 
         values.append((clamp(score), weight))
 
