@@ -1,104 +1,112 @@
 {
-  "generated_at": "2026-03-20T22:15:12.629883+00:00",
-  "status": "High Pressure",
-  "composite_score": 56,
+  "generated_at": "2026-03-21T03:39:30.497543+00:00",
+  "status": "Elevated Pressure",
+  "composite_score": 54,
   "scores": {
-    "housing": 52,
-    "cost_of_living": 65,
-    "employment": 54,
-    "morale": 60,
-    "benefits": 53,
-    "media": 54
+    "housing": 53,
+    "cost_of_living": 58,
+    "employment": 56,
+    "morale": 41,
+    "benefits": 57,
+    "media": 57
   },
   "summary": [
-    "System under high pressure",
+    "System under elevated pressure",
     "Affordability pressure elevated",
-    "Morale stress elevated"
+    "Housing strain elevated",
+    "Employment strain elevated"
   ],
   "narrative": [
-    "Composite pressure score: 56.",
-    "Primary pressure domain: cost of living (65).",
-    "Secondary pressure domain: morale (60).",
-    "Most stable domain: housing (52).",
+    "Composite score: 54.",
+    "Highest pressure domain: cost of living (58).",
+    "Second highest pressure domain: benefits (57).",
+    "Most stable domain: morale (41).",
     "Sources analyzed successfully: 13 of 20.",
     "FRED unemployment reference: 4.4%."
   ],
   "display_trends": {
     "composite": {
-      "current": 56,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
+      "current": 54,
+      "delta_7": -2,
+      "delta_30": -2,
+      "direction": "down",
+      "arrow": "\u25bc",
+      "color": "red",
       "sparkline": [
-        56
+        56,
+        54
       ]
     },
     "housing": {
-      "current": 52,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        52
-      ]
-    },
-    "cost_of_living": {
-      "current": 65,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        65
-      ]
-    },
-    "employment": {
-      "current": 54,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        54
-      ]
-    },
-    "morale": {
-      "current": 60,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        60
-      ]
-    },
-    "benefits": {
       "current": 53,
-      "delta_7": 0,
-      "delta_30": 0,
+      "delta_7": 1,
+      "delta_30": 1,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
+        52,
         53
       ]
     },
-    "media": {
-      "current": 54,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
+    "cost_of_living": {
+      "current": 58,
+      "delta_7": -7,
+      "delta_30": -7,
+      "direction": "down",
+      "arrow": "\u25bc",
+      "color": "red",
       "sparkline": [
-        54
+        65,
+        58
+      ]
+    },
+    "employment": {
+      "current": 56,
+      "delta_7": 2,
+      "delta_30": 2,
+      "direction": "up",
+      "arrow": "\u25b2",
+      "color": "green",
+      "sparkline": [
+        54,
+        56
+      ]
+    },
+    "morale": {
+      "current": 41,
+      "delta_7": -19,
+      "delta_30": -19,
+      "direction": "down",
+      "arrow": "\u25bc",
+      "color": "red",
+      "sparkline": [
+        60,
+        41
+      ]
+    },
+    "benefits": {
+      "current": 57,
+      "delta_7": 4,
+      "delta_30": 4,
+      "direction": "up",
+      "arrow": "\u25b2",
+      "color": "green",
+      "sparkline": [
+        53,
+        57
+      ]
+    },
+    "media": {
+      "current": 57,
+      "delta_7": 3,
+      "delta_30": 3,
+      "direction": "up",
+      "arrow": "\u25b2",
+      "color": "green",
+      "sparkline": [
+        54,
+        57
       ]
     }
   },
@@ -112,7 +120,15 @@
       "tier_2": 10,
       "tier_3": 0
     },
-    "history_points": 1
+    "type_counts": {
+      "policy": 4,
+      "operational": 10,
+      "media": 6,
+      "sentiment": 0,
+      "unknown": 0
+    },
+    "history_points": 2,
+    "source_signal_map_loaded": true
   },
   "fred": {
     "cpi": 327.46,
@@ -121,149 +137,209 @@
   },
   "fred_domain_adjustments": {
     "housing": 2,
-    "cost_of_living": 8,
+    "cost_of_living": 0,
     "employment": 0,
-    "morale": 10,
+    "morale": -10,
     "benefits": 0,
     "media": 0
   },
   "sources": [
     {
+      "key": "va_news",
       "url": "https://news.va.gov",
       "tier": "tier_1",
+      "type": "operational",
+      "mapped_domain": "benefits",
       "ok": true,
       "status_code": 200,
       "freshness": 50
     },
     {
+      "key": "va_press",
       "url": "https://www.va.gov/opa/pressrel",
       "tier": "tier_1",
+      "type": "operational",
+      "mapped_domain": "benefits",
       "ok": true,
       "status_code": 200,
       "freshness": 50
     },
     {
+      "key": "defense_news",
       "url": "https://www.defense.gov/News",
       "tier": "tier_1",
+      "type": "operational",
+      "mapped_domain": "employment",
       "ok": false,
       "status_code": 403,
       "freshness": 50
     },
     {
+      "key": "federal_register",
       "url": "https://www.federalregister.gov",
       "tier": "tier_1",
+      "type": "policy",
+      "mapped_domain": "policy",
       "ok": true,
       "status_code": 200,
       "freshness": 50
     },
     {
+      "key": "congress",
       "url": "https://www.congress.gov",
       "tier": "tier_1",
+      "type": "policy",
+      "mapped_domain": "policy",
       "ok": false,
       "status_code": 403,
       "freshness": 50
     },
     {
+      "key": "senate_va",
       "url": "https://www.veterans.senate.gov",
       "tier": "tier_1",
+      "type": "policy",
+      "mapped_domain": "benefits",
       "ok": true,
       "status_code": 200,
       "freshness": 50
     },
     {
+      "key": "house_va",
       "url": "https://veterans.house.gov",
       "tier": "tier_1",
+      "type": "policy",
+      "mapped_domain": "benefits",
       "ok": true,
       "status_code": 200,
       "freshness": 95
     },
     {
+      "key": "stripes",
       "url": "https://www.stripes.com",
       "tier": "tier_1",
+      "type": "media",
+      "mapped_domain": "general",
       "ok": true,
       "status_code": 200,
       "freshness": 95
     },
     {
+      "key": "military_com",
       "url": "https://www.military.com",
       "tier": "tier_1",
+      "type": "media",
+      "mapped_domain": "general",
       "ok": true,
       "status_code": 200,
       "freshness": 95
     },
     {
+      "key": "military_times",
       "url": "https://www.militarytimes.com",
       "tier": "tier_1",
+      "type": "media",
+      "mapped_domain": "general",
       "ok": true,
       "status_code": 200,
       "freshness": 95
     },
     {
+      "key": "task_purpose",
       "url": "https://taskandpurpose.com",
       "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "general",
       "ok": true,
       "status_code": 200,
       "freshness": 50
     },
     {
+      "key": "defense_news_media",
       "url": "https://www.defensenews.com",
       "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "general",
       "ok": true,
       "status_code": 200,
       "freshness": 95
     },
     {
+      "key": "defense_one",
       "url": "https://www.defenseone.com",
       "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "policy",
       "ok": true,
       "status_code": 200,
       "freshness": 95
     },
     {
+      "key": "army_news",
       "url": "https://www.army.mil/news",
       "tier": "tier_2",
+      "type": "operational",
+      "mapped_domain": "employment",
       "ok": true,
       "status_code": 200,
       "freshness": 50
     },
     {
+      "key": "navy_news",
       "url": "https://www.navy.mil/Press-Office/News-Stories",
       "tier": "tier_2",
+      "type": "operational",
+      "mapped_domain": "employment",
       "ok": false,
       "status_code": 403,
       "freshness": 50
     },
     {
+      "key": "airforce_news",
       "url": "https://www.af.mil/News",
       "tier": "tier_2",
+      "type": "operational",
+      "mapped_domain": "employment",
       "ok": false,
       "status_code": 403,
       "freshness": 50
     },
     {
+      "key": "marines_news",
       "url": "https://www.marines.mil/News",
       "tier": "tier_2",
+      "type": "operational",
+      "mapped_domain": "employment",
       "ok": false,
       "status_code": 403,
       "freshness": 50
     },
     {
+      "key": "spaceforce_news",
       "url": "https://www.spaceforce.mil/News",
       "tier": "tier_2",
+      "type": "operational",
+      "mapped_domain": "employment",
       "ok": false,
       "status_code": 403,
       "freshness": 50
     },
     {
+      "key": "nrd",
       "url": "https://www.nrd.gov",
       "tier": "tier_2",
+      "type": "operational",
+      "mapped_domain": "support",
       "ok": true,
       "status_code": 200,
       "freshness": 64
     },
     {
+      "key": "military_one_source",
       "url": "https://www.militaryonesource.mil",
       "tier": "tier_2",
+      "type": "operational",
+      "mapped_domain": "support",
       "ok": false,
       "status_code": 403,
       "freshness": 50

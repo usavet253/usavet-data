@@ -12,5 +12,19 @@
       "benefits": 53,
       "media": 54
     }
+  },
+  {
+    "generated_at": "2026-03-21T03:39:30.497543+00:00",
+    "date": "2026-03-21",
+    "composite_score": 54,
+    "status": "Elevated Pressure",
+    "scores": {
+      "housing": 53,
+      "cost_of_living": 58,
+      "employment": 56,
+      "morale": 41,
+      "benefits": 57,
+      "media": 57
+    }
   }
 ]
