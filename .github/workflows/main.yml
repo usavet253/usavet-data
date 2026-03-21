@@ -36,6 +36,7 @@ jobs:
           CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
           BEA_API_KEY: ${{ secrets.BEA_API_KEY }}
           VA_API_KEY: ${{ secrets.VA_API_KEY }}
+          VA_BENEFITS_API_KEY: ${{ secrets.VA_BENEFITS_API_KEY }}
         run: python usavet_real_data_engine_v1.py
 
       - name: Show generated files
