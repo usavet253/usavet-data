@@ -1,26 +1,29 @@
 {
-  "generated_at": "2026-03-21T23:47:59.451105+00:00",
+  "generated_at": "2026-03-21T23:57:19.680043+00:00",
   "diagnostics": {
-    "successful_sources": 6,
-    "failed_sources": 14,
+    "successful_sources": 7,
+    "failed_sources": 13,
     "tier_1": 1,
     "tier_2": 1,
-    "policy": 50
+    "policy": 25
+  },
+  "hud": {
+    "ok": true
   },
   "va": {
     "ok": false,
     "reason": "no response"
   },
-  "hud": {
-    "ok": false
-  },
-  "federal": {
-    "ok": true,
-    "count": 50
+  "bea": {
+    "ok": true
   },
   "news": {
     "tier_1": 1,
     "tier_2": 1,
     "kept": 2
+  },
+  "federal": {
+    "ok": true,
+    "count": 25
   }
 }
