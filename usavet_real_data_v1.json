@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-21T23:03:52.693510+00:00",
+  "generated_at": "2026-03-21T23:27:07.653317+00:00",
   "status": "Elevated Pressure",
   "composite_score": 54,
   "scores": {
-    "housing": 53,
-    "cost_of_living": 59,
-    "employment": 56,
-    "morale": 41,
-    "benefits": 59,
+    "housing": 54,
+    "cost_of_living": 58,
+    "employment": 55,
+    "morale": 43,
+    "benefits": 60,
     "media": 56
   },
   "summary": [
@@ -18,9 +18,9 @@
   ],
   "narrative": [
     "Composite score: 54.",
-    "Highest pressure domain: cost of living (59).",
-    "Second highest pressure domain: benefits (59).",
-    "Most stable domain: morale (41).",
+    "Highest pressure domain: benefits (60).",
+    "Second highest pressure domain: cost of living (58).",
+    "Most stable domain: morale (43).",
     "Sources analyzed successfully: 13 of 20.",
     "NewsAPI kept 7 of 13 articles after relevance filtering."
   ],
@@ -34,12 +34,12 @@
       "color": "yellow",
       "sparkline": [
         54,
-        54,
         53,
         53,
         53,
         54,
         53,
+        54,
         54,
         54,
         54,
@@ -50,15 +50,14 @@
       ]
     },
     "housing": {
-      "current": 53,
-      "delta_7": -1,
-      "delta_30": 1,
+      "current": 54,
+      "delta_7": 0,
+      "delta_30": 2,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
         53,
-        53,
         54,
         55,
         54,
@@ -70,18 +69,18 @@
         54,
         54,
         53,
-        53
+        53,
+        54
       ]
     },
     "cost_of_living": {
-      "current": 59,
-      "delta_7": 1,
-      "delta_30": -6,
+      "current": 58,
+      "delta_7": 0,
+      "delta_30": -7,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        58,
         59,
         58,
         58,
@@ -94,42 +93,42 @@
         58,
         58,
         58,
-        59
+        59,
+        58
       ]
     },
     "employment": {
-      "current": 56,
+      "current": 55,
       "delta_7": 1,
-      "delta_30": 2,
+      "delta_30": 1,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
         56,
+        54,
+        54,
+        54,
+        54,
+        54,
+        55,
+        54,
+        55,
+        55,
+        55,
+        55,
         56,
-        54,
-        54,
-        54,
-        54,
-        54,
-        55,
-        54,
-        55,
-        55,
-        55,
-        55,
-        56
+        55
       ]
     },
     "morale": {
-      "current": 41,
-      "delta_7": 0,
-      "delta_30": -19,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
+      "current": 43,
+      "delta_7": 2,
+      "delta_30": -17,
+      "direction": "up",
+      "arrow": "\u25b2",
+      "color": "green",
       "sparkline": [
-        41,
         42,
         41,
         43,
@@ -142,19 +141,19 @@
         40,
         40,
         41,
-        41
+        41,
+        43
       ]
     },
     "benefits": {
-      "current": 59,
-      "delta_7": -1,
-      "delta_30": 6,
+      "current": 60,
+      "delta_7": 0,
+      "delta_30": 7,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
         57,
-        57,
         58,
         58,
         58,
@@ -166,18 +165,18 @@
         59,
         59,
         60,
-        59
+        59,
+        60
       ]
     },
     "media": {
       "current": 56,
-      "delta_7": 0,
+      "delta_7": 1,
       "delta_30": 2,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        57,
         56,
         53,
         52,
@@ -190,6 +189,7 @@
         55,
         55,
         55,
+        56,
         56
       ]
     }
@@ -289,7 +289,7 @@
     "bls_api_key_present": true,
     "census_api_key_present": true,
     "bea_api_key_present": true,
-    "hud_api_key_present": false,
+    "hud_api_key_present": true,
     "va_api_key_present": true,
     "va_benefits_api_key_present": true,
     "federal_register_key_required": false,
@@ -305,7 +305,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 16,
+    "history_points": 17,
     "source_signal_map_loaded": true,
     "regional_model_enabled": true,
     "regional_regions_count": 4
@@ -364,11 +364,11 @@
     "media": 0
   },
   "hud": {
-    "fmr_endpoint_ok": false,
+    "fmr_endpoint_ok": true,
     "income_limits_endpoint_ok": false,
-    "fmr_area_count": null,
+    "fmr_area_count": 639,
     "income_limits_area_count": null,
-    "ok": false
+    "ok": true
   },
   "hud_domain_adjustments": {
     "housing": 0,
