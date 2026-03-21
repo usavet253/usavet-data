@@ -1,15 +1,15 @@
 {
   "date": "March 21, 2026",
-  "time": "01:21 AM PT",
-  "composite": 44,
-  "status": "Elevated Pressure",
+  "time": "01:28 AM PT",
+  "composite": 56,
+  "status": "Managed Pressure",
   "domains": {
-    "housing": 48,
-    "affordability": 35,
-    "employment": 46,
-    "morale": 41,
-    "benefits": 48,
-    "media": 45
+    "housing": 52,
+    "affordability": 64,
+    "employment": 54,
+    "morale": 59,
+    "benefits": 52,
+    "media": 55
   },
   "summary": [
     "System under high pressure",
@@ -41,15 +41,15 @@
       ]
     },
     "affordability": {
-      "current": 65,
-      "delta_7": 0,
-      "delta_30": 0,
+      "current": 64,
+      "delta_7": -1,
+      "delta_30": -1,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
         65,
-        65
+        64
       ]
     },
     "employment": {
