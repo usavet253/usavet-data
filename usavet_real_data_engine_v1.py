@@ -23,7 +23,7 @@ HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/123.0 Safari/537.36 USAVET-Index/7.0"
+        "Chrome/123.0 Safari/537.36 USAVET-Index/8.0"
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
@@ -42,17 +42,18 @@ DOMAIN_KEYWORDS = {
     "employment": [
         "employment", "job", "jobs", "hiring", "layoff", "layoffs",
         "unemployment", "workforce", "career", "careers", "labor market",
-        "jobless",
+        "jobless", "military spouse employment", "transition assistance",
     ],
     "morale": [
         "morale", "stress", "burnout", "mental health", "suicide",
         "well-being", "readiness", "quality of life", "fatigue",
-        "community support", "resilience",
+        "community support", "resilience", "family strain",
     ],
     "benefits": [
-        "benefits", "va benefits", "claims", "disability", "tricare",
-        "gi bill", "caregiver", "pension", "compensation", "eligibility",
-        "backlog", "appeals",
+        "benefits", "va benefits", "veterans benefits", "claims", "claim",
+        "disability", "tricare", "gi bill", "caregiver", "pension",
+        "compensation", "eligibility", "backlog", "appeals",
+        "va disability", "benefit payments",
     ],
     "media": [
         "investigation", "hearing", "report", "controversy", "lawsuit",
@@ -68,7 +69,8 @@ DOMAIN_KEYWORDS = {
         "community support", "navigation", "military one source", "nrd",
     ],
     "general": [
-        "veteran", "military family", "service member", "defense", "va",
+        "veteran", "veterans", "military family", "military families",
+        "service member", "service members", "defense", "va",
         "readiness", "community", "support", "policy", "housing",
     ],
 }
@@ -178,7 +180,6 @@ NEWS_SOURCE_TIER_RULES = {
     },
 }
 
-# Tier 3 sentiment guardrails
 TIER3_SENTIMENT_WEIGHT_CAP = 0.55
 TIER3_ONE_OFF_PENALTY = -2
 TIER3_TWO_SOURCE_CLUSTER_BONUS = 1
@@ -187,6 +188,9 @@ TIER3_MAX_HITS_PER_ITEM = 2
 TIER3_MAX_NEGATIVE_PER_ITEM = 2
 TIER3_MAX_POSITIVE_PER_ITEM = 2
 
+# Domain relevance guardrails for NewsAPI
+NEWS_DOMAIN_RELEVANCE_MIN = 2
+NEWS_DOMAIN_NEGATIVE_RELEVANCE_MIN = 1
 
 def clamp(value, low=0, high=100):
     return max(low, min(high, int(round(value))))
@@ -563,17 +567,54 @@ def analyze_newsapi_article(article):
     }
 
 
+def news_article_relevant_to_domain(item, domain_name):
+    hits = item["domain_hits"].get(domain_name, 0)
+    negative = item["negative_hits"].get(domain_name, 0)
+    positive = item["positive_hits"].get(domain_name, 0)
+    total = hits + negative + positive
+
+    if total >= NEWS_DOMAIN_RELEVANCE_MIN:
+        return True
+
+    if negative >= NEWS_DOMAIN_NEGATIVE_RELEVANCE_MIN and hits >= 1:
+        return True
+
+    return False
+
+
+def filter_newsapi_results_by_domain(results):
+    kept = []
+    dropped = []
+    domain_drop_counts = {domain: 0 for domain in DOMAINS}
+
+    for item in results:
+        domain_name = item.get("mapped_domain", "general")
+
+        if domain_name in DOMAINS and news_article_relevant_to_domain(item, domain_name):
+            kept.append(item)
+        else:
+            dropped.append(item)
+            if domain_name in domain_drop_counts:
+                domain_drop_counts[domain_name] += 1
+
+    return kept, dropped, domain_drop_counts
+
+
 def fetch_and_analyze_newsapi():
     if not NEWS_API_KEY:
         return [], {
             "enabled": False,
             "queries_run": 0,
             "articles_used": 0,
+            "articles_kept": 0,
+            "articles_dropped": 0,
             "errors": ["missing_api_key"],
             "tier_counts": {"tier_1": 0, "tier_2": 0, "tier_3": 0},
             "type_counts": {"policy": 0, "operational": 0, "media": 0, "sentiment": 0},
             "tier_3_guardrails_enabled": True,
-        }
+            "domain_relevance_filtering_enabled": True,
+            "domain_drop_counts": {domain: 0 for domain in DOMAINS},
+        }, []
 
     results = []
     errors = []
@@ -590,30 +631,36 @@ def fetch_and_analyze_newsapi():
         for article in payload["articles"]:
             results.append(analyze_newsapi_article(article))
 
+    kept, dropped, domain_drop_counts = filter_newsapi_results_by_domain(results)
+
     tier_counts = {
-        "tier_1": sum(1 for x in results if x["tier"] == "tier_1"),
-        "tier_2": sum(1 for x in results if x["tier"] == "tier_2"),
-        "tier_3": sum(1 for x in results if x["tier"] == "tier_3"),
+        "tier_1": sum(1 for x in kept if x["tier"] == "tier_1"),
+        "tier_2": sum(1 for x in kept if x["tier"] == "tier_2"),
+        "tier_3": sum(1 for x in kept if x["tier"] == "tier_3"),
     }
 
     type_counts = {
-        "policy": sum(1 for x in results if x["type"] == "policy"),
-        "operational": sum(1 for x in results if x["type"] == "operational"),
-        "media": sum(1 for x in results if x["type"] == "media"),
-        "sentiment": sum(1 for x in results if x["type"] == "sentiment"),
+        "policy": sum(1 for x in kept if x["type"] == "policy"),
+        "operational": sum(1 for x in kept if x["type"] == "operational"),
+        "media": sum(1 for x in kept if x["type"] == "media"),
+        "sentiment": sum(1 for x in kept if x["type"] == "sentiment"),
     }
 
     meta = {
         "enabled": True,
         "queries_run": queries_run,
         "articles_used": len(results),
+        "articles_kept": len(kept),
+        "articles_dropped": len(dropped),
         "errors": errors,
         "tier_counts": tier_counts,
         "type_counts": type_counts,
         "tier_3_guardrails_enabled": True,
+        "domain_relevance_filtering_enabled": True,
+        "domain_drop_counts": domain_drop_counts,
     }
 
-    return results, meta
+    return kept, meta, dropped
 
 
 def weighted_average(values_with_weights, default_value):
@@ -872,7 +919,10 @@ def build_narrative(scores, composite, analyzed_count, total_count, fred, newsap
     notes.append(f"Most stable domain: {ordered[-1][0].replace('_', ' ')} ({ordered[-1][1]}).")
     notes.append(f"Sources analyzed successfully: {analyzed_count} of {total_count}.")
     if newsapi_meta.get("enabled"):
-        notes.append(f"NewsAPI articles used: {newsapi_meta.get('articles_used', 0)}.")
+        notes.append(
+            f"NewsAPI kept {newsapi_meta.get('articles_kept', 0)} of "
+            f"{newsapi_meta.get('articles_used', 0)} articles after relevance filtering."
+        )
 
     return notes[:6]
 
@@ -1036,7 +1086,7 @@ def main():
         return
 
     source_results = [analyze_source(item) for item in source_items]
-    newsapi_results, newsapi_meta = fetch_and_analyze_newsapi()
+    newsapi_results, newsapi_meta, dropped_newsapi_results = fetch_and_analyze_newsapi()
     all_results = source_results + newsapi_results
 
     successful_sources = sum(1 for x in source_results if x["ok"])
@@ -1128,6 +1178,20 @@ def main():
                 "title": item.get("title", ""),
             }
             for item in newsapi_results[:50]
+        ],
+        "newsapi_dropped_sources": [
+            {
+                "key": item["key"],
+                "url": item["url"],
+                "tier": item["tier"],
+                "type": item.get("type", "unknown"),
+                "mapped_domain": item.get("mapped_domain", "general"),
+                "freshness": item["freshness"],
+                "source_kind": item.get("source_kind", "newsapi"),
+                "source_name": item.get("source_name", ""),
+                "title": item.get("title", ""),
+            }
+            for item in dropped_newsapi_results[:50]
         ],
     }
 
