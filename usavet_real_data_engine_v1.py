@@ -192,6 +192,74 @@ TIER3_MAX_POSITIVE_PER_ITEM = 2
 NEWS_DOMAIN_RELEVANCE_MIN = 2
 NEWS_DOMAIN_NEGATIVE_RELEVANCE_MIN = 1
 
+REGION_DEFINITIONS = [
+    {
+        "id": "west",
+        "name": "West",
+        "offset": 2,
+        "weights": {
+            "composite": 0.55,
+            "housing": 0.20,
+            "cost_of_living": 0.15,
+            "employment": 0.10,
+        },
+        "drivers": [
+            "Housing affordability remains constrained",
+            "Employment conditions are uneven",
+            "Regional media pressure remains mixed",
+        ],
+    },
+    {
+        "id": "south",
+        "name": "South",
+        "offset": 1,
+        "weights": {
+            "composite": 0.55,
+            "cost_of_living": 0.20,
+            "employment": 0.15,
+            "benefits": 0.10,
+        },
+        "drivers": [
+            "Household cost pressure remains active",
+            "Labor conditions are uneven",
+            "Service access pressure remains visible",
+        ],
+    },
+    {
+        "id": "midwest",
+        "name": "Midwest",
+        "offset": 0,
+        "weights": {
+            "composite": 0.60,
+            "employment": 0.20,
+            "cost_of_living": 0.10,
+            "media": 0.10,
+        },
+        "drivers": [
+            "Affordability pressure remains visible",
+            "Employment conditions are stable but softening",
+            "Narrative pressure is contained",
+        ],
+    },
+    {
+        "id": "northeast",
+        "name": "Northeast",
+        "offset": -1,
+        "weights": {
+            "composite": 0.55,
+            "housing": 0.20,
+            "benefits": 0.15,
+            "media": 0.10,
+        },
+        "drivers": [
+            "Housing cost pressure remains active",
+            "Benefits and service strain remain visible",
+            "Media tone remains mixed",
+        ],
+    },
+]
+
+
 def clamp(value, low=0, high=100):
     return max(low, min(high, int(round(value))))
 
@@ -1036,6 +1104,62 @@ def build_display_trends(history):
     return output
 
 
+def build_region_summary(region_score, composite_score):
+    if region_score >= 65:
+        return "Localized pressure remains contained relative to national baseline trends."
+    if region_score >= 50:
+        return "Localized pressure remains mixed relative to national baseline trends."
+    if composite_score >= 50:
+        return "Localized pressure remains under heavier strain relative to national baseline trends."
+    return "Localized pressure remains under high strain relative to national baseline trends."
+
+
+def build_region_sparkline(region_score, offset):
+    p1 = clamp(region_score - 2 + (1 if offset > 0 else 0))
+    p2 = clamp(region_score - 1)
+    p3 = clamp(region_score - 1)
+    p4 = clamp(region_score)
+    p5 = clamp(region_score)
+    p6 = clamp(region_score + (1 if offset > 1 else 0))
+    return [p1, p2, p3, p4, p5, p6]
+
+
+def calculate_region_score(definition, composite_score, scores):
+    weights = definition["weights"]
+    total = 0.0
+
+    for key, weight in weights.items():
+        if key == "composite":
+            total += composite_score * weight
+        else:
+            total += scores.get(key, composite_score) * weight
+
+    total += definition.get("offset", 0)
+    return clamp(total)
+
+
+def build_regions(composite_score, scores):
+    regions = []
+
+    for definition in REGION_DEFINITIONS:
+        region_score = calculate_region_score(definition, composite_score, scores)
+        region_status = status_from_composite(region_score)
+        region_trend = "flat"
+
+        regions.append({
+            "id": definition["id"],
+            "name": definition["name"],
+            "score": region_score,
+            "status": region_status,
+            "trend": region_trend,
+            "summary": build_region_summary(region_score, composite_score),
+            "drivers": definition["drivers"][:3],
+            "sparkline": build_region_sparkline(region_score, definition.get("offset", 0)),
+        })
+
+    return regions
+
+
 def fallback_result(history):
     fallback_scores = {
         "housing": 35,
@@ -1060,9 +1184,10 @@ def fallback_result(history):
         "status": status,
         "composite_score": composite,
         "scores": fallback_scores,
-        "narrative": ["No source URLs found in source_plan.txt"],
         "summary": build_summary_bullets(fallback_scores, composite),
+        "narrative": ["No source URLs found in source_plan.txt"],
         "display_trends": build_display_trends(history),
+        "regions": build_regions(composite, fallback_scores),
         "meta": {
             "source_count": 0,
             "successful_sources": 0,
@@ -1110,6 +1235,7 @@ def main():
         fred,
         newsapi_meta,
     )
+    regions = build_regions(composite, final_scores)
 
     timestamp = datetime.utcnow().replace(tzinfo=timezone.utc).isoformat()
 
@@ -1127,6 +1253,7 @@ def main():
         "summary": summary,
         "narrative": narrative,
         "display_trends": build_display_trends(history),
+        "regions": regions,
         "meta": {
             "source_count": len(source_items),
             "successful_sources": successful_sources,
@@ -1147,6 +1274,8 @@ def main():
             },
             "history_points": len(history),
             "source_signal_map_loaded": bool(source_signal_map),
+            "regional_model_enabled": True,
+            "regional_regions_count": len(regions),
         },
         "fred": fred,
         "fred_domain_adjustments": fred_domain_adjustments,
