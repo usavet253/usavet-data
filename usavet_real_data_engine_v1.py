@@ -9,6 +9,7 @@ import requests
 OUTPUT_FILE = "usavet_real_data_v1.json"
 HISTORY_FILE = "history.json"
 SOURCE_PLAN_FILE = "source_plan.txt"
+SOURCE_SIGNAL_MAP_FILE = "source_signal_map.json"
 REQUEST_TIMEOUT = 20
 HISTORY_LIMIT = 90
 
@@ -18,7 +19,7 @@ HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/123.0 Safari/537.36 USAVET-Index/3.0"
+        "Chrome/123.0 Safari/537.36 USAVET-Index/4.0"
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
@@ -54,6 +55,18 @@ DOMAIN_KEYWORDS = {
         "policy", "rule", "federal register", "congress", "oversight",
         "watchdog", "audit",
     ],
+    "policy": [
+        "policy", "rule", "regulation", "congress", "senate", "house",
+        "oversight", "federal register", "hearing", "bill", "legislation",
+    ],
+    "support": [
+        "support", "assistance", "resource", "resources", "family support",
+        "community support", "navigation", "military one source", "nrd",
+    ],
+    "general": [
+        "veteran", "military family", "service member", "defense", "va",
+        "readiness", "community", "support", "policy", "housing",
+    ],
 }
 
 NEGATIVE_HINTS = {
@@ -63,6 +76,9 @@ NEGATIVE_HINTS = {
     "morale": ["stress", "burnout", "suicide", "fatigue", "crisis"],
     "benefits": ["delay", "backlog", "denial", "confusion", "appeal"],
     "media": ["controversy", "lawsuit", "investigation", "oversight", "audit"],
+    "policy": ["delay", "blocked", "controversy", "hearing", "oversight"],
+    "support": ["shortage", "delay", "strain", "gap", "burden"],
+    "general": ["crisis", "strain", "pressure", "delay", "risk"],
 }
 
 POSITIVE_HINTS = {
@@ -72,6 +88,9 @@ POSITIVE_HINTS = {
     "morale": ["support", "resilience", "well-being", "improved", "community"],
     "benefits": ["expanded", "improved", "faster", "streamlined", "approved"],
     "media": ["resolved", "clarified", "support", "funding", "reform"],
+    "policy": ["passed", "approved", "support", "funding", "reform"],
+    "support": ["assistance", "support", "expanded", "resource", "help"],
+    "general": ["support", "improved", "stabilized", "funding", "relief"],
 }
 
 BASELINES = {
@@ -90,7 +109,16 @@ TIER_WEIGHTS = {
     "unknown": 0.80,
 }
 
+TYPE_MODIFIERS = {
+    "policy": 0.20,
+    "operational": 0.15,
+    "media": 0.05,
+    "sentiment": 0.00,
+    "unknown": 0.00,
+}
+
 DOMAINS = ["housing", "cost_of_living", "employment", "morale", "benefits", "media"]
+MAPPED_DOMAINS = set(DOMAINS + ["policy", "support", "general"])
 
 
 def clamp(value, low=0, high=100):
@@ -106,6 +134,21 @@ def safe_get(url, timeout=REQUEST_TIMEOUT):
 
 def normalize_whitespace(text):
     return re.sub(r"\s+", " ", text).strip()
+
+
+def load_json_file(path, default_value):
+    if not os.path.exists(path):
+        return default_value
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return default_value
+
+
+def save_json_file(path, payload):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
 
 
 def extract_sources_with_tiers(path):
@@ -136,6 +179,80 @@ def extract_sources_with_tiers(path):
                 items.append({"url": line, "tier": current_tier})
 
     return items
+
+
+def load_source_signal_map(path):
+    data = load_json_file(path, {})
+    if not isinstance(data, dict):
+        return {}
+
+    sources = data.get("sources", {})
+    if not isinstance(sources, dict):
+        return {}
+
+    normalized = {}
+
+    for source_key, source_value in sources.items():
+        if not isinstance(source_value, dict):
+            continue
+
+        url = str(source_value.get("url", "")).strip()
+        tier = str(source_value.get("tier", "unknown")).strip()
+        source_type = str(source_value.get("type", "unknown")).strip().lower()
+        domain = str(source_value.get("domain", "general")).strip().lower()
+
+        if not url:
+            continue
+
+        if isinstance(tier, int):
+            tier = f"tier_{tier}"
+        elif tier in {"1", "2", "3"}:
+            tier = f"tier_{tier}"
+        elif not tier.startswith("tier_"):
+            tier = "unknown"
+
+        if domain not in MAPPED_DOMAINS:
+            domain = "general"
+
+        if source_type not in TYPE_MODIFIERS:
+            source_type = "unknown"
+
+        normalized[url.rstrip("/")] = {
+            "key": source_key,
+            "url": url,
+            "tier": tier,
+            "type": source_type,
+            "domain": domain,
+        }
+
+    return normalized
+
+
+def merge_source_plan_with_map(source_plan_items, source_map):
+    merged = []
+
+    for item in source_plan_items:
+        url = item["url"].rstrip("/")
+        mapped = source_map.get(url)
+
+        if mapped:
+            merged.append({
+                "key": mapped["key"],
+                "url": item["url"],
+                "tier": mapped["tier"],
+                "type": mapped["type"],
+                "domain": mapped["domain"],
+            })
+        else:
+            merged.append({
+                "key": url,
+                "url": item["url"],
+                "tier": item.get("tier", "unknown"),
+                "type": "unknown",
+                "domain": "general",
+            })
+
+    return merged
 
 
 def strip_html(html):
@@ -202,12 +319,17 @@ def freshness_score(last_modified):
 def analyze_source(item):
     url = item["url"]
     tier = item["tier"]
+    source_type = item.get("type", "unknown")
+    mapped_domain = item.get("domain", "general")
     response = safe_get(url)
 
     if response is None:
         return {
+            "key": item.get("key", url),
             "url": url,
             "tier": tier,
+            "type": source_type,
+            "mapped_domain": mapped_domain,
             "ok": False,
             "status_code": None,
             "freshness": 35,
@@ -228,8 +350,11 @@ def analyze_source(item):
         positive_hits[domain] = count_keyword_hits(text, POSITIVE_HINTS[domain])
 
     return {
+        "key": item.get("key", url),
         "url": url,
         "tier": tier,
+        "type": source_type,
+        "mapped_domain": mapped_domain,
         "ok": response.ok,
         "status_code": response.status_code,
         "freshness": freshness_score(parse_last_modified(response)),
@@ -251,24 +376,43 @@ def weighted_average(values_with_weights, default_value):
     return weighted_sum / total_weight
 
 
+def source_weight(item):
+    tier_weight = TIER_WEIGHTS.get(item["tier"], TIER_WEIGHTS["unknown"])
+    type_modifier = TYPE_MODIFIERS.get(item.get("type", "unknown"), 0.0)
+    freshness_weight = item["freshness"] / 100.0
+    ok_weight = 1.0 if item["ok"] else 0.35
+
+    return (tier_weight + type_modifier) * max(0.40, freshness_weight) * ok_weight
+
+
+def mapped_domain_bonus(item, domain_name):
+    mapped = item.get("mapped_domain", "general")
+
+    if mapped == domain_name:
+        return 10
+    if mapped == "general":
+        return 3
+    if mapped in {"policy", "support"} and domain_name in {"benefits", "morale", "media"}:
+        return 4
+    return 0
+
+
 def score_domain(source_results, domain_name, baseline):
     values = []
 
     for item in source_results:
-        tier_weight = TIER_WEIGHTS.get(item["tier"], TIER_WEIGHTS["unknown"])
-        freshness_weight = item["freshness"] / 100.0
-        ok_weight = 1.0 if item["ok"] else 0.35
-        weight = tier_weight * max(0.40, freshness_weight) * ok_weight
+        weight = source_weight(item)
 
-        hits = item["domain_hits"][domain_name]
-        negative = item["negative_hits"][domain_name]
-        positive = item["positive_hits"][domain_name]
+        hits = item["domain_hits"].get(domain_name, 0)
+        negative = item["negative_hits"].get(domain_name, 0)
+        positive = item["positive_hits"].get(domain_name, 0)
 
         score = baseline
         score += min(hits * 1.25, 16)
         score += min(negative * 2.8, 22)
         score -= min(positive * 2.0, 12)
         score += (item["freshness"] - 50) * 0.18
+        score += mapped_domain_bonus(item, domain_name)
 
         values.append((clamp(score), weight))
 
@@ -334,26 +478,26 @@ def fred_adjustments(fred):
 
     if unemployment is not None:
         if unemployment >= 6.5:
-            adjustments["employment"] += 14
-            adjustments["morale"] += 8
+            adjustments["employment"] -= 14
+            adjustments["morale"] -= 8
         elif unemployment >= 5.5:
-            adjustments["employment"] += 10
-            adjustments["morale"] += 6
+            adjustments["employment"] -= 10
+            adjustments["morale"] -= 6
         elif unemployment >= 4.5:
-            adjustments["employment"] += 6
-            adjustments["morale"] += 3
+            adjustments["employment"] -= 6
+            adjustments["morale"] -= 3
         elif unemployment <= 3.8:
-            adjustments["employment"] -= 4
+            adjustments["employment"] += 4
 
     if sentiment is not None:
         if sentiment < 60:
-            adjustments["morale"] += 10
-            adjustments["cost_of_living"] += 4
+            adjustments["morale"] -= 10
+            adjustments["cost_of_living"] -= 4
         elif sentiment < 75:
-            adjustments["morale"] += 5
-            adjustments["cost_of_living"] += 2
+            adjustments["morale"] -= 5
+            adjustments["cost_of_living"] -= 2
         elif sentiment > 90:
-            adjustments["morale"] -= 4
+            adjustments["morale"] += 4
 
     return adjustments
 
@@ -369,42 +513,55 @@ def composite_from_scores(scores):
 
 
 def status_from_composite(value):
-    if value >= 75:
-        return "Severe Pressure"
-    if value >= 60:
-        return "Elevated Pressure"
-    if value >= 45:
-        return "High Pressure"
-    if value >= 30:
+    if value >= 80:
+        return "Stable"
+    if value >= 65:
         return "Watch"
-    return "Stable"
+    if value >= 50:
+        return "Elevated Pressure"
+    return "High Pressure"
 
 
 def build_summary_bullets(scores, composite):
     bullets = []
 
-    if composite >= 75:
-        bullets.append("System under severe pressure")
-    elif composite >= 60:
-        bullets.append("System pressure elevated")
-    elif composite >= 45:
-        bullets.append("System under high pressure")
-    elif composite >= 30:
-        bullets.append("System on watch")
-    else:
+    if composite >= 80:
         bullets.append("System stable")
+    elif composite >= 65:
+        bullets.append("System on watch")
+    elif composite >= 50:
+        bullets.append("System under elevated pressure")
+    else:
+        bullets.append("System under high pressure")
 
-    if scores["cost_of_living"] >= 60:
+    if scores["cost_of_living"] >= 65:
+        bullets.append("Affordability pressure at watch level")
+    elif scores["cost_of_living"] >= 50:
         bullets.append("Affordability pressure elevated")
-    if scores["morale"] >= 60:
-        bullets.append("Morale stress elevated")
-    if scores["housing"] >= 60:
+
+    if scores["morale"] >= 65:
+        bullets.append("Morale conditions on watch")
+    elif scores["morale"] >= 50:
+        bullets.append("Morale strain elevated")
+
+    if scores["housing"] >= 65:
+        bullets.append("Housing conditions on watch")
+    elif scores["housing"] >= 50:
         bullets.append("Housing strain elevated")
-    if scores["employment"] >= 60:
-        bullets.append("Employment stress elevated")
-    if scores["benefits"] >= 60:
+
+    if scores["employment"] >= 65:
+        bullets.append("Employment conditions on watch")
+    elif scores["employment"] >= 50:
+        bullets.append("Employment strain elevated")
+
+    if scores["benefits"] >= 65:
+        bullets.append("Benefits friction at watch level")
+    elif scores["benefits"] >= 50:
         bullets.append("Benefits friction elevated")
-    if scores["media"] >= 60:
+
+    if scores["media"] >= 65:
+        bullets.append("Media and oversight pressure on watch")
+    elif scores["media"] >= 50:
         bullets.append("Media and oversight pressure elevated")
 
     if len(bullets) == 1:
@@ -417,30 +574,15 @@ def build_narrative(scores, composite, analyzed_count, total_count, fred):
     notes = []
     ordered = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
-    notes.append(f"Composite pressure score: {composite}.")
-    notes.append(f"Primary pressure domain: {ordered[0][0].replace('_', ' ')} ({ordered[0][1]}).")
-    notes.append(f"Secondary pressure domain: {ordered[1][0].replace('_', ' ')} ({ordered[1][1]}).")
+    notes.append(f"Composite score: {composite}.")
+    notes.append(f"Highest pressure domain: {ordered[0][0].replace('_', ' ')} ({ordered[0][1]}).")
+    notes.append(f"Second highest pressure domain: {ordered[1][0].replace('_', ' ')} ({ordered[1][1]}).")
     notes.append(f"Most stable domain: {ordered[-1][0].replace('_', ' ')} ({ordered[-1][1]}).")
     notes.append(f"Sources analyzed successfully: {analyzed_count} of {total_count}.")
     if fred.get("unemployment") is not None:
         notes.append(f"FRED unemployment reference: {fred['unemployment']:.1f}%.")
 
     return notes[:6]
-
-
-def load_json_file(path, default_value):
-    if not os.path.exists(path):
-        return default_value
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return default_value
-
-
-def save_json_file(path, payload):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(payload, f, indent=2)
 
 
 def build_history_entry(timestamp, composite, scores, status):
@@ -515,9 +657,9 @@ def movement_arrow(delta):
 
 def movement_color(delta):
     if delta >= 2:
-        return "red"
-    if delta <= -2:
         return "green"
+    if delta <= -2:
+        return "red"
     return "yellow"
 
 
@@ -552,46 +694,52 @@ def build_display_trends(history):
     return output
 
 
+def fallback_result(history):
+    fallback_scores = {
+        "housing": 35,
+        "cost_of_living": 40,
+        "employment": 38,
+        "morale": 36,
+        "benefits": 34,
+        "media": 32,
+    }
+    composite = composite_from_scores(fallback_scores)
+    status = status_from_composite(composite)
+    timestamp = datetime.utcnow().replace(tzinfo=timezone.utc).isoformat()
+
+    history = update_history(
+        history,
+        build_history_entry(timestamp, composite, fallback_scores, status)
+    )
+    save_json_file(HISTORY_FILE, history)
+
+    result = {
+        "generated_at": timestamp,
+        "status": status,
+        "composite_score": composite,
+        "scores": fallback_scores,
+        "narrative": ["No source URLs found in source_plan.txt"],
+        "summary": build_summary_bullets(fallback_scores, composite),
+        "display_trends": build_display_trends(history),
+        "meta": {
+            "source_count": 0,
+            "successful_sources": 0,
+            "fred_api_key_present": bool(FRED_API_KEY),
+        },
+    }
+
+    save_json_file(OUTPUT_FILE, result)
+    print(f"Wrote fallback output to {OUTPUT_FILE}")
+
+
 def main():
-    source_items = extract_sources_with_tiers(SOURCE_PLAN_FILE)
+    source_plan_items = extract_sources_with_tiers(SOURCE_PLAN_FILE)
+    source_signal_map = load_source_signal_map(SOURCE_SIGNAL_MAP_FILE)
+    source_items = merge_source_plan_with_map(source_plan_items, source_signal_map)
     history = load_json_file(HISTORY_FILE, [])
 
     if not source_items:
-        fallback_scores = {
-            "housing": 35,
-            "cost_of_living": 40,
-            "employment": 38,
-            "morale": 36,
-            "benefits": 34,
-            "media": 32,
-        }
-        composite = composite_from_scores(fallback_scores)
-        status = status_from_composite(composite)
-        timestamp = datetime.utcnow().replace(tzinfo=timezone.utc).isoformat()
-
-        history = update_history(
-            history,
-            build_history_entry(timestamp, composite, fallback_scores, status)
-        )
-        save_json_file(HISTORY_FILE, history)
-
-        result = {
-            "generated_at": timestamp,
-            "status": status,
-            "composite_score": composite,
-            "scores": fallback_scores,
-            "narrative": ["No source URLs found in source_plan.txt"],
-            "summary": build_summary_bullets(fallback_scores, composite),
-            "display_trends": build_display_trends(history),
-            "meta": {
-                "source_count": 0,
-                "successful_sources": 0,
-                "fred_api_key_present": bool(FRED_API_KEY),
-            },
-        }
-
-        save_json_file(OUTPUT_FILE, result)
-        print(f"Wrote fallback output to {OUTPUT_FILE}")
+        fallback_result(history)
         return
 
     source_results = [analyze_source(item) for item in source_items]
@@ -636,14 +784,25 @@ def main():
                 "tier_2": sum(1 for s in source_items if s["tier"] == "tier_2"),
                 "tier_3": sum(1 for s in source_items if s["tier"] == "tier_3"),
             },
+            "type_counts": {
+                "policy": sum(1 for s in source_items if s.get("type") == "policy"),
+                "operational": sum(1 for s in source_items if s.get("type") == "operational"),
+                "media": sum(1 for s in source_items if s.get("type") == "media"),
+                "sentiment": sum(1 for s in source_items if s.get("type") == "sentiment"),
+                "unknown": sum(1 for s in source_items if s.get("type") == "unknown"),
+            },
             "history_points": len(history),
+            "source_signal_map_loaded": bool(source_signal_map),
         },
         "fred": fred,
         "fred_domain_adjustments": fred_domain_adjustments,
         "sources": [
             {
+                "key": item["key"],
                 "url": item["url"],
                 "tier": item["tier"],
+                "type": item.get("type", "unknown"),
+                "mapped_domain": item.get("mapped_domain", "general"),
                 "ok": item["ok"],
                 "status_code": item["status_code"],
                 "freshness": item["freshness"],
