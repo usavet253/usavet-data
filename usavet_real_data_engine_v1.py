@@ -80,6 +80,7 @@ def fetch_newsapi() -> Dict[str, Any]:
             "benefits": 0,
             "media": 0,
         },
+        "kept_article_samples": [],
     }
 
     if not NEWS_API_KEY:
@@ -96,18 +97,31 @@ def fetch_newsapi() -> Dict[str, Any]:
     ]
 
     tier_1_domains = {
-        "reuters.com",
-        "apnews.com",
-        "npr.org",
-        "wsj.com",
-        "nytimes.com",
-        "washingtonpost.com",
+        "reuters",
+        "associated press",
+        "ap ",
+        "npr",
+        "wall street journal",
+        "wsj",
+        "new york times",
+        "nytimes",
+        "washington post",
+        "bloomberg",
+        "cnbc",
+        "federal reserve",
+        "bureau of labor statistics",
+        "u.s. census bureau",
+        "census",
     }
+
     tier_2_domains = {
-        "militarytimes.com",
+        "military times",
         "military.com",
-        "starsandstripes.com",
-        "federalnewsnetwork.com",
+        "stars and stripes",
+        "starsandstripes",
+        "federal news network",
+        "defense.gov",
+        "va.gov",
     }
 
     session_kept = 0
@@ -145,22 +159,27 @@ def fetch_newsapi() -> Dict[str, Any]:
             seen_urls.add(url_value)
 
             source_name = ((article.get("source") or {}).get("name") or "").lower()
-            domain = source_name.replace("www.", "")
+            title = article.get("title", "") or ""
+            description = article.get("description", "") or ""
+            title_blob = f"{title} {description}".lower()
 
-            if any(d in domain for d in tier_1_domains):
+            is_tier_1 = any(d in source_name for d in tier_1_domains)
+            is_tier_2 = any(d in source_name for d in tier_2_domains)
+
+            if not is_tier_1 and not is_tier_2:
+                result["articles_dropped"] += 1
+                continue
+
+            if is_tier_1:
                 result["tier_counts"]["tier_1"] += 1
-            elif any(d in domain for d in tier_2_domains):
+            elif is_tier_2:
                 result["tier_counts"]["tier_2"] += 1
             else:
                 result["tier_counts"]["tier_3"] += 1
 
-            title_blob = (
-                f"{article.get('title', '')} {article.get('description', '')}".lower()
-            )
-
-            if any(k in title_blob for k in ["policy", "rule", "regulation", "congress"]):
+            if any(k in title_blob for k in ["policy", "rule", "regulation", "congress", "bill", "law"]):
                 result["type_counts"]["policy"] += 1
-            elif any(k in title_blob for k in ["operation", "program", "facility", "service"]):
+            elif any(k in title_blob for k in ["operation", "program", "facility", "service", "implementation"]):
                 result["type_counts"]["operational"] += 1
             elif any(k in title_blob for k in ["opinion", "editorial", "analysis"]):
                 result["type_counts"]["media"] += 1
@@ -182,6 +201,15 @@ def fetch_newsapi() -> Dict[str, Any]:
 
             session_kept += 1
 
+            if len(result["kept_article_samples"]) < 5:
+                result["kept_article_samples"].append(
+                    {
+                        "source": source_name,
+                        "title": title[:140],
+                        "url": url_value,
+                    }
+                )
+
     result["articles_used"] = session_used
     result["articles_kept"] = session_kept
     result["articles_dropped"] = max(session_used - session_kept, result["articles_dropped"])
@@ -194,15 +222,15 @@ def fetch_federal_register() -> Dict[str, Any]:
         "count": 0,
         "document_numbers": [],
         "agencies": [],
-        "date_gte": "2026-01-01",
+        "date_gte": "2025-12-01",
     }
 
     url = "https://www.federalregister.gov/api/v1/documents.json"
     params = {
-        "per_page": 10,
+        "per_page": 25,
         "order": "newest",
-        "conditions[publication_date][gte]": "2026-01-01",
-        "conditions[term]": "veteran OR veterans OR VA OR housing OR benefits OR military family",
+        "conditions[publication_date][gte]": "2025-12-01",
+        "conditions[term]": "veteran OR veterans OR VA OR housing OR benefits OR military OR defense OR healthcare",
     }
 
     response = safe_get(url, params=params, timeout=30)
@@ -230,7 +258,7 @@ def fetch_federal_register() -> Dict[str, Any]:
             for agency in d.get("agencies", [])
             if agency.get("name")
         }
-    )[:5]
+    )[:8]
     return result
 
 
@@ -402,10 +430,10 @@ def build_system_summary(
     successful_sources += 1 if CENSUS_API_KEY else 0
     successful_sources += 1 if bea.get("ok") else 0
     successful_sources += 1 if hud.get("ok") else 0
-    successful_sources += 1 if VA_API_KEY else 0
+    successful_sources += 1 if va_facilities.get("ok") else 0
     successful_sources += 1 if VA_BENEFITS_API_KEY else 0
     successful_sources += 1 if federal_register.get("ok") else 0
-    successful_sources += 4
+    successful_sources += 2
 
     failed_sources = max(source_count - successful_sources, 0)
 
@@ -425,7 +453,7 @@ def build_system_summary(
         "tier_counts": {
             "tier_1": newsapi.get("tier_counts", {}).get("tier_1", 0) + (1 if federal_register.get("ok") else 0),
             "tier_2": newsapi.get("tier_counts", {}).get("tier_2", 0) + (1 if hud.get("ok") else 0),
-            "tier_3": newsapi.get("tier_counts", {}).get("tier_3", 0) + (0 if va_facilities.get("ok") else 0),
+            "tier_3": newsapi.get("tier_counts", {}).get("tier_3", 0) + (0 if va_facilities.get("ok") else 1),
         },
         "type_counts": {
             "policy": newsapi.get("type_counts", {}).get("policy", 0) + federal_register.get("count", 0),
@@ -454,7 +482,13 @@ def build_index() -> Dict[str, Any]:
     policy_score = 58 + min(federal_register.get("count", 0), 10)
     benefits_score = 60 + (5 if hud.get("ok") else 0) - (5 if not va_facilities.get("ok") else 0)
     media_score = 55 + min(newsapi.get("articles_kept", 0), 10)
-    overall_score = round((economic_score * 0.35) + (policy_score * 0.25) + (benefits_score * 0.25) + (media_score * 0.15), 1)
+    overall_score = round(
+        (economic_score * 0.35)
+        + (policy_score * 0.25)
+        + (benefits_score * 0.25)
+        + (media_score * 0.15),
+        1,
+    )
 
     payload = {
         "generated_at": now_utc(),
@@ -549,12 +583,24 @@ def main() -> None:
     print(f"Wrote {OUTPUT_FILE}")
     print(f"Wrote {DAILY_FILE}")
     print(f"Wrote {HISTORY_FILE}")
+
+    print("\n=== FINAL DIAGNOSTICS ===")
     print(json.dumps(payload["diagnostics"], indent=2))
-    print(json.dumps(payload["newsapi"], indent=2))
-    print(json.dumps(payload["federal_register"], indent=2))
-    print(json.dumps(payload["hud"], indent=2))
+
+    print("\n=== VA FACILITIES ===")
     print(json.dumps(payload["va_facilities"], indent=2))
+
+    print("\n=== HUD ===")
+    print(json.dumps(payload["hud"], indent=2))
+
+    print("\n=== FEDERAL REGISTER ===")
+    print(json.dumps(payload["federal_register"], indent=2))
+
+    print("\n=== BEA ===")
     print(json.dumps(payload["bea"], indent=2))
+
+    print("\n=== NEWSAPI ===")
+    print(json.dumps(payload["newsapi"], indent=2))
 
 
 if __name__ == "__main__":
