@@ -46,11 +46,11 @@ jobs:
               return max(0, min(100, score))
 
           def get_status(score):
-              if score >= 70:
+              if score >= 80:
                   return "Stable"
-              elif score >= 55:
-                  return "Managed Pressure"
-              elif score >= 40:
+              elif score >= 65:
+                  return "Watch"
+              elif score >= 50:
                   return "Elevated Pressure"
               else:
                   return "High Pressure"
@@ -103,5 +103,5 @@ jobs:
           git config user.name "actions-user"
           git config user.email "actions@github.com"
           git add daily.json
-          git commit -m "Align score display with raw values" || echo "No changes to commit"
+          git commit -m "Update status thresholds to aligned scale" || echo "No changes to commit"
           git push
