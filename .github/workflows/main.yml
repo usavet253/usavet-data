@@ -49,14 +49,14 @@ jobs:
               return 100 - score
 
           def get_status(score):
-              if score >= 80:
+              if score >= 70:
                   return "Stable"
-              elif score >= 60:
-                  return "Watch"
-              elif score >= 45:
-                  return "Pressure"
+              elif score >= 55:
+                  return "Managed Pressure"
+              elif score >= 40:
+                  return "Elevated Pressure"
               else:
-                  return "Severe Pressure"
+                  return "High Pressure"
 
           with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
               raw = json.load(f)
@@ -64,7 +64,6 @@ jobs:
           now = datetime.now()
           trends = raw.get("display_trends", {})
 
-          # 🔥 FIX: invert scoring direction
           composite_raw = raw.get("composite_score", 60)
           composite = normalize(invert(composite_raw))
 
