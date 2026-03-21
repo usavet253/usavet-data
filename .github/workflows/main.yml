@@ -1,19 +1,19 @@
 name: USAVET Daily Automation
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 8 * * *"
+    - cron: "15 13 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  update-usavet-data:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -28,80 +28,24 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run real data engine
+      - name: Run USAVET engine
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: |
           python usavet_real_data_engine_v1.py
 
-      - name: Convert to website format
+      - name: Show generated files
         run: |
-          python - <<'PY'
-          import json
-          from datetime import datetime
+          ls -la
+          echo "---- usavet_real_data_v1.json ----"
+          head -100 usavet_real_data_v1.json || true
+          echo "---- history.json ----"
+          head -40 history.json || true
 
-          def normalize(score):
-              if score is None:
-                  return 50
-              return max(0, min(100, score))
-
-          def get_status(score):
-              if score >= 80:
-                  return "Stable"
-              elif score >= 65:
-                  return "Watch"
-              elif score >= 50:
-                  return "Elevated Pressure"
-              else:
-                  return "High Pressure"
-
-          with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
-              raw = json.load(f)
-
-          now = datetime.now()
-          trends = raw.get("display_trends", {})
-
-          composite = normalize(raw.get("composite_score", 60))
-
-          daily = {
-              "date": now.strftime("%B %d, %Y"),
-              "time": now.strftime("%I:%M %p PT"),
-
-              "composite": composite,
-              "status": get_status(composite),
-
-              "domains": {
-                  "housing": normalize(raw.get("scores", {}).get("housing", 55)),
-                  "affordability": normalize(raw.get("scores", {}).get("cost_of_living", 60)),
-                  "employment": normalize(raw.get("scores", {}).get("employment", 70)),
-                  "morale": normalize(raw.get("scores", {}).get("morale", 58)),
-                  "benefits": normalize(raw.get("scores", {}).get("benefits", 50)),
-                  "media": normalize(raw.get("scores", {}).get("media", 45))
-              },
-
-              "summary": raw.get("summary", raw.get("narrative", ["System stable"])),
-
-              "trend": {
-                  "composite": trends.get("composite", {}),
-                  "housing": trends.get("housing", {}),
-                  "affordability": trends.get("cost_of_living", {}),
-                  "employment": trends.get("employment", {}),
-                  "morale": trends.get("morale", {}),
-                  "benefits": trends.get("benefits", {}),
-                  "media": trends.get("media", {})
-              }
-          }
-
-          with open("daily.json", "w", encoding="utf-8") as f:
-              json.dump(daily, f, indent=2)
-
-          print("Wrote daily.json")
-          PY
-
-      - name: Commit and push update
+      - name: Commit and push updated data
         run: |
-          git config user.name "actions-user"
-          git config user.email "actions@github.com"
-          git add daily.json
-          git commit -m "Update status thresholds to aligned scale" || echo "No changes to commit"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add usavet_real_data_v1.json history.json
+          git diff --cached --quiet || git commit -m "Automated daily USAVET update"
           git push
