@@ -1,20 +1,19 @@
 {
-  "date": "March 20, 2026",
-  "time": "10:15 PM PT",
-  "composite": 56,
-  "status": "High Pressure",
+  "date": "March 21, 2026",
+  "time": "01:08 AM PT",
+  "composite": 44,
+  "status": "Severe Pressure",
   "domains": {
-    "housing": 52,
-    "affordability": 65,
-    "employment": 54,
-    "morale": 60,
-    "benefits": 53,
-    "media": 54
+    "housing": 48,
+    "affordability": 35,
+    "employment": 46,
+    "morale": 41,
+    "benefits": 48,
+    "media": 45
   },
   "summary": [
     "System under high pressure",
-    "Affordability pressure elevated",
-    "Morale stress elevated"
+    "Affordability pressure elevated"
   ],
   "trend": {
     "composite": {
@@ -25,6 +24,7 @@
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
+        56,
         56
       ]
     },
@@ -36,6 +36,7 @@
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
+        52,
         52
       ]
     },
@@ -47,6 +48,7 @@
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
+        65,
         65
       ]
     },
@@ -58,40 +60,44 @@
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
+        54,
         54
       ]
     },
     "morale": {
-      "current": 60,
-      "delta_7": 0,
-      "delta_30": 0,
+      "current": 59,
+      "delta_7": -1,
+      "delta_30": -1,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        60
+        60,
+        59
       ]
     },
     "benefits": {
-      "current": 53,
-      "delta_7": 0,
-      "delta_30": 0,
+      "current": 52,
+      "delta_7": -1,
+      "delta_30": -1,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        53
+        53,
+        52
       ]
     },
     "media": {
-      "current": 54,
-      "delta_7": 0,
-      "delta_30": 0,
+      "current": 55,
+      "delta_7": 1,
+      "delta_30": 1,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        54
+        54,
+        55
       ]
     }
   }
