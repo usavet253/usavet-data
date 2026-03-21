@@ -15,9 +15,11 @@ HISTORY_LIMIT = 90
 
 FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
 NEWS_API_KEY = os.getenv("NEWS_API_KEY", "").strip()
+BLS_API_KEY = os.getenv("BLS_API_KEY", "").strip()
 
 NEWSAPI_ENDPOINT = "https://newsapi.org/v2/everything"
 NEWSAPI_PAGE_SIZE = 20
+BLS_API_ENDPOINT = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
 
 HEADERS = {
     "User-Agent": (
@@ -188,7 +190,6 @@ TIER3_MAX_HITS_PER_ITEM = 2
 TIER3_MAX_NEGATIVE_PER_ITEM = 2
 TIER3_MAX_POSITIVE_PER_ITEM = 2
 
-# Domain relevance guardrails for NewsAPI
 NEWS_DOMAIN_RELEVANCE_MIN = 2
 NEWS_DOMAIN_NEGATIVE_RELEVANCE_MIN = 1
 
@@ -915,6 +916,86 @@ def apply_fred_adjustments(scores, fred):
     return adjusted, adjustments
 
 
+def bls_get_series(series_id):
+    if not BLS_API_KEY:
+        return None
+
+    payload = {
+        "seriesid": [series_id],
+        "registrationkey": BLS_API_KEY,
+    }
+
+    try:
+        response = requests.post(BLS_API_ENDPOINT, json=payload, timeout=REQUEST_TIMEOUT)
+        data = response.json()
+    except Exception:
+        return None
+
+    try:
+        series = data["Results"]["series"][0]["data"]
+    except Exception:
+        return None
+
+    for entry in series:
+        value = entry.get("value")
+        if value not in (None, "", "."):
+            try:
+                return float(value)
+            except ValueError:
+                continue
+
+    return None
+
+
+def get_bls_signals():
+    return {
+        "unemployment_rate": bls_get_series("LNS14000000"),
+        "labor_participation": bls_get_series("LNS11300000"),
+    }
+
+
+def bls_adjustments(bls):
+    adjustments = {
+        "housing": 0,
+        "cost_of_living": 0,
+        "employment": 0,
+        "morale": 0,
+        "benefits": 0,
+        "media": 0,
+    }
+
+    unemployment = bls.get("unemployment_rate")
+    participation = bls.get("labor_participation")
+
+    if unemployment is not None:
+        if unemployment >= 6.5:
+            adjustments["employment"] -= 10
+            adjustments["morale"] -= 6
+        elif unemployment >= 5.5:
+            adjustments["employment"] -= 7
+            adjustments["morale"] -= 4
+        elif unemployment >= 4.5:
+            adjustments["employment"] -= 3
+            adjustments["morale"] -= 2
+        elif unemployment <= 3.8:
+            adjustments["employment"] += 3
+
+    if participation is not None:
+        if participation < 62.0:
+            adjustments["employment"] -= 4
+            adjustments["morale"] -= 2
+        elif participation > 63.5:
+            adjustments["employment"] += 2
+
+    return adjustments
+
+
+def apply_bls_adjustments(scores, bls):
+    adjustments = bls_adjustments(bls)
+    adjusted = {domain: clamp(value + adjustments.get(domain, 0)) for domain, value in scores.items()}
+    return adjusted, adjustments
+
+
 def composite_from_scores(scores):
     return clamp(sum(scores.values()) / len(scores))
 
@@ -977,7 +1058,7 @@ def build_summary_bullets(scores, composite):
     return bullets[:4]
 
 
-def build_narrative(scores, composite, analyzed_count, total_count, fred, newsapi_meta):
+def build_narrative(scores, composite, analyzed_count, total_count, fred, newsapi_meta, bls):
     notes = []
     ordered = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
@@ -986,11 +1067,14 @@ def build_narrative(scores, composite, analyzed_count, total_count, fred, newsap
     notes.append(f"Second highest pressure domain: {ordered[1][0].replace('_', ' ')} ({ordered[1][1]}).")
     notes.append(f"Most stable domain: {ordered[-1][0].replace('_', ' ')} ({ordered[-1][1]}).")
     notes.append(f"Sources analyzed successfully: {analyzed_count} of {total_count}.")
+
     if newsapi_meta.get("enabled"):
         notes.append(
             f"NewsAPI kept {newsapi_meta.get('articles_kept', 0)} of "
             f"{newsapi_meta.get('articles_used', 0)} articles after relevance filtering."
         )
+    elif bls.get("unemployment_rate") is not None or bls.get("labor_participation") is not None:
+        notes.append("BLS labor signals were incorporated into employment calibration.")
 
     return notes[:6]
 
@@ -1193,6 +1277,7 @@ def fallback_result(history):
             "successful_sources": 0,
             "fred_api_key_present": bool(FRED_API_KEY),
             "news_api_key_present": bool(NEWS_API_KEY),
+            "bls_api_key_present": bool(BLS_API_KEY),
         },
     }
 
@@ -1222,7 +1307,10 @@ def main():
     }
 
     fred = get_fred_signals()
-    final_scores, fred_domain_adjustments = apply_fred_adjustments(base_scores, fred)
+    scores_after_fred, fred_domain_adjustments = apply_fred_adjustments(base_scores, fred)
+
+    bls = get_bls_signals()
+    final_scores, bls_domain_adjustments = apply_bls_adjustments(scores_after_fred, bls)
 
     composite = composite_from_scores(final_scores)
     status = status_from_composite(composite)
@@ -1234,6 +1322,7 @@ def main():
         len(source_items),
         fred,
         newsapi_meta,
+        bls,
     )
     regions = build_regions(composite, final_scores)
 
@@ -1260,6 +1349,7 @@ def main():
             "failed_sources": len(source_items) - successful_sources,
             "fred_api_key_present": bool(FRED_API_KEY),
             "news_api_key_present": bool(NEWS_API_KEY),
+            "bls_api_key_present": bool(BLS_API_KEY),
             "tier_counts": {
                 "tier_1": sum(1 for s in source_items if s["tier"] == "tier_1"),
                 "tier_2": sum(1 for s in source_items if s["tier"] == "tier_2"),
@@ -1279,6 +1369,8 @@ def main():
         },
         "fred": fred,
         "fred_domain_adjustments": fred_domain_adjustments,
+        "bls": bls,
+        "bls_domain_adjustments": bls_domain_adjustments,
         "newsapi": newsapi_meta,
         "sources": [
             {
