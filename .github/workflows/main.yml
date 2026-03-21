@@ -35,47 +35,73 @@ jobs:
           python usavet_real_data_engine_v1.py
 
       - name: Convert to website format
-        run: |
-          python - <<'PY'
-          import json
-          from datetime import datetime
+  run: |
+    python - <<'PY'
+    import json
+    from datetime import datetime
 
-          with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
-              raw = json.load(f)
+    def normalize(score):
+        if score is None:
+            return 50
+        return max(0, min(100, score))
 
-          now = datetime.now()
-          trends = raw.get("display_trends", {})
+    def invert(score):
+        return 100 - score
 
-          daily = {
-              "date": now.strftime("%B %d, %Y"),
-              "time": now.strftime("%I:%M %p PT"),
-              "composite": raw.get("composite_score", 60),
-              "status": raw.get("status", "Stable"),
-              "domains": {
-                  "housing": raw.get("scores", {}).get("housing", 55),
-                  "affordability": raw.get("scores", {}).get("cost_of_living", 60),
-                  "employment": raw.get("scores", {}).get("employment", 70),
-                  "morale": raw.get("scores", {}).get("morale", 58),
-                  "benefits": raw.get("scores", {}).get("benefits", 50),
-                  "media": raw.get("scores", {}).get("media", 45)
-              },
-              "summary": raw.get("summary", raw.get("narrative", ["System stable"])),
-              "trend": {
-                  "composite": trends.get("composite", {}),
-                  "housing": trends.get("housing", {}),
-                  "affordability": trends.get("cost_of_living", {}),
-                  "employment": trends.get("employment", {}),
-                  "morale": trends.get("morale", {}),
-                  "benefits": trends.get("benefits", {}),
-                  "media": trends.get("media", {})
-              }
-          }
+    def get_status(score):
+        if score >= 80:
+            return "Stable"
+        elif score >= 60:
+            return "Watch"
+        elif score >= 45:
+            return "Pressure"
+        else:
+            return "Severe Pressure"
 
-          with open("daily.json", "w", encoding="utf-8") as f:
-              json.dump(daily, f, indent=2)
+    with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
+        raw = json.load(f)
 
-          print("Wrote daily.json")
-          PY
+    now = datetime.now()
+    trends = raw.get("display_trends", {})
+
+    # 🔥 FIX: invert scoring direction
+    composite_raw = raw.get("composite_score", 60)
+    composite = normalize(invert(composite_raw))
+
+    daily = {
+        "date": now.strftime("%B %d, %Y"),
+        "time": now.strftime("%I:%M %p PT"),
+
+        "composite": composite,
+        "status": get_status(composite),
+
+        "domains": {
+            "housing": normalize(invert(raw.get("scores", {}).get("housing", 55))),
+            "affordability": normalize(invert(raw.get("scores", {}).get("cost_of_living", 60))),
+            "employment": normalize(invert(raw.get("scores", {}).get("employment", 70))),
+            "morale": normalize(invert(raw.get("scores", {}).get("morale", 58))),
+            "benefits": normalize(invert(raw.get("scores", {}).get("benefits", 50))),
+            "media": normalize(invert(raw.get("scores", {}).get("media", 45)))
+        },
+
+        "summary": raw.get("summary", raw.get("narrative", ["System stable"])),
+
+        "trend": {
+            "composite": trends.get("composite", {}),
+            "housing": trends.get("housing", {}),
+            "affordability": trends.get("cost_of_living", {}),
+            "employment": trends.get("employment", {}),
+            "morale": trends.get("morale", {}),
+            "benefits": trends.get("benefits", {}),
+            "media": trends.get("media", {})
+        }
+    }
+
+    with open("daily.json", "w", encoding="utf-8") as f:
+        json.dump(daily, f, indent=2)
+
+    print("Wrote daily.json")
+    PY
 
       - name: Commit and push update
         run: |
