@@ -23,7 +23,7 @@ HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/123.0 Safari/537.36 USAVET-Index/6.0"
+        "Chrome/123.0 Safari/537.36 USAVET-Index/7.0"
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
@@ -133,8 +133,6 @@ NEWSAPI_QUERIES = {
     "media": '"veterans" OR "military families" oversight hearing investigation lawsuit policy congress VA DoD',
 }
 
-# News outlet classification for NewsAPI sources
-# Goal: tier high-trust outlets above noisy aggregators/blogs
 NEWS_SOURCE_TIER_RULES = {
     "tier_1": {
         "npr": "media",
@@ -159,8 +157,8 @@ NEWS_SOURCE_TIER_RULES = {
         "task & purpose": "media",
         "task and purpose": "media",
         "fox news": "media",
-        "nypost": "media",
         "new york post": "media",
+        "nypost": "media",
         "washington examiner": "media",
         "the hill": "media",
         "newsweek": "media",
@@ -179,6 +177,15 @@ NEWS_SOURCE_TIER_RULES = {
         "blog": "sentiment",
     },
 }
+
+# Tier 3 sentiment guardrails
+TIER3_SENTIMENT_WEIGHT_CAP = 0.55
+TIER3_ONE_OFF_PENALTY = -2
+TIER3_TWO_SOURCE_CLUSTER_BONUS = 1
+TIER3_THREE_PLUS_CLUSTER_BONUS = 3
+TIER3_MAX_HITS_PER_ITEM = 2
+TIER3_MAX_NEGATIVE_PER_ITEM = 2
+TIER3_MAX_POSITIVE_PER_ITEM = 2
 
 
 def clamp(value, low=0, high=100):
@@ -565,6 +572,7 @@ def fetch_and_analyze_newsapi():
             "errors": ["missing_api_key"],
             "tier_counts": {"tier_1": 0, "tier_2": 0, "tier_3": 0},
             "type_counts": {"policy": 0, "operational": 0, "media": 0, "sentiment": 0},
+            "tier_3_guardrails_enabled": True,
         }
 
     results = []
@@ -602,6 +610,7 @@ def fetch_and_analyze_newsapi():
         "errors": errors,
         "tier_counts": tier_counts,
         "type_counts": type_counts,
+        "tier_3_guardrails_enabled": True,
     }
 
     return results, meta
@@ -625,7 +634,12 @@ def source_weight(item):
     freshness_weight = item["freshness"] / 100.0
     ok_weight = 1.0 if item["ok"] else 0.35
 
-    return (tier_weight + type_modifier) * max(0.40, freshness_weight) * ok_weight
+    weight = (tier_weight + type_modifier) * max(0.40, freshness_weight) * ok_weight
+
+    if item.get("source_kind") == "newsapi" and item.get("tier") == "tier_3":
+        return min(weight, TIER3_SENTIMENT_WEIGHT_CAP)
+
+    return weight
 
 
 def mapped_domain_bonus(item, domain_name):
@@ -640,6 +654,25 @@ def mapped_domain_bonus(item, domain_name):
     return 0
 
 
+def tier3_cluster_adjustment(source_results, domain_name):
+    tier3_items = [
+        item for item in source_results
+        if item.get("source_kind") == "newsapi"
+        and item.get("tier") == "tier_3"
+        and item.get("mapped_domain") == domain_name
+    ]
+
+    count = len(tier3_items)
+
+    if count >= 3:
+        return TIER3_THREE_PLUS_CLUSTER_BONUS
+    if count == 2:
+        return TIER3_TWO_SOURCE_CLUSTER_BONUS
+    if count == 1:
+        return TIER3_ONE_OFF_PENALTY
+    return 0
+
+
 def score_domain(source_results, domain_name, baseline):
     values = []
 
@@ -649,6 +682,11 @@ def score_domain(source_results, domain_name, baseline):
         hits = item["domain_hits"].get(domain_name, 0)
         negative = item["negative_hits"].get(domain_name, 0)
         positive = item["positive_hits"].get(domain_name, 0)
+
+        if item.get("source_kind") == "newsapi" and item.get("tier") == "tier_3":
+            hits = min(hits, TIER3_MAX_HITS_PER_ITEM)
+            negative = min(negative, TIER3_MAX_NEGATIVE_PER_ITEM)
+            positive = min(positive, TIER3_MAX_POSITIVE_PER_ITEM)
 
         score = baseline
         score += min(hits * 1.25, 16)
@@ -663,11 +701,14 @@ def score_domain(source_results, domain_name, baseline):
             elif item["tier"] == "tier_2":
                 score += 2
             elif item["tier"] == "tier_3":
-                score -= 1
+                score += 0
 
         values.append((clamp(score), weight))
 
-    return clamp(weighted_average(values, baseline))
+    final_value = clamp(weighted_average(values, baseline))
+    final_value = clamp(final_value + tier3_cluster_adjustment(source_results, domain_name))
+
+    return final_value
 
 
 def fred_get_series_latest(series_id):
@@ -832,8 +873,6 @@ def build_narrative(scores, composite, analyzed_count, total_count, fred, newsap
     notes.append(f"Sources analyzed successfully: {analyzed_count} of {total_count}.")
     if newsapi_meta.get("enabled"):
         notes.append(f"NewsAPI articles used: {newsapi_meta.get('articles_used', 0)}.")
-    if fred.get("unemployment") is not None:
-        notes.append(f"FRED unemployment reference: {fred['unemployment']:.1f}%.")
 
     return notes[:6]
 
