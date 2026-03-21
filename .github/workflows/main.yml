@@ -33,6 +33,9 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+          BEA_API_KEY: ${{ secrets.BEA_API_KEY }}
+          VA_API_KEY: ${{ secrets.VA_API_KEY }}
         run: python usavet_real_data_engine_v1.py
 
       - name: Show generated files
