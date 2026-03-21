@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-21T05:00:54.425594+00:00",
+  "generated_at": "2026-03-21T05:39:54.406771+00:00",
   "status": "Elevated Pressure",
   "composite_score": 53,
   "scores": {
-    "housing": 55,
+    "housing": 54,
     "cost_of_living": 58,
     "employment": 54,
-    "morale": 43,
+    "morale": 41,
     "benefits": 58,
-    "media": 52
+    "media": 53
   },
   "summary": [
     "System under elevated pressure",
@@ -20,7 +20,7 @@
     "Composite score: 53.",
     "Highest pressure domain: cost of living (58).",
     "Second highest pressure domain: benefits (58).",
-    "Most stable domain: morale (43).",
+    "Most stable domain: morale (41).",
     "Sources analyzed successfully: 13 of 20.",
     "NewsAPI articles used: 13."
   ],
@@ -38,13 +38,14 @@
         54,
         54,
         53,
+        53,
         53
       ]
     },
     "housing": {
-      "current": 55,
-      "delta_7": 3,
-      "delta_30": 3,
+      "current": 54,
+      "delta_7": 2,
+      "delta_30": 2,
       "direction": "up",
       "arrow": "\u25b2",
       "color": "green",
@@ -54,7 +55,8 @@
         53,
         53,
         54,
-        55
+        55,
+        54
       ]
     },
     "cost_of_living": {
@@ -69,6 +71,7 @@
         58,
         58,
         59,
+        58,
         58,
         58
       ]
@@ -86,13 +89,14 @@
         56,
         56,
         54,
+        54,
         54
       ]
     },
     "morale": {
-      "current": 43,
-      "delta_7": -17,
-      "delta_30": -17,
+      "current": 41,
+      "delta_7": -19,
+      "delta_30": -19,
       "direction": "down",
       "arrow": "\u25bc",
       "color": "red",
@@ -102,7 +106,8 @@
         41,
         42,
         41,
-        43
+        43,
+        41
       ]
     },
     "benefits": {
@@ -118,23 +123,25 @@
         57,
         57,
         58,
+        58,
         58
       ]
     },
     "media": {
-      "current": 52,
-      "delta_7": -2,
-      "delta_30": -2,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
+      "current": 53,
+      "delta_7": -1,
+      "delta_30": -1,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
         54,
         57,
         57,
         56,
         53,
-        52
+        52,
+        53
       ]
     }
   },
@@ -156,7 +163,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 6,
+    "history_points": 7,
     "source_signal_map_loaded": true
   },
   "fred": {
@@ -176,7 +183,18 @@
     "enabled": true,
     "queries_run": 6,
     "articles_used": 13,
-    "errors": []
+    "errors": [],
+    "tier_counts": {
+      "tier_1": 1,
+      "tier_2": 6,
+      "tier_3": 6
+    },
+    "type_counts": {
+      "policy": 0,
+      "operational": 0,
+      "media": 7,
+      "sentiment": 6
+    }
   },
   "sources": [
     {
@@ -404,8 +422,8 @@
     {
       "key": "newsapi_cost_of_living",
       "url": "https://www.rawstory.com/rfk-jr-2675367214/",
-      "tier": "tier_2",
-      "type": "media",
+      "tier": "tier_3",
+      "type": "sentiment",
       "mapped_domain": "cost_of_living",
       "freshness": 64,
       "source_kind": "newsapi",
@@ -415,8 +433,8 @@
     {
       "key": "newsapi_benefits",
       "url": "https://www.commondreams.org/news/republicans-balanced-budget-amendment",
-      "tier": "tier_2",
-      "type": "media",
+      "tier": "tier_3",
+      "type": "sentiment",
       "mapped_domain": "benefits",
       "freshness": 95,
       "source_kind": "newsapi",
@@ -426,8 +444,8 @@
     {
       "key": "newsapi_benefits",
       "url": "https://channel4news.substack.com/p/the-nottingham-inquiry-what-lessons/comment/215640700",
-      "tier": "tier_2",
-      "type": "media",
+      "tier": "tier_3",
+      "type": "sentiment",
       "mapped_domain": "benefits",
       "freshness": 80,
       "source_kind": "newsapi",
@@ -437,8 +455,8 @@
     {
       "key": "newsapi_benefits",
       "url": "https://www.rawstory.com/doj-2675699117/",
-      "tier": "tier_2",
-      "type": "media",
+      "tier": "tier_3",
+      "type": "sentiment",
       "mapped_domain": "benefits",
       "freshness": 72,
       "source_kind": "newsapi",
@@ -470,7 +488,7 @@
     {
       "key": "newsapi_benefits",
       "url": "https://www.npr.org/2026/02/27/nx-s1-5725278/va-says-it-wont-enforce-rule-that-would-have-affected-veterans-benefits",
-      "tier": "tier_2",
+      "tier": "tier_1",
       "type": "media",
       "mapped_domain": "benefits",
       "freshness": 64,
@@ -481,8 +499,8 @@
     {
       "key": "newsapi_benefits",
       "url": "https://freerepublic.com/focus/f-chat/4368358/posts",
-      "tier": "tier_2",
-      "type": "media",
+      "tier": "tier_3",
+      "type": "sentiment",
       "mapped_domain": "benefits",
       "freshness": 64,
       "source_kind": "newsapi",
@@ -514,8 +532,8 @@
     {
       "key": "newsapi_benefits",
       "url": "https://freerepublic.com/focus/f-vetscor/4367925/posts",
-      "tier": "tier_2",
-      "type": "media",
+      "tier": "tier_3",
+      "type": "sentiment",
       "mapped_domain": "benefits",
       "freshness": 64,
       "source_kind": "newsapi",
