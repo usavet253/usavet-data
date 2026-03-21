@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-21T23:36:37.937879+00:00",
+  "generated_at": "2026-03-21T23:43:21.339035+00:00",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v1",
   "status": "ok",
   "index": {
-    "overall_score": 59.7,
+    "overall_score": 58.6,
     "economic_score": 62,
-    "policy_score": 58,
+    "policy_score": 59,
     "benefits_score": 55,
-    "media_score": 65,
+    "media_score": 56,
     "band": "yellow"
   },
   "signals": {
@@ -32,20 +32,20 @@
       "va_ok": false
     },
     "media": {
-      "score": 65,
-      "articles_kept": 51,
+      "score": 56,
+      "articles_kept": 1,
       "queries_run": 6
     },
     "policy": {
-      "score": 58,
+      "score": 59,
       "federal_register_ok": true,
-      "federal_register_count": 0
+      "federal_register_count": 1
     }
   },
   "diagnostics": {
     "source_count": 20,
-    "successful_sources": 11,
-    "failed_sources": 9,
+    "successful_sources": 8,
+    "failed_sources": 12,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
@@ -56,18 +56,18 @@
     "va_benefits_api_key_present": true,
     "federal_register_key_required": false,
     "tier_counts": {
-      "tier_1": 1,
+      "tier_1": 2,
       "tier_2": 0,
-      "tier_3": 51
+      "tier_3": 1
     },
     "type_counts": {
-      "policy": 3,
-      "operational": 7,
+      "policy": 1,
+      "operational": 0,
       "media": 0,
-      "sentiment": 41,
+      "sentiment": 1,
       "unknown": 0
     },
-    "history_points": 17,
+    "history_points": 18,
     "source_signal_map_loaded": true,
     "regional_model_enabled": true,
     "regional_regions_count": 4
@@ -76,37 +76,48 @@
     "enabled": true,
     "queries_run": 6,
     "articles_used": 58,
-    "articles_kept": 51,
-    "articles_dropped": 7,
+    "articles_kept": 1,
+    "articles_dropped": 57,
     "errors": [],
     "tier_counts": {
-      "tier_1": 0,
+      "tier_1": 1,
       "tier_2": 0,
-      "tier_3": 51
+      "tier_3": 0
     },
     "type_counts": {
-      "policy": 3,
-      "operational": 7,
+      "policy": 0,
+      "operational": 0,
       "media": 0,
-      "sentiment": 41
+      "sentiment": 1
     },
     "tier_1_guardrails_enabled": true,
     "domain_relevance_filtering_enabled": true,
     "domain_drop_counts": {
       "housing": 0,
-      "cost_of_living": 6,
-      "employment": 2,
-      "morale": 4,
-      "benefits": 16,
+      "cost_of_living": 1,
+      "employment": 0,
+      "morale": 0,
+      "benefits": 1,
       "media": 0
-    }
+    },
+    "kept_article_samples": [
+      {
+        "source": "cnbc",
+        "title": "Fears of 1970s-style stagflation arise with oil spike to $100. How big a threat is it?",
+        "url": "https://www.cnbc.com/2026/03/09/fears-of-1970s-style-stagflation-arise-with-oil-spike-to-100-how-big-a-threat-is-it.html"
+      }
+    ]
   },
   "federal_register": {
     "ok": true,
-    "count": 0,
-    "document_numbers": [],
-    "agencies": [],
-    "date_gte": "2026-01-01",
+    "count": 1,
+    "document_numbers": [
+      "2025-24061"
+    ],
+    "agencies": [
+      "Veterans Affairs Department"
+    ],
+    "date_gte": "2025-12-01",
     "status_code": 200
   },
   "hud": {
