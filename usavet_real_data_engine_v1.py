@@ -1,7 +1,7 @@
 import json
 import os
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
 import requests
@@ -16,16 +16,27 @@ HISTORY_LIMIT = 90
 FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
 NEWS_API_KEY = os.getenv("NEWS_API_KEY", "").strip()
 BLS_API_KEY = os.getenv("BLS_API_KEY", "").strip()
+CENSUS_API_KEY = os.getenv("CENSUS_API_KEY", "").strip()
+BEA_API_KEY = os.getenv("BEA_API_KEY", "").strip()
+HUD_API_KEY = os.getenv("HUD_API_KEY", "").strip()
+VA_API_KEY = os.getenv("VA_API_KEY", "").strip()
+VA_BENEFITS_API_KEY = os.getenv("VA_BENEFITS_API_KEY", "").strip()
 
 NEWSAPI_ENDPOINT = "https://newsapi.org/v2/everything"
 NEWSAPI_PAGE_SIZE = 20
 BLS_API_ENDPOINT = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+BEA_API_ENDPOINT = "https://apps.bea.gov/api/data"
+FEDERAL_REGISTER_ENDPOINT = "https://www.federalregister.gov/api/v1/documents.json"
+VA_FACILITIES_ENDPOINT = "https://api.va.gov/facilities/va"
+VA_BENEFITS_REFERENCE_ENDPOINT = "https://api.va.gov/services/benefits-reference-data/v1"
+HUD_FMR_LIST_ENDPOINT = "https://www.huduser.gov/hudapi/public/fmr/listMetroAreas"
+HUD_IL_LIST_ENDPOINT = "https://www.huduser.gov/hudapi/public/il/listMetroAreas"
 
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/123.0 Safari/537.36 USAVET-Index/8.0"
+        "Chrome/123.0 Safari/537.36 USAVET-Index/9.0"
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
@@ -189,7 +200,6 @@ TIER3_THREE_PLUS_CLUSTER_BONUS = 3
 TIER3_MAX_HITS_PER_ITEM = 2
 TIER3_MAX_NEGATIVE_PER_ITEM = 2
 TIER3_MAX_POSITIVE_PER_ITEM = 2
-
 NEWS_DOMAIN_RELEVANCE_MIN = 2
 NEWS_DOMAIN_NEGATIVE_RELEVANCE_MIN = 1
 
@@ -265,9 +275,37 @@ def clamp(value, low=0, high=100):
     return max(low, min(high, int(round(value))))
 
 
-def safe_get(url, timeout=REQUEST_TIMEOUT):
+def parse_float(value):
+    if value in (None, "", "."):
+        return None
     try:
-        return requests.get(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
+        return float(str(value).replace(",", "").replace("$", "").strip())
+    except Exception:
+        return None
+
+
+def safe_get(url, timeout=REQUEST_TIMEOUT, headers=None, params=None):
+    try:
+        return requests.get(
+            url,
+            headers=headers or HEADERS,
+            params=params,
+            timeout=timeout,
+            allow_redirects=True,
+        )
+    except requests.RequestException:
+        return None
+
+
+def safe_post(url, timeout=REQUEST_TIMEOUT, headers=None, json_payload=None, data_payload=None):
+    try:
+        return requests.post(
+            url,
+            headers=headers,
+            json=json_payload,
+            data=data_payload,
+            timeout=timeout,
+        )
     except requests.RequestException:
         return None
 
@@ -556,16 +594,20 @@ def fetch_newsapi_articles_for_domain(domain_name, query):
         "searchIn": "title,description",
     }
 
+    response = safe_get(
+        NEWSAPI_ENDPOINT,
+        timeout=REQUEST_TIMEOUT,
+        headers=newsapi_headers(),
+        params=params,
+    )
+
+    if response is None:
+        return {"ok": False, "status": "request_failed", "articles": []}
+
     try:
-        response = requests.get(
-            NEWSAPI_ENDPOINT,
-            params=params,
-            headers=newsapi_headers(),
-            timeout=REQUEST_TIMEOUT,
-        )
         data = response.json()
     except Exception:
-        return {"ok": False, "status": "request_failed", "articles": []}
+        return {"ok": False, "status": "invalid_json", "articles": []}
 
     if response.status_code != 200 or data.get("status") != "ok":
         return {
@@ -816,14 +858,11 @@ def score_domain(source_results, domain_name, baseline):
                 score += 5
             elif item["tier"] == "tier_2":
                 score += 2
-            elif item["tier"] == "tier_3":
-                score += 0
 
         values.append((clamp(score), weight))
 
     final_value = clamp(weighted_average(values, baseline))
     final_value = clamp(final_value + tier3_cluster_adjustment(source_results, domain_name))
-
     return final_value
 
 
@@ -840,21 +879,20 @@ def fred_get_series_latest(series_id):
         "limit": 12,
     }
 
+    response = safe_get(url, timeout=REQUEST_TIMEOUT, params=params, headers={"User-Agent": HEADERS["User-Agent"]})
+    if response is None or not response.ok:
+        return None
+
     try:
-        response = requests.get(url, params=params, timeout=20)
-        response.raise_for_status()
         data = response.json()
     except Exception:
         return None
 
     observations = data.get("observations", [])
     for obs in observations:
-        value = obs.get("value")
-        if value not in (None, ".", ""):
-            try:
-                return float(value)
-            except ValueError:
-                continue
+        value = parse_float(obs.get("value"))
+        if value is not None:
+            return value
     return None
 
 
@@ -867,14 +905,7 @@ def get_fred_signals():
 
 
 def fred_adjustments(fred):
-    adjustments = {
-        "housing": 0,
-        "cost_of_living": 0,
-        "employment": 0,
-        "morale": 0,
-        "benefits": 0,
-        "media": 0,
-    }
+    adjustments = {domain: 0 for domain in DOMAINS}
 
     cpi = fred.get("cpi")
     unemployment = fred.get("unemployment")
@@ -925,24 +956,25 @@ def bls_get_series(series_id):
         "registrationkey": BLS_API_KEY,
     }
 
-    try:
-        response = requests.post(BLS_API_ENDPOINT, json=payload, timeout=REQUEST_TIMEOUT)
-        data = response.json()
-    except Exception:
+    response = safe_post(
+        BLS_API_ENDPOINT,
+        timeout=REQUEST_TIMEOUT,
+        headers={"Content-Type": "application/json"},
+        json_payload=payload,
+    )
+    if response is None or not response.ok:
         return None
 
     try:
+        data = response.json()
         series = data["Results"]["series"][0]["data"]
     except Exception:
         return None
 
     for entry in series:
-        value = entry.get("value")
-        if value not in (None, "", "."):
-            try:
-                return float(value)
-            except ValueError:
-                continue
+        value = parse_float(entry.get("value"))
+        if value is not None:
+            return value
 
     return None
 
@@ -955,14 +987,7 @@ def get_bls_signals():
 
 
 def bls_adjustments(bls):
-    adjustments = {
-        "housing": 0,
-        "cost_of_living": 0,
-        "employment": 0,
-        "morale": 0,
-        "benefits": 0,
-        "media": 0,
-    }
+    adjustments = {domain: 0 for domain in DOMAINS}
 
     unemployment = bls.get("unemployment_rate")
     participation = bls.get("labor_participation")
@@ -992,6 +1017,439 @@ def bls_adjustments(bls):
 
 def apply_bls_adjustments(scores, bls):
     adjustments = bls_adjustments(bls)
+    adjusted = {domain: clamp(value + adjustments.get(domain, 0)) for domain, value in scores.items()}
+    return adjusted, adjustments
+
+
+def census_get_acs_national():
+    if not CENSUS_API_KEY:
+        return {
+            "year": None,
+            "median_gross_rent": None,
+            "median_home_value": None,
+            "ok": False,
+        }
+
+    current_year = datetime.now(timezone.utc).year
+    years_to_try = list(range(current_year - 1, current_year - 6, -1))
+
+    for year in years_to_try:
+        url = f"https://api.census.gov/data/{year}/acs/acs1"
+        params = {
+            "get": "NAME,B25064_001E,B25077_001E",
+            "for": "us:1",
+            "key": CENSUS_API_KEY,
+        }
+
+        response = safe_get(url, timeout=REQUEST_TIMEOUT, params=params, headers={"User-Agent": HEADERS["User-Agent"]})
+        if response is None or not response.ok:
+            continue
+
+        try:
+            data = response.json()
+            if len(data) >= 2:
+                row = data[1]
+                return {
+                    "year": year,
+                    "median_gross_rent": parse_float(row[1]),
+                    "median_home_value": parse_float(row[2]),
+                    "ok": True,
+                }
+        except Exception:
+            continue
+
+    return {
+        "year": None,
+        "median_gross_rent": None,
+        "median_home_value": None,
+        "ok": False,
+    }
+
+
+def census_adjustments(census):
+    adjustments = {domain: 0 for domain in DOMAINS}
+    rent = census.get("median_gross_rent")
+    home_value = census.get("median_home_value")
+
+    if rent is not None:
+        if rent >= 1800:
+            adjustments["cost_of_living"] -= 2
+            adjustments["housing"] -= 1
+        elif rent >= 1500:
+            adjustments["cost_of_living"] -= 1
+
+    if home_value is not None:
+        if home_value >= 400000:
+            adjustments["housing"] -= 2
+            adjustments["cost_of_living"] -= 1
+        elif home_value >= 300000:
+            adjustments["housing"] -= 1
+
+    return adjustments
+
+
+def apply_census_adjustments(scores, census):
+    adjustments = census_adjustments(census)
+    adjusted = {domain: clamp(value + adjustments.get(domain, 0)) for domain, value in scores.items()}
+    return adjusted, adjustments
+
+
+def bea_get_signal():
+    if not BEA_API_KEY:
+        return {
+            "personal_income_billions": None,
+            "table_name": None,
+            "year": None,
+            "ok": False,
+        }
+
+    params = {
+        "UserID": BEA_API_KEY,
+        "method": "GetData",
+        "datasetname": "NIPA",
+        "TableName": "T20100",
+        "LineNumber": "1",
+        "Frequency": "A",
+        "Year": "LAST5",
+        "ResultFormat": "json",
+    }
+
+    response = safe_get(BEA_API_ENDPOINT, timeout=REQUEST_TIMEOUT, params=params, headers={"User-Agent": HEADERS["User-Agent"]})
+    if response is None or not response.ok:
+        return {
+            "personal_income_billions": None,
+            "table_name": "T20100",
+            "year": None,
+            "ok": False,
+        }
+
+    try:
+        data = response.json()
+        records = data["BEAAPI"]["Results"]["Data"]
+        cleaned = []
+        for item in records:
+            value = parse_float(item.get("DataValue"))
+            year = item.get("TimePeriod")
+            if value is not None:
+                cleaned.append((str(year), value))
+        if cleaned:
+            cleaned.sort(key=lambda x: x[0], reverse=True)
+            latest_year, latest_value = cleaned[0]
+            return {
+                "personal_income_billions": latest_value,
+                "table_name": "T20100",
+                "year": latest_year,
+                "ok": True,
+            }
+    except Exception:
+        pass
+
+    return {
+        "personal_income_billions": None,
+        "table_name": "T20100",
+        "year": None,
+        "ok": False,
+    }
+
+
+def bea_adjustments(bea):
+    adjustments = {domain: 0 for domain in DOMAINS}
+    personal_income = bea.get("personal_income_billions")
+
+    if personal_income is not None:
+        if personal_income >= 25000:
+            adjustments["employment"] += 1
+            adjustments["morale"] += 1
+        elif personal_income <= 18000:
+            adjustments["employment"] -= 1
+            adjustments["morale"] -= 1
+
+    return adjustments
+
+
+def apply_bea_adjustments(scores, bea):
+    adjustments = bea_adjustments(bea)
+    adjusted = {domain: clamp(value + adjustments.get(domain, 0)) for domain, value in scores.items()}
+    return adjusted, adjustments
+
+
+def hud_headers():
+    if not HUD_API_KEY:
+        return None
+    return {
+        "Authorization": f"Bearer {HUD_API_KEY}",
+        "User-Agent": HEADERS["User-Agent"],
+        "Accept": "application/json",
+    }
+
+
+def recursive_count_items(obj):
+    if isinstance(obj, list):
+        return len(obj)
+    if isinstance(obj, dict):
+        for key in ("data", "items", "results", "metroareas"):
+            if key in obj and isinstance(obj[key], list):
+                return len(obj[key])
+            if key in obj and isinstance(obj[key], dict):
+                for nested_key in ("metroareas", "items", "results"):
+                    if nested_key in obj[key] and isinstance(obj[key][nested_key], list):
+                        return len(obj[key][nested_key])
+    return 0
+
+
+def hud_try_endpoint(url):
+    headers = hud_headers()
+    if not headers:
+        return {"ok": False, "count": None, "endpoint": url}
+
+    response = safe_get(url, timeout=REQUEST_TIMEOUT, headers=headers)
+    if response is None or not response.ok:
+        return {"ok": False, "count": None, "endpoint": url}
+
+    try:
+        payload = response.json()
+        return {
+            "ok": True,
+            "count": recursive_count_items(payload),
+            "endpoint": url,
+        }
+    except Exception:
+        return {"ok": False, "count": None, "endpoint": url}
+
+
+def get_hud_signals():
+    if not HUD_API_KEY:
+        return {
+            "fmr_endpoint_ok": False,
+            "income_limits_endpoint_ok": False,
+            "fmr_area_count": None,
+            "income_limits_area_count": None,
+            "ok": False,
+        }
+
+    fmr_result = hud_try_endpoint(HUD_FMR_LIST_ENDPOINT)
+    il_result = hud_try_endpoint(HUD_IL_LIST_ENDPOINT)
+
+    return {
+        "fmr_endpoint_ok": fmr_result["ok"],
+        "income_limits_endpoint_ok": il_result["ok"],
+        "fmr_area_count": fmr_result["count"],
+        "income_limits_area_count": il_result["count"],
+        "ok": bool(fmr_result["ok"] or il_result["ok"]),
+    }
+
+
+def hud_adjustments(hud):
+    adjustments = {domain: 0 for domain in DOMAINS}
+
+    if hud.get("fmr_endpoint_ok") and hud.get("income_limits_endpoint_ok"):
+        adjustments["housing"] += 1
+    elif hud.get("fmr_endpoint_ok") or hud.get("income_limits_endpoint_ok"):
+        adjustments["housing"] += 0
+
+    return adjustments
+
+
+def apply_hud_adjustments(scores, hud):
+    adjustments = hud_adjustments(hud)
+    adjusted = {domain: clamp(value + adjustments.get(domain, 0)) for domain, value in scores.items()}
+    return adjusted, adjustments
+
+
+def va_facilities_headers():
+    if not VA_API_KEY:
+        return None
+    return {
+        "apikey": VA_API_KEY,
+        "User-Agent": HEADERS["User-Agent"],
+        "Accept": "application/json",
+    }
+
+
+def get_va_facilities_signals():
+    headers = va_facilities_headers()
+    if not headers:
+        return {
+            "ok": False,
+            "facility_count_page_1": None,
+            "sample_endpoint": VA_FACILITIES_ENDPOINT,
+        }
+
+    params = {"page": 1, "per_page": 100}
+    response = safe_get(VA_FACILITIES_ENDPOINT, timeout=REQUEST_TIMEOUT, headers=headers, params=params)
+    if response is None or not response.ok:
+        return {
+            "ok": False,
+            "facility_count_page_1": None,
+            "sample_endpoint": VA_FACILITIES_ENDPOINT,
+        }
+
+    try:
+        payload = response.json()
+        count = len(payload.get("data", [])) if isinstance(payload.get("data"), list) else None
+        return {
+            "ok": True,
+            "facility_count_page_1": count,
+            "sample_endpoint": VA_FACILITIES_ENDPOINT,
+        }
+    except Exception:
+        return {
+            "ok": False,
+            "facility_count_page_1": None,
+            "sample_endpoint": VA_FACILITIES_ENDPOINT,
+        }
+
+
+def va_benefits_headers():
+    if not VA_BENEFITS_API_KEY:
+        return None
+    return {
+        "apikey": VA_BENEFITS_API_KEY,
+        "User-Agent": HEADERS["User-Agent"],
+        "Accept": "application/json",
+    }
+
+
+def get_va_benefits_signals():
+    headers = va_benefits_headers()
+    if not headers:
+        return {
+            "ok": False,
+            "disabilities_count": None,
+            "treatment_centers_count": None,
+        }
+
+    disabilities_url = f"{VA_BENEFITS_REFERENCE_ENDPOINT}/disabilities"
+    treatment_centers_url = f"{VA_BENEFITS_REFERENCE_ENDPOINT}/treatment-centers"
+
+    disability_response = safe_get(disabilities_url, timeout=REQUEST_TIMEOUT, headers=headers)
+    treatment_response = safe_get(treatment_centers_url, timeout=REQUEST_TIMEOUT, headers=headers)
+
+    disabilities_count = None
+    treatment_centers_count = None
+    ok = False
+
+    if disability_response is not None and disability_response.ok:
+        try:
+            payload = disability_response.json()
+            if isinstance(payload.get("data"), list):
+                disabilities_count = len(payload["data"])
+                ok = True
+        except Exception:
+            pass
+
+    if treatment_response is not None and treatment_response.ok:
+        try:
+            payload = treatment_response.json()
+            if isinstance(payload.get("data"), list):
+                treatment_centers_count = len(payload["data"])
+                ok = True
+        except Exception:
+            pass
+
+    return {
+        "ok": ok,
+        "disabilities_count": disabilities_count,
+        "treatment_centers_count": treatment_centers_count,
+    }
+
+
+def va_adjustments(va_facilities, va_benefits):
+    adjustments = {domain: 0 for domain in DOMAINS}
+
+    if va_facilities.get("ok"):
+        adjustments["benefits"] += 1
+
+    if va_benefits.get("ok"):
+        adjustments["benefits"] += 1
+        adjustments["morale"] += 1
+
+    return adjustments
+
+
+def apply_va_adjustments(scores, va_facilities, va_benefits):
+    adjustments = va_adjustments(va_facilities, va_benefits)
+    adjusted = {domain: clamp(value + adjustments.get(domain, 0)) for domain, value in scores.items()}
+    return adjusted, adjustments
+
+
+def get_federal_register_signals():
+    date_gte = (datetime.now(timezone.utc) - timedelta(days=14)).date().isoformat()
+    params = {
+        "conditions[publication_date][gte]": date_gte,
+        "conditions[term]": '"veterans" OR "military" OR "VA" OR "service members"',
+        "order": "newest",
+        "per_page": 20,
+    }
+
+    response = safe_get(
+        FEDERAL_REGISTER_ENDPOINT,
+        timeout=REQUEST_TIMEOUT,
+        params=params,
+        headers={"User-Agent": HEADERS["User-Agent"], "Accept": "application/json"},
+    )
+
+    if response is None or not response.ok:
+        return {
+            "ok": False,
+            "count": None,
+            "document_numbers": [],
+            "agencies": [],
+            "date_gte": date_gte,
+        }
+
+    try:
+        payload = response.json()
+        results = payload.get("results", [])
+        agencies = set()
+
+        for item in results:
+            for agency in item.get("agencies", []):
+                name = agency.get("name")
+                if name:
+                    agencies.add(name)
+
+        return {
+            "ok": True,
+            "count": payload.get("count", len(results)),
+            "document_numbers": [item.get("document_number") for item in results[:10] if item.get("document_number")],
+            "agencies": sorted(list(agencies))[:10],
+            "date_gte": date_gte,
+        }
+    except Exception:
+        return {
+            "ok": False,
+            "count": None,
+            "document_numbers": [],
+            "agencies": [],
+            "date_gte": date_gte,
+        }
+
+
+def federal_register_adjustments(fr):
+    adjustments = {domain: 0 for domain in DOMAINS}
+    count = fr.get("count")
+
+    if count is None:
+        return adjustments
+
+    if count >= 40:
+        adjustments["media"] += 4
+        adjustments["benefits"] += 2
+    elif count >= 20:
+        adjustments["media"] += 3
+        adjustments["benefits"] += 2
+    elif count >= 10:
+        adjustments["media"] += 2
+        adjustments["benefits"] += 1
+    elif count >= 5:
+        adjustments["media"] += 1
+
+    return adjustments
+
+
+def apply_federal_register_adjustments(scores, fr):
+    adjustments = federal_register_adjustments(fr)
     adjusted = {domain: clamp(value + adjustments.get(domain, 0)) for domain, value in scores.items()}
     return adjusted, adjustments
 
@@ -1058,7 +1516,7 @@ def build_summary_bullets(scores, composite):
     return bullets[:4]
 
 
-def build_narrative(scores, composite, analyzed_count, total_count, fred, newsapi_meta, bls):
+def build_narrative(scores, composite, analyzed_count, total_count, fred, newsapi_meta, bls, fr):
     notes = []
     ordered = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
@@ -1073,6 +1531,8 @@ def build_narrative(scores, composite, analyzed_count, total_count, fred, newsap
             f"NewsAPI kept {newsapi_meta.get('articles_kept', 0)} of "
             f"{newsapi_meta.get('articles_used', 0)} articles after relevance filtering."
         )
+    elif fr.get("ok") and fr.get("count") is not None:
+        notes.append(f"Federal Register returned {fr.get('count')} relevant documents in the recent monitoring window.")
     elif bls.get("unemployment_rate") is not None or bls.get("labor_participation") is not None:
         notes.append("BLS labor signals were incorporated into employment calibration.")
 
@@ -1278,6 +1738,12 @@ def fallback_result(history):
             "fred_api_key_present": bool(FRED_API_KEY),
             "news_api_key_present": bool(NEWS_API_KEY),
             "bls_api_key_present": bool(BLS_API_KEY),
+            "census_api_key_present": bool(CENSUS_API_KEY),
+            "bea_api_key_present": bool(BEA_API_KEY),
+            "hud_api_key_present": bool(HUD_API_KEY),
+            "va_api_key_present": bool(VA_API_KEY),
+            "va_benefits_api_key_present": bool(VA_BENEFITS_API_KEY),
+            "federal_register_key_required": False,
         },
     }
 
@@ -1310,7 +1776,23 @@ def main():
     scores_after_fred, fred_domain_adjustments = apply_fred_adjustments(base_scores, fred)
 
     bls = get_bls_signals()
-    final_scores, bls_domain_adjustments = apply_bls_adjustments(scores_after_fred, bls)
+    scores_after_bls, bls_domain_adjustments = apply_bls_adjustments(scores_after_fred, bls)
+
+    census = census_get_acs_national()
+    scores_after_census, census_domain_adjustments = apply_census_adjustments(scores_after_bls, census)
+
+    bea = bea_get_signal()
+    scores_after_bea, bea_domain_adjustments = apply_bea_adjustments(scores_after_census, bea)
+
+    hud = get_hud_signals()
+    scores_after_hud, hud_domain_adjustments = apply_hud_adjustments(scores_after_bea, hud)
+
+    va_facilities = get_va_facilities_signals()
+    va_benefits = get_va_benefits_signals()
+    scores_after_va, va_domain_adjustments = apply_va_adjustments(scores_after_hud, va_facilities, va_benefits)
+
+    federal_register = get_federal_register_signals()
+    final_scores, federal_register_domain_adjustments = apply_federal_register_adjustments(scores_after_va, federal_register)
 
     composite = composite_from_scores(final_scores)
     status = status_from_composite(composite)
@@ -1323,6 +1805,7 @@ def main():
         fred,
         newsapi_meta,
         bls,
+        federal_register,
     )
     regions = build_regions(composite, final_scores)
 
@@ -1350,6 +1833,12 @@ def main():
             "fred_api_key_present": bool(FRED_API_KEY),
             "news_api_key_present": bool(NEWS_API_KEY),
             "bls_api_key_present": bool(BLS_API_KEY),
+            "census_api_key_present": bool(CENSUS_API_KEY),
+            "bea_api_key_present": bool(BEA_API_KEY),
+            "hud_api_key_present": bool(HUD_API_KEY),
+            "va_api_key_present": bool(VA_API_KEY),
+            "va_benefits_api_key_present": bool(VA_BENEFITS_API_KEY),
+            "federal_register_key_required": False,
             "tier_counts": {
                 "tier_1": sum(1 for s in source_items if s["tier"] == "tier_1"),
                 "tier_2": sum(1 for s in source_items if s["tier"] == "tier_2"),
@@ -1371,6 +1860,17 @@ def main():
         "fred_domain_adjustments": fred_domain_adjustments,
         "bls": bls,
         "bls_domain_adjustments": bls_domain_adjustments,
+        "census": census,
+        "census_domain_adjustments": census_domain_adjustments,
+        "bea": bea,
+        "bea_domain_adjustments": bea_domain_adjustments,
+        "hud": hud,
+        "hud_domain_adjustments": hud_domain_adjustments,
+        "va_facilities": va_facilities,
+        "va_benefits": va_benefits,
+        "va_domain_adjustments": va_domain_adjustments,
+        "federal_register": federal_register,
+        "federal_register_domain_adjustments": federal_register_domain_adjustments,
         "newsapi": newsapi_meta,
         "sources": [
             {
@@ -1420,7 +1920,13 @@ def main():
     print(f"Wrote {OUTPUT_FILE}")
     print(f"Wrote {HISTORY_FILE}")
     print(json.dumps(result["meta"], indent=2))
-    print(json.dumps(result["newsapi"], indent=2))
+    print(json.dumps({
+        "newsapi": result["newsapi"],
+        "federal_register": result["federal_register"],
+        "hud": result["hud"],
+        "va_facilities": result["va_facilities"],
+        "va_benefits": result["va_benefits"],
+    }, indent=2))
 
 
 if __name__ == "__main__":
