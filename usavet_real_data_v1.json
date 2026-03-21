@@ -1,289 +1,51 @@
 {
-  "generated_at": "2026-03-21T23:27:07.653317+00:00",
-  "status": "Elevated Pressure",
-  "composite_score": 54,
-  "scores": {
-    "housing": 54,
-    "cost_of_living": 58,
-    "employment": 55,
-    "morale": 43,
-    "benefits": 60,
-    "media": 56
+  "generated_at": "2026-03-21T23:36:37.937879+00:00",
+  "product": "USAVET.AI Daily Accountability Index",
+  "version": "v1",
+  "status": "ok",
+  "index": {
+    "overall_score": 59.7,
+    "economic_score": 62,
+    "policy_score": 58,
+    "benefits_score": 55,
+    "media_score": 65,
+    "band": "yellow"
   },
-  "summary": [
-    "System under elevated pressure",
-    "Affordability pressure elevated",
-    "Housing strain elevated",
-    "Employment strain elevated"
-  ],
-  "narrative": [
-    "Composite score: 54.",
-    "Highest pressure domain: benefits (60).",
-    "Second highest pressure domain: cost of living (58).",
-    "Most stable domain: morale (43).",
-    "Sources analyzed successfully: 13 of 20.",
-    "NewsAPI kept 7 of 13 articles after relevance filtering."
-  ],
-  "display_trends": {
-    "composite": {
-      "current": 54,
-      "delta_7": 0,
-      "delta_30": -2,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        54,
-        53,
-        53,
-        53,
-        54,
-        53,
-        54,
-        54,
-        54,
-        54,
-        54,
-        54,
-        54,
-        54
-      ]
-    },
+  "signals": {
     "housing": {
-      "current": 54,
-      "delta_7": 0,
-      "delta_30": 2,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        53,
-        54,
-        55,
-        54,
-        55,
-        54,
-        54,
-        54,
-        54,
-        54,
-        54,
-        53,
-        53,
-        54
-      ]
+      "score": 48,
+      "source_ok": false,
+      "fmr_area_count": null
     },
     "cost_of_living": {
-      "current": 58,
-      "delta_7": 0,
-      "delta_30": -7,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        59,
-        58,
-        58,
-        58,
-        56,
-        56,
-        58,
-        58,
-        58,
-        58,
-        58,
-        58,
-        59,
-        58
-      ]
+      "score": 60,
+      "bea_ok": false,
+      "bea_records_count": 0
     },
     "employment": {
-      "current": 55,
-      "delta_7": 1,
-      "delta_30": 1,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        56,
-        54,
-        54,
-        54,
-        54,
-        54,
-        55,
-        54,
-        55,
-        55,
-        55,
-        55,
-        56,
-        55
-      ]
-    },
-    "morale": {
-      "current": 43,
-      "delta_7": 2,
-      "delta_30": -17,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
-      "sparkline": [
-        42,
-        41,
-        43,
-        41,
-        43,
-        40,
-        41,
-        41,
-        40,
-        40,
-        40,
-        41,
-        41,
-        43
-      ]
+      "score": 59,
+      "bls_key_present": true
     },
     "benefits": {
-      "current": 60,
-      "delta_7": 0,
-      "delta_30": 7,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        57,
-        58,
-        58,
-        58,
-        61,
-        61,
-        60,
-        60,
-        59,
-        59,
-        59,
-        60,
-        59,
-        60
-      ]
+      "score": 55,
+      "hud_ok": false,
+      "va_ok": false
     },
     "media": {
-      "current": 56,
-      "delta_7": 1,
-      "delta_30": 2,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        56,
-        53,
-        52,
-        53,
-        53,
-        54,
-        56,
-        55,
-        55,
-        55,
-        55,
-        55,
-        56,
-        56
-      ]
+      "score": 65,
+      "articles_kept": 51,
+      "queries_run": 6
+    },
+    "policy": {
+      "score": 58,
+      "federal_register_ok": true,
+      "federal_register_count": 0
     }
   },
-  "regions": [
-    {
-      "id": "west",
-      "name": "West",
-      "score": 57,
-      "status": "Elevated Pressure",
-      "trend": "flat",
-      "summary": "Localized pressure remains mixed relative to national baseline trends.",
-      "drivers": [
-        "Housing affordability remains constrained",
-        "Employment conditions are uneven",
-        "Regional media pressure remains mixed"
-      ],
-      "sparkline": [
-        56,
-        56,
-        56,
-        57,
-        57,
-        58
-      ]
-    },
-    {
-      "id": "south",
-      "name": "South",
-      "score": 57,
-      "status": "Elevated Pressure",
-      "trend": "flat",
-      "summary": "Localized pressure remains mixed relative to national baseline trends.",
-      "drivers": [
-        "Household cost pressure remains active",
-        "Labor conditions are uneven",
-        "Service access pressure remains visible"
-      ],
-      "sparkline": [
-        56,
-        56,
-        56,
-        57,
-        57,
-        57
-      ]
-    },
-    {
-      "id": "midwest",
-      "name": "Midwest",
-      "score": 55,
-      "status": "Elevated Pressure",
-      "trend": "flat",
-      "summary": "Localized pressure remains mixed relative to national baseline trends.",
-      "drivers": [
-        "Affordability pressure remains visible",
-        "Employment conditions are stable but softening",
-        "Narrative pressure is contained"
-      ],
-      "sparkline": [
-        53,
-        54,
-        54,
-        55,
-        55,
-        55
-      ]
-    },
-    {
-      "id": "northeast",
-      "name": "Northeast",
-      "score": 54,
-      "status": "Elevated Pressure",
-      "trend": "flat",
-      "summary": "Localized pressure remains mixed relative to national baseline trends.",
-      "drivers": [
-        "Housing cost pressure remains active",
-        "Benefits and service strain remain visible",
-        "Media tone remains mixed"
-      ],
-      "sparkline": [
-        52,
-        53,
-        53,
-        54,
-        54,
-        54
-      ]
-    }
-  ],
-  "meta": {
+  "diagnostics": {
     "source_count": 20,
-    "successful_sources": 13,
-    "failed_sources": 7,
+    "successful_sources": 11,
+    "failed_sources": 9,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
@@ -294,15 +56,15 @@
     "va_benefits_api_key_present": true,
     "federal_register_key_required": false,
     "tier_counts": {
-      "tier_1": 10,
-      "tier_2": 10,
-      "tier_3": 0
+      "tier_1": 1,
+      "tier_2": 0,
+      "tier_3": 51
     },
     "type_counts": {
-      "policy": 4,
-      "operational": 10,
-      "media": 6,
-      "sentiment": 0,
+      "policy": 3,
+      "operational": 7,
+      "media": 0,
+      "sentiment": 41,
       "unknown": 0
     },
     "history_points": 17,
@@ -310,503 +72,67 @@
     "regional_model_enabled": true,
     "regional_regions_count": 4
   },
-  "fred": {
-    "cpi": 327.46,
-    "unemployment": 4.4,
-    "consumer_sentiment_proxy": 56.4
-  },
-  "fred_domain_adjustments": {
-    "housing": 2,
-    "cost_of_living": 0,
-    "employment": 0,
-    "morale": -10,
-    "benefits": 0,
-    "media": 0
-  },
-  "bls": {
-    "unemployment_rate": 4.4,
-    "labor_participation": 62.0
-  },
-  "bls_domain_adjustments": {
-    "housing": 0,
-    "cost_of_living": 0,
-    "employment": 0,
-    "morale": 0,
-    "benefits": 0,
-    "media": 0
-  },
-  "census": {
-    "year": 2024,
-    "median_gross_rent": 1487.0,
-    "median_home_value": 360600.0,
-    "ok": true
-  },
-  "census_domain_adjustments": {
-    "housing": -1,
-    "cost_of_living": 0,
-    "employment": 0,
-    "morale": 0,
-    "benefits": 0,
-    "media": 0
-  },
-  "bea": {
-    "personal_income_billions": null,
-    "table_name": "T20100",
-    "year": null,
-    "ok": false
-  },
-  "bea_domain_adjustments": {
-    "housing": 0,
-    "cost_of_living": 0,
-    "employment": 0,
-    "morale": 0,
-    "benefits": 0,
-    "media": 0
-  },
-  "hud": {
-    "fmr_endpoint_ok": true,
-    "income_limits_endpoint_ok": false,
-    "fmr_area_count": 639,
-    "income_limits_area_count": null,
-    "ok": true
-  },
-  "hud_domain_adjustments": {
-    "housing": 0,
-    "cost_of_living": 0,
-    "employment": 0,
-    "morale": 0,
-    "benefits": 0,
-    "media": 0
-  },
-  "va_facilities": {
-    "ok": false,
-    "facility_count_page_1": null,
-    "sample_endpoint": "https://api.va.gov/facilities/va"
-  },
-  "va_benefits": {
-    "ok": false,
-    "disabilities_count": null,
-    "treatment_centers_count": null
-  },
-  "va_domain_adjustments": {
-    "housing": 0,
-    "cost_of_living": 0,
-    "employment": 0,
-    "morale": 0,
-    "benefits": 0,
-    "media": 0
+  "newsapi": {
+    "enabled": true,
+    "queries_run": 6,
+    "articles_used": 58,
+    "articles_kept": 51,
+    "articles_dropped": 7,
+    "errors": [],
+    "tier_counts": {
+      "tier_1": 0,
+      "tier_2": 0,
+      "tier_3": 51
+    },
+    "type_counts": {
+      "policy": 3,
+      "operational": 7,
+      "media": 0,
+      "sentiment": 41
+    },
+    "tier_1_guardrails_enabled": true,
+    "domain_relevance_filtering_enabled": true,
+    "domain_drop_counts": {
+      "housing": 0,
+      "cost_of_living": 6,
+      "employment": 2,
+      "morale": 4,
+      "benefits": 16,
+      "media": 0
+    }
   },
   "federal_register": {
     "ok": true,
     "count": 0,
     "document_numbers": [],
     "agencies": [],
-    "date_gte": "2026-03-07"
+    "date_gte": "2026-01-01",
+    "status_code": 200
   },
-  "federal_register_domain_adjustments": {
-    "housing": 0,
-    "cost_of_living": 0,
-    "employment": 0,
-    "morale": 0,
-    "benefits": 0,
-    "media": 0
+  "hud": {
+    "fmr_endpoint_ok": false,
+    "income_limits_endpoint_ok": false,
+    "fmr_area_count": null,
+    "income_limits_area_count": null,
+    "ok": false,
+    "fmr_note": "{'error': 'Missing or invalid value in the query parameter(s)'}",
+    "income_note": "{'error': 'Missing or invalid value in the query parameter(s)'}"
   },
-  "newsapi": {
-    "enabled": true,
-    "queries_run": 6,
-    "articles_used": 13,
-    "articles_kept": 7,
-    "articles_dropped": 6,
-    "errors": [],
-    "tier_counts": {
-      "tier_1": 1,
-      "tier_2": 4,
-      "tier_3": 2
-    },
-    "type_counts": {
-      "policy": 0,
-      "operational": 0,
-      "media": 5,
-      "sentiment": 2
-    },
-    "tier_3_guardrails_enabled": true,
-    "domain_relevance_filtering_enabled": true,
-    "domain_drop_counts": {
-      "housing": 0,
-      "cost_of_living": 1,
-      "employment": 0,
-      "morale": 0,
-      "benefits": 5,
-      "media": 0
-    }
+  "va_facilities": {
+    "ok": false,
+    "facility_count_page_1": null,
+    "sample_endpoint": "https://api.va.gov/services/va_facilities/v0/facilities",
+    "note": "VA request failed: {'message': 'no Route matched with those values'}",
+    "status_code": 404
   },
-  "sources": [
-    {
-      "key": "va_news",
-      "url": "https://news.va.gov",
-      "tier": "tier_1",
-      "type": "operational",
-      "mapped_domain": "benefits",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "va_press",
-      "url": "https://www.va.gov/opa/pressrel",
-      "tier": "tier_1",
-      "type": "operational",
-      "mapped_domain": "benefits",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "defense_news",
-      "url": "https://www.defense.gov/News",
-      "tier": "tier_1",
-      "type": "operational",
-      "mapped_domain": "employment",
-      "ok": false,
-      "status_code": 403,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "federal_register",
-      "url": "https://www.federalregister.gov",
-      "tier": "tier_1",
-      "type": "policy",
-      "mapped_domain": "policy",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "congress",
-      "url": "https://www.congress.gov",
-      "tier": "tier_1",
-      "type": "policy",
-      "mapped_domain": "policy",
-      "ok": false,
-      "status_code": 403,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "senate_va",
-      "url": "https://www.veterans.senate.gov",
-      "tier": "tier_1",
-      "type": "policy",
-      "mapped_domain": "benefits",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "house_va",
-      "url": "https://veterans.house.gov",
-      "tier": "tier_1",
-      "type": "policy",
-      "mapped_domain": "benefits",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 95,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "stripes",
-      "url": "https://www.stripes.com",
-      "tier": "tier_1",
-      "type": "media",
-      "mapped_domain": "general",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 95,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "military_com",
-      "url": "https://www.military.com",
-      "tier": "tier_1",
-      "type": "media",
-      "mapped_domain": "general",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 95,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "military_times",
-      "url": "https://www.militarytimes.com",
-      "tier": "tier_1",
-      "type": "media",
-      "mapped_domain": "general",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 95,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "task_purpose",
-      "url": "https://taskandpurpose.com",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "general",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "defense_news_media",
-      "url": "https://www.defensenews.com",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "general",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 95,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "defense_one",
-      "url": "https://www.defenseone.com",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "policy",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 95,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "army_news",
-      "url": "https://www.army.mil/news",
-      "tier": "tier_2",
-      "type": "operational",
-      "mapped_domain": "employment",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "navy_news",
-      "url": "https://www.navy.mil/Press-Office/News-Stories",
-      "tier": "tier_2",
-      "type": "operational",
-      "mapped_domain": "employment",
-      "ok": false,
-      "status_code": 403,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "airforce_news",
-      "url": "https://www.af.mil/News",
-      "tier": "tier_2",
-      "type": "operational",
-      "mapped_domain": "employment",
-      "ok": false,
-      "status_code": 403,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "marines_news",
-      "url": "https://www.marines.mil/News",
-      "tier": "tier_2",
-      "type": "operational",
-      "mapped_domain": "employment",
-      "ok": false,
-      "status_code": 403,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "spaceforce_news",
-      "url": "https://www.spaceforce.mil/News",
-      "tier": "tier_2",
-      "type": "operational",
-      "mapped_domain": "employment",
-      "ok": false,
-      "status_code": 403,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "nrd",
-      "url": "https://www.nrd.gov",
-      "tier": "tier_2",
-      "type": "operational",
-      "mapped_domain": "support",
-      "ok": true,
-      "status_code": 200,
-      "freshness": 64,
-      "source_kind": "source_plan"
-    },
-    {
-      "key": "military_one_source",
-      "url": "https://www.militaryonesource.mil",
-      "tier": "tier_2",
-      "type": "operational",
-      "mapped_domain": "support",
-      "ok": false,
-      "status_code": 403,
-      "freshness": 50,
-      "source_kind": "source_plan"
-    }
-  ],
-  "newsapi_sources": [
-    {
-      "key": "newsapi_benefits",
-      "url": "https://economictimes.indiatimes.com/news/international/us/social-security-changes-march-7-new-ssa-national-system-will-affect-70-million-americans-heres-what-exactly-changes-for-beneficiaries/articleshow/129101752.cms",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "The Times of India",
-      "title": "Social Security changes March 7: New SSA national system will affect 70 million Americans - here's what exactly changes for beneficiaries"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://www.globenewswire.com/news-release/2026/03/05/3249829/0/en/Easy-VA-Claims-Launches-Free-Tool-That-Walks-Veterans-Through-Building-a-Complete-Compelling-VA-Disability-Claim-Package-Step-by-Step-on-Their-Own-Time.html",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "GlobeNewswire",
-      "title": "Easy VA Claims Launches Free Tool That Walks Veterans Through Building a Complete, Compelling VA Disability Claim Package \u2014 Step by Step, on Their Own Time"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://www.npr.org/2026/02/27/nx-s1-5725278/va-says-it-wont-enforce-rule-that-would-have-affected-veterans-benefits",
-      "tier": "tier_1",
-      "type": "media",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "NPR",
-      "title": "VA says it won't enforce rule that would have affected veterans' benefits"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://freerepublic.com/focus/f-chat/4368358/posts",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "Freerepublic.com",
-      "title": "Trump admin says VA benefits claims backlog below 100K for first time in 6 years: 'Record levels of service'"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://www.foxnews.com/politics/trump-admin-va-benefits-claims-backlog-below-100k-first-time-6-years-record-levels-service",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "Fox News",
-      "title": "Trump admin says VA benefits claims backlog below 100K for first time in 6 years: 'Record levels of service'"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://freerepublic.com/focus/f-vetscor/4367925/posts",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "Freerepublic.com",
-      "title": "VA benefits for Widows"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://www.kpbs.org/news/local/2026/02/20/va-reverses-course-on-disability-rule-change-advocates-warn-its-not-going-away",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "KPBS",
-      "title": "VA reverses course on disability rule change; advocates warn it's not going away"
-    }
-  ],
-  "newsapi_dropped_sources": [
-    {
-      "key": "newsapi_cost_of_living",
-      "url": "https://www.rawstory.com/rfk-jr-2675367214/",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "cost_of_living",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "Raw Story",
-      "title": "RFK sparks firestorm with new advice for broke Americans to eat 'peasant food'"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://www.commondreams.org/news/republicans-balanced-budget-amendment",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "benefits",
-      "freshness": 88,
-      "source_kind": "newsapi",
-      "source_name": "Common Dreams",
-      "title": "Nearly Every House Republican Votes for Amendment That Would Slash Medicare, Social Security"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://channel4news.substack.com/p/the-nottingham-inquiry-what-lessons/comment/215640700",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "benefits",
-      "freshness": 80,
-      "source_kind": "newsapi",
-      "source_name": "Substack.com",
-      "title": "Comments - How the Nottingham inquiry shines a spotlight on other key mental health care failings"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://www.rawstory.com/doj-2675699117/",
-      "tier": "tier_3",
-      "type": "sentiment",
-      "mapped_domain": "benefits",
-      "freshness": 72,
-      "source_kind": "newsapi",
-      "source_name": "Raw Story",
-      "title": "Trump DOJ attorney humiliated as\u00a0 bogus quotes exposed in court"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://www.globenewswire.com/news-release/2026/02/24/3243928/0/en/INVESTOR-ALERT-Class-Action-Lawsuit-Filed-on-Behalf-of-Zynex-Inc-ZYXIQ-Investors-Holzer-Holzer-LLC-Encourages-Investors-With-Significant-Losses-to-Contact-the-Firm.html",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "GlobeNewswire",
-      "title": "INVESTOR ALERT: Class Action Lawsuit Filed on Behalf of Zynex, Inc. (ZYXIQ)\u00a0Investors \u2013 Holzer & Holzer, LLC Encourages Investors With Significant Losses to Contact the Firm"
-    },
-    {
-      "key": "newsapi_benefits",
-      "url": "https://soldiersystems.net/2026/02/21/va-undoes-decades-old-wrong-and-protects-veterans-second-amendment-rights/",
-      "tier": "tier_2",
-      "type": "media",
-      "mapped_domain": "benefits",
-      "freshness": 64,
-      "source_kind": "newsapi",
-      "source_name": "Soldiersystems.net",
-      "title": "VA Undoes Decades-Old Wrong and Protects Veterans\u2019 Second Amendment Rights"
-    }
-  ]
+  "bea": {
+    "ok": false,
+    "dataset": "NIPA",
+    "table_name": "T10101",
+    "records_count": 0,
+    "sample_time_periods": [],
+    "sample_values": [],
+    "status_code": 200,
+    "note": "schema parse failed: KeyError: 'Data'"
+  }
 }

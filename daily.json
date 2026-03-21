@@ -1,106 +1,138 @@
 {
-  "date": "March 21, 2026",
-  "time": "03:23 AM PT",
-  "composite": 54,
-  "status": "Elevated Pressure",
-  "domains": {
-    "housing": 53,
-    "affordability": 58,
-    "employment": 56,
-    "morale": 41,
-    "benefits": 57,
-    "media": 56
+  "generated_at": "2026-03-21T23:36:37.937879+00:00",
+  "product": "USAVET.AI Daily Accountability Index",
+  "version": "v1",
+  "status": "ok",
+  "index": {
+    "overall_score": 59.7,
+    "economic_score": 62,
+    "policy_score": 58,
+    "benefits_score": 55,
+    "media_score": 65,
+    "band": "yellow"
   },
-  "summary": [
-    "System under elevated pressure",
-    "Affordability pressure elevated",
-    "Housing strain elevated",
-    "Employment strain elevated"
-  ],
-  "trend": {
-    "composite": {
-      "current": 54,
-      "delta_7": -2,
-      "delta_30": -2,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
-      "sparkline": [
-        56,
-        54
-      ]
-    },
+  "signals": {
     "housing": {
-      "current": 53,
-      "delta_7": 1,
-      "delta_30": 1,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        52,
-        53
-      ]
+      "score": 48,
+      "source_ok": false,
+      "fmr_area_count": null
     },
-    "affordability": {
-      "current": 58,
-      "delta_7": -7,
-      "delta_30": -7,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
-      "sparkline": [
-        65,
-        58
-      ]
+    "cost_of_living": {
+      "score": 60,
+      "bea_ok": false,
+      "bea_records_count": 0
     },
     "employment": {
-      "current": 56,
-      "delta_7": 2,
-      "delta_30": 2,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
-      "sparkline": [
-        54,
-        56
-      ]
-    },
-    "morale": {
-      "current": 41,
-      "delta_7": -19,
-      "delta_30": -19,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
-      "sparkline": [
-        60,
-        41
-      ]
+      "score": 59,
+      "bls_key_present": true
     },
     "benefits": {
-      "current": 57,
-      "delta_7": 4,
-      "delta_30": 4,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
-      "sparkline": [
-        53,
-        57
-      ]
+      "score": 55,
+      "hud_ok": false,
+      "va_ok": false
     },
     "media": {
-      "current": 56,
-      "delta_7": 2,
-      "delta_30": 2,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
-      "sparkline": [
-        54,
-        56
-      ]
+      "score": 65,
+      "articles_kept": 51,
+      "queries_run": 6
+    },
+    "policy": {
+      "score": 58,
+      "federal_register_ok": true,
+      "federal_register_count": 0
     }
+  },
+  "diagnostics": {
+    "source_count": 20,
+    "successful_sources": 11,
+    "failed_sources": 9,
+    "fred_api_key_present": true,
+    "news_api_key_present": true,
+    "bls_api_key_present": true,
+    "census_api_key_present": true,
+    "bea_api_key_present": true,
+    "hud_api_key_present": true,
+    "va_api_key_present": true,
+    "va_benefits_api_key_present": true,
+    "federal_register_key_required": false,
+    "tier_counts": {
+      "tier_1": 1,
+      "tier_2": 0,
+      "tier_3": 51
+    },
+    "type_counts": {
+      "policy": 3,
+      "operational": 7,
+      "media": 0,
+      "sentiment": 41,
+      "unknown": 0
+    },
+    "history_points": 17,
+    "source_signal_map_loaded": true,
+    "regional_model_enabled": true,
+    "regional_regions_count": 4
+  },
+  "newsapi": {
+    "enabled": true,
+    "queries_run": 6,
+    "articles_used": 58,
+    "articles_kept": 51,
+    "articles_dropped": 7,
+    "errors": [],
+    "tier_counts": {
+      "tier_1": 0,
+      "tier_2": 0,
+      "tier_3": 51
+    },
+    "type_counts": {
+      "policy": 3,
+      "operational": 7,
+      "media": 0,
+      "sentiment": 41
+    },
+    "tier_1_guardrails_enabled": true,
+    "domain_relevance_filtering_enabled": true,
+    "domain_drop_counts": {
+      "housing": 0,
+      "cost_of_living": 6,
+      "employment": 2,
+      "morale": 4,
+      "benefits": 16,
+      "media": 0
+    }
+  },
+  "federal_register": {
+    "ok": true,
+    "count": 0,
+    "document_numbers": [],
+    "agencies": [],
+    "date_gte": "2026-01-01",
+    "status_code": 200
+  },
+  "hud": {
+    "fmr_endpoint_ok": false,
+    "income_limits_endpoint_ok": false,
+    "fmr_area_count": null,
+    "income_limits_area_count": null,
+    "ok": false,
+    "fmr_note": "{'error': 'Missing or invalid value in the query parameter(s)'}",
+    "income_note": "{'error': 'Missing or invalid value in the query parameter(s)'}"
+  },
+  "va_facilities": {
+    "ok": false,
+    "facility_count_page_1": null,
+    "sample_endpoint": "https://api.va.gov/services/va_facilities/v0/facilities",
+    "note": "VA request failed: {'message': 'no Route matched with those values'}",
+    "status_code": 404
+  },
+  "bea": {
+    "ok": false,
+    "dataset": "NIPA",
+    "table_name": "T10101",
+    "records_count": 0,
+    "sample_time_periods": [],
+    "sample_values": [],
+    "status_code": 200,
+    "note": "schema parse failed: KeyError: 'Data'"
   }
 }
