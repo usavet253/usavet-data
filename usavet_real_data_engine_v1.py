@@ -14,12 +14,16 @@ REQUEST_TIMEOUT = 20
 HISTORY_LIMIT = 90
 
 FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
+NEWS_API_KEY = os.getenv("NEWS_API_KEY", "").strip()
+
+NEWSAPI_ENDPOINT = "https://newsapi.org/v2/everything"
+NEWSAPI_PAGE_SIZE = 20
 
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/123.0 Safari/537.36 USAVET-Index/4.0"
+        "Chrome/123.0 Safari/537.36 USAVET-Index/5.0"
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
@@ -119,6 +123,15 @@ TYPE_MODIFIERS = {
 
 DOMAINS = ["housing", "cost_of_living", "employment", "morale", "benefits", "media"]
 MAPPED_DOMAINS = set(DOMAINS + ["policy", "support", "general"])
+
+NEWSAPI_QUERIES = {
+    "housing": '"veterans" OR "military families" OR "service members" housing rent mortgage homeless eviction',
+    "cost_of_living": '"veterans" OR "military families" OR "service members" affordability inflation prices grocery fuel',
+    "employment": '"veterans" OR "military spouses" OR "service members" employment jobs hiring layoffs workforce',
+    "morale": '"veterans" OR "military families" OR "service members" morale stress burnout mental health readiness',
+    "benefits": '"VA benefits" OR "veterans benefits" OR "claims backlog" OR "GI Bill" OR "TRICARE" OR "disability claims"',
+    "media": '"veterans" OR "military families" oversight hearing investigation lawsuit policy congress VA DoD',
+}
 
 
 def clamp(value, low=0, high=100):
@@ -259,7 +272,7 @@ def strip_html(html):
     html = re.sub(r"(?is)<script.*?>.*?</script>", " ", html)
     html = re.sub(r"(?is)<style.*?>.*?</style>", " ", html)
     html = re.sub(r"(?s)<[^>]+>", " ", html)
-    html = re.sub(r"&nbsp;|&#160;", " ", html)
+    html = re.sub(r"&nbsp;|&#160;", " ", " " + html)
     html = re.sub(r"&amp;", "&", html)
     html = re.sub(r"&lt;", "<", html)
     html = re.sub(r"&gt;", ">", html)
@@ -285,6 +298,18 @@ def parse_last_modified(response):
 
     try:
         dt = parsedate_to_datetime(value)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except Exception:
+        return None
+
+
+def parse_iso_datetime(value):
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
         return dt
@@ -336,6 +361,7 @@ def analyze_source(item):
             "domain_hits": {k: 0 for k in DOMAIN_KEYWORDS},
             "negative_hits": {k: 0 for k in DOMAIN_KEYWORDS},
             "positive_hits": {k: 0 for k in DOMAIN_KEYWORDS},
+            "source_kind": "source_plan",
         }
 
     text = strip_html(response.text[:500000])
@@ -361,7 +387,139 @@ def analyze_source(item):
         "domain_hits": domain_hits,
         "negative_hits": negative_hits,
         "positive_hits": positive_hits,
+        "source_kind": "source_plan",
     }
+
+
+def newsapi_headers():
+    return {
+        "X-Api-Key": NEWS_API_KEY,
+        "User-Agent": HEADERS["User-Agent"],
+        "Accept": "application/json",
+    }
+
+
+def fetch_newsapi_articles_for_domain(domain_name, query):
+    if not NEWS_API_KEY:
+        return {"ok": False, "status": "missing_api_key", "articles": []}
+
+    params = {
+        "q": query,
+        "language": "en",
+        "sortBy": "publishedAt",
+        "pageSize": NEWSAPI_PAGE_SIZE,
+        "searchIn": "title,description",
+    }
+
+    try:
+        response = requests.get(
+            NEWSAPI_ENDPOINT,
+            params=params,
+            headers=newsapi_headers(),
+            timeout=REQUEST_TIMEOUT,
+        )
+        data = response.json()
+    except Exception:
+        return {"ok": False, "status": "request_failed", "articles": []}
+
+    if response.status_code != 200 or data.get("status") != "ok":
+        return {
+            "ok": False,
+            "status": data.get("code", f"http_{response.status_code}"),
+            "articles": [],
+        }
+
+    articles = data.get("articles", [])
+    normalized = []
+
+    for article in articles:
+        title = article.get("title") or ""
+        description = article.get("description") or ""
+        source_name = ""
+        source = article.get("source")
+        if isinstance(source, dict):
+            source_name = source.get("name") or ""
+
+        published_at = parse_iso_datetime(article.get("publishedAt"))
+
+        normalized.append({
+            "title": title,
+            "description": description,
+            "source_name": source_name,
+            "published_at": published_at,
+            "url": article.get("url") or "",
+            "domain_name": domain_name,
+        })
+
+    return {"ok": True, "status": "ok", "articles": normalized}
+
+
+def analyze_newsapi_article(article):
+    text = normalize_whitespace(
+        f"{article.get('title', '')} {article.get('description', '')} {article.get('source_name', '')}"
+    ).lower()
+
+    domain_hits = {}
+    negative_hits = {}
+    positive_hits = {}
+
+    for domain, keywords in DOMAIN_KEYWORDS.items():
+        domain_hits[domain] = count_keyword_hits(text, keywords)
+        negative_hits[domain] = count_keyword_hits(text, NEGATIVE_HINTS[domain])
+        positive_hits[domain] = count_keyword_hits(text, POSITIVE_HINTS[domain])
+
+    freshness = freshness_score(article.get("published_at"))
+
+    return {
+        "key": f"newsapi_{article.get('domain_name', 'general')}",
+        "url": article.get("url", ""),
+        "tier": "tier_2",
+        "type": "media",
+        "mapped_domain": article.get("domain_name", "general"),
+        "ok": True,
+        "status_code": 200,
+        "freshness": freshness,
+        "domain_hits": domain_hits,
+        "negative_hits": negative_hits,
+        "positive_hits": positive_hits,
+        "source_kind": "newsapi",
+        "source_name": article.get("source_name", ""),
+        "title": article.get("title", ""),
+    }
+
+
+def fetch_and_analyze_newsapi():
+    if not NEWS_API_KEY:
+        return [], {
+            "enabled": False,
+            "queries_run": 0,
+            "articles_used": 0,
+            "errors": ["missing_api_key"],
+        }
+
+    results = []
+    errors = []
+    queries_run = 0
+
+    for domain_name, query in NEWSAPI_QUERIES.items():
+        queries_run += 1
+        payload = fetch_newsapi_articles_for_domain(domain_name, query)
+
+        if not payload["ok"]:
+            errors.append(f"{domain_name}:{payload['status']}")
+            continue
+
+        for article in payload["articles"]:
+            results.append(analyze_newsapi_article(article))
+
+    meta = {
+        "enabled": True,
+        "queries_run": queries_run,
+        "articles_used": len(results),
+        "errors": errors,
+    }
+
+    return results, meta
 
 
 def weighted_average(values_with_weights, default_value):
@@ -413,6 +571,9 @@ def score_domain(source_results, domain_name, baseline):
         score -= min(positive * 2.0, 12)
         score += (item["freshness"] - 50) * 0.18
         score += mapped_domain_bonus(item, domain_name)
+
+        if item.get("source_kind") == "newsapi":
+            score += 2
 
         values.append((clamp(score), weight))
 
@@ -570,7 +731,7 @@ def build_summary_bullets(scores, composite):
     return bullets[:4]
 
 
-def build_narrative(scores, composite, analyzed_count, total_count, fred):
+def build_narrative(scores, composite, analyzed_count, total_count, fred, newsapi_meta):
     notes = []
     ordered = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
@@ -579,6 +740,8 @@ def build_narrative(scores, composite, analyzed_count, total_count, fred):
     notes.append(f"Second highest pressure domain: {ordered[1][0].replace('_', ' ')} ({ordered[1][1]}).")
     notes.append(f"Most stable domain: {ordered[-1][0].replace('_', ' ')} ({ordered[-1][1]}).")
     notes.append(f"Sources analyzed successfully: {analyzed_count} of {total_count}.")
+    if newsapi_meta.get("enabled"):
+        notes.append(f"NewsAPI articles used: {newsapi_meta.get('articles_used', 0)}.")
     if fred.get("unemployment") is not None:
         notes.append(f"FRED unemployment reference: {fred['unemployment']:.1f}%.")
 
@@ -725,6 +888,7 @@ def fallback_result(history):
             "source_count": 0,
             "successful_sources": 0,
             "fred_api_key_present": bool(FRED_API_KEY),
+            "news_api_key_present": bool(NEWS_API_KEY),
         },
     }
 
@@ -743,10 +907,13 @@ def main():
         return
 
     source_results = [analyze_source(item) for item in source_items]
+    newsapi_results, newsapi_meta = fetch_and_analyze_newsapi()
+    all_results = source_results + newsapi_results
+
     successful_sources = sum(1 for x in source_results if x["ok"])
 
     base_scores = {
-        domain: score_domain(source_results, domain, baseline)
+        domain: score_domain(all_results, domain, baseline)
         for domain, baseline in BASELINES.items()
     }
 
@@ -756,7 +923,14 @@ def main():
     composite = composite_from_scores(final_scores)
     status = status_from_composite(composite)
     summary = build_summary_bullets(final_scores, composite)
-    narrative = build_narrative(final_scores, composite, successful_sources, len(source_items), fred)
+    narrative = build_narrative(
+        final_scores,
+        composite,
+        successful_sources,
+        len(source_items),
+        fred,
+        newsapi_meta,
+    )
 
     timestamp = datetime.utcnow().replace(tzinfo=timezone.utc).isoformat()
 
@@ -779,6 +953,7 @@ def main():
             "successful_sources": successful_sources,
             "failed_sources": len(source_items) - successful_sources,
             "fred_api_key_present": bool(FRED_API_KEY),
+            "news_api_key_present": bool(NEWS_API_KEY),
             "tier_counts": {
                 "tier_1": sum(1 for s in source_items if s["tier"] == "tier_1"),
                 "tier_2": sum(1 for s in source_items if s["tier"] == "tier_2"),
@@ -796,6 +971,7 @@ def main():
         },
         "fred": fred,
         "fred_domain_adjustments": fred_domain_adjustments,
+        "newsapi": newsapi_meta,
         "sources": [
             {
                 "key": item["key"],
@@ -806,8 +982,23 @@ def main():
                 "ok": item["ok"],
                 "status_code": item["status_code"],
                 "freshness": item["freshness"],
+                "source_kind": item.get("source_kind", "source_plan"),
             }
             for item in source_results
+        ],
+        "newsapi_sources": [
+            {
+                "key": item["key"],
+                "url": item["url"],
+                "tier": item["tier"],
+                "type": item.get("type", "unknown"),
+                "mapped_domain": item.get("mapped_domain", "general"),
+                "freshness": item["freshness"],
+                "source_kind": item.get("source_kind", "newsapi"),
+                "source_name": item.get("source_name", ""),
+                "title": item.get("title", ""),
+            }
+            for item in newsapi_results[:50]
         ],
     }
 
@@ -815,6 +1006,7 @@ def main():
     print(f"Wrote {OUTPUT_FILE}")
     print(f"Wrote {HISTORY_FILE}")
     print(json.dumps(result["meta"], indent=2))
+    print(json.dumps(result["newsapi"], indent=2))
 
 
 if __name__ == "__main__":
