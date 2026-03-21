@@ -1,103 +1,105 @@
 {
   "date": "March 21, 2026",
-  "time": "01:35 AM PT",
-  "composite": 56,
+  "time": "03:23 AM PT",
+  "composite": 54,
   "status": "Elevated Pressure",
   "domains": {
-    "housing": 52,
-    "affordability": 65,
-    "employment": 54,
-    "morale": 59,
-    "benefits": 52,
-    "media": 55
+    "housing": 53,
+    "affordability": 58,
+    "employment": 56,
+    "morale": 41,
+    "benefits": 57,
+    "media": 56
   },
   "summary": [
-    "System under high pressure",
-    "Affordability pressure elevated"
+    "System under elevated pressure",
+    "Affordability pressure elevated",
+    "Housing strain elevated",
+    "Employment strain elevated"
   ],
   "trend": {
     "composite": {
-      "current": 56,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
+      "current": 54,
+      "delta_7": -2,
+      "delta_30": -2,
+      "direction": "down",
+      "arrow": "\u25bc",
+      "color": "red",
       "sparkline": [
         56,
-        56
-      ]
-    },
-    "housing": {
-      "current": 52,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        52,
-        52
-      ]
-    },
-    "affordability": {
-      "current": 65,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        65,
-        65
-      ]
-    },
-    "employment": {
-      "current": 54,
-      "delta_7": 0,
-      "delta_30": 0,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        54,
         54
       ]
     },
-    "morale": {
-      "current": 59,
-      "delta_7": -1,
-      "delta_30": -1,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        60,
-        59
-      ]
-    },
-    "benefits": {
-      "current": 52,
-      "delta_7": -1,
-      "delta_30": -1,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
-      "sparkline": [
-        53,
-        52
-      ]
-    },
-    "media": {
-      "current": 55,
+    "housing": {
+      "current": 53,
       "delta_7": 1,
       "delta_30": 1,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
+        52,
+        53
+      ]
+    },
+    "affordability": {
+      "current": 58,
+      "delta_7": -7,
+      "delta_30": -7,
+      "direction": "down",
+      "arrow": "\u25bc",
+      "color": "red",
+      "sparkline": [
+        65,
+        58
+      ]
+    },
+    "employment": {
+      "current": 56,
+      "delta_7": 2,
+      "delta_30": 2,
+      "direction": "up",
+      "arrow": "\u25b2",
+      "color": "green",
+      "sparkline": [
         54,
-        55
+        56
+      ]
+    },
+    "morale": {
+      "current": 41,
+      "delta_7": -19,
+      "delta_30": -19,
+      "direction": "down",
+      "arrow": "\u25bc",
+      "color": "red",
+      "sparkline": [
+        60,
+        41
+      ]
+    },
+    "benefits": {
+      "current": 57,
+      "delta_7": 4,
+      "delta_30": 4,
+      "direction": "up",
+      "arrow": "\u25b2",
+      "color": "green",
+      "sparkline": [
+        53,
+        57
+      ]
+    },
+    "media": {
+      "current": 56,
+      "delta_7": 2,
+      "delta_30": 2,
+      "direction": "up",
+      "arrow": "\u25b2",
+      "color": "green",
+      "sparkline": [
+        54,
+        56
       ]
     }
   }
