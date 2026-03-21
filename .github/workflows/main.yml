@@ -3,7 +3,7 @@ name: USAVET Daily Automation
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 8 * * *"  # Runs at 08:00 UTC
+    - cron: "0 8 * * *"
 
 permissions:
   contents: write
@@ -45,9 +45,6 @@ jobs:
                   return 50
               return max(0, min(100, score))
 
-          def invert(score):
-              return 100 - score
-
           def get_status(score):
               if score >= 70:
                   return "Stable"
@@ -64,8 +61,7 @@ jobs:
           now = datetime.now()
           trends = raw.get("display_trends", {})
 
-          composite_raw = raw.get("composite_score", 60)
-          composite = normalize(invert(composite_raw))
+          composite = normalize(raw.get("composite_score", 60))
 
           daily = {
               "date": now.strftime("%B %d, %Y"),
@@ -75,12 +71,12 @@ jobs:
               "status": get_status(composite),
 
               "domains": {
-                  "housing": normalize(invert(raw.get("scores", {}).get("housing", 55))),
-                  "affordability": normalize(invert(raw.get("scores", {}).get("cost_of_living", 60))),
-                  "employment": normalize(invert(raw.get("scores", {}).get("employment", 70))),
-                  "morale": normalize(invert(raw.get("scores", {}).get("morale", 58))),
-                  "benefits": normalize(invert(raw.get("scores", {}).get("benefits", 50))),
-                  "media": normalize(invert(raw.get("scores", {}).get("media", 45)))
+                  "housing": normalize(raw.get("scores", {}).get("housing", 55)),
+                  "affordability": normalize(raw.get("scores", {}).get("cost_of_living", 60)),
+                  "employment": normalize(raw.get("scores", {}).get("employment", 70)),
+                  "morale": normalize(raw.get("scores", {}).get("morale", 58)),
+                  "benefits": normalize(raw.get("scores", {}).get("benefits", 50)),
+                  "media": normalize(raw.get("scores", {}).get("media", 45))
               },
 
               "summary": raw.get("summary", raw.get("narrative", ["System stable"])),
@@ -107,5 +103,5 @@ jobs:
           git config user.name "actions-user"
           git config user.email "actions@github.com"
           git add daily.json
-          git commit -m "Automated daily update" || echo "No changes to commit"
+          git commit -m "Align score display with raw values" || echo "No changes to commit"
           git push
