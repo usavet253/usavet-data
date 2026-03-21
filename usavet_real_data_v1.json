@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-21T04:52:16.512080+00:00",
+  "generated_at": "2026-03-21T04:59:18.662630+00:00",
   "status": "Elevated Pressure",
-  "composite_score": 54,
+  "composite_score": 53,
   "scores": {
-    "housing": 53,
-    "cost_of_living": 59,
-    "employment": 56,
-    "morale": 42,
-    "benefits": 57,
-    "media": 56
+    "housing": 54,
+    "cost_of_living": 58,
+    "employment": 54,
+    "morale": 41,
+    "benefits": 58,
+    "media": 53
   },
   "summary": [
     "System under elevated pressure",
@@ -17,18 +17,18 @@
     "Employment strain elevated"
   ],
   "narrative": [
-    "Composite score: 54.",
-    "Highest pressure domain: cost of living (59).",
-    "Second highest pressure domain: benefits (57).",
-    "Most stable domain: morale (42).",
+    "Composite score: 53.",
+    "Highest pressure domain: cost of living (58).",
+    "Second highest pressure domain: benefits (58).",
+    "Most stable domain: morale (41).",
     "Sources analyzed successfully: 13 of 20.",
-    "FRED unemployment reference: 4.4%."
+    "NewsAPI articles used: 13."
   ],
   "display_trends": {
     "composite": {
-      "current": 54,
-      "delta_7": -2,
-      "delta_30": -2,
+      "current": 53,
+      "delta_7": -3,
+      "delta_30": -3,
       "direction": "down",
       "arrow": "\u25bc",
       "color": "red",
@@ -36,27 +36,29 @@
         56,
         54,
         54,
-        54
+        54,
+        53
       ]
     },
     "housing": {
-      "current": 53,
-      "delta_7": 1,
-      "delta_30": 1,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
+      "current": 54,
+      "delta_7": 2,
+      "delta_30": 2,
+      "direction": "up",
+      "arrow": "\u25b2",
+      "color": "green",
       "sparkline": [
         52,
         53,
         53,
-        53
+        53,
+        54
       ]
     },
     "cost_of_living": {
-      "current": 59,
-      "delta_7": -6,
-      "delta_30": -6,
+      "current": 58,
+      "delta_7": -7,
+      "delta_30": -7,
       "direction": "down",
       "arrow": "\u25bc",
       "color": "red",
@@ -64,27 +66,29 @@
         65,
         58,
         58,
-        59
+        59,
+        58
       ]
     },
     "employment": {
-      "current": 56,
-      "delta_7": 2,
-      "delta_30": 2,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
+      "current": 54,
+      "delta_7": 0,
+      "delta_30": 0,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
         54,
         56,
         56,
-        56
+        56,
+        54
       ]
     },
     "morale": {
-      "current": 42,
-      "delta_7": -18,
-      "delta_30": -18,
+      "current": 41,
+      "delta_7": -19,
+      "delta_30": -19,
       "direction": "down",
       "arrow": "\u25bc",
       "color": "red",
@@ -92,13 +96,14 @@
         60,
         41,
         41,
-        42
+        42,
+        41
       ]
     },
     "benefits": {
-      "current": 57,
-      "delta_7": 4,
-      "delta_30": 4,
+      "current": 58,
+      "delta_7": 5,
+      "delta_30": 5,
       "direction": "up",
       "arrow": "\u25b2",
       "color": "green",
@@ -106,21 +111,23 @@
         53,
         57,
         57,
-        57
+        57,
+        58
       ]
     },
     "media": {
-      "current": 56,
-      "delta_7": 2,
-      "delta_30": 2,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
+      "current": 53,
+      "delta_7": -1,
+      "delta_30": -1,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
         54,
         57,
         57,
-        56
+        56,
+        53
       ]
     }
   },
@@ -129,7 +136,7 @@
     "successful_sources": 13,
     "failed_sources": 7,
     "fred_api_key_present": true,
-    "news_api_key_present": false,
+    "news_api_key_present": true,
     "tier_counts": {
       "tier_1": 10,
       "tier_2": 10,
@@ -142,7 +149,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 4,
+    "history_points": 5,
     "source_signal_map_loaded": true
   },
   "fred": {
@@ -159,12 +166,10 @@
     "media": 0
   },
   "newsapi": {
-    "enabled": false,
-    "queries_run": 0,
-    "articles_used": 0,
-    "errors": [
-      "missing_api_key"
-    ]
+    "enabled": true,
+    "queries_run": 6,
+    "articles_used": 13,
+    "errors": []
   },
   "sources": [
     {
@@ -388,5 +393,149 @@
       "source_kind": "source_plan"
     }
   ],
-  "newsapi_sources": []
+  "newsapi_sources": [
+    {
+      "key": "newsapi_cost_of_living",
+      "url": "https://www.rawstory.com/rfk-jr-2675367214/",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "cost_of_living",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "Raw Story",
+      "title": "RFK sparks firestorm with new advice for broke Americans to eat 'peasant food'"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.commondreams.org/news/republicans-balanced-budget-amendment",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 95,
+      "source_kind": "newsapi",
+      "source_name": "Common Dreams",
+      "title": "Nearly Every House Republican Votes for Amendment That Would Slash Medicare, Social Security"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://channel4news.substack.com/p/the-nottingham-inquiry-what-lessons/comment/215640700",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 80,
+      "source_kind": "newsapi",
+      "source_name": "Substack.com",
+      "title": "Comments - How the Nottingham inquiry shines a spotlight on other key mental health care failings"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.rawstory.com/doj-2675699117/",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 72,
+      "source_kind": "newsapi",
+      "source_name": "Raw Story",
+      "title": "Trump DOJ attorney humiliated as\u00a0 bogus quotes exposed in court"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://economictimes.indiatimes.com/news/international/us/social-security-changes-march-7-new-ssa-national-system-will-affect-70-million-americans-heres-what-exactly-changes-for-beneficiaries/articleshow/129101752.cms",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "The Times of India",
+      "title": "Social Security changes March 7: New SSA national system will affect 70 million Americans - here's what exactly changes for beneficiaries"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.globenewswire.com/news-release/2026/03/05/3249829/0/en/Easy-VA-Claims-Launches-Free-Tool-That-Walks-Veterans-Through-Building-a-Complete-Compelling-VA-Disability-Claim-Package-Step-by-Step-on-Their-Own-Time.html",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "GlobeNewswire",
+      "title": "Easy VA Claims Launches Free Tool That Walks Veterans Through Building a Complete, Compelling VA Disability Claim Package \u2014 Step by Step, on Their Own Time"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.npr.org/2026/02/27/nx-s1-5725278/va-says-it-wont-enforce-rule-that-would-have-affected-veterans-benefits",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "NPR",
+      "title": "VA says it won't enforce rule that would have affected veterans' benefits"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://freerepublic.com/focus/f-chat/4368358/posts",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "Freerepublic.com",
+      "title": "Trump admin says VA benefits claims backlog below 100K for first time in 6 years: 'Record levels of service'"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.foxnews.com/politics/trump-admin-va-benefits-claims-backlog-below-100k-first-time-6-years-record-levels-service",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "Fox News",
+      "title": "Trump admin says VA benefits claims backlog below 100K for first time in 6 years: 'Record levels of service'"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.globenewswire.com/news-release/2026/02/24/3243928/0/en/INVESTOR-ALERT-Class-Action-Lawsuit-Filed-on-Behalf-of-Zynex-Inc-ZYXIQ-Investors-Holzer-Holzer-LLC-Encourages-Investors-With-Significant-Losses-to-Contact-the-Firm.html",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "GlobeNewswire",
+      "title": "INVESTOR ALERT: Class Action Lawsuit Filed on Behalf of Zynex, Inc. (ZYXIQ)\u00a0Investors \u2013 Holzer & Holzer, LLC Encourages Investors With Significant Losses to Contact the Firm"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://freerepublic.com/focus/f-vetscor/4367925/posts",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "Freerepublic.com",
+      "title": "VA benefits for Widows"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://soldiersystems.net/2026/02/21/va-undoes-decades-old-wrong-and-protects-veterans-second-amendment-rights/",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "Soldiersystems.net",
+      "title": "VA Undoes Decades-Old Wrong and Protects Veterans\u2019 Second Amendment Rights"
+    },
+    {
+      "key": "newsapi_benefits",
+      "url": "https://www.kpbs.org/news/local/2026/02/20/va-reverses-course-on-disability-rule-change-advocates-warn-its-not-going-away",
+      "tier": "tier_2",
+      "type": "media",
+      "mapped_domain": "benefits",
+      "freshness": 64,
+      "source_kind": "newsapi",
+      "source_name": "KPBS",
+      "title": "VA reverses course on disability rule change; advocates warn it's not going away"
+    }
+  ]
 }
