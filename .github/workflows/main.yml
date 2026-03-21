@@ -28,11 +28,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run USAVET engine
+      - name: Run script
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-        run: |
-          python usavet_real_data_engine_v1.py
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        run: python usavet_real_data_engine_v1.py
 
       - name: Show generated files
         run: |
