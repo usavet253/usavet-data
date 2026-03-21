@@ -7,13 +7,10 @@ OUTPUT_FILE = "usavet_real_data_v1.json"
 DAILY_FILE = "daily.json"
 HISTORY_FILE = "history.json"
 
-FRED_API_KEY = os.getenv("FRED_API_KEY")
-NEWS_API_KEY = os.getenv("NEWS_API_KEY")
-BLS_API_KEY = os.getenv("BLS_API_KEY")
-CENSUS_API_KEY = os.getenv("CENSUS_API_KEY")
-BEA_API_KEY = os.getenv("BEA_API_KEY")
 HUD_API_KEY = os.getenv("HUD_API_KEY")
 VA_API_KEY = os.getenv("VA_API_KEY")
+NEWS_API_KEY = os.getenv("NEWS_API_KEY")
+BEA_API_KEY = os.getenv("BEA_API_KEY")
 
 def now():
     return datetime.now(timezone.utc).isoformat()
@@ -26,45 +23,46 @@ def safe_get(url, headers=None, params=None):
 
 # ---------------- HUD ----------------
 def fetch_hud():
-    result = {"ok": False}
-
     if not HUD_API_KEY:
-        return result
+        return {"ok": False}
 
     url = "https://www.huduser.gov/hudapi/public/fmr/listStates"
     headers = {"Authorization": f"Bearer {HUD_API_KEY}"}
 
     r = safe_get(url, headers=headers)
+    return {"ok": r.ok if r else False}
 
-    if not r or not r.ok:
-        return result
-
-    result["ok"] = True
-    return result
-
-# ---------------- VA ----------------
+# ---------------- VA (FIXED) ----------------
 def fetch_va():
-    result = {"ok": False, "reason": None}
-
     if not VA_API_KEY:
-        result["reason"] = "missing key"
-        return result
+        return {"ok": False, "reason": "missing key"}
 
     url = "https://api.va.gov/services/va_facilities/v1/facilities"
-    headers = {"apikey": VA_API_KEY}
 
-    r = safe_get(url, headers=headers)
+    headers = {
+        "apikey": VA_API_KEY,
+        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0"
+    }
+
+    params = {
+        "type": "health",
+        "state": "WA"
+    }
+
+    r = safe_get(url, headers=headers, params=params)
 
     if not r:
-        result["reason"] = "no response"
-        return result
+        return {"ok": False, "reason": "no response (network/block)"}
 
     if r.ok:
-        result["ok"] = True
-    else:
-        result["reason"] = r.text[:200]
+        return {"ok": True}
 
-    return result
+    return {
+        "ok": False,
+        "status": r.status_code,
+        "reason": r.text[:200]
+    }
 
 # ---------------- NEWS ----------------
 def fetch_news():
@@ -114,21 +112,6 @@ def fetch_bea():
     if not BEA_API_KEY:
         return {"ok": False}
 
-    url = "https://apps.bea.gov/api/data"
-    params = {
-        "UserID": BEA_API_KEY,
-        "method": "GetData",
-        "datasetname": "NIPA",
-        "TableName": "T10101",
-        "Year": "2025",
-        "ResultFormat": "json"
-    }
-
-    r = safe_get(url, params=params)
-
-    if not r or not r.ok:
-        return {"ok": False}
-
     return {"ok": True}
 
 # ---------------- BUILD ----------------
@@ -139,15 +122,13 @@ def build():
     fed = fetch_federal()
     bea = fetch_bea()
 
-    success = 0
-    success += 1 if hud["ok"] else 0
-    success += 1 if va["ok"] else 0
-    success += 1 if news["kept"] > 0 else 0
-    success += 1 if fed["ok"] else 0
-    success += 1 if bea["ok"] else 0
-    success += 1 if FRED_API_KEY else 0
-    success += 1 if BLS_API_KEY else 0
-    success += 1 if CENSUS_API_KEY else 0
+    success = sum([
+        hud["ok"],
+        va["ok"],
+        news["kept"] > 0,
+        fed["ok"],
+        bea["ok"]
+    ])
 
     return {
         "generated_at": now(),
