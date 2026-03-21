@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-21T20:01:54.317016+00:00",
+  "generated_at": "2026-03-21T20:54:09.104281+00:00",
   "status": "Elevated Pressure",
   "composite_score": 54,
   "scores": {
@@ -44,12 +44,13 @@
         53,
         54,
         54,
+        54,
         54
       ]
     },
     "housing": {
       "current": 54,
-      "delta_7": -1,
+      "delta_7": 0,
       "delta_30": 2,
       "direction": "flat",
       "arrow": "\u2192",
@@ -63,6 +64,7 @@
         55,
         54,
         55,
+        54,
         54,
         54,
         54,
@@ -88,6 +90,7 @@
         56,
         58,
         58,
+        58,
         58
       ]
     },
@@ -110,16 +113,17 @@
         54,
         55,
         54,
+        55,
         55
       ]
     },
     "morale": {
       "current": 40,
-      "delta_7": -3,
+      "delta_7": -1,
       "delta_30": -20,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
         60,
         41,
@@ -132,6 +136,7 @@
         40,
         41,
         41,
+        40,
         40
       ]
     },
@@ -154,12 +159,13 @@
         61,
         60,
         60,
+        59,
         59
       ]
     },
     "media": {
       "current": 55,
-      "delta_7": 3,
+      "delta_7": 2,
       "delta_30": 1,
       "direction": "up",
       "arrow": "\u25b2",
@@ -175,6 +181,7 @@
         53,
         54,
         56,
+        55,
         55,
         55
       ]
@@ -272,6 +279,7 @@
     "failed_sources": 7,
     "fred_api_key_present": true,
     "news_api_key_present": true,
+    "bls_api_key_present": false,
     "tier_counts": {
       "tier_1": 10,
       "tier_2": 10,
@@ -284,7 +292,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 12,
+    "history_points": 13,
     "source_signal_map_loaded": true,
     "regional_model_enabled": true,
     "regional_regions_count": 4
@@ -299,6 +307,18 @@
     "cost_of_living": 0,
     "employment": 0,
     "morale": -10,
+    "benefits": 0,
+    "media": 0
+  },
+  "bls": {
+    "unemployment_rate": null,
+    "labor_participation": null
+  },
+  "bls_domain_adjustments": {
+    "housing": 0,
+    "cost_of_living": 0,
+    "employment": 0,
+    "morale": 0,
     "benefits": 0,
     "media": 0
   },
