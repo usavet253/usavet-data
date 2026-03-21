@@ -1,11 +1,11 @@
 {
   "date": "March 21, 2026",
-  "time": "01:28 AM PT",
+  "time": "01:35 AM PT",
   "composite": 56,
-  "status": "Managed Pressure",
+  "status": "Elevated Pressure",
   "domains": {
     "housing": 52,
-    "affordability": 64,
+    "affordability": 65,
     "employment": 54,
     "morale": 59,
     "benefits": 52,
@@ -41,15 +41,15 @@
       ]
     },
     "affordability": {
-      "current": 64,
-      "delta_7": -1,
-      "delta_30": -1,
+      "current": 65,
+      "delta_7": 0,
+      "delta_30": 0,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
         65,
-        64
+        65
       ]
     },
     "employment": {
