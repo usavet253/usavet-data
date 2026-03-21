@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-21T06:28:07.980274+00:00",
+  "generated_at": "2026-03-21T14:04:08.161784+00:00",
   "status": "Elevated Pressure",
   "composite_score": 54,
   "scores": {
     "housing": 54,
     "cost_of_living": 58,
-    "employment": 55,
+    "employment": 54,
     "morale": 41,
     "benefits": 60,
-    "media": 56
+    "media": 55
   },
   "summary": [
     "System under elevated pressure",
@@ -27,7 +27,7 @@
   "display_trends": {
     "composite": {
       "current": 54,
-      "delta_7": 0,
+      "delta_7": 1,
       "delta_30": -2,
       "direction": "flat",
       "arrow": "\u2192",
@@ -42,12 +42,13 @@
         53,
         54,
         53,
+        54,
         54
       ]
     },
     "housing": {
       "current": 54,
-      "delta_7": 1,
+      "delta_7": 0,
       "delta_30": 2,
       "direction": "flat",
       "arrow": "\u2192",
@@ -62,12 +63,13 @@
         54,
         55,
         54,
+        54,
         54
       ]
     },
     "cost_of_living": {
       "current": 58,
-      "delta_7": -1,
+      "delta_7": 0,
       "delta_30": -7,
       "direction": "flat",
       "arrow": "\u2192",
@@ -82,13 +84,14 @@
         58,
         56,
         56,
+        58,
         58
       ]
     },
     "employment": {
-      "current": 55,
-      "delta_7": -1,
-      "delta_30": 1,
+      "current": 54,
+      "delta_7": 0,
+      "delta_30": 0,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
@@ -102,12 +105,13 @@
         54,
         54,
         54,
-        55
+        55,
+        54
       ]
     },
     "morale": {
       "current": 41,
-      "delta_7": -1,
+      "delta_7": 0,
       "delta_30": -19,
       "direction": "flat",
       "arrow": "\u2192",
@@ -122,12 +126,13 @@
         41,
         43,
         40,
+        41,
         41
       ]
     },
     "benefits": {
       "current": 60,
-      "delta_7": 3,
+      "delta_7": 2,
       "delta_30": 7,
       "direction": "up",
       "arrow": "\u25b2",
@@ -142,16 +147,17 @@
         58,
         61,
         61,
+        60,
         60
       ]
     },
     "media": {
-      "current": 56,
-      "delta_7": 0,
-      "delta_30": 2,
-      "direction": "flat",
-      "arrow": "\u2192",
-      "color": "yellow",
+      "current": 55,
+      "delta_7": 2,
+      "delta_30": 1,
+      "direction": "up",
+      "arrow": "\u25b2",
+      "color": "green",
       "sparkline": [
         54,
         57,
@@ -162,7 +168,8 @@
         53,
         53,
         54,
-        56
+        56,
+        55
       ]
     }
   },
@@ -184,7 +191,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 10,
+    "history_points": 11,
     "source_signal_map_loaded": true
   },
   "fred": {
@@ -548,7 +555,7 @@
       "tier": "tier_3",
       "type": "sentiment",
       "mapped_domain": "benefits",
-      "freshness": 95,
+      "freshness": 88,
       "source_kind": "newsapi",
       "source_name": "Common Dreams",
       "title": "Nearly Every House Republican Votes for Amendment That Would Slash Medicare, Social Security"
