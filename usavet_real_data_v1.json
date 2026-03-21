@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-21T22:56:35.993205+00:00",
+  "generated_at": "2026-03-21T23:03:52.693510+00:00",
   "status": "Elevated Pressure",
   "composite_score": 54,
   "scores": {
     "housing": 53,
-    "cost_of_living": 58,
-    "employment": 55,
+    "cost_of_living": 59,
+    "employment": 56,
     "morale": 41,
-    "benefits": 60,
-    "media": 55
+    "benefits": 59,
+    "media": 56
   },
   "summary": [
     "System under elevated pressure",
@@ -18,8 +18,8 @@
   ],
   "narrative": [
     "Composite score: 54.",
-    "Highest pressure domain: benefits (60).",
-    "Second highest pressure domain: cost of living (58).",
+    "Highest pressure domain: cost of living (59).",
+    "Second highest pressure domain: benefits (59).",
     "Most stable domain: morale (41).",
     "Sources analyzed successfully: 13 of 20.",
     "NewsAPI kept 7 of 13 articles after relevance filtering."
@@ -27,7 +27,7 @@
   "display_trends": {
     "composite": {
       "current": 54,
-      "delta_7": 1,
+      "delta_7": 0,
       "delta_30": -2,
       "direction": "flat",
       "arrow": "\u2192",
@@ -35,12 +35,12 @@
       "sparkline": [
         54,
         54,
-        54,
         53,
         53,
         53,
         54,
         53,
+        54,
         54,
         54,
         54,
@@ -59,29 +59,28 @@
       "sparkline": [
         53,
         53,
+        54,
+        55,
+        54,
+        55,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
         53,
-        54,
-        55,
-        54,
-        55,
-        54,
-        54,
-        54,
-        54,
-        54,
-        54,
         53
       ]
     },
     "cost_of_living": {
-      "current": 58,
-      "delta_7": 2,
-      "delta_30": -7,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
+      "current": 59,
+      "delta_7": 1,
+      "delta_30": -6,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
-        58,
         58,
         59,
         58,
@@ -94,20 +93,20 @@
         58,
         58,
         58,
-        58
+        58,
+        59
       ]
     },
     "employment": {
-      "current": 55,
+      "current": 56,
       "delta_7": 1,
-      "delta_30": 1,
+      "delta_30": 2,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
         56,
         56,
-        56,
         54,
         54,
         54,
@@ -118,18 +117,18 @@
         55,
         55,
         55,
-        55
+        55,
+        56
       ]
     },
     "morale": {
       "current": 41,
-      "delta_7": 1,
+      "delta_7": 0,
       "delta_30": -19,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        41,
         41,
         42,
         41,
@@ -142,20 +141,20 @@
         40,
         40,
         40,
+        41,
         41
       ]
     },
     "benefits": {
-      "current": 60,
+      "current": 59,
       "delta_7": -1,
-      "delta_30": 7,
+      "delta_30": 6,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
         57,
         57,
-        57,
         58,
         58,
         58,
@@ -166,18 +165,18 @@
         59,
         59,
         59,
-        60
+        60,
+        59
       ]
     },
     "media": {
-      "current": 55,
-      "delta_7": 1,
-      "delta_30": 1,
+      "current": 56,
+      "delta_7": 0,
+      "delta_30": 2,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        57,
         57,
         56,
         53,
@@ -190,7 +189,8 @@
         55,
         55,
         55,
-        55
+        55,
+        56
       ]
     }
   },
@@ -198,7 +198,7 @@
     {
       "id": "west",
       "name": "West",
-      "score": 56,
+      "score": 57,
       "status": "Elevated Pressure",
       "trend": "flat",
       "summary": "Localized pressure remains mixed relative to national baseline trends.",
@@ -208,12 +208,12 @@
         "Regional media pressure remains mixed"
       ],
       "sparkline": [
-        55,
-        55,
-        55,
         56,
         56,
-        57
+        56,
+        57,
+        57,
+        58
       ]
     },
     {
@@ -305,7 +305,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 15,
+    "history_points": 16,
     "source_signal_map_loaded": true,
     "regional_model_enabled": true,
     "regional_regions_count": 4
