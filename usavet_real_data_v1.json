@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-21T21:00:43.884487+00:00",
+  "generated_at": "2026-03-21T22:56:35.993205+00:00",
   "status": "Elevated Pressure",
   "composite_score": 54,
   "scores": {
-    "housing": 54,
+    "housing": 53,
     "cost_of_living": 58,
     "employment": 55,
-    "morale": 40,
-    "benefits": 59,
+    "morale": 41,
+    "benefits": 60,
     "media": 55
   },
   "summary": [
@@ -18,22 +18,21 @@
   ],
   "narrative": [
     "Composite score: 54.",
-    "Highest pressure domain: benefits (59).",
+    "Highest pressure domain: benefits (60).",
     "Second highest pressure domain: cost of living (58).",
-    "Most stable domain: morale (40).",
+    "Most stable domain: morale (41).",
     "Sources analyzed successfully: 13 of 20.",
     "NewsAPI kept 7 of 13 articles after relevance filtering."
   ],
   "display_trends": {
     "composite": {
       "current": 54,
-      "delta_7": 0,
+      "delta_7": 1,
       "delta_30": -2,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        56,
         54,
         54,
         54,
@@ -42,6 +41,7 @@
         53,
         54,
         53,
+        54,
         54,
         54,
         54,
@@ -50,14 +50,13 @@
       ]
     },
     "housing": {
-      "current": 54,
+      "current": 53,
       "delta_7": -1,
-      "delta_30": 2,
+      "delta_30": 1,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        52,
         53,
         53,
         53,
@@ -70,7 +69,8 @@
         54,
         54,
         54,
-        54
+        54,
+        53
       ]
     },
     "cost_of_living": {
@@ -81,7 +81,6 @@
       "arrow": "\u25b2",
       "color": "green",
       "sparkline": [
-        65,
         58,
         58,
         59,
@@ -90,6 +89,7 @@
         58,
         56,
         56,
+        58,
         58,
         58,
         58,
@@ -105,7 +105,6 @@
       "arrow": "\u2192",
       "color": "yellow",
       "sparkline": [
-        54,
         56,
         56,
         56,
@@ -116,20 +115,20 @@
         54,
         55,
         54,
+        55,
         55,
         55,
         55
       ]
     },
     "morale": {
-      "current": 40,
-      "delta_7": -3,
-      "delta_30": -20,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
+      "current": 41,
+      "delta_7": 1,
+      "delta_30": -19,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
-        60,
         41,
         41,
         42,
@@ -142,18 +141,18 @@
         41,
         40,
         40,
-        40
+        40,
+        41
       ]
     },
     "benefits": {
-      "current": 59,
-      "delta_7": -2,
-      "delta_30": 6,
-      "direction": "down",
-      "arrow": "\u25bc",
-      "color": "red",
+      "current": 60,
+      "delta_7": -1,
+      "delta_30": 7,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
-        53,
         57,
         57,
         57,
@@ -166,18 +165,18 @@
         60,
         59,
         59,
-        59
+        59,
+        60
       ]
     },
     "media": {
       "current": 55,
-      "delta_7": 2,
+      "delta_7": 1,
       "delta_30": 1,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
-        54,
         57,
         57,
         56,
@@ -190,6 +189,7 @@
         55,
         55,
         55,
+        55,
         55
       ]
     }
@@ -198,7 +198,7 @@
     {
       "id": "west",
       "name": "West",
-      "score": 57,
+      "score": 56,
       "status": "Elevated Pressure",
       "trend": "flat",
       "summary": "Localized pressure remains mixed relative to national baseline trends.",
@@ -208,18 +208,18 @@
         "Regional media pressure remains mixed"
       ],
       "sparkline": [
+        55,
+        55,
+        55,
         56,
         56,
-        56,
-        57,
-        57,
-        58
+        57
       ]
     },
     {
       "id": "south",
       "name": "South",
-      "score": 56,
+      "score": 57,
       "status": "Elevated Pressure",
       "trend": "flat",
       "summary": "Localized pressure remains mixed relative to national baseline trends.",
@@ -229,12 +229,12 @@
         "Service access pressure remains visible"
       ],
       "sparkline": [
-        55,
-        55,
-        55,
         56,
         56,
-        56
+        56,
+        57,
+        57,
+        57
       ]
     },
     {
@@ -287,6 +287,12 @@
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
+    "census_api_key_present": true,
+    "bea_api_key_present": true,
+    "hud_api_key_present": false,
+    "va_api_key_present": true,
+    "va_benefits_api_key_present": true,
+    "federal_register_key_required": false,
     "tier_counts": {
       "tier_1": 10,
       "tier_2": 10,
@@ -299,7 +305,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 14,
+    "history_points": 15,
     "source_signal_map_loaded": true,
     "regional_model_enabled": true,
     "regional_regions_count": 4
@@ -322,6 +328,82 @@
     "labor_participation": 62.0
   },
   "bls_domain_adjustments": {
+    "housing": 0,
+    "cost_of_living": 0,
+    "employment": 0,
+    "morale": 0,
+    "benefits": 0,
+    "media": 0
+  },
+  "census": {
+    "year": 2024,
+    "median_gross_rent": 1487.0,
+    "median_home_value": 360600.0,
+    "ok": true
+  },
+  "census_domain_adjustments": {
+    "housing": -1,
+    "cost_of_living": 0,
+    "employment": 0,
+    "morale": 0,
+    "benefits": 0,
+    "media": 0
+  },
+  "bea": {
+    "personal_income_billions": null,
+    "table_name": "T20100",
+    "year": null,
+    "ok": false
+  },
+  "bea_domain_adjustments": {
+    "housing": 0,
+    "cost_of_living": 0,
+    "employment": 0,
+    "morale": 0,
+    "benefits": 0,
+    "media": 0
+  },
+  "hud": {
+    "fmr_endpoint_ok": false,
+    "income_limits_endpoint_ok": false,
+    "fmr_area_count": null,
+    "income_limits_area_count": null,
+    "ok": false
+  },
+  "hud_domain_adjustments": {
+    "housing": 0,
+    "cost_of_living": 0,
+    "employment": 0,
+    "morale": 0,
+    "benefits": 0,
+    "media": 0
+  },
+  "va_facilities": {
+    "ok": false,
+    "facility_count_page_1": null,
+    "sample_endpoint": "https://api.va.gov/facilities/va"
+  },
+  "va_benefits": {
+    "ok": false,
+    "disabilities_count": null,
+    "treatment_centers_count": null
+  },
+  "va_domain_adjustments": {
+    "housing": 0,
+    "cost_of_living": 0,
+    "employment": 0,
+    "morale": 0,
+    "benefits": 0,
+    "media": 0
+  },
+  "federal_register": {
+    "ok": true,
+    "count": 0,
+    "document_numbers": [],
+    "agencies": [],
+    "date_gte": "2026-03-07"
+  },
+  "federal_register_domain_adjustments": {
     "housing": 0,
     "cost_of_living": 0,
     "employment": 0,
