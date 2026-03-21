@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-21T06:07:26.121772+00:00",
+  "generated_at": "2026-03-21T06:08:35.127992+00:00",
   "status": "Elevated Pressure",
-  "composite_score": 54,
+  "composite_score": 53,
   "scores": {
-    "housing": 55,
+    "housing": 54,
     "cost_of_living": 56,
     "employment": 54,
-    "morale": 43,
+    "morale": 40,
     "benefits": 61,
-    "media": 53
+    "media": 54
   },
   "summary": [
     "System under elevated pressure",
@@ -17,18 +17,18 @@
     "Employment strain elevated"
   ],
   "narrative": [
-    "Composite score: 54.",
+    "Composite score: 53.",
     "Highest pressure domain: benefits (61).",
     "Second highest pressure domain: cost of living (56).",
-    "Most stable domain: morale (43).",
+    "Most stable domain: morale (40).",
     "Sources analyzed successfully: 13 of 20.",
     "NewsAPI articles used: 13."
   ],
   "display_trends": {
     "composite": {
-      "current": 54,
-      "delta_7": 0,
-      "delta_30": -2,
+      "current": 53,
+      "delta_7": -1,
+      "delta_30": -3,
       "direction": "flat",
       "arrow": "\u2192",
       "color": "yellow",
@@ -40,16 +40,17 @@
         53,
         53,
         53,
-        54
+        54,
+        53
       ]
     },
     "housing": {
-      "current": 55,
-      "delta_7": 2,
-      "delta_30": 3,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
+      "current": 54,
+      "delta_7": 1,
+      "delta_30": 2,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
         52,
         53,
@@ -58,7 +59,8 @@
         54,
         55,
         54,
-        55
+        55,
+        54
       ]
     },
     "cost_of_living": {
@@ -76,6 +78,7 @@
         58,
         58,
         58,
+        56,
         56
       ]
     },
@@ -94,16 +97,17 @@
         54,
         54,
         54,
+        54,
         54
       ]
     },
     "morale": {
-      "current": 43,
-      "delta_7": 2,
-      "delta_30": -17,
-      "direction": "up",
-      "arrow": "\u25b2",
-      "color": "green",
+      "current": 40,
+      "delta_7": -1,
+      "delta_30": -20,
+      "direction": "flat",
+      "arrow": "\u2192",
+      "color": "yellow",
       "sparkline": [
         60,
         41,
@@ -112,7 +116,8 @@
         41,
         43,
         41,
-        43
+        43,
+        40
       ]
     },
     "benefits": {
@@ -130,13 +135,14 @@
         58,
         58,
         58,
+        61,
         61
       ]
     },
     "media": {
-      "current": 53,
-      "delta_7": -4,
-      "delta_30": -1,
+      "current": 54,
+      "delta_7": -3,
+      "delta_30": 0,
       "direction": "down",
       "arrow": "\u25bc",
       "color": "red",
@@ -148,7 +154,8 @@
         53,
         52,
         53,
-        53
+        53,
+        54
       ]
     }
   },
@@ -170,7 +177,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 8,
+    "history_points": 9,
     "source_signal_map_loaded": true
   },
   "fred": {
