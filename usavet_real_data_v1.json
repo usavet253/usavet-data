@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-21T04:41:57.697288+00:00",
+  "generated_at": "2026-03-21T04:52:16.512080+00:00",
   "status": "Elevated Pressure",
   "composite_score": 54,
   "scores": {
     "housing": 53,
-    "cost_of_living": 58,
+    "cost_of_living": 59,
     "employment": 56,
-    "morale": 41,
+    "morale": 42,
     "benefits": 57,
-    "media": 57
+    "media": 56
   },
   "summary": [
     "System under elevated pressure",
@@ -18,9 +18,9 @@
   ],
   "narrative": [
     "Composite score: 54.",
-    "Highest pressure domain: cost of living (58).",
+    "Highest pressure domain: cost of living (59).",
     "Second highest pressure domain: benefits (57).",
-    "Most stable domain: morale (41).",
+    "Most stable domain: morale (42).",
     "Sources analyzed successfully: 13 of 20.",
     "FRED unemployment reference: 4.4%."
   ],
@@ -35,6 +35,7 @@
       "sparkline": [
         56,
         54,
+        54,
         54
       ]
     },
@@ -48,20 +49,22 @@
       "sparkline": [
         52,
         53,
+        53,
         53
       ]
     },
     "cost_of_living": {
-      "current": 58,
-      "delta_7": -7,
-      "delta_30": -7,
+      "current": 59,
+      "delta_7": -6,
+      "delta_30": -6,
       "direction": "down",
       "arrow": "\u25bc",
       "color": "red",
       "sparkline": [
         65,
         58,
-        58
+        58,
+        59
       ]
     },
     "employment": {
@@ -74,20 +77,22 @@
       "sparkline": [
         54,
         56,
+        56,
         56
       ]
     },
     "morale": {
-      "current": 41,
-      "delta_7": -19,
-      "delta_30": -19,
+      "current": 42,
+      "delta_7": -18,
+      "delta_30": -18,
       "direction": "down",
       "arrow": "\u25bc",
       "color": "red",
       "sparkline": [
         60,
         41,
-        41
+        41,
+        42
       ]
     },
     "benefits": {
@@ -100,20 +105,22 @@
       "sparkline": [
         53,
         57,
+        57,
         57
       ]
     },
     "media": {
-      "current": 57,
-      "delta_7": 3,
-      "delta_30": 3,
+      "current": 56,
+      "delta_7": 2,
+      "delta_30": 2,
       "direction": "up",
       "arrow": "\u25b2",
       "color": "green",
       "sparkline": [
         54,
         57,
-        57
+        57,
+        56
       ]
     }
   },
@@ -135,7 +142,7 @@
       "sentiment": 0,
       "unknown": 0
     },
-    "history_points": 3,
+    "history_points": 4,
     "source_signal_map_loaded": true
   },
   "fred": {
