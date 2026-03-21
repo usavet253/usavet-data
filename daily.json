@@ -1,8 +1,8 @@
 {
   "date": "March 21, 2026",
-  "time": "01:08 AM PT",
+  "time": "01:21 AM PT",
   "composite": 44,
-  "status": "Severe Pressure",
+  "status": "Elevated Pressure",
   "domains": {
     "housing": 48,
     "affordability": 35,
