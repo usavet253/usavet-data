@@ -3,7 +3,7 @@ name: USAVET Daily Automation
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 8 * * *"
+    - cron: "0 8 * * *"  # Runs at 08:00 UTC
 
 permissions:
   contents: write
@@ -35,78 +35,78 @@ jobs:
           python usavet_real_data_engine_v1.py
 
       - name: Convert to website format
-  run: |
-    python - <<'PY'
-    import json
-    from datetime import datetime
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime
 
-    def normalize(score):
-        if score is None:
-            return 50
-        return max(0, min(100, score))
+          def normalize(score):
+              if score is None:
+                  return 50
+              return max(0, min(100, score))
 
-    def invert(score):
-        return 100 - score
+          def invert(score):
+              return 100 - score
 
-    def get_status(score):
-        if score >= 80:
-            return "Stable"
-        elif score >= 60:
-            return "Watch"
-        elif score >= 45:
-            return "Pressure"
-        else:
-            return "Severe Pressure"
+          def get_status(score):
+              if score >= 80:
+                  return "Stable"
+              elif score >= 60:
+                  return "Watch"
+              elif score >= 45:
+                  return "Pressure"
+              else:
+                  return "Severe Pressure"
 
-    with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
-        raw = json.load(f)
+          with open("usavet_real_data_v1.json", "r", encoding="utf-8") as f:
+              raw = json.load(f)
 
-    now = datetime.now()
-    trends = raw.get("display_trends", {})
+          now = datetime.now()
+          trends = raw.get("display_trends", {})
 
-    # 🔥 FIX: invert scoring direction
-    composite_raw = raw.get("composite_score", 60)
-    composite = normalize(invert(composite_raw))
+          # 🔥 FIX: invert scoring direction
+          composite_raw = raw.get("composite_score", 60)
+          composite = normalize(invert(composite_raw))
 
-    daily = {
-        "date": now.strftime("%B %d, %Y"),
-        "time": now.strftime("%I:%M %p PT"),
+          daily = {
+              "date": now.strftime("%B %d, %Y"),
+              "time": now.strftime("%I:%M %p PT"),
 
-        "composite": composite,
-        "status": get_status(composite),
+              "composite": composite,
+              "status": get_status(composite),
 
-        "domains": {
-            "housing": normalize(invert(raw.get("scores", {}).get("housing", 55))),
-            "affordability": normalize(invert(raw.get("scores", {}).get("cost_of_living", 60))),
-            "employment": normalize(invert(raw.get("scores", {}).get("employment", 70))),
-            "morale": normalize(invert(raw.get("scores", {}).get("morale", 58))),
-            "benefits": normalize(invert(raw.get("scores", {}).get("benefits", 50))),
-            "media": normalize(invert(raw.get("scores", {}).get("media", 45)))
-        },
+              "domains": {
+                  "housing": normalize(invert(raw.get("scores", {}).get("housing", 55))),
+                  "affordability": normalize(invert(raw.get("scores", {}).get("cost_of_living", 60))),
+                  "employment": normalize(invert(raw.get("scores", {}).get("employment", 70))),
+                  "morale": normalize(invert(raw.get("scores", {}).get("morale", 58))),
+                  "benefits": normalize(invert(raw.get("scores", {}).get("benefits", 50))),
+                  "media": normalize(invert(raw.get("scores", {}).get("media", 45)))
+              },
 
-        "summary": raw.get("summary", raw.get("narrative", ["System stable"])),
+              "summary": raw.get("summary", raw.get("narrative", ["System stable"])),
 
-        "trend": {
-            "composite": trends.get("composite", {}),
-            "housing": trends.get("housing", {}),
-            "affordability": trends.get("cost_of_living", {}),
-            "employment": trends.get("employment", {}),
-            "morale": trends.get("morale", {}),
-            "benefits": trends.get("benefits", {}),
-            "media": trends.get("media", {})
-        }
-    }
+              "trend": {
+                  "composite": trends.get("composite", {}),
+                  "housing": trends.get("housing", {}),
+                  "affordability": trends.get("cost_of_living", {}),
+                  "employment": trends.get("employment", {}),
+                  "morale": trends.get("morale", {}),
+                  "benefits": trends.get("benefits", {}),
+                  "media": trends.get("media", {})
+              }
+          }
 
-    with open("daily.json", "w", encoding="utf-8") as f:
-        json.dump(daily, f, indent=2)
+          with open("daily.json", "w", encoding="utf-8") as f:
+              json.dump(daily, f, indent=2)
 
-    print("Wrote daily.json")
-    PY
+          print("Wrote daily.json")
+          PY
 
       - name: Commit and push update
         run: |
-          git config user.name "usavet-bot"
+          git config user.name "actions-user"
           git config user.email "actions@github.com"
-          git add daily.json usavet_real_data_v1.json history.json
-          git diff --staged --quiet || git commit -m "Automated daily update"
+          git add daily.json
+          git commit -m "Automated daily update" || echo "No changes to commit"
           git push
