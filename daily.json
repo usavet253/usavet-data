@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-22T23:08:25.903464+00:00",
+  "generated_at": "2026-03-22T23:54:20.180868+00:00",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v3-va-sandbox-safe",
   "status": "ok",
   "index": {
-    "overall_score": 55.4,
+    "overall_score": 67.8,
     "status_band": "yellow",
     "trend": "stable",
     "weights": {
@@ -17,38 +17,38 @@
     }
   },
   "categories": {
-    "housing": 55,
-    "cost_of_living": 50,
-    "employment": 50,
+    "housing": 80,
+    "cost_of_living": 60,
+    "employment": 75,
     "policy": 75,
-    "healthcare_access": 54,
-    "sentiment": 50
+    "healthcare_access": 64,
+    "sentiment": 40
   },
   "signals": {
     "hud": {
-      "ok": false,
-      "status_code": null,
+      "ok": true,
+      "status_code": 200,
       "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
-      "sample_count": null,
-      "reason": "HUD_API_KEY missing"
+      "sample_count": 56,
+      "reason": null
     },
     "fred_unemployment": {
-      "ok": false,
+      "ok": true,
       "series_id": "UNRATE",
-      "status_code": null,
-      "latest_value": null,
-      "latest_date": null,
-      "reason": "FRED_API_KEY missing"
+      "status_code": 200,
+      "latest_value": 4.4,
+      "latest_date": "2026-02-01",
+      "reason": null
     },
     "bea": {
       "ok": false,
-      "status_code": null,
+      "status_code": 200,
       "dataset": "NIPA",
       "table_name": "T10101",
       "records_count": 0,
       "sample_time_periods": [],
       "sample_values": [],
-      "reason": "BEA_API_KEY missing"
+      "reason": "Unexpected BEA payload keys: ['Error']"
     },
     "va_facilities": {
       "ok": false,
@@ -92,29 +92,33 @@
       ]
     },
     "news": {
-      "enabled": false,
+      "enabled": true,
       "tier_1": 0,
       "tier_2": 0,
-      "tier_3": 0,
+      "tier_3": 20,
       "kept": 0,
       "policy_like": 0,
-      "used": 0,
-      "errors": [
-        "NEWS_API_KEY missing"
-      ],
-      "sample_sources": []
+      "used": 20,
+      "errors": [],
+      "sample_sources": [
+        "the punch",
+        "the punch",
+        "slashdot.org",
+        "the big lead",
+        "rt"
+      ]
     }
   },
   "diagnostics": {
     "source_count": 22,
-    "successful_sources": 2,
-    "failed_sources": 20,
-    "fred_api_key_present": false,
-    "news_api_key_present": false,
-    "bls_api_key_present": false,
-    "census_api_key_present": false,
-    "bea_api_key_present": false,
-    "hud_api_key_present": false,
+    "successful_sources": 6,
+    "failed_sources": 16,
+    "fred_api_key_present": true,
+    "news_api_key_present": true,
+    "bls_api_key_present": true,
+    "census_api_key_present": true,
+    "bea_api_key_present": true,
+    "hud_api_key_present": true,
     "va_api_key_present": false,
     "va_benefits_api_key_present": false,
     "va_facilities_api_key_new_present": true,
@@ -126,19 +130,19 @@
     "va_benefits_reference_sandbox_mode": true,
     "tier_1": 0,
     "tier_2": 0,
-    "tier_3": 0,
+    "tier_3": 20,
     "policy_documents": 25,
     "history_points": 0
   },
   "summary": {
-    "headline": "USAVET integrated daily index is 55.4 (YELLOW), trend is stable.",
+    "headline": "USAVET integrated daily index is 67.8 (YELLOW), trend is stable.",
     "notes": [
-      "Housing score: 55",
-      "Cost of living score: 50",
-      "Employment score: 50",
+      "Housing score: 80",
+      "Cost of living score: 60",
+      "Employment score: 75",
       "Policy score: 75",
-      "Healthcare access score: 54",
-      "Sentiment score: 50",
+      "Healthcare access score: 64",
+      "Sentiment score: 40",
       "VA facilities reachable: False",
       "VA benefits reference reachable: True",
       "VA facilities using new sandbox key: True",
