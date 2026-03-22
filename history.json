@@ -296,5 +296,18 @@
     "healthcare_access": 55,
     "sentiment": 40,
     "successful_sources": 6
+  },
+  {
+    "time": "2026-03-22T20:12:15.603251+00:00",
+    "overall_score": 65.8,
+    "status_band": "yellow",
+    "trend": "stable",
+    "housing": 80,
+    "cost_of_living": 60,
+    "employment": 75,
+    "policy": 70,
+    "healthcare_access": 55,
+    "sentiment": 40,
+    "successful_sources": 6
   }
 ]

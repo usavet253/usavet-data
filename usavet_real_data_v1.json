@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-22T14:49:17.625829+00:00",
+  "generated_at": "2026-03-22T20:12:15.603251+00:00",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v2-balanced",
   "status": "ok",
   "index": {
-    "overall_score": 66.0,
+    "overall_score": 65.8,
     "status_band": "yellow",
     "trend": "stable",
     "weights": {
@@ -20,7 +20,7 @@
     "housing": 80,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 72,
+    "policy": 70,
     "healthcare_access": 55,
     "sentiment": 40
   },
@@ -76,17 +76,17 @@
       "enabled": true,
       "tier_1": 0,
       "tier_2": 0,
-      "tier_3": 17,
+      "tier_3": 20,
       "kept": 0,
-      "policy_like": 1,
-      "used": 17,
+      "policy_like": 0,
+      "used": 20,
       "errors": [],
       "sample_sources": [
-        "freerepublic.com",
-        "truthout",
-        "raw story",
-        "ahouseinthehills.com",
-        "hollywood reporter"
+        "abc news (au)",
+        "jalopnik",
+        "glamour",
+        "israelnationalnews.com",
+        "elearningindustry.com"
       ]
     }
   },
@@ -104,17 +104,17 @@
     "va_benefits_api_key_present": true,
     "tier_1": 0,
     "tier_2": 0,
-    "tier_3": 17,
+    "tier_3": 20,
     "policy_documents": 25,
-    "history_points": 24
+    "history_points": 25
   },
   "summary": {
-    "headline": "USAVET balanced daily index is 66.0 (YELLOW), trend is stable.",
+    "headline": "USAVET balanced daily index is 65.8 (YELLOW), trend is stable.",
     "notes": [
       "Housing score: 80",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Policy score: 72",
+      "Policy score: 70",
       "Healthcare access score: 55",
       "Sentiment score: 40"
     ]
