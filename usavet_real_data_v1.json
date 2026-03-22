@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-21T23:57:19.680043+00:00",
+  "generated_at": "2026-03-22T00:00:17.945785+00:00",
   "diagnostics": {
-    "successful_sources": 7,
-    "failed_sources": 13,
+    "successful_sources": 4,
+    "failed_sources": 16,
     "tier_1": 1,
     "tier_2": 1,
     "policy": 25
@@ -12,7 +12,7 @@
   },
   "va": {
     "ok": false,
-    "reason": "no response"
+    "reason": "no response (network/block)"
   },
   "bea": {
     "ok": true
