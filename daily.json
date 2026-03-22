@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-22T20:12:15.603251+00:00",
+  "generated_at": "2026-03-22T20:24:51.074733+00:00",
   "product": "USAVET.AI Daily Accountability Index",
-  "version": "v2-balanced",
+  "version": "v3-va-sandbox-safe",
   "status": "ok",
   "index": {
-    "overall_score": 65.8,
+    "overall_score": 65.3,
     "status_band": "yellow",
     "trend": "stable",
     "weights": {
@@ -21,8 +21,8 @@
     "cost_of_living": 60,
     "employment": 75,
     "policy": 70,
-    "healthcare_access": 55,
-    "sentiment": 40
+    "healthcare_access": 50,
+    "sentiment": 43
   },
   "signals": {
     "hud": {
@@ -50,14 +50,28 @@
       "sample_values": [],
       "reason": "KeyError: 'Data'"
     },
-    "va": {
+    "va_facilities": {
       "ok": false,
       "status_code": 401,
       "endpoint": "https://api.va.gov/services/va_facilities/v1/facilities",
       "facility_count_page_1": null,
       "reason": "{'message': 'Invalid authentication credentials'}",
       "exception_type": null,
-      "exception_message": null
+      "exception_message": null,
+      "using_new_key": false,
+      "sandbox_mode": false
+    },
+    "va_benefits_reference": {
+      "ok": false,
+      "status_code": null,
+      "endpoint": "<missing>",
+      "sample_count": 0,
+      "top_level_keys": [],
+      "reason": "VA_BENEFITS_REFERENCE_URL missing",
+      "exception_type": null,
+      "exception_message": null,
+      "using_new_key": false,
+      "sandbox_mode": false
     },
     "federal": {
       "ok": true,
@@ -75,25 +89,25 @@
     "news": {
       "enabled": true,
       "tier_1": 0,
-      "tier_2": 0,
-      "tier_3": 20,
-      "kept": 0,
+      "tier_2": 1,
+      "tier_3": 18,
+      "kept": 1,
       "policy_like": 0,
-      "used": 20,
+      "used": 19,
       "errors": [],
       "sample_sources": [
-        "abc news (au)",
-        "jalopnik",
-        "glamour",
-        "israelnationalnews.com",
-        "elearningindustry.com"
+        "the punch",
+        "the star online",
+        "pbs",
+        "lawyersgunsmoneyblog.com",
+        "military.com"
       ]
     }
   },
   "diagnostics": {
-    "source_count": 20,
+    "source_count": 22,
     "successful_sources": 6,
-    "failed_sources": 14,
+    "failed_sources": 16,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
@@ -102,21 +116,32 @@
     "hud_api_key_present": true,
     "va_api_key_present": true,
     "va_benefits_api_key_present": true,
+    "va_facilities_api_key_new_present": false,
+    "va_benefits_reference_api_key_new_present": false,
+    "va_benefits_reference_url_present": false,
+    "va_facilities_ok": false,
+    "va_benefits_reference_ok": false,
+    "va_facilities_sandbox_mode": false,
+    "va_benefits_reference_sandbox_mode": false,
     "tier_1": 0,
-    "tier_2": 0,
-    "tier_3": 20,
+    "tier_2": 1,
+    "tier_3": 18,
     "policy_documents": 25,
-    "history_points": 25
+    "history_points": 26
   },
   "summary": {
-    "headline": "USAVET balanced daily index is 65.8 (YELLOW), trend is stable.",
+    "headline": "USAVET integrated daily index is 65.3 (YELLOW), trend is stable.",
     "notes": [
       "Housing score: 80",
       "Cost of living score: 60",
       "Employment score: 75",
       "Policy score: 70",
-      "Healthcare access score: 55",
-      "Sentiment score: 40"
+      "Healthcare access score: 50",
+      "Sentiment score: 43",
+      "VA facilities reachable: False",
+      "VA benefits reference reachable: False",
+      "VA facilities using new sandbox key: False",
+      "VA benefits using new sandbox key: False"
     ]
   }
 }
