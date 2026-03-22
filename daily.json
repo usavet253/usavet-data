@@ -1,8 +1,99 @@
 {
-  "generated_at": "2026-03-22T00:03:52.340532+00:00",
+  "generated_at": "2026-03-22T00:16:16.499003+00:00",
+  "product": "USAVET.AI Daily Accountability Index",
+  "version": "v2-balanced",
+  "status": "ok",
+  "index": {
+    "overall_score": 66.3,
+    "status_band": "yellow",
+    "trend": "stable",
+    "weights": {
+      "housing": 0.2,
+      "cost_of_living": 0.2,
+      "employment": 0.2,
+      "policy": 0.15,
+      "healthcare_access": 0.15,
+      "sentiment": 0.1
+    }
+  },
+  "categories": {
+    "housing": 80,
+    "cost_of_living": 60,
+    "employment": 75,
+    "policy": 74,
+    "healthcare_access": 55,
+    "sentiment": 40
+  },
+  "signals": {
+    "hud": {
+      "ok": true,
+      "status_code": 200,
+      "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
+      "sample_count": 56,
+      "reason": null
+    },
+    "fred_unemployment": {
+      "ok": true,
+      "series_id": "UNRATE",
+      "status_code": 200,
+      "latest_value": 4.4,
+      "latest_date": "2026-02-01",
+      "reason": null
+    },
+    "bea": {
+      "ok": false,
+      "status_code": 200,
+      "dataset": "NIPA",
+      "table_name": "T10101",
+      "records_count": 0,
+      "sample_time_periods": [],
+      "sample_values": [],
+      "reason": "KeyError: 'Data'"
+    },
+    "va": {
+      "ok": false,
+      "status_code": 401,
+      "endpoint": "https://api.va.gov/services/va_facilities/v1/facilities",
+      "facility_count_page_1": null,
+      "reason": "{'message': 'Invalid authentication credentials'}",
+      "exception_type": null,
+      "exception_message": null
+    },
+    "federal": {
+      "ok": true,
+      "count": 25,
+      "status_code": 200,
+      "reason": null,
+      "document_numbers": [
+        "2025-24061",
+        "2025-22289",
+        "2025-20907",
+        "2025-19865",
+        "2025-17710"
+      ]
+    },
+    "news": {
+      "enabled": true,
+      "tier_1": 0,
+      "tier_2": 0,
+      "tier_3": 19,
+      "kept": 0,
+      "policy_like": 2,
+      "used": 19,
+      "errors": [],
+      "sample_sources": [
+        "yahoo entertainment",
+        "freerepublic.com",
+        "slashdot.org",
+        "batterypower.com",
+        "nerdwallet"
+      ]
+    }
+  },
   "diagnostics": {
-    "successful_sources": 7,
-    "failed_sources": 13,
+    "source_count": 20,
+    "successful_sources": 6,
+    "failed_sources": 14,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
@@ -13,43 +104,19 @@
     "va_benefits_api_key_present": true,
     "tier_1": 0,
     "tier_2": 0,
-    "tier_3": 9,
-    "policy": 25,
-    "history_points": 22
+    "tier_3": 19,
+    "policy_documents": 25,
+    "history_points": 23
   },
-  "hud": {
-    "ok": true,
-    "status_code": 200,
-    "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
-    "sample_count": 56,
-    "reason": null
-  },
-  "va": {
-    "ok": false,
-    "status_code": 401,
-    "endpoint": "https://api.va.gov/services/va_facilities/v1/facilities",
-    "facility_count_page_1": null,
-    "reason": "{'message': 'Invalid authentication credentials'}",
-    "exception_type": null,
-    "exception_message": null
-  },
-  "bea": {
-    "ok": true,
-    "status_code": 200,
-    "reason": null
-  },
-  "news": {
-    "enabled": true,
-    "tier_1": 0,
-    "tier_2": 0,
-    "tier_3": 9,
-    "kept": 0,
-    "errors": []
-  },
-  "federal": {
-    "ok": true,
-    "count": 25,
-    "status_code": 200,
-    "reason": null
+  "summary": {
+    "headline": "USAVET balanced daily index is 66.3 (YELLOW), trend is stable.",
+    "notes": [
+      "Housing score: 80",
+      "Cost of living score: 60",
+      "Employment score: 75",
+      "Policy score: 74",
+      "Healthcare access score: 55",
+      "Sentiment score: 40"
+    ]
   }
 }
