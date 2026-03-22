@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-03-22T20:24:51.074733+00:00",
+  "generated_at": "2026-03-22T20:47:20.872510+00:00",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v3-va-sandbox-safe",
   "status": "ok",
   "index": {
-    "overall_score": 65.3,
+    "overall_score": 59.1,
     "status_band": "yellow",
-    "trend": "stable",
+    "trend": "declining",
     "weights": {
       "housing": 0.2,
       "cost_of_living": 0.2,
@@ -17,20 +17,20 @@
     }
   },
   "categories": {
-    "housing": 80,
+    "housing": 55,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 70,
-    "healthcare_access": 50,
+    "policy": 72,
+    "healthcare_access": 40,
     "sentiment": 43
   },
   "signals": {
     "hud": {
-      "ok": true,
-      "status_code": 200,
+      "ok": false,
+      "status_code": 500,
       "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
-      "sample_count": 56,
-      "reason": null
+      "sample_count": null,
+      "reason": "{'message': 'Server Error'}"
     },
     "fred_unemployment": {
       "ok": true,
@@ -92,22 +92,22 @@
       "tier_2": 1,
       "tier_3": 18,
       "kept": 1,
-      "policy_like": 0,
+      "policy_like": 1,
       "used": 19,
       "errors": [],
       "sample_sources": [
-        "the punch",
-        "the star online",
-        "pbs",
-        "lawyersgunsmoneyblog.com",
-        "military.com"
+        "freerepublic.com",
+        "plos.org",
+        "meneame.net",
+        "gcaptain.com",
+        "fox news"
       ]
     }
   },
   "diagnostics": {
     "source_count": 22,
-    "successful_sources": 6,
-    "failed_sources": 16,
+    "successful_sources": 5,
+    "failed_sources": 17,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
@@ -127,16 +127,16 @@
     "tier_2": 1,
     "tier_3": 18,
     "policy_documents": 25,
-    "history_points": 26
+    "history_points": 27
   },
   "summary": {
-    "headline": "USAVET integrated daily index is 65.3 (YELLOW), trend is stable.",
+    "headline": "USAVET integrated daily index is 59.1 (YELLOW), trend is declining.",
     "notes": [
-      "Housing score: 80",
+      "Housing score: 55",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Policy score: 70",
-      "Healthcare access score: 50",
+      "Policy score: 72",
+      "Healthcare access score: 40",
       "Sentiment score: 43",
       "VA facilities reachable: False",
       "VA benefits reference reachable: False",
