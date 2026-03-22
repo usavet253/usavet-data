@@ -15,8 +15,24 @@ BLS_API_KEY = os.getenv("BLS_API_KEY")
 CENSUS_API_KEY = os.getenv("CENSUS_API_KEY")
 BEA_API_KEY = os.getenv("BEA_API_KEY")
 HUD_API_KEY = os.getenv("HUD_API_KEY")
+
+# Existing active keys
 VA_API_KEY = os.getenv("VA_API_KEY")
 VA_BENEFITS_API_KEY = os.getenv("VA_BENEFITS_API_KEY")
+
+# New sandbox keys take priority if present
+VA_FACILITIES_API_KEY = os.getenv("VA_FACILITIES_API_KEY_NEW") or VA_API_KEY
+VA_BENEFITS_REFERENCE_API_KEY = (
+    os.getenv("VA_BENEFITS_REFERENCE_API_KEY_NEW")
+    or VA_BENEFITS_API_KEY
+)
+
+# Add this as a GitHub Actions variable in usavet-engine
+VA_BENEFITS_REFERENCE_URL = (
+    os.getenv("VA_BENEFITS_REFERENCE_URL")
+    or os.getenv("VA_BENEFITS_REFERENCE_ENDPOINT")
+    or ""
+)
 
 
 def now_utc():
@@ -101,7 +117,6 @@ def fetch_fred_unemployment():
     }
 
     req = safe_get(url, params=params)
-
     if not req["ok"]:
         result["reason"] = f"{req['exception_type']}: {req['exception_message']}"
         return result
@@ -158,7 +173,6 @@ def fetch_bea():
     }
 
     req = safe_get(url, params=params)
-
     if not req["ok"]:
         result["reason"] = f"{req['exception_type']}: {req['exception_message']}"
         return result
@@ -203,7 +217,6 @@ def fetch_hud():
     }
 
     req = safe_get(result["endpoint"], headers=headers)
-
     if not req["ok"]:
         result["reason"] = f"{req['exception_type']}: {req['exception_message']}"
         return result
@@ -228,7 +241,7 @@ def fetch_hud():
     return result
 
 
-def fetch_va():
+def fetch_va_facilities():
     result = {
         "ok": False,
         "status_code": None,
@@ -237,14 +250,16 @@ def fetch_va():
         "reason": None,
         "exception_type": None,
         "exception_message": None,
+        "using_new_key": bool(os.getenv("VA_FACILITIES_API_KEY_NEW")),
+        "sandbox_mode": bool(os.getenv("VA_FACILITIES_API_KEY_NEW")),
     }
 
-    if not VA_API_KEY:
-        result["reason"] = "VA_API_KEY missing"
+    if not VA_FACILITIES_API_KEY:
+        result["reason"] = "VA_FACILITIES_API_KEY missing"
         return result
 
     headers = {
-        "apikey": VA_API_KEY,
+        "apikey": VA_FACILITIES_API_KEY,
         "Accept": "application/json",
         "User-Agent": "usavet-data/1.0",
     }
@@ -257,7 +272,6 @@ def fetch_va():
     }
 
     req = safe_get(result["endpoint"], headers=headers, params=params, timeout=(10, 45))
-
     if not req["ok"]:
         result["reason"] = "request exception before HTTP response"
         result["exception_type"] = req["exception_type"]
@@ -279,6 +293,67 @@ def fetch_va():
     return result
 
 
+def fetch_va_benefits_reference():
+    result = {
+        "ok": False,
+        "status_code": None,
+        "endpoint": VA_BENEFITS_REFERENCE_URL or "<missing>",
+        "sample_count": 0,
+        "top_level_keys": [],
+        "reason": None,
+        "exception_type": None,
+        "exception_message": None,
+        "using_new_key": bool(os.getenv("VA_BENEFITS_REFERENCE_API_KEY_NEW")),
+        "sandbox_mode": bool(os.getenv("VA_BENEFITS_REFERENCE_API_KEY_NEW")),
+    }
+
+    if not VA_BENEFITS_REFERENCE_API_KEY:
+        result["reason"] = "VA_BENEFITS_REFERENCE_API_KEY missing"
+        return result
+
+    if not VA_BENEFITS_REFERENCE_URL:
+        result["reason"] = "VA_BENEFITS_REFERENCE_URL missing"
+        return result
+
+    headers = {
+        "apikey": VA_BENEFITS_REFERENCE_API_KEY,
+        "Accept": "application/json",
+        "User-Agent": "usavet-data/1.0",
+    }
+
+    req = safe_get(VA_BENEFITS_REFERENCE_URL, headers=headers, timeout=(10, 45))
+    if not req["ok"]:
+        result["reason"] = "request exception before HTTP response"
+        result["exception_type"] = req["exception_type"]
+        result["exception_message"] = req["exception_message"]
+        return result
+
+    response = req["response"]
+    result["status_code"] = response.status_code
+    payload = safe_json(response)
+
+    if not response.ok:
+        result["reason"] = str(payload)[:500]
+        return result
+
+    if isinstance(payload, dict):
+        result["top_level_keys"] = list(payload.keys())[:10]
+        if isinstance(payload.get("data"), list):
+            result["sample_count"] = len(payload["data"])
+        elif isinstance(payload.get("data"), dict):
+            result["sample_count"] = len(payload["data"].keys())
+        else:
+            result["sample_count"] = len(payload.keys())
+    elif isinstance(payload, list):
+        result["sample_count"] = len(payload)
+    else:
+        result["sample_count"] = 1
+
+    result["ok"] = True
+    result["reason"] = "VA benefits reference endpoint reachable"
+    return result
+
+
 def fetch_federal():
     result = {
         "ok": False,
@@ -296,7 +371,6 @@ def fetch_federal():
     }
 
     req = safe_get(url, params=params)
-
     if not req["ok"]:
         result["reason"] = f"{req['exception_type']}: {req['exception_message']}"
         return result
@@ -343,13 +417,11 @@ def fetch_news():
     }
 
     req = safe_get(url, headers=headers, params=params)
-
     if not req["ok"]:
         result["errors"].append(f"{req['exception_type']}: {req['exception_message']}")
         return result
 
     response = req["response"]
-
     if not response.ok:
         result["errors"].append(str(safe_json(response))[:300])
         return result
@@ -453,24 +525,38 @@ def score_employment(fred, bls_key_present):
     return clamp(score)
 
 
-def score_policy(federal, news):
+def score_policy(federal, news, va_benefits_reference):
     score = 45
     if federal["ok"]:
         score += min(federal["count"], 25)
     score += min(news.get("policy_like", 0) * 2, 10)
+
+    # Sandbox-safe: only a small additive influence
+    if va_benefits_reference["ok"]:
+        score += 5
+
     return clamp(score)
 
 
-def score_healthcare_access(va, hud):
+def score_healthcare_access(va_facilities, va_benefits_reference, hud):
     score = 45
+
     if hud["ok"]:
-        score += 15
-    if va["ok"]:
-        score += 25
-        if va.get("facility_count_page_1") is not None:
-            score += min(va["facility_count_page_1"], 10)
-    elif va.get("status_code") == 401:
+        score += 10
+
+    if va_facilities["ok"]:
+        score += 20
+        if va_facilities.get("facility_count_page_1") is not None:
+            score += min(va_facilities["facility_count_page_1"], 10)
+    elif va_facilities.get("status_code") == 401:
         score -= 5
+
+    # Sandbox-safe: small influence only
+    if va_benefits_reference["ok"]:
+        score += 10
+        if va_benefits_reference.get("sample_count") is not None:
+            score += min(int(va_benefits_reference["sample_count"]), 5)
+
     return clamp(score)
 
 
@@ -506,15 +592,16 @@ def build():
     fred = fetch_fred_unemployment()
     bea = fetch_bea()
     hud = fetch_hud()
-    va = fetch_va()
+    va_facilities = fetch_va_facilities()
+    va_benefits_reference = fetch_va_benefits_reference()
     federal = fetch_federal()
     news = fetch_news()
 
     housing_score = score_housing(hud, federal)
     cost_of_living_score = score_cost_of_living(bea, fred)
     employment_score = score_employment(fred, bool(BLS_API_KEY))
-    policy_score = score_policy(federal, news)
-    healthcare_access_score = score_healthcare_access(va, hud)
+    policy_score = score_policy(federal, news, va_benefits_reference)
+    healthcare_access_score = score_healthcare_access(va_facilities, va_benefits_reference, hud)
     sentiment_score = score_sentiment(news)
 
     overall_score = round(
@@ -533,17 +620,19 @@ def build():
     successful_sources += 1 if fred["ok"] else 0
     successful_sources += 1 if bea["ok"] else 0
     successful_sources += 1 if hud["ok"] else 0
-    successful_sources += 1 if va["ok"] else 0
+    successful_sources += 1 if va_facilities["ok"] else 0
+    successful_sources += 1 if va_benefits_reference["ok"] else 0
     successful_sources += 1 if federal["ok"] else 0
     successful_sources += 1 if news["kept"] > 0 else 0
     successful_sources += 1 if bool(BLS_API_KEY) else 0
     successful_sources += 1 if bool(CENSUS_API_KEY) else 0
-    successful_sources += 1 if bool(VA_BENEFITS_API_KEY) else 0
+
+    source_count = 22
 
     payload = {
         "generated_at": now_utc(),
         "product": "USAVET.AI Daily Accountability Index",
-        "version": "v2-balanced",
+        "version": "v3-va-sandbox-safe",
         "status": "ok",
         "index": {
             "overall_score": overall_score,
@@ -570,14 +659,15 @@ def build():
             "hud": hud,
             "fred_unemployment": fred,
             "bea": bea,
-            "va": va,
+            "va_facilities": va_facilities,
+            "va_benefits_reference": va_benefits_reference,
             "federal": federal,
             "news": news,
         },
         "diagnostics": {
-            "source_count": 20,
+            "source_count": source_count,
             "successful_sources": successful_sources,
-            "failed_sources": 20 - successful_sources,
+            "failed_sources": source_count - successful_sources,
             "fred_api_key_present": bool(FRED_API_KEY),
             "news_api_key_present": bool(NEWS_API_KEY),
             "bls_api_key_present": bool(BLS_API_KEY),
@@ -586,6 +676,13 @@ def build():
             "hud_api_key_present": bool(HUD_API_KEY),
             "va_api_key_present": bool(VA_API_KEY),
             "va_benefits_api_key_present": bool(VA_BENEFITS_API_KEY),
+            "va_facilities_api_key_new_present": bool(os.getenv("VA_FACILITIES_API_KEY_NEW")),
+            "va_benefits_reference_api_key_new_present": bool(os.getenv("VA_BENEFITS_REFERENCE_API_KEY_NEW")),
+            "va_benefits_reference_url_present": bool(VA_BENEFITS_REFERENCE_URL),
+            "va_facilities_ok": va_facilities["ok"],
+            "va_benefits_reference_ok": va_benefits_reference["ok"],
+            "va_facilities_sandbox_mode": va_facilities["sandbox_mode"],
+            "va_benefits_reference_sandbox_mode": va_benefits_reference["sandbox_mode"],
             "tier_1": news["tier_1"],
             "tier_2": news["tier_2"],
             "tier_3": news["tier_3"],
@@ -593,7 +690,11 @@ def build():
             "history_points": len(history),
         },
         "summary": {
-            "headline": f"USAVET balanced daily index is {overall_score} ({'GREEN' if overall_score >= 70 else 'YELLOW' if overall_score >= 50 else 'RED'}), trend is {trend}.",
+            "headline": (
+                f"USAVET integrated daily index is {overall_score} "
+                f"({'GREEN' if overall_score >= 70 else 'YELLOW' if overall_score >= 50 else 'RED'}), "
+                f"trend is {trend}."
+            ),
             "notes": [
                 f"Housing score: {housing_score}",
                 f"Cost of living score: {cost_of_living_score}",
@@ -601,6 +702,10 @@ def build():
                 f"Policy score: {policy_score}",
                 f"Healthcare access score: {healthcare_access_score}",
                 f"Sentiment score: {sentiment_score}",
+                f"VA facilities reachable: {va_facilities['ok']}",
+                f"VA benefits reference reachable: {va_benefits_reference['ok']}",
+                f"VA facilities using new sandbox key: {va_facilities['using_new_key']}",
+                f"VA benefits using new sandbox key: {va_benefits_reference['using_new_key']}",
             ],
         },
     }
@@ -631,6 +736,10 @@ def main():
             "healthcare_access": data["categories"]["healthcare_access"],
             "sentiment": data["categories"]["sentiment"],
             "successful_sources": data["diagnostics"]["successful_sources"],
+            "va_facilities_ok": data["signals"]["va_facilities"]["ok"],
+            "va_benefits_reference_ok": data["signals"]["va_benefits_reference"]["ok"],
+            "va_facilities_sandbox_mode": data["signals"]["va_facilities"]["sandbox_mode"],
+            "va_benefits_reference_sandbox_mode": data["signals"]["va_benefits_reference"]["sandbox_mode"],
         }
     )
 
