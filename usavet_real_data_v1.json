@@ -1,29 +1,55 @@
 {
-  "generated_at": "2026-03-22T00:00:17.945785+00:00",
+  "generated_at": "2026-03-22T00:03:52.340532+00:00",
   "diagnostics": {
-    "successful_sources": 4,
-    "failed_sources": 16,
-    "tier_1": 1,
-    "tier_2": 1,
-    "policy": 25
+    "successful_sources": 7,
+    "failed_sources": 13,
+    "fred_api_key_present": true,
+    "news_api_key_present": true,
+    "bls_api_key_present": true,
+    "census_api_key_present": true,
+    "bea_api_key_present": true,
+    "hud_api_key_present": true,
+    "va_api_key_present": true,
+    "va_benefits_api_key_present": true,
+    "tier_1": 0,
+    "tier_2": 0,
+    "tier_3": 9,
+    "policy": 25,
+    "history_points": 22
   },
   "hud": {
-    "ok": true
+    "ok": true,
+    "status_code": 200,
+    "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
+    "sample_count": 56,
+    "reason": null
   },
   "va": {
     "ok": false,
-    "reason": "no response (network/block)"
+    "status_code": 401,
+    "endpoint": "https://api.va.gov/services/va_facilities/v1/facilities",
+    "facility_count_page_1": null,
+    "reason": "{'message': 'Invalid authentication credentials'}",
+    "exception_type": null,
+    "exception_message": null
   },
   "bea": {
-    "ok": true
+    "ok": true,
+    "status_code": 200,
+    "reason": null
   },
   "news": {
-    "tier_1": 1,
-    "tier_2": 1,
-    "kept": 2
+    "enabled": true,
+    "tier_1": 0,
+    "tier_2": 0,
+    "tier_3": 9,
+    "kept": 0,
+    "errors": []
   },
   "federal": {
     "ok": true,
-    "count": 25
+    "count": 25,
+    "status_code": 200,
+    "reason": null
   }
 }
