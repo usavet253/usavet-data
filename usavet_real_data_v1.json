@@ -1,12 +1,14 @@
 {
-  "generated_at": "2026-03-23T01:42:44.411321+00:00",
+  "generated_at": "2026-03-23T01:43:17.466346+00:00",
   "product": "USAVET.AI Daily Accountability Index",
-  "version": "v3-va-sandbox-safe",
+  "version": "v4-full-restored",
   "status": "ok",
   "index": {
-    "overall_score": 59.9,
+    "overall_score": 68.2,
     "status_band": "yellow",
     "trend": "stable",
+    "pressure_label": "Manageable Pressure",
+    "source_quality": "High Confidence",
     "weights": {
       "housing": 0.2,
       "cost_of_living": 0.2,
@@ -20,8 +22,8 @@
     "housing": 55,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 76,
-    "healthcare_access": 40,
+    "policy": 81,
+    "healthcare_access": 90,
     "sentiment": 45
   },
   "signals": {
@@ -48,30 +50,35 @@
       "records_count": 0,
       "sample_time_periods": [],
       "sample_values": [],
-      "reason": "KeyError: 'Data'"
+      "reason": "Unexpected BEA payload keys: ['Error']"
     },
     "va_facilities": {
-      "ok": false,
-      "status_code": 401,
-      "endpoint": "https://api.va.gov/services/va_facilities/v1/facilities",
-      "facility_count_page_1": null,
-      "reason": "{'message': 'Invalid authentication credentials'}",
+      "ok": true,
+      "status_code": 200,
+      "endpoint": "https://sandbox-api.va.gov/services/va_facilities/v1/facilities",
+      "facility_count_page_1": 10,
+      "reason": "VA facilities endpoint reachable",
       "exception_type": null,
       "exception_message": null,
-      "using_new_key": false,
-      "sandbox_mode": false
+      "using_new_key": true,
+      "sandbox_mode": true
     },
     "va_benefits_reference": {
-      "ok": false,
-      "status_code": null,
-      "endpoint": "<missing>",
-      "sample_count": 0,
-      "top_level_keys": [],
-      "reason": "VA_BENEFITS_REFERENCE_URL missing",
+      "ok": true,
+      "status_code": 200,
+      "endpoint": "https://sandbox-api.va.gov/services/benefits-reference-data/v1/disabilities",
+      "sample_count": 9,
+      "top_level_keys": [
+        "totalItems",
+        "totalPages",
+        "links",
+        "items"
+      ],
+      "reason": "VA benefits reference endpoint reachable",
       "exception_type": null,
       "exception_message": null,
-      "using_new_key": false,
-      "sandbox_mode": false
+      "using_new_key": true,
+      "sandbox_mode": true
     },
     "federal": {
       "ok": true,
@@ -106,42 +113,43 @@
   },
   "diagnostics": {
     "source_count": 22,
-    "successful_sources": 5,
-    "failed_sources": 17,
+    "successful_sources": 7,
+    "failed_sources": 15,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
     "census_api_key_present": true,
     "bea_api_key_present": true,
     "hud_api_key_present": true,
-    "va_api_key_present": true,
-    "va_benefits_api_key_present": true,
-    "va_facilities_api_key_new_present": false,
-    "va_benefits_reference_api_key_new_present": false,
-    "va_benefits_reference_url_present": false,
-    "va_facilities_ok": false,
-    "va_benefits_reference_ok": false,
-    "va_facilities_sandbox_mode": false,
-    "va_benefits_reference_sandbox_mode": false,
+    "va_api_key_present": false,
+    "va_benefits_api_key_present": false,
+    "va_facilities_api_key_new_present": true,
+    "va_benefits_reference_api_key_new_present": true,
+    "va_benefits_reference_url_present": true,
+    "va_facilities_ok": true,
+    "va_benefits_reference_ok": true,
+    "va_facilities_sandbox_mode": true,
+    "va_benefits_reference_sandbox_mode": true,
     "tier_1": 1,
     "tier_2": 0,
     "tier_3": 19,
     "policy_documents": 25,
-    "history_points": 1
+    "history_points": 0
   },
   "summary": {
-    "headline": "USAVET integrated daily index is 59.9 (YELLOW), trend is stable.",
+    "headline": "USAVET integrated daily index is 68.2 (YELLOW), trend is stable, pressure is Manageable Pressure.",
     "notes": [
       "Housing score: 55",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Policy score: 76",
-      "Healthcare access score: 40",
+      "Policy score: 81",
+      "Healthcare access score: 90",
       "Sentiment score: 45",
-      "VA facilities reachable: False",
-      "VA benefits reference reachable: False",
-      "VA facilities using new sandbox key: False",
-      "VA benefits using new sandbox key: False"
+      "VA facilities reachable: True",
+      "VA benefits reference reachable: True",
+      "VA facilities using new sandbox key: True",
+      "VA benefits using new sandbox key: True",
+      "Source confidence: High Confidence"
     ]
   }
 }

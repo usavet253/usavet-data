@@ -1,37 +1,20 @@
 [
   {
-    "time": "2026-03-23T01:36:36.308385+00:00",
-    "overall_score": 74.3,
-    "status_band": "green",
-    "pressure_label": "Manageable Pressure",
-    "trend": "stable",
-    "housing": 80,
-    "cost_of_living": 60,
-    "employment": 75,
-    "policy": 79,
-    "healthcare_access": 100,
-    "sentiment": 45,
-    "successful_sources": 8,
-    "va_facilities_ok": true,
-    "va_benefits_reference_ok": true,
-    "va_facilities_sandbox_mode": true,
-    "va_benefits_reference_sandbox_mode": true
-  },
-  {
-    "time": "2026-03-23T01:42:44.411321+00:00",
-    "overall_score": 59.9,
+    "time": "2026-03-23T01:43:17.466346+00:00",
+    "overall_score": 68.2,
     "status_band": "yellow",
+    "pressure_label": "Manageable Pressure",
     "trend": "stable",
     "housing": 55,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 76,
-    "healthcare_access": 40,
+    "policy": 81,
+    "healthcare_access": 90,
     "sentiment": 45,
-    "successful_sources": 5,
-    "va_facilities_ok": false,
-    "va_benefits_reference_ok": false,
-    "va_facilities_sandbox_mode": false,
-    "va_benefits_reference_sandbox_mode": false
+    "successful_sources": 7,
+    "va_facilities_ok": true,
+    "va_benefits_reference_ok": true,
+    "va_facilities_sandbox_mode": true,
+    "va_benefits_reference_sandbox_mode": true
   }
 ]
