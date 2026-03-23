@@ -1,14 +1,12 @@
 {
-  "generated_at": "2026-03-23T01:43:17.466346+00:00",
+  "generated_at": "2026-03-23T16:14:26.562416+00:00",
   "product": "USAVET.AI Daily Accountability Index",
-  "version": "v4-full-restored",
+  "version": "v3-va-sandbox-safe",
   "status": "ok",
   "index": {
-    "overall_score": 68.2,
+    "overall_score": 53.2,
     "status_band": "yellow",
     "trend": "stable",
-    "pressure_label": "Manageable Pressure",
-    "source_quality": "High Confidence",
     "weights": {
       "housing": 0.2,
       "cost_of_living": 0.2,
@@ -20,65 +18,60 @@
   },
   "categories": {
     "housing": 55,
-    "cost_of_living": 60,
-    "employment": 75,
-    "policy": 81,
-    "healthcare_access": 90,
-    "sentiment": 45
+    "cost_of_living": 50,
+    "employment": 50,
+    "policy": 70,
+    "healthcare_access": 45,
+    "sentiment": 50
   },
   "signals": {
     "hud": {
       "ok": false,
-      "status_code": 500,
+      "status_code": null,
       "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
       "sample_count": null,
-      "reason": "{'message': 'Server Error'}"
+      "reason": "HUD_API_KEY missing"
     },
     "fred_unemployment": {
-      "ok": true,
+      "ok": false,
       "series_id": "UNRATE",
-      "status_code": 200,
-      "latest_value": 4.4,
-      "latest_date": "2026-02-01",
-      "reason": null
+      "status_code": null,
+      "latest_value": null,
+      "latest_date": null,
+      "reason": "FRED_API_KEY missing"
     },
     "bea": {
       "ok": false,
-      "status_code": 200,
+      "status_code": null,
       "dataset": "NIPA",
       "table_name": "T10101",
       "records_count": 0,
       "sample_time_periods": [],
       "sample_values": [],
-      "reason": "Unexpected BEA payload keys: ['Error']"
+      "reason": "BEA_API_KEY missing"
     },
     "va_facilities": {
-      "ok": true,
-      "status_code": 200,
-      "endpoint": "https://sandbox-api.va.gov/services/va_facilities/v1/facilities",
-      "facility_count_page_1": 10,
-      "reason": "VA facilities endpoint reachable",
+      "ok": false,
+      "status_code": null,
+      "endpoint": "https://api.va.gov/services/va_facilities/v1/facilities",
+      "facility_count_page_1": null,
+      "reason": "VA_FACILITIES_API_KEY missing",
       "exception_type": null,
       "exception_message": null,
-      "using_new_key": true,
-      "sandbox_mode": true
+      "using_new_key": false,
+      "sandbox_mode": false
     },
     "va_benefits_reference": {
-      "ok": true,
-      "status_code": 200,
-      "endpoint": "https://sandbox-api.va.gov/services/benefits-reference-data/v1/disabilities",
-      "sample_count": 9,
-      "top_level_keys": [
-        "totalItems",
-        "totalPages",
-        "links",
-        "items"
-      ],
-      "reason": "VA benefits reference endpoint reachable",
+      "ok": false,
+      "status_code": null,
+      "endpoint": "<missing>",
+      "sample_count": 0,
+      "top_level_keys": [],
+      "reason": "VA_BENEFITS_REFERENCE_API_KEY missing",
       "exception_type": null,
       "exception_message": null,
-      "using_new_key": true,
-      "sandbox_mode": true
+      "using_new_key": false,
+      "sandbox_mode": false
     },
     "federal": {
       "ok": true,
@@ -94,62 +87,57 @@
       ]
     },
     "news": {
-      "enabled": true,
-      "tier_1": 1,
+      "enabled": false,
+      "tier_1": 0,
       "tier_2": 0,
-      "tier_3": 19,
-      "kept": 1,
-      "policy_like": 3,
-      "used": 20,
-      "errors": [],
-      "sample_sources": [
-        "businessline",
-        "freerepublic.com",
-        "the star online",
-        "israelnationalnews.com",
-        "khabarhub.com"
-      ]
+      "tier_3": 0,
+      "kept": 0,
+      "policy_like": 0,
+      "used": 0,
+      "errors": [
+        "NEWS_API_KEY missing"
+      ],
+      "sample_sources": []
     }
   },
   "diagnostics": {
     "source_count": 22,
-    "successful_sources": 7,
-    "failed_sources": 15,
-    "fred_api_key_present": true,
-    "news_api_key_present": true,
-    "bls_api_key_present": true,
-    "census_api_key_present": true,
-    "bea_api_key_present": true,
-    "hud_api_key_present": true,
+    "successful_sources": 1,
+    "failed_sources": 21,
+    "fred_api_key_present": false,
+    "news_api_key_present": false,
+    "bls_api_key_present": false,
+    "census_api_key_present": false,
+    "bea_api_key_present": false,
+    "hud_api_key_present": false,
     "va_api_key_present": false,
     "va_benefits_api_key_present": false,
-    "va_facilities_api_key_new_present": true,
-    "va_benefits_reference_api_key_new_present": true,
-    "va_benefits_reference_url_present": true,
-    "va_facilities_ok": true,
-    "va_benefits_reference_ok": true,
-    "va_facilities_sandbox_mode": true,
-    "va_benefits_reference_sandbox_mode": true,
-    "tier_1": 1,
+    "va_facilities_api_key_new_present": false,
+    "va_benefits_reference_api_key_new_present": false,
+    "va_benefits_reference_url_present": false,
+    "va_facilities_ok": false,
+    "va_benefits_reference_ok": false,
+    "va_facilities_sandbox_mode": false,
+    "va_benefits_reference_sandbox_mode": false,
+    "tier_1": 0,
     "tier_2": 0,
-    "tier_3": 19,
+    "tier_3": 0,
     "policy_documents": 25,
-    "history_points": 0
+    "history_points": 1
   },
   "summary": {
-    "headline": "USAVET integrated daily index is 68.2 (YELLOW), trend is stable, pressure is Manageable Pressure.",
+    "headline": "USAVET integrated daily index is 53.2 (YELLOW), trend is stable.",
     "notes": [
       "Housing score: 55",
-      "Cost of living score: 60",
-      "Employment score: 75",
-      "Policy score: 81",
-      "Healthcare access score: 90",
-      "Sentiment score: 45",
-      "VA facilities reachable: True",
-      "VA benefits reference reachable: True",
-      "VA facilities using new sandbox key: True",
-      "VA benefits using new sandbox key: True",
-      "Source confidence: High Confidence"
+      "Cost of living score: 50",
+      "Employment score: 50",
+      "Policy score: 70",
+      "Healthcare access score: 45",
+      "Sentiment score: 50",
+      "VA facilities reachable: False",
+      "VA benefits reference reachable: False",
+      "VA facilities using new sandbox key: False",
+      "VA benefits using new sandbox key: False"
     ]
   }
 }
