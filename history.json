@@ -16,5 +16,22 @@
     "va_benefits_reference_ok": true,
     "va_facilities_sandbox_mode": true,
     "va_benefits_reference_sandbox_mode": true
+  },
+  {
+    "time": "2026-03-23T01:42:44.411321+00:00",
+    "overall_score": 59.9,
+    "status_band": "yellow",
+    "trend": "stable",
+    "housing": 55,
+    "cost_of_living": 60,
+    "employment": 75,
+    "policy": 76,
+    "healthcare_access": 40,
+    "sentiment": 45,
+    "successful_sources": 5,
+    "va_facilities_ok": false,
+    "va_benefits_reference_ok": false,
+    "va_facilities_sandbox_mode": false,
+    "va_benefits_reference_sandbox_mode": false
   }
 ]
