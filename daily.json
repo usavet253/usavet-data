@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-23T00:03:46.300384+00:00",
+  "generated_at": "2026-03-23T00:13:27.672253+00:00",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v3-va-sandbox-safe",
   "status": "ok",
   "index": {
-    "overall_score": 61.6,
-    "status_band": "yellow",
+    "overall_score": 74.2,
+    "status_band": "green",
     "trend": "stable",
     "weights": {
       "housing": 0.2,
@@ -17,20 +17,20 @@
     }
   },
   "categories": {
-    "housing": 55,
+    "housing": 80,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 77,
-    "healthcare_access": 54,
+    "policy": 81,
+    "healthcare_access": 100,
     "sentiment": 40
   },
   "signals": {
     "hud": {
-      "ok": false,
-      "status_code": 500,
+      "ok": true,
+      "status_code": 200,
       "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
-      "sample_count": null,
-      "reason": "{'message': 'Server Error'}"
+      "sample_count": 56,
+      "reason": null
     },
     "fred_unemployment": {
       "ok": true,
@@ -51,11 +51,11 @@
       "reason": "Unexpected BEA payload keys: ['Error']"
     },
     "va_facilities": {
-      "ok": false,
-      "status_code": 401,
-      "endpoint": "https://api.va.gov/services/va_facilities/v1/facilities",
-      "facility_count_page_1": null,
-      "reason": "{'message': 'Invalid authentication credentials'}",
+      "ok": true,
+      "status_code": 200,
+      "endpoint": "https://sandbox-api.va.gov/services/va_facilities/v1/facilities",
+      "facility_count_page_1": 10,
+      "reason": "VA facilities endpoint reachable",
       "exception_type": null,
       "exception_message": null,
       "using_new_key": true,
@@ -65,7 +65,7 @@
       "ok": true,
       "status_code": 200,
       "endpoint": "https://sandbox-api.va.gov/services/benefits-reference-data/v1/disabilities",
-      "sample_count": 4,
+      "sample_count": 9,
       "top_level_keys": [
         "totalItems",
         "totalPages",
@@ -97,22 +97,22 @@
       "tier_2": 0,
       "tier_3": 20,
       "kept": 0,
-      "policy_like": 1,
+      "policy_like": 3,
       "used": 20,
       "errors": [],
       "sample_sources": [
+        "github.com",
+        "cna",
         "the punch",
-        "the punch",
-        "the advocate",
-        "national geographic",
-        "mercola.com"
+        "globenewswire",
+        "the punch"
       ]
     }
   },
   "diagnostics": {
     "source_count": 22,
-    "successful_sources": 5,
-    "failed_sources": 17,
+    "successful_sources": 7,
+    "failed_sources": 15,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
@@ -124,7 +124,7 @@
     "va_facilities_api_key_new_present": true,
     "va_benefits_reference_api_key_new_present": true,
     "va_benefits_reference_url_present": true,
-    "va_facilities_ok": false,
+    "va_facilities_ok": true,
     "va_benefits_reference_ok": true,
     "va_facilities_sandbox_mode": true,
     "va_benefits_reference_sandbox_mode": true,
@@ -135,15 +135,15 @@
     "history_points": 0
   },
   "summary": {
-    "headline": "USAVET integrated daily index is 61.6 (YELLOW), trend is stable.",
+    "headline": "USAVET integrated daily index is 74.2 (GREEN), trend is stable.",
     "notes": [
-      "Housing score: 55",
+      "Housing score: 80",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Policy score: 77",
-      "Healthcare access score: 54",
+      "Policy score: 81",
+      "Healthcare access score: 100",
       "Sentiment score: 40",
-      "VA facilities reachable: False",
+      "VA facilities reachable: True",
       "VA benefits reference reachable: True",
       "VA facilities using new sandbox key: True",
       "VA benefits using new sandbox key: True"
