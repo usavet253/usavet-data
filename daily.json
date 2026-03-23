@@ -1,12 +1,14 @@
 {
-  "generated_at": "2026-03-23T00:13:27.672253+00:00",
+  "generated_at": "2026-03-23T01:36:36.308385+00:00",
   "product": "USAVET.AI Daily Accountability Index",
-  "version": "v3-va-sandbox-safe",
+  "version": "v4-full-restored",
   "status": "ok",
   "index": {
-    "overall_score": 74.2,
+    "overall_score": 74.3,
     "status_band": "green",
     "trend": "stable",
+    "pressure_label": "Manageable Pressure",
+    "source_quality": "High Confidence",
     "weights": {
       "housing": 0.2,
       "cost_of_living": 0.2,
@@ -20,9 +22,9 @@
     "housing": 80,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 81,
+    "policy": 79,
     "healthcare_access": 100,
-    "sentiment": 40
+    "sentiment": 45
   },
   "signals": {
     "hud": {
@@ -93,26 +95,26 @@
     },
     "news": {
       "enabled": true,
-      "tier_1": 0,
+      "tier_1": 1,
       "tier_2": 0,
-      "tier_3": 20,
-      "kept": 0,
-      "policy_like": 3,
+      "tier_3": 19,
+      "kept": 1,
+      "policy_like": 2,
       "used": 20,
       "errors": [],
       "sample_sources": [
-        "github.com",
-        "cna",
-        "the punch",
-        "globenewswire",
-        "the punch"
+        "khabarhub.com",
+        "businessline",
+        "associated press",
+        "livemint",
+        "legalinsurrection.com"
       ]
     }
   },
   "diagnostics": {
     "source_count": 22,
-    "successful_sources": 7,
-    "failed_sources": 15,
+    "successful_sources": 8,
+    "failed_sources": 14,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
@@ -128,25 +130,26 @@
     "va_benefits_reference_ok": true,
     "va_facilities_sandbox_mode": true,
     "va_benefits_reference_sandbox_mode": true,
-    "tier_1": 0,
+    "tier_1": 1,
     "tier_2": 0,
-    "tier_3": 20,
+    "tier_3": 19,
     "policy_documents": 25,
     "history_points": 0
   },
   "summary": {
-    "headline": "USAVET integrated daily index is 74.2 (GREEN), trend is stable.",
+    "headline": "USAVET integrated daily index is 74.3 (GREEN), trend is stable, pressure is Manageable Pressure.",
     "notes": [
       "Housing score: 80",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Policy score: 81",
+      "Policy score: 79",
       "Healthcare access score: 100",
-      "Sentiment score: 40",
+      "Sentiment score: 45",
       "VA facilities reachable: True",
       "VA benefits reference reachable: True",
       "VA facilities using new sandbox key: True",
-      "VA benefits using new sandbox key: True"
+      "VA benefits using new sandbox key: True",
+      "Source confidence: High Confidence"
     ]
   }
 }
