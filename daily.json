@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-22T23:54:20.180868+00:00",
+  "generated_at": "2026-03-23T00:03:46.300384+00:00",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v3-va-sandbox-safe",
   "status": "ok",
   "index": {
-    "overall_score": 67.8,
+    "overall_score": 61.6,
     "status_band": "yellow",
     "trend": "stable",
     "weights": {
@@ -17,20 +17,20 @@
     }
   },
   "categories": {
-    "housing": 80,
+    "housing": 55,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 75,
-    "healthcare_access": 64,
+    "policy": 77,
+    "healthcare_access": 54,
     "sentiment": 40
   },
   "signals": {
     "hud": {
-      "ok": true,
-      "status_code": 200,
+      "ok": false,
+      "status_code": 500,
       "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
-      "sample_count": 56,
-      "reason": null
+      "sample_count": null,
+      "reason": "{'message': 'Server Error'}"
     },
     "fred_unemployment": {
       "ok": true,
@@ -97,22 +97,22 @@
       "tier_2": 0,
       "tier_3": 20,
       "kept": 0,
-      "policy_like": 0,
+      "policy_like": 1,
       "used": 20,
       "errors": [],
       "sample_sources": [
         "the punch",
         "the punch",
-        "slashdot.org",
-        "the big lead",
-        "rt"
+        "the advocate",
+        "national geographic",
+        "mercola.com"
       ]
     }
   },
   "diagnostics": {
     "source_count": 22,
-    "successful_sources": 6,
-    "failed_sources": 16,
+    "successful_sources": 5,
+    "failed_sources": 17,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
@@ -135,13 +135,13 @@
     "history_points": 0
   },
   "summary": {
-    "headline": "USAVET integrated daily index is 67.8 (YELLOW), trend is stable.",
+    "headline": "USAVET integrated daily index is 61.6 (YELLOW), trend is stable.",
     "notes": [
-      "Housing score: 80",
+      "Housing score: 55",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Policy score: 75",
-      "Healthcare access score: 64",
+      "Policy score: 77",
+      "Healthcare access score: 54",
       "Sentiment score: 40",
       "VA facilities reachable: False",
       "VA benefits reference reachable: True",
