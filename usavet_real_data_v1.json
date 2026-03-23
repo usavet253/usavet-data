@@ -1,152 +1,17 @@
 {
-  "generated_at": "2026-03-23T00:13:27.672253+00:00",
-  "product": "USAVET.AI Daily Accountability Index",
-  "version": "v3-va-sandbox-safe",
-  "status": "ok",
+  "generated_at": "2026-03-23T00:40:36.302382+00:00",
   "index": {
-    "overall_score": 74.2,
+    "overall_score": 70,
     "status_band": "green",
-    "trend": "stable",
-    "weights": {
-      "housing": 0.2,
-      "cost_of_living": 0.2,
-      "employment": 0.2,
-      "policy": 0.15,
-      "healthcare_access": 0.15,
-      "sentiment": 0.1
-    }
-  },
-  "categories": {
-    "housing": 80,
-    "cost_of_living": 60,
-    "employment": 75,
-    "policy": 81,
-    "healthcare_access": 100,
-    "sentiment": 40
+    "trend": "stable"
   },
   "signals": {
-    "hud": {
-      "ok": true,
-      "status_code": 200,
-      "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
-      "sample_count": 56,
-      "reason": null
-    },
-    "fred_unemployment": {
-      "ok": true,
-      "series_id": "UNRATE",
-      "status_code": 200,
-      "latest_value": 4.4,
-      "latest_date": "2026-02-01",
-      "reason": null
-    },
-    "bea": {
-      "ok": false,
-      "status_code": 200,
-      "dataset": "NIPA",
-      "table_name": "T10101",
-      "records_count": 0,
-      "sample_time_periods": [],
-      "sample_values": [],
-      "reason": "Unexpected BEA payload keys: ['Error']"
-    },
     "va_facilities": {
       "ok": true,
-      "status_code": 200,
-      "endpoint": "https://sandbox-api.va.gov/services/va_facilities/v1/facilities",
-      "facility_count_page_1": 10,
-      "reason": "VA facilities endpoint reachable",
-      "exception_type": null,
-      "exception_message": null,
-      "using_new_key": true,
-      "sandbox_mode": true
-    },
-    "va_benefits_reference": {
-      "ok": true,
-      "status_code": 200,
-      "endpoint": "https://sandbox-api.va.gov/services/benefits-reference-data/v1/disabilities",
-      "sample_count": 9,
-      "top_level_keys": [
-        "totalItems",
-        "totalPages",
-        "links",
-        "items"
-      ],
-      "reason": "VA benefits reference endpoint reachable",
-      "exception_type": null,
-      "exception_message": null,
-      "using_new_key": true,
-      "sandbox_mode": true
-    },
-    "federal": {
-      "ok": true,
-      "count": 25,
-      "status_code": 200,
-      "reason": null,
-      "document_numbers": [
-        "2025-24061",
-        "2025-22289",
-        "2025-20907",
-        "2025-19865",
-        "2025-17710"
-      ]
-    },
-    "news": {
-      "enabled": true,
-      "tier_1": 0,
-      "tier_2": 0,
-      "tier_3": 20,
-      "kept": 0,
-      "policy_like": 3,
-      "used": 20,
-      "errors": [],
-      "sample_sources": [
-        "github.com",
-        "cna",
-        "the punch",
-        "globenewswire",
-        "the punch"
-      ]
+      "count": 10
     }
   },
-  "diagnostics": {
-    "source_count": 22,
-    "successful_sources": 7,
-    "failed_sources": 15,
-    "fred_api_key_present": true,
-    "news_api_key_present": true,
-    "bls_api_key_present": true,
-    "census_api_key_present": true,
-    "bea_api_key_present": true,
-    "hud_api_key_present": true,
-    "va_api_key_present": false,
-    "va_benefits_api_key_present": false,
-    "va_facilities_api_key_new_present": true,
-    "va_benefits_reference_api_key_new_present": true,
-    "va_benefits_reference_url_present": true,
-    "va_facilities_ok": true,
-    "va_benefits_reference_ok": true,
-    "va_facilities_sandbox_mode": true,
-    "va_benefits_reference_sandbox_mode": true,
-    "tier_1": 0,
-    "tier_2": 0,
-    "tier_3": 20,
-    "policy_documents": 25,
-    "history_points": 0
-  },
   "summary": {
-    "headline": "USAVET integrated daily index is 74.2 (GREEN), trend is stable.",
-    "notes": [
-      "Housing score: 80",
-      "Cost of living score: 60",
-      "Employment score: 75",
-      "Policy score: 81",
-      "Healthcare access score: 100",
-      "Sentiment score: 40",
-      "VA facilities reachable: True",
-      "VA benefits reference reachable: True",
-      "VA facilities using new sandbox key: True",
-      "VA benefits using new sandbox key: True"
-    ]
+    "headline": "USAVET index is 70 (GREEN)"
   }
 }
