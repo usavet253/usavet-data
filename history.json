@@ -1,7 +1,7 @@
 [
   {
-    "time": "2026-03-23T16:14:27.569371+00:00",
-    "overall_score": 73.5,
+    "time": "2026-03-24T16:42:35.773312+00:00",
+    "overall_score": 73.2,
     "status_band": "green",
     "pressure_label": "Manageable Pressure",
     "trend": "stable",
@@ -10,7 +10,7 @@
     "employment": 75,
     "policy": 75,
     "healthcare_access": 100,
-    "sentiment": 43,
+    "sentiment": 40,
     "successful_sources": 8,
     "va_facilities_ok": true,
     "va_benefits_reference_ok": true,
