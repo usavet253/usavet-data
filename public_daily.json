@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-03-25T16:47:41.429426+00:00",
+  "generated_at": "2026-03-25T18:08:13.369902+00:00",
   "as_of": "2026-03-25",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v5-public-normalized",
   "status": "ok",
   "index": {
-    "overall_score": 69.1,
-    "band": "Watch",
-    "status_band": "Watch",
+    "overall_score": 61.8,
+    "band": "Elevated Pressure",
+    "status_band": "Elevated Pressure",
     "trend": "stable",
-    "pressure_label": "Watch Conditions",
+    "pressure_label": "Elevated Pressure",
     "source_quality": "High Confidence",
     "weights": {
       "housing": 0.2,
@@ -21,17 +21,17 @@
     }
   },
   "categories": {
-    "housing": 80,
+    "housing": 42,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 79,
+    "policy": 81,
     "healthcare_access": 65,
     "sentiment": 45
   },
   "domains": {
-    "housing": 80,
+    "housing": 42,
     "employment": 75,
-    "benefits": 79,
+    "benefits": 81,
     "cost_of_living": 60,
     "healthcare_system": 65,
     "military_family_readiness": 45,
@@ -108,17 +108,17 @@
       "enabled": true,
       "tier_1": 1,
       "tier_2": 0,
-      "tier_3": 17,
+      "tier_3": 18,
       "kept": 1,
-      "policy_like": 2,
-      "used": 18,
+      "policy_like": 3,
+      "used": 19,
       "errors": [],
       "sample_sources": [
-        "globenewswire",
-        "electrek",
-        "independent.ie",
-        "daily signal",
-        "consequence.net"
+        "dw (english)",
+        "npr",
+        "israelnationalnews.com",
+        "rt",
+        "alltoc.com"
       ]
     }
   },
@@ -143,30 +143,30 @@
     "va_benefits_reference_sandbox_mode": true,
     "tier_1": 1,
     "tier_2": 0,
-    "tier_3": 17,
+    "tier_3": 18,
     "policy_documents": 25,
     "history_points": 0
   },
   "summary": {
-    "headline": "The national system is currently operating in the watch range with an official composite index reading of 69.1.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 61.8.",
     "notes": [
-      "Housing score: 80",
+      "Housing score: 42",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Benefits score: 79",
+      "Benefits score: 81",
       "Healthcare system score: 65",
       "Military family readiness score: 45",
       "Source confidence: High Confidence"
     ]
   },
   "brief": {
-    "headline": "Current Signal: Watch Conditions",
-    "summary": "The national system is currently operating in the watch range with an official composite index reading of 69.1.",
+    "headline": "Current Signal: Elevated Pressure Conditions",
+    "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 61.8.",
     "notes": [
-      "Housing score: 80",
+      "Housing score: 42",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Benefits score: 79",
+      "Benefits score: 81",
       "Healthcare system score: 65",
       "Military family readiness score: 45",
       "Source confidence: High Confidence"
