@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-03-24T16:42:35.773312+00:00",
+  "product": "USAVET.AI Daily Accountability Index",
+  "version": "public-v1",
+  "status": "ok",
+  "index": {
+    "overall_score": 73.2,
+    "status_band": "green",
+    "trend": "stable",
+    "pressure_label": "Manageable Pressure"
+  },
+  "categories": {
+    "housing": 80,
+    "cost_of_living": 60,
+    "employment": 75,
+    "policy": 75,
+    "healthcare_access": 100,
+    "sentiment": 40
+  },
+  "summary": {
+    "headline": "USAVET integrated daily index is 73.2 (GREEN), trend is stable, pressure is Manageable Pressure.",
+    "notes": [
+      "Housing score: 80",
+      "Cost of living score: 60",
+      "Employment score: 75",
+      "Policy score: 75",
+      "Healthcare access score: 100",
+      "Sentiment score: 40"
+    ]
+  },
+  "narrative": [
+    "Housing remains strong while cost pressures persist.",
+    "Employment stability continues to support overall system resilience.",
+    "Sentiment remains the primary area of weakness in the system."
+  ]
+}
