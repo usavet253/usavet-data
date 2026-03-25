@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-25T20:11:54.364596+00:00",
+  "generated_at": "2026-03-25T20:33:09.214707+00:00",
   "as_of": "2026-03-25",
   "product": "USAVET.AI Daily Accountability Index",
-  "version": "v5-public-normalized-housing-v2-stable-col-v2",
+  "version": "v5-public-normalized-housing-v2-stable-col-v2-emp-v2",
   "status": "ok",
   "index": {
-    "overall_score": 56.9,
+    "overall_score": 51.8,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
     "trend": "stable",
@@ -23,15 +23,15 @@
   "categories": {
     "housing": 35,
     "cost_of_living": 48,
-    "employment": 75,
-    "policy": 77,
+    "employment": 51,
+    "policy": 75,
     "healthcare_access": 65,
     "sentiment": 40
   },
   "domains": {
     "housing": 35,
-    "employment": 75,
-    "benefits": 77,
+    "employment": 51,
+    "benefits": 75,
     "cost_of_living": 48,
     "healthcare_system": 65,
     "military_family_readiness": 40,
@@ -121,15 +121,15 @@
       "tier_2": 0,
       "tier_3": 20,
       "kept": 0,
-      "policy_like": 1,
+      "policy_like": 0,
       "used": 20,
       "errors": [],
       "sample_sources": [
-        "on3.com",
-        "yahoo entertainment",
-        "marca",
-        "globenewswire",
-        "globenewswire"
+        "the intercept",
+        "mediaite",
+        "israelnationalnews.com",
+        "daily signal",
+        "newsbtc"
       ],
       "federal_news_network_housing": 0
     },
@@ -314,11 +314,97 @@
         ],
         "final_score": 48
       }
+    },
+    "employment_evidence": {
+      "census_veteran_outcomes": {
+        "ok": true,
+        "url": "https://www.census.gov/newsroom/press-releases/2025/veteran-employment-outcomes.html",
+        "pressure_score": 42,
+        "signals_found": [
+          "veteran_outcomes_dataset",
+          "earnings_comparison",
+          "occupation_outcomes"
+        ],
+        "reason": "Static benchmark: Census Veteran Employment Outcomes release supports a positive veteran labor-market anchor relative to using unemployment alone.",
+        "source_type": "static_structural_employment_signal",
+        "static_benchmark": true
+      },
+      "dol_military_spouse": {
+        "ok": true,
+        "url": "https://www.dol.gov/sites/dolgov/files/VETS/files/Military-Spouses-Fact-Sheet-2024-12-13.pdf",
+        "pressure_score": 68,
+        "signals_found": [
+          "frequent_relocation",
+          "licensing_barriers",
+          "childcare_barriers",
+          "employment_disruption"
+        ],
+        "reason": "Static benchmark: DOL VETS military spouse fact sheet identifies persistent employment barriers tied to relocation, licensing friction, and caregiving burden.",
+        "source_type": "static_lived_employment_signal",
+        "static_benchmark": true
+      },
+      "ivmf_spouse_landscape": {
+        "ok": true,
+        "url": "https://ivmf.syracuse.edu/article/military-spouse-employment-landscape/",
+        "pressure_score": 67,
+        "signals_found": [
+          "spouse_unemployment",
+          "underemployment",
+          "career_disruption",
+          "sector_concentration"
+        ],
+        "reason": "Static benchmark: IVMF military spouse employment landscape highlights persistent spouse unemployment, underemployment, and career disruption.",
+        "source_type": "static_lived_employment_signal",
+        "static_benchmark": true
+      },
+      "ivmf_v_start": {
+        "ok": true,
+        "url": "https://ivmf.syracuse.edu/research-analytics/data-insights-tools/v-start/",
+        "pressure_score": 50,
+        "signals_found": [
+          "transition_support",
+          "employment_navigation"
+        ],
+        "reason": "Static benchmark: IVMF V-START is treated as a transition-support and employment navigation capacity signal.",
+        "source_type": "static_capacity_signal",
+        "static_benchmark": true
+      },
+      "cbpp_veteran_snap": {
+        "ok": true,
+        "url": "https://www.cbpp.org/research/food-assistance/snap-helps-12-million-veterans-with-low-incomes-including-thousands-in",
+        "pressure_score": 66,
+        "signals_found": [
+          "low_income_veterans",
+          "snap_reliance",
+          "household_income_stress"
+        ],
+        "reason": "Static benchmark: CBPP SNAP utilization among low-income veterans is used as a downstream employment and income adequacy stress signal.",
+        "source_type": "static_outcome_signal",
+        "static_benchmark": true
+      },
+      "breakdown": {
+        "model": "employment_v2_veteran_military_family_weighted",
+        "base_score": 45,
+        "macro_adjustment": 7,
+        "veteran_outcomes_adjustment": 4,
+        "support_lift": 3,
+        "evidence_penalty": 8,
+        "details": [
+          "National unemployment is favorable",
+          "BLS infrastructure is available",
+          "Census veteran employment outcomes provide a positive veteran labor-market anchor",
+          "IVMF V-START transition support capacity is present",
+          "DOL identifies persistent military-spouse employment barriers",
+          "IVMF spouse landscape confirms unemployment and underemployment friction",
+          "CBPP SNAP signal indicates ongoing veteran household income stress"
+        ],
+        "final_score": 51
+      }
     }
   },
   "diagnostics": {
-    "source_count": 36,
-    "successful_sources": 21,
+    "source_count": 41,
+    "successful_sources": 26,
     "failed_sources": 15,
     "fred_api_key_present": true,
     "news_api_key_present": true,
@@ -346,15 +432,20 @@
     "cost_of_living_model": "cost_of_living_v2_evidence_weighted",
     "cost_of_living_macro_adjustment": 9,
     "cost_of_living_income_adjustment": 3,
-    "cost_of_living_evidence_penalty": 9
+    "cost_of_living_evidence_penalty": 9,
+    "employment_model": "employment_v2_veteran_military_family_weighted",
+    "employment_macro_adjustment": 7,
+    "employment_veteran_outcomes_adjustment": 4,
+    "employment_support_lift": 3,
+    "employment_evidence_penalty": 8
   },
   "summary": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 56.9.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 51.8.",
     "notes": [
       "Housing score: 35",
       "Cost of living score: 48",
-      "Employment score: 75",
-      "Benefits score: 77",
+      "Employment score: 51",
+      "Benefits score: 75",
       "Healthcare system score: 65",
       "Military family readiness score: 40",
       "Source confidence: Moderate Confidence"
@@ -362,12 +453,12 @@
   },
   "brief": {
     "headline": "Current Signal: Elevated Pressure Conditions",
-    "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 56.9.",
+    "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 51.8.",
     "notes": [
       "Housing score: 35",
       "Cost of living score: 48",
-      "Employment score: 75",
-      "Benefits score: 77",
+      "Employment score: 51",
+      "Benefits score: 75",
       "Healthcare system score: 65",
       "Military family readiness score: 40",
       "Source confidence: Moderate Confidence"
