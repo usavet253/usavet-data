@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-25T18:08:13.369902+00:00",
+  "generated_at": "2026-03-25T18:31:06.889145+00:00",
   "as_of": "2026-03-25",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v5-public-normalized",
   "status": "ok",
   "index": {
-    "overall_score": 61.8,
+    "overall_score": 61.4,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
     "trend": "stable",
@@ -21,7 +21,7 @@
     }
   },
   "categories": {
-    "housing": 42,
+    "housing": 40,
     "cost_of_living": 60,
     "employment": 75,
     "policy": 81,
@@ -29,7 +29,7 @@
     "sentiment": 45
   },
   "domains": {
-    "housing": 42,
+    "housing": 40,
     "employment": 75,
     "benefits": 81,
     "cost_of_living": 60,
@@ -108,24 +108,88 @@
       "enabled": true,
       "tier_1": 1,
       "tier_2": 0,
-      "tier_3": 18,
+      "tier_3": 19,
       "kept": 1,
       "policy_like": 3,
-      "used": 19,
+      "used": 20,
       "errors": [],
       "sample_sources": [
-        "dw (english)",
-        "npr",
-        "israelnationalnews.com",
-        "rt",
-        "alltoc.com"
-      ]
+        "screen rant",
+        "new york post",
+        "daily signal",
+        "pbs",
+        "the new republic"
+      ],
+      "federal_news_network_housing": 0
+    },
+    "housing_evidence": {
+      "rand": {
+        "ok": false,
+        "url": "https://www.rand.org/pubs/research_reports/RRA1363-3.html",
+        "pressure_score": 55,
+        "signals_found": [],
+        "reason": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<HTML><HEAD><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=iso-8859-1\">\n<TITLE>ERROR: The request could not be satisfied</TITLE>\n</HEAD><BODY>\n<H1>403 ERROR</H1>\n<H2>The request could "
+      },
+      "mfan": {
+        "ok": true,
+        "url": "https://www.mfan.org/wp-content/uploads/2022/07/Executive-Summary-MFAN-Programming-Survey-Results-2021.pdf",
+        "pressure_score": 74,
+        "housing_burden_pct": 60.9,
+        "reason": "Static benchmark from MFAN 2021 executive summary: 60.9% of military and veteran family respondents reported housing burden.",
+        "static_benchmark": true
+      },
+      "blue_star_families": {
+        "ok": false,
+        "url": "https://bluestarfam.org/research/mfls-survey-release-2024/",
+        "pressure_score": 55,
+        "signals_found": [],
+        "reason": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+      },
+      "nchv": {
+        "ok": false,
+        "url": "https://nchv.org/veteran-homelessness/",
+        "pressure_score": 55,
+        "pit_count": null,
+        "reason": "ConnectTimeout: HTTPSConnectionPool(host='nchv.org', port=443): Max retries exceeded with url: /veteran-homelessness/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='nchv.org', port=443) at 0x7fcdc5e0e050>, 'Connection to nchv.org timed out. (connect timeout=10)'))"
+      },
+      "bob_woodruff_foundation": {
+        "ok": false,
+        "url": "https://bobwoodrufffoundation.org/news/new-data-reveals-rise-in-veterans-needs/",
+        "pressure_score": 55,
+        "housing_need_jump_pp": null,
+        "reason": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!"
+      },
+      "va_loan_network": {
+        "ok": true,
+        "url": "https://valoannetwork.com/military-relocation-impact-housing-markets-2025/",
+        "pressure_score": 60,
+        "signals_found": [
+          "limited_supply",
+          "rising_home_prices",
+          "rental_competition"
+        ],
+        "reason": null
+      },
+      "breakdown": {
+        "model": "housing_v2_evidence_weighted",
+        "base_score": 35,
+        "support_lift": 8,
+        "evidence_penalty": 3,
+        "federal_news_network_housing": 0,
+        "details": [
+          "HUD capacity signal active",
+          "Federal Register policy activity present",
+          "MFAN housing burden benchmark exceeds 60%",
+          "VA Loan Network context indicates limited supply / rising prices"
+        ],
+        "final_score": 40
+      }
     }
   },
   "diagnostics": {
-    "source_count": 22,
-    "successful_sources": 8,
-    "failed_sources": 14,
+    "source_count": 28,
+    "successful_sources": 10,
+    "failed_sources": 18,
     "fred_api_key_present": true,
     "news_api_key_present": true,
     "bls_api_key_present": true,
@@ -143,14 +207,17 @@
     "va_benefits_reference_sandbox_mode": true,
     "tier_1": 1,
     "tier_2": 0,
-    "tier_3": 18,
+    "tier_3": 19,
     "policy_documents": 25,
-    "history_points": 0
+    "history_points": 0,
+    "housing_model": "housing_v2_evidence_weighted",
+    "housing_support_lift": 8,
+    "housing_evidence_penalty": 3
   },
   "summary": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 61.8.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 61.4.",
     "notes": [
-      "Housing score: 42",
+      "Housing score: 40",
       "Cost of living score: 60",
       "Employment score: 75",
       "Benefits score: 81",
@@ -161,9 +228,9 @@
   },
   "brief": {
     "headline": "Current Signal: Elevated Pressure Conditions",
-    "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 61.8.",
+    "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 61.4.",
     "notes": [
-      "Housing score: 42",
+      "Housing score: 40",
       "Cost of living score: 60",
       "Employment score: 75",
       "Benefits score: 81",
