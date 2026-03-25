@@ -1,9 +1,9 @@
 [
   {
-    "time": "2026-03-25T07:33:23.046675+00:00",
+    "time": "2026-03-25T07:50:54.156929+00:00",
     "as_of": "2026-03-25",
-    "overall_score": 69.5,
-    "score": 69.5,
+    "overall_score": 68.6,
+    "score": 68.6,
     "band": "Watch",
     "status_band": "Watch",
     "pressure_label": "Watch Conditions",
@@ -11,8 +11,8 @@
     "housing": 80,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 81,
-    "healthcare_access": 69,
+    "policy": 79,
+    "healthcare_access": 65,
     "sentiment": 40,
     "successful_sources": 8,
     "va_facilities_ok": true,

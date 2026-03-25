@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-25T07:33:23.046675+00:00",
+  "generated_at": "2026-03-25T07:50:54.156929+00:00",
   "as_of": "2026-03-25",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v5-public-normalized",
   "status": "ok",
   "index": {
-    "overall_score": 69.5,
+    "overall_score": 68.6,
     "band": "Watch",
     "status_band": "Watch",
     "trend": "stable",
@@ -24,16 +24,16 @@
     "housing": 80,
     "cost_of_living": 60,
     "employment": 75,
-    "policy": 81,
-    "healthcare_access": 69,
+    "policy": 79,
+    "healthcare_access": 65,
     "sentiment": 40
   },
   "domains": {
     "housing": 80,
     "employment": 75,
-    "benefits": 81,
+    "benefits": 79,
     "cost_of_living": 60,
-    "healthcare_system": 69,
+    "healthcare_system": 65,
     "military_family_readiness": 40,
     "news_volume": 63
   },
@@ -108,17 +108,17 @@
       "enabled": true,
       "tier_1": 0,
       "tier_2": 0,
-      "tier_3": 20,
+      "tier_3": 18,
       "kept": 0,
-      "policy_like": 3,
-      "used": 20,
+      "policy_like": 2,
+      "used": 18,
       "errors": [],
       "sample_sources": [
-        "rt",
-        "protothema.gr",
-        "the local germany",
-        "businessline",
-        "war on the rocks"
+        "the indian express",
+        "twistedsifter.com",
+        "metalunderground.com",
+        "japan today",
+        "science daily"
       ]
     }
   },
@@ -143,31 +143,31 @@
     "va_benefits_reference_sandbox_mode": true,
     "tier_1": 0,
     "tier_2": 0,
-    "tier_3": 20,
+    "tier_3": 18,
     "policy_documents": 25,
     "history_points": 0
   },
   "summary": {
-    "headline": "The national system is currently operating in the watch range with an official composite index reading of 69.5.",
+    "headline": "The national system is currently operating in the watch range with an official composite index reading of 68.6.",
     "notes": [
       "Housing score: 80",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Benefits score: 81",
-      "Healthcare system score: 69",
+      "Benefits score: 79",
+      "Healthcare system score: 65",
       "Military family readiness score: 40",
       "Source confidence: Moderate Confidence"
     ]
   },
   "brief": {
     "headline": "Current Signal: Watch Conditions",
-    "summary": "The national system is currently operating in the watch range with an official composite index reading of 69.5.",
+    "summary": "The national system is currently operating in the watch range with an official composite index reading of 68.6.",
     "notes": [
       "Housing score: 80",
       "Cost of living score: 60",
       "Employment score: 75",
-      "Benefits score: 81",
-      "Healthcare system score: 69",
+      "Benefits score: 79",
+      "Healthcare system score: 65",
       "Military family readiness score: 40",
       "Source confidence: Moderate Confidence"
     ]
