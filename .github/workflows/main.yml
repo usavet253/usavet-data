@@ -2,6 +2,9 @@ name: USAVET Data Repo Maintenance
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -23,6 +26,11 @@ jobs:
 
       - name: Validate expected public files
         run: |
-          test -f public_daily.json && echo "public_daily.json present" || echo "public_daily.json missing"
-          test -f history.json && echo "history.json present" || echo "history.json missing"
-          test -f README.md && echo "README.md present" || echo "README.md missing"
+          test -f public_daily.json && echo "public_daily.json present" || (echo "public_daily.json missing" && exit 1)
+          test -f history.json && echo "history.json present" || (echo "history.json missing" && exit 1)
+          test -f README.md && echo "README.md present" || (echo "README.md missing" && exit 1)
+
+      - name: Validate internal files are absent
+        run: |
+          test ! -f daily.json && echo "daily.json absent (correct)" || (echo "daily.json present (unexpected)" && exit 1)
+          test ! -f usavet_real_data_v1.json && echo "usavet_real_data_v1.json absent (correct)" || (echo "usavet_real_data_v1.json present (unexpected)" && exit 1)
