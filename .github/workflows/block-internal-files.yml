@@ -1,0 +1,40 @@
+name: Block Internal Engine Files
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  data-repo-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Confirm output-only repo structure
+        run: |
+          echo "Checking for forbidden internal files in public repo..."
+
+          # Only forbidden engine/internal files
+          forbidden_files=(
+            "usavet_real_data_v1.json"
+            "usavet_real_data_engine_v1.py"
+          )
+
+          found=0
+          for file in "${forbidden_files[@]}"; do
+            if [ -e "$file" ]; then
+              echo "::error file=$file::$file should NOT be in the public repo!"
+              found=1
+            fi
+          done
+
+          if [ $found -eq 1 ]; then
+            echo "Forbidden files detected. Please remove them before pushing."
+            exit 1
+          else
+            echo "All safe files present. Repo is clean."
