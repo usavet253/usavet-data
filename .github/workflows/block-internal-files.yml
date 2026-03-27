@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   data-repo-check:
@@ -17,7 +19,7 @@ jobs:
         run: |
           echo "Checking for forbidden internal files in public repo..."
 
-          # List of forbidden internal/engine files
+          # List of forbidden internal files
           forbidden_files=(
             "usavet_real_data_v1.json"
             "usavet_real_data_engine_v1.py"
@@ -36,3 +38,4 @@ jobs:
             exit 1
           else
             echo "All safe files present. Repo is clean."
+          fi
