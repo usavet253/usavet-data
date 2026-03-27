@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-26T16:47:30.404972+00:00",
-  "as_of": "2026-03-26",
+  "generated_at": "2026-03-27T04:58:07.266880+00:00",
+  "as_of": "2026-03-27",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v5-public-normalized-housing-v2-stable-col-v2-emp-v2-pol-v2-health-v2",
   "status": "ok",
   "index": {
-    "overall_score": 46.1,
+    "overall_score": 46.0,
     "band": "High Pressure",
     "status_band": "High Pressure",
     "trend": "stable",
@@ -24,14 +24,14 @@
     "housing": 35,
     "cost_of_living": 48,
     "employment": 51,
-    "policy": 51,
+    "policy": 50,
     "healthcare_access": 51,
     "sentiment": 40
   },
   "domains": {
     "housing": 35,
     "employment": 51,
-    "benefits": 51,
+    "benefits": 50,
     "cost_of_living": 48,
     "healthcare_system": 51,
     "military_family_readiness": 40,
@@ -121,15 +121,15 @@
       "tier_2": 0,
       "tier_3": 17,
       "kept": 0,
-      "policy_like": 2,
+      "policy_like": 1,
       "used": 17,
       "errors": [],
       "sample_sources": [
-        "globenewswire",
-        "businessline",
-        "globenewswire",
-        "thewhistler.ng",
-        "reason"
+        "dw (english)",
+        "rlsbb.to",
+        "cna",
+        "livemint",
+        "c-sharpcorner.com"
       ],
       "federal_news_network_housing": 0
     },
@@ -471,9 +471,9 @@
         "model": "policy_v2_impact_weighted",
         "base_score": 45,
         "activity_adjustment": 6,
-        "implementation_adjustment": 7,
+        "implementation_adjustment": 6,
         "relevance_penalty": 7,
-        "policy_like": 2,
+        "policy_like": 1,
         "details": [
           "Federal policy activity is elevated",
           "State-level military and veterans legislation activity is present",
@@ -484,7 +484,7 @@
           "VFW testimony indicates active veteran policy friction and implementation scrutiny",
           "Elizabeth Dole priorities indicate unresolved caregiver policy needs"
         ],
-        "final_score": 51
+        "final_score": 50
       }
     },
     "healthcare_evidence": {
@@ -604,7 +604,7 @@
     "employment_evidence_penalty": 8,
     "policy_model": "policy_v2_impact_weighted",
     "policy_activity_adjustment": 6,
-    "policy_implementation_adjustment": 7,
+    "policy_implementation_adjustment": 6,
     "policy_relevance_penalty": 7,
     "healthcare_model": "healthcare_v2_access_capacity_family_weighted",
     "healthcare_capacity_lift": 19,
@@ -612,12 +612,12 @@
     "healthcare_stress_penalty": 10
   },
   "summary": {
-    "headline": "The national system is currently operating in the high pressure range with an official composite index reading of 46.1.",
+    "headline": "The national system is currently operating in the high pressure range with an official composite index reading of 46.0.",
     "notes": [
       "Housing score: 35",
       "Cost of living score: 48",
       "Employment score: 51",
-      "Benefits score: 51",
+      "Benefits score: 50",
       "Healthcare system score: 51",
       "Military family readiness score: 40",
       "Source confidence: Moderate Confidence"
@@ -625,12 +625,12 @@
   },
   "brief": {
     "headline": "Current Signal: High Pressure Conditions",
-    "summary": "The national system is currently operating in the high pressure range with an official composite index reading of 46.1.",
+    "summary": "The national system is currently operating in the high pressure range with an official composite index reading of 46.0.",
     "notes": [
       "Housing score: 35",
       "Cost of living score: 48",
       "Employment score: 51",
-      "Benefits score: 51",
+      "Benefits score: 50",
       "Healthcare system score: 51",
       "Military family readiness score: 40",
       "Source confidence: Moderate Confidence"
