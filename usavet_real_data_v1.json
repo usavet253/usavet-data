@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-27T16:08:56.940214+00:00",
+  "generated_at": "2026-03-27T22:03:52.200263+00:00",
   "as_of": "2026-03-27",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v5-public-normalized-housing-v2-stable-col-v2-emp-v2-pol-v2-health-v2",
   "status": "ok",
   "index": {
-    "overall_score": 47.1,
+    "overall_score": 46.1,
     "band": "High Pressure",
     "status_band": "High Pressure",
     "trend": "stable",
     "pressure_label": "High Pressure",
-    "source_quality": "High Confidence",
+    "source_quality": "Moderate Confidence",
     "weights": {
       "housing": 0.2,
       "cost_of_living": 0.2,
@@ -26,7 +26,7 @@
     "employment": 51,
     "policy": 51,
     "healthcare_access": 51,
-    "sentiment": 50
+    "sentiment": 40
   },
   "domains": {
     "housing": 35,
@@ -34,7 +34,7 @@
     "benefits": 51,
     "cost_of_living": 48,
     "healthcare_system": 51,
-    "military_family_readiness": 50,
+    "military_family_readiness": 40,
     "news_volume": 63
   },
   "signals": {
@@ -117,19 +117,19 @@
     },
     "news": {
       "enabled": true,
-      "tier_1": 2,
+      "tier_1": 0,
       "tier_2": 0,
-      "tier_3": 17,
-      "kept": 2,
-      "policy_like": 3,
-      "used": 19,
+      "tier_3": 20,
+      "kept": 0,
+      "policy_like": 2,
+      "used": 20,
       "errors": [],
       "sample_sources": [
-        "israelnationalnews.com",
-        "raw story",
-        "the atlantic",
-        "politico.eu",
-        "livemint"
+        "al jazeera english",
+        "blizzardwatch.com",
+        "fox news",
+        "thestranger.com",
+        "activistpost.com"
       ],
       "federal_news_network_housing": 0
     },
@@ -473,7 +473,7 @@
         "activity_adjustment": 6,
         "implementation_adjustment": 7,
         "relevance_penalty": 7,
-        "policy_like": 3,
+        "policy_like": 2,
         "details": [
           "Federal policy activity is elevated",
           "State-level military and veterans legislation activity is present",
@@ -585,9 +585,9 @@
     "va_benefits_reference_ok": true,
     "va_facilities_sandbox_mode": true,
     "va_benefits_reference_sandbox_mode": true,
-    "tier_1": 2,
+    "tier_1": 0,
     "tier_2": 0,
-    "tier_3": 17,
+    "tier_3": 20,
     "policy_documents": 25,
     "history_points": 0,
     "housing_model": "housing_v2_evidence_weighted",
@@ -612,28 +612,28 @@
     "healthcare_stress_penalty": 10
   },
   "summary": {
-    "headline": "The national system is currently operating in the high pressure range with an official composite index reading of 47.1.",
+    "headline": "The national system is currently operating in the high pressure range with an official composite index reading of 46.1.",
     "notes": [
       "Housing score: 35",
       "Cost of living score: 48",
       "Employment score: 51",
       "Benefits score: 51",
       "Healthcare system score: 51",
-      "Military family readiness score: 50",
-      "Source confidence: High Confidence"
+      "Military family readiness score: 40",
+      "Source confidence: Moderate Confidence"
     ]
   },
   "brief": {
     "headline": "Current Signal: High Pressure Conditions",
-    "summary": "The national system is currently operating in the high pressure range with an official composite index reading of 47.1.",
+    "summary": "The national system is currently operating in the high pressure range with an official composite index reading of 46.1.",
     "notes": [
       "Housing score: 35",
       "Cost of living score: 48",
       "Employment score: 51",
       "Benefits score: 51",
       "Healthcare system score: 51",
-      "Military family readiness score: 50",
-      "Source confidence: High Confidence"
+      "Military family readiness score: 40",
+      "Source confidence: Moderate Confidence"
     ]
   }
 }
