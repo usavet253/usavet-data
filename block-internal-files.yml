@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   data-repo-check:
@@ -15,11 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Validate forbidden internal files are absent
+      - name: Confirm output-only repo structure
         run: |
-          echo "Checking for forbidden internal files..."
+          echo "Checking for forbidden internal files in public repo..."
 
-          # Only forbidden internal/engine files
+          # Forbidden engine/internal files only
           forbidden_files=(
             "usavet_real_data_v1.json"
             "usavet_real_data_engine_v1.py"
@@ -37,4 +35,5 @@ jobs:
             echo "Forbidden files detected. Please remove them before pushing."
             exit 1
           else
-            echo "All forbidden files are absent. Repo is clean."
+            echo "All safe files present. Repo is clean."
+          fi
