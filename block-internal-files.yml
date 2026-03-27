@@ -9,15 +9,17 @@ on:
       - main
 
 jobs:
-  check-internal-files:
+  data-repo-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Check for forbidden files
+      - name: Validate public vs internal files
         run: |
-          # Only engine/internal files are forbidden
+          echo "Checking for forbidden internal files..."
+
+          # Forbidden engine/internal files only
           forbidden_files=(
             "usavet_real_data_v1.json"
             "usavet_real_data_engine_v1.py"
@@ -25,8 +27,8 @@ jobs:
 
           found=0
           for file in "${forbidden_files[@]}"; do
-            if [ -f "$file" ]; then
-              echo "::error file=$file::$file should not be in the public repo!"
+            if [ -e "$file" ]; then
+              echo "::error file=$file::$file should NOT be in the public repo!"
               found=1
             fi
           done
@@ -35,5 +37,5 @@ jobs:
             echo "Forbidden files detected. Please remove them before pushing."
             exit 1
           else
-            echo "No forbidden files detected. Repo is safe."
+            echo "All safe files present. Repo is clean."
           fi
