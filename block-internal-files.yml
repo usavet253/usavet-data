@@ -17,7 +17,7 @@ jobs:
         run: |
           echo "Checking for forbidden internal files in public repo..."
 
-          # Forbidden engine/internal files only
+          # List of forbidden internal/engine files
           forbidden_files=(
             "usavet_real_data_v1.json"
             "usavet_real_data_engine_v1.py"
