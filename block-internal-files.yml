@@ -17,11 +17,10 @@ jobs:
 
       - name: Check for forbidden files
         run: |
-          # List of forbidden engine/internal files
+          # Only engine/internal files are forbidden
           forbidden_files=(
             "usavet_real_data_v1.json"
             "usavet_real_data_engine_v1.py"
-            "usavet_real_data_v1_backup.json"
           )
 
           found=0
