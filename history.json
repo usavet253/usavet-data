@@ -1,9 +1,9 @@
 [
   {
-    "time": "2026-03-27T23:14:42.567673+00:00",
-    "as_of": "2026-03-27",
-    "overall_score": 45.8,
-    "score": 45.8,
+    "time": "2026-03-28T14:54:28.895951+00:00",
+    "as_of": "2026-03-28",
+    "overall_score": 46.0,
+    "score": 46.0,
     "band": "High Pressure",
     "status_band": "High Pressure",
     "pressure_label": "High Pressure",
@@ -11,7 +11,7 @@
     "housing": 35,
     "cost_of_living": 48,
     "employment": 51,
-    "policy": 49,
+    "policy": 50,
     "healthcare_access": 51,
     "sentiment": 40,
     "housing_model": "housing_v2_evidence_weighted",
