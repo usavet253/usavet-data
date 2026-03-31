@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-27T03:41:31.143999+00:00",
-  "as_of": "2026-03-27",
+  "generated_at": "2026-03-31T01:25:16.136981+00:00",
+  "as_of": "2026-03-31",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v5-public-normalized-housing-v2-stable-col-v2-emp-v2-pol-v2-health-v2",
   "status": "ok",
@@ -34,8 +34,7 @@
     "benefits": 47,
     "cost_of_living": 37,
     "healthcare_system": 36,
-    "military_family_readiness": 50,
-    "news_volume": 63
+    "military_family_readiness": 50
   },
   "signals": {
     "hud": {
@@ -575,7 +574,7 @@
     "tier_2": 0,
     "tier_3": 0,
     "policy_documents": 25,
-    "history_points": 2,
+    "history_points": 4,
     "housing_model": "housing_v2_evidence_weighted",
     "housing_support_lift": 2,
     "housing_evidence_penalty": 8,
