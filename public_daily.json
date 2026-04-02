@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T17:42:57.083731+00:00",
+  "generated_at": "2026-04-02T17:57:56.449312+00:00",
   "as_of": "2026-04-02",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v5-public-normalized-housing-v2-stable-col-v2-emp-v2-pol-v2-health-v2",
@@ -574,7 +574,7 @@
     "tier_2": 0,
     "tier_3": 0,
     "policy_documents": 25,
-    "history_points": 8,
+    "history_points": 9,
     "housing_model": "housing_v2_evidence_weighted",
     "housing_support_lift": 2,
     "housing_evidence_penalty": 8,
