@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-02T17:57:56.449312+00:00",
+  "generated_at": "2026-04-02T20:47:16.157542+00:00",
   "as_of": "2026-04-02",
   "product": "USAVET.AI Daily Accountability Index",
   "version": "v5-public-normalized-housing-v2-stable-col-v2-emp-v2-pol-v2-health-v2",
   "status": "ok",
   "index": {
-    "overall_score": 39.2,
+    "overall_score": 46.6,
     "band": "High Pressure",
     "status_band": "High Pressure",
     "trend": "stable",
     "pressure_label": "High Pressure",
-    "source_quality": "Limited Confidence",
+    "source_quality": "High Confidence",
     "weights": {
       "housing": 0.2,
       "cost_of_living": 0.2,
@@ -21,80 +21,85 @@
     }
   },
   "categories": {
-    "housing": 29,
-    "cost_of_living": 37,
-    "employment": 43,
-    "policy": 47,
-    "healthcare_access": 36,
-    "sentiment": 50
+    "housing": 35,
+    "cost_of_living": 48,
+    "employment": 51,
+    "policy": 51,
+    "healthcare_access": 51,
+    "sentiment": 45
   },
   "domains": {
-    "housing": 29,
-    "employment": 43,
-    "benefits": 47,
-    "cost_of_living": 37,
-    "healthcare_system": 36,
-    "military_family_readiness": 50
+    "housing": 35,
+    "employment": 51,
+    "benefits": 51,
+    "cost_of_living": 48,
+    "healthcare_system": 51,
+    "military_family_readiness": 45
   },
   "signals": {
     "hud": {
-      "ok": false,
-      "status_code": null,
+      "ok": true,
+      "status_code": 200,
       "endpoint": "https://www.huduser.gov/hudapi/public/fmr/listStates",
-      "sample_count": null,
-      "reason": "HUD_API_KEY missing"
+      "sample_count": 56,
+      "reason": null
     },
     "fred_unemployment": {
-      "ok": false,
+      "ok": true,
       "series_id": "UNRATE",
-      "status_code": null,
-      "latest_value": null,
-      "latest_date": null,
-      "reason": "FRED_API_KEY missing"
+      "status_code": 200,
+      "latest_value": 4.4,
+      "latest_date": "2026-02-01",
+      "reason": null
     },
     "fred_cpi": {
-      "ok": false,
+      "ok": true,
       "series_id": "CPIAUCSL",
-      "status_code": null,
-      "latest_value": null,
-      "latest_date": null,
-      "year_ago_value": null,
-      "year_ago_date": null,
-      "inflation_yoy_pct": null,
-      "reason": "FRED_API_KEY missing"
+      "status_code": 200,
+      "latest_value": 327.46,
+      "latest_date": "2026-02-01",
+      "year_ago_value": 319.679,
+      "year_ago_date": "2025-02-01",
+      "inflation_yoy_pct": 2.43,
+      "reason": null
     },
     "bea": {
       "ok": false,
-      "status_code": null,
+      "status_code": 200,
       "dataset": "NIPA",
       "table_name": "T10101",
       "records_count": 0,
       "sample_time_periods": [],
       "sample_values": [],
-      "reason": "BEA_API_KEY missing"
+      "reason": "Unexpected BEA payload keys: ['Error']"
     },
     "va_facilities": {
-      "ok": false,
-      "status_code": null,
-      "endpoint": "https://api.va.gov/services/va_facilities/v1/facilities",
-      "facility_count_page_1": null,
-      "reason": "VA_FACILITIES_API_KEY missing",
+      "ok": true,
+      "status_code": 200,
+      "endpoint": "https://sandbox-api.va.gov/services/va_facilities/v1/facilities",
+      "facility_count_page_1": 10,
+      "reason": "VA facilities endpoint reachable",
       "exception_type": null,
       "exception_message": null,
-      "using_new_key": false,
-      "sandbox_mode": false
+      "using_new_key": true,
+      "sandbox_mode": true
     },
     "va_benefits_reference": {
-      "ok": false,
-      "status_code": null,
-      "endpoint": "<missing>",
-      "sample_count": 0,
-      "top_level_keys": [],
-      "reason": "VA_BENEFITS_REFERENCE_API_KEY missing",
+      "ok": true,
+      "status_code": 200,
+      "endpoint": "https://sandbox-api.va.gov/services/benefits-reference-data/v1/disabilities",
+      "sample_count": 9,
+      "top_level_keys": [
+        "totalItems",
+        "totalPages",
+        "links",
+        "items"
+      ],
+      "reason": "VA benefits reference endpoint reachable",
       "exception_type": null,
       "exception_message": null,
-      "using_new_key": false,
-      "sandbox_mode": false
+      "using_new_key": true,
+      "sandbox_mode": true
     },
     "federal": {
       "ok": true,
@@ -110,17 +115,21 @@
       ]
     },
     "news": {
-      "enabled": false,
-      "tier_1": 0,
+      "enabled": true,
+      "tier_1": 1,
       "tier_2": 0,
-      "tier_3": 0,
-      "kept": 0,
-      "policy_like": 0,
-      "used": 0,
-      "errors": [
-        "NEWS_API_KEY missing"
+      "tier_3": 18,
+      "kept": 1,
+      "policy_like": 3,
+      "used": 19,
+      "errors": [],
+      "sample_sources": [
+        "bleeding cool news",
+        "cnbc",
+        "the times of india",
+        "new zealand herald",
+        "theaviationist.com"
       ],
-      "sample_sources": [],
       "federal_news_network_housing": 0
     },
     "housing_evidence": {
@@ -195,11 +204,11 @@
       "breakdown": {
         "model": "housing_v2_evidence_weighted",
         "base_score": 35,
-        "support_lift": 2,
+        "support_lift": 8,
         "evidence_penalty": 8,
         "federal_news_network_housing": 0,
         "details": [
-          "HUD capacity signal unavailable",
+          "HUD capacity signal active",
           "Federal Register policy activity present",
           "RAND cost-burden benchmark indicates structural pressure",
           "MFAN housing burden benchmark exceeds 60%",
@@ -208,7 +217,7 @@
           "Bob Woodruff partner network shows rising housing-assistance need",
           "VA Loan Network context indicates limited supply / rising prices"
         ],
-        "final_score": 29
+        "final_score": 35
       }
     },
     "cost_of_living_evidence": {
@@ -284,15 +293,16 @@
       "breakdown": {
         "model": "cost_of_living_v2_evidence_weighted",
         "base_score": 45,
-        "macro_adjustment": 0,
-        "income_adjustment": 1,
+        "macro_adjustment": 9,
+        "income_adjustment": 3,
         "evidence_penalty": 9,
-        "inflation_yoy_pct": null,
+        "inflation_yoy_pct": 2.43,
         "avg_cola_pct": 2.8,
         "details": [
-          "CPI inflation signal unavailable",
+          "CPI inflation is near target range",
           "BEA macro signal unavailable",
-          "COLA signal available without CPI comparison",
+          "Employment conditions provide modest cost resilience",
+          "COLA is keeping pace with inflation",
           "RAND cost-burden benchmark reinforces affordability pressure",
           "MFAN indicates severe housing-related financial burden",
           "Blue Star Families identifies housing costs as a major financial stressor",
@@ -301,7 +311,7 @@
           "Field demand signal shows rising assistance need",
           "VA Loan Network context indicates inflation pressure across household essentials"
         ],
-        "final_score": 37
+        "final_score": 48
       }
     },
     "employment_evidence": {
@@ -374,19 +384,20 @@
       "breakdown": {
         "model": "employment_v2_veteran_military_family_weighted",
         "base_score": 45,
-        "macro_adjustment": 0,
+        "macro_adjustment": 7,
         "veteran_outcomes_adjustment": 4,
-        "support_lift": 2,
+        "support_lift": 3,
         "evidence_penalty": 8,
         "details": [
-          "National unemployment signal unavailable",
+          "National unemployment is favorable",
+          "BLS infrastructure is available",
           "Census veteran employment outcomes provide a positive veteran labor-market anchor",
           "IVMF V-START transition support capacity is present",
           "DOL identifies persistent military-spouse employment barriers",
           "IVMF spouse landscape confirms unemployment and underemployment friction",
           "CBPP SNAP signal indicates ongoing veteran household income stress"
         ],
-        "final_score": 43
+        "final_score": 51
       }
     },
     "policy_evidence": {
@@ -459,18 +470,20 @@
         "model": "policy_v2_impact_weighted",
         "base_score": 45,
         "activity_adjustment": 6,
-        "implementation_adjustment": 3,
+        "implementation_adjustment": 7,
         "relevance_penalty": 7,
-        "policy_like": 0,
+        "policy_like": 3,
         "details": [
           "Federal policy activity is elevated",
           "State-level military and veterans legislation activity is present",
           "Statutory family-readiness policy authority exists",
+          "Benefits-reference implementation infrastructure is available",
+          "News layer indicates policy-relevant activity",
           "NMFA priorities indicate unresolved military-family policy needs",
           "VFW testimony indicates active veteran policy friction and implementation scrutiny",
           "Elizabeth Dole priorities indicate unresolved caregiver policy needs"
         ],
-        "final_score": 47
+        "final_score": 51
       }
     },
     "healthcare_evidence": {
@@ -532,11 +545,12 @@
       "breakdown": {
         "model": "healthcare_v2_access_capacity_family_weighted",
         "base_score": 38,
-        "capacity_lift": 4,
+        "capacity_lift": 19,
         "implementation_adjustment": 4,
         "stress_penalty": 10,
         "details": [
-          "VA facilities capacity signal unavailable",
+          "VA facilities capacity signal is active",
+          "VA healthcare-related reference infrastructure is available",
           "VA family and caregiver support infrastructure is present",
           "GAO indicates active VA-DoD access coordination",
           "Military-family healthcare fairness legislation is on the policy horizon",
@@ -547,78 +561,78 @@
           "Military-spouse employment barriers contribute to family-system healthcare friction",
           "Caregiver policy priorities indicate unresolved family-system support gaps"
         ],
-        "final_score": 36
+        "final_score": 51
       }
     }
   },
   "diagnostics": {
     "source_count": 50,
-    "successful_sources": 27,
-    "failed_sources": 23,
-    "fred_api_key_present": false,
-    "news_api_key_present": false,
-    "bls_api_key_present": false,
-    "census_api_key_present": false,
-    "bea_api_key_present": false,
-    "hud_api_key_present": false,
+    "successful_sources": 35,
+    "failed_sources": 15,
+    "fred_api_key_present": true,
+    "news_api_key_present": true,
+    "bls_api_key_present": true,
+    "census_api_key_present": true,
+    "bea_api_key_present": true,
+    "hud_api_key_present": true,
     "va_api_key_present": false,
     "va_benefits_api_key_present": false,
-    "va_facilities_api_key_new_present": false,
-    "va_benefits_reference_api_key_new_present": false,
-    "va_benefits_reference_url_present": false,
-    "va_facilities_ok": false,
-    "va_benefits_reference_ok": false,
-    "va_facilities_sandbox_mode": false,
-    "va_benefits_reference_sandbox_mode": false,
-    "tier_1": 0,
+    "va_facilities_api_key_new_present": true,
+    "va_benefits_reference_api_key_new_present": true,
+    "va_benefits_reference_url_present": true,
+    "va_facilities_ok": true,
+    "va_benefits_reference_ok": true,
+    "va_facilities_sandbox_mode": true,
+    "va_benefits_reference_sandbox_mode": true,
+    "tier_1": 1,
     "tier_2": 0,
-    "tier_3": 0,
+    "tier_3": 18,
     "policy_documents": 25,
-    "history_points": 9,
+    "history_points": 0,
     "housing_model": "housing_v2_evidence_weighted",
-    "housing_support_lift": 2,
+    "housing_support_lift": 8,
     "housing_evidence_penalty": 8,
     "cost_of_living_model": "cost_of_living_v2_evidence_weighted",
-    "cost_of_living_macro_adjustment": 0,
-    "cost_of_living_income_adjustment": 1,
+    "cost_of_living_macro_adjustment": 9,
+    "cost_of_living_income_adjustment": 3,
     "cost_of_living_evidence_penalty": 9,
     "employment_model": "employment_v2_veteran_military_family_weighted",
-    "employment_macro_adjustment": 0,
+    "employment_macro_adjustment": 7,
     "employment_veteran_outcomes_adjustment": 4,
-    "employment_support_lift": 2,
+    "employment_support_lift": 3,
     "employment_evidence_penalty": 8,
     "policy_model": "policy_v2_impact_weighted",
     "policy_activity_adjustment": 6,
-    "policy_implementation_adjustment": 3,
+    "policy_implementation_adjustment": 7,
     "policy_relevance_penalty": 7,
     "healthcare_model": "healthcare_v2_access_capacity_family_weighted",
-    "healthcare_capacity_lift": 4,
+    "healthcare_capacity_lift": 19,
     "healthcare_implementation_adjustment": 4,
     "healthcare_stress_penalty": 10
   },
   "summary": {
-    "headline": "The national system is currently operating in the high pressure range with an official composite index reading of 39.2.",
+    "headline": "The national system is currently operating in the high pressure range with an official composite index reading of 46.6.",
     "notes": [
-      "Housing score: 29",
-      "Cost of living score: 37",
-      "Employment score: 43",
-      "Benefits score: 47",
-      "Healthcare system score: 36",
-      "Military family readiness score: 50",
-      "Source confidence: Limited Confidence"
+      "Housing score: 35",
+      "Cost of living score: 48",
+      "Employment score: 51",
+      "Benefits score: 51",
+      "Healthcare system score: 51",
+      "Military family readiness score: 45",
+      "Source confidence: High Confidence"
     ]
   },
   "brief": {
     "headline": "Current Signal: High Pressure Conditions",
-    "summary": "The national system is currently operating in the high pressure range with an official composite index reading of 39.2.",
+    "summary": "The national system is currently operating in the high pressure range with an official composite index reading of 46.6.",
     "notes": [
-      "Housing score: 29",
-      "Cost of living score: 37",
-      "Employment score: 43",
-      "Benefits score: 47",
-      "Healthcare system score: 36",
-      "Military family readiness score: 50",
-      "Source confidence: Limited Confidence"
+      "Housing score: 35",
+      "Cost of living score: 48",
+      "Employment score: 51",
+      "Benefits score: 51",
+      "Healthcare system score: 51",
+      "Military family readiness score: 45",
+      "Source confidence: High Confidence"
     ]
   }
 }
