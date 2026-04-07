@@ -1,14 +1,14 @@
 {
-  "as_of": "2026-04-06",
-  "overall_score": 50.5,
-  "score": 50.5,
+  "as_of": "2026-04-07",
+  "overall_score": 50.4,
+  "score": 50.4,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "improving",
   "pressure_label": "Balanced / Watch",
   "source_quality": "Moderate Confidence",
   "index": {
-    "overall_score": 50.5,
+    "overall_score": 50.4,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "improving",
@@ -23,33 +23,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.5.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.4.",
   "notes": [
     "Housing score: 55.4",
     "Cost of living score: 53.6",
     "Employment score: 51.4",
-    "Benefits score: 42.8",
+    "Benefits score: 41.9",
     "Healthcare system score: 45.0",
-    "Military family readiness score: 52.6",
+    "Military family readiness score: 53.5",
     "Source confidence: Moderate Confidence"
   ],
   "domains": {
     "housing_stability": 55.4,
     "employment": 51.4,
-    "military_family_readiness": 52.6,
+    "military_family_readiness": 53.5,
     "cost_of_living": 53.6,
     "healthcare_system": 45.0,
-    "benefits": 42.8
+    "benefits": 41.9
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.5.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.4.",
     "notes": [
       "Housing score: 55.4",
       "Cost of living score: 53.6",
       "Employment score: 51.4",
-      "Benefits score: 42.8",
+      "Benefits score: 41.9",
       "Healthcare system score: 45.0",
-      "Military family readiness score: 52.6",
+      "Military family readiness score: 53.5",
       "Source confidence: Moderate Confidence"
     ]
   },
@@ -265,7 +265,29 @@
       "benefits_model": "benefits_v3_continuous_tiered",
       "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    },
+    {
+      "time": "2026-04-07T16:38:12.725273+00:00",
+      "as_of": "2026-04-07",
+      "overall_score": 50.4,
+      "score": 50.4,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "improving",
+      "housing_stability": 55.4,
+      "cost_of_living": 53.6,
+      "employment": 51.4,
+      "benefits": 41.9,
+      "healthcare_system": 45.0,
+      "military_family_readiness": 53.5,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     }
   ],
-  "generated_at": "2026-04-06T15:34:51.008789+00:00"
+  "generated_at": "2026-04-07T16:38:12.725273+00:00"
 }
