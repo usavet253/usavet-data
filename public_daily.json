@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-04-08",
-  "overall_score": 52.1,
-  "score": 52.1,
+  "as_of": "2026-04-09",
+  "overall_score": 50.4,
+  "score": 50.4,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
-  "trend": "stable",
+  "trend": "declining",
   "pressure_label": "Balanced / Watch",
-  "source_quality": "Limited Confidence",
+  "source_quality": "Moderate Confidence",
   "index": {
-    "overall_score": 52.1,
+    "overall_score": 50.4,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
-    "trend": "stable",
+    "trend": "declining",
     "pressure_label": "Balanced / Watch",
-    "source_quality": "Limited Confidence",
+    "source_quality": "Moderate Confidence",
     "weights": {
       "housing_stability": 0.2,
       "cost_of_living": 0.2,
@@ -23,631 +23,34 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.1.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.4.",
   "notes": [
-    "Housing score: 57.8",
-    "Cost of living score: 54.1",
-    "Employment score: 51.6",
-    "Benefits score: 44.5",
-    "Healthcare system score: 50.5",
-    "Military family readiness score: 51.9",
-    "Source confidence: Limited Confidence"
+    "Housing score: 55.4",
+    "Cost of living score: 53.6",
+    "Employment score: 51.4",
+    "Benefits score: 42.5",
+    "Healthcare system score: 45.0",
+    "Military family readiness score: 52.8",
+    "Source confidence: Moderate Confidence"
   ],
   "domains": {
-    "housing_stability": 57.8,
-    "employment": 51.6,
-    "military_family_readiness": 51.9,
-    "cost_of_living": 54.1,
-    "healthcare_system": 50.5,
-    "benefits": 44.5
+    "housing_stability": 55.4,
+    "employment": 51.4,
+    "military_family_readiness": 52.8,
+    "cost_of_living": 53.6,
+    "healthcare_system": 45.0,
+    "benefits": 42.5
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.1.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.4.",
     "notes": [
-      "Housing score: 57.8",
-      "Cost of living score: 54.1",
-      "Employment score: 51.6",
-      "Benefits score: 44.5",
-      "Healthcare system score: 50.5",
-      "Military family readiness score: 51.9",
-      "Source confidence: Limited Confidence"
-    ]
-  },
-  "events": [
-    {
-      "event_id": "EVT-591758df134a",
-      "source_name": "Task & Purpose",
-      "source_domain": "taskandpurpose.com",
-      "title": "VA staffing shortages led to failure to refer veterans to supportive housing, investigators find",
-      "summary": "VA staffing shortages led to failure to refer veterans to supportive housing, investigators find Task & Purpose",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ydm41dkpFUERZWExEMWhTeElqVnN6alBQN2VueHdwalhhMFRnYWR2R25oN2FaMzVLYXBQOGtJN0dPa0oyNUhfQjdJamdiZHcza0NrMTIybjV3dFFfRzJlWkI0ZE5HenRfUlZ3c3V0cXBHWjBL?oc=5",
-      "published_at": "2026-04-06T18:42:27+00:00",
-      "domains": [
-        "housing_stability"
-      ],
-      "primary_domain": "housing_stability",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "moderate",
-      "confidence": "high",
-      "relevance_score": 6.82,
-      "drivers": [
-        "housing"
-      ],
-      "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "south",
-      "regions": [
-        "south"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 53.11
-    },
-    {
-      "event_id": "EVT-f91faddfb823",
-      "source_name": "Army Times",
-      "source_domain": "armytimes.com",
-      "title": "Troops would get up to 7% pay raise under proposed defense bill",
-      "summary": "Troops would get up to 7% pay raise under proposed defense bill Army Times",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd1BnblRBZWd2ZUo3UnhKUFp4ZmhwMy1SSTNCOTlWNjRpT3VwR3M1ZFNadVFUeXFLX3Bwc05lelVyYS00VXRCMHZZc0stelpQWWtzbTRHcHFEUHZnOFNsN2VPQ1FnZk9DelAyZ2NOM2FCN1RrX2VLMGZta01UWEh4UC1xWFhGM0M5bzlQTWpqNlNqaWN1WlJybXF5aGJGNHROU1RuSFpMdUFzNG5saloxdllydw?oc=5",
-      "published_at": "2026-04-07T17:43:28+00:00",
-      "domains": [
-        "employment"
-      ],
-      "primary_domain": "employment",
-      "event_type": "policy_change",
-      "direction": "neutral",
-      "impact_level": "moderate",
-      "confidence": "high",
-      "relevance_score": 6.58,
-      "drivers": [
-        "pay"
-      ],
-      "forecast": "Continue monitoring employment nationally for directional change.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": 30.1
-    },
-    {
-      "event_id": "EVT-58db52fdfbad",
-      "source_name": "Military.com",
-      "source_domain": "military.com",
-      "title": "Every Benefit Available to Surviving Military Spouses in 2026",
-      "summary": "Every Benefit Available to Surviving Military Spouses in 2026 Military.com",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOTZyN1dkb3R2ZWpoX0ZtSkthVnN1VVJuTjU2WV8tME5fNzg1SnFuOHJPdmZ2dEd0Yi1xczhjZHg5QUZiaGhoLUxtOGMyVDRzaTlzMGF3bEUwLV9wOU9udnR6bmJQYUg2NmJoWG5sMzBNZ1RIdy1hQmpJdHZ2NFAwWTVuSUoyOGhlX2pUZzV1MUYtTjhuRVV2dGJMSWM3ODhiU0s2MmhINE9sNk85dXROUDZGNENkM0RqZTUwUUJn?oc=5",
-      "published_at": "2026-04-06T19:30:36+00:00",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "moderate",
-      "confidence": "moderate",
-      "relevance_score": 5.74,
-      "drivers": [
-        "spouse"
-      ],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 52.31
-    },
-    {
-      "event_id": "EVT-31ca42e09051",
-      "source_name": "Military.com",
-      "source_domain": "military.com",
-      "title": "Tricare Providers Have Gone More Than a Year Without Payment. Now Some Are Getting Clawback Letters.",
-      "summary": "Tricare Providers Have Gone More Than a Year Without Payment. Now Some Are Getting Clawback Letters. Military.com",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQzBDWkFzZHNlVWZJVHBIeG9abmRtWlZkTGhmbEhrZ2FvNVZ3RTJtcUMxeW5ieGFVX3VSaTZNMlE2cTZnTWNsN3g1NndxWm0zcnBiaGJGa0tpemxqNS12VXJGY1RQdUI4TWdaWE5rY0ZZY2JMZ2NJU256TDhWR09Kbmk0LXR6NTBxTXA3LXR3c3JhQ3dxUnV3VnVIWWdvTG1MUmIwc05vMHc0TTIzRUN5NzQ0UXR6elpwVlhBOExtTDM5RnJ2MHJDUEtwWW9tM2twZmtEYg?oc=5",
-      "published_at": "2026-04-06T20:56:12+00:00",
-      "domains": [
-        "employment"
-      ],
-      "primary_domain": "employment",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "moderate",
-      "confidence": "moderate",
-      "relevance_score": 5.74,
-      "drivers": [
-        "pay"
-      ],
-      "forecast": "Continue monitoring employment nationally for directional change.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": 50.88
-    },
-    {
-      "event_id": "EVT-6c937bf4e4d3",
-      "source_name": "Military.com",
-      "source_domain": "military.com",
-      "title": "Tricare Pharmacy Copays Changed in 2026. Here\u2019s What You\u2019re Paying Now and How to Pay Less.",
-      "summary": "Tricare Pharmacy Copays Changed in 2026. Here\u2019s What You\u2019re Paying Now and How to Pay Less. Military.com",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOREtFNjdmZjhiMmxxYUN6azNQZmtaWjRDekhuX3hWdTd2aTBDMWlkY0VEYmtneUc1dlRJZ2RvRHByenJyd3dHbFdsbkxTR1gteTgzX3l5WUdaeVRMYzRCSi01WlMtM096YzhibjFJX0g5QkdrM095dG91NVBlNWl1cE10ckQyQ29fQlhkRngwWHlocXhIODk1X2czVjN5WHFpTzdtUnkwQ0dORmVBOTFrdmlpSTdma3lfa2tjQ2Nfa0l0X2hibnNR?oc=5",
-      "published_at": "2026-04-06T19:05:36+00:00",
-      "domains": [
-        "employment"
-      ],
-      "primary_domain": "employment",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "moderate",
-      "confidence": "moderate",
-      "relevance_score": 5.74,
-      "drivers": [
-        "pay"
-      ],
-      "forecast": "Continue monitoring employment across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 52.73
-    },
-    {
-      "event_id": "EVT-d2691cb6091b",
-      "source_name": "Task & Purpose",
-      "source_domain": "taskandpurpose.com",
-      "title": "Military\u2019s new budget could give 7% pay raise to most junior troops",
-      "summary": "Military\u2019s new budget could give 7% pay raise to most junior troops Task & Purpose",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE13ZDg0MUY4TFZrRnM3WXZFYktKaGlZSnlCRFNsSEt5TEJfSkN2TnUzRkpmR1hqUmgxUDR1QUpKSEV4UFRSWTlnWHZjYWtieTRhRkZmcVlnRmtsRndIR2h0T0FJOWNMb2tNMjRtSmg1RVlKN3c?oc=5",
-      "published_at": "2026-04-07T14:11:03+00:00",
-      "domains": [
-        "employment"
-      ],
-      "primary_domain": "employment",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "moderate",
-      "confidence": "moderate",
-      "relevance_score": 5.62,
-      "drivers": [
-        "pay"
-      ],
-      "forecast": "Continue monitoring employment nationally for directional change.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": 33.64
-    }
-  ],
-  "priority_signals": [
-    {
-      "signal_id": "SIG-b0f10958ec69",
-      "domain_key": "housing_stability",
-      "headline": "Housing Stability watch signal: VA staffing shortages led to failure to refer veterans to supportive housing, investigators find",
-      "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-      "severity": "moderate",
-      "confidence": "high",
-      "updated_at": "2026-04-08T23:49:17+00:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "taskandpurpose.com"
-      ],
-      "event_ids": [
-        "EVT-591758df134a"
-      ],
-      "signal_type": "watch",
-      "region": "south",
-      "scope": "regional",
-      "source_state": "live"
-    },
-    {
-      "signal_id": "SIG-6328bbee8306",
-      "domain_key": "employment",
-      "headline": "Employment watch signal: Troops would get up to 7% pay raise under proposed defense bill",
-      "forecast": "Continue monitoring employment nationally for directional change.",
-      "severity": "moderate",
-      "confidence": "high",
-      "updated_at": "2026-04-08T23:49:17+00:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "armytimes.com"
-      ],
-      "event_ids": [
-        "EVT-f91faddfb823"
-      ],
-      "signal_type": "watch",
-      "region": "national",
-      "scope": "national",
-      "source_state": "live"
-    },
-    {
-      "signal_id": "SIG-51c857d0be75",
-      "domain_key": "military_family_readiness",
-      "headline": "Military Family Readiness watch signal: Every Benefit Available to Surviving Military Spouses in 2026",
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-      "severity": "moderate",
-      "confidence": "moderate",
-      "updated_at": "2026-04-08T23:49:17+00:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "military.com"
-      ],
-      "event_ids": [
-        "EVT-58db52fdfbad"
-      ],
-      "signal_type": "watch",
-      "region": "midwest",
-      "scope": "regional",
-      "source_state": "live"
-    },
-    {
-      "signal_id": "SIG-765c21f3e3d2",
-      "domain_key": "employment",
-      "headline": "Employment watch signal: Tricare Pharmacy Copays Changed in 2026. Here\u2019s What You\u2019re Paying Now and How to Pay Less.",
-      "forecast": "Continue monitoring employment across affected regions for directional change.",
-      "severity": "moderate",
-      "confidence": "moderate",
-      "updated_at": "2026-04-08T23:49:17+00:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "military.com"
-      ],
-      "event_ids": [
-        "EVT-6c937bf4e4d3"
-      ],
-      "signal_type": "watch",
-      "region": "midwest",
-      "scope": "regional",
-      "source_state": "live"
-    }
-  ],
-  "regional_events": {
-    "west": [],
-    "south": [
-      {
-        "event_id": "EVT-591758df134a",
-        "source_name": "Task & Purpose",
-        "source_domain": "taskandpurpose.com",
-        "title": "VA staffing shortages led to failure to refer veterans to supportive housing, investigators find",
-        "summary": "VA staffing shortages led to failure to refer veterans to supportive housing, investigators find Task & Purpose",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ydm41dkpFUERZWExEMWhTeElqVnN6alBQN2VueHdwalhhMFRnYWR2R25oN2FaMzVLYXBQOGtJN0dPa0oyNUhfQjdJamdiZHcza0NrMTIybjV3dFFfRzJlWkI0ZE5HenRfUlZ3c3V0cXBHWjBL?oc=5",
-        "published_at": "2026-04-06T18:42:27+00:00",
-        "domains": [
-          "housing_stability"
-        ],
-        "primary_domain": "housing_stability",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "moderate",
-        "confidence": "high",
-        "relevance_score": 6.82,
-        "drivers": [
-          "housing"
-        ],
-        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "south",
-        "regions": [
-          "south"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 53.11
-      }
-    ],
-    "midwest": [
-      {
-        "event_id": "EVT-58db52fdfbad",
-        "source_name": "Military.com",
-        "source_domain": "military.com",
-        "title": "Every Benefit Available to Surviving Military Spouses in 2026",
-        "summary": "Every Benefit Available to Surviving Military Spouses in 2026 Military.com",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOTZyN1dkb3R2ZWpoX0ZtSkthVnN1VVJuTjU2WV8tME5fNzg1SnFuOHJPdmZ2dEd0Yi1xczhjZHg5QUZiaGhoLUxtOGMyVDRzaTlzMGF3bEUwLV9wOU9udnR6bmJQYUg2NmJoWG5sMzBNZ1RIdy1hQmpJdHZ2NFAwWTVuSUoyOGhlX2pUZzV1MUYtTjhuRVV2dGJMSWM3ODhiU0s2MmhINE9sNk85dXROUDZGNENkM0RqZTUwUUJn?oc=5",
-        "published_at": "2026-04-06T19:30:36+00:00",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "moderate",
-        "confidence": "moderate",
-        "relevance_score": 5.74,
-        "drivers": [
-          "spouse"
-        ],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 52.31
-      },
-      {
-        "event_id": "EVT-6c937bf4e4d3",
-        "source_name": "Military.com",
-        "source_domain": "military.com",
-        "title": "Tricare Pharmacy Copays Changed in 2026. Here\u2019s What You\u2019re Paying Now and How to Pay Less.",
-        "summary": "Tricare Pharmacy Copays Changed in 2026. Here\u2019s What You\u2019re Paying Now and How to Pay Less. Military.com",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOREtFNjdmZjhiMmxxYUN6azNQZmtaWjRDekhuX3hWdTd2aTBDMWlkY0VEYmtneUc1dlRJZ2RvRHByenJyd3dHbFdsbkxTR1gteTgzX3l5WUdaeVRMYzRCSi01WlMtM096YzhibjFJX0g5QkdrM095dG91NVBlNWl1cE10ckQyQ29fQlhkRngwWHlocXhIODk1X2czVjN5WHFpTzdtUnkwQ0dORmVBOTFrdmlpSTdma3lfa2tjQ2Nfa0l0X2hibnNR?oc=5",
-        "published_at": "2026-04-06T19:05:36+00:00",
-        "domains": [
-          "employment"
-        ],
-        "primary_domain": "employment",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "moderate",
-        "confidence": "moderate",
-        "relevance_score": 5.74,
-        "drivers": [
-          "pay"
-        ],
-        "forecast": "Continue monitoring employment across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 52.73
-      }
-    ],
-    "northeast": []
-  },
-  "regional_tier3_contributions": {
-    "west": {
-      "housing_stability": 0.0,
-      "employment": 0.0,
-      "cost_of_living": 0.0,
-      "benefits": 0.0,
-      "healthcare_system": 0.0,
-      "military_family_readiness": 0.0
-    },
-    "south": {
-      "housing_stability": 0.04,
-      "employment": 0.0,
-      "cost_of_living": 0.0,
-      "benefits": 0.0,
-      "healthcare_system": 0.0,
-      "military_family_readiness": 0.0
-    },
-    "midwest": {
-      "housing_stability": 0.0,
-      "employment": 0.04,
-      "cost_of_living": 0.0,
-      "benefits": 0.0,
-      "healthcare_system": 0.0,
-      "military_family_readiness": 0.04
-    },
-    "northeast": {
-      "housing_stability": 0.0,
-      "employment": 0.0,
-      "cost_of_living": 0.0,
-      "benefits": 0.0,
-      "healthcare_system": 0.0,
-      "military_family_readiness": 0.0
-    }
-  },
-  "live_source_ingestion": {
-    "enabled": true,
-    "reason": "Live RSS ingestion completed with 72-hour filtering.",
-    "source_count": 17,
-    "successful_sources": 17,
-    "failed_sources": 0,
-    "story_count": 12,
-    "live_candidate_count": 6,
-    "promoted_signal_count": 4,
-    "filtered_out_old_count": 73,
-    "filtered_out_missing_date_count": 0,
-    "sources": [
-      {
-        "source_name": "Military.com",
-        "source_domain": "military.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 4,
-        "old_items_filtered": 1,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "VA News",
-        "source_domain": "news.va.gov",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "Stars and Stripes",
-        "source_domain": "stripes.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "Federal News Network",
-        "source_domain": "federalnewsnetwork.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "Navy Times",
-        "source_domain": "navytimes.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "Army Times",
-        "source_domain": "armytimes.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 1,
-        "old_items_filtered": 4,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "Air Force Times",
-        "source_domain": "airforcetimes.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "Marine Corps Times",
-        "source_domain": "marinecorpstimes.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "Task & Purpose",
-        "source_domain": "taskandpurpose.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 4,
-        "old_items_filtered": 1,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "CBS Veterans",
-        "source_domain": "cbsnews.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "NBC Veterans",
-        "source_domain": "nbcnews.com",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 3,
-        "old_items_filtered": 2,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "VFW",
-        "source_domain": "vfw.org",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "DAV",
-        "source_domain": "dav.org",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "Military OneSource",
-        "source_domain": "militaryonesource.mil",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "House Veterans Affairs",
-        "source_domain": "veterans.house.gov",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "DOL VETS",
-        "source_domain": "dol.gov",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      },
-      {
-        "source_name": "OPM FedshireVets",
-        "source_domain": "opm.gov",
-        "ok": true,
-        "items_found": 100,
-        "items_kept": 5,
-        "live_items_kept": 0,
-        "old_items_filtered": 5,
-        "missing_date_filtered": 0,
-        "reason": "rss fetched"
-      }
+      "Housing score: 55.4",
+      "Cost of living score: 53.6",
+      "Employment score: 51.4",
+      "Benefits score: 42.5",
+      "Healthcare system score: 45.0",
+      "Military family readiness score: 52.8",
+      "Source confidence: Moderate Confidence"
     ]
   },
   "history": [
@@ -914,7 +317,41 @@
       "benefits_model": "benefits_v3_continuous_tiered",
       "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    },
+    {
+      "time": "2026-04-09T23:22:41.241871+00:00",
+      "as_of": "2026-04-09",
+      "overall_score": 50.4,
+      "score": 50.4,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "declining",
+      "housing_stability": 55.4,
+      "cost_of_living": 53.6,
+      "employment": 51.4,
+      "benefits": 42.5,
+      "healthcare_system": 45.0,
+      "military_family_readiness": 52.8,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     }
   ],
-  "generated_at": "2026-04-08T23:49:17.872160+00:00"
+  "events": [],
+  "priority_signals": [],
+  "regional_events": {},
+  "regional_tier3_contributions": {},
+  "domain_events": {
+    "housing_stability": [],
+    "employment": [],
+    "military_family_readiness": [],
+    "cost_of_living": [],
+    "healthcare_system": [],
+    "benefits": []
+  },
+  "generated_at": "2026-04-09T23:22:41.241871+00:00"
 }
