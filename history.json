@@ -66,10 +66,10 @@
     "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
   },
   {
-    "time": "2026-04-09T23:22:41.241871+00:00",
+    "time": "2026-04-09T23:46:47.262828+00:00",
     "as_of": "2026-04-09",
-    "overall_score": 50.4,
-    "score": 50.4,
+    "overall_score": 50.5,
+    "score": 50.5,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "pressure_label": "Balanced / Watch",
@@ -79,7 +79,7 @@
     "employment": 51.4,
     "benefits": 42.5,
     "healthcare_system": 45.0,
-    "military_family_readiness": 52.8,
+    "military_family_readiness": 53.0,
     "housing_stability_model": "housing_v3_continuous_tiered",
     "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
     "employment_model": "employment_v3_continuous_tiered",
