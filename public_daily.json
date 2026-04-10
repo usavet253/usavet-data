@@ -1,14 +1,14 @@
 {
   "as_of": "2026-04-10",
-  "overall_score": 50.8,
-  "score": 50.8,
+  "overall_score": 50.7,
+  "score": 50.7,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "stable",
   "pressure_label": "Balanced / Watch",
   "source_quality": "High Confidence",
   "index": {
-    "overall_score": 50.8,
+    "overall_score": 50.7,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
@@ -23,33 +23,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.8.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.7.",
   "notes": [
     "Housing score: 55.4",
     "Cost of living score: 55.1",
     "Employment score: 51.4",
-    "Benefits score: 42.8",
+    "Benefits score: 42.5",
     "Healthcare system score: 45.0",
-    "Military family readiness score: 52.6",
+    "Military family readiness score: 52.5",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 55.4,
     "employment": 51.4,
-    "military_family_readiness": 52.6,
+    "military_family_readiness": 52.5,
     "cost_of_living": 55.1,
     "healthcare_system": 45.0,
-    "benefits": 42.8
+    "benefits": 42.5
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.8.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.7.",
     "notes": [
       "Housing score: 55.4",
       "Cost of living score: 55.1",
       "Employment score: 51.4",
-      "Benefits score: 42.8",
+      "Benefits score: 42.5",
       "Healthcare system score: 45.0",
-      "Military family readiness score: 52.6",
+      "Military family readiness score: 52.5",
       "Source confidence: High Confidence"
     ]
   },
@@ -143,10 +143,10 @@
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     },
     {
-      "time": "2026-04-10T18:49:21.122681+00:00",
+      "time": "2026-04-10T19:28:17.167848+00:00",
       "as_of": "2026-04-10",
-      "overall_score": 50.8,
-      "score": 50.8,
+      "overall_score": 50.7,
+      "score": 50.7,
       "band": "Balanced / Watch",
       "status_band": "Balanced / Watch",
       "pressure_label": "Balanced / Watch",
@@ -154,9 +154,9 @@
       "housing_stability": 55.4,
       "cost_of_living": 55.1,
       "employment": 51.4,
-      "benefits": 42.8,
+      "benefits": 42.5,
       "healthcare_system": 45.0,
-      "military_family_readiness": 52.6,
+      "military_family_readiness": 52.5,
       "housing_stability_model": "housing_v3_continuous_tiered",
       "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
       "employment_model": "employment_v3_continuous_tiered",
@@ -167,460 +167,60 @@
   ],
   "events": [
     {
-      "event_id": "EVT-c4eb6c916324",
-      "source_name": "Business Insider",
-      "source_domain": "businessinsider.com",
-      "title": "Tell us about how your city has tried to make life more affordable",
-      "summary": "Is your city trying to make your life more affordable? We want to hear about it, and what it means for you.",
-      "url": "https://www.businessinsider.com/how-your-city-trying-make-life-affordable-buses-rent-childcare-2026-4",
-      "published_at": "2026-04-09T18:48:38Z",
-      "domains": [
-        "housing_stability",
-        "cost_of_living"
-      ],
-      "primary_domain": "housing_stability",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "high",
-      "confidence": "moderate",
-      "relevance_score": 6.7,
-      "drivers": [
-        "affordability"
-      ],
-      "forecast": "Continue monitoring housing stability and cost of living across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "northeast",
-      "regions": [
-        "northeast"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.01
-    },
-    {
-      "event_id": "EVT-fa5033f35491",
-      "source_name": "Worldsoccertalk.com",
-      "source_domain": "worldsoccertalk.com",
-      "title": "\u2018Ronaldo is a star, a very good player, but he\u2019s not a genius like Messi,\u2019 says 1986 World Cup champion Oscar Ruggeri",
-      "summary": "Lionel Messi and Cristiano Ronaldo have been at the center of one of the most intense rivalries. While some praise the Portuguese scoring prowess, others praise the Argentine\u2019s all-around capacity. In light of this, 1986 World Cup champion Oscar Ruggeri makes\u2026",
-      "url": "https://worldsoccertalk.com/news/ronaldo-is-a-star-a-very-good-player-but-hes-not-a-genius-like-messi-says-1986-world-cup-champion-oscar-ruggeri/",
-      "published_at": "2026-04-09T18:28:56Z",
-      "domains": [
-        "healthcare_system"
-      ],
-      "primary_domain": "healthcare_system",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "moderate",
-      "confidence": "moderate",
-      "relevance_score": 5.5,
-      "drivers": [
-        "capacity"
-      ],
-      "forecast": "Continue monitoring healthcare system across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.34
-    },
-    {
-      "event_id": "EVT-e6e9a411a677",
-      "source_name": "ABC News (AU)",
-      "source_domain": "abc.net.au",
-      "title": "Inside the church of the man who has been leading the US through war",
-      "summary": "The ABC visits US Defense Secretary Pete Hegseth's church, whose leaders challenge the legitimacy of democracy and key principles in the US constitution.",
-      "url": "https://www.abc.net.au/news/2026-04-10/pete-hegseth-holy-war-in-iran-christian-nationalism/106500910",
-      "published_at": "2026-04-09T18:38:15Z",
-      "domains": [
-        "housing_stability"
-      ],
-      "primary_domain": "housing_stability",
-      "event_type": "housing_pressure",
-      "direction": "worsening",
-      "impact_level": "moderate",
-      "confidence": "moderate",
-      "relevance_score": 5.3,
-      "drivers": [
-        "rent"
-      ],
-      "forecast": "Watch for continued pressure building in housing stability nationally.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": 24.19
-    },
-    {
-      "event_id": "EVT-ff3a59937305",
-      "source_name": "Newser",
-      "source_domain": "newser.com",
-      "title": "NATO Chief Says Allies 'a Bit Slow' to Help With Iran",
-      "summary": "NATO Secretary-General Mark Rutte declined to say Thursday whether President Trump had repeated his threat to quit the military organization, saying only that the US leader was disappointed in some allies for being too slow to help with the Iran war. Rutte's \u2026",
-      "url": "https://www.newser.com/story/387044/nato-chief-says-allies-a-bit-slow-to-help-with-iran.html",
-      "published_at": "2026-04-09T18:45:00Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "policy_change",
-      "direction": "worsening",
-      "impact_level": "moderate",
-      "confidence": "moderate",
-      "relevance_score": 5.1,
-      "drivers": [],
-      "forecast": "Watch for continued pressure building in military family readiness across affected regions.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.07
-    },
-    {
-      "event_id": "EVT-db241214edce",
-      "source_name": "The New Republic",
-      "source_domain": "newrepublic.com",
-      "title": "DNC Kills Resolution Condemning AIPAC Influence in Elections",
-      "summary": "A Democratic National Committee panel on Thursday killed a resolution condemning the \u201cgrowing influence\u201d of dark money groups like the American Israel Public Affairs Committee (AIPAC)\u2014even as an overwhelming majority of Democrat voters have an unfavorable vie\u2026",
-      "url": "https://newrepublic.com/post/208890/dnc-kills-resolution-condemning-aipac",
-      "published_at": "2026-04-09T18:31:12Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "policy_change",
-      "direction": "worsening",
-      "impact_level": "moderate",
-      "confidence": "moderate",
-      "relevance_score": 5.1,
-      "drivers": [],
-      "forecast": "Watch for continued pressure building in military family readiness nationally.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": 24.3
-    },
-    {
-      "event_id": "EVT-fbcad047fae5",
-      "source_name": "ABC News (AU)",
-      "source_domain": "abc.net.au",
-      "title": "How the PM's Singapore visit could help Australia's fuel supply",
-      "summary": "Experts say visits like Anthony Albanese's trip to Singapore are important in securing Australia's energy supplies. As one observer puts it, \"when you don't have the stock, you need friends\".",
-      "url": "https://www.abc.net.au/news/2026-04-10/how-the-pms-singapore-visit-could-help-our-fuel-supply/106543820",
-      "published_at": "2026-04-09T18:42:50Z",
-      "domains": [
-        "cost_of_living"
-      ],
-      "primary_domain": "cost_of_living",
-      "event_type": "cost_pressure",
-      "direction": "worsening",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.3,
-      "drivers": [
-        "fuel"
-      ],
-      "forecast": "Early pressure signal detected in cost of living across affected regions.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.11
-    },
-    {
-      "event_id": "EVT-d20bfd9ca74b",
-      "source_name": "Truthout",
-      "source_domain": "truthout.org",
-      "title": "Ceasefire Confusion Grows as Trump Threatens Renewed Start to Iran War",
-      "summary": "Karoline Leavitt denied Strait of Hormuz closure reports, but demanded it be \u201cimmediately\u201d reopened in the same presser.",
-      "url": "https://truthout.org/articles/ceasefire-confusion-grows-as-trump-threatens-renewed-start-to-iran-war/",
-      "published_at": "2026-04-09T18:39:51Z",
-      "domains": [
-        "housing_stability"
-      ],
-      "primary_domain": "housing_stability",
-      "event_type": "operational_event",
-      "direction": "improving",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.3,
-      "drivers": [
-        "lease"
-      ],
-      "forecast": "Conditions may stabilize in housing stability across affected regions if current movement holds.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.16
-    },
-    {
-      "event_id": "EVT-0b6ba050e657",
+      "event_id": "EVT-3acb2d9ab5bc",
       "source_name": "The Times of India",
       "source_domain": "economictimes.indiatimes.com",
-      "title": "Centre saves \u20b955,000 crore as FY26 spending undershoots estimates",
-      "summary": "Government spending in the last fiscal year was less than planned. This saving of about \u20b955,000 crore will help manage tax collection shortfalls. Unspent funds were noted in ministries for water, sanitation, and housing. Savings also came from better direct b\u2026",
-      "url": "https://economictimes.indiatimes.com/news/economy/policy/centre-saves-55000-crore-as-fy26-spending-undershoots-estimates/articleshow/130151903.cms",
-      "published_at": "2026-04-09T18:31:25Z",
+      "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
+      "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
+      "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
+      "published_at": "2026-04-09T19:12:39Z",
       "domains": [
-        "housing_stability"
+        "employment",
+        "benefits"
       ],
-      "primary_domain": "housing_stability",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.3,
-      "drivers": [
-        "housing"
-      ],
-      "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.3
-    },
-    {
-      "event_id": "EVT-89f7cc5dd018",
-      "source_name": "Al Jazeera English",
-      "source_domain": "aljazeera.com",
-      "title": "Iran says it \u2018would be dumb\u2019 for US to let Netanyahu kill diplomacy",
-      "summary": "In an implicit response to JD Vance, Iran's Abbas Araghchi warns of the repercussions of Israel's attacks on Lebanon.",
-      "url": "https://www.aljazeera.com/news/2026/4/9/iran-says-it-would-be-dumb-for-us-to-let-netanyahu-kill-diplomacy",
-      "published_at": "2026-04-09T18:49:00Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.01
-    },
-    {
-      "event_id": "EVT-c7ad61b24271",
-      "source_name": "Freerepublic.com",
-      "source_domain": "freerepublic.com",
-      "title": "Bishop Strickland (anti-Francis conservative) Statement on Lebanon: A Cry for Mercy",
-      "summary": "My dear brothers and sisters in Christ, My heart is heavy as I look toward Lebanon \u2013 a land long marked by faith, suffering, and perseverance. Lebanon is not merely another nation in conflict. It is home to one of the oldest and largest Christian populations \u2026",
-      "url": "https://freerepublic.com/focus/f-religion/4374258/posts",
-      "published_at": "2026-04-09T18:48:15Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.02
-    },
-    {
-      "event_id": "EVT-66eb1efb18d2",
-      "source_name": "Consequence.net",
-      "source_domain": "consequence.net",
-      "title": "Zach Top Announces New 2026 Summer Tour Dates",
-      "summary": "The country singer has added 14 new dates for his 2026 \"Cold Beer & Country Music\" tour. Zach Top Announces New 2026 Summer Tour Dates Scoop Harrison",
-      "url": "https://consequence.net/2026/04/zach-top-2026-summer-tour-dates/",
-      "published_at": "2026-04-09T18:47:52Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "northeast",
-      "regions": [
-        "northeast",
-        "midwest"
-      ],
-      "scope": "multi_region",
-      "source_state": "live",
-      "age_hours": 24.02
-    },
-    {
-      "event_id": "EVT-a43c07235fee",
-      "source_name": "The Hockey News",
-      "source_domain": "thehockeynews.com",
-      "title": "Flyers Depth Chart: Jack Berglund Signing Provides Massive Boost... Literally",
-      "summary": "After signing top center prospect Jack Berglund, the Philadelphia Flyers received quite a big organizational boost at the forward position, aiding them both now and in the future.",
-      "url": "https://thehockeynews.com/nhl/philadelphia-flyers/latest-news/flyers-depth-chart-jack-berglund-signing-provides-massive-boost-literally",
-      "published_at": "2026-04-09T18:46:43Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
+      "primary_domain": "employment",
+      "event_type": "benefits_access",
       "direction": "improving",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Conditions may stabilize in military family readiness across affected regions if current movement holds.",
-      "evidence_count": 1,
-      "region": "northeast",
-      "regions": [
-        "northeast",
-        "midwest"
+      "impact_level": "high",
+      "confidence": "high",
+      "relevance_score": 6.9,
+      "drivers": [
+        "pay",
+        "benefits"
       ],
-      "scope": "multi_region",
-      "source_state": "live",
-      "age_hours": 24.04
-    },
-    {
-      "event_id": "EVT-4bdab2111c0c",
-      "source_name": "New York Post",
-      "source_domain": "nypost.com",
-      "title": "Jack White announces summer tour, two NYC shows. Get tickets today",
-      "summary": "The virtuosic axeman will melt a face or three at the Brooklyn Paramount on July 11-12.",
-      "url": "https://nypost.com/2026/04/09/ticket-sales/jack-white-summer-tour-2026-where-to-buy-tickets-schedule/",
-      "published_at": "2026-04-09T18:46:41Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
       "evidence_count": 1,
-      "region": "northeast",
+      "region": "midwest",
       "regions": [
-        "northeast",
+        "midwest",
         "west"
       ],
       "scope": "multi_region",
       "source_state": "live",
-      "age_hours": 24.04
+      "age_hours": 24.26
     },
     {
-      "event_id": "EVT-0c0fad8eb17c",
-      "source_name": "GlobeNewswire",
-      "source_domain": "globenewswire.com",
-      "title": "Telos Corporation\u2019s Xacta Platform Achieves Full FedRAMP High Authorization with Addition of Xacta.io and Xacta.ai",
-      "summary": "Full Xacta platform now FedRAMP High authorized, expanding AI-driven compliance and risk management capabilities for mission-critical environments Full Xacta platform now FedRAMP High authorized, expanding AI-driven compliance and risk management capabilities\u2026",
-      "url": "https://www.globenewswire.com/news-release/2026/04/09/3271360/0/en/Telos-Corporation-s-Xacta-Platform-Achieves-Full-FedRAMP-High-Authorization-with-Addition-of-Xacta-io-and-Xacta-ai.html",
-      "published_at": "2026-04-09T18:45:00Z",
+      "event_id": "EVT-f60e8ee06386",
+      "source_name": "Fox News",
+      "source_domain": "foxnews.com",
+      "title": "Federal appeals court rejects Anthropic bid to block Pentagon blacklist in AI dispute",
+      "summary": "A federal court rejected Anthropic's bid to block the Department of War from blacklisting the artificial intelligence company's technology.",
+      "url": "https://www.foxnews.com/politics/federal-appeals-court-rejects-anthropic-bid-block-pentagon-blacklist-ai-dispute",
+      "published_at": "2026-04-09T19:20:22Z",
       "domains": [
-        "military_family_readiness"
+        "benefits"
       ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
-      "direction": "worsening",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Early pressure signal detected in military family readiness across affected regions.",
-      "evidence_count": 1,
-      "region": "south",
-      "regions": [
-        "south"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.07
-    },
-    {
-      "event_id": "EVT-8d7f9b22b5f6",
-      "source_name": "ABC News (AU)",
-      "source_domain": "abc.net.au",
-      "title": "Construction businesses vulnerable to supply chain shock, experts warn",
-      "summary": "Contractors, business owners and economists are warning that thousands of construction industry businesses could go bust as a result of supply chain disruptions caused by the Iran War, unless the government intervenes.",
-      "url": "https://www.abc.net.au/news/2026-04-10/construction-sector-warns-of-housing-delays-mass-layoffs/106548194",
-      "published_at": "2026-04-09T18:43:36Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
+      "primary_domain": "benefits",
       "event_type": "operational_event",
       "direction": "neutral",
       "impact_level": "watch",
       "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
+      "relevance_score": 4.5,
+      "drivers": [
+        "appeal",
+        "appeals"
       ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.1
-    },
-    {
-      "event_id": "EVT-41f874fef58e",
-      "source_name": "Fox News",
-      "source_domain": "foxnews.com",
-      "title": "Common vaccine slashes Alzheimer's disease risk when dose is increased",
-      "summary": "A new study suggests a high-dose flu shot may cut Alzheimer's risk by nearly half in older adults, far outperforming the standard-dose vaccine version.",
-      "url": "https://www.foxnews.com/health/common-vaccine-slashes-alzheimers-disease-risk-when-dose-increased",
-      "published_at": "2026-04-09T18:43:24Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
-      "direction": "worsening",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Early pressure signal detected in military family readiness across affected regions.",
+      "forecast": "Continue monitoring benefits across affected regions for directional change.",
       "evidence_count": 1,
       "region": "south",
       "regions": [
@@ -629,56 +229,92 @@
       ],
       "scope": "multi_region",
       "source_state": "live",
-      "age_hours": 24.1
+      "age_hours": 24.13
     },
     {
-      "event_id": "EVT-129411a81c4d",
-      "source_name": "Thesurvivalpodcast.com",
-      "source_domain": "thesurvivalpodcast.com",
-      "title": "Expert Panel Q&A \u2013 Epi-3831",
-      "summary": "Today on The Survival Podcast the expert council covers a wide range of real world topics. Today we start with a question, how similar is the Iran conflict to Afghanistan or Vietnam? Then should you sell your home yourself or get a realtor? Thoughts on har\u2026",
-      "url": "https://www.thesurvivalpodcast.com/experts-3831",
-      "published_at": "2026-04-09T18:37:49Z",
+      "event_id": "EVT-711635ae4af3",
+      "source_name": "New York Post",
+      "source_domain": "nypost.com",
+      "title": "New Jersey just topped the nation in home price growth \u2014 and it\u2019s not even close",
+      "summary": "New data from Cotality shows the Garden State is absolutely the place to be.",
+      "url": "https://nypost.com/2026/04/09/real-estate/new-jersey-just-topped-the-nation-in-home-price-growth/",
+      "published_at": "2026-04-09T19:15:38Z",
       "domains": [
-        "military_family_readiness"
+        "housing_stability"
       ],
-      "primary_domain": "military_family_readiness",
+      "primary_domain": "housing_stability",
       "event_type": "operational_event",
       "direction": "neutral",
       "impact_level": "watch",
       "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "relevance_score": 4.5,
+      "drivers": [
+        "housing",
+        "home prices"
+      ],
+      "forecast": "Continue monitoring housing stability across affected regions for directional change.",
       "evidence_count": 1,
-      "region": "west",
+      "region": "northeast",
       "regions": [
-        "west",
+        "northeast",
         "midwest"
       ],
       "scope": "multi_region",
       "source_state": "live",
-      "age_hours": 24.19
+      "age_hours": 24.21
     },
     {
-      "event_id": "EVT-7047dff52ffb",
-      "source_name": "Breitbart News",
-      "source_domain": "breitbart.com",
-      "title": "Poll: Gen Z Shows Growing Negativity Towards AI",
-      "summary": "A recent Gallup survey reveals that young adults in the United States are increasingly negative about AI technology, even as more than half use it regularly. The post Poll: Gen Z Shows Growing Negativity Towards AI appeared first on Breitbart.",
-      "url": "https://www.breitbart.com/tech/2026/04/09/poll-gen-z-shows-growing-negativity-towards-ai/",
-      "published_at": "2026-04-09T18:36:32Z",
+      "event_id": "EVT-3bdb0aae2209",
+      "source_name": "Mediaite",
+      "source_domain": "mediaite.com",
+      "title": "MS Host Claims He Was Getting Military-Style \u2018Thank You for Your Service\u2019 Compliments After Trump Election",
+      "summary": "MS NOW's Jonathan Capehart claimed he started receiving military style-\"thank you for your service\" messages from the public after Trump's first election. The post MS Host Claims He Was Getting Military-Style \u2018Thank You for Your Service\u2019 Compliments After Tru\u2026",
+      "url": "https://www.mediaite.com/media/ms-host-claims-he-was-getting-military-style-thank-you-for-your-service-compliments-after-trump-election/",
+      "published_at": "2026-04-09T19:11:36Z",
       "domains": [
-        "military_family_readiness"
+        "benefits"
       ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
+      "primary_domain": "benefits",
+      "event_type": "benefits_access",
       "direction": "neutral",
       "impact_level": "watch",
       "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "relevance_score": 4.5,
+      "drivers": [
+        "claims",
+        "claim"
+      ],
+      "forecast": "Continue monitoring benefits across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "south",
+      "regions": [
+        "south"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": 24.28
+    },
+    {
+      "event_id": "EVT-5d1c0039851e",
+      "source_name": "Gothamist",
+      "source_domain": "gothamist.com",
+      "title": "Alleged arson killer lit Queens house on fire to \u2018get out his rage,\u2019 prosecutors say",
+      "summary": "Roman Amatitla, 38, appears in Queens court for his arraignment on murder and arson charges on April 9, 2026. The 38-year-old defendant was recently fired from his job and didn't know anyone in the building, according to the district attorney\u2019s office. [ m\u2026",
+      "url": "https://gothamist.com/news/alleged-arson-killer-lit-queens-house-on-fire-to-get-out-his-rage-prosecutors-say",
+      "published_at": "2026-04-09T19:24:34Z",
+      "domains": [
+        "employment"
+      ],
+      "primary_domain": "employment",
+      "event_type": "operational_event",
+      "direction": "worsening",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "job"
+      ],
+      "forecast": "Early pressure signal detected in employment across affected regions.",
       "evidence_count": 1,
       "region": "midwest",
       "regions": [
@@ -686,56 +322,29 @@
       ],
       "scope": "regional",
       "source_state": "live",
-      "age_hours": 24.21
+      "age_hours": 24.06
     },
     {
-      "event_id": "EVT-44a48bcda883",
-      "source_name": "Breitbart News",
-      "source_domain": "breitbart.com",
-      "title": "Former Seattle Seahawk Rickey Thenarse Shot Amid Dispute",
-      "summary": "Former Seattle Seahawk's player Rickey Thenarse was shot in the stomach in South Los Angeles on Friday and underwent emergency surgery, according to TMZ. The post Former Seattle Seahawk Rickey Thenarse Shot Amid Dispute appeared first on Breitbart.",
-      "url": "https://www.breitbart.com/2nd-amendment/2026/04/09/former-seattle-seahawk-rickey-thenarse-shot-amid-dispute/",
-      "published_at": "2026-04-09T18:33:03Z",
+      "event_id": "EVT-11c93cb97d05",
+      "source_name": "National Institutes of Health",
+      "source_domain": "ncbi.nlm.nih.gov",
+      "title": "New | phs004467.v2.p1 | NHLBI Growth and Health Study (NGHS-BioLINCC)",
+      "summary": "NHLBI Growth and Health Study (NGHS-BioLINCC) (study page | release notes )",
+      "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs004467.v2.p1",
+      "published_at": "2026-04-09T19:20:00Z",
       "domains": [
-        "military_family_readiness"
+        "housing_stability"
       ],
-      "primary_domain": "military_family_readiness",
+      "primary_domain": "housing_stability",
       "event_type": "operational_event",
-      "direction": "neutral",
+      "direction": "worsening",
       "impact_level": "watch",
       "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "west",
-      "regions": [
-        "west",
-        "midwest"
+      "relevance_score": 4.3,
+      "drivers": [
+        "lease"
       ],
-      "scope": "multi_region",
-      "source_state": "live",
-      "age_hours": 24.27
-    },
-    {
-      "event_id": "EVT-9283dfb56d86",
-      "source_name": "Daily Signal",
-      "source_domain": "dailysignal.com",
-      "title": "Trump Administration Talks Peace, But Leaves Escalation With Iran on the Table",
-      "summary": "The White House is declaring Operation Epic Fury a success and pushing for a negotiated peace, while also making clear that U.S. forces are prepared to escalate if Iran fails to comply. The... Read More The post Trump Administration Talks Peace, But Leaves E\u2026",
-      "url": "https://www.dailysignal.com/2026/04/09/trump-administration-talks-peace-but-leaves-escalation-with-iran-on-the-table/",
-      "published_at": "2026-04-09T18:29:53Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.1,
-      "drivers": [],
-      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "forecast": "Early pressure signal detected in housing stability nationally.",
       "evidence_count": 1,
       "region": "national",
       "regions": [
@@ -743,201 +352,152 @@
       ],
       "scope": "national",
       "source_state": "live",
-      "age_hours": 24.32
+      "age_hours": 24.14
+    },
+    {
+      "event_id": "EVT-b2ed87060159",
+      "source_name": "National Post",
+      "source_domain": "nationalpost.com",
+      "title": "Americans are confused \u2014 and fatigued \u2014 by Trump\u2019s trade war",
+      "summary": "As Americans grow more confused about who benefits from trade with Canada, could Trump\u2019s \u201crip\u2011off\u201d narrative be losing its punch?",
+      "url": "https://nationalpost.com/news/americans-are-confused-and-fatigued-by-trumps-trade-war",
+      "published_at": "2026-04-09T19:15:33Z",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "benefits_access",
+      "direction": "worsening",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Early pressure signal detected in benefits nationally.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": 24.21
     }
   ],
   "priority_signals": [
     {
-      "signal_id": "SIG-d492ef394a69",
-      "domain_key": "housing_stability",
-      "headline": "Housing Stability pressure signal: Inside the church of the man who has been leading the US through war",
-      "forecast": "Watch for continued pressure building in housing stability nationally.",
-      "severity": "moderate",
-      "confidence": "moderate",
-      "updated_at": "2026-04-10T18:49:21+00:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "abc.net.au"
-      ],
-      "event_ids": [
-        "EVT-e6e9a411a677"
-      ],
-      "signal_type": "early_warning",
-      "region": "national",
-      "scope": "national",
-      "source_state": "live"
-    },
-    {
-      "signal_id": "SIG-89d0ddc9e404",
-      "domain_key": "military_family_readiness",
-      "headline": "Military Family Readiness pressure signal: NATO Chief Says Allies 'a Bit Slow' to Help With Iran",
-      "forecast": "Watch for continued pressure building in military family readiness across affected regions.",
-      "severity": "moderate",
-      "confidence": "moderate",
-      "updated_at": "2026-04-10T18:49:21+00:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "newser.com"
-      ],
-      "event_ids": [
-        "EVT-ff3a59937305"
-      ],
-      "signal_type": "early_warning",
-      "region": "midwest",
-      "scope": "regional",
-      "source_state": "live"
-    },
-    {
-      "signal_id": "SIG-fb108b267ce1",
-      "domain_key": "military_family_readiness",
-      "headline": "Military Family Readiness pressure signal: DNC Kills Resolution Condemning AIPAC Influence in Elections",
-      "forecast": "Watch for continued pressure building in military family readiness nationally.",
-      "severity": "moderate",
-      "confidence": "moderate",
-      "updated_at": "2026-04-10T18:49:21+00:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "newrepublic.com"
-      ],
-      "event_ids": [
-        "EVT-db241214edce"
-      ],
-      "signal_type": "early_warning",
-      "region": "national",
-      "scope": "national",
-      "source_state": "live"
-    },
-    {
-      "signal_id": "SIG-41faaa5a17d7",
-      "domain_key": "housing_stability",
-      "headline": "Housing Stability watch signal: Tell us about how your city has tried to make life more affordable",
-      "forecast": "Continue monitoring housing stability and cost of living across affected regions for directional change.",
+      "signal_id": "SIG-43e6398b0d5a",
+      "domain_key": "employment",
+      "headline": "Employment improvement signal: Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
+      "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
       "severity": "high",
-      "confidence": "moderate",
-      "updated_at": "2026-04-10T18:49:21+00:00",
+      "confidence": "high",
+      "updated_at": "2026-04-10T19:28:17+00:00",
       "evidence_count": 1,
       "source_domains": [
-        "businessinsider.com"
+        "economictimes.indiatimes.com"
       ],
       "event_ids": [
-        "EVT-c4eb6c916324"
+        "EVT-3acb2d9ab5bc"
       ],
-      "signal_type": "watch",
-      "region": "northeast",
-      "scope": "regional",
+      "signal_type": "stabilization",
+      "region": "midwest",
+      "scope": "multi_region",
       "source_state": "live"
     }
   ],
   "regional_events": {
     "west": [
       {
-        "event_id": "EVT-4bdab2111c0c",
-        "source_name": "New York Post",
-        "source_domain": "nypost.com",
-        "title": "Jack White announces summer tour, two NYC shows. Get tickets today",
-        "summary": "The virtuosic axeman will melt a face or three at the Brooklyn Paramount on July 11-12.",
-        "url": "https://nypost.com/2026/04/09/ticket-sales/jack-white-summer-tour-2026-where-to-buy-tickets-schedule/",
-        "published_at": "2026-04-09T18:46:41Z",
+        "event_id": "EVT-3acb2d9ab5bc",
+        "source_name": "The Times of India",
+        "source_domain": "economictimes.indiatimes.com",
+        "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
+        "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
+        "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
+        "published_at": "2026-04-09T19:12:39Z",
         "domains": [
-          "military_family_readiness"
+          "employment",
+          "benefits"
         ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "primary_domain": "employment",
+        "event_type": "benefits_access",
+        "direction": "improving",
+        "impact_level": "high",
+        "confidence": "high",
+        "relevance_score": 6.9,
+        "drivers": [
+          "pay",
+          "benefits"
+        ],
+        "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
         "evidence_count": 1,
-        "region": "northeast",
+        "region": "midwest",
         "regions": [
-          "northeast",
+          "midwest",
           "west"
         ],
         "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.04
-      },
-      {
-        "event_id": "EVT-129411a81c4d",
-        "source_name": "Thesurvivalpodcast.com",
-        "source_domain": "thesurvivalpodcast.com",
-        "title": "Expert Panel Q&A \u2013 Epi-3831",
-        "summary": "Today on The Survival Podcast the expert council covers a wide range of real world topics. Today we start with a question, how similar is the Iran conflict to Afghanistan or Vietnam? Then should you sell your home yourself or get a realtor? Thoughts on har\u2026",
-        "url": "https://www.thesurvivalpodcast.com/experts-3831",
-        "published_at": "2026-04-09T18:37:49Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "west",
-        "regions": [
-          "west",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.19
-      },
-      {
-        "event_id": "EVT-44a48bcda883",
-        "source_name": "Breitbart News",
-        "source_domain": "breitbart.com",
-        "title": "Former Seattle Seahawk Rickey Thenarse Shot Amid Dispute",
-        "summary": "Former Seattle Seahawk's player Rickey Thenarse was shot in the stomach in South Los Angeles on Friday and underwent emergency surgery, according to TMZ. The post Former Seattle Seahawk Rickey Thenarse Shot Amid Dispute appeared first on Breitbart.",
-        "url": "https://www.breitbart.com/2nd-amendment/2026/04/09/former-seattle-seahawk-rickey-thenarse-shot-amid-dispute/",
-        "published_at": "2026-04-09T18:33:03Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "west",
-        "regions": [
-          "west",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.27
+        "age_hours": 24.26
       }
     ],
     "south": [
       {
-        "event_id": "EVT-0c0fad8eb17c",
-        "source_name": "GlobeNewswire",
-        "source_domain": "globenewswire.com",
-        "title": "Telos Corporation\u2019s Xacta Platform Achieves Full FedRAMP High Authorization with Addition of Xacta.io and Xacta.ai",
-        "summary": "Full Xacta platform now FedRAMP High authorized, expanding AI-driven compliance and risk management capabilities for mission-critical environments Full Xacta platform now FedRAMP High authorized, expanding AI-driven compliance and risk management capabilities\u2026",
-        "url": "https://www.globenewswire.com/news-release/2026/04/09/3271360/0/en/Telos-Corporation-s-Xacta-Platform-Achieves-Full-FedRAMP-High-Authorization-with-Addition-of-Xacta-io-and-Xacta-ai.html",
-        "published_at": "2026-04-09T18:45:00Z",
+        "event_id": "EVT-f60e8ee06386",
+        "source_name": "Fox News",
+        "source_domain": "foxnews.com",
+        "title": "Federal appeals court rejects Anthropic bid to block Pentagon blacklist in AI dispute",
+        "summary": "A federal court rejected Anthropic's bid to block the Department of War from blacklisting the artificial intelligence company's technology.",
+        "url": "https://www.foxnews.com/politics/federal-appeals-court-rejects-anthropic-bid-block-pentagon-blacklist-ai-dispute",
+        "published_at": "2026-04-09T19:20:22Z",
         "domains": [
-          "military_family_readiness"
+          "benefits"
         ],
-        "primary_domain": "military_family_readiness",
+        "primary_domain": "benefits",
         "event_type": "operational_event",
-        "direction": "worsening",
+        "direction": "neutral",
         "impact_level": "watch",
         "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Early pressure signal detected in military family readiness across affected regions.",
+        "relevance_score": 4.5,
+        "drivers": [
+          "appeal",
+          "appeals"
+        ],
+        "forecast": "Continue monitoring benefits across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "south",
+        "regions": [
+          "south",
+          "midwest"
+        ],
+        "scope": "multi_region",
+        "source_state": "live",
+        "age_hours": 24.13
+      },
+      {
+        "event_id": "EVT-3bdb0aae2209",
+        "source_name": "Mediaite",
+        "source_domain": "mediaite.com",
+        "title": "MS Host Claims He Was Getting Military-Style \u2018Thank You for Your Service\u2019 Compliments After Trump Election",
+        "summary": "MS NOW's Jonathan Capehart claimed he started receiving military style-\"thank you for your service\" messages from the public after Trump's first election. The post MS Host Claims He Was Getting Military-Style \u2018Thank You for Your Service\u2019 Compliments After Tru\u2026",
+        "url": "https://www.mediaite.com/media/ms-host-claims-he-was-getting-military-style-thank-you-for-your-service-compliments-after-trump-election/",
+        "published_at": "2026-04-09T19:11:36Z",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "benefits_access",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.5,
+        "drivers": [
+          "claims",
+          "claim"
+        ],
+        "forecast": "Continue monitoring benefits across affected regions for directional change.",
         "evidence_count": 1,
         "region": "south",
         "regions": [
@@ -945,348 +505,65 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.07
-      },
-      {
-        "event_id": "EVT-41f874fef58e",
-        "source_name": "Fox News",
-        "source_domain": "foxnews.com",
-        "title": "Common vaccine slashes Alzheimer's disease risk when dose is increased",
-        "summary": "A new study suggests a high-dose flu shot may cut Alzheimer's risk by nearly half in older adults, far outperforming the standard-dose vaccine version.",
-        "url": "https://www.foxnews.com/health/common-vaccine-slashes-alzheimers-disease-risk-when-dose-increased",
-        "published_at": "2026-04-09T18:43:24Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "worsening",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Early pressure signal detected in military family readiness across affected regions.",
-        "evidence_count": 1,
-        "region": "south",
-        "regions": [
-          "south",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.1
+        "age_hours": 24.28
       }
     ],
     "midwest": [
       {
-        "event_id": "EVT-fa5033f35491",
-        "source_name": "Worldsoccertalk.com",
-        "source_domain": "worldsoccertalk.com",
-        "title": "\u2018Ronaldo is a star, a very good player, but he\u2019s not a genius like Messi,\u2019 says 1986 World Cup champion Oscar Ruggeri",
-        "summary": "Lionel Messi and Cristiano Ronaldo have been at the center of one of the most intense rivalries. While some praise the Portuguese scoring prowess, others praise the Argentine\u2019s all-around capacity. In light of this, 1986 World Cup champion Oscar Ruggeri makes\u2026",
-        "url": "https://worldsoccertalk.com/news/ronaldo-is-a-star-a-very-good-player-but-hes-not-a-genius-like-messi-says-1986-world-cup-champion-oscar-ruggeri/",
-        "published_at": "2026-04-09T18:28:56Z",
-        "domains": [
-          "healthcare_system"
-        ],
-        "primary_domain": "healthcare_system",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "moderate",
-        "confidence": "moderate",
-        "relevance_score": 5.5,
-        "drivers": [
-          "capacity"
-        ],
-        "forecast": "Continue monitoring healthcare system across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.34
-      },
-      {
-        "event_id": "EVT-ff3a59937305",
-        "source_name": "Newser",
-        "source_domain": "newser.com",
-        "title": "NATO Chief Says Allies 'a Bit Slow' to Help With Iran",
-        "summary": "NATO Secretary-General Mark Rutte declined to say Thursday whether President Trump had repeated his threat to quit the military organization, saying only that the US leader was disappointed in some allies for being too slow to help with the Iran war. Rutte's \u2026",
-        "url": "https://www.newser.com/story/387044/nato-chief-says-allies-a-bit-slow-to-help-with-iran.html",
-        "published_at": "2026-04-09T18:45:00Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "policy_change",
-        "direction": "worsening",
-        "impact_level": "moderate",
-        "confidence": "moderate",
-        "relevance_score": 5.1,
-        "drivers": [],
-        "forecast": "Watch for continued pressure building in military family readiness across affected regions.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.07
-      },
-      {
-        "event_id": "EVT-fbcad047fae5",
-        "source_name": "ABC News (AU)",
-        "source_domain": "abc.net.au",
-        "title": "How the PM's Singapore visit could help Australia's fuel supply",
-        "summary": "Experts say visits like Anthony Albanese's trip to Singapore are important in securing Australia's energy supplies. As one observer puts it, \"when you don't have the stock, you need friends\".",
-        "url": "https://www.abc.net.au/news/2026-04-10/how-the-pms-singapore-visit-could-help-our-fuel-supply/106543820",
-        "published_at": "2026-04-09T18:42:50Z",
-        "domains": [
-          "cost_of_living"
-        ],
-        "primary_domain": "cost_of_living",
-        "event_type": "cost_pressure",
-        "direction": "worsening",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "fuel"
-        ],
-        "forecast": "Early pressure signal detected in cost of living across affected regions.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.11
-      },
-      {
-        "event_id": "EVT-d20bfd9ca74b",
-        "source_name": "Truthout",
-        "source_domain": "truthout.org",
-        "title": "Ceasefire Confusion Grows as Trump Threatens Renewed Start to Iran War",
-        "summary": "Karoline Leavitt denied Strait of Hormuz closure reports, but demanded it be \u201cimmediately\u201d reopened in the same presser.",
-        "url": "https://truthout.org/articles/ceasefire-confusion-grows-as-trump-threatens-renewed-start-to-iran-war/",
-        "published_at": "2026-04-09T18:39:51Z",
-        "domains": [
-          "housing_stability"
-        ],
-        "primary_domain": "housing_stability",
-        "event_type": "operational_event",
-        "direction": "improving",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "lease"
-        ],
-        "forecast": "Conditions may stabilize in housing stability across affected regions if current movement holds.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.16
-      },
-      {
-        "event_id": "EVT-0b6ba050e657",
+        "event_id": "EVT-3acb2d9ab5bc",
         "source_name": "The Times of India",
         "source_domain": "economictimes.indiatimes.com",
-        "title": "Centre saves \u20b955,000 crore as FY26 spending undershoots estimates",
-        "summary": "Government spending in the last fiscal year was less than planned. This saving of about \u20b955,000 crore will help manage tax collection shortfalls. Unspent funds were noted in ministries for water, sanitation, and housing. Savings also came from better direct b\u2026",
-        "url": "https://economictimes.indiatimes.com/news/economy/policy/centre-saves-55000-crore-as-fy26-spending-undershoots-estimates/articleshow/130151903.cms",
-        "published_at": "2026-04-09T18:31:25Z",
+        "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
+        "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
+        "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
+        "published_at": "2026-04-09T19:12:39Z",
         "domains": [
-          "housing_stability"
+          "employment",
+          "benefits"
         ],
-        "primary_domain": "housing_stability",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "housing"
-        ],
-        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.3
-      },
-      {
-        "event_id": "EVT-89f7cc5dd018",
-        "source_name": "Al Jazeera English",
-        "source_domain": "aljazeera.com",
-        "title": "Iran says it \u2018would be dumb\u2019 for US to let Netanyahu kill diplomacy",
-        "summary": "In an implicit response to JD Vance, Iran's Abbas Araghchi warns of the repercussions of Israel's attacks on Lebanon.",
-        "url": "https://www.aljazeera.com/news/2026/4/9/iran-says-it-would-be-dumb-for-us-to-let-netanyahu-kill-diplomacy",
-        "published_at": "2026-04-09T18:49:00Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.01
-      },
-      {
-        "event_id": "EVT-c7ad61b24271",
-        "source_name": "Freerepublic.com",
-        "source_domain": "freerepublic.com",
-        "title": "Bishop Strickland (anti-Francis conservative) Statement on Lebanon: A Cry for Mercy",
-        "summary": "My dear brothers and sisters in Christ, My heart is heavy as I look toward Lebanon \u2013 a land long marked by faith, suffering, and perseverance. Lebanon is not merely another nation in conflict. It is home to one of the oldest and largest Christian populations \u2026",
-        "url": "https://freerepublic.com/focus/f-religion/4374258/posts",
-        "published_at": "2026-04-09T18:48:15Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.02
-      },
-      {
-        "event_id": "EVT-66eb1efb18d2",
-        "source_name": "Consequence.net",
-        "source_domain": "consequence.net",
-        "title": "Zach Top Announces New 2026 Summer Tour Dates",
-        "summary": "The country singer has added 14 new dates for his 2026 \"Cold Beer & Country Music\" tour. Zach Top Announces New 2026 Summer Tour Dates Scoop Harrison",
-        "url": "https://consequence.net/2026/04/zach-top-2026-summer-tour-dates/",
-        "published_at": "2026-04-09T18:47:52Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.02
-      },
-      {
-        "event_id": "EVT-a43c07235fee",
-        "source_name": "The Hockey News",
-        "source_domain": "thehockeynews.com",
-        "title": "Flyers Depth Chart: Jack Berglund Signing Provides Massive Boost... Literally",
-        "summary": "After signing top center prospect Jack Berglund, the Philadelphia Flyers received quite a big organizational boost at the forward position, aiding them both now and in the future.",
-        "url": "https://thehockeynews.com/nhl/philadelphia-flyers/latest-news/flyers-depth-chart-jack-berglund-signing-provides-massive-boost-literally",
-        "published_at": "2026-04-09T18:46:43Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
+        "primary_domain": "employment",
+        "event_type": "benefits_access",
         "direction": "improving",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Conditions may stabilize in military family readiness across affected regions if current movement holds.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast",
-          "midwest"
+        "impact_level": "high",
+        "confidence": "high",
+        "relevance_score": 6.9,
+        "drivers": [
+          "pay",
+          "benefits"
         ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.04
-      },
-      {
-        "event_id": "EVT-8d7f9b22b5f6",
-        "source_name": "ABC News (AU)",
-        "source_domain": "abc.net.au",
-        "title": "Construction businesses vulnerable to supply chain shock, experts warn",
-        "summary": "Contractors, business owners and economists are warning that thousands of construction industry businesses could go bust as a result of supply chain disruptions caused by the Iran War, unless the government intervenes.",
-        "url": "https://www.abc.net.au/news/2026-04-10/construction-sector-warns-of-housing-delays-mass-layoffs/106548194",
-        "published_at": "2026-04-09T18:43:36Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
         "evidence_count": 1,
         "region": "midwest",
         "regions": [
-          "midwest"
+          "midwest",
+          "west"
         ],
-        "scope": "regional",
+        "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.1
+        "age_hours": 24.26
       },
       {
-        "event_id": "EVT-41f874fef58e",
+        "event_id": "EVT-f60e8ee06386",
         "source_name": "Fox News",
         "source_domain": "foxnews.com",
-        "title": "Common vaccine slashes Alzheimer's disease risk when dose is increased",
-        "summary": "A new study suggests a high-dose flu shot may cut Alzheimer's risk by nearly half in older adults, far outperforming the standard-dose vaccine version.",
-        "url": "https://www.foxnews.com/health/common-vaccine-slashes-alzheimers-disease-risk-when-dose-increased",
-        "published_at": "2026-04-09T18:43:24Z",
+        "title": "Federal appeals court rejects Anthropic bid to block Pentagon blacklist in AI dispute",
+        "summary": "A federal court rejected Anthropic's bid to block the Department of War from blacklisting the artificial intelligence company's technology.",
+        "url": "https://www.foxnews.com/politics/federal-appeals-court-rejects-anthropic-bid-block-pentagon-blacklist-ai-dispute",
+        "published_at": "2026-04-09T19:20:22Z",
         "domains": [
-          "military_family_readiness"
+          "benefits"
         ],
-        "primary_domain": "military_family_readiness",
+        "primary_domain": "benefits",
         "event_type": "operational_event",
-        "direction": "worsening",
+        "direction": "neutral",
         "impact_level": "watch",
         "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Early pressure signal detected in military family readiness across affected regions.",
+        "relevance_score": 4.5,
+        "drivers": [
+          "appeal",
+          "appeals"
+        ],
+        "forecast": "Continue monitoring benefits across affected regions for directional change.",
         "evidence_count": 1,
         "region": "south",
         "regions": [
@@ -1295,56 +572,61 @@
         ],
         "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.1
+        "age_hours": 24.13
       },
       {
-        "event_id": "EVT-129411a81c4d",
-        "source_name": "Thesurvivalpodcast.com",
-        "source_domain": "thesurvivalpodcast.com",
-        "title": "Expert Panel Q&A \u2013 Epi-3831",
-        "summary": "Today on The Survival Podcast the expert council covers a wide range of real world topics. Today we start with a question, how similar is the Iran conflict to Afghanistan or Vietnam? Then should you sell your home yourself or get a realtor? Thoughts on har\u2026",
-        "url": "https://www.thesurvivalpodcast.com/experts-3831",
-        "published_at": "2026-04-09T18:37:49Z",
+        "event_id": "EVT-711635ae4af3",
+        "source_name": "New York Post",
+        "source_domain": "nypost.com",
+        "title": "New Jersey just topped the nation in home price growth \u2014 and it\u2019s not even close",
+        "summary": "New data from Cotality shows the Garden State is absolutely the place to be.",
+        "url": "https://nypost.com/2026/04/09/real-estate/new-jersey-just-topped-the-nation-in-home-price-growth/",
+        "published_at": "2026-04-09T19:15:38Z",
         "domains": [
-          "military_family_readiness"
+          "housing_stability"
         ],
-        "primary_domain": "military_family_readiness",
+        "primary_domain": "housing_stability",
         "event_type": "operational_event",
         "direction": "neutral",
         "impact_level": "watch",
         "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "relevance_score": 4.5,
+        "drivers": [
+          "housing",
+          "home prices"
+        ],
+        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
         "evidence_count": 1,
-        "region": "west",
+        "region": "northeast",
         "regions": [
-          "west",
+          "northeast",
           "midwest"
         ],
         "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.19
+        "age_hours": 24.21
       },
       {
-        "event_id": "EVT-7047dff52ffb",
-        "source_name": "Breitbart News",
-        "source_domain": "breitbart.com",
-        "title": "Poll: Gen Z Shows Growing Negativity Towards AI",
-        "summary": "A recent Gallup survey reveals that young adults in the United States are increasingly negative about AI technology, even as more than half use it regularly. The post Poll: Gen Z Shows Growing Negativity Towards AI appeared first on Breitbart.",
-        "url": "https://www.breitbart.com/tech/2026/04/09/poll-gen-z-shows-growing-negativity-towards-ai/",
-        "published_at": "2026-04-09T18:36:32Z",
+        "event_id": "EVT-5d1c0039851e",
+        "source_name": "Gothamist",
+        "source_domain": "gothamist.com",
+        "title": "Alleged arson killer lit Queens house on fire to \u2018get out his rage,\u2019 prosecutors say",
+        "summary": "Roman Amatitla, 38, appears in Queens court for his arraignment on murder and arson charges on April 9, 2026. The 38-year-old defendant was recently fired from his job and didn't know anyone in the building, according to the district attorney\u2019s office. [ m\u2026",
+        "url": "https://gothamist.com/news/alleged-arson-killer-lit-queens-house-on-fire-to-get-out-his-rage-prosecutors-say",
+        "published_at": "2026-04-09T19:24:34Z",
         "domains": [
-          "military_family_readiness"
+          "employment"
         ],
-        "primary_domain": "military_family_readiness",
+        "primary_domain": "employment",
         "event_type": "operational_event",
-        "direction": "neutral",
+        "direction": "worsening",
         "impact_level": "watch",
         "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "relevance_score": 4.3,
+        "drivers": [
+          "job"
+        ],
+        "forecast": "Early pressure signal detected in employment across affected regions.",
         "evidence_count": 1,
         "region": "midwest",
         "regions": [
@@ -1352,89 +634,32 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.21
-      },
-      {
-        "event_id": "EVT-44a48bcda883",
-        "source_name": "Breitbart News",
-        "source_domain": "breitbart.com",
-        "title": "Former Seattle Seahawk Rickey Thenarse Shot Amid Dispute",
-        "summary": "Former Seattle Seahawk's player Rickey Thenarse was shot in the stomach in South Los Angeles on Friday and underwent emergency surgery, according to TMZ. The post Former Seattle Seahawk Rickey Thenarse Shot Amid Dispute appeared first on Breitbart.",
-        "url": "https://www.breitbart.com/2nd-amendment/2026/04/09/former-seattle-seahawk-rickey-thenarse-shot-amid-dispute/",
-        "published_at": "2026-04-09T18:33:03Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "west",
-        "regions": [
-          "west",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.27
+        "age_hours": 24.06
       }
     ],
     "northeast": [
       {
-        "event_id": "EVT-c4eb6c916324",
-        "source_name": "Business Insider",
-        "source_domain": "businessinsider.com",
-        "title": "Tell us about how your city has tried to make life more affordable",
-        "summary": "Is your city trying to make your life more affordable? We want to hear about it, and what it means for you.",
-        "url": "https://www.businessinsider.com/how-your-city-trying-make-life-affordable-buses-rent-childcare-2026-4",
-        "published_at": "2026-04-09T18:48:38Z",
+        "event_id": "EVT-711635ae4af3",
+        "source_name": "New York Post",
+        "source_domain": "nypost.com",
+        "title": "New Jersey just topped the nation in home price growth \u2014 and it\u2019s not even close",
+        "summary": "New data from Cotality shows the Garden State is absolutely the place to be.",
+        "url": "https://nypost.com/2026/04/09/real-estate/new-jersey-just-topped-the-nation-in-home-price-growth/",
+        "published_at": "2026-04-09T19:15:38Z",
         "domains": [
-          "housing_stability",
-          "cost_of_living"
+          "housing_stability"
         ],
         "primary_domain": "housing_stability",
         "event_type": "operational_event",
         "direction": "neutral",
-        "impact_level": "high",
-        "confidence": "moderate",
-        "relevance_score": 6.7,
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.5,
         "drivers": [
-          "affordability"
+          "housing",
+          "home prices"
         ],
-        "forecast": "Continue monitoring housing stability and cost of living across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.01
-      },
-      {
-        "event_id": "EVT-66eb1efb18d2",
-        "source_name": "Consequence.net",
-        "source_domain": "consequence.net",
-        "title": "Zach Top Announces New 2026 Summer Tour Dates",
-        "summary": "The country singer has added 14 new dates for his 2026 \"Cold Beer & Country Music\" tour. Zach Top Announces New 2026 Summer Tour Dates Scoop Harrison",
-        "url": "https://consequence.net/2026/04/zach-top-2026-summer-tour-dates/",
-        "published_at": "2026-04-09T18:47:52Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
         "evidence_count": 1,
         "region": "northeast",
         "regions": [
@@ -1443,97 +668,39 @@
         ],
         "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.02
-      },
-      {
-        "event_id": "EVT-a43c07235fee",
-        "source_name": "The Hockey News",
-        "source_domain": "thehockeynews.com",
-        "title": "Flyers Depth Chart: Jack Berglund Signing Provides Massive Boost... Literally",
-        "summary": "After signing top center prospect Jack Berglund, the Philadelphia Flyers received quite a big organizational boost at the forward position, aiding them both now and in the future.",
-        "url": "https://thehockeynews.com/nhl/philadelphia-flyers/latest-news/flyers-depth-chart-jack-berglund-signing-provides-massive-boost-literally",
-        "published_at": "2026-04-09T18:46:43Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "improving",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Conditions may stabilize in military family readiness across affected regions if current movement holds.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.04
-      },
-      {
-        "event_id": "EVT-4bdab2111c0c",
-        "source_name": "New York Post",
-        "source_domain": "nypost.com",
-        "title": "Jack White announces summer tour, two NYC shows. Get tickets today",
-        "summary": "The virtuosic axeman will melt a face or three at the Brooklyn Paramount on July 11-12.",
-        "url": "https://nypost.com/2026/04/09/ticket-sales/jack-white-summer-tour-2026-where-to-buy-tickets-schedule/",
-        "published_at": "2026-04-09T18:46:41Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.1,
-        "drivers": [],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast",
-          "west"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.04
+        "age_hours": 24.21
       }
     ]
   },
   "regional_tier3_contributions": {
     "west": {
       "housing_stability": 0.0,
-      "employment": 0.0,
+      "employment": -0.14,
       "cost_of_living": 0.0,
-      "benefits": 0.0,
+      "benefits": -0.14,
       "healthcare_system": 0.0,
-      "military_family_readiness": 0.06
+      "military_family_readiness": 0.0
     },
     "south": {
       "housing_stability": 0.0,
       "employment": 0.0,
       "cost_of_living": 0.0,
-      "benefits": 0.0,
+      "benefits": 0.04,
       "healthcare_system": 0.0,
-      "military_family_readiness": 0.16
+      "military_family_readiness": 0.0
     },
     "midwest": {
-      "housing_stability": -0.02,
-      "employment": 0.0,
-      "cost_of_living": 0.08,
-      "benefits": 0.0,
-      "healthcare_system": 0.04,
-      "military_family_readiness": 0.34
+      "housing_stability": 0.02,
+      "employment": -0.06,
+      "cost_of_living": 0.0,
+      "benefits": -0.12,
+      "healthcare_system": 0.0,
+      "military_family_readiness": 0.0
     },
     "northeast": {
-      "housing_stability": 0.07,
+      "housing_stability": 0.02,
       "employment": 0.0,
-      "cost_of_living": 0.07,
+      "cost_of_living": 0.0,
       "benefits": 0.0,
       "healthcare_system": 0.0,
       "military_family_readiness": 0.0
@@ -1542,179 +709,123 @@
   "domain_events": {
     "housing_stability": [
       {
-        "event_id": "EVT-c4eb6c916324",
-        "source_name": "Business Insider",
-        "source_domain": "businessinsider.com",
-        "title": "Tell us about how your city has tried to make life more affordable",
-        "summary": "Is your city trying to make your life more affordable? We want to hear about it, and what it means for you.",
-        "url": "https://www.businessinsider.com/how-your-city-trying-make-life-affordable-buses-rent-childcare-2026-4",
-        "published_at": "2026-04-09T18:48:38Z",
-        "domains": [
-          "housing_stability",
-          "cost_of_living"
-        ],
-        "primary_domain": "housing_stability",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "high",
-        "confidence": "moderate",
-        "relevance_score": 6.7,
-        "drivers": [
-          "affordability"
-        ],
-        "forecast": "Continue monitoring housing stability and cost of living across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.01
-      },
-      {
-        "event_id": "EVT-e6e9a411a677",
-        "source_name": "ABC News (AU)",
-        "source_domain": "abc.net.au",
-        "title": "Inside the church of the man who has been leading the US through war",
-        "summary": "The ABC visits US Defense Secretary Pete Hegseth's church, whose leaders challenge the legitimacy of democracy and key principles in the US constitution.",
-        "url": "https://www.abc.net.au/news/2026-04-10/pete-hegseth-holy-war-in-iran-christian-nationalism/106500910",
-        "published_at": "2026-04-09T18:38:15Z",
+        "event_id": "EVT-711635ae4af3",
+        "source_name": "New York Post",
+        "source_domain": "nypost.com",
+        "title": "New Jersey just topped the nation in home price growth \u2014 and it\u2019s not even close",
+        "summary": "New data from Cotality shows the Garden State is absolutely the place to be.",
+        "url": "https://nypost.com/2026/04/09/real-estate/new-jersey-just-topped-the-nation-in-home-price-growth/",
+        "published_at": "2026-04-09T19:15:38Z",
         "domains": [
           "housing_stability"
         ],
         "primary_domain": "housing_stability",
-        "event_type": "housing_pressure",
-        "direction": "worsening",
-        "impact_level": "moderate",
-        "confidence": "moderate",
-        "relevance_score": 5.3,
-        "drivers": [
-          "rent"
-        ],
-        "forecast": "Watch for continued pressure building in housing stability nationally.",
-        "evidence_count": 1,
-        "region": "national",
-        "regions": [
-          "national"
-        ],
-        "scope": "national",
-        "source_state": "live",
-        "age_hours": 24.19
-      }
-    ],
-    "employment": [],
-    "military_family_readiness": [
-      {
-        "event_id": "EVT-ff3a59937305",
-        "source_name": "Newser",
-        "source_domain": "newser.com",
-        "title": "NATO Chief Says Allies 'a Bit Slow' to Help With Iran",
-        "summary": "NATO Secretary-General Mark Rutte declined to say Thursday whether President Trump had repeated his threat to quit the military organization, saying only that the US leader was disappointed in some allies for being too slow to help with the Iran war. Rutte's \u2026",
-        "url": "https://www.newser.com/story/387044/nato-chief-says-allies-a-bit-slow-to-help-with-iran.html",
-        "published_at": "2026-04-09T18:45:00Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "policy_change",
-        "direction": "worsening",
-        "impact_level": "moderate",
-        "confidence": "moderate",
-        "relevance_score": 5.1,
-        "drivers": [],
-        "forecast": "Watch for continued pressure building in military family readiness across affected regions.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.07
-      },
-      {
-        "event_id": "EVT-db241214edce",
-        "source_name": "The New Republic",
-        "source_domain": "newrepublic.com",
-        "title": "DNC Kills Resolution Condemning AIPAC Influence in Elections",
-        "summary": "A Democratic National Committee panel on Thursday killed a resolution condemning the \u201cgrowing influence\u201d of dark money groups like the American Israel Public Affairs Committee (AIPAC)\u2014even as an overwhelming majority of Democrat voters have an unfavorable vie\u2026",
-        "url": "https://newrepublic.com/post/208890/dnc-kills-resolution-condemning-aipac",
-        "published_at": "2026-04-09T18:31:12Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "policy_change",
-        "direction": "worsening",
-        "impact_level": "moderate",
-        "confidence": "moderate",
-        "relevance_score": 5.1,
-        "drivers": [],
-        "forecast": "Watch for continued pressure building in military family readiness nationally.",
-        "evidence_count": 1,
-        "region": "national",
-        "regions": [
-          "national"
-        ],
-        "scope": "national",
-        "source_state": "live",
-        "age_hours": 24.3
-      }
-    ],
-    "cost_of_living": [
-      {
-        "event_id": "EVT-c4eb6c916324",
-        "source_name": "Business Insider",
-        "source_domain": "businessinsider.com",
-        "title": "Tell us about how your city has tried to make life more affordable",
-        "summary": "Is your city trying to make your life more affordable? We want to hear about it, and what it means for you.",
-        "url": "https://www.businessinsider.com/how-your-city-trying-make-life-affordable-buses-rent-childcare-2026-4",
-        "published_at": "2026-04-09T18:48:38Z",
-        "domains": [
-          "housing_stability",
-          "cost_of_living"
-        ],
-        "primary_domain": "housing_stability",
         "event_type": "operational_event",
         "direction": "neutral",
-        "impact_level": "high",
-        "confidence": "moderate",
-        "relevance_score": 6.7,
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.5,
         "drivers": [
-          "affordability"
+          "housing",
+          "home prices"
         ],
-        "forecast": "Continue monitoring housing stability and cost of living across affected regions for directional change.",
+        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
         "evidence_count": 1,
         "region": "northeast",
         "regions": [
-          "northeast"
+          "northeast",
+          "midwest"
         ],
-        "scope": "regional",
+        "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.01
+        "age_hours": 24.21
       },
       {
-        "event_id": "EVT-fbcad047fae5",
-        "source_name": "ABC News (AU)",
-        "source_domain": "abc.net.au",
-        "title": "How the PM's Singapore visit could help Australia's fuel supply",
-        "summary": "Experts say visits like Anthony Albanese's trip to Singapore are important in securing Australia's energy supplies. As one observer puts it, \"when you don't have the stock, you need friends\".",
-        "url": "https://www.abc.net.au/news/2026-04-10/how-the-pms-singapore-visit-could-help-our-fuel-supply/106543820",
-        "published_at": "2026-04-09T18:42:50Z",
+        "event_id": "EVT-11c93cb97d05",
+        "source_name": "National Institutes of Health",
+        "source_domain": "ncbi.nlm.nih.gov",
+        "title": "New | phs004467.v2.p1 | NHLBI Growth and Health Study (NGHS-BioLINCC)",
+        "summary": "NHLBI Growth and Health Study (NGHS-BioLINCC) (study page | release notes )",
+        "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs004467.v2.p1",
+        "published_at": "2026-04-09T19:20:00Z",
         "domains": [
-          "cost_of_living"
+          "housing_stability"
         ],
-        "primary_domain": "cost_of_living",
-        "event_type": "cost_pressure",
+        "primary_domain": "housing_stability",
+        "event_type": "operational_event",
         "direction": "worsening",
         "impact_level": "watch",
         "confidence": "low",
         "relevance_score": 4.3,
         "drivers": [
-          "fuel"
+          "lease"
         ],
-        "forecast": "Early pressure signal detected in cost of living across affected regions.",
+        "forecast": "Early pressure signal detected in housing stability nationally.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "live",
+        "age_hours": 24.14
+      }
+    ],
+    "employment": [
+      {
+        "event_id": "EVT-3acb2d9ab5bc",
+        "source_name": "The Times of India",
+        "source_domain": "economictimes.indiatimes.com",
+        "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
+        "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
+        "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
+        "published_at": "2026-04-09T19:12:39Z",
+        "domains": [
+          "employment",
+          "benefits"
+        ],
+        "primary_domain": "employment",
+        "event_type": "benefits_access",
+        "direction": "improving",
+        "impact_level": "high",
+        "confidence": "high",
+        "relevance_score": 6.9,
+        "drivers": [
+          "pay",
+          "benefits"
+        ],
+        "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest",
+          "west"
+        ],
+        "scope": "multi_region",
+        "source_state": "live",
+        "age_hours": 24.26
+      },
+      {
+        "event_id": "EVT-5d1c0039851e",
+        "source_name": "Gothamist",
+        "source_domain": "gothamist.com",
+        "title": "Alleged arson killer lit Queens house on fire to \u2018get out his rage,\u2019 prosecutors say",
+        "summary": "Roman Amatitla, 38, appears in Queens court for his arraignment on murder and arson charges on April 9, 2026. The 38-year-old defendant was recently fired from his job and didn't know anyone in the building, according to the district attorney\u2019s office. [ m\u2026",
+        "url": "https://gothamist.com/news/alleged-arson-killer-lit-queens-house-on-fire-to-get-out-his-rage-prosecutors-say",
+        "published_at": "2026-04-09T19:24:34Z",
+        "domains": [
+          "employment"
+        ],
+        "primary_domain": "employment",
+        "event_type": "operational_event",
+        "direction": "worsening",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "job"
+        ],
+        "forecast": "Early pressure signal detected in employment across affected regions.",
         "evidence_count": 1,
         "region": "midwest",
         "regions": [
@@ -1722,42 +833,79 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.11
+        "age_hours": 24.06
       }
     ],
-    "healthcare_system": [
+    "military_family_readiness": [],
+    "cost_of_living": [],
+    "healthcare_system": [],
+    "benefits": [
       {
-        "event_id": "EVT-fa5033f35491",
-        "source_name": "Worldsoccertalk.com",
-        "source_domain": "worldsoccertalk.com",
-        "title": "\u2018Ronaldo is a star, a very good player, but he\u2019s not a genius like Messi,\u2019 says 1986 World Cup champion Oscar Ruggeri",
-        "summary": "Lionel Messi and Cristiano Ronaldo have been at the center of one of the most intense rivalries. While some praise the Portuguese scoring prowess, others praise the Argentine\u2019s all-around capacity. In light of this, 1986 World Cup champion Oscar Ruggeri makes\u2026",
-        "url": "https://worldsoccertalk.com/news/ronaldo-is-a-star-a-very-good-player-but-hes-not-a-genius-like-messi-says-1986-world-cup-champion-oscar-ruggeri/",
-        "published_at": "2026-04-09T18:28:56Z",
+        "event_id": "EVT-3acb2d9ab5bc",
+        "source_name": "The Times of India",
+        "source_domain": "economictimes.indiatimes.com",
+        "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
+        "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
+        "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
+        "published_at": "2026-04-09T19:12:39Z",
         "domains": [
-          "healthcare_system"
+          "employment",
+          "benefits"
         ],
-        "primary_domain": "healthcare_system",
+        "primary_domain": "employment",
+        "event_type": "benefits_access",
+        "direction": "improving",
+        "impact_level": "high",
+        "confidence": "high",
+        "relevance_score": 6.9,
+        "drivers": [
+          "pay",
+          "benefits"
+        ],
+        "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest",
+          "west"
+        ],
+        "scope": "multi_region",
+        "source_state": "live",
+        "age_hours": 24.26
+      },
+      {
+        "event_id": "EVT-f60e8ee06386",
+        "source_name": "Fox News",
+        "source_domain": "foxnews.com",
+        "title": "Federal appeals court rejects Anthropic bid to block Pentagon blacklist in AI dispute",
+        "summary": "A federal court rejected Anthropic's bid to block the Department of War from blacklisting the artificial intelligence company's technology.",
+        "url": "https://www.foxnews.com/politics/federal-appeals-court-rejects-anthropic-bid-block-pentagon-blacklist-ai-dispute",
+        "published_at": "2026-04-09T19:20:22Z",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
         "event_type": "operational_event",
         "direction": "neutral",
-        "impact_level": "moderate",
-        "confidence": "moderate",
-        "relevance_score": 5.5,
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.5,
         "drivers": [
-          "capacity"
+          "appeal",
+          "appeals"
         ],
-        "forecast": "Continue monitoring healthcare system across affected regions for directional change.",
+        "forecast": "Continue monitoring benefits across affected regions for directional change.",
         "evidence_count": 1,
-        "region": "midwest",
+        "region": "south",
         "regions": [
+          "south",
           "midwest"
         ],
-        "scope": "regional",
+        "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.34
+        "age_hours": 24.13
       }
-    ],
-    "benefits": []
+    ]
   },
-  "generated_at": "2026-04-10T18:49:21.122681+00:00"
+  "generated_at": "2026-04-10T19:28:17.167848+00:00"
 }
