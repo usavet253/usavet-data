@@ -6,14 +6,14 @@
   "band": "Balanced / Watch",
   "trend": "stable",
   "pressure_label": "Balanced / Watch",
-  "source_quality": "Moderate Confidence",
+  "source_quality": "High Confidence",
   "index": {
     "overall_score": 50.4,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
     "pressure_label": "Balanced / Watch",
-    "source_quality": "Moderate Confidence",
+    "source_quality": "High Confidence",
     "weights": {
       "housing_stability": 0.2,
       "cost_of_living": 0.2,
@@ -28,18 +28,18 @@
     "Housing score: 55.4",
     "Cost of living score: 53.6",
     "Employment score: 51.4",
-    "Benefits score: 41.9",
+    "Benefits score: 42.8",
     "Healthcare system score: 45.0",
-    "Military family readiness score: 53.5",
-    "Source confidence: Moderate Confidence"
+    "Military family readiness score: 52.4",
+    "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 55.4,
     "employment": 51.4,
-    "military_family_readiness": 53.5,
+    "military_family_readiness": 52.4,
     "cost_of_living": 53.6,
     "healthcare_system": 45.0,
-    "benefits": 41.9
+    "benefits": 42.8
   },
   "brief": {
     "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.4.",
@@ -47,10 +47,10 @@
       "Housing score: 55.4",
       "Cost of living score: 53.6",
       "Employment score: 51.4",
-      "Benefits score: 41.9",
+      "Benefits score: 42.8",
       "Healthcare system score: 45.0",
-      "Military family readiness score: 53.5",
-      "Source confidence: Moderate Confidence"
+      "Military family readiness score: 52.4",
+      "Source confidence: High Confidence"
     ]
   },
   "history": [
@@ -143,7 +143,7 @@
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     },
     {
-      "time": "2026-04-10T00:44:39.585596+00:00",
+      "time": "2026-04-10T01:24:40.581901+00:00",
       "as_of": "2026-04-10",
       "overall_score": 50.4,
       "score": 50.4,
@@ -154,9 +154,9 @@
       "housing_stability": 55.4,
       "cost_of_living": 53.6,
       "employment": 51.4,
-      "benefits": 41.9,
+      "benefits": 42.8,
       "healthcare_system": 45.0,
-      "military_family_readiness": 53.5,
+      "military_family_readiness": 52.4,
       "housing_stability_model": "housing_v3_continuous_tiered",
       "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
       "employment_model": "employment_v3_continuous_tiered",
@@ -167,8 +167,46 @@
   ],
   "events": [],
   "priority_signals": [],
-  "regional_events": {},
-  "regional_tier3_contributions": {},
+  "regional_events": {
+    "west": [],
+    "south": [],
+    "midwest": [],
+    "northeast": []
+  },
+  "regional_tier3_contributions": {
+    "west": {
+      "housing_stability": 0.0,
+      "employment": 0.0,
+      "cost_of_living": 0.0,
+      "benefits": 0.0,
+      "healthcare_system": 0.0,
+      "military_family_readiness": 0.0
+    },
+    "south": {
+      "housing_stability": 0.0,
+      "employment": 0.0,
+      "cost_of_living": 0.0,
+      "benefits": 0.0,
+      "healthcare_system": 0.0,
+      "military_family_readiness": 0.0
+    },
+    "midwest": {
+      "housing_stability": 0.0,
+      "employment": 0.0,
+      "cost_of_living": 0.0,
+      "benefits": 0.0,
+      "healthcare_system": 0.0,
+      "military_family_readiness": 0.0
+    },
+    "northeast": {
+      "housing_stability": 0.0,
+      "employment": 0.0,
+      "cost_of_living": 0.0,
+      "benefits": 0.0,
+      "healthcare_system": 0.0,
+      "military_family_readiness": 0.0
+    }
+  },
   "domain_events": {
     "housing_stability": [],
     "employment": [],
@@ -177,5 +215,5 @@
     "healthcare_system": [],
     "benefits": []
   },
-  "generated_at": "2026-04-10T00:44:39.585596+00:00"
+  "generated_at": "2026-04-10T01:24:40.581901+00:00"
 }
