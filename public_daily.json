@@ -6,14 +6,14 @@
   "band": "Balanced / Watch",
   "trend": "stable",
   "pressure_label": "Balanced / Watch",
-  "source_quality": "High Confidence",
+  "source_quality": "Moderate Confidence",
   "index": {
     "overall_score": 50.7,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
     "pressure_label": "Balanced / Watch",
-    "source_quality": "High Confidence",
+    "source_quality": "Moderate Confidence",
     "weights": {
       "housing_stability": 0.2,
       "cost_of_living": 0.2,
@@ -28,18 +28,18 @@
     "Housing score: 55.4",
     "Cost of living score: 55.1",
     "Employment score: 51.4",
-    "Benefits score: 41.9",
+    "Benefits score: 41.6",
     "Healthcare system score: 45.0",
-    "Military family readiness score: 53.3",
-    "Source confidence: High Confidence"
+    "Military family readiness score: 53.8",
+    "Source confidence: Moderate Confidence"
   ],
   "domains": {
     "housing_stability": 55.4,
     "employment": 51.4,
-    "military_family_readiness": 53.3,
+    "military_family_readiness": 53.8,
     "cost_of_living": 55.1,
     "healthcare_system": 45.0,
-    "benefits": 41.9
+    "benefits": 41.6
   },
   "brief": {
     "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.7.",
@@ -47,10 +47,10 @@
       "Housing score: 55.4",
       "Cost of living score: 55.1",
       "Employment score: 51.4",
-      "Benefits score: 41.9",
+      "Benefits score: 41.6",
       "Healthcare system score: 45.0",
-      "Military family readiness score: 53.3",
-      "Source confidence: High Confidence"
+      "Military family readiness score: 53.8",
+      "Source confidence: Moderate Confidence"
     ]
   },
   "history": [
@@ -143,7 +143,7 @@
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     },
     {
-      "time": "2026-04-10T22:23:31.055033+00:00",
+      "time": "2026-04-10T23:08:23.226967+00:00",
       "as_of": "2026-04-10",
       "overall_score": 50.7,
       "score": 50.7,
@@ -154,9 +154,9 @@
       "housing_stability": 55.4,
       "cost_of_living": 55.1,
       "employment": 51.4,
-      "benefits": 41.9,
+      "benefits": 41.6,
       "healthcare_system": 45.0,
-      "military_family_readiness": 53.3,
+      "military_family_readiness": 53.8,
       "housing_stability_model": "housing_v3_continuous_tiered",
       "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
       "employment_model": "employment_v3_continuous_tiered",
@@ -167,26 +167,27 @@
   ],
   "events": [
     {
-      "event_id": "EVT-55ae5833aad4",
-      "source_name": "seattlepi.com",
-      "source_domain": "seattlepi.com",
-      "title": "Venezuelan lawmakers approve sweeping mining bill to lure foreign investors",
-      "summary": "Venezuelan lawmakers have approved a bill to regulate the country\u2019s mining as it seeks to attract leery foreign investors to a once-private industry that has long been exploited by criminal groups with ties to the government. It is the latest legislative init\u2026",
-      "url": "https://www.seattlepi.com/news/world/article/venezuelan-lawmakers-approve-sweeping-mining-bill-22198342.php",
-      "published_at": "2026-04-09T22:22:25Z",
+      "event_id": "EVT-e6ca781e64ee",
+      "source_name": "GlobeNewswire",
+      "source_domain": "globenewswire.com",
+      "title": "Titan Carve Cutting Board Claims Evaluated: 2026 Report Highlights Titanium Cutting Boards Durability, Hygiene Design, and Knife-Surface Positioning for Modern Kitchens",
+      "summary": "Titan Carve titanium cutting board claims evaluated: durability, knife-friendliness, hygiene, heat resistance, and pricing reviewed for 2026....",
+      "url": "https://www.globenewswire.com/news-release/2026/04/09/3271482/0/en/Titan-Carve-Cutting-Board-Claims-Evaluated-2026-Report-Highlights-Titanium-Cutting-Boards-Durability-Hygiene-Design-and-Knife-Surface-Positioning-for-Modern-Kitchens.html",
+      "published_at": "2026-04-09T23:05:00Z",
       "domains": [
-        "housing_stability"
+        "benefits"
       ],
-      "primary_domain": "housing_stability",
-      "event_type": "policy_change",
-      "direction": "neutral",
+      "primary_domain": "benefits",
+      "event_type": "benefits_access",
+      "direction": "worsening",
       "impact_level": "watch",
-      "confidence": "moderate",
-      "relevance_score": 5.3,
+      "confidence": "low",
+      "relevance_score": 4.5,
       "drivers": [
-        "lease"
+        "claims",
+        "claim"
       ],
-      "forecast": "Continue monitoring housing stability across affected regions for directional change.",
+      "forecast": "Early pressure signal detected in benefits across affected regions.",
       "evidence_count": 1,
       "region": "west",
       "regions": [
@@ -194,121 +195,29 @@
       ],
       "scope": "regional",
       "source_state": "live",
-      "age_hours": 24.02
+      "age_hours": 24.06
     },
     {
-      "event_id": "EVT-556e1e077471",
-      "source_name": "Slashdot.org",
-      "source_domain": "slashdot.org",
-      "title": "Automatic U.S. military draft registration planned by December, filing shows - CNBC",
-      "summary": "Automatic U.S. military draft registration planned by December, filing showsCNBC US plans to automatically register men for military draft eligibilityBBC Automatic military draft registration takes effect in December. Here\u2019s how it would workCNN Which America\u2026",
-      "url": "https://slashdot.org/firehose.pl?op=view&amp;id=181505598",
-      "published_at": "2026-04-09T22:12:14Z",
-      "domains": [
-        "benefits"
-      ],
-      "primary_domain": "benefits",
-      "event_type": "benefits_access",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "moderate",
-      "relevance_score": 5.3,
-      "drivers": [
-        "eligibility"
-      ],
-      "forecast": "Continue monitoring benefits across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.19
-    },
-    {
-      "event_id": "EVT-eacdcd98138f",
-      "source_name": "Politicalwire.com",
-      "source_domain": "politicalwire.com",
-      "title": "Trump Again Hits Out at NATO Over Iran War",
-      "summary": "\u201cPresident Trump has hit out at NATO after a tense meeting with Mark Rutte, the secretary general of the military alliance, at the White House on Wednesday,\u201d the New York Times reports. \u201cMr. Rutte had traveled to Washington to try to assuage Mr. Trump\u2019s anger\u2026",
-      "url": "https://politicalwire.com/2026/04/09/trump-again-hits-out-at-nato-over-iran-war/",
-      "published_at": "2026-04-09T22:06:15Z",
-      "domains": [
-        "benefits"
-      ],
-      "primary_domain": "benefits",
-      "event_type": "policy_change",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "moderate",
-      "relevance_score": 5.3,
-      "drivers": [
-        "claim"
-      ],
-      "forecast": "Continue monitoring benefits across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "northeast",
-      "regions": [
-        "northeast",
-        "west"
-      ],
-      "scope": "multi_region",
-      "source_state": "live",
-      "age_hours": 24.29
-    },
-    {
-      "event_id": "EVT-ef081d4b07f3",
-      "source_name": "TheWrap",
-      "source_domain": "thewrap.com",
-      "title": "Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019",
-      "summary": "\"They\u2019re not 'MAGA,' they\u2019re losers, just trying to latch on to MAGA,\" the president adds The post Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019 appeared first on TheWrap.",
-      "url": "https://www.thewrap.com/media-platforms/politics/donald-trump-torches-megyn-kelly-alex-jones-maga-criticizing-iran-war/",
-      "published_at": "2026-04-09T22:09:34Z",
+      "event_id": "EVT-372518989a7a",
+      "source_name": "Royal Society of Chemistry",
+      "source_domain": "pubs.rsc.org",
+      "title": "Advanced pathways for hydrogen production: a collective view from a technical experts meeting",
+      "summary": "Energy Environ. Sci., 2026, Advance ArticleDOI: 10.1039/D5EE04503G, Perspective Open Access This article is licensed under a Creative Commons Attribution 3.0 Unported Licence.Katherine J. Chou, Yaset Acevedo, Peter Agbo, Alicia Bayon, Alexander S. Belia\u2026",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2026/ee/d5ee04503g",
+      "published_at": "2026-04-09T23:00:00Z",
       "domains": [
         "employment"
       ],
       "primary_domain": "employment",
-      "event_type": "employment_pressure",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.5,
-      "drivers": [
-        "job",
-        "jobs"
-      ],
-      "forecast": "Continue monitoring employment across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.23
-    },
-    {
-      "event_id": "EVT-2c4847a471c6",
-      "source_name": "TheJournal.ie",
-      "source_domain": "thejournal.ie",
-      "title": "From full-throated support to outrage, our readers have their say on the fuel protests",
-      "summary": "There was plenty of criticism for the government\u2019s handling of the fuel crisis and the protests themselves.",
-      "url": "https://www.thejournal.ie/your-stories-fuel-protests-7008178-Apr2026/",
-      "published_at": "2026-04-09T22:11:27Z",
-      "domains": [
-        "cost_of_living"
-      ],
-      "primary_domain": "cost_of_living",
-      "event_type": "cost_pressure",
+      "event_type": "operational_event",
       "direction": "neutral",
       "impact_level": "watch",
       "confidence": "low",
       "relevance_score": 4.3,
       "drivers": [
-        "fuel"
+        "labor"
       ],
-      "forecast": "Continue monitoring cost of living nationally for directional change.",
+      "forecast": "Continue monitoring employment nationally for directional change.",
       "evidence_count": 1,
       "region": "national",
       "regions": [
@@ -316,16 +225,16 @@
       ],
       "scope": "national",
       "source_state": "live",
-      "age_hours": 24.2
+      "age_hours": 24.14
     },
     {
-      "event_id": "EVT-bd72a38bf83c",
-      "source_name": "Us Weekly",
-      "source_domain": "usmagazine.com",
-      "title": "Why Jill Duggar's Family Is Moving Away From Arkansas",
-      "summary": "Jill Duggar and her husband, Derick Dillard, are leaving Arkansas. \u201cDerick has joined the Marine Corps! He has been selected for Marine Corps Officer Candidate School (OCS),\u201d Duggar, 34, wrote via her family\u2019s blog on Thursday, April 9, noting Dillard, 37, \u201cs\u2026",
-      "url": "https://www.usmagazine.com/celebrity-news/news/why-jill-duggars-family-is-moving-away-from-arkansas/",
-      "published_at": "2026-04-09T22:01:39Z",
+      "event_id": "EVT-f5f84998bf62",
+      "source_name": "Histalk2.com",
+      "source_domain": "histalk2.com",
+      "title": "Morning Headlines 4/10/26",
+      "summary": "Trump\u2019s Personnel Agency Is Asking for Federal Workers\u2019 Medical Records ...",
+      "url": "https://histalk2.com/2026/04/09/morning-headlines-4-10-26/",
+      "published_at": "2026-04-09T22:54:44Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -338,42 +247,102 @@
       "drivers": [
         "family"
       ],
-      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
       "evidence_count": 1,
-      "region": "south",
+      "region": "national",
       "regions": [
-        "south",
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": 24.23
+    },
+    {
+      "event_id": "EVT-8bd16425a63f",
+      "source_name": "Snopes.com",
+      "source_domain": "snopes.com",
+      "title": "What to know about automatic US military draft registration planned by December 2026",
+      "summary": "In the past, eligible men have had to self-register for the draft by law. A change will make it so they are automatically registered.",
+      "url": "https://www.snopes.com//fact-check/auto-military-draft-registration/",
+      "published_at": "2026-04-09T22:43:00Z",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "claim"
+      ],
+      "forecast": "Continue monitoring benefits across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
         "midwest"
       ],
-      "scope": "multi_region",
+      "scope": "regional",
       "source_state": "live",
-      "age_hours": 24.36
+      "age_hours": 24.42
+    },
+    {
+      "event_id": "EVT-c61498007239",
+      "source_name": "GlobeNewswire",
+      "source_domain": "globenewswire.com",
+      "title": "Corbin Advisors Releases Q1\u201926 Inside The Buy-Side\u00ae Earnings Primer\u00ae",
+      "summary": "Survey Finds After Three Quarters of Bullish Momentum, Investor Sentiment Predictably Withdraws amid Iran War Fallout...",
+      "url": "https://www.globenewswire.com/news-release/2026/04/09/3271480/0/en/Corbin-Advisors-Releases-Q1-26-Inside-The-Buy-Side-Earnings-Primer.html",
+      "published_at": "2026-04-09T22:40:00Z",
+      "domains": [
+        "housing_stability"
+      ],
+      "primary_domain": "housing_stability",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "lease"
+      ],
+      "forecast": "Continue monitoring housing stability across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": 24.47
     }
   ],
   "priority_signals": [],
   "regional_events": {
     "west": [
       {
-        "event_id": "EVT-55ae5833aad4",
-        "source_name": "seattlepi.com",
-        "source_domain": "seattlepi.com",
-        "title": "Venezuelan lawmakers approve sweeping mining bill to lure foreign investors",
-        "summary": "Venezuelan lawmakers have approved a bill to regulate the country\u2019s mining as it seeks to attract leery foreign investors to a once-private industry that has long been exploited by criminal groups with ties to the government. It is the latest legislative init\u2026",
-        "url": "https://www.seattlepi.com/news/world/article/venezuelan-lawmakers-approve-sweeping-mining-bill-22198342.php",
-        "published_at": "2026-04-09T22:22:25Z",
+        "event_id": "EVT-e6ca781e64ee",
+        "source_name": "GlobeNewswire",
+        "source_domain": "globenewswire.com",
+        "title": "Titan Carve Cutting Board Claims Evaluated: 2026 Report Highlights Titanium Cutting Boards Durability, Hygiene Design, and Knife-Surface Positioning for Modern Kitchens",
+        "summary": "Titan Carve titanium cutting board claims evaluated: durability, knife-friendliness, hygiene, heat resistance, and pricing reviewed for 2026....",
+        "url": "https://www.globenewswire.com/news-release/2026/04/09/3271482/0/en/Titan-Carve-Cutting-Board-Claims-Evaluated-2026-Report-Highlights-Titanium-Cutting-Boards-Durability-Hygiene-Design-and-Knife-Surface-Positioning-for-Modern-Kitchens.html",
+        "published_at": "2026-04-09T23:05:00Z",
         "domains": [
-          "housing_stability"
+          "benefits"
         ],
-        "primary_domain": "housing_stability",
-        "event_type": "policy_change",
-        "direction": "neutral",
+        "primary_domain": "benefits",
+        "event_type": "benefits_access",
+        "direction": "worsening",
         "impact_level": "watch",
-        "confidence": "moderate",
-        "relevance_score": 5.3,
+        "confidence": "low",
+        "relevance_score": 4.5,
         "drivers": [
-          "lease"
+          "claims",
+          "claim"
         ],
-        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
+        "forecast": "Early pressure signal detected in benefits across affected regions.",
         "evidence_count": 1,
         "region": "west",
         "regions": [
@@ -381,207 +350,80 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.02
-      },
-      {
-        "event_id": "EVT-eacdcd98138f",
-        "source_name": "Politicalwire.com",
-        "source_domain": "politicalwire.com",
-        "title": "Trump Again Hits Out at NATO Over Iran War",
-        "summary": "\u201cPresident Trump has hit out at NATO after a tense meeting with Mark Rutte, the secretary general of the military alliance, at the White House on Wednesday,\u201d the New York Times reports. \u201cMr. Rutte had traveled to Washington to try to assuage Mr. Trump\u2019s anger\u2026",
-        "url": "https://politicalwire.com/2026/04/09/trump-again-hits-out-at-nato-over-iran-war/",
-        "published_at": "2026-04-09T22:06:15Z",
-        "domains": [
-          "benefits"
-        ],
-        "primary_domain": "benefits",
-        "event_type": "policy_change",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "moderate",
-        "relevance_score": 5.3,
-        "drivers": [
-          "claim"
-        ],
-        "forecast": "Continue monitoring benefits across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast",
-          "west"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.29
+        "age_hours": 24.06
       }
     ],
-    "south": [
-      {
-        "event_id": "EVT-bd72a38bf83c",
-        "source_name": "Us Weekly",
-        "source_domain": "usmagazine.com",
-        "title": "Why Jill Duggar's Family Is Moving Away From Arkansas",
-        "summary": "Jill Duggar and her husband, Derick Dillard, are leaving Arkansas. \u201cDerick has joined the Marine Corps! He has been selected for Marine Corps Officer Candidate School (OCS),\u201d Duggar, 34, wrote via her family\u2019s blog on Thursday, April 9, noting Dillard, 37, \u201cs\u2026",
-        "url": "https://www.usmagazine.com/celebrity-news/news/why-jill-duggars-family-is-moving-away-from-arkansas/",
-        "published_at": "2026-04-09T22:01:39Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "family"
-        ],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "south",
-        "regions": [
-          "south",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.36
-      }
-    ],
+    "south": [],
     "midwest": [
       {
-        "event_id": "EVT-556e1e077471",
-        "source_name": "Slashdot.org",
-        "source_domain": "slashdot.org",
-        "title": "Automatic U.S. military draft registration planned by December, filing shows - CNBC",
-        "summary": "Automatic U.S. military draft registration planned by December, filing showsCNBC US plans to automatically register men for military draft eligibilityBBC Automatic military draft registration takes effect in December. Here\u2019s how it would workCNN Which America\u2026",
-        "url": "https://slashdot.org/firehose.pl?op=view&amp;id=181505598",
-        "published_at": "2026-04-09T22:12:14Z",
+        "event_id": "EVT-8bd16425a63f",
+        "source_name": "Snopes.com",
+        "source_domain": "snopes.com",
+        "title": "What to know about automatic US military draft registration planned by December 2026",
+        "summary": "In the past, eligible men have had to self-register for the draft by law. A change will make it so they are automatically registered.",
+        "url": "https://www.snopes.com//fact-check/auto-military-draft-registration/",
+        "published_at": "2026-04-09T22:43:00Z",
         "domains": [
           "benefits"
         ],
         "primary_domain": "benefits",
-        "event_type": "benefits_access",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "moderate",
-        "relevance_score": 5.3,
-        "drivers": [
-          "eligibility"
-        ],
-        "forecast": "Continue monitoring benefits across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.19
-      },
-      {
-        "event_id": "EVT-ef081d4b07f3",
-        "source_name": "TheWrap",
-        "source_domain": "thewrap.com",
-        "title": "Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019",
-        "summary": "\"They\u2019re not 'MAGA,' they\u2019re losers, just trying to latch on to MAGA,\" the president adds The post Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019 appeared first on TheWrap.",
-        "url": "https://www.thewrap.com/media-platforms/politics/donald-trump-torches-megyn-kelly-alex-jones-maga-criticizing-iran-war/",
-        "published_at": "2026-04-09T22:09:34Z",
-        "domains": [
-          "employment"
-        ],
-        "primary_domain": "employment",
-        "event_type": "employment_pressure",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.5,
-        "drivers": [
-          "job",
-          "jobs"
-        ],
-        "forecast": "Continue monitoring employment across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.23
-      },
-      {
-        "event_id": "EVT-bd72a38bf83c",
-        "source_name": "Us Weekly",
-        "source_domain": "usmagazine.com",
-        "title": "Why Jill Duggar's Family Is Moving Away From Arkansas",
-        "summary": "Jill Duggar and her husband, Derick Dillard, are leaving Arkansas. \u201cDerick has joined the Marine Corps! He has been selected for Marine Corps Officer Candidate School (OCS),\u201d Duggar, 34, wrote via her family\u2019s blog on Thursday, April 9, noting Dillard, 37, \u201cs\u2026",
-        "url": "https://www.usmagazine.com/celebrity-news/news/why-jill-duggars-family-is-moving-away-from-arkansas/",
-        "published_at": "2026-04-09T22:01:39Z",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
         "event_type": "operational_event",
         "direction": "neutral",
         "impact_level": "watch",
         "confidence": "low",
         "relevance_score": 4.3,
         "drivers": [
-          "family"
-        ],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "south",
-        "regions": [
-          "south",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.36
-      }
-    ],
-    "northeast": [
-      {
-        "event_id": "EVT-eacdcd98138f",
-        "source_name": "Politicalwire.com",
-        "source_domain": "politicalwire.com",
-        "title": "Trump Again Hits Out at NATO Over Iran War",
-        "summary": "\u201cPresident Trump has hit out at NATO after a tense meeting with Mark Rutte, the secretary general of the military alliance, at the White House on Wednesday,\u201d the New York Times reports. \u201cMr. Rutte had traveled to Washington to try to assuage Mr. Trump\u2019s anger\u2026",
-        "url": "https://politicalwire.com/2026/04/09/trump-again-hits-out-at-nato-over-iran-war/",
-        "published_at": "2026-04-09T22:06:15Z",
-        "domains": [
-          "benefits"
-        ],
-        "primary_domain": "benefits",
-        "event_type": "policy_change",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "moderate",
-        "relevance_score": 5.3,
-        "drivers": [
           "claim"
         ],
         "forecast": "Continue monitoring benefits across affected regions for directional change.",
         "evidence_count": 1,
-        "region": "northeast",
+        "region": "midwest",
         "regions": [
-          "northeast",
-          "west"
+          "midwest"
         ],
-        "scope": "multi_region",
+        "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.29
+        "age_hours": 24.42
+      },
+      {
+        "event_id": "EVT-c61498007239",
+        "source_name": "GlobeNewswire",
+        "source_domain": "globenewswire.com",
+        "title": "Corbin Advisors Releases Q1\u201926 Inside The Buy-Side\u00ae Earnings Primer\u00ae",
+        "summary": "Survey Finds After Three Quarters of Bullish Momentum, Investor Sentiment Predictably Withdraws amid Iran War Fallout...",
+        "url": "https://www.globenewswire.com/news-release/2026/04/09/3271480/0/en/Corbin-Advisors-Releases-Q1-26-Inside-The-Buy-Side-Earnings-Primer.html",
+        "published_at": "2026-04-09T22:40:00Z",
+        "domains": [
+          "housing_stability"
+        ],
+        "primary_domain": "housing_stability",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "lease"
+        ],
+        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.47
       }
-    ]
+    ],
+    "northeast": []
   },
   "regional_tier3_contributions": {
     "west": {
-      "housing_stability": 0.02,
+      "housing_stability": 0.0,
       "employment": 0.0,
       "cost_of_living": 0.0,
-      "benefits": 0.02,
+      "benefits": 0.08,
       "healthcare_system": 0.0,
       "military_family_readiness": 0.0
     },
@@ -591,21 +433,21 @@
       "cost_of_living": 0.0,
       "benefits": 0.0,
       "healthcare_system": 0.0,
-      "military_family_readiness": 0.02
+      "military_family_readiness": 0.0
     },
     "midwest": {
-      "housing_stability": 0.0,
-      "employment": 0.02,
+      "housing_stability": 0.02,
+      "employment": 0.0,
       "cost_of_living": 0.0,
       "benefits": 0.02,
       "healthcare_system": 0.0,
-      "military_family_readiness": 0.02
+      "military_family_readiness": 0.0
     },
     "northeast": {
       "housing_stability": 0.0,
       "employment": 0.0,
       "cost_of_living": 0.0,
-      "benefits": 0.02,
+      "benefits": 0.0,
       "healthcare_system": 0.0,
       "military_family_readiness": 0.0
     }
@@ -613,59 +455,26 @@
   "domain_events": {
     "housing_stability": [
       {
-        "event_id": "EVT-55ae5833aad4",
-        "source_name": "seattlepi.com",
-        "source_domain": "seattlepi.com",
-        "title": "Venezuelan lawmakers approve sweeping mining bill to lure foreign investors",
-        "summary": "Venezuelan lawmakers have approved a bill to regulate the country\u2019s mining as it seeks to attract leery foreign investors to a once-private industry that has long been exploited by criminal groups with ties to the government. It is the latest legislative init\u2026",
-        "url": "https://www.seattlepi.com/news/world/article/venezuelan-lawmakers-approve-sweeping-mining-bill-22198342.php",
-        "published_at": "2026-04-09T22:22:25Z",
+        "event_id": "EVT-c61498007239",
+        "source_name": "GlobeNewswire",
+        "source_domain": "globenewswire.com",
+        "title": "Corbin Advisors Releases Q1\u201926 Inside The Buy-Side\u00ae Earnings Primer\u00ae",
+        "summary": "Survey Finds After Three Quarters of Bullish Momentum, Investor Sentiment Predictably Withdraws amid Iran War Fallout...",
+        "url": "https://www.globenewswire.com/news-release/2026/04/09/3271480/0/en/Corbin-Advisors-Releases-Q1-26-Inside-The-Buy-Side-Earnings-Primer.html",
+        "published_at": "2026-04-09T22:40:00Z",
         "domains": [
           "housing_stability"
         ],
         "primary_domain": "housing_stability",
-        "event_type": "policy_change",
+        "event_type": "operational_event",
         "direction": "neutral",
         "impact_level": "watch",
-        "confidence": "moderate",
-        "relevance_score": 5.3,
+        "confidence": "low",
+        "relevance_score": 4.3,
         "drivers": [
           "lease"
         ],
         "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "west",
-        "regions": [
-          "west"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.02
-      }
-    ],
-    "employment": [
-      {
-        "event_id": "EVT-ef081d4b07f3",
-        "source_name": "TheWrap",
-        "source_domain": "thewrap.com",
-        "title": "Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019",
-        "summary": "\"They\u2019re not 'MAGA,' they\u2019re losers, just trying to latch on to MAGA,\" the president adds The post Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019 appeared first on TheWrap.",
-        "url": "https://www.thewrap.com/media-platforms/politics/donald-trump-torches-megyn-kelly-alex-jones-maga-criticizing-iran-war/",
-        "published_at": "2026-04-09T22:09:34Z",
-        "domains": [
-          "employment"
-        ],
-        "primary_domain": "employment",
-        "event_type": "employment_pressure",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.5,
-        "drivers": [
-          "job",
-          "jobs"
-        ],
-        "forecast": "Continue monitoring employment across affected regions for directional change.",
         "evidence_count": 1,
         "region": "midwest",
         "regions": [
@@ -673,18 +482,50 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.23
+        "age_hours": 24.47
+      }
+    ],
+    "employment": [
+      {
+        "event_id": "EVT-372518989a7a",
+        "source_name": "Royal Society of Chemistry",
+        "source_domain": "pubs.rsc.org",
+        "title": "Advanced pathways for hydrogen production: a collective view from a technical experts meeting",
+        "summary": "Energy Environ. Sci., 2026, Advance ArticleDOI: 10.1039/D5EE04503G, Perspective Open Access This article is licensed under a Creative Commons Attribution 3.0 Unported Licence.Katherine J. Chou, Yaset Acevedo, Peter Agbo, Alicia Bayon, Alexander S. Belia\u2026",
+        "url": "https://pubs.rsc.org/en/content/articlelanding/2026/ee/d5ee04503g",
+        "published_at": "2026-04-09T23:00:00Z",
+        "domains": [
+          "employment"
+        ],
+        "primary_domain": "employment",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "labor"
+        ],
+        "forecast": "Continue monitoring employment nationally for directional change.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "live",
+        "age_hours": 24.14
       }
     ],
     "military_family_readiness": [
       {
-        "event_id": "EVT-bd72a38bf83c",
-        "source_name": "Us Weekly",
-        "source_domain": "usmagazine.com",
-        "title": "Why Jill Duggar's Family Is Moving Away From Arkansas",
-        "summary": "Jill Duggar and her husband, Derick Dillard, are leaving Arkansas. \u201cDerick has joined the Marine Corps! He has been selected for Marine Corps Officer Candidate School (OCS),\u201d Duggar, 34, wrote via her family\u2019s blog on Thursday, April 9, noting Dillard, 37, \u201cs\u2026",
-        "url": "https://www.usmagazine.com/celebrity-news/news/why-jill-duggars-family-is-moving-away-from-arkansas/",
-        "published_at": "2026-04-09T22:01:39Z",
+        "event_id": "EVT-f5f84998bf62",
+        "source_name": "Histalk2.com",
+        "source_domain": "histalk2.com",
+        "title": "Morning Headlines 4/10/26",
+        "summary": "Trump\u2019s Personnel Agency Is Asking for Federal Workers\u2019 Medical Records ...",
+        "url": "https://histalk2.com/2026/04/09/morning-headlines-4-10-26/",
+        "published_at": "2026-04-09T22:54:44Z",
         "domains": [
           "military_family_readiness"
         ],
@@ -697,40 +538,7 @@
         "drivers": [
           "family"
         ],
-        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "south",
-        "regions": [
-          "south",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.36
-      }
-    ],
-    "cost_of_living": [
-      {
-        "event_id": "EVT-2c4847a471c6",
-        "source_name": "TheJournal.ie",
-        "source_domain": "thejournal.ie",
-        "title": "From full-throated support to outrage, our readers have their say on the fuel protests",
-        "summary": "There was plenty of criticism for the government\u2019s handling of the fuel crisis and the protests themselves.",
-        "url": "https://www.thejournal.ie/your-stories-fuel-protests-7008178-Apr2026/",
-        "published_at": "2026-04-09T22:11:27Z",
-        "domains": [
-          "cost_of_living"
-        ],
-        "primary_domain": "cost_of_living",
-        "event_type": "cost_pressure",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "fuel"
-        ],
-        "forecast": "Continue monitoring cost of living nationally for directional change.",
+        "forecast": "Continue monitoring military family readiness nationally for directional change.",
         "evidence_count": 1,
         "region": "national",
         "regions": [
@@ -738,30 +546,62 @@
         ],
         "scope": "national",
         "source_state": "live",
-        "age_hours": 24.2
+        "age_hours": 24.23
       }
     ],
+    "cost_of_living": [],
     "healthcare_system": [],
     "benefits": [
       {
-        "event_id": "EVT-556e1e077471",
-        "source_name": "Slashdot.org",
-        "source_domain": "slashdot.org",
-        "title": "Automatic U.S. military draft registration planned by December, filing shows - CNBC",
-        "summary": "Automatic U.S. military draft registration planned by December, filing showsCNBC US plans to automatically register men for military draft eligibilityBBC Automatic military draft registration takes effect in December. Here\u2019s how it would workCNN Which America\u2026",
-        "url": "https://slashdot.org/firehose.pl?op=view&amp;id=181505598",
-        "published_at": "2026-04-09T22:12:14Z",
+        "event_id": "EVT-e6ca781e64ee",
+        "source_name": "GlobeNewswire",
+        "source_domain": "globenewswire.com",
+        "title": "Titan Carve Cutting Board Claims Evaluated: 2026 Report Highlights Titanium Cutting Boards Durability, Hygiene Design, and Knife-Surface Positioning for Modern Kitchens",
+        "summary": "Titan Carve titanium cutting board claims evaluated: durability, knife-friendliness, hygiene, heat resistance, and pricing reviewed for 2026....",
+        "url": "https://www.globenewswire.com/news-release/2026/04/09/3271482/0/en/Titan-Carve-Cutting-Board-Claims-Evaluated-2026-Report-Highlights-Titanium-Cutting-Boards-Durability-Hygiene-Design-and-Knife-Surface-Positioning-for-Modern-Kitchens.html",
+        "published_at": "2026-04-09T23:05:00Z",
         "domains": [
           "benefits"
         ],
         "primary_domain": "benefits",
         "event_type": "benefits_access",
+        "direction": "worsening",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.5,
+        "drivers": [
+          "claims",
+          "claim"
+        ],
+        "forecast": "Early pressure signal detected in benefits across affected regions.",
+        "evidence_count": 1,
+        "region": "west",
+        "regions": [
+          "west"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.06
+      },
+      {
+        "event_id": "EVT-8bd16425a63f",
+        "source_name": "Snopes.com",
+        "source_domain": "snopes.com",
+        "title": "What to know about automatic US military draft registration planned by December 2026",
+        "summary": "In the past, eligible men have had to self-register for the draft by law. A change will make it so they are automatically registered.",
+        "url": "https://www.snopes.com//fact-check/auto-military-draft-registration/",
+        "published_at": "2026-04-09T22:43:00Z",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "operational_event",
         "direction": "neutral",
         "impact_level": "watch",
-        "confidence": "moderate",
-        "relevance_score": 5.3,
+        "confidence": "low",
+        "relevance_score": 4.3,
         "drivers": [
-          "eligibility"
+          "claim"
         ],
         "forecast": "Continue monitoring benefits across affected regions for directional change.",
         "evidence_count": 1,
@@ -771,40 +611,9 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.19
-      },
-      {
-        "event_id": "EVT-eacdcd98138f",
-        "source_name": "Politicalwire.com",
-        "source_domain": "politicalwire.com",
-        "title": "Trump Again Hits Out at NATO Over Iran War",
-        "summary": "\u201cPresident Trump has hit out at NATO after a tense meeting with Mark Rutte, the secretary general of the military alliance, at the White House on Wednesday,\u201d the New York Times reports. \u201cMr. Rutte had traveled to Washington to try to assuage Mr. Trump\u2019s anger\u2026",
-        "url": "https://politicalwire.com/2026/04/09/trump-again-hits-out-at-nato-over-iran-war/",
-        "published_at": "2026-04-09T22:06:15Z",
-        "domains": [
-          "benefits"
-        ],
-        "primary_domain": "benefits",
-        "event_type": "policy_change",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "moderate",
-        "relevance_score": 5.3,
-        "drivers": [
-          "claim"
-        ],
-        "forecast": "Continue monitoring benefits across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast",
-          "west"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.29
+        "age_hours": 24.42
       }
     ]
   },
-  "generated_at": "2026-04-10T22:23:31.055033+00:00"
+  "generated_at": "2026-04-10T23:08:23.226967+00:00"
 }
