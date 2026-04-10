@@ -6,14 +6,14 @@
   "band": "Balanced / Watch",
   "trend": "stable",
   "pressure_label": "Balanced / Watch",
-  "source_quality": "High Confidence",
+  "source_quality": "Moderate Confidence",
   "index": {
     "overall_score": 50.4,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
     "pressure_label": "Balanced / Watch",
-    "source_quality": "High Confidence",
+    "source_quality": "Moderate Confidence",
     "weights": {
       "housing_stability": 0.2,
       "cost_of_living": 0.2,
@@ -28,18 +28,18 @@
     "Housing score: 55.4",
     "Cost of living score: 53.6",
     "Employment score: 51.4",
-    "Benefits score: 42.8",
+    "Benefits score: 41.9",
     "Healthcare system score: 45.0",
-    "Military family readiness score: 52.4",
-    "Source confidence: High Confidence"
+    "Military family readiness score: 53.5",
+    "Source confidence: Moderate Confidence"
   ],
   "domains": {
     "housing_stability": 55.4,
     "employment": 51.4,
-    "military_family_readiness": 52.4,
+    "military_family_readiness": 53.5,
     "cost_of_living": 53.6,
     "healthcare_system": 45.0,
-    "benefits": 42.8
+    "benefits": 41.9
   },
   "brief": {
     "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.4.",
@@ -47,10 +47,10 @@
       "Housing score: 55.4",
       "Cost of living score: 53.6",
       "Employment score: 51.4",
-      "Benefits score: 42.8",
+      "Benefits score: 41.9",
       "Healthcare system score: 45.0",
-      "Military family readiness score: 52.4",
-      "Source confidence: High Confidence"
+      "Military family readiness score: 53.5",
+      "Source confidence: Moderate Confidence"
     ]
   },
   "history": [
@@ -143,7 +143,7 @@
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     },
     {
-      "time": "2026-04-10T01:24:40.581901+00:00",
+      "time": "2026-04-10T02:52:19.551469+00:00",
       "as_of": "2026-04-10",
       "overall_score": 50.4,
       "score": 50.4,
@@ -154,9 +154,9 @@
       "housing_stability": 55.4,
       "cost_of_living": 53.6,
       "employment": 51.4,
-      "benefits": 42.8,
+      "benefits": 41.9,
       "healthcare_system": 45.0,
-      "military_family_readiness": 52.4,
+      "military_family_readiness": 53.5,
       "housing_stability_model": "housing_v3_continuous_tiered",
       "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
       "employment_model": "employment_v3_continuous_tiered",
@@ -165,13 +165,877 @@
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "event_id": "EVT-f1de34cb7b6a",
+      "source_name": "economictimes.indiatimes.com",
+      "source_domain": "economictimes.indiatimes.com",
+      "title": "After 43 years, family wins back pay and post-death benefits for employee fired for yelling at company doctor",
+      "summary": "",
+      "url": "https://economictimes.indiatimes.com/wealth/legal/will/after-43-years-family-wins-back-pay-and-post-death-benefits-for-employee-fired-for-yelling-at-company-doctor/articleshow/130127622.cms",
+      "published_at": null,
+      "domains": [
+        "employment",
+        "benefits",
+        "military_family_readiness"
+      ],
+      "primary_domain": "employment",
+      "event_type": "benefits_access",
+      "direction": "neutral",
+      "impact_level": "high",
+      "confidence": "high",
+      "relevance_score": 7.8,
+      "drivers": [
+        "pay",
+        "benefits",
+        "family",
+        "household workforce pressure"
+      ],
+      "forecast": "Continue monitoring employment and benefits nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-e518b84084b9",
+      "source_name": "siliconangle.com",
+      "source_domain": "siliconangle.com",
+      "title": "Appeals court rejects Anthropic\u2019s bid to block Pentagon blacklisting",
+      "summary": "",
+      "url": "https://siliconangle.com/2026/04/08/appeals-court-rejects-anthropics-bid-block-pentagon-blacklisting/",
+      "published_at": null,
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.5,
+      "drivers": [
+        "appeal",
+        "appeals"
+      ],
+      "forecast": "Continue monitoring benefits nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-38cfc1d28aca",
+      "source_name": "abc.net.au",
+      "source_domain": "abc.net.au",
+      "title": "People living in vehicles forced to choose between fuel and food",
+      "summary": "",
+      "url": "https://www.abc.net.au/news/2026-04-09/people-living-in-cars-hit-hard-by-fuel-crisis/106538490",
+      "published_at": null,
+      "domains": [
+        "cost_of_living"
+      ],
+      "primary_domain": "cost_of_living",
+      "event_type": "cost_pressure",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.3,
+      "drivers": [
+        "fuel"
+      ],
+      "forecast": "Continue monitoring cost of living across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-43665a885f35",
+      "source_name": "globalresearch.ca",
+      "source_domain": "globalresearch.ca",
+      "title": "US Increasingly Imposes Conditions of Subordination on EU",
+      "summary": "",
+      "url": "https://www.globalresearch.ca/us-increasingly-imposes-conditions-subordination-eu/5921770",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-8f382833a4ff",
+      "source_name": "channelnewsasia.com",
+      "source_domain": "channelnewsasia.com",
+      "title": "Escaped wolf forces school closure in South Korea",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-wolf-escaped-daejeon-school-closure-6045501",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-ddebb5094f81",
+      "source_name": "ibtimes.com.au",
+      "source_domain": "ibtimes.com.au",
+      "title": "Luka Doncic Hamstring Injury: Lakers Star Out for Rest of Regular Season, No Firm Return Date Has Been Set",
+      "summary": "",
+      "url": "https://www.ibtimes.com.au/luka-doncic-hamstring-injury-lakers-star-out-rest-regular-season-no-firm-return-date-has-been-1865852",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-cb9062a6382c",
+      "source_name": "irishtimes.com",
+      "source_domain": "irishtimes.com",
+      "title": "Vet turns to herbal medicine to tackle pet health issues",
+      "summary": "",
+      "url": "https://www.irishtimes.com/business/innovation/2026/04/09/vet-turns-to-herbal-medicine-to-tackle-pet-health-issues/",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-5c05d7fdcac2",
+      "source_name": "ibtimes.com.au",
+      "source_domain": "ibtimes.com.au",
+      "title": "Game of Thrones Actor Michael Patrick Dies at 35 After Brave Battle With Motor Neurone Disease",
+      "summary": "",
+      "url": "https://www.ibtimes.com.au/game-thrones-actor-michael-patrick-dies-35-after-brave-battle-motor-neurone-disease-1865851",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-c7ba7a7e1d2c",
+      "source_name": "paultan.org",
+      "source_domain": "paultan.org",
+      "title": "Chery M\u2019sia introduces CarLinko app for PHEV owners",
+      "summary": "",
+      "url": "https://paultan.org/2026/04/09/chery-msia-introduces-carlinko-app-for-phev-owners/",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-40aaca28a6db",
+      "source_name": "breitbart.com",
+      "source_domain": "breitbart.com",
+      "title": "Iowa Democrat Pastor Running for Congress: 9/11 Taught Me About \u2018Anti-Muslim Bigotry\u2019",
+      "summary": "",
+      "url": "https://www.breitbart.com/politics/2026/04/08/iowa-democrat-pastor-running-for-congress-9-11-taught-me-about-anti-muslim-bigotry/",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest",
+        "northeast"
+      ],
+      "scope": "multi_region",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-8d3baac165a7",
+      "source_name": "burncitysports.com",
+      "source_domain": "burncitysports.com",
+      "title": "Suns\u2019 Jalen Green suffers injury and limps to locker room against Mavericks",
+      "summary": "",
+      "url": "https://burncitysports.com/2026/04/08/jalen-green-knee-injury-suns-out/",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-ee7d56b8c09d",
+      "source_name": "haaretz.com",
+      "source_domain": "haaretz.com",
+      "title": "Hezbollah says it fired rockets at northern Israel in response to 'cease-fire violations'",
+      "summary": "",
+      "url": "https://www.haaretz.com/israel-news/israel-security/2026-04-09/ty-article-live/hezbollah-says-it-fired-rockets-at-israel-in-response-to-cease-fire-violations/0000019d-6fff-d68a-a39d-6fff46d70000",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-c46f250ad061",
+      "source_name": "globalresearch.ca",
+      "source_domain": "globalresearch.ca",
+      "title": "Why Japan Attacked the US Pacific Fleet in Hawaii?",
+      "summary": "",
+      "url": "https://www.globalresearch.ca/why-japan-attacked-us-pacific-fleet-hawaii/5921645",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "west",
+      "regions": [
+        "west",
+        "midwest"
+      ],
+      "scope": "multi_region",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-11ba74fbc5cc",
+      "source_name": "channelnewsasia.com",
+      "source_domain": "channelnewsasia.com",
+      "title": "US court expedites Anthropic's legal battle with Department of Defense",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/world/us-court-expedites-anthropic-legal-battle-department-defense-pentagon-6045441",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-907af34cc55a",
+      "source_name": "rawstory.com",
+      "source_domain": "rawstory.com",
+      "title": "'See you in court': Outrage as Kash Patel's FBI arrests ex-Army employee for alleged leak",
+      "summary": "",
+      "url": "https://www.rawstory.com/kash-patel-2676683371/",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-5ca281ccd694",
+      "source_name": "chi.streetsblog.org",
+      "source_domain": "chi.streetsblog.org",
+      "title": "CTA: \u201cYes we can\u2026 extend the #10 bus to the Obama Center!\u201d Service upgrades, safety concerns dominated the agency\u2019s April board meeting",
+      "summary": "",
+      "url": "https://chi.streetsblog.org/2026/04/08/cta-yes-we-can-extend-the-10-bus-to-the-obama-center-service-upgrades-safety-concerns-dominated-the-agencys-april-board-meeting",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-006d4ae8672d",
+      "source_name": "ibtimes.com.au",
+      "source_domain": "ibtimes.com.au",
+      "title": "Wordle #1755 Solved: 'LADEN' Revealed as April 9, 2026 Answer in Moderately Challenging Puzzle",
+      "summary": "",
+      "url": "https://www.ibtimes.com.au/wordle-1755-solved-laden-revealed-april-9-2026-answer-moderately-challenging-puzzle-1865846",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-3b03b2671f77",
+      "source_name": "mypeoplesreview.com",
+      "source_domain": "mypeoplesreview.com",
+      "title": "Whoever controls the media controls the world, including Nepal",
+      "summary": "",
+      "url": "https://mypeoplesreview.com/2026/04/09/whoever-controls-the-media-controls-the-world-including-nepal/",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-f0597c29e7e8",
+      "source_name": "antiwar.com",
+      "source_domain": "antiwar.com",
+      "title": "The Kyle Anzalone Show: Trump Lies About Iran Talks : Folding or Just Buying Time for a Ground Invasion? w/ Larry Johnson",
+      "summary": "",
+      "url": "https://www.antiwar.com/blog/2026/04/08/the-kyle-anzalone-show-trump-lies-about-iran-talks-folding-or-just-buying-time-for-a-ground-invasion-w-larry-johnson/",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "west",
+      "regions": [
+        "west"
+      ],
+      "scope": "regional",
+      "source_state": "reference",
+      "age_hours": null
+    },
+    {
+      "event_id": "EVT-e593d3619c91",
+      "source_name": "ibtimes.com.au",
+      "source_domain": "ibtimes.com.au",
+      "title": "NYT Connections #1033 Solved: Gloomy Moods, Ointments and Zodiac Signs Crack April 9, 2026 Puzzle",
+      "summary": "",
+      "url": "https://www.ibtimes.com.au/nyt-connections-1033-solved-gloomy-moods-ointments-zodiac-signs-crack-april-9-2026-puzzle-1865844",
+      "published_at": null,
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 3.1,
+      "drivers": [],
+      "forecast": "Continue monitoring military family readiness nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null
+    }
+  ],
   "priority_signals": [],
   "regional_events": {
-    "west": [],
+    "west": [
+      {
+        "event_id": "EVT-c46f250ad061",
+        "source_name": "globalresearch.ca",
+        "source_domain": "globalresearch.ca",
+        "title": "Why Japan Attacked the US Pacific Fleet in Hawaii?",
+        "summary": "",
+        "url": "https://www.globalresearch.ca/why-japan-attacked-us-pacific-fleet-hawaii/5921645",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "west",
+        "regions": [
+          "west",
+          "midwest"
+        ],
+        "scope": "multi_region",
+        "source_state": "reference",
+        "age_hours": null
+      },
+      {
+        "event_id": "EVT-f0597c29e7e8",
+        "source_name": "antiwar.com",
+        "source_domain": "antiwar.com",
+        "title": "The Kyle Anzalone Show: Trump Lies About Iran Talks : Folding or Just Buying Time for a Ground Invasion? w/ Larry Johnson",
+        "summary": "",
+        "url": "https://www.antiwar.com/blog/2026/04/08/the-kyle-anzalone-show-trump-lies-about-iran-talks-folding-or-just-buying-time-for-a-ground-invasion-w-larry-johnson/",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "west",
+        "regions": [
+          "west"
+        ],
+        "scope": "regional",
+        "source_state": "reference",
+        "age_hours": null
+      }
+    ],
     "south": [],
-    "midwest": [],
-    "northeast": []
+    "midwest": [
+      {
+        "event_id": "EVT-38cfc1d28aca",
+        "source_name": "abc.net.au",
+        "source_domain": "abc.net.au",
+        "title": "People living in vehicles forced to choose between fuel and food",
+        "summary": "",
+        "url": "https://www.abc.net.au/news/2026-04-09/people-living-in-cars-hit-hard-by-fuel-crisis/106538490",
+        "published_at": null,
+        "domains": [
+          "cost_of_living"
+        ],
+        "primary_domain": "cost_of_living",
+        "event_type": "cost_pressure",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.3,
+        "drivers": [
+          "fuel"
+        ],
+        "forecast": "Continue monitoring cost of living across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "reference",
+        "age_hours": null
+      },
+      {
+        "event_id": "EVT-8f382833a4ff",
+        "source_name": "channelnewsasia.com",
+        "source_domain": "channelnewsasia.com",
+        "title": "Escaped wolf forces school closure in South Korea",
+        "summary": "",
+        "url": "https://www.channelnewsasia.com/east-asia/south-korea-wolf-escaped-daejeon-school-closure-6045501",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "reference",
+        "age_hours": null
+      },
+      {
+        "event_id": "EVT-40aaca28a6db",
+        "source_name": "breitbart.com",
+        "source_domain": "breitbart.com",
+        "title": "Iowa Democrat Pastor Running for Congress: 9/11 Taught Me About \u2018Anti-Muslim Bigotry\u2019",
+        "summary": "",
+        "url": "https://www.breitbart.com/politics/2026/04/08/iowa-democrat-pastor-running-for-congress-9-11-taught-me-about-anti-muslim-bigotry/",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest",
+          "northeast"
+        ],
+        "scope": "multi_region",
+        "source_state": "reference",
+        "age_hours": null
+      },
+      {
+        "event_id": "EVT-ee7d56b8c09d",
+        "source_name": "haaretz.com",
+        "source_domain": "haaretz.com",
+        "title": "Hezbollah says it fired rockets at northern Israel in response to 'cease-fire violations'",
+        "summary": "",
+        "url": "https://www.haaretz.com/israel-news/israel-security/2026-04-09/ty-article-live/hezbollah-says-it-fired-rockets-at-israel-in-response-to-cease-fire-violations/0000019d-6fff-d68a-a39d-6fff46d70000",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "reference",
+        "age_hours": null
+      },
+      {
+        "event_id": "EVT-c46f250ad061",
+        "source_name": "globalresearch.ca",
+        "source_domain": "globalresearch.ca",
+        "title": "Why Japan Attacked the US Pacific Fleet in Hawaii?",
+        "summary": "",
+        "url": "https://www.globalresearch.ca/why-japan-attacked-us-pacific-fleet-hawaii/5921645",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "west",
+        "regions": [
+          "west",
+          "midwest"
+        ],
+        "scope": "multi_region",
+        "source_state": "reference",
+        "age_hours": null
+      },
+      {
+        "event_id": "EVT-907af34cc55a",
+        "source_name": "rawstory.com",
+        "source_domain": "rawstory.com",
+        "title": "'See you in court': Outrage as Kash Patel's FBI arrests ex-Army employee for alleged leak",
+        "summary": "",
+        "url": "https://www.rawstory.com/kash-patel-2676683371/",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "reference",
+        "age_hours": null
+      },
+      {
+        "event_id": "EVT-006d4ae8672d",
+        "source_name": "ibtimes.com.au",
+        "source_domain": "ibtimes.com.au",
+        "title": "Wordle #1755 Solved: 'LADEN' Revealed as April 9, 2026 Answer in Moderately Challenging Puzzle",
+        "summary": "",
+        "url": "https://www.ibtimes.com.au/wordle-1755-solved-laden-revealed-april-9-2026-answer-moderately-challenging-puzzle-1865846",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "reference",
+        "age_hours": null
+      }
+    ],
+    "northeast": [
+      {
+        "event_id": "EVT-40aaca28a6db",
+        "source_name": "breitbart.com",
+        "source_domain": "breitbart.com",
+        "title": "Iowa Democrat Pastor Running for Congress: 9/11 Taught Me About \u2018Anti-Muslim Bigotry\u2019",
+        "summary": "",
+        "url": "https://www.breitbart.com/politics/2026/04/08/iowa-democrat-pastor-running-for-congress-9-11-taught-me-about-anti-muslim-bigotry/",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest",
+          "northeast"
+        ],
+        "scope": "multi_region",
+        "source_state": "reference",
+        "age_hours": null
+      }
+    ]
   },
   "regional_tier3_contributions": {
     "west": {
@@ -209,11 +1073,209 @@
   },
   "domain_events": {
     "housing_stability": [],
-    "employment": [],
-    "military_family_readiness": [],
-    "cost_of_living": [],
+    "employment": [
+      {
+        "event_id": "EVT-f1de34cb7b6a",
+        "source_name": "economictimes.indiatimes.com",
+        "source_domain": "economictimes.indiatimes.com",
+        "title": "After 43 years, family wins back pay and post-death benefits for employee fired for yelling at company doctor",
+        "summary": "",
+        "url": "https://economictimes.indiatimes.com/wealth/legal/will/after-43-years-family-wins-back-pay-and-post-death-benefits-for-employee-fired-for-yelling-at-company-doctor/articleshow/130127622.cms",
+        "published_at": null,
+        "domains": [
+          "employment",
+          "benefits",
+          "military_family_readiness"
+        ],
+        "primary_domain": "employment",
+        "event_type": "benefits_access",
+        "direction": "neutral",
+        "impact_level": "high",
+        "confidence": "high",
+        "relevance_score": 7.8,
+        "drivers": [
+          "pay",
+          "benefits",
+          "family",
+          "household workforce pressure"
+        ],
+        "forecast": "Continue monitoring employment and benefits nationally for directional change.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "reference",
+        "age_hours": null
+      }
+    ],
+    "military_family_readiness": [
+      {
+        "event_id": "EVT-f1de34cb7b6a",
+        "source_name": "economictimes.indiatimes.com",
+        "source_domain": "economictimes.indiatimes.com",
+        "title": "After 43 years, family wins back pay and post-death benefits for employee fired for yelling at company doctor",
+        "summary": "",
+        "url": "https://economictimes.indiatimes.com/wealth/legal/will/after-43-years-family-wins-back-pay-and-post-death-benefits-for-employee-fired-for-yelling-at-company-doctor/articleshow/130127622.cms",
+        "published_at": null,
+        "domains": [
+          "employment",
+          "benefits",
+          "military_family_readiness"
+        ],
+        "primary_domain": "employment",
+        "event_type": "benefits_access",
+        "direction": "neutral",
+        "impact_level": "high",
+        "confidence": "high",
+        "relevance_score": 7.8,
+        "drivers": [
+          "pay",
+          "benefits",
+          "family",
+          "household workforce pressure"
+        ],
+        "forecast": "Continue monitoring employment and benefits nationally for directional change.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "reference",
+        "age_hours": null
+      },
+      {
+        "event_id": "EVT-43665a885f35",
+        "source_name": "globalresearch.ca",
+        "source_domain": "globalresearch.ca",
+        "title": "US Increasingly Imposes Conditions of Subordination on EU",
+        "summary": "",
+        "url": "https://www.globalresearch.ca/us-increasingly-imposes-conditions-subordination-eu/5921770",
+        "published_at": null,
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.1,
+        "drivers": [],
+        "forecast": "Continue monitoring military family readiness nationally for directional change.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "reference",
+        "age_hours": null
+      }
+    ],
+    "cost_of_living": [
+      {
+        "event_id": "EVT-38cfc1d28aca",
+        "source_name": "abc.net.au",
+        "source_domain": "abc.net.au",
+        "title": "People living in vehicles forced to choose between fuel and food",
+        "summary": "",
+        "url": "https://www.abc.net.au/news/2026-04-09/people-living-in-cars-hit-hard-by-fuel-crisis/106538490",
+        "published_at": null,
+        "domains": [
+          "cost_of_living"
+        ],
+        "primary_domain": "cost_of_living",
+        "event_type": "cost_pressure",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.3,
+        "drivers": [
+          "fuel"
+        ],
+        "forecast": "Continue monitoring cost of living across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "reference",
+        "age_hours": null
+      }
+    ],
     "healthcare_system": [],
-    "benefits": []
+    "benefits": [
+      {
+        "event_id": "EVT-f1de34cb7b6a",
+        "source_name": "economictimes.indiatimes.com",
+        "source_domain": "economictimes.indiatimes.com",
+        "title": "After 43 years, family wins back pay and post-death benefits for employee fired for yelling at company doctor",
+        "summary": "",
+        "url": "https://economictimes.indiatimes.com/wealth/legal/will/after-43-years-family-wins-back-pay-and-post-death-benefits-for-employee-fired-for-yelling-at-company-doctor/articleshow/130127622.cms",
+        "published_at": null,
+        "domains": [
+          "employment",
+          "benefits",
+          "military_family_readiness"
+        ],
+        "primary_domain": "employment",
+        "event_type": "benefits_access",
+        "direction": "neutral",
+        "impact_level": "high",
+        "confidence": "high",
+        "relevance_score": 7.8,
+        "drivers": [
+          "pay",
+          "benefits",
+          "family",
+          "household workforce pressure"
+        ],
+        "forecast": "Continue monitoring employment and benefits nationally for directional change.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "reference",
+        "age_hours": null
+      },
+      {
+        "event_id": "EVT-e518b84084b9",
+        "source_name": "siliconangle.com",
+        "source_domain": "siliconangle.com",
+        "title": "Appeals court rejects Anthropic\u2019s bid to block Pentagon blacklisting",
+        "summary": "",
+        "url": "https://siliconangle.com/2026/04/08/appeals-court-rejects-anthropics-bid-block-pentagon-blacklisting/",
+        "published_at": null,
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 3.5,
+        "drivers": [
+          "appeal",
+          "appeals"
+        ],
+        "forecast": "Continue monitoring benefits nationally for directional change.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "reference",
+        "age_hours": null
+      }
+    ]
   },
-  "generated_at": "2026-04-10T01:24:40.581901+00:00"
+  "generated_at": "2026-04-10T02:52:19.551469+00:00"
 }
