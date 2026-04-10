@@ -1,14 +1,14 @@
 {
   "as_of": "2026-04-10",
-  "overall_score": 50.7,
-  "score": 50.7,
+  "overall_score": 50.8,
+  "score": 50.8,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "stable",
   "pressure_label": "Balanced / Watch",
   "source_quality": "Moderate Confidence",
   "index": {
-    "overall_score": 50.7,
+    "overall_score": 50.8,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
@@ -23,33 +23,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.7.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.8.",
   "notes": [
     "Housing score: 55.4",
     "Cost of living score: 55.1",
     "Employment score: 51.4",
-    "Benefits score: 41.6",
+    "Benefits score: 42.2",
     "Healthcare system score: 45.0",
-    "Military family readiness score: 53.8",
+    "Military family readiness score: 53.3",
     "Source confidence: Moderate Confidence"
   ],
   "domains": {
     "housing_stability": 55.4,
     "employment": 51.4,
-    "military_family_readiness": 53.8,
+    "military_family_readiness": 53.3,
     "cost_of_living": 55.1,
     "healthcare_system": 45.0,
-    "benefits": 41.6
+    "benefits": 42.2
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.7.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.8.",
     "notes": [
       "Housing score: 55.4",
       "Cost of living score: 55.1",
       "Employment score: 51.4",
-      "Benefits score: 41.6",
+      "Benefits score: 42.2",
       "Healthcare system score: 45.0",
-      "Military family readiness score: 53.8",
+      "Military family readiness score: 53.3",
       "Source confidence: Moderate Confidence"
     ]
   },
@@ -143,10 +143,10 @@
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     },
     {
-      "time": "2026-04-10T23:08:23.226967+00:00",
+      "time": "2026-04-10T23:28:30.036587+00:00",
       "as_of": "2026-04-10",
-      "overall_score": 50.7,
-      "score": 50.7,
+      "overall_score": 50.8,
+      "score": 50.8,
       "band": "Balanced / Watch",
       "status_band": "Balanced / Watch",
       "pressure_label": "Balanced / Watch",
@@ -154,9 +154,9 @@
       "housing_stability": 55.4,
       "cost_of_living": 55.1,
       "employment": 51.4,
-      "benefits": 41.6,
+      "benefits": 42.2,
       "healthcare_system": 45.0,
-      "military_family_readiness": 53.8,
+      "military_family_readiness": 53.3,
       "housing_stability_model": "housing_v3_continuous_tiered",
       "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
       "employment_model": "employment_v3_continuous_tiered",
@@ -166,6 +166,36 @@
     }
   ],
   "events": [
+    {
+      "event_id": "EVT-457e0c5b00bb",
+      "source_name": "Slickdeals.net",
+      "source_domain": "slickdeals.net",
+      "title": "Samsung EPP & EDU: 49\" Odyssey G91F 5120x1440p 144Hz VA 1000R Curved Monitor $580 + Free S&H",
+      "summary": "Samsung [samsung.com] has for EPP and EDU Members: *49\" Odyssey G91F 5120x1440p 144Hz VA 1000R Curved Monitor* for *$579.97* when you follow the instructions below. *Shipping is free*. Note:...",
+      "url": "https://slickdeals.net/f/19402290-samsung-epp-edu-49-odyssey-g91f-5120x1440p-144hz-va-1000r-curved-monitor-580-free-s-h",
+      "published_at": "2026-04-09T23:26:26Z",
+      "domains": [
+        "employment"
+      ],
+      "primary_domain": "employment",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "moderate",
+      "confidence": "moderate",
+      "relevance_score": 5.5,
+      "drivers": [
+        "labor"
+      ],
+      "forecast": "Continue monitoring employment across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "south",
+      "regions": [
+        "south"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": 24.03
+    },
     {
       "event_id": "EVT-e6ca781e64ee",
       "source_name": "GlobeNewswire",
@@ -195,7 +225,158 @@
       ],
       "scope": "regional",
       "source_state": "live",
-      "age_hours": 24.06
+      "age_hours": 24.39
+    },
+    {
+      "event_id": "EVT-402539fe4ec9",
+      "source_name": "Common Dreams",
+      "source_domain": "commondreams.org",
+      "title": "Americans to Pay $1,096 Extra at Gas Pump Due to Trump-Israel War on Iran: Markey",
+      "summary": "An analysis published Thursday by the office of US Sen. Ed Markey estimates that the average American motorist will pay nearly $1,100 extra for gasoline in 2026 due to President Donald Trump's war of choice on Iran.\"The data highlights a worsening affordabili\u2026",
+      "url": "https://www.commondreams.org/news/markey-iran-gas-prices",
+      "published_at": "2026-04-09T23:27:43Z",
+      "domains": [
+        "employment"
+      ],
+      "primary_domain": "employment",
+      "event_type": "operational_event",
+      "direction": "worsening",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "pay"
+      ],
+      "forecast": "Early pressure signal detected in employment across affected regions.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": 24.01
+    },
+    {
+      "event_id": "EVT-14593c01db33",
+      "source_name": "The Punch",
+      "source_domain": "punchng.com",
+      "title": "53% of Nigerians do not save \u2014 Report",
+      "summary": "A new report reveals a Nigerian savings crisis, with 53% of the population not saving. Discover why structured financial products are key to stability. Read More: https://punchng.com/53-of-nigerians-do-not-save-report/",
+      "url": "https://punchng.com/53-of-nigerians-do-not-save-report/",
+      "published_at": "2026-04-09T23:25:30Z",
+      "domains": [
+        "housing_stability"
+      ],
+      "primary_domain": "housing_stability",
+      "event_type": "operational_event",
+      "direction": "worsening",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "lease"
+      ],
+      "forecast": "Early pressure signal detected in housing stability across affected regions.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": 24.05
+    },
+    {
+      "event_id": "EVT-d0bf1533de26",
+      "source_name": "Freerepublic.com",
+      "source_domain": "freerepublic.com",
+      "title": "CDC: United States Birth Rate Hit Record Low in 2025",
+      "summary": "The U.S. birth rate hit a record low in 2025, according to a new report released by the U.S. Centers for Disease Control and Prevention (CDC). Last year, there were 3,606,400 births \u2014 a one percent decline from 2024. The general fertility rate also fell by on\u2026",
+      "url": "https://freerepublic.com/focus/f-news/4374303/posts",
+      "published_at": "2026-04-09T23:24:32Z",
+      "domains": [
+        "housing_stability"
+      ],
+      "primary_domain": "housing_stability",
+      "event_type": "operational_event",
+      "direction": "worsening",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "lease"
+      ],
+      "forecast": "Early pressure signal detected in housing stability across affected regions.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": 24.07
+    },
+    {
+      "event_id": "EVT-16b217daf1a8",
+      "source_name": "seattlepi.com",
+      "source_domain": "seattlepi.com",
+      "title": "IRS touts a 24% increase in tax refunds compared to the previous administration",
+      "summary": "The Trump administration is highlighting a 24% increase in individual tax refunds this season compared with those issued during the previous administration. The average refund is now $3,521, up 11% from last year. The boost comes after Republicans passed legi\u2026",
+      "url": "https://www.seattlepi.com/business/article/irs-touts-a-24-increase-in-tax-refunds-compared-22198502.php",
+      "published_at": "2026-04-09T23:22:10Z",
+      "domains": [
+        "housing_stability"
+      ],
+      "primary_domain": "housing_stability",
+      "event_type": "operational_event",
+      "direction": "improving",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "lease"
+      ],
+      "forecast": "Conditions may stabilize in housing stability across affected regions if current movement holds.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest",
+        "west"
+      ],
+      "scope": "multi_region",
+      "source_state": "live",
+      "age_hours": 24.11
+    },
+    {
+      "event_id": "EVT-248da2ce830d",
+      "source_name": "The Punch",
+      "source_domain": "punchng.com",
+      "title": "Firms cushion inflation as business climate bites \u2013 Coleman MD",
+      "summary": "Nigerian manufacturers absorb inflationary pressures by reducing profit margins and improving efficiency to survive a challenging business climate. Read More: https://punchng.com/firms-cushion-inflation-as-business-climate-bites-coleman-md/",
+      "url": "https://punchng.com/firms-cushion-inflation-as-business-climate-bites-coleman-md/",
+      "published_at": "2026-04-09T23:21:41Z",
+      "domains": [
+        "cost_of_living"
+      ],
+      "primary_domain": "cost_of_living",
+      "event_type": "cost_pressure",
+      "direction": "improving",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "inflation"
+      ],
+      "forecast": "Conditions may stabilize in cost of living across affected regions if current movement holds.",
+      "evidence_count": 1,
+      "region": "south",
+      "regions": [
+        "south"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": 24.11
     },
     {
       "event_id": "EVT-372518989a7a",
@@ -225,100 +406,31 @@
       ],
       "scope": "national",
       "source_state": "live",
-      "age_hours": 24.14
-    },
-    {
-      "event_id": "EVT-f5f84998bf62",
-      "source_name": "Histalk2.com",
-      "source_domain": "histalk2.com",
-      "title": "Morning Headlines 4/10/26",
-      "summary": "Trump\u2019s Personnel Agency Is Asking for Federal Workers\u2019 Medical Records ...",
-      "url": "https://histalk2.com/2026/04/09/morning-headlines-4-10-26/",
-      "published_at": "2026-04-09T22:54:44Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.3,
-      "drivers": [
-        "family"
-      ],
-      "forecast": "Continue monitoring military family readiness nationally for directional change.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": 24.23
-    },
-    {
-      "event_id": "EVT-8bd16425a63f",
-      "source_name": "Snopes.com",
-      "source_domain": "snopes.com",
-      "title": "What to know about automatic US military draft registration planned by December 2026",
-      "summary": "In the past, eligible men have had to self-register for the draft by law. A change will make it so they are automatically registered.",
-      "url": "https://www.snopes.com//fact-check/auto-military-draft-registration/",
-      "published_at": "2026-04-09T22:43:00Z",
-      "domains": [
-        "benefits"
-      ],
-      "primary_domain": "benefits",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.3,
-      "drivers": [
-        "claim"
-      ],
-      "forecast": "Continue monitoring benefits across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.42
-    },
-    {
-      "event_id": "EVT-c61498007239",
-      "source_name": "GlobeNewswire",
-      "source_domain": "globenewswire.com",
-      "title": "Corbin Advisors Releases Q1\u201926 Inside The Buy-Side\u00ae Earnings Primer\u00ae",
-      "summary": "Survey Finds After Three Quarters of Bullish Momentum, Investor Sentiment Predictably Withdraws amid Iran War Fallout...",
-      "url": "https://www.globenewswire.com/news-release/2026/04/09/3271480/0/en/Corbin-Advisors-Releases-Q1-26-Inside-The-Buy-Side-Earnings-Primer.html",
-      "published_at": "2026-04-09T22:40:00Z",
-      "domains": [
-        "housing_stability"
-      ],
-      "primary_domain": "housing_stability",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.3,
-      "drivers": [
-        "lease"
-      ],
-      "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.47
+      "age_hours": 24.48
     }
   ],
-  "priority_signals": [],
+  "priority_signals": [
+    {
+      "signal_id": "SIG-a50f5f030b7a",
+      "domain_key": "employment",
+      "headline": "Employment watch signal: Samsung EPP & EDU: 49\" Odyssey G91F 5120x1440p 144Hz VA 1000R Curved Monitor $580 + Free S&H",
+      "forecast": "Continue monitoring employment across affected regions for directional change.",
+      "severity": "moderate",
+      "confidence": "moderate",
+      "updated_at": "2026-04-10T23:28:30+00:00",
+      "evidence_count": 1,
+      "source_domains": [
+        "slickdeals.net"
+      ],
+      "event_ids": [
+        "EVT-457e0c5b00bb"
+      ],
+      "signal_type": "watch",
+      "region": "south",
+      "scope": "regional",
+      "source_state": "live"
+    }
+  ],
   "regional_events": {
     "west": [
       {
@@ -350,62 +462,124 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.06
-      }
-    ],
-    "south": [],
-    "midwest": [
-      {
-        "event_id": "EVT-8bd16425a63f",
-        "source_name": "Snopes.com",
-        "source_domain": "snopes.com",
-        "title": "What to know about automatic US military draft registration planned by December 2026",
-        "summary": "In the past, eligible men have had to self-register for the draft by law. A change will make it so they are automatically registered.",
-        "url": "https://www.snopes.com//fact-check/auto-military-draft-registration/",
-        "published_at": "2026-04-09T22:43:00Z",
-        "domains": [
-          "benefits"
-        ],
-        "primary_domain": "benefits",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "claim"
-        ],
-        "forecast": "Continue monitoring benefits across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.42
+        "age_hours": 24.39
       },
       {
-        "event_id": "EVT-c61498007239",
-        "source_name": "GlobeNewswire",
-        "source_domain": "globenewswire.com",
-        "title": "Corbin Advisors Releases Q1\u201926 Inside The Buy-Side\u00ae Earnings Primer\u00ae",
-        "summary": "Survey Finds After Three Quarters of Bullish Momentum, Investor Sentiment Predictably Withdraws amid Iran War Fallout...",
-        "url": "https://www.globenewswire.com/news-release/2026/04/09/3271480/0/en/Corbin-Advisors-Releases-Q1-26-Inside-The-Buy-Side-Earnings-Primer.html",
-        "published_at": "2026-04-09T22:40:00Z",
+        "event_id": "EVT-16b217daf1a8",
+        "source_name": "seattlepi.com",
+        "source_domain": "seattlepi.com",
+        "title": "IRS touts a 24% increase in tax refunds compared to the previous administration",
+        "summary": "The Trump administration is highlighting a 24% increase in individual tax refunds this season compared with those issued during the previous administration. The average refund is now $3,521, up 11% from last year. The boost comes after Republicans passed legi\u2026",
+        "url": "https://www.seattlepi.com/business/article/irs-touts-a-24-increase-in-tax-refunds-compared-22198502.php",
+        "published_at": "2026-04-09T23:22:10Z",
         "domains": [
           "housing_stability"
         ],
         "primary_domain": "housing_stability",
         "event_type": "operational_event",
-        "direction": "neutral",
+        "direction": "improving",
         "impact_level": "watch",
         "confidence": "low",
         "relevance_score": 4.3,
         "drivers": [
           "lease"
         ],
-        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
+        "forecast": "Conditions may stabilize in housing stability across affected regions if current movement holds.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest",
+          "west"
+        ],
+        "scope": "multi_region",
+        "source_state": "live",
+        "age_hours": 24.11
+      }
+    ],
+    "south": [
+      {
+        "event_id": "EVT-457e0c5b00bb",
+        "source_name": "Slickdeals.net",
+        "source_domain": "slickdeals.net",
+        "title": "Samsung EPP & EDU: 49\" Odyssey G91F 5120x1440p 144Hz VA 1000R Curved Monitor $580 + Free S&H",
+        "summary": "Samsung [samsung.com] has for EPP and EDU Members: *49\" Odyssey G91F 5120x1440p 144Hz VA 1000R Curved Monitor* for *$579.97* when you follow the instructions below. *Shipping is free*. Note:...",
+        "url": "https://slickdeals.net/f/19402290-samsung-epp-edu-49-odyssey-g91f-5120x1440p-144hz-va-1000r-curved-monitor-580-free-s-h",
+        "published_at": "2026-04-09T23:26:26Z",
+        "domains": [
+          "employment"
+        ],
+        "primary_domain": "employment",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "moderate",
+        "confidence": "moderate",
+        "relevance_score": 5.5,
+        "drivers": [
+          "labor"
+        ],
+        "forecast": "Continue monitoring employment across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "south",
+        "regions": [
+          "south"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.03
+      },
+      {
+        "event_id": "EVT-248da2ce830d",
+        "source_name": "The Punch",
+        "source_domain": "punchng.com",
+        "title": "Firms cushion inflation as business climate bites \u2013 Coleman MD",
+        "summary": "Nigerian manufacturers absorb inflationary pressures by reducing profit margins and improving efficiency to survive a challenging business climate. Read More: https://punchng.com/firms-cushion-inflation-as-business-climate-bites-coleman-md/",
+        "url": "https://punchng.com/firms-cushion-inflation-as-business-climate-bites-coleman-md/",
+        "published_at": "2026-04-09T23:21:41Z",
+        "domains": [
+          "cost_of_living"
+        ],
+        "primary_domain": "cost_of_living",
+        "event_type": "cost_pressure",
+        "direction": "improving",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "inflation"
+        ],
+        "forecast": "Conditions may stabilize in cost of living across affected regions if current movement holds.",
+        "evidence_count": 1,
+        "region": "south",
+        "regions": [
+          "south"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.11
+      }
+    ],
+    "midwest": [
+      {
+        "event_id": "EVT-402539fe4ec9",
+        "source_name": "Common Dreams",
+        "source_domain": "commondreams.org",
+        "title": "Americans to Pay $1,096 Extra at Gas Pump Due to Trump-Israel War on Iran: Markey",
+        "summary": "An analysis published Thursday by the office of US Sen. Ed Markey estimates that the average American motorist will pay nearly $1,100 extra for gasoline in 2026 due to President Donald Trump's war of choice on Iran.\"The data highlights a worsening affordabili\u2026",
+        "url": "https://www.commondreams.org/news/markey-iran-gas-prices",
+        "published_at": "2026-04-09T23:27:43Z",
+        "domains": [
+          "employment"
+        ],
+        "primary_domain": "employment",
+        "event_type": "operational_event",
+        "direction": "worsening",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "pay"
+        ],
+        "forecast": "Early pressure signal detected in employment across affected regions.",
         "evidence_count": 1,
         "region": "midwest",
         "regions": [
@@ -413,14 +587,105 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.47
+        "age_hours": 24.01
+      },
+      {
+        "event_id": "EVT-14593c01db33",
+        "source_name": "The Punch",
+        "source_domain": "punchng.com",
+        "title": "53% of Nigerians do not save \u2014 Report",
+        "summary": "A new report reveals a Nigerian savings crisis, with 53% of the population not saving. Discover why structured financial products are key to stability. Read More: https://punchng.com/53-of-nigerians-do-not-save-report/",
+        "url": "https://punchng.com/53-of-nigerians-do-not-save-report/",
+        "published_at": "2026-04-09T23:25:30Z",
+        "domains": [
+          "housing_stability"
+        ],
+        "primary_domain": "housing_stability",
+        "event_type": "operational_event",
+        "direction": "worsening",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "lease"
+        ],
+        "forecast": "Early pressure signal detected in housing stability across affected regions.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.05
+      },
+      {
+        "event_id": "EVT-d0bf1533de26",
+        "source_name": "Freerepublic.com",
+        "source_domain": "freerepublic.com",
+        "title": "CDC: United States Birth Rate Hit Record Low in 2025",
+        "summary": "The U.S. birth rate hit a record low in 2025, according to a new report released by the U.S. Centers for Disease Control and Prevention (CDC). Last year, there were 3,606,400 births \u2014 a one percent decline from 2024. The general fertility rate also fell by on\u2026",
+        "url": "https://freerepublic.com/focus/f-news/4374303/posts",
+        "published_at": "2026-04-09T23:24:32Z",
+        "domains": [
+          "housing_stability"
+        ],
+        "primary_domain": "housing_stability",
+        "event_type": "operational_event",
+        "direction": "worsening",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "lease"
+        ],
+        "forecast": "Early pressure signal detected in housing stability across affected regions.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.07
+      },
+      {
+        "event_id": "EVT-16b217daf1a8",
+        "source_name": "seattlepi.com",
+        "source_domain": "seattlepi.com",
+        "title": "IRS touts a 24% increase in tax refunds compared to the previous administration",
+        "summary": "The Trump administration is highlighting a 24% increase in individual tax refunds this season compared with those issued during the previous administration. The average refund is now $3,521, up 11% from last year. The boost comes after Republicans passed legi\u2026",
+        "url": "https://www.seattlepi.com/business/article/irs-touts-a-24-increase-in-tax-refunds-compared-22198502.php",
+        "published_at": "2026-04-09T23:22:10Z",
+        "domains": [
+          "housing_stability"
+        ],
+        "primary_domain": "housing_stability",
+        "event_type": "operational_event",
+        "direction": "improving",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "lease"
+        ],
+        "forecast": "Conditions may stabilize in housing stability across affected regions if current movement holds.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest",
+          "west"
+        ],
+        "scope": "multi_region",
+        "source_state": "live",
+        "age_hours": 24.11
       }
     ],
     "northeast": []
   },
   "regional_tier3_contributions": {
     "west": {
-      "housing_stability": 0.0,
+      "housing_stability": -0.04,
       "employment": 0.0,
       "cost_of_living": 0.0,
       "benefits": 0.08,
@@ -429,17 +694,17 @@
     },
     "south": {
       "housing_stability": 0.0,
-      "employment": 0.0,
-      "cost_of_living": 0.0,
+      "employment": 0.04,
+      "cost_of_living": -0.04,
       "benefits": 0.0,
       "healthcare_system": 0.0,
       "military_family_readiness": 0.0
     },
     "midwest": {
-      "housing_stability": 0.02,
-      "employment": 0.0,
+      "housing_stability": 0.12,
+      "employment": 0.08,
       "cost_of_living": 0.0,
-      "benefits": 0.02,
+      "benefits": 0.0,
       "healthcare_system": 0.0,
       "military_family_readiness": 0.0
     },
@@ -455,26 +720,26 @@
   "domain_events": {
     "housing_stability": [
       {
-        "event_id": "EVT-c61498007239",
-        "source_name": "GlobeNewswire",
-        "source_domain": "globenewswire.com",
-        "title": "Corbin Advisors Releases Q1\u201926 Inside The Buy-Side\u00ae Earnings Primer\u00ae",
-        "summary": "Survey Finds After Three Quarters of Bullish Momentum, Investor Sentiment Predictably Withdraws amid Iran War Fallout...",
-        "url": "https://www.globenewswire.com/news-release/2026/04/09/3271480/0/en/Corbin-Advisors-Releases-Q1-26-Inside-The-Buy-Side-Earnings-Primer.html",
-        "published_at": "2026-04-09T22:40:00Z",
+        "event_id": "EVT-14593c01db33",
+        "source_name": "The Punch",
+        "source_domain": "punchng.com",
+        "title": "53% of Nigerians do not save \u2014 Report",
+        "summary": "A new report reveals a Nigerian savings crisis, with 53% of the population not saving. Discover why structured financial products are key to stability. Read More: https://punchng.com/53-of-nigerians-do-not-save-report/",
+        "url": "https://punchng.com/53-of-nigerians-do-not-save-report/",
+        "published_at": "2026-04-09T23:25:30Z",
         "domains": [
           "housing_stability"
         ],
         "primary_domain": "housing_stability",
         "event_type": "operational_event",
-        "direction": "neutral",
+        "direction": "worsening",
         "impact_level": "watch",
         "confidence": "low",
         "relevance_score": 4.3,
         "drivers": [
           "lease"
         ],
-        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
+        "forecast": "Early pressure signal detected in housing stability across affected regions.",
         "evidence_count": 1,
         "region": "midwest",
         "regions": [
@@ -482,74 +747,134 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.47
+        "age_hours": 24.05
+      },
+      {
+        "event_id": "EVT-d0bf1533de26",
+        "source_name": "Freerepublic.com",
+        "source_domain": "freerepublic.com",
+        "title": "CDC: United States Birth Rate Hit Record Low in 2025",
+        "summary": "The U.S. birth rate hit a record low in 2025, according to a new report released by the U.S. Centers for Disease Control and Prevention (CDC). Last year, there were 3,606,400 births \u2014 a one percent decline from 2024. The general fertility rate also fell by on\u2026",
+        "url": "https://freerepublic.com/focus/f-news/4374303/posts",
+        "published_at": "2026-04-09T23:24:32Z",
+        "domains": [
+          "housing_stability"
+        ],
+        "primary_domain": "housing_stability",
+        "event_type": "operational_event",
+        "direction": "worsening",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "lease"
+        ],
+        "forecast": "Early pressure signal detected in housing stability across affected regions.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.07
       }
     ],
     "employment": [
       {
-        "event_id": "EVT-372518989a7a",
-        "source_name": "Royal Society of Chemistry",
-        "source_domain": "pubs.rsc.org",
-        "title": "Advanced pathways for hydrogen production: a collective view from a technical experts meeting",
-        "summary": "Energy Environ. Sci., 2026, Advance ArticleDOI: 10.1039/D5EE04503G, Perspective Open Access This article is licensed under a Creative Commons Attribution 3.0 Unported Licence.Katherine J. Chou, Yaset Acevedo, Peter Agbo, Alicia Bayon, Alexander S. Belia\u2026",
-        "url": "https://pubs.rsc.org/en/content/articlelanding/2026/ee/d5ee04503g",
-        "published_at": "2026-04-09T23:00:00Z",
+        "event_id": "EVT-457e0c5b00bb",
+        "source_name": "Slickdeals.net",
+        "source_domain": "slickdeals.net",
+        "title": "Samsung EPP & EDU: 49\" Odyssey G91F 5120x1440p 144Hz VA 1000R Curved Monitor $580 + Free S&H",
+        "summary": "Samsung [samsung.com] has for EPP and EDU Members: *49\" Odyssey G91F 5120x1440p 144Hz VA 1000R Curved Monitor* for *$579.97* when you follow the instructions below. *Shipping is free*. Note:...",
+        "url": "https://slickdeals.net/f/19402290-samsung-epp-edu-49-odyssey-g91f-5120x1440p-144hz-va-1000r-curved-monitor-580-free-s-h",
+        "published_at": "2026-04-09T23:26:26Z",
         "domains": [
           "employment"
         ],
         "primary_domain": "employment",
         "event_type": "operational_event",
         "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
+        "impact_level": "moderate",
+        "confidence": "moderate",
+        "relevance_score": 5.5,
         "drivers": [
           "labor"
         ],
-        "forecast": "Continue monitoring employment nationally for directional change.",
+        "forecast": "Continue monitoring employment across affected regions for directional change.",
         "evidence_count": 1,
-        "region": "national",
+        "region": "south",
         "regions": [
-          "national"
+          "south"
         ],
-        "scope": "national",
+        "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.14
-      }
-    ],
-    "military_family_readiness": [
+        "age_hours": 24.03
+      },
       {
-        "event_id": "EVT-f5f84998bf62",
-        "source_name": "Histalk2.com",
-        "source_domain": "histalk2.com",
-        "title": "Morning Headlines 4/10/26",
-        "summary": "Trump\u2019s Personnel Agency Is Asking for Federal Workers\u2019 Medical Records ...",
-        "url": "https://histalk2.com/2026/04/09/morning-headlines-4-10-26/",
-        "published_at": "2026-04-09T22:54:44Z",
+        "event_id": "EVT-402539fe4ec9",
+        "source_name": "Common Dreams",
+        "source_domain": "commondreams.org",
+        "title": "Americans to Pay $1,096 Extra at Gas Pump Due to Trump-Israel War on Iran: Markey",
+        "summary": "An analysis published Thursday by the office of US Sen. Ed Markey estimates that the average American motorist will pay nearly $1,100 extra for gasoline in 2026 due to President Donald Trump's war of choice on Iran.\"The data highlights a worsening affordabili\u2026",
+        "url": "https://www.commondreams.org/news/markey-iran-gas-prices",
+        "published_at": "2026-04-09T23:27:43Z",
         "domains": [
-          "military_family_readiness"
+          "employment"
         ],
-        "primary_domain": "military_family_readiness",
+        "primary_domain": "employment",
         "event_type": "operational_event",
-        "direction": "neutral",
+        "direction": "worsening",
         "impact_level": "watch",
         "confidence": "low",
         "relevance_score": 4.3,
         "drivers": [
-          "family"
+          "pay"
         ],
-        "forecast": "Continue monitoring military family readiness nationally for directional change.",
+        "forecast": "Early pressure signal detected in employment across affected regions.",
         "evidence_count": 1,
-        "region": "national",
+        "region": "midwest",
         "regions": [
-          "national"
+          "midwest"
         ],
-        "scope": "national",
+        "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.23
+        "age_hours": 24.01
       }
     ],
-    "cost_of_living": [],
+    "military_family_readiness": [],
+    "cost_of_living": [
+      {
+        "event_id": "EVT-248da2ce830d",
+        "source_name": "The Punch",
+        "source_domain": "punchng.com",
+        "title": "Firms cushion inflation as business climate bites \u2013 Coleman MD",
+        "summary": "Nigerian manufacturers absorb inflationary pressures by reducing profit margins and improving efficiency to survive a challenging business climate. Read More: https://punchng.com/firms-cushion-inflation-as-business-climate-bites-coleman-md/",
+        "url": "https://punchng.com/firms-cushion-inflation-as-business-climate-bites-coleman-md/",
+        "published_at": "2026-04-09T23:21:41Z",
+        "domains": [
+          "cost_of_living"
+        ],
+        "primary_domain": "cost_of_living",
+        "event_type": "cost_pressure",
+        "direction": "improving",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "inflation"
+        ],
+        "forecast": "Conditions may stabilize in cost of living across affected regions if current movement holds.",
+        "evidence_count": 1,
+        "region": "south",
+        "regions": [
+          "south"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.11
+      }
+    ],
     "healthcare_system": [],
     "benefits": [
       {
@@ -581,39 +906,9 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.06
-      },
-      {
-        "event_id": "EVT-8bd16425a63f",
-        "source_name": "Snopes.com",
-        "source_domain": "snopes.com",
-        "title": "What to know about automatic US military draft registration planned by December 2026",
-        "summary": "In the past, eligible men have had to self-register for the draft by law. A change will make it so they are automatically registered.",
-        "url": "https://www.snopes.com//fact-check/auto-military-draft-registration/",
-        "published_at": "2026-04-09T22:43:00Z",
-        "domains": [
-          "benefits"
-        ],
-        "primary_domain": "benefits",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "claim"
-        ],
-        "forecast": "Continue monitoring benefits across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.42
+        "age_hours": 24.39
       }
     ]
   },
-  "generated_at": "2026-04-10T23:08:23.226967+00:00"
+  "generated_at": "2026-04-10T23:28:30.036587+00:00"
 }
