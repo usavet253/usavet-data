@@ -28,18 +28,18 @@
     "Housing score: 55.4",
     "Cost of living score: 55.1",
     "Employment score: 51.4",
-    "Benefits score: 42.5",
+    "Benefits score: 41.9",
     "Healthcare system score: 45.0",
-    "Military family readiness score: 52.5",
+    "Military family readiness score: 53.3",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 55.4,
     "employment": 51.4,
-    "military_family_readiness": 52.5,
+    "military_family_readiness": 53.3,
     "cost_of_living": 55.1,
     "healthcare_system": 45.0,
-    "benefits": 42.5
+    "benefits": 41.9
   },
   "brief": {
     "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.7.",
@@ -47,9 +47,9 @@
       "Housing score: 55.4",
       "Cost of living score: 55.1",
       "Employment score: 51.4",
-      "Benefits score: 42.5",
+      "Benefits score: 41.9",
       "Healthcare system score: 45.0",
-      "Military family readiness score: 52.5",
+      "Military family readiness score: 53.3",
       "Source confidence: High Confidence"
     ]
   },
@@ -143,7 +143,7 @@
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     },
     {
-      "time": "2026-04-10T19:28:17.167848+00:00",
+      "time": "2026-04-10T22:23:31.055033+00:00",
       "as_of": "2026-04-10",
       "overall_score": 50.7,
       "score": 50.7,
@@ -154,9 +154,9 @@
       "housing_stability": 55.4,
       "cost_of_living": 55.1,
       "employment": 51.4,
-      "benefits": 42.5,
+      "benefits": 41.9,
       "healthcare_system": 45.0,
-      "military_family_readiness": 52.5,
+      "military_family_readiness": 53.3,
       "housing_stability_model": "housing_v3_continuous_tiered",
       "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
       "employment_model": "employment_v3_continuous_tiered",
@@ -167,60 +167,178 @@
   ],
   "events": [
     {
-      "event_id": "EVT-3acb2d9ab5bc",
-      "source_name": "The Times of India",
-      "source_domain": "economictimes.indiatimes.com",
-      "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
-      "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
-      "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
-      "published_at": "2026-04-09T19:12:39Z",
+      "event_id": "EVT-55ae5833aad4",
+      "source_name": "seattlepi.com",
+      "source_domain": "seattlepi.com",
+      "title": "Venezuelan lawmakers approve sweeping mining bill to lure foreign investors",
+      "summary": "Venezuelan lawmakers have approved a bill to regulate the country\u2019s mining as it seeks to attract leery foreign investors to a once-private industry that has long been exploited by criminal groups with ties to the government. It is the latest legislative init\u2026",
+      "url": "https://www.seattlepi.com/news/world/article/venezuelan-lawmakers-approve-sweeping-mining-bill-22198342.php",
+      "published_at": "2026-04-09T22:22:25Z",
       "domains": [
-        "employment",
-        "benefits"
+        "housing_stability"
       ],
-      "primary_domain": "employment",
-      "event_type": "benefits_access",
-      "direction": "improving",
-      "impact_level": "high",
-      "confidence": "high",
-      "relevance_score": 6.9,
+      "primary_domain": "housing_stability",
+      "event_type": "policy_change",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "moderate",
+      "relevance_score": 5.3,
       "drivers": [
-        "pay",
-        "benefits"
+        "lease"
       ],
-      "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
+      "forecast": "Continue monitoring housing stability across affected regions for directional change.",
       "evidence_count": 1,
-      "region": "midwest",
+      "region": "west",
       "regions": [
-        "midwest",
         "west"
       ],
-      "scope": "multi_region",
+      "scope": "regional",
       "source_state": "live",
-      "age_hours": 24.26
+      "age_hours": 24.02
     },
     {
-      "event_id": "EVT-f60e8ee06386",
-      "source_name": "Fox News",
-      "source_domain": "foxnews.com",
-      "title": "Federal appeals court rejects Anthropic bid to block Pentagon blacklist in AI dispute",
-      "summary": "A federal court rejected Anthropic's bid to block the Department of War from blacklisting the artificial intelligence company's technology.",
-      "url": "https://www.foxnews.com/politics/federal-appeals-court-rejects-anthropic-bid-block-pentagon-blacklist-ai-dispute",
-      "published_at": "2026-04-09T19:20:22Z",
+      "event_id": "EVT-556e1e077471",
+      "source_name": "Slashdot.org",
+      "source_domain": "slashdot.org",
+      "title": "Automatic U.S. military draft registration planned by December, filing shows - CNBC",
+      "summary": "Automatic U.S. military draft registration planned by December, filing showsCNBC US plans to automatically register men for military draft eligibilityBBC Automatic military draft registration takes effect in December. Here\u2019s how it would workCNN Which America\u2026",
+      "url": "https://slashdot.org/firehose.pl?op=view&amp;id=181505598",
+      "published_at": "2026-04-09T22:12:14Z",
       "domains": [
         "benefits"
       ],
       "primary_domain": "benefits",
-      "event_type": "operational_event",
+      "event_type": "benefits_access",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "moderate",
+      "relevance_score": 5.3,
+      "drivers": [
+        "eligibility"
+      ],
+      "forecast": "Continue monitoring benefits across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": 24.19
+    },
+    {
+      "event_id": "EVT-eacdcd98138f",
+      "source_name": "Politicalwire.com",
+      "source_domain": "politicalwire.com",
+      "title": "Trump Again Hits Out at NATO Over Iran War",
+      "summary": "\u201cPresident Trump has hit out at NATO after a tense meeting with Mark Rutte, the secretary general of the military alliance, at the White House on Wednesday,\u201d the New York Times reports. \u201cMr. Rutte had traveled to Washington to try to assuage Mr. Trump\u2019s anger\u2026",
+      "url": "https://politicalwire.com/2026/04/09/trump-again-hits-out-at-nato-over-iran-war/",
+      "published_at": "2026-04-09T22:06:15Z",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "policy_change",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "moderate",
+      "relevance_score": 5.3,
+      "drivers": [
+        "claim"
+      ],
+      "forecast": "Continue monitoring benefits across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "northeast",
+      "regions": [
+        "northeast",
+        "west"
+      ],
+      "scope": "multi_region",
+      "source_state": "live",
+      "age_hours": 24.29
+    },
+    {
+      "event_id": "EVT-ef081d4b07f3",
+      "source_name": "TheWrap",
+      "source_domain": "thewrap.com",
+      "title": "Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019",
+      "summary": "\"They\u2019re not 'MAGA,' they\u2019re losers, just trying to latch on to MAGA,\" the president adds The post Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019 appeared first on TheWrap.",
+      "url": "https://www.thewrap.com/media-platforms/politics/donald-trump-torches-megyn-kelly-alex-jones-maga-criticizing-iran-war/",
+      "published_at": "2026-04-09T22:09:34Z",
+      "domains": [
+        "employment"
+      ],
+      "primary_domain": "employment",
+      "event_type": "employment_pressure",
       "direction": "neutral",
       "impact_level": "watch",
       "confidence": "low",
       "relevance_score": 4.5,
       "drivers": [
-        "appeal",
-        "appeals"
+        "job",
+        "jobs"
       ],
-      "forecast": "Continue monitoring benefits across affected regions for directional change.",
+      "forecast": "Continue monitoring employment across affected regions for directional change.",
+      "evidence_count": 1,
+      "region": "midwest",
+      "regions": [
+        "midwest"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": 24.23
+    },
+    {
+      "event_id": "EVT-2c4847a471c6",
+      "source_name": "TheJournal.ie",
+      "source_domain": "thejournal.ie",
+      "title": "From full-throated support to outrage, our readers have their say on the fuel protests",
+      "summary": "There was plenty of criticism for the government\u2019s handling of the fuel crisis and the protests themselves.",
+      "url": "https://www.thejournal.ie/your-stories-fuel-protests-7008178-Apr2026/",
+      "published_at": "2026-04-09T22:11:27Z",
+      "domains": [
+        "cost_of_living"
+      ],
+      "primary_domain": "cost_of_living",
+      "event_type": "cost_pressure",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "fuel"
+      ],
+      "forecast": "Continue monitoring cost of living nationally for directional change.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": 24.2
+    },
+    {
+      "event_id": "EVT-bd72a38bf83c",
+      "source_name": "Us Weekly",
+      "source_domain": "usmagazine.com",
+      "title": "Why Jill Duggar's Family Is Moving Away From Arkansas",
+      "summary": "Jill Duggar and her husband, Derick Dillard, are leaving Arkansas. \u201cDerick has joined the Marine Corps! He has been selected for Marine Corps Officer Candidate School (OCS),\u201d Duggar, 34, wrote via her family\u2019s blog on Thursday, April 9, noting Dillard, 37, \u201cs\u2026",
+      "url": "https://www.usmagazine.com/celebrity-news/news/why-jill-duggars-family-is-moving-away-from-arkansas/",
+      "published_at": "2026-04-09T22:01:39Z",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "operational_event",
+      "direction": "neutral",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 4.3,
+      "drivers": [
+        "family"
+      ],
+      "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
       "evidence_count": 1,
       "region": "south",
       "regions": [
@@ -229,341 +347,96 @@
       ],
       "scope": "multi_region",
       "source_state": "live",
-      "age_hours": 24.13
-    },
-    {
-      "event_id": "EVT-711635ae4af3",
-      "source_name": "New York Post",
-      "source_domain": "nypost.com",
-      "title": "New Jersey just topped the nation in home price growth \u2014 and it\u2019s not even close",
-      "summary": "New data from Cotality shows the Garden State is absolutely the place to be.",
-      "url": "https://nypost.com/2026/04/09/real-estate/new-jersey-just-topped-the-nation-in-home-price-growth/",
-      "published_at": "2026-04-09T19:15:38Z",
-      "domains": [
-        "housing_stability"
-      ],
-      "primary_domain": "housing_stability",
-      "event_type": "operational_event",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.5,
-      "drivers": [
-        "housing",
-        "home prices"
-      ],
-      "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "northeast",
-      "regions": [
-        "northeast",
-        "midwest"
-      ],
-      "scope": "multi_region",
-      "source_state": "live",
-      "age_hours": 24.21
-    },
-    {
-      "event_id": "EVT-3bdb0aae2209",
-      "source_name": "Mediaite",
-      "source_domain": "mediaite.com",
-      "title": "MS Host Claims He Was Getting Military-Style \u2018Thank You for Your Service\u2019 Compliments After Trump Election",
-      "summary": "MS NOW's Jonathan Capehart claimed he started receiving military style-\"thank you for your service\" messages from the public after Trump's first election. The post MS Host Claims He Was Getting Military-Style \u2018Thank You for Your Service\u2019 Compliments After Tru\u2026",
-      "url": "https://www.mediaite.com/media/ms-host-claims-he-was-getting-military-style-thank-you-for-your-service-compliments-after-trump-election/",
-      "published_at": "2026-04-09T19:11:36Z",
-      "domains": [
-        "benefits"
-      ],
-      "primary_domain": "benefits",
-      "event_type": "benefits_access",
-      "direction": "neutral",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.5,
-      "drivers": [
-        "claims",
-        "claim"
-      ],
-      "forecast": "Continue monitoring benefits across affected regions for directional change.",
-      "evidence_count": 1,
-      "region": "south",
-      "regions": [
-        "south"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.28
-    },
-    {
-      "event_id": "EVT-5d1c0039851e",
-      "source_name": "Gothamist",
-      "source_domain": "gothamist.com",
-      "title": "Alleged arson killer lit Queens house on fire to \u2018get out his rage,\u2019 prosecutors say",
-      "summary": "Roman Amatitla, 38, appears in Queens court for his arraignment on murder and arson charges on April 9, 2026. The 38-year-old defendant was recently fired from his job and didn't know anyone in the building, according to the district attorney\u2019s office. [ m\u2026",
-      "url": "https://gothamist.com/news/alleged-arson-killer-lit-queens-house-on-fire-to-get-out-his-rage-prosecutors-say",
-      "published_at": "2026-04-09T19:24:34Z",
-      "domains": [
-        "employment"
-      ],
-      "primary_domain": "employment",
-      "event_type": "operational_event",
-      "direction": "worsening",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.3,
-      "drivers": [
-        "job"
-      ],
-      "forecast": "Early pressure signal detected in employment across affected regions.",
-      "evidence_count": 1,
-      "region": "midwest",
-      "regions": [
-        "midwest"
-      ],
-      "scope": "regional",
-      "source_state": "live",
-      "age_hours": 24.06
-    },
-    {
-      "event_id": "EVT-11c93cb97d05",
-      "source_name": "National Institutes of Health",
-      "source_domain": "ncbi.nlm.nih.gov",
-      "title": "New | phs004467.v2.p1 | NHLBI Growth and Health Study (NGHS-BioLINCC)",
-      "summary": "NHLBI Growth and Health Study (NGHS-BioLINCC) (study page | release notes )",
-      "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs004467.v2.p1",
-      "published_at": "2026-04-09T19:20:00Z",
-      "domains": [
-        "housing_stability"
-      ],
-      "primary_domain": "housing_stability",
-      "event_type": "operational_event",
-      "direction": "worsening",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.3,
-      "drivers": [
-        "lease"
-      ],
-      "forecast": "Early pressure signal detected in housing stability nationally.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": 24.14
-    },
-    {
-      "event_id": "EVT-b2ed87060159",
-      "source_name": "National Post",
-      "source_domain": "nationalpost.com",
-      "title": "Americans are confused \u2014 and fatigued \u2014 by Trump\u2019s trade war",
-      "summary": "As Americans grow more confused about who benefits from trade with Canada, could Trump\u2019s \u201crip\u2011off\u201d narrative be losing its punch?",
-      "url": "https://nationalpost.com/news/americans-are-confused-and-fatigued-by-trumps-trade-war",
-      "published_at": "2026-04-09T19:15:33Z",
-      "domains": [
-        "benefits"
-      ],
-      "primary_domain": "benefits",
-      "event_type": "benefits_access",
-      "direction": "worsening",
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 4.3,
-      "drivers": [
-        "benefits"
-      ],
-      "forecast": "Early pressure signal detected in benefits nationally.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": 24.21
+      "age_hours": 24.36
     }
   ],
-  "priority_signals": [
-    {
-      "signal_id": "SIG-43e6398b0d5a",
-      "domain_key": "employment",
-      "headline": "Employment improvement signal: Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
-      "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
-      "severity": "high",
-      "confidence": "high",
-      "updated_at": "2026-04-10T19:28:17+00:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "economictimes.indiatimes.com"
-      ],
-      "event_ids": [
-        "EVT-3acb2d9ab5bc"
-      ],
-      "signal_type": "stabilization",
-      "region": "midwest",
-      "scope": "multi_region",
-      "source_state": "live"
-    }
-  ],
+  "priority_signals": [],
   "regional_events": {
     "west": [
       {
-        "event_id": "EVT-3acb2d9ab5bc",
-        "source_name": "The Times of India",
-        "source_domain": "economictimes.indiatimes.com",
-        "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
-        "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
-        "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
-        "published_at": "2026-04-09T19:12:39Z",
+        "event_id": "EVT-55ae5833aad4",
+        "source_name": "seattlepi.com",
+        "source_domain": "seattlepi.com",
+        "title": "Venezuelan lawmakers approve sweeping mining bill to lure foreign investors",
+        "summary": "Venezuelan lawmakers have approved a bill to regulate the country\u2019s mining as it seeks to attract leery foreign investors to a once-private industry that has long been exploited by criminal groups with ties to the government. It is the latest legislative init\u2026",
+        "url": "https://www.seattlepi.com/news/world/article/venezuelan-lawmakers-approve-sweeping-mining-bill-22198342.php",
+        "published_at": "2026-04-09T22:22:25Z",
         "domains": [
-          "employment",
-          "benefits"
+          "housing_stability"
         ],
-        "primary_domain": "employment",
-        "event_type": "benefits_access",
-        "direction": "improving",
-        "impact_level": "high",
-        "confidence": "high",
-        "relevance_score": 6.9,
+        "primary_domain": "housing_stability",
+        "event_type": "policy_change",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "moderate",
+        "relevance_score": 5.3,
         "drivers": [
-          "pay",
-          "benefits"
+          "lease"
         ],
-        "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
+        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
         "evidence_count": 1,
-        "region": "midwest",
+        "region": "west",
         "regions": [
-          "midwest",
           "west"
         ],
-        "scope": "multi_region",
+        "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.26
-      }
-    ],
-    "south": [
-      {
-        "event_id": "EVT-f60e8ee06386",
-        "source_name": "Fox News",
-        "source_domain": "foxnews.com",
-        "title": "Federal appeals court rejects Anthropic bid to block Pentagon blacklist in AI dispute",
-        "summary": "A federal court rejected Anthropic's bid to block the Department of War from blacklisting the artificial intelligence company's technology.",
-        "url": "https://www.foxnews.com/politics/federal-appeals-court-rejects-anthropic-bid-block-pentagon-blacklist-ai-dispute",
-        "published_at": "2026-04-09T19:20:22Z",
-        "domains": [
-          "benefits"
-        ],
-        "primary_domain": "benefits",
-        "event_type": "operational_event",
-        "direction": "neutral",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.5,
-        "drivers": [
-          "appeal",
-          "appeals"
-        ],
-        "forecast": "Continue monitoring benefits across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "south",
-        "regions": [
-          "south",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.13
+        "age_hours": 24.02
       },
       {
-        "event_id": "EVT-3bdb0aae2209",
-        "source_name": "Mediaite",
-        "source_domain": "mediaite.com",
-        "title": "MS Host Claims He Was Getting Military-Style \u2018Thank You for Your Service\u2019 Compliments After Trump Election",
-        "summary": "MS NOW's Jonathan Capehart claimed he started receiving military style-\"thank you for your service\" messages from the public after Trump's first election. The post MS Host Claims He Was Getting Military-Style \u2018Thank You for Your Service\u2019 Compliments After Tru\u2026",
-        "url": "https://www.mediaite.com/media/ms-host-claims-he-was-getting-military-style-thank-you-for-your-service-compliments-after-trump-election/",
-        "published_at": "2026-04-09T19:11:36Z",
+        "event_id": "EVT-eacdcd98138f",
+        "source_name": "Politicalwire.com",
+        "source_domain": "politicalwire.com",
+        "title": "Trump Again Hits Out at NATO Over Iran War",
+        "summary": "\u201cPresident Trump has hit out at NATO after a tense meeting with Mark Rutte, the secretary general of the military alliance, at the White House on Wednesday,\u201d the New York Times reports. \u201cMr. Rutte had traveled to Washington to try to assuage Mr. Trump\u2019s anger\u2026",
+        "url": "https://politicalwire.com/2026/04/09/trump-again-hits-out-at-nato-over-iran-war/",
+        "published_at": "2026-04-09T22:06:15Z",
         "domains": [
           "benefits"
         ],
         "primary_domain": "benefits",
-        "event_type": "benefits_access",
+        "event_type": "policy_change",
         "direction": "neutral",
         "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.5,
+        "confidence": "moderate",
+        "relevance_score": 5.3,
         "drivers": [
-          "claims",
           "claim"
         ],
         "forecast": "Continue monitoring benefits across affected regions for directional change.",
         "evidence_count": 1,
-        "region": "south",
+        "region": "northeast",
         "regions": [
-          "south"
-        ],
-        "scope": "regional",
-        "source_state": "live",
-        "age_hours": 24.28
-      }
-    ],
-    "midwest": [
-      {
-        "event_id": "EVT-3acb2d9ab5bc",
-        "source_name": "The Times of India",
-        "source_domain": "economictimes.indiatimes.com",
-        "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
-        "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
-        "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
-        "published_at": "2026-04-09T19:12:39Z",
-        "domains": [
-          "employment",
-          "benefits"
-        ],
-        "primary_domain": "employment",
-        "event_type": "benefits_access",
-        "direction": "improving",
-        "impact_level": "high",
-        "confidence": "high",
-        "relevance_score": 6.9,
-        "drivers": [
-          "pay",
-          "benefits"
-        ],
-        "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest",
+          "northeast",
           "west"
         ],
         "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.26
-      },
+        "age_hours": 24.29
+      }
+    ],
+    "south": [
       {
-        "event_id": "EVT-f60e8ee06386",
-        "source_name": "Fox News",
-        "source_domain": "foxnews.com",
-        "title": "Federal appeals court rejects Anthropic bid to block Pentagon blacklist in AI dispute",
-        "summary": "A federal court rejected Anthropic's bid to block the Department of War from blacklisting the artificial intelligence company's technology.",
-        "url": "https://www.foxnews.com/politics/federal-appeals-court-rejects-anthropic-bid-block-pentagon-blacklist-ai-dispute",
-        "published_at": "2026-04-09T19:20:22Z",
+        "event_id": "EVT-bd72a38bf83c",
+        "source_name": "Us Weekly",
+        "source_domain": "usmagazine.com",
+        "title": "Why Jill Duggar's Family Is Moving Away From Arkansas",
+        "summary": "Jill Duggar and her husband, Derick Dillard, are leaving Arkansas. \u201cDerick has joined the Marine Corps! He has been selected for Marine Corps Officer Candidate School (OCS),\u201d Duggar, 34, wrote via her family\u2019s blog on Thursday, April 9, noting Dillard, 37, \u201cs\u2026",
+        "url": "https://www.usmagazine.com/celebrity-news/news/why-jill-duggars-family-is-moving-away-from-arkansas/",
+        "published_at": "2026-04-09T22:01:39Z",
         "domains": [
-          "benefits"
+          "military_family_readiness"
         ],
-        "primary_domain": "benefits",
+        "primary_domain": "military_family_readiness",
         "event_type": "operational_event",
         "direction": "neutral",
         "impact_level": "watch",
         "confidence": "low",
-        "relevance_score": 4.5,
+        "relevance_score": 4.3,
         "drivers": [
-          "appeal",
-          "appeals"
+          "family"
         ],
-        "forecast": "Continue monitoring benefits across affected regions for directional change.",
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
         "evidence_count": 1,
         "region": "south",
         "regions": [
@@ -572,61 +445,31 @@
         ],
         "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.13
-      },
+        "age_hours": 24.36
+      }
+    ],
+    "midwest": [
       {
-        "event_id": "EVT-711635ae4af3",
-        "source_name": "New York Post",
-        "source_domain": "nypost.com",
-        "title": "New Jersey just topped the nation in home price growth \u2014 and it\u2019s not even close",
-        "summary": "New data from Cotality shows the Garden State is absolutely the place to be.",
-        "url": "https://nypost.com/2026/04/09/real-estate/new-jersey-just-topped-the-nation-in-home-price-growth/",
-        "published_at": "2026-04-09T19:15:38Z",
+        "event_id": "EVT-556e1e077471",
+        "source_name": "Slashdot.org",
+        "source_domain": "slashdot.org",
+        "title": "Automatic U.S. military draft registration planned by December, filing shows - CNBC",
+        "summary": "Automatic U.S. military draft registration planned by December, filing showsCNBC US plans to automatically register men for military draft eligibilityBBC Automatic military draft registration takes effect in December. Here\u2019s how it would workCNN Which America\u2026",
+        "url": "https://slashdot.org/firehose.pl?op=view&amp;id=181505598",
+        "published_at": "2026-04-09T22:12:14Z",
         "domains": [
-          "housing_stability"
+          "benefits"
         ],
-        "primary_domain": "housing_stability",
-        "event_type": "operational_event",
+        "primary_domain": "benefits",
+        "event_type": "benefits_access",
         "direction": "neutral",
         "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.5,
+        "confidence": "moderate",
+        "relevance_score": 5.3,
         "drivers": [
-          "housing",
-          "home prices"
+          "eligibility"
         ],
-        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.21
-      },
-      {
-        "event_id": "EVT-5d1c0039851e",
-        "source_name": "Gothamist",
-        "source_domain": "gothamist.com",
-        "title": "Alleged arson killer lit Queens house on fire to \u2018get out his rage,\u2019 prosecutors say",
-        "summary": "Roman Amatitla, 38, appears in Queens court for his arraignment on murder and arson charges on April 9, 2026. The 38-year-old defendant was recently fired from his job and didn't know anyone in the building, according to the district attorney\u2019s office. [ m\u2026",
-        "url": "https://gothamist.com/news/alleged-arson-killer-lit-queens-house-on-fire-to-get-out-his-rage-prosecutors-say",
-        "published_at": "2026-04-09T19:24:34Z",
-        "domains": [
-          "employment"
-        ],
-        "primary_domain": "employment",
-        "event_type": "operational_event",
-        "direction": "worsening",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "job"
-        ],
-        "forecast": "Early pressure signal detected in employment across affected regions.",
+        "forecast": "Continue monitoring benefits across affected regions for directional change.",
         "evidence_count": 1,
         "region": "midwest",
         "regions": [
@@ -634,50 +477,111 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.06
-      }
-    ],
-    "northeast": [
+        "age_hours": 24.19
+      },
       {
-        "event_id": "EVT-711635ae4af3",
-        "source_name": "New York Post",
-        "source_domain": "nypost.com",
-        "title": "New Jersey just topped the nation in home price growth \u2014 and it\u2019s not even close",
-        "summary": "New data from Cotality shows the Garden State is absolutely the place to be.",
-        "url": "https://nypost.com/2026/04/09/real-estate/new-jersey-just-topped-the-nation-in-home-price-growth/",
-        "published_at": "2026-04-09T19:15:38Z",
+        "event_id": "EVT-ef081d4b07f3",
+        "source_name": "TheWrap",
+        "source_domain": "thewrap.com",
+        "title": "Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019",
+        "summary": "\"They\u2019re not 'MAGA,' they\u2019re losers, just trying to latch on to MAGA,\" the president adds The post Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019 appeared first on TheWrap.",
+        "url": "https://www.thewrap.com/media-platforms/politics/donald-trump-torches-megyn-kelly-alex-jones-maga-criticizing-iran-war/",
+        "published_at": "2026-04-09T22:09:34Z",
         "domains": [
-          "housing_stability"
+          "employment"
         ],
-        "primary_domain": "housing_stability",
-        "event_type": "operational_event",
+        "primary_domain": "employment",
+        "event_type": "employment_pressure",
         "direction": "neutral",
         "impact_level": "watch",
         "confidence": "low",
         "relevance_score": 4.5,
         "drivers": [
-          "housing",
-          "home prices"
+          "job",
+          "jobs"
         ],
-        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
+        "forecast": "Continue monitoring employment across affected regions for directional change.",
         "evidence_count": 1,
-        "region": "northeast",
+        "region": "midwest",
         "regions": [
-          "northeast",
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.23
+      },
+      {
+        "event_id": "EVT-bd72a38bf83c",
+        "source_name": "Us Weekly",
+        "source_domain": "usmagazine.com",
+        "title": "Why Jill Duggar's Family Is Moving Away From Arkansas",
+        "summary": "Jill Duggar and her husband, Derick Dillard, are leaving Arkansas. \u201cDerick has joined the Marine Corps! He has been selected for Marine Corps Officer Candidate School (OCS),\u201d Duggar, 34, wrote via her family\u2019s blog on Thursday, April 9, noting Dillard, 37, \u201cs\u2026",
+        "url": "https://www.usmagazine.com/celebrity-news/news/why-jill-duggars-family-is-moving-away-from-arkansas/",
+        "published_at": "2026-04-09T22:01:39Z",
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "operational_event",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "family"
+        ],
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "south",
+        "regions": [
+          "south",
           "midwest"
         ],
         "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.21
+        "age_hours": 24.36
+      }
+    ],
+    "northeast": [
+      {
+        "event_id": "EVT-eacdcd98138f",
+        "source_name": "Politicalwire.com",
+        "source_domain": "politicalwire.com",
+        "title": "Trump Again Hits Out at NATO Over Iran War",
+        "summary": "\u201cPresident Trump has hit out at NATO after a tense meeting with Mark Rutte, the secretary general of the military alliance, at the White House on Wednesday,\u201d the New York Times reports. \u201cMr. Rutte had traveled to Washington to try to assuage Mr. Trump\u2019s anger\u2026",
+        "url": "https://politicalwire.com/2026/04/09/trump-again-hits-out-at-nato-over-iran-war/",
+        "published_at": "2026-04-09T22:06:15Z",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "policy_change",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "moderate",
+        "relevance_score": 5.3,
+        "drivers": [
+          "claim"
+        ],
+        "forecast": "Continue monitoring benefits across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "northeast",
+        "regions": [
+          "northeast",
+          "west"
+        ],
+        "scope": "multi_region",
+        "source_state": "live",
+        "age_hours": 24.29
       }
     ]
   },
   "regional_tier3_contributions": {
     "west": {
-      "housing_stability": 0.0,
-      "employment": -0.14,
+      "housing_stability": 0.02,
+      "employment": 0.0,
       "cost_of_living": 0.0,
-      "benefits": -0.14,
+      "benefits": 0.02,
       "healthcare_system": 0.0,
       "military_family_readiness": 0.0
     },
@@ -685,23 +589,23 @@
       "housing_stability": 0.0,
       "employment": 0.0,
       "cost_of_living": 0.0,
-      "benefits": 0.04,
+      "benefits": 0.0,
       "healthcare_system": 0.0,
-      "military_family_readiness": 0.0
+      "military_family_readiness": 0.02
     },
     "midwest": {
-      "housing_stability": 0.02,
-      "employment": -0.06,
+      "housing_stability": 0.0,
+      "employment": 0.02,
       "cost_of_living": 0.0,
-      "benefits": -0.12,
+      "benefits": 0.02,
       "healthcare_system": 0.0,
-      "military_family_readiness": 0.0
+      "military_family_readiness": 0.02
     },
     "northeast": {
-      "housing_stability": 0.02,
+      "housing_stability": 0.0,
       "employment": 0.0,
       "cost_of_living": 0.0,
-      "benefits": 0.0,
+      "benefits": 0.02,
       "healthcare_system": 0.0,
       "military_family_readiness": 0.0
     }
@@ -709,123 +613,59 @@
   "domain_events": {
     "housing_stability": [
       {
-        "event_id": "EVT-711635ae4af3",
-        "source_name": "New York Post",
-        "source_domain": "nypost.com",
-        "title": "New Jersey just topped the nation in home price growth \u2014 and it\u2019s not even close",
-        "summary": "New data from Cotality shows the Garden State is absolutely the place to be.",
-        "url": "https://nypost.com/2026/04/09/real-estate/new-jersey-just-topped-the-nation-in-home-price-growth/",
-        "published_at": "2026-04-09T19:15:38Z",
+        "event_id": "EVT-55ae5833aad4",
+        "source_name": "seattlepi.com",
+        "source_domain": "seattlepi.com",
+        "title": "Venezuelan lawmakers approve sweeping mining bill to lure foreign investors",
+        "summary": "Venezuelan lawmakers have approved a bill to regulate the country\u2019s mining as it seeks to attract leery foreign investors to a once-private industry that has long been exploited by criminal groups with ties to the government. It is the latest legislative init\u2026",
+        "url": "https://www.seattlepi.com/news/world/article/venezuelan-lawmakers-approve-sweeping-mining-bill-22198342.php",
+        "published_at": "2026-04-09T22:22:25Z",
         "domains": [
           "housing_stability"
         ],
         "primary_domain": "housing_stability",
-        "event_type": "operational_event",
+        "event_type": "policy_change",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "moderate",
+        "relevance_score": 5.3,
+        "drivers": [
+          "lease"
+        ],
+        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "west",
+        "regions": [
+          "west"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.02
+      }
+    ],
+    "employment": [
+      {
+        "event_id": "EVT-ef081d4b07f3",
+        "source_name": "TheWrap",
+        "source_domain": "thewrap.com",
+        "title": "Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019",
+        "summary": "\"They\u2019re not 'MAGA,' they\u2019re losers, just trying to latch on to MAGA,\" the president adds The post Trump Torches \u2018Nut Jobs\u2019 Megyn Kelly, Alex Jones for Criticizing Him Over Iran War: \u2018They\u2019re Stupid People\u2019 appeared first on TheWrap.",
+        "url": "https://www.thewrap.com/media-platforms/politics/donald-trump-torches-megyn-kelly-alex-jones-maga-criticizing-iran-war/",
+        "published_at": "2026-04-09T22:09:34Z",
+        "domains": [
+          "employment"
+        ],
+        "primary_domain": "employment",
+        "event_type": "employment_pressure",
         "direction": "neutral",
         "impact_level": "watch",
         "confidence": "low",
         "relevance_score": 4.5,
         "drivers": [
-          "housing",
-          "home prices"
+          "job",
+          "jobs"
         ],
-        "forecast": "Continue monitoring housing stability across affected regions for directional change.",
-        "evidence_count": 1,
-        "region": "northeast",
-        "regions": [
-          "northeast",
-          "midwest"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.21
-      },
-      {
-        "event_id": "EVT-11c93cb97d05",
-        "source_name": "National Institutes of Health",
-        "source_domain": "ncbi.nlm.nih.gov",
-        "title": "New | phs004467.v2.p1 | NHLBI Growth and Health Study (NGHS-BioLINCC)",
-        "summary": "NHLBI Growth and Health Study (NGHS-BioLINCC) (study page | release notes )",
-        "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs004467.v2.p1",
-        "published_at": "2026-04-09T19:20:00Z",
-        "domains": [
-          "housing_stability"
-        ],
-        "primary_domain": "housing_stability",
-        "event_type": "operational_event",
-        "direction": "worsening",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "lease"
-        ],
-        "forecast": "Early pressure signal detected in housing stability nationally.",
-        "evidence_count": 1,
-        "region": "national",
-        "regions": [
-          "national"
-        ],
-        "scope": "national",
-        "source_state": "live",
-        "age_hours": 24.14
-      }
-    ],
-    "employment": [
-      {
-        "event_id": "EVT-3acb2d9ab5bc",
-        "source_name": "The Times of India",
-        "source_domain": "economictimes.indiatimes.com",
-        "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
-        "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
-        "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
-        "published_at": "2026-04-09T19:12:39Z",
-        "domains": [
-          "employment",
-          "benefits"
-        ],
-        "primary_domain": "employment",
-        "event_type": "benefits_access",
-        "direction": "improving",
-        "impact_level": "high",
-        "confidence": "high",
-        "relevance_score": 6.9,
-        "drivers": [
-          "pay",
-          "benefits"
-        ],
-        "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest",
-          "west"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.26
-      },
-      {
-        "event_id": "EVT-5d1c0039851e",
-        "source_name": "Gothamist",
-        "source_domain": "gothamist.com",
-        "title": "Alleged arson killer lit Queens house on fire to \u2018get out his rage,\u2019 prosecutors say",
-        "summary": "Roman Amatitla, 38, appears in Queens court for his arraignment on murder and arson charges on April 9, 2026. The 38-year-old defendant was recently fired from his job and didn't know anyone in the building, according to the district attorney\u2019s office. [ m\u2026",
-        "url": "https://gothamist.com/news/alleged-arson-killer-lit-queens-house-on-fire-to-get-out-his-rage-prosecutors-say",
-        "published_at": "2026-04-09T19:24:34Z",
-        "domains": [
-          "employment"
-        ],
-        "primary_domain": "employment",
-        "event_type": "operational_event",
-        "direction": "worsening",
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 4.3,
-        "drivers": [
-          "job"
-        ],
-        "forecast": "Early pressure signal detected in employment across affected regions.",
+        "forecast": "Continue monitoring employment across affected regions for directional change.",
         "evidence_count": 1,
         "region": "midwest",
         "regions": [
@@ -833,68 +673,31 @@
         ],
         "scope": "regional",
         "source_state": "live",
-        "age_hours": 24.06
+        "age_hours": 24.23
       }
     ],
-    "military_family_readiness": [],
-    "cost_of_living": [],
-    "healthcare_system": [],
-    "benefits": [
+    "military_family_readiness": [
       {
-        "event_id": "EVT-3acb2d9ab5bc",
-        "source_name": "The Times of India",
-        "source_domain": "economictimes.indiatimes.com",
-        "title": "Social Security warning: 3 simple checks that could boost your benefits and stop you losing money in 2026",
-        "summary": "Social Security benefits check 2026: Many Americans may not be receiving their full Social Security payments. Small errors in earnings records or personal status can lead to underpayments. Checking your earnings history and ensuring your personal details are \u2026",
-        "url": "https://economictimes.indiatimes.com/news/international/us/social-security-warning-3-simple-checks-that-could-boost-your-benefits-and-stop-you-losing-money-in-2026/articleshow/130152703.cms",
-        "published_at": "2026-04-09T19:12:39Z",
+        "event_id": "EVT-bd72a38bf83c",
+        "source_name": "Us Weekly",
+        "source_domain": "usmagazine.com",
+        "title": "Why Jill Duggar's Family Is Moving Away From Arkansas",
+        "summary": "Jill Duggar and her husband, Derick Dillard, are leaving Arkansas. \u201cDerick has joined the Marine Corps! He has been selected for Marine Corps Officer Candidate School (OCS),\u201d Duggar, 34, wrote via her family\u2019s blog on Thursday, April 9, noting Dillard, 37, \u201cs\u2026",
+        "url": "https://www.usmagazine.com/celebrity-news/news/why-jill-duggars-family-is-moving-away-from-arkansas/",
+        "published_at": "2026-04-09T22:01:39Z",
         "domains": [
-          "employment",
-          "benefits"
+          "military_family_readiness"
         ],
-        "primary_domain": "employment",
-        "event_type": "benefits_access",
-        "direction": "improving",
-        "impact_level": "high",
-        "confidence": "high",
-        "relevance_score": 6.9,
-        "drivers": [
-          "pay",
-          "benefits"
-        ],
-        "forecast": "Near-term conditions may improve in employment and benefits across affected regions if current support persists.",
-        "evidence_count": 1,
-        "region": "midwest",
-        "regions": [
-          "midwest",
-          "west"
-        ],
-        "scope": "multi_region",
-        "source_state": "live",
-        "age_hours": 24.26
-      },
-      {
-        "event_id": "EVT-f60e8ee06386",
-        "source_name": "Fox News",
-        "source_domain": "foxnews.com",
-        "title": "Federal appeals court rejects Anthropic bid to block Pentagon blacklist in AI dispute",
-        "summary": "A federal court rejected Anthropic's bid to block the Department of War from blacklisting the artificial intelligence company's technology.",
-        "url": "https://www.foxnews.com/politics/federal-appeals-court-rejects-anthropic-bid-block-pentagon-blacklist-ai-dispute",
-        "published_at": "2026-04-09T19:20:22Z",
-        "domains": [
-          "benefits"
-        ],
-        "primary_domain": "benefits",
+        "primary_domain": "military_family_readiness",
         "event_type": "operational_event",
         "direction": "neutral",
         "impact_level": "watch",
         "confidence": "low",
-        "relevance_score": 4.5,
+        "relevance_score": 4.3,
         "drivers": [
-          "appeal",
-          "appeals"
+          "family"
         ],
-        "forecast": "Continue monitoring benefits across affected regions for directional change.",
+        "forecast": "Continue monitoring military family readiness across affected regions for directional change.",
         "evidence_count": 1,
         "region": "south",
         "regions": [
@@ -903,9 +706,105 @@
         ],
         "scope": "multi_region",
         "source_state": "live",
-        "age_hours": 24.13
+        "age_hours": 24.36
+      }
+    ],
+    "cost_of_living": [
+      {
+        "event_id": "EVT-2c4847a471c6",
+        "source_name": "TheJournal.ie",
+        "source_domain": "thejournal.ie",
+        "title": "From full-throated support to outrage, our readers have their say on the fuel protests",
+        "summary": "There was plenty of criticism for the government\u2019s handling of the fuel crisis and the protests themselves.",
+        "url": "https://www.thejournal.ie/your-stories-fuel-protests-7008178-Apr2026/",
+        "published_at": "2026-04-09T22:11:27Z",
+        "domains": [
+          "cost_of_living"
+        ],
+        "primary_domain": "cost_of_living",
+        "event_type": "cost_pressure",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 4.3,
+        "drivers": [
+          "fuel"
+        ],
+        "forecast": "Continue monitoring cost of living nationally for directional change.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "live",
+        "age_hours": 24.2
+      }
+    ],
+    "healthcare_system": [],
+    "benefits": [
+      {
+        "event_id": "EVT-556e1e077471",
+        "source_name": "Slashdot.org",
+        "source_domain": "slashdot.org",
+        "title": "Automatic U.S. military draft registration planned by December, filing shows - CNBC",
+        "summary": "Automatic U.S. military draft registration planned by December, filing showsCNBC US plans to automatically register men for military draft eligibilityBBC Automatic military draft registration takes effect in December. Here\u2019s how it would workCNN Which America\u2026",
+        "url": "https://slashdot.org/firehose.pl?op=view&amp;id=181505598",
+        "published_at": "2026-04-09T22:12:14Z",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "benefits_access",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "moderate",
+        "relevance_score": 5.3,
+        "drivers": [
+          "eligibility"
+        ],
+        "forecast": "Continue monitoring benefits across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "midwest",
+        "regions": [
+          "midwest"
+        ],
+        "scope": "regional",
+        "source_state": "live",
+        "age_hours": 24.19
+      },
+      {
+        "event_id": "EVT-eacdcd98138f",
+        "source_name": "Politicalwire.com",
+        "source_domain": "politicalwire.com",
+        "title": "Trump Again Hits Out at NATO Over Iran War",
+        "summary": "\u201cPresident Trump has hit out at NATO after a tense meeting with Mark Rutte, the secretary general of the military alliance, at the White House on Wednesday,\u201d the New York Times reports. \u201cMr. Rutte had traveled to Washington to try to assuage Mr. Trump\u2019s anger\u2026",
+        "url": "https://politicalwire.com/2026/04/09/trump-again-hits-out-at-nato-over-iran-war/",
+        "published_at": "2026-04-09T22:06:15Z",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "policy_change",
+        "direction": "neutral",
+        "impact_level": "watch",
+        "confidence": "moderate",
+        "relevance_score": 5.3,
+        "drivers": [
+          "claim"
+        ],
+        "forecast": "Continue monitoring benefits across affected regions for directional change.",
+        "evidence_count": 1,
+        "region": "northeast",
+        "regions": [
+          "northeast",
+          "west"
+        ],
+        "scope": "multi_region",
+        "source_state": "live",
+        "age_hours": 24.29
       }
     ]
   },
-  "generated_at": "2026-04-10T19:28:17.167848+00:00"
+  "generated_at": "2026-04-10T22:23:31.055033+00:00"
 }
