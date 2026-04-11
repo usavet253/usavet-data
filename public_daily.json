@@ -1,14 +1,14 @@
 {
   "as_of": "2026-04-11",
-  "overall_score": 50.7,
-  "score": 50.7,
+  "overall_score": 50.6,
+  "score": 50.6,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "stable",
   "pressure_label": "Balanced / Watch",
   "source_quality": "High Confidence",
   "index": {
-    "overall_score": 50.7,
+    "overall_score": 50.6,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
@@ -23,12 +23,12 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.7.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.6.",
   "notes": [
     "Housing score: 55.4",
     "Cost of living score: 55.1",
     "Employment score: 51.4",
-    "Benefits score: 42.2",
+    "Benefits score: 41.6",
     "Healthcare system score: 45.0",
     "Military family readiness score: 53.0",
     "Source confidence: High Confidence"
@@ -39,15 +39,15 @@
     "military_family_readiness": 53.0,
     "cost_of_living": 55.1,
     "healthcare_system": 45.0,
-    "benefits": 42.2
+    "benefits": 41.6
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.7.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.6.",
     "notes": [
       "Housing score: 55.4",
       "Cost of living score: 55.1",
       "Employment score: 51.4",
-      "Benefits score: 42.2",
+      "Benefits score: 41.6",
       "Healthcare system score: 45.0",
       "Military family readiness score: 53.0",
       "Source confidence: High Confidence"
@@ -165,10 +165,10 @@
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     },
     {
-      "time": "2026-04-11T00:26:54.500701+00:00",
+      "time": "2026-04-11T00:48:49.205048+00:00",
       "as_of": "2026-04-11",
-      "overall_score": 50.7,
-      "score": 50.7,
+      "overall_score": 50.6,
+      "score": 50.6,
       "band": "Balanced / Watch",
       "status_band": "Balanced / Watch",
       "pressure_label": "Balanced / Watch",
@@ -176,7 +176,7 @@
       "housing_stability": 55.4,
       "cost_of_living": 55.1,
       "employment": 51.4,
-      "benefits": 42.2,
+      "benefits": 41.6,
       "healthcare_system": 45.0,
       "military_family_readiness": 53.0,
       "housing_stability_model": "housing_v3_continuous_tiered",
@@ -237,5 +237,5 @@
     "healthcare_system": [],
     "benefits": []
   },
-  "generated_at": "2026-04-11T00:26:54.500701+00:00"
+  "generated_at": "2026-04-11T00:48:49.205048+00:00"
 }
