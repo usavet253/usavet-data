@@ -28,18 +28,18 @@
     "Housing score: 55.4",
     "Cost of living score: 55.1",
     "Employment score: 51.4",
-    "Benefits score: 42.8",
+    "Benefits score: 42.2",
     "Healthcare system score: 45.0",
-    "Military family readiness score: 52.7",
+    "Military family readiness score: 53.3",
     "Source confidence: Moderate Confidence"
   ],
   "domains": {
     "housing_stability": 55.4,
     "employment": 51.4,
-    "military_family_readiness": 52.7,
+    "military_family_readiness": 53.3,
     "cost_of_living": 55.1,
     "healthcare_system": 45.0,
-    "benefits": 42.8
+    "benefits": 42.2
   },
   "brief": {
     "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.8.",
@@ -47,9 +47,9 @@
       "Housing score: 55.4",
       "Cost of living score: 55.1",
       "Employment score: 51.4",
-      "Benefits score: 42.8",
+      "Benefits score: 42.2",
       "Healthcare system score: 45.0",
-      "Military family readiness score: 52.7",
+      "Military family readiness score: 53.3",
       "Source confidence: Moderate Confidence"
     ]
   },
@@ -187,7 +187,7 @@
       "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
     },
     {
-      "time": "2026-04-12T02:22:20.433621+00:00",
+      "time": "2026-04-12T03:13:04.462199+00:00",
       "as_of": "2026-04-12",
       "overall_score": 50.8,
       "score": 50.8,
@@ -198,9 +198,9 @@
       "housing_stability": 55.4,
       "cost_of_living": 55.1,
       "employment": 51.4,
-      "benefits": 42.8,
+      "benefits": 42.2,
       "healthcare_system": 45.0,
-      "military_family_readiness": 52.7,
+      "military_family_readiness": 53.3,
       "housing_stability_model": "housing_v3_continuous_tiered",
       "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
       "employment_model": "employment_v3_continuous_tiered",
@@ -259,5 +259,5 @@
     "healthcare_system": [],
     "benefits": []
   },
-  "generated_at": "2026-04-12T02:22:20.433621+00:00"
+  "generated_at": "2026-04-12T03:13:04.462199+00:00"
 }
