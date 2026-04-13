@@ -174,5 +174,18 @@
     "benefits_model": "benefits_v3_continuous_tiered",
     "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
     "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+  },
+  {
+    "signals": {},
+    "overall_score": 50.0,
+    "domains": {
+      "employment": 50,
+      "housing_stability": 50,
+      "cost_of_living": 50,
+      "benefits": 50,
+      "healthcare_system": 50,
+      "military_family_readiness": 50
+    },
+    "as_of": "2026-04-13"
   }
 ]
