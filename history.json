@@ -226,5 +226,17 @@
       "military_family_readiness": 50
     },
     "as_of": "2026-04-13"
+  },
+  {
+    "date": "2026-04-13",
+    "overall_score": 50.0,
+    "domains": {
+      "employment": 50.0,
+      "housing_stability": 50.0,
+      "cost_of_living": 50.0,
+      "benefits": 50.0,
+      "healthcare_system": 50.0,
+      "military_family_readiness": 50.0
+    }
   }
 ]
