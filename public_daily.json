@@ -1,14 +1,1434 @@
 {
-  "generated_at": "2026-04-13 06:37:34",
   "as_of": "2026-04-13",
-  "overall_score": 50.0,
-  "domains": {
-    "employment": 50.0,
-    "housing_stability": 50.0,
-    "cost_of_living": 50.0,
-    "benefits": 50.0,
-    "healthcare_system": 50.0,
-    "military_family_readiness": 50.0
+  "overall_score": 57.7,
+  "score": 57.7,
+  "status_band": "Balanced / Watch",
+  "band": "Balanced / Watch",
+  "trend": "improving",
+  "pressure_label": "Balanced / Watch",
+  "source_quality": "High Confidence",
+  "index": {
+    "overall_score": 57.7,
+    "band": "Balanced / Watch",
+    "status_band": "Balanced / Watch",
+    "trend": "improving",
+    "pressure_label": "Balanced / Watch",
+    "source_quality": "High Confidence",
+    "weights": {
+      "housing_stability": 0.2,
+      "cost_of_living": 0.2,
+      "employment": 0.17,
+      "healthcare_system": 0.16,
+      "benefits": 0.15,
+      "military_family_readiness": 0.12
+    }
   },
-  "signals": {}
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 57.7.",
+  "notes": [
+    "Housing score: 59.8",
+    "Cost of living score: 62.4",
+    "Employment score: 58.3",
+    "Benefits score: 53.1",
+    "Healthcare system score: 54.1",
+    "Military family readiness score: 55.8",
+    "Source confidence: High Confidence"
+  ],
+  "domains": {
+    "housing_stability": 59.8,
+    "employment": 58.3,
+    "military_family_readiness": 55.8,
+    "cost_of_living": 62.4,
+    "healthcare_system": 54.1,
+    "benefits": 53.1
+  },
+  "brief": {
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 57.7.",
+    "notes": [
+      "Housing score: 59.8",
+      "Cost of living score: 62.4",
+      "Employment score: 58.3",
+      "Benefits score: 53.1",
+      "Healthcare system score: 54.1",
+      "Military family readiness score: 55.8",
+      "Source confidence: High Confidence"
+    ]
+  },
+  "history": [
+    {
+      "date": "2026-04-13",
+      "overall_score": 50.0,
+      "domains": {
+        "employment": 50.0,
+        "housing_stability": 50.0,
+        "cost_of_living": 50.0,
+        "benefits": 50.0,
+        "healthcare_system": 50.0,
+        "military_family_readiness": 50.0
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "overall_score": 50.0,
+      "domains": {
+        "employment": 50.0,
+        "housing_stability": 50.0,
+        "cost_of_living": 50.0,
+        "benefits": 50.0,
+        "healthcare_system": 50.0,
+        "military_family_readiness": 50.0
+      }
+    },
+    {
+      "time": "2026-04-06T16:29:37.146936-07:00",
+      "as_of": "2026-04-06",
+      "overall_score": 52.1,
+      "score": 52.1,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "stable",
+      "housing_stability": 57.8,
+      "cost_of_living": 54.1,
+      "employment": 51.6,
+      "benefits": 44.5,
+      "healthcare_system": 50.5,
+      "military_family_readiness": 51.9,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    },
+    {
+      "time": "2026-04-06T18:51:00.707633-07:00",
+      "as_of": "2026-04-07",
+      "overall_score": 52.1,
+      "score": 52.1,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "stable",
+      "housing_stability": 57.8,
+      "cost_of_living": 54.1,
+      "employment": 51.6,
+      "benefits": 44.5,
+      "healthcare_system": 50.5,
+      "military_family_readiness": 51.9,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    },
+    {
+      "time": "2026-04-08T16:49:17.87216-07:00",
+      "as_of": "2026-04-08",
+      "overall_score": 52.1,
+      "score": 52.1,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "stable",
+      "housing_stability": 57.8,
+      "cost_of_living": 54.1,
+      "employment": 51.6,
+      "benefits": 44.5,
+      "healthcare_system": 50.5,
+      "military_family_readiness": 51.9,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    },
+    {
+      "time": "2026-04-09T23:46:47.262828+00:00",
+      "as_of": "2026-04-09",
+      "overall_score": 50.5,
+      "score": 50.5,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "declining",
+      "housing_stability": 55.4,
+      "cost_of_living": 53.6,
+      "employment": 51.4,
+      "benefits": 42.5,
+      "healthcare_system": 45.0,
+      "military_family_readiness": 53.0,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    },
+    {
+      "time": "2026-04-10T23:46:50.820147+00:00",
+      "as_of": "2026-04-10",
+      "overall_score": 50.8,
+      "score": 50.8,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "stable",
+      "housing_stability": 55.4,
+      "cost_of_living": 55.1,
+      "employment": 51.4,
+      "benefits": 42.8,
+      "healthcare_system": 45.0,
+      "military_family_readiness": 52.8,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    },
+    {
+      "time": "2026-04-11T22:18:27.069138+00:00",
+      "as_of": "2026-04-11",
+      "overall_score": 50.7,
+      "score": 50.7,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "stable",
+      "housing_stability": 55.4,
+      "cost_of_living": 55.1,
+      "employment": 51.4,
+      "benefits": 42.5,
+      "healthcare_system": 45.0,
+      "military_family_readiness": 52.7,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    },
+    {
+      "time": "2026-04-12T15:09:33.344970+00:00",
+      "as_of": "2026-04-12",
+      "overall_score": 57.7,
+      "score": 57.7,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "stable",
+      "housing_stability": 59.8,
+      "cost_of_living": 62.4,
+      "employment": 58.3,
+      "benefits": 53.1,
+      "healthcare_system": 54.1,
+      "military_family_readiness": 55.8,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    },
+    {
+      "time": "2026-04-13T07:09:57.373785+00:00",
+      "as_of": "2026-04-13",
+      "overall_score": 57.7,
+      "score": 57.7,
+      "band": "Balanced / Watch",
+      "status_band": "Balanced / Watch",
+      "pressure_label": "Balanced / Watch",
+      "trend": "improving",
+      "housing_stability": 59.8,
+      "cost_of_living": 62.4,
+      "employment": 58.3,
+      "benefits": 53.1,
+      "healthcare_system": 54.1,
+      "military_family_readiness": 55.8,
+      "housing_stability_model": "housing_v3_continuous_tiered",
+      "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+      "employment_model": "employment_v3_continuous_tiered",
+      "benefits_model": "benefits_v3_continuous_tiered",
+      "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+      "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "evt_7836373945364183742",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
+      "title": "Troops would get up to 7% pay raise under proposed defense bill",
+      "summary": "The White House's proposed budget for fiscal 2027 includes a pay raise for junior enlisted service members and other pay grades, ranging from 5% to 7%.",
+      "url": "https://www.armytimes.com/pay-benefits/2026/04/07/troops-would-get-up-to-7-pay-raise-under-proposed-defense-bill/",
+      "published_at": "2026-04-07T17:43:28+00:00",
+      "domains": [
+        "employment"
+      ],
+      "primary_domain": "employment",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.652,
+      "drivers": [
+        "employment"
+      ],
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4225
+    },
+    {
+      "event_id": "evt_3958432284544340827",
+      "source_name": "NavyTimes",
+      "source_domain": "navytimes.com",
+      "title": "Troops would get up to 7% pay raise under proposed defense bill",
+      "summary": "The White House's proposed budget for fiscal 2027 includes a pay raise for junior enlisted service members and other pay grades, ranging from 5% to 7%.",
+      "url": "https://www.navytimes.com/pay-benefits/2026/04/07/troops-would-get-up-to-7-pay-raise-under-proposed-defense-bill/",
+      "published_at": "2026-04-07T17:43:28+00:00",
+      "domains": [
+        "employment"
+      ],
+      "primary_domain": "employment",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.652,
+      "drivers": [
+        "employment"
+      ],
+      "forecast": "Contextual signal from curated NavyTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4225
+    },
+    {
+      "event_id": "evt_9175777208084014679",
+      "source_name": "AirForceTimes",
+      "source_domain": "airforcetimes.com",
+      "title": "Troops would get up to 7% pay raise under proposed defense bill",
+      "summary": "The White House's proposed budget for fiscal 2027 includes a pay raise for junior enlisted service members and other pay grades, ranging from 5% to 7%.",
+      "url": "https://www.airforcetimes.com/pay-benefits/2026/04/07/troops-would-get-up-to-7-pay-raise-under-proposed-defense-bill/",
+      "published_at": "2026-04-07T17:43:28+00:00",
+      "domains": [
+        "employment"
+      ],
+      "primary_domain": "employment",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.652,
+      "drivers": [
+        "employment"
+      ],
+      "forecast": "Contextual signal from curated AirForceTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4225
+    },
+    {
+      "event_id": "evt_7815068375886286618",
+      "source_name": "MarineCorpsTimes",
+      "source_domain": "marinecorpstimes.com",
+      "title": "Troops would get up to 7% pay raise under proposed defense bill",
+      "summary": "The White House's proposed budget for fiscal 2027 includes a pay raise for junior enlisted service members and other pay grades, ranging from 5% to 7%.",
+      "url": "https://www.marinecorpstimes.com/pay-benefits/2026/04/07/troops-would-get-up-to-7-pay-raise-under-proposed-defense-bill/",
+      "published_at": "2026-04-07T17:43:28+00:00",
+      "domains": [
+        "employment"
+      ],
+      "primary_domain": "employment",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.652,
+      "drivers": [
+        "employment"
+      ],
+      "forecast": "Contextual signal from curated MarineCorpsTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4225
+    },
+    {
+      "event_id": "evt_5117620175984690833",
+      "source_name": "NavyTimes",
+      "source_domain": "navytimes.com",
+      "title": "US Coast Guard rescues family missing for 7 days in Micronesia",
+      "summary": "The family of three left Fananu Island on March 30 for a short trip to Murillo Island, but their skiff's engine failed at sea.",
+      "url": "https://www.navytimes.com/news/your-military/2026/04/08/us-coast-guard-rescues-family-missing-for-7-days-in-micronesia/",
+      "published_at": "2026-04-08T16:47:14+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.64,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated NavyTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4147
+    },
+    {
+      "event_id": "evt_7420198813883551909",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
+      "title": "As US claims victory, Iran emerges bruised but with leverage over Hormuz",
+      "summary": "The U.S.-Iran ceasefire locks in a harsh reality: an entrenched, radical government with control over the Strait of Hormuz.",
+      "url": "https://www.armytimes.com/news/your-military/2026/04/08/as-us-claims-victory-iran-emerges-bruised-but-with-leverage-over-hormuz/",
+      "published_at": "2026-04-08T19:05:05+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.624,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4044
+    },
+    {
+      "event_id": "evt_8168483350893567796",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
+      "title": "US soldier\u2019s wife freed from ICE detention as deportation attempt continues",
+      "summary": "A U.S. soldier\u2019s wife who was detained by ICE at Fort Polk last week was released from detention on Tuesday.",
+      "url": "https://www.armytimes.com/news/your-military/2026/04/08/us-soldiers-wife-freed-from-ice-detention-as-deportation-attempt-continues/",
+      "published_at": "2026-04-08T00:25:56+00:00",
+      "domains": [
+        "housing_stability"
+      ],
+      "primary_domain": "housing_stability",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.624,
+      "drivers": [
+        "housing_stability"
+      ],
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4044
+    },
+    {
+      "event_id": "evt_1307778538818607196",
+      "source_name": "NavyTimes",
+      "source_domain": "navytimes.com",
+      "title": "As US claims victory, Iran emerges bruised but with leverage over Hormuz",
+      "summary": "The U.S.-Iran ceasefire locks in a harsh reality: an entrenched, radical government with control over the Strait of Hormuz.",
+      "url": "https://www.navytimes.com/news/your-military/2026/04/08/as-us-claims-victory-iran-emerges-bruised-but-with-leverage-over-hormuz/",
+      "published_at": "2026-04-08T19:05:05+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.624,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated NavyTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4044
+    },
+    {
+      "event_id": "evt_550692146435689695",
+      "source_name": "AirForceTimes",
+      "source_domain": "airforcetimes.com",
+      "title": "As US claims victory, Iran emerges bruised but with leverage over Hormuz",
+      "summary": "The U.S.-Iran ceasefire locks in a harsh reality: an entrenched, radical government with control over the Strait of Hormuz.",
+      "url": "https://www.airforcetimes.com/news/your-military/2026/04/08/as-us-claims-victory-iran-emerges-bruised-but-with-leverage-over-hormuz/",
+      "published_at": "2026-04-08T19:05:05+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.624,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated AirForceTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4044
+    },
+    {
+      "event_id": "evt_9215085175242999658",
+      "source_name": "MarineCorpsTimes",
+      "source_domain": "marinecorpstimes.com",
+      "title": "As US claims victory, Iran emerges bruised but with leverage over Hormuz",
+      "summary": "The U.S.-Iran ceasefire locks in a harsh reality: an entrenched, radical government with control over the Strait of Hormuz.",
+      "url": "https://www.marinecorpstimes.com/news/your-military/2026/04/08/as-us-claims-victory-iran-emerges-bruised-but-with-leverage-over-hormuz/",
+      "published_at": "2026-04-08T19:05:05+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.624,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated MarineCorpsTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.4044
+    },
+    {
+      "event_id": "evt_1865696322398059077",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "title": "US Navy introduces free Wi-Fi to barracks in Greece, Italy",
+      "summary": "The move is part of a broader free Wi-Fi initiative focused on improving troops' quality of life.",
+      "url": "https://www.militarytimes.com/news/your-navy/2026/04/09/us-navy-introduces-free-wi-fi-to-barracks-in-greece-italy/",
+      "published_at": "2026-04-09T16:50:03+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.608,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.394
+    },
+    {
+      "event_id": "evt_925700142991686120",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "title": "Army moves toward contractor-run pilot training after years of safety concerns",
+      "summary": "Contractors bidding to train U.S. Army rotary-wing pilots have centered their plans on different training aircraft.",
+      "url": "https://www.militarytimes.com/news/your-military/2026/04/09/army-moves-toward-contractor-run-pilot-training-after-years-of-safety-concerns/",
+      "published_at": "2026-04-09T14:49:52+00:00",
+      "domains": [
+        "housing_stability"
+      ],
+      "primary_domain": "housing_stability",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.608,
+      "drivers": [
+        "housing_stability"
+      ],
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.394
+    },
+    {
+      "event_id": "evt_1243628521520475679",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
+      "title": "Army moves toward contractor-run pilot training after years of safety concerns",
+      "summary": "Contractors bidding to train U.S. Army rotary-wing pilots have centered their plans on different training aircraft.",
+      "url": "https://www.armytimes.com/news/your-military/2026/04/09/army-moves-toward-contractor-run-pilot-training-after-years-of-safety-concerns/",
+      "published_at": "2026-04-09T14:49:52+00:00",
+      "domains": [
+        "housing_stability"
+      ],
+      "primary_domain": "housing_stability",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.608,
+      "drivers": [
+        "housing_stability"
+      ],
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.394
+    },
+    {
+      "event_id": "evt_6011574249226956184",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
+      "title": "US forces will be \u2018hanging around\u2019 Middle East after Iran ceasefire, Hegseth says",
+      "summary": "Despite the claimed devastation of the U.S. military's air campaign, Iran has remained defiant.",
+      "url": "https://www.armytimes.com/news/pentagon-congress/2026/04/08/us-forces-will-be-hanging-around-middle-east-after-iran-ceasefire-hegseth-says/",
+      "published_at": "2026-04-08T15:51:43+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.608,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "evidence_count": 1,
+      "region": "northeast",
+      "regions": [
+        "northeast"
+      ],
+      "scope": "regional",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.394
+    },
+    {
+      "event_id": "evt_7345387771469688698",
+      "source_name": "NavyTimes",
+      "source_domain": "navytimes.com",
+      "title": "US Navy introduces free Wi-Fi to barracks in Greece, Italy",
+      "summary": "The move is part of a broader free Wi-Fi initiative focused on improving troops' quality of life.",
+      "url": "https://www.navytimes.com/news/your-navy/2026/04/09/us-navy-introduces-free-wi-fi-to-barracks-in-greece-italy/",
+      "published_at": "2026-04-09T16:50:03+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.608,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated NavyTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.394
+    },
+    {
+      "event_id": "evt_9067190937283992901",
+      "source_name": "NavyTimes",
+      "source_domain": "navytimes.com",
+      "title": "US forces will be \u2018hanging around\u2019 Middle East after Iran ceasefire, Hegseth says",
+      "summary": "Despite the claimed devastation of the U.S. military's air campaign, Iran has remained defiant.",
+      "url": "https://www.navytimes.com/news/pentagon-congress/2026/04/08/us-forces-will-be-hanging-around-middle-east-after-iran-ceasefire-hegseth-says/",
+      "published_at": "2026-04-08T15:51:43+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.608,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated NavyTimes RSS.",
+      "evidence_count": 1,
+      "region": "northeast",
+      "regions": [
+        "northeast"
+      ],
+      "scope": "regional",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.394
+    },
+    {
+      "event_id": "evt_4454261261861333205",
+      "source_name": "AirForceTimes",
+      "source_domain": "airforcetimes.com",
+      "title": "US forces will be \u2018hanging around\u2019 Middle East after Iran ceasefire, Hegseth says",
+      "summary": "Despite the claimed devastation of the U.S. military's air campaign, Iran has remained defiant.",
+      "url": "https://www.airforcetimes.com/news/pentagon-congress/2026/04/08/us-forces-will-be-hanging-around-middle-east-after-iran-ceasefire-hegseth-says/",
+      "published_at": "2026-04-08T15:51:43+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.608,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated AirForceTimes RSS.",
+      "evidence_count": 1,
+      "region": "northeast",
+      "regions": [
+        "northeast"
+      ],
+      "scope": "regional",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.394
+    },
+    {
+      "event_id": "evt_8562962571559099804",
+      "source_name": "MarineCorpsTimes",
+      "source_domain": "marinecorpstimes.com",
+      "title": "US forces will be \u2018hanging around\u2019 Middle East after Iran ceasefire, Hegseth says",
+      "summary": "Despite the claimed devastation of the U.S. military's air campaign, Iran has remained defiant.",
+      "url": "https://www.marinecorpstimes.com/news/pentagon-congress/2026/04/08/us-forces-will-be-hanging-around-middle-east-after-iran-ceasefire-hegseth-says/",
+      "published_at": "2026-04-08T15:51:43+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.608,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated MarineCorpsTimes RSS.",
+      "evidence_count": 1,
+      "region": "northeast",
+      "regions": [
+        "northeast"
+      ],
+      "scope": "regional",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.394
+    }
+  ],
+  "priority_signals": [
+    {
+      "signal_id": "ps_military_family_readiness_5640304049463262160",
+      "domain_key": "military_family_readiness",
+      "headline": "US Coast Guard rescues family missing for 7 days in Micronesia",
+      "forecast": "Contextual signal from curated NavyTimes RSS.",
+      "severity": "watch",
+      "confidence": "low",
+      "updated_at": "2026-04-13T07:09:57.372557+00:00",
+      "evidence_count": 3,
+      "source_domains": [
+        "militarytimes.com",
+        "navytimes.com"
+      ],
+      "event_ids": [
+        "evt_1865696322398059077",
+        "evt_7345387771469688698",
+        "evt_5117620175984690833"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "recent"
+    },
+    {
+      "signal_id": "ps_housing_stability_8807210980144154209",
+      "domain_key": "housing_stability",
+      "headline": "US soldier\u2019s wife freed from ICE detention as deportation attempt continues",
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "severity": "watch",
+      "confidence": "low",
+      "updated_at": "2026-04-13T07:09:57.372568+00:00",
+      "evidence_count": 3,
+      "source_domains": [
+        "armytimes.com",
+        "militarytimes.com"
+      ],
+      "event_ids": [
+        "evt_925700142991686120",
+        "evt_1243628521520475679",
+        "evt_8168483350893567796"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "recent"
+    },
+    {
+      "signal_id": "ps_benefits_4319242557461554069",
+      "domain_key": "benefits",
+      "headline": "As US claims victory, Iran emerges bruised but with leverage over Hormuz",
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "severity": "watch",
+      "confidence": "low",
+      "updated_at": "2026-04-13T07:09:57.372577+00:00",
+      "evidence_count": 8,
+      "source_domains": [
+        "airforcetimes.com",
+        "armytimes.com",
+        "marinecorpstimes.com",
+        "navytimes.com"
+      ],
+      "event_ids": [
+        "evt_7420198813883551909",
+        "evt_6011574249226956184",
+        "evt_1307778538818607196",
+        "evt_9067190937283992901"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "recent"
+    },
+    {
+      "signal_id": "ps_employment_9017195600698411813",
+      "domain_key": "employment",
+      "headline": "Troops would get up to 7% pay raise under proposed defense bill",
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "severity": "watch",
+      "confidence": "low",
+      "updated_at": "2026-04-13T07:09:57.372585+00:00",
+      "evidence_count": 4,
+      "source_domains": [
+        "airforcetimes.com",
+        "armytimes.com",
+        "marinecorpstimes.com",
+        "navytimes.com"
+      ],
+      "event_ids": [
+        "evt_7836373945364183742",
+        "evt_3958432284544340827",
+        "evt_9175777208084014679",
+        "evt_7815068375886286618"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "recent"
+    }
+  ],
+  "regional_events": {
+    "west": [],
+    "south": [],
+    "midwest": [],
+    "northeast": [
+      {
+        "event_id": "evt_6011574249226956184",
+        "source_name": "ArmyTimes",
+        "source_domain": "armytimes.com",
+        "title": "US forces will be \u2018hanging around\u2019 Middle East after Iran ceasefire, Hegseth says",
+        "summary": "Despite the claimed devastation of the U.S. military's air campaign, Iran has remained defiant.",
+        "url": "https://www.armytimes.com/news/pentagon-congress/2026/04/08/us-forces-will-be-hanging-around-middle-east-after-iran-ceasefire-hegseth-says/",
+        "published_at": "2026-04-08T15:51:43+00:00",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.608,
+        "drivers": [
+          "benefits"
+        ],
+        "forecast": "Contextual signal from curated ArmyTimes RSS.",
+        "evidence_count": 1,
+        "region": "northeast",
+        "regions": [
+          "northeast"
+        ],
+        "scope": "regional",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.394
+      },
+      {
+        "event_id": "evt_9067190937283992901",
+        "source_name": "NavyTimes",
+        "source_domain": "navytimes.com",
+        "title": "US forces will be \u2018hanging around\u2019 Middle East after Iran ceasefire, Hegseth says",
+        "summary": "Despite the claimed devastation of the U.S. military's air campaign, Iran has remained defiant.",
+        "url": "https://www.navytimes.com/news/pentagon-congress/2026/04/08/us-forces-will-be-hanging-around-middle-east-after-iran-ceasefire-hegseth-says/",
+        "published_at": "2026-04-08T15:51:43+00:00",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.608,
+        "drivers": [
+          "benefits"
+        ],
+        "forecast": "Contextual signal from curated NavyTimes RSS.",
+        "evidence_count": 1,
+        "region": "northeast",
+        "regions": [
+          "northeast"
+        ],
+        "scope": "regional",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.394
+      },
+      {
+        "event_id": "evt_4454261261861333205",
+        "source_name": "AirForceTimes",
+        "source_domain": "airforcetimes.com",
+        "title": "US forces will be \u2018hanging around\u2019 Middle East after Iran ceasefire, Hegseth says",
+        "summary": "Despite the claimed devastation of the U.S. military's air campaign, Iran has remained defiant.",
+        "url": "https://www.airforcetimes.com/news/pentagon-congress/2026/04/08/us-forces-will-be-hanging-around-middle-east-after-iran-ceasefire-hegseth-says/",
+        "published_at": "2026-04-08T15:51:43+00:00",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.608,
+        "drivers": [
+          "benefits"
+        ],
+        "forecast": "Contextual signal from curated AirForceTimes RSS.",
+        "evidence_count": 1,
+        "region": "northeast",
+        "regions": [
+          "northeast"
+        ],
+        "scope": "regional",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.394
+      },
+      {
+        "event_id": "evt_8562962571559099804",
+        "source_name": "MarineCorpsTimes",
+        "source_domain": "marinecorpstimes.com",
+        "title": "US forces will be \u2018hanging around\u2019 Middle East after Iran ceasefire, Hegseth says",
+        "summary": "Despite the claimed devastation of the U.S. military's air campaign, Iran has remained defiant.",
+        "url": "https://www.marinecorpstimes.com/news/pentagon-congress/2026/04/08/us-forces-will-be-hanging-around-middle-east-after-iran-ceasefire-hegseth-says/",
+        "published_at": "2026-04-08T15:51:43+00:00",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.608,
+        "drivers": [
+          "benefits"
+        ],
+        "forecast": "Contextual signal from curated MarineCorpsTimes RSS.",
+        "evidence_count": 1,
+        "region": "northeast",
+        "regions": [
+          "northeast"
+        ],
+        "scope": "regional",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.394
+      }
+    ]
+  },
+  "regional_tier3_contributions": {
+    "west": {
+      "housing_stability": 0.0,
+      "employment": 0.0,
+      "military_family_readiness": 0.0,
+      "cost_of_living": 0.0,
+      "healthcare_system": 0.0,
+      "benefits": 0.0
+    },
+    "south": {
+      "housing_stability": 0.0,
+      "employment": 0.0,
+      "military_family_readiness": 0.0,
+      "cost_of_living": 0.0,
+      "healthcare_system": 0.0,
+      "benefits": 0.0
+    },
+    "midwest": {
+      "housing_stability": 0.0,
+      "employment": 0.0,
+      "military_family_readiness": 0.0,
+      "cost_of_living": 0.0,
+      "healthcare_system": 0.0,
+      "benefits": 0.0
+    },
+    "northeast": {
+      "housing_stability": 0.0,
+      "employment": 0.0,
+      "military_family_readiness": 0.0,
+      "cost_of_living": 0.0,
+      "healthcare_system": 0.0,
+      "benefits": 0.1576
+    }
+  },
+  "domain_events": {
+    "housing_stability": [
+      {
+        "event_id": "evt_8168483350893567796",
+        "source_name": "ArmyTimes",
+        "source_domain": "armytimes.com",
+        "title": "US soldier\u2019s wife freed from ICE detention as deportation attempt continues",
+        "summary": "A U.S. soldier\u2019s wife who was detained by ICE at Fort Polk last week was released from detention on Tuesday.",
+        "url": "https://www.armytimes.com/news/your-military/2026/04/08/us-soldiers-wife-freed-from-ice-detention-as-deportation-attempt-continues/",
+        "published_at": "2026-04-08T00:25:56+00:00",
+        "domains": [
+          "housing_stability"
+        ],
+        "primary_domain": "housing_stability",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.624,
+        "drivers": [
+          "housing_stability"
+        ],
+        "forecast": "Contextual signal from curated ArmyTimes RSS.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.4044
+      },
+      {
+        "event_id": "evt_925700142991686120",
+        "source_name": "MilitaryTimes",
+        "source_domain": "militarytimes.com",
+        "title": "Army moves toward contractor-run pilot training after years of safety concerns",
+        "summary": "Contractors bidding to train U.S. Army rotary-wing pilots have centered their plans on different training aircraft.",
+        "url": "https://www.militarytimes.com/news/your-military/2026/04/09/army-moves-toward-contractor-run-pilot-training-after-years-of-safety-concerns/",
+        "published_at": "2026-04-09T14:49:52+00:00",
+        "domains": [
+          "housing_stability"
+        ],
+        "primary_domain": "housing_stability",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.608,
+        "drivers": [
+          "housing_stability"
+        ],
+        "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.394
+      }
+    ],
+    "employment": [
+      {
+        "event_id": "evt_7836373945364183742",
+        "source_name": "ArmyTimes",
+        "source_domain": "armytimes.com",
+        "title": "Troops would get up to 7% pay raise under proposed defense bill",
+        "summary": "The White House's proposed budget for fiscal 2027 includes a pay raise for junior enlisted service members and other pay grades, ranging from 5% to 7%.",
+        "url": "https://www.armytimes.com/pay-benefits/2026/04/07/troops-would-get-up-to-7-pay-raise-under-proposed-defense-bill/",
+        "published_at": "2026-04-07T17:43:28+00:00",
+        "domains": [
+          "employment"
+        ],
+        "primary_domain": "employment",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.652,
+        "drivers": [
+          "employment"
+        ],
+        "forecast": "Contextual signal from curated ArmyTimes RSS.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.4225
+      },
+      {
+        "event_id": "evt_3958432284544340827",
+        "source_name": "NavyTimes",
+        "source_domain": "navytimes.com",
+        "title": "Troops would get up to 7% pay raise under proposed defense bill",
+        "summary": "The White House's proposed budget for fiscal 2027 includes a pay raise for junior enlisted service members and other pay grades, ranging from 5% to 7%.",
+        "url": "https://www.navytimes.com/pay-benefits/2026/04/07/troops-would-get-up-to-7-pay-raise-under-proposed-defense-bill/",
+        "published_at": "2026-04-07T17:43:28+00:00",
+        "domains": [
+          "employment"
+        ],
+        "primary_domain": "employment",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.652,
+        "drivers": [
+          "employment"
+        ],
+        "forecast": "Contextual signal from curated NavyTimes RSS.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.4225
+      }
+    ],
+    "military_family_readiness": [
+      {
+        "event_id": "evt_5117620175984690833",
+        "source_name": "NavyTimes",
+        "source_domain": "navytimes.com",
+        "title": "US Coast Guard rescues family missing for 7 days in Micronesia",
+        "summary": "The family of three left Fananu Island on March 30 for a short trip to Murillo Island, but their skiff's engine failed at sea.",
+        "url": "https://www.navytimes.com/news/your-military/2026/04/08/us-coast-guard-rescues-family-missing-for-7-days-in-micronesia/",
+        "published_at": "2026-04-08T16:47:14+00:00",
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.64,
+        "drivers": [
+          "military_family_readiness"
+        ],
+        "forecast": "Contextual signal from curated NavyTimes RSS.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.4147
+      },
+      {
+        "event_id": "evt_1865696322398059077",
+        "source_name": "MilitaryTimes",
+        "source_domain": "militarytimes.com",
+        "title": "US Navy introduces free Wi-Fi to barracks in Greece, Italy",
+        "summary": "The move is part of a broader free Wi-Fi initiative focused on improving troops' quality of life.",
+        "url": "https://www.militarytimes.com/news/your-navy/2026/04/09/us-navy-introduces-free-wi-fi-to-barracks-in-greece-italy/",
+        "published_at": "2026-04-09T16:50:03+00:00",
+        "domains": [
+          "military_family_readiness"
+        ],
+        "primary_domain": "military_family_readiness",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.608,
+        "drivers": [
+          "military_family_readiness"
+        ],
+        "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.394
+      }
+    ],
+    "cost_of_living": [],
+    "healthcare_system": [],
+    "benefits": [
+      {
+        "event_id": "evt_7420198813883551909",
+        "source_name": "ArmyTimes",
+        "source_domain": "armytimes.com",
+        "title": "As US claims victory, Iran emerges bruised but with leverage over Hormuz",
+        "summary": "The U.S.-Iran ceasefire locks in a harsh reality: an entrenched, radical government with control over the Strait of Hormuz.",
+        "url": "https://www.armytimes.com/news/your-military/2026/04/08/as-us-claims-victory-iran-emerges-bruised-but-with-leverage-over-hormuz/",
+        "published_at": "2026-04-08T19:05:05+00:00",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.624,
+        "drivers": [
+          "benefits"
+        ],
+        "forecast": "Contextual signal from curated ArmyTimes RSS.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.4044
+      },
+      {
+        "event_id": "evt_1307778538818607196",
+        "source_name": "NavyTimes",
+        "source_domain": "navytimes.com",
+        "title": "As US claims victory, Iran emerges bruised but with leverage over Hormuz",
+        "summary": "The U.S.-Iran ceasefire locks in a harsh reality: an entrenched, radical government with control over the Strait of Hormuz.",
+        "url": "https://www.navytimes.com/news/your-military/2026/04/08/as-us-claims-victory-iran-emerges-bruised-but-with-leverage-over-hormuz/",
+        "published_at": "2026-04-08T19:05:05+00:00",
+        "domains": [
+          "benefits"
+        ],
+        "primary_domain": "benefits",
+        "event_type": "context_signal",
+        "direction": "pressure",
+        "impact_level": "watch",
+        "confidence": "low",
+        "relevance_score": 0.624,
+        "drivers": [
+          "benefits"
+        ],
+        "forecast": "Contextual signal from curated NavyTimes RSS.",
+        "evidence_count": 1,
+        "region": "national",
+        "regions": [
+          "national"
+        ],
+        "scope": "national",
+        "source_state": "recent",
+        "age_hours": null,
+        "tier": "tier_3",
+        "trust_weight": 0.72,
+        "freshness": 0.9,
+        "weighted_contribution": 0.4044
+      }
+    ]
+  },
+  "generated_at": "2026-04-13T07:09:57.373785+00:00"
 }

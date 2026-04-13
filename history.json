@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-04-13",
+    "overall_score": 50.0,
+    "domains": {
+      "employment": 50.0,
+      "housing_stability": 50.0,
+      "cost_of_living": 50.0,
+      "benefits": 50.0,
+      "healthcare_system": 50.0,
+      "military_family_readiness": 50.0
+    }
+  },
+  {
+    "date": "2026-04-13",
+    "overall_score": 50.0,
+    "domains": {
+      "employment": 50.0,
+      "housing_stability": 50.0,
+      "cost_of_living": 50.0,
+      "benefits": 50.0,
+      "healthcare_system": 50.0,
+      "military_family_readiness": 50.0
+    }
+  },
+  {
     "time": "2026-04-06T16:29:37.146936-07:00",
     "as_of": "2026-04-06",
     "overall_score": 52.1,
@@ -154,101 +178,25 @@
     "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
   },
   {
-    "time": "2026-04-13T04:48:25.162756+00:00",
+    "time": "2026-04-13T07:09:57.373785+00:00",
     "as_of": "2026-04-13",
-    "overall_score": 43.5,
-    "score": 43.5,
-    "band": "Elevated Pressure",
-    "status_band": "Elevated Pressure",
-    "pressure_label": "Elevated Pressure",
-    "trend": "stable",
-    "housing_stability": 41.8,
-    "cost_of_living": 37.6,
-    "employment": 44.4,
-    "benefits": 50.2,
-    "healthcare_system": 49.3,
-    "military_family_readiness": 38.4,
+    "overall_score": 57.7,
+    "score": 57.7,
+    "band": "Balanced / Watch",
+    "status_band": "Balanced / Watch",
+    "pressure_label": "Balanced / Watch",
+    "trend": "improving",
+    "housing_stability": 59.8,
+    "cost_of_living": 62.4,
+    "employment": 58.3,
+    "benefits": 53.1,
+    "healthcare_system": 54.1,
+    "military_family_readiness": 55.8,
     "housing_stability_model": "housing_v3_continuous_tiered",
     "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
     "employment_model": "employment_v3_continuous_tiered",
     "benefits_model": "benefits_v3_continuous_tiered",
     "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
     "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
-  },
-  {
-    "signals": {},
-    "overall_score": 50.0,
-    "domains": {
-      "employment": 50,
-      "housing_stability": 50,
-      "cost_of_living": 50,
-      "benefits": 50,
-      "healthcare_system": 50,
-      "military_family_readiness": 50
-    },
-    "as_of": "2026-04-13"
-  },
-  {
-    "signals": {},
-    "overall_score": 50.0,
-    "domains": {
-      "employment": 50,
-      "housing_stability": 50,
-      "cost_of_living": 50,
-      "benefits": 50,
-      "healthcare_system": 50,
-      "military_family_readiness": 50
-    },
-    "as_of": "2026-04-13"
-  },
-  {
-    "signals": {},
-    "overall_score": 50.0,
-    "domains": {
-      "employment": 50,
-      "housing_stability": 50,
-      "cost_of_living": 50,
-      "benefits": 50,
-      "healthcare_system": 50,
-      "military_family_readiness": 50
-    },
-    "as_of": "2026-04-13"
-  },
-  {
-    "signals": {},
-    "overall_score": 50.0,
-    "domains": {
-      "employment": 50,
-      "housing_stability": 50,
-      "cost_of_living": 50,
-      "benefits": 50,
-      "healthcare_system": 50,
-      "military_family_readiness": 50
-    },
-    "as_of": "2026-04-13"
-  },
-  {
-    "date": "2026-04-13",
-    "overall_score": 50.0,
-    "domains": {
-      "employment": 50.0,
-      "housing_stability": 50.0,
-      "cost_of_living": 50.0,
-      "benefits": 50.0,
-      "healthcare_system": 50.0,
-      "military_family_readiness": 50.0
-    }
-  },
-  {
-    "date": "2026-04-13",
-    "overall_score": 50.0,
-    "domains": {
-      "employment": 50.0,
-      "housing_stability": 50.0,
-      "cost_of_living": 50.0,
-      "benefits": 50.0,
-      "healthcare_system": 50.0,
-      "military_family_readiness": 50.0
-    }
   }
 ]
