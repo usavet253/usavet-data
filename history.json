@@ -154,44 +154,25 @@
     "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
   },
   {
+    "time": "2026-04-13T04:43:51.253336+00:00",
     "as_of": "2026-04-13",
-    "signals": [
-      {
-        "name": "EmploymentSignal",
-        "raw_value": 75,
-        "effect": 1.0,
-        "weight": 0.2,
-        "freshness": 1.0,
-        "state": "active",
-        "detail": "daily run",
-        "direction": "pressure",
-        "modifier": "REDACTED",
-        "as_of": "2026-04-13"
-      },
-      {
-        "name": "HousingSignal",
-        "raw_value": 50,
-        "effect": 1.0,
-        "weight": 0.2,
-        "freshness": 1.0,
-        "state": "active",
-        "detail": "daily run",
-        "direction": "pressure",
-        "modifier": "AdminUser",
-        "as_of": "2026-04-13"
-      },
-      {
-        "name": "CostOfLivingSignal",
-        "raw_value": 60,
-        "effect": 1.0,
-        "weight": 0.2,
-        "freshness": 1.0,
-        "state": "active",
-        "detail": "daily run",
-        "direction": "pressure",
-        "modifier": "runnervm35a4x",
-        "as_of": "2026-04-13"
-      }
-    ]
+    "overall_score": 43.5,
+    "score": 43.5,
+    "band": "Elevated Pressure",
+    "status_band": "Elevated Pressure",
+    "pressure_label": "Elevated Pressure",
+    "trend": "stable",
+    "housing_stability": 41.8,
+    "cost_of_living": 37.6,
+    "employment": 44.4,
+    "benefits": 50.2,
+    "healthcare_system": 49.3,
+    "military_family_readiness": 38.4,
+    "housing_stability_model": "housing_v3_continuous_tiered",
+    "cost_of_living_model": "cost_of_living_v3_continuous_tiered",
+    "employment_model": "employment_v3_continuous_tiered",
+    "benefits_model": "benefits_v3_continuous_tiered",
+    "healthcare_system_model": "healthcare_system_v3_continuous_tiered",
+    "military_family_readiness_model": "military_family_readiness_v3_continuous_tiered"
   }
 ]
