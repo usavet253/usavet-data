@@ -10,7 +10,7 @@
       "state": "active",
       "detail": "daily run",
       "direction": "pressure",
-      "modifier": "f9850438b30dc86c085d6980a9088d6e"
+      "modifier": "REDACTED"
     },
     {
       "name": "HousingSignal",
@@ -32,7 +32,7 @@
       "state": "active",
       "detail": "daily run",
       "direction": "pressure",
-      "modifier": "UNKNOWN"
+      "modifier": "runnervm35a4x"
     }
   ]
 }
