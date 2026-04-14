@@ -1,14 +1,14 @@
 {
   "as_of": "2026-04-14",
-  "overall_score": 49.7,
-  "score": 49.7,
+  "overall_score": 49.8,
+  "score": 49.8,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
   "trend": "declining",
   "pressure_label": "Elevated Pressure",
   "source_quality": "High Confidence",
   "index": {
-    "overall_score": 49.7,
+    "overall_score": 49.8,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
     "trend": "declining",
@@ -23,33 +23,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.7.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.8.",
   "notes": [
     "Housing score: 42.3",
     "Cost of living score: 56.2",
-    "Employment score: 48.2",
+    "Employment score: 48.4",
     "Benefits score: 51.0",
     "Healthcare system score: 52.1",
-    "Military family readiness score: 48.7",
+    "Military family readiness score: 48.9",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 42.3,
     "cost_of_living": 56.2,
-    "employment": 48.2,
+    "employment": 48.4,
     "benefits": 51.0,
     "healthcare_system": 52.1,
-    "military_family_readiness": 48.7
+    "military_family_readiness": 48.9
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.7.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.8.",
     "notes": [
       "Housing score: 42.3",
       "Cost of living score: 56.2",
-      "Employment score: 48.2",
+      "Employment score: 48.4",
       "Benefits score: 51.0",
       "Healthcare system score: 52.1",
-      "Military family readiness score: 48.7",
+      "Military family readiness score: 48.9",
       "Source confidence: High Confidence"
     ]
   },
@@ -151,16 +151,16 @@
       "military_family_readiness": 55.8
     },
     {
-      "time": "2026-04-14T22:07:36.855593+00:00",
+      "time": "2026-04-14T22:21:26.868122+00:00",
       "as_of": "2026-04-14",
-      "overall_score": 49.7,
+      "overall_score": 49.8,
       "trend": "declining",
       "housing_stability": 42.3,
       "cost_of_living": 56.2,
-      "employment": 48.2,
+      "employment": 48.4,
       "benefits": 51.0,
       "healthcare_system": 52.1,
-      "military_family_readiness": 48.7
+      "military_family_readiness": 48.9
     }
   ],
   "events": [
@@ -275,48 +275,6 @@
       "relevance_score": 0.55,
       "drivers": [
         "benefits"
-      ],
-      "forecast": "Contextual signal from curated NavyTimes RSS.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "recent",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.72,
-      "freshness": 0.9,
-      "weighted_contribution": 0.3564
-    },
-    {
-      "event_id": "evt_3bf284da8debfe08",
-      "source_name": "NavyTimes",
-      "source_domain": "navytimes.com",
-      "title": "US Coast Guard rescues family missing for 7 days in Micronesia",
-      "summary": "The family of three left Fananu Island on March 30 for a short trip to Murillo Island, but their skiff's engine failed at sea.",
-      "url": "https://www.navytimes.com/news/your-military/2026/04/08/us-coast-guard-rescues-family-missing-for-7-days-in-micronesia/",
-      "published_at": "2026-04-08T16:47:14+00:00",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "pressure",
-      "direction_validation": {
-        "source_default": "pressure",
-        "validated": "pressure",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 1,
-        "confidence": 0.7
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.55,
-      "drivers": [
-        "military_family_readiness"
       ],
       "forecast": "Contextual signal from curated NavyTimes RSS.",
       "evidence_count": 1,
@@ -551,7 +509,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-14T22:07:41.769714+00:00",
+      "updated_at": "2026-04-14T22:21:31.705708+00:00",
       "evidence_count": 1,
       "source_domains": [
         "armytimes.com"
@@ -579,14 +537,13 @@
       "forecast": "Contextual signal from curated NavyTimes RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-14T22:07:41.769732+00:00",
-      "evidence_count": 2,
+      "updated_at": "2026-04-14T22:21:31.705725+00:00",
+      "evidence_count": 1,
       "source_domains": [
         "navytimes.com"
       ],
       "event_ids": [
-        "evt_c493664d0ea52d8e",
-        "evt_3bf284da8debfe08"
+        "evt_c493664d0ea52d8e"
       ],
       "signal_type": "contextual",
       "region": "national",
@@ -608,7 +565,7 @@
       "forecast": "Contextual signal from curated NavyTimes RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-14T22:07:41.769746+00:00",
+      "updated_at": "2026-04-14T22:21:31.705738+00:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -641,7 +598,7 @@
       "forecast": "Contextual signal from curated AirForceTimes RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-14T22:07:41.769758+00:00",
+      "updated_at": "2026-04-14T22:21:31.705750+00:00",
       "evidence_count": 1,
       "source_domains": [
         "airforcetimes.com"
@@ -919,48 +876,6 @@
         "trust_weight": 0.72,
         "freshness": 0.9,
         "weighted_contribution": 0.4082
-      },
-      {
-        "event_id": "evt_3bf284da8debfe08",
-        "source_name": "NavyTimes",
-        "source_domain": "navytimes.com",
-        "title": "US Coast Guard rescues family missing for 7 days in Micronesia",
-        "summary": "The family of three left Fananu Island on March 30 for a short trip to Murillo Island, but their skiff's engine failed at sea.",
-        "url": "https://www.navytimes.com/news/your-military/2026/04/08/us-coast-guard-rescues-family-missing-for-7-days-in-micronesia/",
-        "published_at": "2026-04-08T16:47:14+00:00",
-        "domains": [
-          "military_family_readiness"
-        ],
-        "primary_domain": "military_family_readiness",
-        "event_type": "context_signal",
-        "direction": "pressure",
-        "direction_validation": {
-          "source_default": "pressure",
-          "validated": "pressure",
-          "override": false,
-          "positive_hits": 0,
-          "negative_hits": 1,
-          "confidence": 0.7
-        },
-        "impact_level": "watch",
-        "confidence": "low",
-        "relevance_score": 0.55,
-        "drivers": [
-          "military_family_readiness"
-        ],
-        "forecast": "Contextual signal from curated NavyTimes RSS.",
-        "evidence_count": 1,
-        "region": "national",
-        "regions": [
-          "national"
-        ],
-        "scope": "national",
-        "source_state": "recent",
-        "age_hours": null,
-        "tier": "tier_3",
-        "trust_weight": 0.72,
-        "freshness": 0.9,
-        "weighted_contribution": 0.3564
       }
     ],
     "cost_of_living": [],
@@ -1053,7 +968,7 @@
     ]
   },
   "intelligence": {
-    "what_now": "The system is currently operating at 49.7 in the elevated pressure range. The weakest domain is Housing Stability and the strongest domain is Cost of Living.",
+    "what_now": "The system is currently operating at 49.8 in the elevated pressure range. The weakest domain is Housing Stability and the strongest domain is Cost of Living.",
     "why": "The current state is being shaped most heavily by housing_burden_pct in Housing Stability, along with cross-domain reinforcement from the current driver set.",
     "drivers": {
       "housing_stability": [
@@ -1262,7 +1177,7 @@
         {
           "signal": "family_spillover_pressure",
           "direction": "pressure",
-          "contribution": -0.1388,
+          "contribution": -0.1379,
           "tier": "tier_2",
           "confidence": 0.55,
           "source_name": "Interdependency"
@@ -1292,12 +1207,12 @@
           "source_name": "US Code"
         },
         {
-          "signal": "curated_rss_family_context",
-          "direction": "pressure",
-          "contribution": -0.0115,
-          "tier": "tier_3",
+          "signal": "ncsl_legislation",
+          "direction": "support",
+          "contribution": 0.0068,
+          "tier": "tier_1",
           "confidence": 0.55,
-          "source_name": "Curated RSS"
+          "source_name": "NCSL"
         }
       ]
     },
@@ -1328,8 +1243,8 @@
     },
     "velocity": {
       "housing_stability": -17.5,
-      "employment": -10.1,
-      "military_family_readiness": -7.1,
+      "employment": -9.9,
+      "military_family_readiness": -6.9,
       "cost_of_living": -6.2,
       "healthcare_system": -2.0,
       "benefits": -2.1
@@ -1340,7 +1255,7 @@
       "tier_breakdown": {
         "tier_1_strength": 21.4,
         "tier_2_reinforcement": 17.5,
-        "tier_3_alignment": 54.0
+        "tier_3_alignment": 48.0
       }
     },
     "alerts": [
@@ -1377,11 +1292,11 @@
       },
       {
         "domain": "employment",
-        "rank": 49.53
+        "rank": 48.53
       },
       {
         "domain": "military_family_readiness",
-        "rank": 37.01
+        "rank": 36.01
       },
       {
         "domain": "cost_of_living",
@@ -1389,5 +1304,5 @@
       }
     ]
   },
-  "generated_at": "2026-04-14T22:07:36.855593+00:00"
+  "generated_at": "2026-04-14T22:21:26.868122+00:00"
 }
