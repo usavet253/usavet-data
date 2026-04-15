@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-15",
-  "generated_at": "2026-04-15T00:32:56.340260+00:00",
+  "generated_at": "2026-04-15T00:46:55.863835+00:00",
   "overall_score": 48.7,
   "score": 48.7,
   "status_band": "Elevated Pressure",
@@ -31,13 +31,13 @@
     "Employment score: 52.9",
     "Benefits score: 48.8",
     "Healthcare system score: 52.5",
-    "Military family readiness score: 44.1",
+    "Military family readiness score: 43.6",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 44.8,
     "employment": 52.9,
-    "military_family_readiness": 44.1,
+    "military_family_readiness": 43.6,
     "cost_of_living": 48.9,
     "healthcare_system": 52.5,
     "benefits": 48.8
@@ -50,7 +50,7 @@
       "Employment score: 52.9",
       "Benefits score: 48.8",
       "Healthcare system score: 52.5",
-      "Military family readiness score: 44.1",
+      "Military family readiness score: 43.6",
       "Source confidence: High Confidence"
     ]
   },
@@ -164,7 +164,7 @@
       "military_family_readiness": 48.9
     },
     {
-      "time": "2026-04-15T00:32:56.340260+00:00",
+      "time": "2026-04-15T00:46:55.863835+00:00",
       "as_of": "2026-04-15",
       "overall_score": 48.7,
       "trend": "declining",
@@ -173,7 +173,7 @@
       "employment": 52.9,
       "benefits": 48.8,
       "healthcare_system": 52.5,
-      "military_family_readiness": 44.1
+      "military_family_readiness": 43.6
     }
   ],
   "events": [
@@ -223,7 +223,7 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.9,
-      "weighted_contribution": 0.473,
+      "weighted_contribution": 0.1064,
       "qualified_for_scoring": true,
       "source_domains": [
         "navytimes.com"
@@ -235,7 +235,9 @@
         "domains": [
           "military_family_readiness"
         ]
-      }
+      },
+      "raw_weighted_contribution": 0.473,
+      "tier3_scale": 0.225
     }
   ],
   "priority_signals": [
@@ -246,7 +248,7 @@
       "forecast": "Contextual signal from curated NavyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-15T00:32:58.534765+00:00",
+      "updated_at": "2026-04-15T00:46:58.106690+00:00",
       "evidence_count": 1,
       "source_domains": [
         "navytimes.com"
