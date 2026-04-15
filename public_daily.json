@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-15",
-  "generated_at": "2026-04-15T00:46:55.863835+00:00",
+  "generated_at": "2026-04-15T00:52:40.921650+00:00",
   "overall_score": 48.7,
   "score": 48.7,
   "status_band": "Elevated Pressure",
@@ -164,7 +164,7 @@
       "military_family_readiness": 48.9
     },
     {
-      "time": "2026-04-15T00:46:55.863835+00:00",
+      "time": "2026-04-15T00:52:40.921650+00:00",
       "as_of": "2026-04-15",
       "overall_score": 48.7,
       "trend": "declining",
@@ -223,8 +223,9 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.9,
-      "weighted_contribution": 0.1064,
+      "weighted_contribution": 0.027,
       "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.2533,
       "source_domains": [
         "navytimes.com"
       ],
@@ -236,7 +237,7 @@
           "military_family_readiness"
         ]
       },
-      "raw_weighted_contribution": 0.473,
+      "raw_weighted_contribution": 0.1198,
       "tier3_scale": 0.225
     }
   ],
@@ -248,7 +249,7 @@
       "forecast": "Contextual signal from curated NavyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-15T00:46:58.106690+00:00",
+      "updated_at": "2026-04-15T00:52:43.067062+00:00",
       "evidence_count": 1,
       "source_domains": [
         "navytimes.com"
