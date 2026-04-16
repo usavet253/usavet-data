@@ -1,18 +1,18 @@
 {
-  "as_of": "2026-04-15",
-  "generated_at": "2026-04-15T16:45:20.366586+00:00",
+  "as_of": "2026-04-16",
+  "generated_at": "2026-04-16T17:56:07.111395+00:00",
   "overall_score": 48.7,
   "score": 48.7,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
-  "trend": "declining",
+  "trend": "stable",
   "pressure_label": "Elevated Pressure",
   "source_quality": "High Confidence",
   "index": {
     "overall_score": 48.7,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
-    "trend": "declining",
+    "trend": "stable",
     "pressure_label": "Elevated Pressure",
     "source_quality": "High Confidence",
     "weights": {
@@ -31,13 +31,13 @@
     "Employment score: 52.9",
     "Benefits score: 48.8",
     "Healthcare system score: 52.5",
-    "Military family readiness score: 43.6",
+    "Military family readiness score: 43.5",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 44.8,
     "employment": 52.9,
-    "military_family_readiness": 43.6,
+    "military_family_readiness": 43.5,
     "cost_of_living": 48.9,
     "healthcare_system": 52.5,
     "benefits": 48.8
@@ -50,7 +50,7 @@
       "Employment score: 52.9",
       "Benefits score: 48.8",
       "Healthcare system score: 52.5",
-      "Military family readiness score: 43.6",
+      "Military family readiness score: 43.5",
       "Source confidence: High Confidence"
     ]
   },
@@ -174,101 +174,20 @@
       "benefits": 48.8,
       "healthcare_system": 52.5,
       "military_family_readiness": 43.6
+    },
+    {
+      "time": "2026-04-16T17:56:07.111395+00:00",
+      "as_of": "2026-04-16",
+      "overall_score": 48.7,
+      "trend": "stable",
+      "housing_stability": 44.8,
+      "cost_of_living": 48.9,
+      "employment": 52.9,
+      "benefits": 48.8,
+      "healthcare_system": 52.5,
+      "military_family_readiness": 43.5
     }
   ],
-  "events": [
-    {
-      "event_id": "evt_c493664d0ea52d8e",
-      "source_name": "NavyTimes",
-      "source_domain": "navytimes.com",
-      "title": "US Navy introduces free Wi-Fi to barracks in Greece, Italy",
-      "summary": "The move is part of a broader free Wi-Fi initiative focused on improving troops' quality of life.",
-      "url": "https://www.navytimes.com/news/your-navy/2026/04/09/us-navy-introduces-free-wi-fi-to-barracks-in-greece-italy/",
-      "published_at": "2026-04-09T16:50:03+00:00",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "quality of life",
-          "barracks"
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "support",
-      "direction_validation": {
-        "source_default": "pressure",
-        "validated": "support",
-        "override": true,
-        "positive_hits": 2,
-        "negative_hits": 0,
-        "confidence": 0.85
-      },
-      "impact_level": "watch",
-      "confidence": "high",
-      "relevance_score": 0.73,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated NavyTimes RSS.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "recent",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.72,
-      "freshness": 0.9,
-      "weighted_contribution": 0.027,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.2533,
-      "source_domains": [
-        "navytimes.com"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.1198,
-      "tier3_scale": 0.225
-    }
-  ],
-  "priority_signals": [
-    {
-      "signal_id": "ps_792ccfea348adefb",
-      "domain_key": "military_family_readiness",
-      "headline": "US Navy introduces free Wi-Fi to barracks in Greece, Italy",
-      "forecast": "Contextual signal from curated NavyTimes RSS.",
-      "severity": "watch",
-      "confidence": "high",
-      "updated_at": "2026-04-15T16:45:21.246033+00:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "navytimes.com"
-      ],
-      "event_ids": [
-        "evt_c493664d0ea52d8e"
-      ],
-      "signal_type": "contextual",
-      "region": "national",
-      "scope": "national",
-      "source_state": "recent",
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "military_family_readiness"
-        ]
-      }
-    }
-  ]
+  "events": [],
+  "priority_signals": []
 }
