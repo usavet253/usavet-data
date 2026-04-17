@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-04-17",
-  "generated_at": "2026-04-17T00:22:19.052660+00:00",
+  "as_of": "2026-04-16",
+  "generated_at": "2026-04-16T18:12:53.140824-07:00",
   "overall_score": 48.7,
   "score": 48.7,
   "status_band": "Elevated Pressure",
@@ -176,20 +176,8 @@
       "military_family_readiness": 43.6
     },
     {
-      "time": "2026-04-16T17:56:07.111395+00:00",
+      "time": "2026-04-16T18:12:53.140824-07:00",
       "as_of": "2026-04-16",
-      "overall_score": 48.7,
-      "trend": "stable",
-      "housing_stability": 44.8,
-      "cost_of_living": 48.9,
-      "employment": 52.9,
-      "benefits": 48.8,
-      "healthcare_system": 52.5,
-      "military_family_readiness": 43.5
-    },
-    {
-      "time": "2026-04-17T00:22:19.052660+00:00",
-      "as_of": "2026-04-17",
       "overall_score": 48.7,
       "trend": "stable",
       "housing_stability": 44.8,
