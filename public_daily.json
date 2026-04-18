@@ -1,15 +1,15 @@
 {
   "as_of": "2026-04-18",
-  "generated_at": "2026-04-18T12:42:43.765482-07:00",
-  "overall_score": 48.7,
-  "score": 48.7,
+  "generated_at": "2026-04-18T14:10:01.248374-07:00",
+  "overall_score": 48.6,
+  "score": 48.6,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
   "trend": "stable",
   "pressure_label": "Elevated Pressure",
   "source_quality": "High Confidence",
   "index": {
-    "overall_score": 48.7,
+    "overall_score": 48.6,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
     "trend": "stable",
@@ -24,33 +24,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.7.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.6.",
   "notes": [
-    "Housing score: 44.8",
+    "Housing score: 44.7",
     "Cost of living score: 48.9",
     "Employment score: 52.8",
-    "Benefits score: 48.8",
+    "Benefits score: 48.7",
     "Healthcare system score: 52.5",
-    "Military family readiness score: 43.6",
+    "Military family readiness score: 43.2",
     "Source confidence: High Confidence"
   ],
   "domains": {
-    "housing_stability": 44.8,
+    "housing_stability": 44.7,
     "employment": 52.8,
-    "military_family_readiness": 43.6,
+    "military_family_readiness": 43.2,
     "cost_of_living": 48.9,
     "healthcare_system": 52.5,
-    "benefits": 48.8
+    "benefits": 48.7
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.7.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.6.",
     "notes": [
-      "Housing score: 44.8",
+      "Housing score: 44.7",
       "Cost of living score: 48.9",
       "Employment score: 52.8",
-      "Benefits score: 48.8",
+      "Benefits score: 48.7",
       "Healthcare system score: 52.5",
-      "Military family readiness score: 43.6",
+      "Military family readiness score: 43.2",
       "Source confidence: High Confidence"
     ]
   },
@@ -200,16 +200,16 @@
       "military_family_readiness": 43.6
     },
     {
-      "time": "2026-04-18T12:42:43.765482-07:00",
+      "time": "2026-04-18T14:10:01.248374-07:00",
       "as_of": "2026-04-18",
-      "overall_score": 48.7,
+      "overall_score": 48.6,
       "trend": "stable",
-      "housing_stability": 44.8,
+      "housing_stability": 44.7,
       "cost_of_living": 48.9,
       "employment": 52.8,
-      "benefits": 48.8,
+      "benefits": 48.7,
       "healthcare_system": 52.5,
-      "military_family_readiness": 43.6
+      "military_family_readiness": 43.2
     }
   ],
   "events": [
@@ -279,6 +279,202 @@
       },
       "raw_weighted_contribution": 0.2,
       "tier3_scale": 1.0
+    },
+    {
+      "event_id": "evt_f6ff51aa91a4e254",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "title": "Suicide rates among military families continue to climb",
+      "summary": "The total overall number decreased, a drop that coincides with smaller overall force numbers.",
+      "url": "https://www.militarytimes.com/news/your-military/2026/04/15/suicide-rates-among-military-families-continue-to-climb/",
+      "published_at": "2026-04-15T19:14:20+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "military families"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "evidence_count": 5,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.0777,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 1.0,
+      "source_domains": [
+        "airforcetimes.com",
+        "armytimes.com",
+        "marinecorpstimes.com",
+        "militarytimes.com",
+        "navytimes.com"
+      ],
+      "corroboration": {
+        "score": 100,
+        "source_count": 5,
+        "independent_sources": 5,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.0777,
+      "tier3_scale": 1.0
+    },
+    {
+      "event_id": "evt_6f36fb6a03bb08a2",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "title": "Advocates press for preventive programs, VA benefits for struggling vets",
+      "summary": "Representatives from specialty courts and veterans\u2019 legal organizations pressed Congress Wednesday for expansion of the Veterans Treatment Courts system.",
+      "url": "https://www.militarytimes.com/news/pentagon-congress/2026/04/16/advocates-press-for-preventive-programs-va-benefits-for-struggling-vets/",
+      "published_at": "2026-04-16T19:32:35+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "domain_keyword_hits": {
+        "benefits": [
+          "benefits"
+        ]
+      },
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "evidence_count": 5,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 1.0,
+      "weighted_contribution": 0.0524,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.9333,
+      "source_domains": [
+        "airforcetimes.com",
+        "armytimes.com",
+        "marinecorpstimes.com",
+        "militarytimes.com",
+        "navytimes.com"
+      ],
+      "corroboration": {
+        "score": 100,
+        "source_count": 5,
+        "independent_sources": 5,
+        "domains": [
+          "benefits"
+        ]
+      },
+      "raw_weighted_contribution": 0.0806,
+      "tier3_scale": 0.65
+    },
+    {
+      "event_id": "evt_26de111c6a891cb5",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "title": "AeroVironment launches new multifunctional drone variant",
+      "summary": "The MAYHEM 10 drone, a part of the Switchblade family, will serve as a multifunctional launch system, capable of deploying from various platforms.",
+      "url": "https://www.militarytimes.com/news/your-military/2026/04/15/aerovironment-launches-new-multifunctional-drone-variant/",
+      "published_at": "2026-04-15T20:24:43+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "family"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "evidence_count": 3,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.0508,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.7267,
+      "source_domains": [
+        "armytimes.com",
+        "defensenews.com",
+        "militarytimes.com"
+      ],
+      "corroboration": {
+        "score": 95,
+        "source_count": 3,
+        "independent_sources": 3,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.0565,
+      "tier3_scale": 0.9
     },
     {
       "event_id": "evt_c68c8a38c32275f7",
@@ -454,7 +650,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.7,
-      "weighted_contribution": 0.0238,
+      "weighted_contribution": 0.0311,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2867,
       "source_domains": [
@@ -469,7 +665,70 @@
         ]
       },
       "raw_weighted_contribution": 0.0732,
-      "tier3_scale": 0.325
+      "tier3_scale": 0.425
+    },
+    {
+      "event_id": "evt_c6b2c623dfde3db4",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "title": "USS Gerald R. Ford breaks record for longest post-Vietnam deployment",
+      "summary": "The world's largest aircraft carrier has been deployed for a historic 296 days after departing Naval Station Norfolk on June 24, 2025.",
+      "url": "https://www.militarytimes.com/news/your-navy/2026/04/15/uss-gerald-r-ford-breaks-record-for-longest-post-vietnam-deployment/",
+      "published_at": "2026-04-15T18:21:58+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "deployment"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "evidence_count": 2,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.0294,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.54,
+      "source_domains": [
+        "militarytimes.com",
+        "navytimes.com"
+      ],
+      "corroboration": {
+        "score": 75,
+        "source_count": 2,
+        "independent_sources": 2,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.042,
+      "tier3_scale": 0.7
     },
     {
       "event_id": "evt_824460898423d201",
@@ -516,7 +775,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.7,
-      "weighted_contribution": 0.0196,
+      "weighted_contribution": 0.0257,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2533,
       "source_domains": [
@@ -531,7 +790,7 @@
         ]
       },
       "raw_weighted_contribution": 0.0604,
-      "tier3_scale": 0.325
+      "tier3_scale": 0.425
     },
     {
       "event_id": "evt_19ba4d61a163e26c",
@@ -579,9 +838,9 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.9,
-      "weighted_contribution": 0.0159,
+      "weighted_contribution": 0.0178,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.2867,
+      "tier3_normalization_factor": 0.32,
       "source_domains": [
         "thewarhorse.org"
       ],
@@ -593,7 +852,7 @@
           "military_family_readiness"
         ]
       },
-      "raw_weighted_contribution": 0.0319,
+      "raw_weighted_contribution": 0.0356,
       "tier3_scale": 0.5
     },
     {
@@ -646,7 +905,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.7,
-      "weighted_contribution": 0.0087,
+      "weighted_contribution": 0.0125,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2533,
       "source_domains": [
@@ -661,6 +920,440 @@
         ]
       },
       "raw_weighted_contribution": 0.0385,
+      "tier3_scale": 0.325
+    },
+    {
+      "event_id": "evt_276204d86856c8c8",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "His Family Legacy Led Him to the Military. But He Found Contentment as a Family Man",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/Kingslayer-collage-2.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/Kingslayer-collage-2.png?w=1366&ssl=1 1366w, https://i0.wp.com/thewarhor",
+      "url": "https://thewarhorse.org/iraq-veteran-family-legacy/",
+      "published_at": "2026-03-04T12:00:00+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "family"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0102,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.0204,
+      "tier3_scale": 0.5
+    },
+    {
+      "event_id": "evt_b25379eaafb272be",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "I Thought Removing Confederate Names Meant Black Soldiers\u2019 Legacy Mattered. Then, the Names Were Restored",
+      "summary": "<figure><img width=\"1024\" height=\"575\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/null-5-e1770999718480.jpeg?fit=1024%2C575&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/null-5-e1770999718480.jpeg?w=2500&ssl=1 2500w, https://i0.wp.com/thewa",
+      "url": "https://thewarhorse.org/black-soldier-confederate-named-military-bases/",
+      "published_at": "2026-02-18T12:00:00+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "barracks"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0102,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.0204,
+      "tier3_scale": 0.5
+    },
+    {
+      "event_id": "evt_529e6e8e80f4173e",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "I Decided Not To Go On a Patrol in Iraq. An IED Killed My Friends",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-3.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-3.png?w=1366&ssl=1 1366w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
+      "url": "https://thewarhorse.org/soldier-friends-killed-ied-iraq/",
+      "published_at": "2026-02-04T12:00:00+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "family"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0102,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.0204,
+      "tier3_scale": 0.5
+    },
+    {
+      "event_id": "evt_9c1f9bf37f606441",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "Are You a Veteran Struggling to Get Mental Health Care? These Resources May Help",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"VA building\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?w=2000&ssl=1 2000w, https://i0.wp.com/thew",
+      "url": "https://thewarhorse.org/veteran-mental-health-resources/",
+      "published_at": "2025-12-11T12:10:20+00:00",
+      "domains": [
+        "healthcare_system"
+      ],
+      "domain_keyword_hits": {
+        "healthcare_system": [
+          "mental health"
+        ]
+      },
+      "primary_domain": "healthcare_system",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "healthcare_system"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0087,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "healthcare_system"
+        ]
+      },
+      "raw_weighted_contribution": 0.0204,
+      "tier3_scale": 0.425
+    },
+    {
+      "event_id": "evt_81ad308220d8ed45",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "After 30 Years in the Military, an Army Colonel Asks: Who Am I Without the Uniform?",
+      "summary": "<figure><img width=\"1024\" height=\"630\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/Evans-Alan-MAJ-Iraq-2003.webp?fit=1024%2C630&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/Evans-Alan-MAJ-Iraq-2003.webp?w=1170&ssl=1 1170w, https://i0.wp.com",
+      "url": "https://thewarhorse.org/army-colonel-life-without-military/",
+      "published_at": "2026-01-14T12:00:00+00:00",
+      "domains": [
+        "employment"
+      ],
+      "domain_keyword_hits": {
+        "employment": [
+          "career"
+        ]
+      },
+      "primary_domain": "employment",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "employment"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "northeast",
+      "regions": [
+        "northeast"
+      ],
+      "scope": "regional",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0059,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.2867,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "employment"
+        ]
+      },
+      "raw_weighted_contribution": 0.0183,
+      "tier3_scale": 0.325
+    },
+    {
+      "event_id": "evt_c3ec4de9a4b9495e",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "A Look Back at Our Most Impactful News Stories of 2025",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/News-1.webp?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"Illustration by Hrisanthi Pickett\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/News-1.webp?w=2000&ssl=1 2000w, https://i0.wp.com/th",
+      "url": "https://thewarhorse.org/top-news-stories-2025/",
+      "published_at": "2025-12-29T18:33:00+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "domain_keyword_hits": {
+        "benefits": [
+          "benefits"
+        ]
+      },
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0059,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.2867,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "benefits"
+        ]
+      },
+      "raw_weighted_contribution": 0.0183,
+      "tier3_scale": 0.325
+    },
+    {
+      "event_id": "evt_334e566bcab08cd3",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "Tuition, Training, Housing: How to Sell the Military as the Path of Least Resistance",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/null-3.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/null-3.png?w=1366&ssl=1 1366w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/20",
+      "url": "https://thewarhorse.org/military-recruiter-enlist-navy/",
+      "published_at": "2026-03-18T11:00:00+00:00",
+      "domains": [
+        "housing_stability"
+      ],
+      "domain_keyword_hits": {
+        "housing_stability": [
+          "housing"
+        ]
+      },
+      "primary_domain": "housing_stability",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.55
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.48,
+      "drivers": [
+        "housing_stability"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "west",
+      "regions": [
+        "west"
+      ],
+      "scope": "regional",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0036,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.2533,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "housing_stability"
+        ]
+      },
+      "raw_weighted_contribution": 0.0162,
       "tier3_scale": 0.225
     }
   ],
@@ -672,7 +1365,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T12:42:46.999986-07:00",
+      "updated_at": "2026-04-18T14:10:03.539387-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -698,13 +1391,45 @@
       }
     },
     {
+      "signal_id": "ps_33baed7da5e58a90",
+      "domain_key": "benefits",
+      "headline": "Advocates press for preventive programs, VA benefits for struggling vets",
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "severity": "watch",
+      "confidence": "low",
+      "updated_at": "2026-04-18T14:10:03.539402-07:00",
+      "evidence_count": 5,
+      "source_domains": [
+        "airforcetimes.com",
+        "armytimes.com",
+        "marinecorpstimes.com",
+        "militarytimes.com",
+        "navytimes.com"
+      ],
+      "event_ids": [
+        "evt_6f36fb6a03bb08a2"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "live",
+      "corroboration": {
+        "score": 100,
+        "source_count": 5,
+        "independent_sources": 5,
+        "domains": [
+          "benefits"
+        ]
+      }
+    },
+    {
       "signal_id": "ps_16fb50f122b79897",
       "domain_key": "healthcare_system",
       "headline": "Finding Solace In Chickens: One Veteran\u2019s Fight To Save His Flock and Mental Health",
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T12:42:46.999999-07:00",
+      "updated_at": "2026-04-18T14:10:03.539412-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -732,7 +1457,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T12:42:47.000006-07:00",
+      "updated_at": "2026-04-18T14:10:03.539418-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -752,17 +1477,45 @@
           "employment"
         ]
       }
+    },
+    {
+      "signal_id": "ps_c88d40742ab3e042",
+      "domain_key": "housing_stability",
+      "headline": "Tuition, Training, Housing: How to Sell the Military as the Path of Least Resistance",
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "severity": "watch",
+      "confidence": "low",
+      "updated_at": "2026-04-18T14:10:03.539422-07:00",
+      "evidence_count": 1,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "event_ids": [
+        "evt_334e566bcab08cd3"
+      ],
+      "signal_type": "contextual",
+      "region": "west",
+      "scope": "regional",
+      "source_state": "reference",
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "housing_stability"
+        ]
+      }
     }
   ],
   "audit": {
     "tier3_used": 180,
-    "tier3_keyword_matched": 31,
-    "tier3_keyword_qualified": 31,
-    "tier3_scoring_qualified": 11,
-    "tier3_cluster_count": 17,
-    "tier3_kept": 31,
-    "tier3_qualified": 7,
-    "tier3_final_events": 7,
-    "tier3_priority_signals": 3
+    "tier3_keyword_matched": 33,
+    "tier3_keyword_qualified": 33,
+    "tier3_scoring_qualified": 33,
+    "tier3_cluster_count": 18,
+    "tier3_kept": 33,
+    "tier3_qualified": 18,
+    "tier3_final_events": 18,
+    "tier3_priority_signals": 5
   }
 }
