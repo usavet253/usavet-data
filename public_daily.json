@@ -1,19 +1,19 @@
 {
   "as_of": "2026-04-18",
-  "generated_at": "2026-04-18T16:16:01.432930-07:00",
-  "overall_score": 50.5,
-  "score": 50.5,
-  "status_band": "Balanced / Watch",
-  "band": "Balanced / Watch",
+  "generated_at": "2026-04-18T16:50:26.992511-07:00",
+  "overall_score": 49.0,
+  "score": 49.0,
+  "status_band": "Elevated Pressure",
+  "band": "Elevated Pressure",
   "trend": "improving",
-  "pressure_label": "Balanced / Watch",
+  "pressure_label": "Elevated Pressure",
   "source_quality": "High Confidence",
   "index": {
-    "overall_score": 50.5,
-    "band": "Balanced / Watch",
-    "status_band": "Balanced / Watch",
+    "overall_score": 49.0,
+    "band": "Elevated Pressure",
+    "status_band": "Elevated Pressure",
     "trend": "improving",
-    "pressure_label": "Balanced / Watch",
+    "pressure_label": "Elevated Pressure",
     "source_quality": "High Confidence",
     "weights": {
       "housing_stability": 0.2,
@@ -24,33 +24,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.5.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.0.",
   "notes": [
     "Housing score: 47.4",
-    "Cost of living score: 47.2",
-    "Employment score: 54.3",
-    "Benefits score: 50.1",
+    "Cost of living score: 47.1",
+    "Employment score: 49.1",
+    "Benefits score: 50.2",
     "Healthcare system score: 51.0",
-    "Military family readiness score: 56.0",
+    "Military family readiness score: 50.5",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 47.4,
-    "employment": 54.3,
-    "military_family_readiness": 56.0,
-    "cost_of_living": 47.2,
+    "employment": 49.1,
+    "military_family_readiness": 50.5,
+    "cost_of_living": 47.1,
     "healthcare_system": 51.0,
-    "benefits": 50.1
+    "benefits": 50.2
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.5.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.0.",
     "notes": [
       "Housing score: 47.4",
-      "Cost of living score: 47.2",
-      "Employment score: 54.3",
-      "Benefits score: 50.1",
+      "Cost of living score: 47.1",
+      "Employment score: 49.1",
+      "Benefits score: 50.2",
       "Healthcare system score: 51.0",
-      "Military family readiness score: 56.0",
+      "Military family readiness score: 50.5",
       "Source confidence: High Confidence"
     ]
   },
@@ -200,16 +200,16 @@
       "military_family_readiness": 43.6
     },
     {
-      "time": "2026-04-18T16:16:01.432930-07:00",
+      "time": "2026-04-18T16:50:26.992511-07:00",
       "as_of": "2026-04-18",
-      "overall_score": 50.5,
+      "overall_score": 49.0,
       "trend": "improving",
       "housing_stability": 47.4,
-      "cost_of_living": 47.2,
-      "employment": 54.3,
-      "benefits": 50.1,
+      "cost_of_living": 47.1,
+      "employment": 49.1,
+      "benefits": 50.2,
       "healthcare_system": 51.0,
-      "military_family_readiness": 56.0
+      "military_family_readiness": 50.5
     }
   ],
   "events": [
@@ -280,6 +280,76 @@
       },
       "raw_weighted_contribution": 0.2,
       "tier3_scale": 1.0
+    },
+    {
+      "event_id": "evt_6f36fb6a03bb08a2",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "title": "Advocates press for preventive programs, VA benefits for struggling vets",
+      "summary": "Representatives from specialty courts and veterans\u2019 legal organizations pressed Congress Wednesday for expansion of the Veterans Treatment Courts system.",
+      "url": "https://www.militarytimes.com/news/pentagon-congress/2026/04/16/advocates-press-for-preventive-programs-va-benefits-for-struggling-vets/",
+      "published_at": "2026-04-16T19:32:35+00:00",
+      "domains": [
+        "benefits"
+      ],
+      "domain_keyword_hits": {
+        "benefits": [
+          "benefits"
+        ]
+      },
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "support",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "support",
+        "override": true,
+        "positive_hits": 1,
+        "negative_hits": 0,
+        "confidence": 0.69,
+        "method": "event_state_context",
+        "evidence": [
+          "preventive programs:support_state"
+        ]
+      },
+      "impact_level": "watch",
+      "confidence": "moderate",
+      "relevance_score": 0.48,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "evidence_count": 5,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.1169,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.9333,
+      "source_domains": [
+        "airforcetimes.com",
+        "armytimes.com",
+        "marinecorpstimes.com",
+        "militarytimes.com",
+        "navytimes.com"
+      ],
+      "corroboration": {
+        "score": 100,
+        "source_count": 5,
+        "independent_sources": 5,
+        "domains": [
+          "benefits"
+        ]
+      },
+      "raw_weighted_contribution": 0.1799,
+      "tier3_scale": 0.65
     },
     {
       "event_id": "evt_c68c8a38c32275f7",
@@ -744,73 +814,6 @@
       },
       "raw_weighted_contribution": 0.0102,
       "tier3_scale": 0.9
-    },
-    {
-      "event_id": "evt_6f36fb6a03bb08a2",
-      "source_name": "MilitaryTimes",
-      "source_domain": "militarytimes.com",
-      "title": "Advocates press for preventive programs, VA benefits for struggling vets",
-      "summary": "Representatives from specialty courts and veterans\u2019 legal organizations pressed Congress Wednesday for expansion of the Veterans Treatment Courts system.",
-      "url": "https://www.militarytimes.com/news/pentagon-congress/2026/04/16/advocates-press-for-preventive-programs-va-benefits-for-struggling-vets/",
-      "published_at": "2026-04-16T19:32:35+00:00",
-      "domains": [
-        "benefits"
-      ],
-      "domain_keyword_hits": {
-        "benefits": [
-          "benefits"
-        ]
-      },
-      "primary_domain": "benefits",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "benefits"
-      ],
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
-      "evidence_count": 5,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.72,
-      "freshness": 0.9,
-      "weighted_contribution": 0.009,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.9333,
-      "source_domains": [
-        "airforcetimes.com",
-        "armytimes.com",
-        "marinecorpstimes.com",
-        "militarytimes.com",
-        "navytimes.com"
-      ],
-      "corroboration": {
-        "score": 100,
-        "source_count": 5,
-        "independent_sources": 5,
-        "domains": [
-          "benefits"
-        ]
-      },
-      "raw_weighted_contribution": 0.0138,
-      "tier3_scale": 0.65
     },
     {
       "event_id": "evt_c6b2c623dfde3db4",
@@ -1390,7 +1393,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T16:16:04.823508-07:00",
+      "updated_at": "2026-04-18T16:50:30.167802-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1416,13 +1419,45 @@
       }
     },
     {
+      "signal_id": "ps_33baed7da5e58a90",
+      "domain_key": "benefits",
+      "headline": "Advocates press for preventive programs, VA benefits for struggling vets",
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "severity": "watch",
+      "confidence": "moderate",
+      "updated_at": "2026-04-18T16:50:30.167816-07:00",
+      "evidence_count": 5,
+      "source_domains": [
+        "airforcetimes.com",
+        "armytimes.com",
+        "marinecorpstimes.com",
+        "militarytimes.com",
+        "navytimes.com"
+      ],
+      "event_ids": [
+        "evt_6f36fb6a03bb08a2"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "live",
+      "corroboration": {
+        "score": 100,
+        "source_count": 5,
+        "independent_sources": 5,
+        "domains": [
+          "benefits"
+        ]
+      }
+    },
+    {
       "signal_id": "ps_16fb50f122b79897",
       "domain_key": "healthcare_system",
       "headline": "Finding Solace In Chickens: One Veteran\u2019s Fight To Save His Flock and Mental Health",
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T16:16:04.823522-07:00",
+      "updated_at": "2026-04-18T16:50:30.167825-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1450,7 +1485,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T16:16:04.823530-07:00",
+      "updated_at": "2026-04-18T16:50:30.167832-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1472,45 +1507,13 @@
       }
     },
     {
-      "signal_id": "ps_33baed7da5e58a90",
-      "domain_key": "benefits",
-      "headline": "Advocates press for preventive programs, VA benefits for struggling vets",
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
-      "severity": "watch",
-      "confidence": "low",
-      "updated_at": "2026-04-18T16:16:04.823536-07:00",
-      "evidence_count": 5,
-      "source_domains": [
-        "airforcetimes.com",
-        "armytimes.com",
-        "marinecorpstimes.com",
-        "militarytimes.com",
-        "navytimes.com"
-      ],
-      "event_ids": [
-        "evt_6f36fb6a03bb08a2"
-      ],
-      "signal_type": "contextual",
-      "region": "national",
-      "scope": "national",
-      "source_state": "live",
-      "corroboration": {
-        "score": 100,
-        "source_count": 5,
-        "independent_sources": 5,
-        "domains": [
-          "benefits"
-        ]
-      }
-    },
-    {
       "signal_id": "ps_c88d40742ab3e042",
       "domain_key": "housing_stability",
       "headline": "Tuition, Training, Housing: How to Sell the Military as the Path of Least Resistance",
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-18T16:16:04.823541-07:00",
+      "updated_at": "2026-04-18T16:50:30.167837-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1535,7 +1538,7 @@
   "audit": {
     "tier1": {
       "signals_total": 6,
-      "total_contribution": 1.8444,
+      "total_contribution": 0.7897,
       "by_domain": {
         "housing_stability": {
           "signals_count": 1,
@@ -1546,21 +1549,21 @@
         },
         "employment": {
           "signals_count": 1,
-          "contribution": 0.57,
+          "contribution": 0.0534,
           "signal_names": [
             "FRED unemployment"
           ]
         },
         "military_family_readiness": {
           "signals_count": 1,
-          "contribution": 0.588,
+          "contribution": 0.0529,
           "signal_names": [
             "Federal Register activity"
           ]
         },
         "cost_of_living": {
           "signals_count": 1,
-          "contribution": 0.0564,
+          "contribution": 0.0534,
           "signal_names": [
             "FRED CPI YoY"
           ]
@@ -1583,7 +1586,7 @@
     },
     "tier2": {
       "signals_total": 22,
-      "total_contribution": -1.3405,
+      "total_contribution": -1.3581,
       "by_domain": {
         "housing_stability": {
           "signals_count": 4,
@@ -1597,7 +1600,7 @@
         },
         "employment": {
           "signals_count": 4,
-          "contribution": -0.1425,
+          "contribution": -0.1428,
           "signal_names": [
             "DOL spouse employment friction",
             "Census veteran outcomes",
@@ -1607,7 +1610,7 @@
         },
         "military_family_readiness": {
           "signals_count": 3,
-          "contribution": -0.0545,
+          "contribution": -0.0715,
           "signal_names": [
             "10 USC 1781 readiness anchor",
             "NCSL legislation activity",
@@ -1626,7 +1629,7 @@
         },
         "healthcare_system": {
           "signals_count": 3,
-          "contribution": -0.115,
+          "contribution": -0.1153,
           "signal_names": [
             "NMFA family health friction",
             "GAO VA/DoD access",
