@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-18",
-  "generated_at": "2026-04-18T14:10:01.248374-07:00",
+  "generated_at": "2026-04-18T14:23:01.695775-07:00",
   "overall_score": 48.6,
   "score": 48.6,
   "status_band": "Elevated Pressure",
@@ -200,7 +200,7 @@
       "military_family_readiness": 43.6
     },
     {
-      "time": "2026-04-18T14:10:01.248374-07:00",
+      "time": "2026-04-18T14:23:01.695775-07:00",
       "as_of": "2026-04-18",
       "overall_score": 48.6,
       "trend": "stable",
@@ -1365,7 +1365,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T14:10:03.539387-07:00",
+      "updated_at": "2026-04-18T14:23:05.938116-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1397,7 +1397,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-18T14:10:03.539402-07:00",
+      "updated_at": "2026-04-18T14:23:05.938129-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1429,7 +1429,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T14:10:03.539412-07:00",
+      "updated_at": "2026-04-18T14:23:05.938136-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1457,7 +1457,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T14:10:03.539418-07:00",
+      "updated_at": "2026-04-18T14:23:05.938142-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1485,7 +1485,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-18T14:10:03.539422-07:00",
+      "updated_at": "2026-04-18T14:23:05.938147-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1508,6 +1508,118 @@
     }
   ],
   "audit": {
+    "tier1": {
+      "signals_total": 6,
+      "total_contribution": 0.93,
+      "by_domain": {
+        "housing_stability": {
+          "signals_count": 1,
+          "contribution": 0.21,
+          "signal_names": [
+            "HUD FMR availability"
+          ]
+        },
+        "employment": {
+          "signals_count": 1,
+          "contribution": 0.42,
+          "signal_names": [
+            "FRED unemployment"
+          ]
+        },
+        "military_family_readiness": {
+          "signals_count": 1,
+          "contribution": -0.54,
+          "signal_names": [
+            "Federal Register activity"
+          ]
+        },
+        "cost_of_living": {
+          "signals_count": 1,
+          "contribution": 0.42,
+          "signal_names": [
+            "FRED CPI YoY"
+          ]
+        },
+        "healthcare_system": {
+          "signals_count": 1,
+          "contribution": 0.21,
+          "signal_names": [
+            "VA facilities availability"
+          ]
+        },
+        "benefits": {
+          "signals_count": 1,
+          "contribution": 0.21,
+          "signal_names": [
+            "VA benefits reference availability"
+          ]
+        }
+      }
+    },
+    "tier2": {
+      "signals_total": 22,
+      "total_contribution": -1.7893,
+      "by_domain": {
+        "housing_stability": {
+          "signals_count": 4,
+          "contribution": -0.731,
+          "signal_names": [
+            "MFAN housing burden",
+            "NCHV veteran homelessness",
+            "Bob Woodruff housing demand",
+            "Blue Star housing stress"
+          ]
+        },
+        "employment": {
+          "signals_count": 4,
+          "contribution": -0.1339,
+          "signal_names": [
+            "DOL spouse employment friction",
+            "Census veteran outcomes",
+            "IVMF spouse landscape",
+            "IVMF V-Start"
+          ]
+        },
+        "military_family_readiness": {
+          "signals_count": 3,
+          "contribution": -0.1105,
+          "signal_names": [
+            "10 USC 1781 readiness anchor",
+            "NCSL legislation activity",
+            "NMFA policy burden"
+          ]
+        },
+        "cost_of_living": {
+          "signals_count": 4,
+          "contribution": -0.527,
+          "signal_names": [
+            "Soldiers Angels cost pressure",
+            "NMFA cost of service",
+            "DAV COLA benchmark",
+            "VA Loan inflation context"
+          ]
+        },
+        "healthcare_system": {
+          "signals_count": 3,
+          "contribution": 0.0446,
+          "signal_names": [
+            "NMFA family health friction",
+            "GAO VA/DoD access",
+            "Healthcare fairness legislation"
+          ]
+        },
+        "benefits": {
+          "signals_count": 4,
+          "contribution": -0.3315,
+          "signal_names": [
+            "VFW implementation gap",
+            "Elizabeth Dole policy gap",
+            "VA caregiver support path",
+            "CBPP veteran SNAP stress"
+          ]
+        }
+      }
+    },
     "tier3_used": 180,
     "tier3_keyword_matched": 33,
     "tier3_keyword_qualified": 33,
