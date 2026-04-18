@@ -1,19 +1,19 @@
 {
   "as_of": "2026-04-18",
-  "generated_at": "2026-04-18T16:05:25.649181-07:00",
-  "overall_score": 49.6,
-  "score": 49.6,
-  "status_band": "Elevated Pressure",
-  "band": "Elevated Pressure",
+  "generated_at": "2026-04-18T16:16:01.432930-07:00",
+  "overall_score": 50.5,
+  "score": 50.5,
+  "status_band": "Balanced / Watch",
+  "band": "Balanced / Watch",
   "trend": "improving",
-  "pressure_label": "Elevated Pressure",
+  "pressure_label": "Balanced / Watch",
   "source_quality": "High Confidence",
   "index": {
-    "overall_score": 49.6,
-    "band": "Elevated Pressure",
-    "status_band": "Elevated Pressure",
+    "overall_score": 50.5,
+    "band": "Balanced / Watch",
+    "status_band": "Balanced / Watch",
     "trend": "improving",
-    "pressure_label": "Elevated Pressure",
+    "pressure_label": "Balanced / Watch",
     "source_quality": "High Confidence",
     "weights": {
       "housing_stability": 0.2,
@@ -24,33 +24,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.6.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.5.",
   "notes": [
-    "Housing score: 47.2",
-    "Cost of living score: 49.5",
-    "Employment score: 50.4",
-    "Benefits score: 49.3",
-    "Healthcare system score: 51.1",
-    "Military family readiness score: 50.6",
+    "Housing score: 47.4",
+    "Cost of living score: 47.2",
+    "Employment score: 54.3",
+    "Benefits score: 50.1",
+    "Healthcare system score: 51.0",
+    "Military family readiness score: 56.0",
     "Source confidence: High Confidence"
   ],
   "domains": {
-    "housing_stability": 47.2,
-    "employment": 50.4,
-    "military_family_readiness": 50.6,
-    "cost_of_living": 49.5,
-    "healthcare_system": 51.1,
-    "benefits": 49.3
+    "housing_stability": 47.4,
+    "employment": 54.3,
+    "military_family_readiness": 56.0,
+    "cost_of_living": 47.2,
+    "healthcare_system": 51.0,
+    "benefits": 50.1
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.6.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 50.5.",
     "notes": [
-      "Housing score: 47.2",
-      "Cost of living score: 49.5",
-      "Employment score: 50.4",
-      "Benefits score: 49.3",
-      "Healthcare system score: 51.1",
-      "Military family readiness score: 50.6",
+      "Housing score: 47.4",
+      "Cost of living score: 47.2",
+      "Employment score: 54.3",
+      "Benefits score: 50.1",
+      "Healthcare system score: 51.0",
+      "Military family readiness score: 56.0",
       "Source confidence: High Confidence"
     ]
   },
@@ -200,16 +200,16 @@
       "military_family_readiness": 43.6
     },
     {
-      "time": "2026-04-18T16:05:25.649181-07:00",
+      "time": "2026-04-18T16:16:01.432930-07:00",
       "as_of": "2026-04-18",
-      "overall_score": 49.6,
+      "overall_score": 50.5,
       "trend": "improving",
-      "housing_stability": 47.2,
-      "cost_of_living": 49.5,
-      "employment": 50.4,
-      "benefits": 49.3,
-      "healthcare_system": 51.1,
-      "military_family_readiness": 50.6
+      "housing_stability": 47.4,
+      "cost_of_living": 47.2,
+      "employment": 54.3,
+      "benefits": 50.1,
+      "healthcare_system": 51.0,
+      "military_family_readiness": 56.0
     }
   ],
   "events": [
@@ -239,7 +239,8 @@
         "override": true,
         "positive_hits": 1,
         "negative_hits": 0,
-        "confidence": 0.7
+        "confidence": 0.7,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "moderate",
@@ -305,7 +306,8 @@
         "override": true,
         "positive_hits": 0,
         "negative_hits": 1,
-        "confidence": 0.7
+        "confidence": 0.7,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "moderate",
@@ -367,7 +369,8 @@
         "override": true,
         "positive_hits": 0,
         "negative_hits": 1,
-        "confidence": 0.7
+        "confidence": 0.7,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "moderate",
@@ -433,7 +436,8 @@
         "override": true,
         "positive_hits": 1,
         "negative_hits": 0,
-        "confidence": 0.7
+        "confidence": 0.7,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "moderate",
@@ -496,7 +500,8 @@
         "override": true,
         "positive_hits": 0,
         "negative_hits": 1,
-        "confidence": 0.7
+        "confidence": 0.7,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "moderate",
@@ -556,9 +561,14 @@
         "source_default": "neutral",
         "validated": "neutral",
         "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.5
+        "positive_hits": 1,
+        "negative_hits": 1,
+        "confidence": 0.5,
+        "method": "event_state_context",
+        "evidence": [
+          "suicide:pressure_state",
+          "suicide:relief_state"
+        ]
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -600,6 +610,77 @@
       "tier3_scale": 1.0
     },
     {
+      "event_id": "evt_be5bbe9595f1aa4d",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "\u2018I Felt Like a Factory Worker.\u2019 Why VA Psychologists Are Burning Out",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.jpeg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"A line of veterans in front of a VA psychologist with her head in her hands\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.j",
+      "url": "https://thewarhorse.org/va-psychologists-burn-out-staff-shortage/",
+      "published_at": "2026-02-12T12:00:00+00:00",
+      "domains": [
+        "employment",
+        "healthcare_system"
+      ],
+      "domain_keyword_hits": {
+        "employment": [
+          "jobs"
+        ],
+        "healthcare_system": [
+          "staffing"
+        ]
+      },
+      "primary_domain": "employment",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "pressure",
+        "override": true,
+        "positive_hits": 0,
+        "negative_hits": 1,
+        "confidence": 0.69,
+        "method": "event_state_context",
+        "evidence": [
+          "shortage:pressure_state"
+        ]
+      },
+      "impact_level": "watch",
+      "confidence": "moderate",
+      "relevance_score": 0.52,
+      "drivers": [
+        "employment",
+        "healthcare_system"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.55,
+      "weighted_contribution": 0.0111,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.2533,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "employment"
+        ]
+      },
+      "raw_weighted_contribution": 0.0341,
+      "tier3_scale": 0.325
+    },
+    {
       "event_id": "evt_26de111c6a891cb5",
       "source_name": "MilitaryTimes",
       "source_domain": "militarytimes.com",
@@ -624,7 +705,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -688,7 +770,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -754,7 +837,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -818,7 +902,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -880,7 +965,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -942,7 +1028,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1004,7 +1091,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1066,7 +1154,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1104,73 +1193,6 @@
       "tier3_scale": 0.425
     },
     {
-      "event_id": "evt_be5bbe9595f1aa4d",
-      "source_name": "TheWarHorse",
-      "source_domain": "thewarhorse.org",
-      "title": "\u2018I Felt Like a Factory Worker.\u2019 Why VA Psychologists Are Burning Out",
-      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.jpeg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"A line of veterans in front of a VA psychologist with her head in her hands\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.j",
-      "url": "https://thewarhorse.org/va-psychologists-burn-out-staff-shortage/",
-      "published_at": "2026-02-12T12:00:00+00:00",
-      "domains": [
-        "employment",
-        "healthcare_system"
-      ],
-      "domain_keyword_hits": {
-        "employment": [
-          "jobs"
-        ],
-        "healthcare_system": [
-          "staffing"
-        ]
-      },
-      "primary_domain": "employment",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 1,
-        "negative_hits": 1,
-        "confidence": 0.5
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.42,
-      "drivers": [
-        "employment",
-        "healthcare_system"
-      ],
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "reference",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.76,
-      "freshness": 0.55,
-      "weighted_contribution": 0.0009,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.2533,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "employment"
-        ]
-      },
-      "raw_weighted_contribution": 0.0027,
-      "tier3_scale": 0.325
-    },
-    {
       "event_id": "evt_81ad308220d8ed45",
       "source_name": "TheWarHorse",
       "source_domain": "thewarhorse.org",
@@ -1195,7 +1217,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1257,7 +1280,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1319,7 +1343,8 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5
+        "confidence": 0.5,
+        "method": "legacy_fallback"
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1365,7 +1390,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T16:05:27.886354-07:00",
+      "updated_at": "2026-04-18T16:16:04.823508-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1397,7 +1422,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T16:05:27.886368-07:00",
+      "updated_at": "2026-04-18T16:16:04.823522-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1419,13 +1444,41 @@
       }
     },
     {
+      "signal_id": "ps_a38394527c5879c4",
+      "domain_key": "employment",
+      "headline": "\u2018I Felt Like a Factory Worker.\u2019 Why VA Psychologists Are Burning Out",
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "severity": "watch",
+      "confidence": "moderate",
+      "updated_at": "2026-04-18T16:16:04.823530-07:00",
+      "evidence_count": 1,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "event_ids": [
+        "evt_be5bbe9595f1aa4d"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "reference",
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "employment"
+        ]
+      }
+    },
+    {
       "signal_id": "ps_33baed7da5e58a90",
       "domain_key": "benefits",
       "headline": "Advocates press for preventive programs, VA benefits for struggling vets",
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-18T16:05:27.886374-07:00",
+      "updated_at": "2026-04-18T16:16:04.823536-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1451,41 +1504,13 @@
       }
     },
     {
-      "signal_id": "ps_a38394527c5879c4",
-      "domain_key": "employment",
-      "headline": "\u2018I Felt Like a Factory Worker.\u2019 Why VA Psychologists Are Burning Out",
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "severity": "watch",
-      "confidence": "low",
-      "updated_at": "2026-04-18T16:05:27.886379-07:00",
-      "evidence_count": 1,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "event_ids": [
-        "evt_be5bbe9595f1aa4d"
-      ],
-      "signal_type": "contextual",
-      "region": "national",
-      "scope": "national",
-      "source_state": "reference",
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "employment"
-        ]
-      }
-    },
-    {
       "signal_id": "ps_c88d40742ab3e042",
       "domain_key": "housing_stability",
       "headline": "Tuition, Training, Housing: How to Sell the Military as the Path of Least Resistance",
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-18T16:05:27.886383-07:00",
+      "updated_at": "2026-04-18T16:16:04.823541-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1510,46 +1535,46 @@
   "audit": {
     "tier1": {
       "signals_total": 6,
-      "total_contribution": 0.3175,
+      "total_contribution": 1.8444,
       "by_domain": {
         "housing_stability": {
           "signals_count": 1,
-          "contribution": 0.054,
+          "contribution": 0.21,
           "signal_names": [
             "HUD FMR availability"
           ]
         },
         "employment": {
           "signals_count": 1,
-          "contribution": 0.0513,
+          "contribution": 0.57,
           "signal_names": [
             "FRED unemployment"
           ]
         },
         "military_family_readiness": {
           "signals_count": 1,
-          "contribution": 0.0529,
+          "contribution": 0.588,
           "signal_names": [
             "Federal Register activity"
           ]
         },
         "cost_of_living": {
           "signals_count": 1,
-          "contribution": 0.0513,
+          "contribution": 0.0564,
           "signal_names": [
             "FRED CPI YoY"
           ]
         },
         "healthcare_system": {
           "signals_count": 1,
-          "contribution": 0.054,
+          "contribution": 0.21,
           "signal_names": [
             "VA facilities availability"
           ]
         },
         "benefits": {
           "signals_count": 1,
-          "contribution": 0.054,
+          "contribution": 0.21,
           "signal_names": [
             "VA benefits reference availability"
           ]
@@ -1558,11 +1583,11 @@
     },
     "tier2": {
       "signals_total": 22,
-      "total_contribution": -0.6256,
+      "total_contribution": -1.3405,
       "by_domain": {
         "housing_stability": {
           "signals_count": 4,
-          "contribution": -0.3355,
+          "contribution": -0.473,
           "signal_names": [
             "MFAN housing burden",
             "NCHV veteran homelessness",
@@ -1572,7 +1597,7 @@
         },
         "employment": {
           "signals_count": 4,
-          "contribution": -0.0261,
+          "contribution": -0.1425,
           "signal_names": [
             "DOL spouse employment friction",
             "Census veteran outcomes",
@@ -1582,7 +1607,7 @@
         },
         "military_family_readiness": {
           "signals_count": 3,
-          "contribution": -0.077,
+          "contribution": -0.0545,
           "signal_names": [
             "10 USC 1781 readiness anchor",
             "NCSL legislation activity",
@@ -1591,7 +1616,7 @@
         },
         "cost_of_living": {
           "signals_count": 4,
-          "contribution": -0.1045,
+          "contribution": -0.341,
           "signal_names": [
             "Soldiers Angels cost pressure",
             "NMFA cost of service",
@@ -1601,7 +1626,7 @@
         },
         "healthcare_system": {
           "signals_count": 3,
-          "contribution": 0.055,
+          "contribution": -0.115,
           "signal_names": [
             "NMFA family health friction",
             "GAO VA/DoD access",
@@ -1610,7 +1635,7 @@
         },
         "benefits": {
           "signals_count": 4,
-          "contribution": -0.1375,
+          "contribution": -0.2145,
           "signal_names": [
             "VFW implementation gap",
             "Elizabeth Dole policy gap",
