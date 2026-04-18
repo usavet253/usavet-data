@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-18",
-  "generated_at": "2026-04-18T08:25:05.635475-07:00",
+  "generated_at": "2026-04-18T12:42:43.765482-07:00",
   "overall_score": 48.7,
   "score": 48.7,
   "status_band": "Elevated Pressure",
@@ -28,18 +28,18 @@
   "notes": [
     "Housing score: 44.8",
     "Cost of living score: 48.9",
-    "Employment score: 52.9",
+    "Employment score: 52.8",
     "Benefits score: 48.8",
-    "Healthcare system score: 52.6",
+    "Healthcare system score: 52.5",
     "Military family readiness score: 43.6",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 44.8,
-    "employment": 52.9,
+    "employment": 52.8,
     "military_family_readiness": 43.6,
     "cost_of_living": 48.9,
-    "healthcare_system": 52.6,
+    "healthcare_system": 52.5,
     "benefits": 48.8
   },
   "brief": {
@@ -47,9 +47,9 @@
     "notes": [
       "Housing score: 44.8",
       "Cost of living score: 48.9",
-      "Employment score: 52.9",
+      "Employment score: 52.8",
       "Benefits score: 48.8",
-      "Healthcare system score: 52.6",
+      "Healthcare system score: 52.5",
       "Military family readiness score: 43.6",
       "Source confidence: High Confidence"
     ]
@@ -200,15 +200,15 @@
       "military_family_readiness": 43.6
     },
     {
-      "time": "2026-04-18T08:25:05.635475-07:00",
+      "time": "2026-04-18T12:42:43.765482-07:00",
       "as_of": "2026-04-18",
       "overall_score": 48.7,
       "trend": "stable",
       "housing_stability": 44.8,
       "cost_of_living": 48.9,
-      "employment": 52.9,
+      "employment": 52.8,
       "benefits": 48.8,
-      "healthcare_system": 52.6,
+      "healthcare_system": 52.5,
       "military_family_readiness": 43.6
     }
   ],
@@ -259,7 +259,7 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 1.0,
-      "weighted_contribution": 0.13,
+      "weighted_contribution": 0.2,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.9333,
       "source_domains": [
@@ -278,7 +278,131 @@
         ]
       },
       "raw_weighted_contribution": 0.2,
-      "tier3_scale": 0.65
+      "tier3_scale": 1.0
+    },
+    {
+      "event_id": "evt_c68c8a38c32275f7",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "Inside the Wait for War: Military Families Brace for What Comes Next",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image-3.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image-3.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
+      "url": "https://thewarhorse.org/military-families-wait-middle-east/",
+      "published_at": "2026-03-19T11:00:00+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "military families"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 1,
+        "confidence": 0.7
+      },
+      "impact_level": "watch",
+      "confidence": "moderate",
+      "relevance_score": 0.56,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0382,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.0763,
+      "tier3_scale": 0.5
+    },
+    {
+      "event_id": "evt_cc2b36df81bcb38a",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "American MIA Group and Filipino Muslim Government Unite to Bring Home World War II Servicemen",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
+      "url": "https://thewarhorse.org/world-war-ii-soldiers-search-philippines/",
+      "published_at": "2026-02-19T12:00:00+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "family"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 1,
+        "confidence": 0.7
+      },
+      "impact_level": "watch",
+      "confidence": "moderate",
+      "relevance_score": 0.56,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "south",
+      "regions": [
+        "south"
+      ],
+      "scope": "regional",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0382,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.0763,
+      "tier3_scale": 0.5
     },
     {
       "event_id": "evt_6d2da8bf210a8262",
@@ -330,7 +454,69 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.7,
-      "weighted_contribution": 0.0146,
+      "weighted_contribution": 0.0238,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.2867,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "healthcare_system"
+        ]
+      },
+      "raw_weighted_contribution": 0.0732,
+      "tier3_scale": 0.325
+    },
+    {
+      "event_id": "evt_824460898423d201",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "Mental Health Issues Plague New Moms in the Military. The Pentagon Is Supposed to Help",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026",
+      "url": "https://thewarhorse.org/military-mom-pregnancy-mental-health-struggle/",
+      "published_at": "2026-03-05T12:00:00+00:00",
+      "domains": [
+        "healthcare_system"
+      ],
+      "domain_keyword_hits": {
+        "healthcare_system": [
+          "mental health"
+        ]
+      },
+      "primary_domain": "healthcare_system",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 1,
+        "confidence": 0.7
+      },
+      "impact_level": "watch",
+      "confidence": "moderate",
+      "relevance_score": 0.56,
+      "drivers": [
+        "healthcare_system"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0196,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2533,
       "source_domains": [
@@ -344,8 +530,8 @@
           "healthcare_system"
         ]
       },
-      "raw_weighted_contribution": 0.0647,
-      "tier3_scale": 0.225
+      "raw_weighted_contribution": 0.0604,
+      "tier3_scale": 0.325
     },
     {
       "event_id": "evt_19ba4d61a163e26c",
@@ -393,7 +579,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.9,
-      "weighted_contribution": 0.0104,
+      "weighted_contribution": 0.0159,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2867,
       "source_domains": [
@@ -408,7 +594,74 @@
         ]
       },
       "raw_weighted_contribution": 0.0319,
-      "tier3_scale": 0.325
+      "tier3_scale": 0.5
+    },
+    {
+      "event_id": "evt_be5bbe9595f1aa4d",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "\u2018I Felt Like a Factory Worker.\u2019 Why VA Psychologists Are Burning Out",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.jpeg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"A line of veterans in front of a VA psychologist with her head in her hands\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.j",
+      "url": "https://thewarhorse.org/va-psychologists-burn-out-staff-shortage/",
+      "published_at": "2026-02-12T12:00:00+00:00",
+      "domains": [
+        "employment",
+        "healthcare_system"
+      ],
+      "domain_keyword_hits": {
+        "employment": [
+          "jobs"
+        ],
+        "healthcare_system": [
+          "staffing"
+        ]
+      },
+      "primary_domain": "employment",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "pressure",
+        "validated": "pressure",
+        "override": false,
+        "positive_hits": 1,
+        "negative_hits": 1,
+        "confidence": 0.6
+      },
+      "impact_level": "watch",
+      "confidence": "moderate",
+      "relevance_score": 0.52,
+      "drivers": [
+        "employment",
+        "healthcare_system"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.7,
+      "weighted_contribution": 0.0087,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.2533,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "employment"
+        ]
+      },
+      "raw_weighted_contribution": 0.0385,
+      "tier3_scale": 0.225
     }
   ],
   "priority_signals": [
@@ -419,7 +672,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T08:25:08.140637-07:00",
+      "updated_at": "2026-04-18T12:42:46.999986-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -451,7 +704,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T08:25:08.140659-07:00",
+      "updated_at": "2026-04-18T12:42:46.999999-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -471,6 +724,45 @@
           "healthcare_system"
         ]
       }
+    },
+    {
+      "signal_id": "ps_a38394527c5879c4",
+      "domain_key": "employment",
+      "headline": "\u2018I Felt Like a Factory Worker.\u2019 Why VA Psychologists Are Burning Out",
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "severity": "watch",
+      "confidence": "moderate",
+      "updated_at": "2026-04-18T12:42:47.000006-07:00",
+      "evidence_count": 1,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "event_ids": [
+        "evt_be5bbe9595f1aa4d"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "reference",
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "employment"
+        ]
+      }
     }
-  ]
+  ],
+  "audit": {
+    "tier3_used": 180,
+    "tier3_keyword_matched": 31,
+    "tier3_keyword_qualified": 31,
+    "tier3_scoring_qualified": 11,
+    "tier3_cluster_count": 17,
+    "tier3_kept": 31,
+    "tier3_qualified": 7,
+    "tier3_final_events": 7,
+    "tier3_priority_signals": 3
+  }
 }
