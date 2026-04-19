@@ -144,7 +144,7 @@
     "military_family_readiness": 43.6
   },
   {
-    "time": "2026-04-18T17:35:28.746191-07:00",
+    "time": "2026-04-18T17:46:24.672280-07:00",
     "as_of": "2026-04-18",
     "overall_score": 48.9,
     "trend": "improving",
@@ -153,6 +153,6 @@
     "employment": 49.1,
     "benefits": 50.2,
     "healthcare_system": 51.0,
-    "military_family_readiness": 50.1
+    "military_family_readiness": 49.6
   }
 ]
