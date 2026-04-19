@@ -1,15 +1,15 @@
 {
   "as_of": "2026-04-18",
-  "generated_at": "2026-04-18T16:50:26.992511-07:00",
-  "overall_score": 49.0,
-  "score": 49.0,
+  "generated_at": "2026-04-18T17:35:28.746191-07:00",
+  "overall_score": 48.9,
+  "score": 48.9,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
   "trend": "improving",
   "pressure_label": "Elevated Pressure",
   "source_quality": "High Confidence",
   "index": {
-    "overall_score": 49.0,
+    "overall_score": 48.9,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
     "trend": "improving",
@@ -24,33 +24,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.0.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.9.",
   "notes": [
     "Housing score: 47.4",
     "Cost of living score: 47.1",
     "Employment score: 49.1",
     "Benefits score: 50.2",
     "Healthcare system score: 51.0",
-    "Military family readiness score: 50.5",
+    "Military family readiness score: 50.1",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 47.4,
     "employment": 49.1,
-    "military_family_readiness": 50.5,
+    "military_family_readiness": 50.1,
     "cost_of_living": 47.1,
     "healthcare_system": 51.0,
     "benefits": 50.2
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 49.0.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.9.",
     "notes": [
       "Housing score: 47.4",
       "Cost of living score: 47.1",
       "Employment score: 49.1",
       "Benefits score: 50.2",
       "Healthcare system score: 51.0",
-      "Military family readiness score: 50.5",
+      "Military family readiness score: 50.1",
       "Source confidence: High Confidence"
     ]
   },
@@ -200,51 +200,55 @@
       "military_family_readiness": 43.6
     },
     {
-      "time": "2026-04-18T16:50:26.992511-07:00",
+      "time": "2026-04-18T17:35:28.746191-07:00",
       "as_of": "2026-04-18",
-      "overall_score": 49.0,
+      "overall_score": 48.9,
       "trend": "improving",
       "housing_stability": 47.4,
       "cost_of_living": 47.1,
       "employment": 49.1,
       "benefits": 50.2,
       "healthcare_system": 51.0,
-      "military_family_readiness": 50.5
+      "military_family_readiness": 50.1
     }
   ],
   "events": [
     {
-      "event_id": "evt_da865a401f997235",
+      "event_id": "evt_f6ff51aa91a4e254",
       "source_name": "MilitaryTimes",
       "source_domain": "militarytimes.com",
-      "title": "How chest-thumping rhetoric erodes service member safety",
-      "summary": "Defense Secretary Pete Hegseth's brash rhetoric is profoundly destabilizing for actively-serving military families, this military spouse argues.",
-      "url": "https://www.militarytimes.com/opinion/2026/04/17/how-chest-thumping-rhetoric-erodes-service-member-safety/",
-      "published_at": "2026-04-17T16:00:34+00:00",
+      "title": "Suicide rates among military families continue to climb",
+      "summary": "The total overall number decreased, a drop that coincides with smaller overall force numbers.",
+      "url": "https://www.militarytimes.com/news/your-military/2026/04/15/suicide-rates-among-military-families-continue-to-climb/",
+      "published_at": "2026-04-15T19:14:20+00:00",
       "domains": [
         "military_family_readiness"
       ],
       "domain_keyword_hits": {
         "military_family_readiness": [
-          "military families",
-          "spouse"
+          "military families"
         ]
       },
       "primary_domain": "military_family_readiness",
       "event_type": "context_signal",
-      "direction": "support",
+      "direction": "pressure",
       "direction_validation": {
         "source_default": "neutral",
-        "validated": "support",
+        "validated": "pressure",
         "override": true,
         "positive_hits": 1,
-        "negative_hits": 0,
-        "confidence": 0.7,
-        "method": "legacy_fallback"
+        "negative_hits": 3,
+        "confidence": 0.77,
+        "method": "event_state_context",
+        "evidence": [
+          "suicide:pressure_state",
+          "suicide:relief_state",
+          "suicide:dominant_negative"
+        ]
       },
       "impact_level": "watch",
       "confidence": "moderate",
-      "relevance_score": 0.73,
+      "relevance_score": 0.56,
       "drivers": [
         "military_family_readiness"
       ],
@@ -255,14 +259,14 @@
         "national"
       ],
       "scope": "national",
-      "source_state": "live",
+      "source_state": "recent",
       "age_hours": null,
       "tier": "tier_3",
       "trust_weight": 0.72,
-      "freshness": 0.9,
+      "freshness": 0.85,
       "weighted_contribution": 0.2,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.9333,
+      "tier3_normalization_factor": 1.0,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
@@ -304,17 +308,19 @@
         "source_default": "neutral",
         "validated": "support",
         "override": true,
-        "positive_hits": 1,
+        "positive_hits": 4,
         "negative_hits": 0,
-        "confidence": 0.69,
+        "confidence": 0.92,
         "method": "event_state_context",
         "evidence": [
-          "preventive programs:support_state"
+          "preventive programs:support_state",
+          "benefits:support_state",
+          "preventive programs:dominant_positive"
         ]
       },
       "impact_level": "watch",
-      "confidence": "moderate",
-      "relevance_score": 0.48,
+      "confidence": "high",
+      "relevance_score": 0.56,
       "drivers": [
         "benefits"
       ],
@@ -330,7 +336,7 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.9,
-      "weighted_contribution": 0.1169,
+      "weighted_contribution": 0.13,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.9333,
       "source_domains": [
@@ -348,151 +354,21 @@
           "benefits"
         ]
       },
-      "raw_weighted_contribution": 0.1799,
+      "raw_weighted_contribution": 0.2,
       "tier3_scale": 0.65
     },
     {
-      "event_id": "evt_c68c8a38c32275f7",
+      "event_id": "evt_9c1f9bf37f606441",
       "source_name": "TheWarHorse",
       "source_domain": "thewarhorse.org",
-      "title": "Inside the Wait for War: Military Families Brace for What Comes Next",
-      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image-3.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image-3.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
-      "url": "https://thewarhorse.org/military-families-wait-middle-east/",
-      "published_at": "2026-03-19T11:00:00+00:00",
+      "title": "Are You a Veteran Struggling to Get Mental Health Care? These Resources May Help",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"VA building\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?w=2000&ssl=1 2000w, https://i0.wp.com/thew",
+      "url": "https://thewarhorse.org/veteran-mental-health-resources/",
+      "published_at": "2025-12-11T12:10:20+00:00",
       "domains": [
-        "military_family_readiness"
+        "healthcare_system"
       ],
       "domain_keyword_hits": {
-        "military_family_readiness": [
-          "military families"
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "pressure",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "pressure",
-        "override": true,
-        "positive_hits": 0,
-        "negative_hits": 1,
-        "confidence": 0.7,
-        "method": "legacy_fallback"
-      },
-      "impact_level": "watch",
-      "confidence": "moderate",
-      "relevance_score": 0.56,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "reference",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.76,
-      "freshness": 0.55,
-      "weighted_contribution": 0.0307,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.32,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.0614,
-      "tier3_scale": 0.5
-    },
-    {
-      "event_id": "evt_cc2b36df81bcb38a",
-      "source_name": "TheWarHorse",
-      "source_domain": "thewarhorse.org",
-      "title": "American MIA Group and Filipino Muslim Government Unite to Bring Home World War II Servicemen",
-      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
-      "url": "https://thewarhorse.org/world-war-ii-soldiers-search-philippines/",
-      "published_at": "2026-02-19T12:00:00+00:00",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "family"
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "pressure",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "pressure",
-        "override": true,
-        "positive_hits": 0,
-        "negative_hits": 1,
-        "confidence": 0.7,
-        "method": "legacy_fallback"
-      },
-      "impact_level": "watch",
-      "confidence": "moderate",
-      "relevance_score": 0.56,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "evidence_count": 1,
-      "region": "south",
-      "regions": [
-        "south"
-      ],
-      "scope": "regional",
-      "source_state": "reference",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.76,
-      "freshness": 0.55,
-      "weighted_contribution": 0.0307,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.32,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.0614,
-      "tier3_scale": 0.5
-    },
-    {
-      "event_id": "evt_6d2da8bf210a8262",
-      "source_name": "TheWarHorse",
-      "source_domain": "thewarhorse.org",
-      "title": "Finding Solace In Chickens: One Veteran\u2019s Fight To Save His Flock and Mental Health",
-      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-9.jpeg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-9.jpeg?w=1600&ssl=1 1600w, https://i0.wp.com/thewarhorse.org/wp-content/upload",
-      "url": "https://thewarhorse.org/veteran-fight-to-save-emotional-support-chickens/",
-      "published_at": "2026-01-29T12:00:00+00:00",
-      "domains": [
-        "healthcare_system",
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "family"
-        ],
         "healthcare_system": [
           "mental health"
         ]
@@ -504,17 +380,21 @@
         "source_default": "neutral",
         "validated": "support",
         "override": true,
-        "positive_hits": 1,
+        "positive_hits": 3,
         "negative_hits": 0,
-        "confidence": 0.7,
-        "method": "legacy_fallback"
+        "confidence": 0.83,
+        "method": "event_state_context",
+        "evidence": [
+          "resources:support_state",
+          "care:support_state",
+          "help:support_state"
+        ]
       },
       "impact_level": "watch",
-      "confidence": "moderate",
-      "relevance_score": 0.6,
+      "confidence": "high",
+      "relevance_score": 0.56,
       "drivers": [
-        "healthcare_system",
-        "military_family_readiness"
+        "healthcare_system"
       ],
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "evidence_count": 1,
@@ -528,9 +408,9 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0251,
+      "weighted_contribution": 0.0318,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.2867,
+      "tier3_normalization_factor": 0.32,
       "source_domains": [
         "thewarhorse.org"
       ],
@@ -542,7 +422,7 @@
           "healthcare_system"
         ]
       },
-      "raw_weighted_contribution": 0.059,
+      "raw_weighted_contribution": 0.0749,
       "tier3_scale": 0.425
     },
     {
@@ -569,9 +449,13 @@
         "validated": "pressure",
         "override": true,
         "positive_hits": 0,
-        "negative_hits": 1,
-        "confidence": 0.7,
-        "method": "legacy_fallback"
+        "negative_hits": 2,
+        "confidence": 0.74,
+        "method": "event_state_context",
+        "evidence": [
+          "mental health issues:pressure_state",
+          "plague:pressure_state"
+        ]
       },
       "impact_level": "watch",
       "confidence": "moderate",
@@ -609,77 +493,6 @@
       "tier3_scale": 0.425
     },
     {
-      "event_id": "evt_f6ff51aa91a4e254",
-      "source_name": "MilitaryTimes",
-      "source_domain": "militarytimes.com",
-      "title": "Suicide rates among military families continue to climb",
-      "summary": "The total overall number decreased, a drop that coincides with smaller overall force numbers.",
-      "url": "https://www.militarytimes.com/news/your-military/2026/04/15/suicide-rates-among-military-families-continue-to-climb/",
-      "published_at": "2026-04-15T19:14:20+00:00",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "military families"
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 1,
-        "negative_hits": 1,
-        "confidence": 0.5,
-        "method": "event_state_context",
-        "evidence": [
-          "suicide:pressure_state",
-          "suicide:relief_state"
-        ]
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
-      "evidence_count": 5,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "recent",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.72,
-      "freshness": 0.85,
-      "weighted_contribution": 0.014,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 1.0,
-      "source_domains": [
-        "airforcetimes.com",
-        "armytimes.com",
-        "marinecorpstimes.com",
-        "militarytimes.com",
-        "navytimes.com"
-      ],
-      "corroboration": {
-        "score": 100,
-        "source_count": 5,
-        "independent_sources": 5,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.014,
-      "tier3_scale": 1.0
-    },
-    {
       "event_id": "evt_be5bbe9595f1aa4d",
       "source_name": "TheWarHorse",
       "source_domain": "thewarhorse.org",
@@ -707,16 +520,18 @@
         "validated": "pressure",
         "override": true,
         "positive_hits": 0,
-        "negative_hits": 1,
-        "confidence": 0.69,
+        "negative_hits": 4,
+        "confidence": 0.92,
         "method": "event_state_context",
         "evidence": [
-          "shortage:pressure_state"
+          "shortage:pressure_state",
+          "shortages:dominant_negative",
+          "shortage:dominant_negative"
         ]
       },
       "impact_level": "watch",
-      "confidence": "moderate",
-      "relevance_score": 0.52,
+      "confidence": "high",
+      "relevance_score": 0.6,
       "drivers": [
         "employment",
         "healthcare_system"
@@ -733,7 +548,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0111,
+      "weighted_contribution": 0.0206,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2533,
       "source_domains": [
@@ -747,8 +562,77 @@
           "employment"
         ]
       },
-      "raw_weighted_contribution": 0.0341,
+      "raw_weighted_contribution": 0.0635,
       "tier3_scale": 0.325
+    },
+    {
+      "event_id": "evt_da865a401f997235",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "title": "How chest-thumping rhetoric erodes service member safety",
+      "summary": "Defense Secretary Pete Hegseth's brash rhetoric is profoundly destabilizing for actively-serving military families, this military spouse argues.",
+      "url": "https://www.militarytimes.com/opinion/2026/04/17/how-chest-thumping-rhetoric-erodes-service-member-safety/",
+      "published_at": "2026-04-17T16:00:34+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "military families",
+          "spouse"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.55,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "evidence_count": 5,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.02,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.9333,
+      "source_domains": [
+        "airforcetimes.com",
+        "armytimes.com",
+        "marinecorpstimes.com",
+        "militarytimes.com",
+        "navytimes.com"
+      ],
+      "corroboration": {
+        "score": 100,
+        "source_count": 5,
+        "independent_sources": 5,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.02,
+      "tier3_scale": 1.0
     },
     {
       "event_id": "evt_26de111c6a891cb5",
@@ -775,8 +659,9 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -840,8 +725,9 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -905,8 +791,9 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -944,6 +831,70 @@
       "tier3_scale": 0.5
     },
     {
+      "event_id": "evt_c68c8a38c32275f7",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "Inside the Wait for War: Military Families Brace for What Comes Next",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image-3.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image-3.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
+      "url": "https://thewarhorse.org/military-families-wait-middle-east/",
+      "published_at": "2026-03-19T11:00:00+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "military families"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.38,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.55,
+      "weighted_contribution": 0.0015,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.003,
+      "tier3_scale": 0.5
+    },
+    {
       "event_id": "evt_276204d86856c8c8",
       "source_name": "TheWarHorse",
       "source_domain": "thewarhorse.org",
@@ -968,8 +919,9 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -984,6 +936,70 @@
         "national"
       ],
       "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.55,
+      "weighted_contribution": 0.0015,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.003,
+      "tier3_scale": 0.5
+    },
+    {
+      "event_id": "evt_cc2b36df81bcb38a",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "American MIA Group and Filipino Muslim Government Unite to Bring Home World War II Servicemen",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
+      "url": "https://thewarhorse.org/world-war-ii-soldiers-search-philippines/",
+      "published_at": "2026-02-19T12:00:00+00:00",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "family"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.38,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "south",
+      "regions": [
+        "south"
+      ],
+      "scope": "regional",
       "source_state": "reference",
       "age_hours": null,
       "tier": "tier_3",
@@ -1031,8 +1047,9 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1094,8 +1111,9 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1133,17 +1151,21 @@
       "tier3_scale": 0.5
     },
     {
-      "event_id": "evt_9c1f9bf37f606441",
+      "event_id": "evt_6d2da8bf210a8262",
       "source_name": "TheWarHorse",
       "source_domain": "thewarhorse.org",
-      "title": "Are You a Veteran Struggling to Get Mental Health Care? These Resources May Help",
-      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"VA building\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?w=2000&ssl=1 2000w, https://i0.wp.com/thew",
-      "url": "https://thewarhorse.org/veteran-mental-health-resources/",
-      "published_at": "2025-12-11T12:10:20+00:00",
+      "title": "Finding Solace In Chickens: One Veteran\u2019s Fight To Save His Flock and Mental Health",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-9.jpeg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-9.jpeg?w=1600&ssl=1 1600w, https://i0.wp.com/thewarhorse.org/wp-content/upload",
+      "url": "https://thewarhorse.org/veteran-fight-to-save-emotional-support-chickens/",
+      "published_at": "2026-01-29T12:00:00+00:00",
       "domains": [
-        "healthcare_system"
+        "healthcare_system",
+        "military_family_readiness"
       ],
       "domain_keyword_hits": {
+        "military_family_readiness": [
+          "family"
+        ],
         "healthcare_system": [
           "mental health"
         ]
@@ -1157,14 +1179,16 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
-      "relevance_score": 0.38,
+      "relevance_score": 0.42,
       "drivers": [
-        "healthcare_system"
+        "healthcare_system",
+        "military_family_readiness"
       ],
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "evidence_count": 1,
@@ -1180,7 +1204,7 @@
       "freshness": 0.55,
       "weighted_contribution": 0.0013,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.32,
+      "tier3_normalization_factor": 0.2867,
       "source_domains": [
         "thewarhorse.org"
       ],
@@ -1220,8 +1244,9 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1283,8 +1308,9 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1346,8 +1372,9 @@
         "override": false,
         "positive_hits": 0,
         "negative_hits": 0,
-        "confidence": 0.5,
-        "method": "legacy_fallback"
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
       },
       "impact_level": "watch",
       "confidence": "low",
@@ -1387,13 +1414,13 @@
   ],
   "priority_signals": [
     {
-      "signal_id": "ps_003f40bd842455b7",
+      "signal_id": "ps_d035178843b70346",
       "domain_key": "military_family_readiness",
-      "headline": "How chest-thumping rhetoric erodes service member safety",
+      "headline": "Suicide rates among military families continue to climb",
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "moderate",
-      "updated_at": "2026-04-18T16:50:30.167802-07:00",
+      "updated_at": "2026-04-18T17:35:31.648760-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1403,12 +1430,12 @@
         "navytimes.com"
       ],
       "event_ids": [
-        "evt_da865a401f997235"
+        "evt_f6ff51aa91a4e254"
       ],
       "signal_type": "contextual",
       "region": "national",
       "scope": "national",
-      "source_state": "live",
+      "source_state": "recent",
       "corroboration": {
         "score": 100,
         "source_count": 5,
@@ -1424,8 +1451,8 @@
       "headline": "Advocates press for preventive programs, VA benefits for struggling vets",
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
-      "confidence": "moderate",
-      "updated_at": "2026-04-18T16:50:30.167816-07:00",
+      "confidence": "high",
+      "updated_at": "2026-04-18T17:35:31.648775-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1451,19 +1478,19 @@
       }
     },
     {
-      "signal_id": "ps_16fb50f122b79897",
+      "signal_id": "ps_e9d8bf3921b470f2",
       "domain_key": "healthcare_system",
-      "headline": "Finding Solace In Chickens: One Veteran\u2019s Fight To Save His Flock and Mental Health",
+      "headline": "Are You a Veteran Struggling to Get Mental Health Care? These Resources May Help",
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
-      "confidence": "moderate",
-      "updated_at": "2026-04-18T16:50:30.167825-07:00",
+      "confidence": "high",
+      "updated_at": "2026-04-18T17:35:31.648781-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
       ],
       "event_ids": [
-        "evt_6d2da8bf210a8262"
+        "evt_9c1f9bf37f606441"
       ],
       "signal_type": "contextual",
       "region": "national",
@@ -1484,8 +1511,8 @@
       "headline": "\u2018I Felt Like a Factory Worker.\u2019 Why VA Psychologists Are Burning Out",
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
-      "confidence": "moderate",
-      "updated_at": "2026-04-18T16:50:30.167832-07:00",
+      "confidence": "high",
+      "updated_at": "2026-04-18T17:35:31.648787-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1513,7 +1540,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-18T16:50:30.167837-07:00",
+      "updated_at": "2026-04-18T17:35:31.648793-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
