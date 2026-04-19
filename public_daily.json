@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-19",
-  "generated_at": "2026-04-19T08:24:50.667615-07:00",
+  "generated_at": "2026-04-19T12:10:27.407836-07:00",
   "overall_score": 48.9,
   "score": 48.9,
   "status_band": "Elevated Pressure",
@@ -212,7 +212,7 @@
       "military_family_readiness": 49.6
     },
     {
-      "time": "2026-04-19T08:24:50.667615-07:00",
+      "time": "2026-04-19T12:10:27.407836-07:00",
       "as_of": "2026-04-19",
       "overall_score": 48.9,
       "trend": "stable",
@@ -760,8 +760,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortages:dominant_negative",
           "shortage:dominant_negative",
+          "shortages:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1458,7 +1458,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-19T08:24:53.401995-07:00",
+      "updated_at": "2026-04-19T12:10:30.286460-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1490,7 +1490,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-19T08:24:53.402030-07:00",
+      "updated_at": "2026-04-19T12:10:30.286472-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1522,7 +1522,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-19T08:24:53.402038-07:00",
+      "updated_at": "2026-04-19T12:10:30.286479-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1550,7 +1550,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-19T08:24:53.402045-07:00",
+      "updated_at": "2026-04-19T12:10:30.286485-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1578,7 +1578,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-19T08:24:53.402050-07:00",
+      "updated_at": "2026-04-19T12:10:30.286490-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
