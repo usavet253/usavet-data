@@ -1,22 +1,22 @@
 {
   "as_of": "2026-04-20",
-  "generated_at": "2026-04-20T22:35:39Z",
-  "generated_at_operational": "2026-04-20T15:35:39-07:00",
-  "overall_score": 48.6,
-  "score": 48.6,
-  "status_band": "Elevated Pressure",
-  "band": "Elevated Pressure",
+  "generated_at": "2026-04-20T23:09:57Z",
+  "generated_at_operational": "2026-04-20T16:09:57-07:00",
+  "overall_score": 55.0,
+  "score": 55.0,
+  "status_band": "Balanced / Watch",
+  "band": "Balanced / Watch",
   "trend": "improving",
-  "pressure_label": "Elevated Pressure",
-  "source_quality": "High Confidence",
+  "pressure_label": "Balanced / Watch",
+  "source_quality": "Moderate Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 48.6,
-    "band": "Elevated Pressure",
-    "status_band": "Elevated Pressure",
+    "overall_score": 55.0,
+    "band": "Balanced / Watch",
+    "status_band": "Balanced / Watch",
     "trend": "improving",
-    "pressure_label": "Elevated Pressure",
-    "source_quality": "High Confidence",
+    "pressure_label": "Balanced / Watch",
+    "source_quality": "Moderate Confidence",
     "weights": {
       "housing_stability": 0.2,
       "cost_of_living": 0.2,
@@ -26,34 +26,34 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.6.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 55.0.",
   "notes": [
-    "Housing score: 45.0",
-    "Cost of living score: 41.1",
-    "Employment score: 50.8",
-    "Benefits score: 52.6",
-    "Healthcare system score: 53.7",
-    "Military family readiness score: 52.5",
-    "Source confidence: High Confidence"
+    "Housing score: 58.5",
+    "Cost of living score: 52.5",
+    "Employment score: 53.0",
+    "Benefits score: 48.7",
+    "Healthcare system score: 57.7",
+    "Military family readiness score: 60.4",
+    "Source confidence: Moderate Confidence"
   ],
   "domains": {
-    "housing_stability": 45.0,
-    "employment": 50.8,
-    "military_family_readiness": 52.5,
-    "cost_of_living": 41.1,
-    "healthcare_system": 53.7,
-    "benefits": 52.6
+    "housing_stability": 58.5,
+    "employment": 53.0,
+    "military_family_readiness": 60.4,
+    "cost_of_living": 52.5,
+    "healthcare_system": 57.7,
+    "benefits": 48.7
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.6.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 55.0.",
     "notes": [
-      "Housing score: 45.0",
-      "Cost of living score: 41.1",
-      "Employment score: 50.8",
-      "Benefits score: 52.6",
-      "Healthcare system score: 53.7",
-      "Military family readiness score: 52.5",
-      "Source confidence: High Confidence"
+      "Housing score: 58.5",
+      "Cost of living score: 52.5",
+      "Employment score: 53.0",
+      "Benefits score: 48.7",
+      "Healthcare system score: 57.7",
+      "Military family readiness score: 60.4",
+      "Source confidence: Moderate Confidence"
     ]
   },
   "history": [
@@ -226,16 +226,16 @@
       "military_family_readiness": 46.1
     },
     {
-      "time": "2026-04-20T22:35:39Z",
+      "time": "2026-04-20T23:09:57Z",
       "as_of": "2026-04-20",
-      "overall_score": 48.6,
+      "overall_score": 55.0,
       "trend": "improving",
-      "housing_stability": 45.0,
-      "cost_of_living": 41.1,
-      "employment": 50.8,
-      "benefits": 52.6,
-      "healthcare_system": 53.7,
-      "military_family_readiness": 52.5
+      "housing_stability": 58.5,
+      "cost_of_living": 52.5,
+      "employment": 53.0,
+      "benefits": 48.7,
+      "healthcare_system": 57.7,
+      "military_family_readiness": 60.4
     }
   ],
   "events": [
@@ -965,8 +965,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortage:dominant_negative",
           "shortages:dominant_negative",
+          "shortage:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1588,7 +1588,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T22:35:41Z",
+      "updated_at": "2026-04-20T23:10:01Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1620,7 +1620,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T22:35:41Z",
+      "updated_at": "2026-04-20T23:10:01Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1652,7 +1652,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T22:35:41Z",
+      "updated_at": "2026-04-20T23:10:01Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1680,7 +1680,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T22:35:41Z",
+      "updated_at": "2026-04-20T23:10:01Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1705,16 +1705,16 @@
   "audit": {
     "tier1": {
       "signals_total": 25,
-      "total_contribution": 2.4877,
+      "total_contribution": 2.3238,
       "by_domain": {
         "housing_stability": {
           "signals_count": 4,
-          "contribution": 0.4136,
+          "contribution": 0.6026,
           "signal_names": [
-            "HUD FMR state coverage",
+            "HUD statewide 2BR FMR measure",
             "FRED CPI YoY [secondary:cost_of_living]",
             "BLS CPI YoY [secondary:cost_of_living]",
-            "BEA NIPA record coverage [secondary:cost_of_living]"
+            "BEA real activity measure [secondary:cost_of_living]"
           ]
         },
         "employment": {
@@ -1723,140 +1723,110 @@
           "signal_names": [
             "FRED unemployment",
             "BLS unemployment",
-            "Census ACS state coverage"
+            "Census veteran unemployment measure"
           ]
         },
         "military_family_readiness": {
           "signals_count": 10,
-          "contribution": 0.947,
+          "contribution": 0.7755,
           "signal_names": [
-            "HUD FMR state coverage [secondary:housing_stability]",
+            "HUD statewide 2BR FMR measure [secondary:housing_stability]",
             "FRED unemployment [tertiary:employment]",
             "BLS unemployment [tertiary:employment]",
-            "Census ACS state coverage [tertiary:employment]",
+            "Census veteran unemployment measure [tertiary:employment]",
             "Federal Register activity",
             "FRED CPI YoY [tertiary:cost_of_living]",
             "BLS CPI YoY [tertiary:cost_of_living]",
-            "BEA NIPA record coverage [tertiary:cost_of_living]",
-            "VA facilities page coverage [secondary:healthcare_system]",
-            "VA benefits reference item coverage [secondary:benefits]"
+            "BEA real activity measure [tertiary:cost_of_living]",
+            "VA facility access measure [secondary:healthcare_system]",
+            "VA benefits reference breadth measure [secondary:benefits]"
           ]
         },
         "cost_of_living": {
           "signals_count": 3,
-          "contribution": -0.3611,
+          "contribution": 0.1789,
           "signal_names": [
             "FRED CPI YoY",
             "BLS CPI YoY",
-            "BEA NIPA record coverage"
+            "BEA real activity measure"
           ]
         },
         "healthcare_system": {
           "signals_count": 1,
           "contribution": 0.54,
           "signal_names": [
-            "VA facilities page coverage"
+            "VA facility access measure"
           ]
         },
         "benefits": {
           "signals_count": 4,
-          "contribution": 0.6458,
+          "contribution": -0.0756,
           "signal_names": [
             "FRED unemployment [secondary:employment]",
             "BLS unemployment [secondary:employment]",
-            "Census ACS state coverage [secondary:employment]",
-            "VA benefits reference item coverage"
+            "Census veteran unemployment measure [secondary:employment]",
+            "VA benefits reference breadth measure"
           ]
         }
       }
     },
     "tier2": {
-      "signals_total": 49,
-      "total_contribution": -2.9103,
+      "signals_total": 19,
+      "total_contribution": 0.7793,
       "by_domain": {
         "housing_stability": {
-          "signals_count": 8,
-          "contribution": -0.9154,
+          "signals_count": 3,
+          "contribution": 0.2511,
           "signal_names": [
-            "MFAN housing burden",
-            "NCHV veteran homelessness",
-            "Bob Woodruff housing demand",
-            "Blue Star housing stress",
-            "Soldiers Angels cost pressure [secondary:cost_of_living]",
-            "NMFA cost of service [secondary:cost_of_living]",
-            "DAV COLA benchmark [secondary:cost_of_living]",
-            "VA Loan inflation context [secondary:cost_of_living]"
+            "HUD statewide 2BR FMR structural pressure",
+            "BEA real activity structural [secondary:cost_of_living]",
+            "FRED inflation structural [secondary:cost_of_living]"
           ]
         },
         "employment": {
-          "signals_count": 4,
-          "contribution": -0.219,
+          "signals_count": 2,
+          "contribution": 0.0,
           "signal_names": [
-            "DOL spouse employment friction",
-            "Census veteran outcomes",
-            "IVMF spouse landscape",
-            "IVMF V-Start"
+            "Census veteran unemployment structural",
+            "BLS labor market structural"
           ]
         },
         "military_family_readiness": {
-          "signals_count": 22,
-          "contribution": -0.6643,
+          "signals_count": 8,
+          "contribution": 0.3043,
           "signal_names": [
-            "MFAN housing burden [secondary:housing_stability]",
-            "NCHV veteran homelessness [secondary:housing_stability]",
-            "Bob Woodruff housing demand [secondary:housing_stability]",
-            "Blue Star housing stress [secondary:housing_stability]",
-            "DOL spouse employment friction [tertiary:employment]",
-            "Census veteran outcomes [tertiary:employment]",
-            "IVMF spouse landscape [tertiary:employment]",
-            "IVMF V-Start [tertiary:employment]",
-            "10 USC 1781 readiness anchor",
-            "NCSL legislation activity",
-            "NMFA policy burden",
-            "Soldiers Angels cost pressure [tertiary:cost_of_living]",
-            "NMFA cost of service [tertiary:cost_of_living]",
-            "DAV COLA benchmark [tertiary:cost_of_living]",
-            "VA Loan inflation context [tertiary:cost_of_living]",
-            "NMFA family health friction [secondary:healthcare_system]",
-            "GAO VA/DoD access [secondary:healthcare_system]",
-            "Healthcare fairness legislation [secondary:healthcare_system]",
-            "VFW implementation gap [secondary:benefits]",
-            "Elizabeth Dole policy gap [secondary:benefits]",
-            "VA caregiver support path [secondary:benefits]",
-            "CBPP veteran SNAP stress [secondary:benefits]"
+            "HUD statewide 2BR FMR structural pressure [secondary:housing_stability]",
+            "Census veteran unemployment structural [tertiary:employment]",
+            "BLS labor market structural [tertiary:employment]",
+            "Federal Register institutional activity structural",
+            "BEA real activity structural [tertiary:cost_of_living]",
+            "FRED inflation structural [tertiary:cost_of_living]",
+            "VA facility access structural [secondary:healthcare_system]",
+            "VA benefits reference structural breadth [secondary:benefits]"
           ]
         },
         "cost_of_living": {
-          "signals_count": 4,
-          "contribution": -0.527,
+          "signals_count": 2,
+          "contribution": 0.0745,
           "signal_names": [
-            "Soldiers Angels cost pressure",
-            "NMFA cost of service",
-            "DAV COLA benchmark",
-            "VA Loan inflation context"
+            "BEA real activity structural",
+            "FRED inflation structural"
           ]
         },
         "healthcare_system": {
-          "signals_count": 3,
-          "contribution": -0.1765,
+          "signals_count": 1,
+          "contribution": 0.225,
           "signal_names": [
-            "NMFA family health friction",
-            "GAO VA/DoD access",
-            "Healthcare fairness legislation"
+            "VA facility access structural"
           ]
         },
         "benefits": {
-          "signals_count": 8,
-          "contribution": -0.4081,
+          "signals_count": 3,
+          "contribution": -0.0756,
           "signal_names": [
-            "DOL spouse employment friction [secondary:employment]",
-            "Census veteran outcomes [secondary:employment]",
-            "IVMF spouse landscape [secondary:employment]",
-            "IVMF V-Start [secondary:employment]",
-            "VFW implementation gap",
-            "Elizabeth Dole policy gap",
-            "VA caregiver support path",
-            "CBPP veteran SNAP stress"
+            "Census veteran unemployment structural [secondary:employment]",
+            "BLS labor market structural [secondary:employment]",
+            "VA benefits reference structural breadth"
           ]
         }
       }
