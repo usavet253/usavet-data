@@ -1,7 +1,7 @@
 {
   "as_of": "2026-04-20",
-  "generated_at": "2026-04-20T20:13:55Z",
-  "generated_at_operational": "2026-04-20T13:13:55-07:00",
+  "generated_at": "2026-04-20T21:03:30Z",
+  "generated_at_operational": "2026-04-20T14:03:30-07:00",
   "overall_score": 46.4,
   "score": 46.4,
   "status_band": "Elevated Pressure",
@@ -28,31 +28,31 @@
   },
   "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 46.4.",
   "notes": [
-    "Housing score: 43.0",
+    "Housing score: 43.1",
     "Cost of living score: 45.1",
-    "Employment score: 48.2",
-    "Benefits score: 48.2",
+    "Employment score: 47.1",
+    "Benefits score: 48.0",
     "Healthcare system score: 50.4",
-    "Military family readiness score: 43.7",
+    "Military family readiness score: 45.9",
     "Source confidence: High Confidence"
   ],
   "domains": {
-    "housing_stability": 43.0,
-    "employment": 48.2,
-    "military_family_readiness": 43.7,
+    "housing_stability": 43.1,
+    "employment": 47.1,
+    "military_family_readiness": 45.9,
     "cost_of_living": 45.1,
     "healthcare_system": 50.4,
-    "benefits": 48.2
+    "benefits": 48.0
   },
   "brief": {
     "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 46.4.",
     "notes": [
-      "Housing score: 43.0",
+      "Housing score: 43.1",
       "Cost of living score: 45.1",
-      "Employment score: 48.2",
-      "Benefits score: 48.2",
+      "Employment score: 47.1",
+      "Benefits score: 48.0",
       "Healthcare system score: 50.4",
-      "Military family readiness score: 43.7",
+      "Military family readiness score: 45.9",
       "Source confidence: High Confidence"
     ]
   },
@@ -226,16 +226,16 @@
       "military_family_readiness": 46.1
     },
     {
-      "time": "2026-04-20T20:13:55Z",
+      "time": "2026-04-20T21:03:30Z",
       "as_of": "2026-04-20",
       "overall_score": 46.4,
       "trend": "declining",
-      "housing_stability": 43.0,
+      "housing_stability": 43.1,
       "cost_of_living": 45.1,
-      "employment": 48.2,
-      "benefits": 48.2,
+      "employment": 47.1,
+      "benefits": 48.0,
       "healthcare_system": 50.4,
-      "military_family_readiness": 43.7
+      "military_family_readiness": 45.9
     }
   ],
   "events": [
@@ -1468,7 +1468,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T20:13:59Z",
+      "updated_at": "2026-04-20T21:03:33Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1500,7 +1500,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T20:13:59Z",
+      "updated_at": "2026-04-20T21:03:33Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1532,7 +1532,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T20:13:59Z",
+      "updated_at": "2026-04-20T21:03:33Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1560,7 +1560,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T20:13:59Z",
+      "updated_at": "2026-04-20T21:03:33Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1588,7 +1588,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-20T20:13:59Z",
+      "updated_at": "2026-04-20T21:03:33Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1612,35 +1612,53 @@
   ],
   "audit": {
     "tier1": {
-      "signals_total": 6,
-      "total_contribution": 0.7572,
+      "signals_total": 28,
+      "total_contribution": 0.8533,
       "by_domain": {
         "housing_stability": {
-          "signals_count": 1,
-          "contribution": 0.21,
+          "signals_count": 4,
+          "contribution": 0.2238,
           "signal_names": [
-            "HUD FMR availability"
+            "HUD FMR availability",
+            "FRED CPI YoY [secondary:cost_of_living]",
+            "BLS CPI YoY [secondary:cost_of_living]",
+            "BEA NIPA availability [secondary:cost_of_living]"
           ]
         },
         "employment": {
-          "signals_count": 1,
-          "contribution": 0.0393,
+          "signals_count": 4,
+          "contribution": -0.0699,
           "signal_names": [
-            "FRED unemployment"
+            "FRED unemployment",
+            "BLS unemployment",
+            "Census ACS veteran outcomes availability",
+            "NewsAPI The Times of India: Govt plans employment study amid joblessness concerns"
           ]
         },
         "military_family_readiness": {
-          "signals_count": 1,
-          "contribution": 0.0486,
+          "signals_count": 11,
+          "contribution": 0.2645,
           "signal_names": [
-            "Federal Register activity"
+            "HUD FMR availability [secondary:housing_stability]",
+            "FRED unemployment [tertiary:employment]",
+            "BLS unemployment [tertiary:employment]",
+            "Census ACS veteran outcomes availability [tertiary:employment]",
+            "NewsAPI The Times of India: Govt plans employment study amid joblessness concerns [tertiary:employment]",
+            "Federal Register activity",
+            "FRED CPI YoY [tertiary:cost_of_living]",
+            "BLS CPI YoY [tertiary:cost_of_living]",
+            "BEA NIPA availability [tertiary:cost_of_living]",
+            "VA facilities availability [secondary:healthcare_system]",
+            "VA benefits reference availability [secondary:benefits]"
           ]
         },
         "cost_of_living": {
-          "signals_count": 1,
+          "signals_count": 3,
           "contribution": 0.0393,
           "signal_names": [
-            "FRED CPI YoY"
+            "FRED CPI YoY",
+            "BLS CPI YoY",
+            "BEA NIPA availability"
           ]
         },
         "healthcare_system": {
@@ -1651,9 +1669,13 @@
           ]
         },
         "benefits": {
-          "signals_count": 1,
-          "contribution": 0.21,
+          "signals_count": 5,
+          "contribution": 0.1856,
           "signal_names": [
+            "FRED unemployment [secondary:employment]",
+            "BLS unemployment [secondary:employment]",
+            "Census ACS veteran outcomes availability [secondary:employment]",
+            "NewsAPI The Times of India: Govt plans employment study amid joblessness concerns [secondary:employment]",
             "VA benefits reference availability"
           ]
         }
