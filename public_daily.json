@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-20",
-  "generated_at": "2026-04-20T06:37:55.226956-07:00",
+  "generated_at": "2026-04-20T07:59:02.572935-07:00",
   "overall_score": 48.2,
   "score": 48.2,
   "status_band": "Elevated Pressure",
@@ -224,7 +224,7 @@
       "military_family_readiness": 46.1
     },
     {
-      "time": "2026-04-20T06:37:55.226956-07:00",
+      "time": "2026-04-20T07:59:02.572935-07:00",
       "as_of": "2026-04-20",
       "overall_score": 48.2,
       "trend": "stable",
@@ -772,8 +772,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortages:dominant_negative",
           "shortage:dominant_negative",
+          "shortages:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -849,7 +849,7 @@
         "military_family_readiness"
       ],
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
-      "evidence_count": 3,
+      "evidence_count": 2,
       "region": "national",
       "regions": [
         "national"
@@ -860,32 +860,31 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.85,
-      "weighted_contribution": 0.0092,
+      "weighted_contribution": 0.005,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.7267,
+      "tier3_normalization_factor": 0.5067,
       "source_domains": [
         "armytimes.com",
-        "defensenews.com",
         "militarytimes.com"
       ],
       "corroboration": {
-        "score": 95,
-        "source_count": 3,
-        "independent_sources": 3,
+        "score": 75,
+        "source_count": 2,
+        "independent_sources": 2,
         "domains": [
           "military_family_readiness"
         ]
       },
-      "raw_weighted_contribution": 0.0102,
-      "tier3_scale": 0.9
+      "raw_weighted_contribution": 0.0071,
+      "tier3_scale": 0.7
     },
     {
-      "event_id": "evt_c6b2c623dfde3db4",
-      "source_name": "MilitaryTimes",
-      "source_domain": "militarytimes.com",
+      "event_id": "evt_df2c87a0585455c1",
+      "source_name": "NavyTimes",
+      "source_domain": "navytimes.com",
       "title": "USS Gerald R. Ford breaks record for longest post-Vietnam deployment",
       "summary": "The world's largest aircraft carrier has been deployed for a historic 296 days after departing Naval Station Norfolk on June 24, 2025.",
-      "url": "https://www.militarytimes.com/news/your-navy/2026/04/15/uss-gerald-r-ford-breaks-record-for-longest-post-vietnam-deployment/",
+      "url": "https://www.navytimes.com/news/your-navy/2026/04/15/uss-gerald-r-ford-breaks-record-for-longest-post-vietnam-deployment/",
       "published_at": "2026-04-15T18:21:58+00:00",
       "domains": [
         "military_family_readiness"
@@ -914,8 +913,8 @@
       "drivers": [
         "military_family_readiness"
       ],
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
-      "evidence_count": 2,
+      "forecast": "Contextual signal from curated NavyTimes RSS.",
+      "evidence_count": 1,
       "region": "national",
       "regions": [
         "national"
@@ -926,23 +925,22 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.85,
-      "weighted_contribution": 0.0053,
+      "weighted_contribution": 0.0022,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.54,
+      "tier3_normalization_factor": 0.32,
       "source_domains": [
-        "militarytimes.com",
         "navytimes.com"
       ],
       "corroboration": {
-        "score": 75,
-        "source_count": 2,
-        "independent_sources": 2,
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
         "domains": [
           "military_family_readiness"
         ]
       },
-      "raw_weighted_contribution": 0.0076,
-      "tier3_scale": 0.7
+      "raw_weighted_contribution": 0.0045,
+      "tier3_scale": 0.5
     },
     {
       "event_id": "evt_c68c8a38c32275f7",
@@ -1470,7 +1468,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T06:37:58.628540-07:00",
+      "updated_at": "2026-04-20T07:59:05.595001-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1502,7 +1500,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T06:37:58.628559-07:00",
+      "updated_at": "2026-04-20T07:59:05.595015-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1534,7 +1532,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T06:37:58.628566-07:00",
+      "updated_at": "2026-04-20T07:59:05.595023-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1562,7 +1560,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T06:37:58.628573-07:00",
+      "updated_at": "2026-04-20T07:59:05.595030-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1590,7 +1588,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-20T06:37:58.628578-07:00",
+      "updated_at": "2026-04-20T07:59:05.595054-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1753,11 +1751,11 @@
       }
     },
     "tier3_used": 180,
-    "tier3_keyword_matched": 33,
-    "tier3_keyword_qualified": 33,
-    "tier3_scoring_qualified": 33,
+    "tier3_keyword_matched": 31,
+    "tier3_keyword_qualified": 31,
+    "tier3_scoring_qualified": 31,
     "tier3_cluster_count": 18,
-    "tier3_kept": 33,
+    "tier3_kept": 31,
     "tier3_qualified": 18,
     "tier3_final_events": 18,
     "tier3_priority_signals": 5
