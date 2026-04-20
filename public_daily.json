@@ -1,18 +1,19 @@
 {
   "as_of": "2026-04-20",
-  "generated_at": "2026-04-20T07:59:02.572935-07:00",
-  "overall_score": 48.2,
-  "score": 48.2,
+  "generated_at": "2026-04-20T19:28:20Z",
+  "generated_at_operational": "2026-04-20T12:28:20-07:00",
+  "overall_score": 46.4,
+  "score": 46.4,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
-  "trend": "stable",
+  "trend": "declining",
   "pressure_label": "Elevated Pressure",
   "source_quality": "High Confidence",
   "index": {
-    "overall_score": 48.2,
+    "overall_score": 46.4,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
-    "trend": "stable",
+    "trend": "declining",
     "pressure_label": "Elevated Pressure",
     "source_quality": "High Confidence",
     "weights": {
@@ -24,33 +25,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.2.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 46.4.",
   "notes": [
-    "Housing score: 46.2",
-    "Cost of living score: 47.1",
-    "Employment score: 49.1",
-    "Benefits score: 49.7",
-    "Healthcare system score: 51.0",
-    "Military family readiness score: 46.1",
+    "Housing score: 43.0",
+    "Cost of living score: 45.1",
+    "Employment score: 48.2",
+    "Benefits score: 48.2",
+    "Healthcare system score: 50.4",
+    "Military family readiness score: 43.7",
     "Source confidence: High Confidence"
   ],
   "domains": {
-    "housing_stability": 46.2,
-    "employment": 49.1,
-    "military_family_readiness": 46.1,
-    "cost_of_living": 47.1,
-    "healthcare_system": 51.0,
-    "benefits": 49.7
+    "housing_stability": 43.0,
+    "employment": 48.2,
+    "military_family_readiness": 43.7,
+    "cost_of_living": 45.1,
+    "healthcare_system": 50.4,
+    "benefits": 48.2
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.2.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 46.4.",
     "notes": [
-      "Housing score: 46.2",
-      "Cost of living score: 47.1",
-      "Employment score: 49.1",
-      "Benefits score: 49.7",
-      "Healthcare system score: 51.0",
-      "Military family readiness score: 46.1",
+      "Housing score: 43.0",
+      "Cost of living score: 45.1",
+      "Employment score: 48.2",
+      "Benefits score: 48.2",
+      "Healthcare system score: 50.4",
+      "Military family readiness score: 43.7",
       "Source confidence: High Confidence"
     ]
   },
@@ -224,16 +225,16 @@
       "military_family_readiness": 46.1
     },
     {
-      "time": "2026-04-20T07:59:02.572935-07:00",
+      "time": "2026-04-20T19:28:20Z",
       "as_of": "2026-04-20",
-      "overall_score": 48.2,
-      "trend": "stable",
-      "housing_stability": 46.2,
-      "cost_of_living": 47.1,
-      "employment": 49.1,
-      "benefits": 49.7,
-      "healthcare_system": 51.0,
-      "military_family_readiness": 46.1
+      "overall_score": 46.4,
+      "trend": "declining",
+      "housing_stability": 43.0,
+      "cost_of_living": 45.1,
+      "employment": 48.2,
+      "benefits": 48.2,
+      "healthcare_system": 50.4,
+      "military_family_readiness": 43.7
     }
   ],
   "events": [
@@ -244,7 +245,7 @@
       "title": "How chest-thumping rhetoric erodes service member safety",
       "summary": "Defense Secretary Pete Hegseth's brash rhetoric is profoundly destabilizing for actively-serving military families, this military spouse argues.",
       "url": "https://www.militarytimes.com/opinion/2026/04/17/how-chest-thumping-rhetoric-erodes-service-member-safety/",
-      "published_at": "2026-04-17T16:00:34+00:00",
+      "published_at": "2026-04-17T16:00:34Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -286,11 +287,11 @@
         "national"
       ],
       "scope": "national",
-      "source_state": "live",
+      "source_state": "recent",
       "age_hours": null,
       "tier": "tier_3",
       "trust_weight": 0.72,
-      "freshness": 0.9,
+      "freshness": 0.85,
       "weighted_contribution": 0.2,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.9333,
@@ -313,13 +314,13 @@
       "tier3_scale": 1.0
     },
     {
-      "event_id": "evt_f6ff51aa91a4e254",
-      "source_name": "MilitaryTimes",
-      "source_domain": "militarytimes.com",
+      "event_id": "evt_5d6e6d6871e2bee5",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
       "title": "Suicide rates among military families continue to climb",
       "summary": "The total overall number decreased, a drop that coincides with smaller overall force numbers.",
-      "url": "https://www.militarytimes.com/news/your-military/2026/04/15/suicide-rates-among-military-families-continue-to-climb/",
-      "published_at": "2026-04-15T19:14:20+00:00",
+      "url": "https://www.armytimes.com/news/your-military/2026/04/15/suicide-rates-among-military-families-continue-to-climb/",
+      "published_at": "2026-04-15T19:14:20Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -353,8 +354,8 @@
       "drivers": [
         "military_family_readiness"
       ],
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
-      "evidence_count": 5,
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "evidence_count": 4,
       "region": "national",
       "regions": [
         "national"
@@ -367,18 +368,17 @@
       "freshness": 0.85,
       "weighted_contribution": 0.2,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 1.0,
+      "tier3_normalization_factor": 0.88,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
         "marinecorpstimes.com",
-        "militarytimes.com",
         "navytimes.com"
       ],
       "corroboration": {
         "score": 100,
-        "source_count": 5,
-        "independent_sources": 5,
+        "source_count": 4,
+        "independent_sources": 4,
         "domains": [
           "military_family_readiness"
         ]
@@ -393,7 +393,7 @@
       "title": "Advocates press for preventive programs, VA benefits for struggling vets",
       "summary": "Representatives from specialty courts and veterans\u2019 legal organizations pressed Congress Wednesday for expansion of the Veterans Treatment Courts system.",
       "url": "https://www.militarytimes.com/news/pentagon-congress/2026/04/16/advocates-press-for-preventive-programs-va-benefits-for-struggling-vets/",
-      "published_at": "2026-04-16T19:32:35+00:00",
+      "published_at": "2026-04-16T19:32:35Z",
       "domains": [
         "benefits"
       ],
@@ -470,7 +470,7 @@
       "title": "A Transient Life and Hard Goodbyes: The Realities of My Lonely Military Childhood",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/04/null.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/04/null.png?w=1366&ssl=1 1366w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/0",
       "url": "https://thewarhorse.org/air-force-childhood-lonely/",
-      "published_at": "2026-04-08T11:00:00+00:00",
+      "published_at": "2026-04-08T11:00:00Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -538,7 +538,7 @@
       "title": "Are You a Veteran Struggling to Get Mental Health Care? These Resources May Help",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"VA building\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?w=2000&ssl=1 2000w, https://i0.wp.com/thew",
       "url": "https://thewarhorse.org/veteran-mental-health-resources/",
-      "published_at": "2025-12-11T12:10:20+00:00",
+      "published_at": "2025-12-11T12:10:20Z",
       "domains": [
         "healthcare_system"
       ],
@@ -608,7 +608,7 @@
       "title": "American MIA Group and Filipino Muslim Government Unite to Bring Home World War II Servicemen",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
       "url": "https://thewarhorse.org/world-war-ii-soldiers-search-philippines/",
-      "published_at": "2026-02-19T12:00:00+00:00",
+      "published_at": "2026-02-19T12:00:00Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -674,7 +674,7 @@
       "title": "Mental Health Issues Plague New Moms in the Military. The Pentagon Is Supposed to Help",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026",
       "url": "https://thewarhorse.org/military-mom-pregnancy-mental-health-struggle/",
-      "published_at": "2026-03-05T12:00:00+00:00",
+      "published_at": "2026-03-05T12:00:00Z",
       "domains": [
         "healthcare_system"
       ],
@@ -746,7 +746,7 @@
       "title": "\u2018I Felt Like a Factory Worker.\u2019 Why VA Psychologists Are Burning Out",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.jpeg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"A line of veterans in front of a VA psychologist with her head in her hands\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.j",
       "url": "https://thewarhorse.org/va-psychologists-burn-out-staff-shortage/",
-      "published_at": "2026-02-12T12:00:00+00:00",
+      "published_at": "2026-02-12T12:00:00Z",
       "domains": [
         "employment",
         "healthcare_system"
@@ -814,78 +814,13 @@
       "tier3_scale": 0.325
     },
     {
-      "event_id": "evt_26de111c6a891cb5",
-      "source_name": "MilitaryTimes",
-      "source_domain": "militarytimes.com",
-      "title": "AeroVironment launches new multifunctional drone variant",
-      "summary": "The MAYHEM 10 drone, a part of the Switchblade family, will serve as a multifunctional launch system, capable of deploying from various platforms.",
-      "url": "https://www.militarytimes.com/news/your-military/2026/04/15/aerovironment-launches-new-multifunctional-drone-variant/",
-      "published_at": "2026-04-15T20:24:43+00:00",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "family"
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.45,
-        "method": "event_state_no_evidence",
-        "evidence": []
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
-      "evidence_count": 2,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "recent",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.72,
-      "freshness": 0.85,
-      "weighted_contribution": 0.005,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.5067,
-      "source_domains": [
-        "armytimes.com",
-        "militarytimes.com"
-      ],
-      "corroboration": {
-        "score": 75,
-        "source_count": 2,
-        "independent_sources": 2,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.0071,
-      "tier3_scale": 0.7
-    },
-    {
       "event_id": "evt_df2c87a0585455c1",
       "source_name": "NavyTimes",
       "source_domain": "navytimes.com",
       "title": "USS Gerald R. Ford breaks record for longest post-Vietnam deployment",
       "summary": "The world's largest aircraft carrier has been deployed for a historic 296 days after departing Naval Station Norfolk on June 24, 2025.",
       "url": "https://www.navytimes.com/news/your-navy/2026/04/15/uss-gerald-r-ford-breaks-record-for-longest-post-vietnam-deployment/",
-      "published_at": "2026-04-15T18:21:58+00:00",
+      "published_at": "2026-04-15T18:21:58Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -943,13 +878,77 @@
       "tier3_scale": 0.5
     },
     {
+      "event_id": "evt_67284cbba66a2f0e",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
+      "title": "AeroVironment launches new multifunctional drone variant",
+      "summary": "The MAYHEM 10 drone, a part of the Switchblade family, will serve as a multifunctional launch system, capable of deploying from various platforms.",
+      "url": "https://www.armytimes.com/news/your-military/2026/04/15/aerovironment-launches-new-multifunctional-drone-variant/",
+      "published_at": "2026-04-15T20:24:43Z",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "family"
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.38,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.85,
+      "weighted_contribution": 0.002,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.2867,
+      "source_domains": [
+        "armytimes.com"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.004,
+      "tier3_scale": 0.5
+    },
+    {
       "event_id": "evt_c68c8a38c32275f7",
       "source_name": "TheWarHorse",
       "source_domain": "thewarhorse.org",
       "title": "Inside the Wait for War: Military Families Brace for What Comes Next",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image-3.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/image-3.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
       "url": "https://thewarhorse.org/military-families-wait-middle-east/",
-      "published_at": "2026-03-19T11:00:00+00:00",
+      "published_at": "2026-03-19T11:00:00Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -1013,7 +1012,7 @@
       "title": "His Family Legacy Led Him to the Military. But He Found Contentment as a Family Man",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/Kingslayer-collage-2.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/Kingslayer-collage-2.png?w=1366&ssl=1 1366w, https://i0.wp.com/thewarhor",
       "url": "https://thewarhorse.org/iraq-veteran-family-legacy/",
-      "published_at": "2026-03-04T12:00:00+00:00",
+      "published_at": "2026-03-04T12:00:00Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -1077,7 +1076,7 @@
       "title": "I Thought Removing Confederate Names Meant Black Soldiers\u2019 Legacy Mattered. Then, the Names Were Restored",
       "summary": "<figure><img width=\"1024\" height=\"575\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/null-5-e1770999718480.jpeg?fit=1024%2C575&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/null-5-e1770999718480.jpeg?w=2500&ssl=1 2500w, https://i0.wp.com/thewa",
       "url": "https://thewarhorse.org/black-soldier-confederate-named-military-bases/",
-      "published_at": "2026-02-18T12:00:00+00:00",
+      "published_at": "2026-02-18T12:00:00Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -1141,7 +1140,7 @@
       "title": "I Decided Not To Go On a Patrol in Iraq. An IED Killed My Friends",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-3.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-3.png?w=1366&ssl=1 1366w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
       "url": "https://thewarhorse.org/soldier-friends-killed-ied-iraq/",
-      "published_at": "2026-02-04T12:00:00+00:00",
+      "published_at": "2026-02-04T12:00:00Z",
       "domains": [
         "military_family_readiness"
       ],
@@ -1205,7 +1204,7 @@
       "title": "Finding Solace In Chickens: One Veteran\u2019s Fight To Save His Flock and Mental Health",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-9.jpeg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/image-9.jpeg?w=1600&ssl=1 1600w, https://i0.wp.com/thewarhorse.org/wp-content/upload",
       "url": "https://thewarhorse.org/veteran-fight-to-save-emotional-support-chickens/",
-      "published_at": "2026-01-29T12:00:00+00:00",
+      "published_at": "2026-01-29T12:00:00Z",
       "domains": [
         "healthcare_system",
         "military_family_readiness"
@@ -1274,7 +1273,7 @@
       "title": "After 30 Years in the Military, an Army Colonel Asks: Who Am I Without the Uniform?",
       "summary": "<figure><img width=\"1024\" height=\"630\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/Evans-Alan-MAJ-Iraq-2003.webp?fit=1024%2C630&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/Evans-Alan-MAJ-Iraq-2003.webp?w=1170&ssl=1 1170w, https://i0.wp.com",
       "url": "https://thewarhorse.org/army-colonel-life-without-military/",
-      "published_at": "2026-01-14T12:00:00+00:00",
+      "published_at": "2026-01-14T12:00:00Z",
       "domains": [
         "employment"
       ],
@@ -1338,7 +1337,7 @@
       "title": "A Look Back at Our Most Impactful News Stories of 2025",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/News-1.webp?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"Illustration by Hrisanthi Pickett\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/News-1.webp?w=2000&ssl=1 2000w, https://i0.wp.com/th",
       "url": "https://thewarhorse.org/top-news-stories-2025/",
-      "published_at": "2025-12-29T18:33:00+00:00",
+      "published_at": "2025-12-29T18:33:00Z",
       "domains": [
         "benefits"
       ],
@@ -1402,7 +1401,7 @@
       "title": "Tuition, Training, Housing: How to Sell the Military as the Path of Least Resistance",
       "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/null-3.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/null-3.png?w=1366&ssl=1 1366w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/20",
       "url": "https://thewarhorse.org/military-recruiter-enlist-navy/",
-      "published_at": "2026-03-18T11:00:00+00:00",
+      "published_at": "2026-03-18T11:00:00Z",
       "domains": [
         "housing_stability"
       ],
@@ -1468,7 +1467,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T07:59:05.595001-07:00",
+      "updated_at": "2026-04-20T19:28:23Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1483,7 +1482,7 @@
       "signal_type": "contextual",
       "region": "national",
       "scope": "national",
-      "source_state": "live",
+      "source_state": "recent",
       "corroboration": {
         "score": 100,
         "source_count": 5,
@@ -1500,7 +1499,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T07:59:05.595015-07:00",
+      "updated_at": "2026-04-20T19:28:23Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1532,7 +1531,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T07:59:05.595023-07:00",
+      "updated_at": "2026-04-20T19:28:23Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1560,7 +1559,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T07:59:05.595030-07:00",
+      "updated_at": "2026-04-20T19:28:23Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1588,7 +1587,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-20T07:59:05.595054-07:00",
+      "updated_at": "2026-04-20T19:28:23Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1613,7 +1612,7 @@
   "audit": {
     "tier1": {
       "signals_total": 6,
-      "total_contribution": 0.7897,
+      "total_contribution": 0.7572,
       "by_domain": {
         "housing_stability": {
           "signals_count": 1,
@@ -1624,21 +1623,21 @@
         },
         "employment": {
           "signals_count": 1,
-          "contribution": 0.0534,
+          "contribution": 0.0393,
           "signal_names": [
             "FRED unemployment"
           ]
         },
         "military_family_readiness": {
           "signals_count": 1,
-          "contribution": 0.0529,
+          "contribution": 0.0486,
           "signal_names": [
             "Federal Register activity"
           ]
         },
         "cost_of_living": {
           "signals_count": 1,
-          "contribution": 0.0534,
+          "contribution": 0.0393,
           "signal_names": [
             "FRED CPI YoY"
           ]
@@ -1661,11 +1660,11 @@
     },
     "tier2": {
       "signals_total": 49,
-      "total_contribution": -1.8807,
+      "total_contribution": -2.9067,
       "by_domain": {
         "housing_stability": {
           "signals_count": 8,
-          "contribution": -0.5923,
+          "contribution": -0.9154,
           "signal_names": [
             "MFAN housing burden",
             "NCHV veteran homelessness",
@@ -1679,7 +1678,7 @@
         },
         "employment": {
           "signals_count": 4,
-          "contribution": -0.1428,
+          "contribution": -0.2207,
           "signal_names": [
             "DOL spouse employment friction",
             "Census veteran outcomes",
@@ -1689,7 +1688,7 @@
         },
         "military_family_readiness": {
           "signals_count": 22,
-          "contribution": -0.4248,
+          "contribution": -0.6567,
           "signal_names": [
             "MFAN housing burden [secondary:housing_stability]",
             "NCHV veteran homelessness [secondary:housing_stability]",
@@ -1717,7 +1716,7 @@
         },
         "cost_of_living": {
           "signals_count": 4,
-          "contribution": -0.341,
+          "contribution": -0.527,
           "signal_names": [
             "Soldiers Angels cost pressure",
             "NMFA cost of service",
@@ -1727,7 +1726,7 @@
         },
         "healthcare_system": {
           "signals_count": 3,
-          "contribution": -0.1153,
+          "contribution": -0.1782,
           "signal_names": [
             "NMFA family health friction",
             "GAO VA/DoD access",
@@ -1736,7 +1735,7 @@
         },
         "benefits": {
           "signals_count": 8,
-          "contribution": -0.2645,
+          "contribution": -0.4087,
           "signal_names": [
             "DOL spouse employment friction [secondary:employment]",
             "Census veteran outcomes [secondary:employment]",
@@ -1751,11 +1750,11 @@
       }
     },
     "tier3_used": 180,
-    "tier3_keyword_matched": 31,
-    "tier3_keyword_qualified": 31,
-    "tier3_scoring_qualified": 31,
+    "tier3_keyword_matched": 29,
+    "tier3_keyword_qualified": 29,
+    "tier3_scoring_qualified": 29,
     "tier3_cluster_count": 18,
-    "tier3_kept": 31,
+    "tier3_kept": 29,
     "tier3_qualified": 18,
     "tier3_final_events": 18,
     "tier3_priority_signals": 5
