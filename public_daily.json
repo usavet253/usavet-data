@@ -1,18 +1,18 @@
 {
-  "as_of": "2026-04-19",
-  "generated_at": "2026-04-19T15:14:06.722526-07:00",
+  "as_of": "2026-04-20",
+  "generated_at": "2026-04-20T06:37:55.226956-07:00",
   "overall_score": 48.2,
   "score": 48.2,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
-  "trend": "declining",
+  "trend": "stable",
   "pressure_label": "Elevated Pressure",
   "source_quality": "High Confidence",
   "index": {
     "overall_score": 48.2,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
-    "trend": "declining",
+    "trend": "stable",
     "pressure_label": "Elevated Pressure",
     "source_quality": "High Confidence",
     "weights": {
@@ -216,6 +216,18 @@
       "as_of": "2026-04-19",
       "overall_score": 48.2,
       "trend": "declining",
+      "housing_stability": 46.2,
+      "cost_of_living": 47.1,
+      "employment": 49.1,
+      "benefits": 49.7,
+      "healthcare_system": 51.0,
+      "military_family_readiness": 46.1
+    },
+    {
+      "time": "2026-04-20T06:37:55.226956-07:00",
+      "as_of": "2026-04-20",
+      "overall_score": 48.2,
+      "trend": "stable",
       "housing_stability": 46.2,
       "cost_of_living": 47.1,
       "employment": 49.1,
@@ -760,8 +772,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortage:dominant_negative",
           "shortages:dominant_negative",
+          "shortage:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1458,7 +1470,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-19T15:14:09.069461-07:00",
+      "updated_at": "2026-04-20T06:37:58.628540-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1490,7 +1502,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-19T15:14:09.069479-07:00",
+      "updated_at": "2026-04-20T06:37:58.628559-07:00",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1522,7 +1534,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-19T15:14:09.069486-07:00",
+      "updated_at": "2026-04-20T06:37:58.628566-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1550,7 +1562,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-19T15:14:09.069493-07:00",
+      "updated_at": "2026-04-20T06:37:58.628573-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1578,7 +1590,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-19T15:14:09.069499-07:00",
+      "updated_at": "2026-04-20T06:37:58.628578-07:00",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
