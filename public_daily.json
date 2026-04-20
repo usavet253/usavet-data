@@ -1,7 +1,7 @@
 {
   "as_of": "2026-04-20",
-  "generated_at": "2026-04-20T19:37:55Z",
-  "generated_at_operational": "2026-04-20T12:37:55-07:00",
+  "generated_at": "2026-04-20T19:54:56Z",
+  "generated_at_operational": "2026-04-20T12:54:56-07:00",
   "overall_score": 46.4,
   "score": 46.4,
   "status_band": "Elevated Pressure",
@@ -108,7 +108,7 @@
       "time": "2026-04-10T23:46:50Z",
       "as_of": "2026-04-10",
       "overall_score": 50.8,
-      "trend": "stable",
+      "trend": "improving",
       "housing_stability": 55.4,
       "cost_of_living": 55.1,
       "employment": 51.4,
@@ -132,7 +132,7 @@
       "time": "2026-04-12T15:09:33Z",
       "as_of": "2026-04-12",
       "overall_score": 57.7,
-      "trend": "stable",
+      "trend": "improving",
       "housing_stability": 59.8,
       "cost_of_living": 62.4,
       "employment": 58.3,
@@ -144,7 +144,7 @@
       "time": "2026-04-13T07:09:57Z",
       "as_of": "2026-04-13",
       "overall_score": 57.7,
-      "trend": "improving",
+      "trend": "stable",
       "housing_stability": 59.8,
       "cost_of_living": 62.4,
       "employment": 58.3,
@@ -225,7 +225,7 @@
       "military_family_readiness": 46.1
     },
     {
-      "time": "2026-04-20T19:37:55Z",
+      "time": "2026-04-20T19:54:56Z",
       "as_of": "2026-04-20",
       "overall_score": 46.4,
       "trend": "declining",
@@ -772,8 +772,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortage:dominant_negative",
           "shortages:dominant_negative",
+          "shortage:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1467,7 +1467,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T19:37:58Z",
+      "updated_at": "2026-04-20T19:54:59Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1499,7 +1499,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T19:37:58Z",
+      "updated_at": "2026-04-20T19:54:59Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1531,7 +1531,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T19:37:58Z",
+      "updated_at": "2026-04-20T19:54:59Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1559,7 +1559,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T19:37:58Z",
+      "updated_at": "2026-04-20T19:54:59Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1587,7 +1587,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-20T19:37:58Z",
+      "updated_at": "2026-04-20T19:54:59Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1766,13 +1766,13 @@
         "missing_as_of_rows": 0,
         "future_rows_filtered": 0,
         "duplicates_removed": 0,
-        "normalized_time_rows": 14,
+        "normalized_time_rows": 0,
         "time_parse_failures": 0,
         "time_as_of_mismatches": 1,
         "mismatch_examples": [
           {
             "type": "time_as_of_mismatch",
-            "time": "2026-04-06T18:51:00.707633-07:00",
+            "time": "2026-04-07T01:51:00Z",
             "time_operational_date": "2026-04-06",
             "as_of": "2026-04-07"
           }
@@ -1793,6 +1793,12 @@
           }
         ]
       }
+    },
+    "trend_integrity": {
+      "rows_total": 15,
+      "stored_trend_mismatches": 0,
+      "missing_trend_rows": 0,
+      "mismatch_examples": []
     }
   }
 }
