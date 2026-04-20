@@ -1,9 +1,9 @@
 {
   "as_of": "2026-04-20",
-  "generated_at": "2026-04-20T21:03:30Z",
-  "generated_at_operational": "2026-04-20T14:03:30-07:00",
-  "overall_score": 46.4,
-  "score": 46.4,
+  "generated_at": "2026-04-20T21:25:02Z",
+  "generated_at_operational": "2026-04-20T14:25:02-07:00",
+  "overall_score": 46.6,
+  "score": 46.6,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
   "trend": "declining",
@@ -11,7 +11,7 @@
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 46.4,
+    "overall_score": 46.6,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
     "trend": "declining",
@@ -26,33 +26,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 46.4.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 46.6.",
   "notes": [
     "Housing score: 43.1",
     "Cost of living score: 45.1",
-    "Employment score: 47.1",
-    "Benefits score: 48.0",
-    "Healthcare system score: 50.4",
-    "Military family readiness score: 45.9",
+    "Employment score: 47.6",
+    "Benefits score: 48.2",
+    "Healthcare system score: 50.9",
+    "Military family readiness score: 46.0",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 43.1,
-    "employment": 47.1,
-    "military_family_readiness": 45.9,
+    "employment": 47.6,
+    "military_family_readiness": 46.0,
     "cost_of_living": 45.1,
-    "healthcare_system": 50.4,
-    "benefits": 48.0
+    "healthcare_system": 50.9,
+    "benefits": 48.2
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 46.4.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 46.6.",
     "notes": [
       "Housing score: 43.1",
       "Cost of living score: 45.1",
-      "Employment score: 47.1",
-      "Benefits score: 48.0",
-      "Healthcare system score: 50.4",
-      "Military family readiness score: 45.9",
+      "Employment score: 47.6",
+      "Benefits score: 48.2",
+      "Healthcare system score: 50.9",
+      "Military family readiness score: 46.0",
       "Source confidence: High Confidence"
     ]
   },
@@ -226,16 +226,16 @@
       "military_family_readiness": 46.1
     },
     {
-      "time": "2026-04-20T21:03:30Z",
+      "time": "2026-04-20T21:25:02Z",
       "as_of": "2026-04-20",
-      "overall_score": 46.4,
+      "overall_score": 46.6,
       "trend": "declining",
       "housing_stability": 43.1,
       "cost_of_living": 45.1,
-      "employment": 47.1,
-      "benefits": 48.0,
-      "healthcare_system": 50.4,
-      "military_family_readiness": 45.9
+      "employment": 47.6,
+      "benefits": 48.2,
+      "healthcare_system": 50.9,
+      "military_family_readiness": 46.0
     }
   ],
   "events": [
@@ -254,6 +254,35 @@
         "military_family_readiness": [
           "military families",
           "spouse"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "military families",
+              "spouse"
+            ],
+            "exact_hits": 2,
+            "multiword_hits": 1,
+            "context_hits": 0,
+            "semantic_hits": 2,
+            "object_hits": 0,
+            "score": 7,
+            "evidence": [
+              "destabilizing:semantic_pressure",
+              "destabilizing:semantic_pressure"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
         ]
       },
       "primary_domain": "military_family_readiness",
@@ -330,6 +359,40 @@
           "military families"
         ]
       },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "military families"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 1,
+            "context_hits": 6,
+            "semantic_hits": 1,
+            "object_hits": 1,
+            "score": 11,
+            "evidence": [
+              "ease:context",
+              "eased:context",
+              "climb:context",
+              "climb:context",
+              "decrease:context",
+              "drop:context",
+              "suicide:semantic_pressure",
+              "suicide:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
       "primary_domain": "military_family_readiness",
       "event_type": "context_signal",
       "direction": "pressure",
@@ -369,7 +432,7 @@
       "freshness": 0.85,
       "weighted_contribution": 0.2,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.88,
+      "tier3_normalization_factor": 0.8467,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
@@ -401,6 +464,38 @@
       "domain_keyword_hits": {
         "benefits": [
           "benefits"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "benefits",
+        "accepted_domains": [
+          "benefits"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "benefits",
+            "keyword_hits": [
+              "benefits"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 2,
+            "semantic_hits": 2,
+            "object_hits": 2,
+            "score": 8,
+            "evidence": [
+              "preventive:context",
+              "struggling:context",
+              "struggling vets:semantic_pressure",
+              "preventive programs:semantic_support",
+              "preventive programs:event_object",
+              "benefits:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
         ]
       },
       "primary_domain": "benefits",
@@ -481,6 +576,35 @@
           "family"
         ]
       },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "military family",
+              "family"
+            ],
+            "exact_hits": 2,
+            "multiword_hits": 1,
+            "context_hits": 2,
+            "semantic_hits": 0,
+            "object_hits": 0,
+            "score": 7,
+            "evidence": [
+              "up:context",
+              "up:context"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
       "primary_domain": "military_family_readiness",
       "event_type": "context_signal",
       "direction": "pressure",
@@ -548,6 +672,44 @@
           "mental health"
         ]
       },
+      "domain_routing": {
+        "accepted_primary": "healthcare_system",
+        "accepted_domains": [
+          "healthcare_system"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "healthcare_system",
+            "keyword_hits": [
+              "mental health"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 1,
+            "context_hits": 4,
+            "semantic_hits": 2,
+            "object_hits": 8,
+            "score": 17,
+            "evidence": [
+              "help:context",
+              "struggling:context",
+              "may help:semantic_support",
+              "resources:event_object",
+              "care:event_object",
+              "help:event_object",
+              "resources:event_object",
+              "care:event_object",
+              "help:context",
+              "struggling:context",
+              "may help:semantic_support",
+              "resources:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
       "primary_domain": "healthcare_system",
       "event_type": "context_signal",
       "direction": "support",
@@ -603,72 +765,6 @@
       "tier3_scale": 0.425
     },
     {
-      "event_id": "evt_cc2b36df81bcb38a",
-      "source_name": "TheWarHorse",
-      "source_domain": "thewarhorse.org",
-      "title": "American MIA Group and Filipino Muslim Government Unite to Bring Home World War II Servicemen",
-      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/image-2.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/",
-      "url": "https://thewarhorse.org/world-war-ii-soldiers-search-philippines/",
-      "published_at": "2026-02-19T12:00:00Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "family"
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "support",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "support",
-        "override": true,
-        "positive_hits": 2,
-        "negative_hits": 0,
-        "confidence": 0.71,
-        "method": "event_state_context",
-        "evidence": [
-          "bring home:semantic_support"
-        ]
-      },
-      "impact_level": "watch",
-      "confidence": "moderate",
-      "relevance_score": 0.56,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "evidence_count": 1,
-      "region": "south",
-      "regions": [
-        "south"
-      ],
-      "scope": "regional",
-      "source_state": "reference",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.76,
-      "freshness": 0.55,
-      "weighted_contribution": 0.0307,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.32,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.0614,
-      "tier3_scale": 0.5
-    },
-    {
       "event_id": "evt_824460898423d201",
       "source_name": "TheWarHorse",
       "source_domain": "thewarhorse.org",
@@ -682,6 +778,44 @@
       "domain_keyword_hits": {
         "healthcare_system": [
           "mental health"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "healthcare_system",
+        "accepted_domains": [
+          "healthcare_system"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "healthcare_system",
+            "keyword_hits": [
+              "mental health"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 1,
+            "context_hits": 6,
+            "semantic_hits": 4,
+            "object_hits": 6,
+            "score": 19,
+            "evidence": [
+              "help:context",
+              "plague:context",
+              "up:context",
+              "mental health issues:semantic_pressure",
+              "plague:semantic_pressure",
+              "mental health issues:event_object",
+              "plague:event_object",
+              "help:event_object",
+              "help:context",
+              "plague:context",
+              "up:context",
+              "mental health issues:semantic_pressure"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
         ]
       },
       "primary_domain": "healthcare_system",
@@ -760,6 +894,64 @@
           "staffing"
         ]
       },
+      "domain_routing": {
+        "accepted_primary": "employment",
+        "accepted_domains": [
+          "employment",
+          "healthcare_system"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "employment",
+            "keyword_hits": [
+              "jobs"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 1,
+            "semantic_hits": 0,
+            "object_hits": 2,
+            "score": 5,
+            "evidence": [
+              "shortage:context",
+              "shortage:event_object",
+              "jobs:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          },
+          {
+            "domain": "healthcare_system",
+            "keyword_hits": [
+              "staffing"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 2,
+            "semantic_hits": 0,
+            "object_hits": 10,
+            "score": 14,
+            "evidence": [
+              "shortage:context",
+              "shortage:event_object",
+              "shortages:event_object",
+              "staffing shortage:event_object",
+              "staffing:event_object",
+              "care:event_object",
+              "shortage:context",
+              "shortage:event_object",
+              "shortages:event_object",
+              "staffing shortage:event_object",
+              "staffing:event_object",
+              "care:event_object"
+            ],
+            "allowed": true,
+            "gate": "propagation"
+          }
+        ]
+      },
       "primary_domain": "employment",
       "event_type": "context_signal",
       "direction": "pressure",
@@ -773,8 +965,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortage:dominant_negative",
           "shortages:dominant_negative",
+          "shortage:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -797,7 +989,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0206,
+      "weighted_contribution": 0.0143,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2533,
       "source_domains": [
@@ -812,7 +1004,7 @@
         ]
       },
       "raw_weighted_contribution": 0.0635,
-      "tier3_scale": 0.325
+      "tier3_scale": 0.225
     },
     {
       "event_id": "evt_df2c87a0585455c1",
@@ -828,6 +1020,33 @@
       "domain_keyword_hits": {
         "military_family_readiness": [
           "deployment"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "deployment"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 0,
+            "semantic_hits": 0,
+            "object_hits": 1,
+            "score": 3,
+            "evidence": [
+              "deployment:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
         ]
       },
       "primary_domain": "military_family_readiness",
@@ -879,70 +1098,6 @@
       "tier3_scale": 0.5
     },
     {
-      "event_id": "evt_67284cbba66a2f0e",
-      "source_name": "ArmyTimes",
-      "source_domain": "armytimes.com",
-      "title": "AeroVironment launches new multifunctional drone variant",
-      "summary": "The MAYHEM 10 drone, a part of the Switchblade family, will serve as a multifunctional launch system, capable of deploying from various platforms.",
-      "url": "https://www.armytimes.com/news/your-military/2026/04/15/aerovironment-launches-new-multifunctional-drone-variant/",
-      "published_at": "2026-04-15T20:24:43Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "family"
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.45,
-        "method": "event_state_no_evidence",
-        "evidence": []
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated ArmyTimes RSS.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "recent",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.72,
-      "freshness": 0.85,
-      "weighted_contribution": 0.002,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.2867,
-      "source_domains": [
-        "armytimes.com"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.004,
-      "tier3_scale": 0.5
-    },
-    {
       "event_id": "evt_c68c8a38c32275f7",
       "source_name": "TheWarHorse",
       "source_domain": "thewarhorse.org",
@@ -956,6 +1111,34 @@
       "domain_keyword_hits": {
         "military_family_readiness": [
           "military families"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "military families"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 1,
+            "context_hits": 2,
+            "semantic_hits": 0,
+            "object_hits": 0,
+            "score": 5,
+            "evidence": [
+              "brace:context",
+              "brace:context"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
         ]
       },
       "primary_domain": "military_family_readiness",
@@ -1022,68 +1205,35 @@
           "family"
         ]
       },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.45,
-        "method": "event_state_no_evidence",
-        "evidence": []
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "reference",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.76,
-      "freshness": 0.55,
-      "weighted_contribution": 0.0015,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.32,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
           "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.003,
-      "tier3_scale": 0.5
-    },
-    {
-      "event_id": "evt_b25379eaafb272be",
-      "source_name": "TheWarHorse",
-      "source_domain": "thewarhorse.org",
-      "title": "I Thought Removing Confederate Names Meant Black Soldiers\u2019 Legacy Mattered. Then, the Names Were Restored",
-      "summary": "<figure><img width=\"1024\" height=\"575\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/null-5-e1770999718480.jpeg?fit=1024%2C575&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/02/null-5-e1770999718480.jpeg?w=2500&ssl=1 2500w, https://i0.wp.com/thewa",
-      "url": "https://thewarhorse.org/black-soldier-confederate-named-military-bases/",
-      "published_at": "2026-02-18T12:00:00Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "barracks"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "family"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 5,
+            "semantic_hits": 0,
+            "object_hits": 0,
+            "score": 7,
+            "evidence": [
+              "contentment:context",
+              "contentment:context",
+              "contentment:context",
+              "contentment:context",
+              "contentment:context"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
         ]
       },
       "primary_domain": "military_family_readiness",
@@ -1150,6 +1300,33 @@
           "family"
         ]
       },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "family"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 1,
+            "semantic_hits": 0,
+            "object_hits": 0,
+            "score": 3,
+            "evidence": [
+              "up:context"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
       "primary_domain": "military_family_readiness",
       "event_type": "context_signal",
       "direction": "neutral",
@@ -1207,8 +1384,7 @@
       "url": "https://thewarhorse.org/veteran-fight-to-save-emotional-support-chickens/",
       "published_at": "2026-01-29T12:00:00Z",
       "domains": [
-        "healthcare_system",
-        "military_family_readiness"
+        "healthcare_system"
       ],
       "domain_keyword_hits": {
         "military_family_readiness": [
@@ -1216,6 +1392,52 @@
         ],
         "healthcare_system": [
           "mental health"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "healthcare_system",
+        "accepted_domains": [
+          "healthcare_system"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [
+          "military_family_readiness"
+        ],
+        "domain_audits": [
+          {
+            "domain": "healthcare_system",
+            "keyword_hits": [
+              "mental health"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 1,
+            "context_hits": 2,
+            "semantic_hits": 0,
+            "object_hits": 1,
+            "score": 6,
+            "evidence": [
+              "support:context",
+              "up:context",
+              "support:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          },
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "family"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 0,
+            "semantic_hits": 0,
+            "object_hits": 0,
+            "score": 2,
+            "evidence": [],
+            "allowed": false,
+            "gate": "propagation"
+          }
         ]
       },
       "primary_domain": "healthcare_system",
@@ -1233,10 +1455,9 @@
       },
       "impact_level": "watch",
       "confidence": "low",
-      "relevance_score": 0.42,
+      "relevance_score": 0.38,
       "drivers": [
-        "healthcare_system",
-        "military_family_readiness"
+        "healthcare_system"
       ],
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "evidence_count": 1,
@@ -1250,7 +1471,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0013,
+      "weighted_contribution": 0.0011,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2867,
       "source_domains": [
@@ -1264,72 +1485,8 @@
           "healthcare_system"
         ]
       },
-      "raw_weighted_contribution": 0.003,
-      "tier3_scale": 0.425
-    },
-    {
-      "event_id": "evt_81ad308220d8ed45",
-      "source_name": "TheWarHorse",
-      "source_domain": "thewarhorse.org",
-      "title": "After 30 Years in the Military, an Army Colonel Asks: Who Am I Without the Uniform?",
-      "summary": "<figure><img width=\"1024\" height=\"630\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/Evans-Alan-MAJ-Iraq-2003.webp?fit=1024%2C630&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/01/Evans-Alan-MAJ-Iraq-2003.webp?w=1170&ssl=1 1170w, https://i0.wp.com",
-      "url": "https://thewarhorse.org/army-colonel-life-without-military/",
-      "published_at": "2026-01-14T12:00:00Z",
-      "domains": [
-        "employment"
-      ],
-      "domain_keyword_hits": {
-        "employment": [
-          "career"
-        ]
-      },
-      "primary_domain": "employment",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.45,
-        "method": "event_state_no_evidence",
-        "evidence": []
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "employment"
-      ],
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "evidence_count": 1,
-      "region": "northeast",
-      "regions": [
-        "northeast"
-      ],
-      "scope": "regional",
-      "source_state": "reference",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.76,
-      "freshness": 0.55,
-      "weighted_contribution": 0.0009,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.2867,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "employment"
-        ]
-      },
       "raw_weighted_contribution": 0.0027,
-      "tier3_scale": 0.325
+      "tier3_scale": 0.425
     },
     {
       "event_id": "evt_c3ec4de9a4b9495e",
@@ -1345,6 +1502,33 @@
       "domain_keyword_hits": {
         "benefits": [
           "benefits"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "benefits",
+        "accepted_domains": [
+          "benefits"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "benefits",
+            "keyword_hits": [
+              "benefits"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 0,
+            "semantic_hits": 0,
+            "object_hits": 1,
+            "score": 3,
+            "evidence": [
+              "benefits:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
         ]
       },
       "primary_domain": "benefits",
@@ -1394,70 +1578,6 @@
       },
       "raw_weighted_contribution": 0.0027,
       "tier3_scale": 0.325
-    },
-    {
-      "event_id": "evt_334e566bcab08cd3",
-      "source_name": "TheWarHorse",
-      "source_domain": "thewarhorse.org",
-      "title": "Tuition, Training, Housing: How to Sell the Military as the Path of Least Resistance",
-      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/null-3.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/03/null-3.png?w=1366&ssl=1 1366w, https://i0.wp.com/thewarhorse.org/wp-content/uploads/20",
-      "url": "https://thewarhorse.org/military-recruiter-enlist-navy/",
-      "published_at": "2026-03-18T11:00:00Z",
-      "domains": [
-        "housing_stability"
-      ],
-      "domain_keyword_hits": {
-        "housing_stability": [
-          "housing"
-        ]
-      },
-      "primary_domain": "housing_stability",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.45,
-        "method": "event_state_no_evidence",
-        "evidence": []
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "housing_stability"
-      ],
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "evidence_count": 1,
-      "region": "west",
-      "regions": [
-        "west"
-      ],
-      "scope": "regional",
-      "source_state": "reference",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.76,
-      "freshness": 0.55,
-      "weighted_contribution": 0.0005,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.2533,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "housing_stability"
-        ]
-      },
-      "raw_weighted_contribution": 0.0024,
-      "tier3_scale": 0.225
     }
   ],
   "priority_signals": [
@@ -1468,7 +1588,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T21:03:33Z",
+      "updated_at": "2026-04-20T21:25:04Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1500,7 +1620,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T21:03:33Z",
+      "updated_at": "2026-04-20T21:25:04Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1532,7 +1652,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T21:03:33Z",
+      "updated_at": "2026-04-20T21:25:04Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1560,7 +1680,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T21:03:33Z",
+      "updated_at": "2026-04-20T21:25:04Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1580,40 +1700,12 @@
           "employment"
         ]
       }
-    },
-    {
-      "signal_id": "ps_c88d40742ab3e042",
-      "domain_key": "housing_stability",
-      "headline": "Tuition, Training, Housing: How to Sell the Military as the Path of Least Resistance",
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "severity": "watch",
-      "confidence": "low",
-      "updated_at": "2026-04-20T21:03:33Z",
-      "evidence_count": 1,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "event_ids": [
-        "evt_334e566bcab08cd3"
-      ],
-      "signal_type": "contextual",
-      "region": "west",
-      "scope": "regional",
-      "source_state": "reference",
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "housing_stability"
-        ]
-      }
     }
   ],
   "audit": {
     "tier1": {
-      "signals_total": 28,
-      "total_contribution": 0.8533,
+      "signals_total": 30,
+      "total_contribution": 1.0029,
       "by_domain": {
         "housing_stability": {
           "signals_count": 4,
@@ -1627,7 +1719,7 @@
         },
         "employment": {
           "signals_count": 4,
-          "contribution": -0.0699,
+          "contribution": -0.0188,
           "signal_names": [
             "FRED unemployment",
             "BLS unemployment",
@@ -1636,8 +1728,8 @@
           ]
         },
         "military_family_readiness": {
-          "signals_count": 11,
-          "contribution": 0.2645,
+          "signals_count": 12,
+          "contribution": 0.2911,
           "signal_names": [
             "HUD FMR availability [secondary:housing_stability]",
             "FRED unemployment [tertiary:employment]",
@@ -1649,6 +1741,7 @@
             "BLS CPI YoY [tertiary:cost_of_living]",
             "BEA NIPA availability [tertiary:cost_of_living]",
             "VA facilities availability [secondary:healthcare_system]",
+            "NewsAPI Deadline: \u2018Beef\u2019 Creator Lee Sung Jin On The \u201cReal-Life Incident\u201d That Inspired Season 2: \u201cThe Theme Of Class \u2026 Affects Every Interaction\u201d [secondary:healthcare_system]",
             "VA benefits reference availability [secondary:benefits]"
           ]
         },
@@ -1662,15 +1755,16 @@
           ]
         },
         "healthcare_system": {
-          "signals_count": 1,
-          "contribution": 0.21,
+          "signals_count": 2,
+          "contribution": 0.264,
           "signal_names": [
-            "VA facilities availability"
+            "VA facilities availability",
+            "NewsAPI Deadline: \u2018Beef\u2019 Creator Lee Sung Jin On The \u201cReal-Life Incident\u201d That Inspired Season 2: \u201cThe Theme Of Class \u2026 Affects Every Interaction\u201d"
           ]
         },
         "benefits": {
           "signals_count": 5,
-          "contribution": 0.1856,
+          "contribution": 0.2035,
           "signal_names": [
             "FRED unemployment [secondary:employment]",
             "BLS unemployment [secondary:employment]",
@@ -1775,12 +1869,18 @@
     "tier3_used": 180,
     "tier3_keyword_matched": 29,
     "tier3_keyword_qualified": 29,
-    "tier3_scoring_qualified": 29,
-    "tier3_cluster_count": 18,
-    "tier3_kept": 29,
-    "tier3_qualified": 18,
-    "tier3_final_events": 18,
-    "tier3_priority_signals": 5,
+    "tier3_scoring_qualified": 24,
+    "tier3_cluster_count": 13,
+    "tier3_kept": 24,
+    "tier3_qualified": 13,
+    "tier3_final_events": 13,
+    "tier3_priority_signals": 4,
+    "tier3_routing_audit": {
+      "primary_accepted": 24,
+      "primary_rejected": 5,
+      "secondary_or_tertiary_allowed": 1,
+      "secondary_or_tertiary_blocked": 1
+    },
     "history_integrity": {
       "input_history": {
         "source": "local",
