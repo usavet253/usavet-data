@@ -1,9 +1,9 @@
 {
   "as_of": "2026-04-20",
-  "generated_at": "2026-04-20T21:53:17Z",
-  "generated_at_operational": "2026-04-20T14:53:17-07:00",
-  "overall_score": 47.2,
-  "score": 47.2,
+  "generated_at": "2026-04-20T22:01:25Z",
+  "generated_at_operational": "2026-04-20T15:01:25-07:00",
+  "overall_score": 47.1,
+  "score": 47.1,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
   "trend": "declining",
@@ -11,7 +11,7 @@
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 47.2,
+    "overall_score": 47.1,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
     "trend": "declining",
@@ -26,33 +26,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 47.2.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 47.1.",
   "notes": [
     "Housing score: 44.5",
     "Cost of living score: 39.7",
-    "Employment score: 47.6",
+    "Employment score: 47.8",
     "Benefits score: 51.5",
-    "Healthcare system score: 54.2",
-    "Military family readiness score: 48.6",
+    "Healthcare system score: 53.7",
+    "Military family readiness score: 48.5",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 44.5,
-    "employment": 47.6,
-    "military_family_readiness": 48.6,
+    "employment": 47.8,
+    "military_family_readiness": 48.5,
     "cost_of_living": 39.7,
-    "healthcare_system": 54.2,
+    "healthcare_system": 53.7,
     "benefits": 51.5
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 47.2.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 47.1.",
     "notes": [
       "Housing score: 44.5",
       "Cost of living score: 39.7",
-      "Employment score: 47.6",
+      "Employment score: 47.8",
       "Benefits score: 51.5",
-      "Healthcare system score: 54.2",
-      "Military family readiness score: 48.6",
+      "Healthcare system score: 53.7",
+      "Military family readiness score: 48.5",
       "Source confidence: High Confidence"
     ]
   },
@@ -226,16 +226,16 @@
       "military_family_readiness": 46.1
     },
     {
-      "time": "2026-04-20T21:53:17Z",
+      "time": "2026-04-20T22:01:25Z",
       "as_of": "2026-04-20",
-      "overall_score": 47.2,
+      "overall_score": 47.1,
       "trend": "declining",
       "housing_stability": 44.5,
       "cost_of_living": 39.7,
-      "employment": 47.6,
+      "employment": 47.8,
       "benefits": 51.5,
-      "healthcare_system": 54.2,
-      "military_family_readiness": 48.6
+      "healthcare_system": 53.7,
+      "military_family_readiness": 48.5
     }
   ],
   "events": [
@@ -1588,7 +1588,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T21:53:19Z",
+      "updated_at": "2026-04-20T22:01:28Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1620,7 +1620,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T21:53:19Z",
+      "updated_at": "2026-04-20T22:01:28Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1652,7 +1652,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T21:53:19Z",
+      "updated_at": "2026-04-20T22:01:28Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1680,7 +1680,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T21:53:19Z",
+      "updated_at": "2026-04-20T22:01:28Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1704,8 +1704,8 @@
   ],
   "audit": {
     "tier1": {
-      "signals_total": 30,
-      "total_contribution": 1.5294,
+      "signals_total": 25,
+      "total_contribution": 1.4846,
       "by_domain": {
         "housing_stability": {
           "signals_count": 4,
@@ -1718,30 +1718,27 @@
           ]
         },
         "employment": {
-          "signals_count": 4,
-          "contribution": -0.0188,
+          "signals_count": 3,
+          "contribution": 0.0,
           "signal_names": [
             "FRED unemployment",
             "BLS unemployment",
-            "Census ACS state coverage",
-            "NewsAPI The Times of India: Govt plans employment study amid joblessness concerns"
+            "Census ACS state coverage"
           ]
         },
         "military_family_readiness": {
-          "signals_count": 12,
-          "contribution": 0.5566,
+          "signals_count": 10,
+          "contribution": 0.5405,
           "signal_names": [
             "HUD FMR state coverage [secondary:housing_stability]",
             "FRED unemployment [tertiary:employment]",
             "BLS unemployment [tertiary:employment]",
             "Census ACS state coverage [tertiary:employment]",
-            "NewsAPI The Times of India: Govt plans employment study amid joblessness concerns [tertiary:employment]",
             "Federal Register activity",
             "FRED CPI YoY [tertiary:cost_of_living]",
             "BLS CPI YoY [tertiary:cost_of_living]",
             "BEA NIPA record coverage [tertiary:cost_of_living]",
             "VA facilities page coverage [secondary:healthcare_system]",
-            "NewsAPI Deadline: \u2018Beef\u2019 Creator Lee Sung Jin On The \u201cReal-Life Incident\u201d That Inspired Season 2: \u201cThe Theme Of Class \u2026 Affects Every Interaction\u201d [secondary:healthcare_system]",
             "VA benefits reference item coverage [secondary:benefits]"
           ]
         },
@@ -1755,21 +1752,19 @@
           ]
         },
         "healthcare_system": {
-          "signals_count": 2,
-          "contribution": 0.594,
+          "signals_count": 1,
+          "contribution": 0.54,
           "signal_names": [
-            "VA facilities page coverage",
-            "NewsAPI Deadline: \u2018Beef\u2019 Creator Lee Sung Jin On The \u201cReal-Life Incident\u201d That Inspired Season 2: \u201cThe Theme Of Class \u2026 Affects Every Interaction\u201d"
+            "VA facilities page coverage"
           ]
         },
         "benefits": {
-          "signals_count": 5,
-          "contribution": 0.5335,
+          "signals_count": 4,
+          "contribution": 0.54,
           "signal_names": [
             "FRED unemployment [secondary:employment]",
             "BLS unemployment [secondary:employment]",
             "Census ACS state coverage [secondary:employment]",
-            "NewsAPI The Times of India: Govt plans employment study amid joblessness concerns [secondary:employment]",
             "VA benefits reference item coverage"
           ]
         }
