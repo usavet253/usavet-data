@@ -1,20 +1,20 @@
 {
   "as_of": "2026-04-20",
-  "generated_at": "2026-04-20T22:01:25Z",
-  "generated_at_operational": "2026-04-20T15:01:25-07:00",
-  "overall_score": 47.1,
-  "score": 47.1,
+  "generated_at": "2026-04-20T22:15:12Z",
+  "generated_at_operational": "2026-04-20T15:15:12-07:00",
+  "overall_score": 48.6,
+  "score": 48.6,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
-  "trend": "declining",
+  "trend": "improving",
   "pressure_label": "Elevated Pressure",
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 47.1,
+    "overall_score": 48.6,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
-    "trend": "declining",
+    "trend": "improving",
     "pressure_label": "Elevated Pressure",
     "source_quality": "High Confidence",
     "weights": {
@@ -26,33 +26,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 47.1.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.6.",
   "notes": [
-    "Housing score: 44.5",
-    "Cost of living score: 39.7",
-    "Employment score: 47.8",
-    "Benefits score: 51.5",
+    "Housing score: 45.0",
+    "Cost of living score: 41.1",
+    "Employment score: 50.8",
+    "Benefits score: 52.6",
     "Healthcare system score: 53.7",
-    "Military family readiness score: 48.5",
+    "Military family readiness score: 52.5",
     "Source confidence: High Confidence"
   ],
   "domains": {
-    "housing_stability": 44.5,
-    "employment": 47.8,
-    "military_family_readiness": 48.5,
-    "cost_of_living": 39.7,
+    "housing_stability": 45.0,
+    "employment": 50.8,
+    "military_family_readiness": 52.5,
+    "cost_of_living": 41.1,
     "healthcare_system": 53.7,
-    "benefits": 51.5
+    "benefits": 52.6
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 47.1.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 48.6.",
     "notes": [
-      "Housing score: 44.5",
-      "Cost of living score: 39.7",
-      "Employment score: 47.8",
-      "Benefits score: 51.5",
+      "Housing score: 45.0",
+      "Cost of living score: 41.1",
+      "Employment score: 50.8",
+      "Benefits score: 52.6",
       "Healthcare system score: 53.7",
-      "Military family readiness score: 48.5",
+      "Military family readiness score: 52.5",
       "Source confidence: High Confidence"
     ]
   },
@@ -226,16 +226,16 @@
       "military_family_readiness": 46.1
     },
     {
-      "time": "2026-04-20T22:01:25Z",
+      "time": "2026-04-20T22:15:12Z",
       "as_of": "2026-04-20",
-      "overall_score": 47.1,
-      "trend": "declining",
-      "housing_stability": 44.5,
-      "cost_of_living": 39.7,
-      "employment": 47.8,
-      "benefits": 51.5,
+      "overall_score": 48.6,
+      "trend": "improving",
+      "housing_stability": 45.0,
+      "cost_of_living": 41.1,
+      "employment": 50.8,
+      "benefits": 52.6,
       "healthcare_system": 53.7,
-      "military_family_readiness": 48.5
+      "military_family_readiness": 52.5
     }
   ],
   "events": [
@@ -1588,7 +1588,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T22:01:28Z",
+      "updated_at": "2026-04-20T22:15:15Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1620,7 +1620,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T22:01:28Z",
+      "updated_at": "2026-04-20T22:15:15Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1652,7 +1652,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T22:01:28Z",
+      "updated_at": "2026-04-20T22:15:15Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1680,7 +1680,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-20T22:01:28Z",
+      "updated_at": "2026-04-20T22:15:15Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1705,11 +1705,11 @@
   "audit": {
     "tier1": {
       "signals_total": 25,
-      "total_contribution": 1.4846,
+      "total_contribution": 2.4877,
       "by_domain": {
         "housing_stability": {
           "signals_count": 4,
-          "contribution": 0.3648,
+          "contribution": 0.4136,
           "signal_names": [
             "HUD FMR state coverage",
             "FRED CPI YoY [secondary:cost_of_living]",
@@ -1719,7 +1719,7 @@
         },
         "employment": {
           "signals_count": 3,
-          "contribution": 0.0,
+          "contribution": 0.3024,
           "signal_names": [
             "FRED unemployment",
             "BLS unemployment",
@@ -1728,7 +1728,7 @@
         },
         "military_family_readiness": {
           "signals_count": 10,
-          "contribution": 0.5405,
+          "contribution": 0.947,
           "signal_names": [
             "HUD FMR state coverage [secondary:housing_stability]",
             "FRED unemployment [tertiary:employment]",
@@ -1744,7 +1744,7 @@
         },
         "cost_of_living": {
           "signals_count": 3,
-          "contribution": -0.5007,
+          "contribution": -0.3611,
           "signal_names": [
             "FRED CPI YoY",
             "BLS CPI YoY",
@@ -1760,7 +1760,7 @@
         },
         "benefits": {
           "signals_count": 4,
-          "contribution": 0.54,
+          "contribution": 0.6458,
           "signal_names": [
             "FRED unemployment [secondary:employment]",
             "BLS unemployment [secondary:employment]",
@@ -1772,7 +1772,7 @@
     },
     "tier2": {
       "signals_total": 49,
-      "total_contribution": -2.9067,
+      "total_contribution": -2.9103,
       "by_domain": {
         "housing_stability": {
           "signals_count": 8,
@@ -1790,7 +1790,7 @@
         },
         "employment": {
           "signals_count": 4,
-          "contribution": -0.2207,
+          "contribution": -0.219,
           "signal_names": [
             "DOL spouse employment friction",
             "Census veteran outcomes",
@@ -1800,7 +1800,7 @@
         },
         "military_family_readiness": {
           "signals_count": 22,
-          "contribution": -0.6567,
+          "contribution": -0.6643,
           "signal_names": [
             "MFAN housing burden [secondary:housing_stability]",
             "NCHV veteran homelessness [secondary:housing_stability]",
@@ -1838,7 +1838,7 @@
         },
         "healthcare_system": {
           "signals_count": 3,
-          "contribution": -0.1782,
+          "contribution": -0.1765,
           "signal_names": [
             "NMFA family health friction",
             "GAO VA/DoD access",
@@ -1847,7 +1847,7 @@
         },
         "benefits": {
           "signals_count": 8,
-          "contribution": -0.4087,
+          "contribution": -0.4081,
           "signal_names": [
             "DOL spouse employment friction [secondary:employment]",
             "Census veteran outcomes [secondary:employment]",
