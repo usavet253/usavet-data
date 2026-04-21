@@ -1,7 +1,7 @@
 {
   "as_of": "2026-04-21",
-  "generated_at": "2026-04-21T20:11:58Z",
-  "generated_at_operational": "2026-04-21T13:11:58-07:00",
+  "generated_at": "2026-04-21T23:38:04Z",
+  "generated_at_operational": "2026-04-21T16:38:04-07:00",
   "overall_score": 53.2,
   "score": 53.2,
   "status_band": "Balanced / Watch",
@@ -33,13 +33,13 @@
     "Employment score: 53.1",
     "Benefits score: 47.8",
     "Healthcare system score: 58.4",
-    "Military family readiness score: 59.7",
+    "Military family readiness score: 59.6",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 52.0,
     "employment": 53.1,
-    "military_family_readiness": 59.7,
+    "military_family_readiness": 59.6,
     "cost_of_living": 50.4,
     "healthcare_system": 58.4,
     "benefits": 47.8
@@ -52,7 +52,7 @@
       "Employment score: 53.1",
       "Benefits score: 47.8",
       "Healthcare system score: 58.4",
-      "Military family readiness score: 59.7",
+      "Military family readiness score: 59.6",
       "Source confidence: High Confidence"
     ]
   },
@@ -238,7 +238,7 @@
       "military_family_readiness": 59.7
     },
     {
-      "time": "2026-04-21T20:11:58Z",
+      "time": "2026-04-21T23:38:04Z",
       "as_of": "2026-04-21",
       "overall_score": 53.2,
       "trend": "stable",
@@ -247,17 +247,17 @@
       "employment": 53.1,
       "benefits": 47.8,
       "healthcare_system": 58.4,
-      "military_family_readiness": 59.7
+      "military_family_readiness": 59.6
     }
   ],
   "events": [
     {
-      "event_id": "evt_da865a401f997235",
-      "source_name": "MilitaryTimes",
-      "source_domain": "militarytimes.com",
+      "event_id": "evt_4ca1ca0b4597a645",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
       "title": "How chest-thumping rhetoric erodes service member safety",
       "summary": "Defense Secretary Pete Hegseth's brash rhetoric is profoundly destabilizing for actively-serving military families, this military spouse argues.",
-      "url": "https://www.militarytimes.com/opinion/2026/04/17/how-chest-thumping-rhetoric-erodes-service-member-safety/",
+      "url": "https://www.armytimes.com/opinion/2026/04/17/how-chest-thumping-rhetoric-erodes-service-member-safety/",
       "published_at": "2026-04-17T16:00:34Z",
       "domains": [
         "military_family_readiness"
@@ -322,8 +322,8 @@
       "drivers": [
         "military_family_readiness"
       ],
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
-      "evidence_count": 5,
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "evidence_count": 4,
       "region": "national",
       "regions": [
         "national"
@@ -336,18 +336,17 @@
       "freshness": 0.85,
       "weighted_contribution": 0.2,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.9333,
+      "tier3_normalization_factor": 0.8133,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
         "marinecorpstimes.com",
-        "militarytimes.com",
         "navytimes.com"
       ],
       "corroboration": {
         "score": 100,
-        "source_count": 5,
-        "independent_sources": 5,
+        "source_count": 4,
+        "independent_sources": 4,
         "domains": [
           "military_family_readiness"
         ]
@@ -976,8 +975,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortages:dominant_negative",
           "shortage:dominant_negative",
+          "shortages:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1016,97 +1015,6 @@
       },
       "raw_weighted_contribution": 0.0635,
       "tier3_scale": 0.225
-    },
-    {
-      "event_id": "evt_df2c87a0585455c1",
-      "source_name": "NavyTimes",
-      "source_domain": "navytimes.com",
-      "title": "USS Gerald R. Ford breaks record for longest post-Vietnam deployment",
-      "summary": "The world's largest aircraft carrier has been deployed for a historic 296 days after departing Naval Station Norfolk on June 24, 2025.",
-      "url": "https://www.navytimes.com/news/your-navy/2026/04/15/uss-gerald-r-ford-breaks-record-for-longest-post-vietnam-deployment/",
-      "published_at": "2026-04-15T18:21:58Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "deployment"
-        ]
-      },
-      "domain_routing": {
-        "accepted_primary": "military_family_readiness",
-        "accepted_domains": [
-          "military_family_readiness"
-        ],
-        "rejected_primary_candidates": [],
-        "blocked_propagation_domains": [],
-        "domain_audits": [
-          {
-            "domain": "military_family_readiness",
-            "keyword_hits": [
-              "deployment"
-            ],
-            "exact_hits": 1,
-            "multiword_hits": 0,
-            "context_hits": 0,
-            "semantic_hits": 0,
-            "object_hits": 1,
-            "score": 3,
-            "evidence": [
-              "deployment:event_object"
-            ],
-            "allowed": true,
-            "gate": "primary"
-          }
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.45,
-        "method": "event_state_no_evidence",
-        "evidence": []
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated NavyTimes RSS.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "recent",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.72,
-      "freshness": 0.85,
-      "weighted_contribution": 0.0022,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.32,
-      "source_domains": [
-        "navytimes.com"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.0045,
-      "tier3_scale": 0.5
     },
     {
       "event_id": "evt_c68c8a38c32275f7",
@@ -1593,23 +1501,22 @@
   ],
   "priority_signals": [
     {
-      "signal_id": "ps_003f40bd842455b7",
+      "signal_id": "ps_171c75129d1024ac",
       "domain_key": "military_family_readiness",
       "headline": "How chest-thumping rhetoric erodes service member safety",
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T20:12:01Z",
-      "evidence_count": 5,
+      "updated_at": "2026-04-21T23:38:08Z",
+      "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
         "marinecorpstimes.com",
-        "militarytimes.com",
         "navytimes.com"
       ],
       "event_ids": [
-        "evt_da865a401f997235"
+        "evt_4ca1ca0b4597a645"
       ],
       "signal_type": "contextual",
       "region": "national",
@@ -1617,8 +1524,8 @@
       "source_state": "recent",
       "corroboration": {
         "score": 100,
-        "source_count": 5,
-        "independent_sources": 5,
+        "source_count": 4,
+        "independent_sources": 4,
         "domains": [
           "military_family_readiness"
         ]
@@ -1631,7 +1538,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T20:12:01Z",
+      "updated_at": "2026-04-21T23:38:08Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1662,7 +1569,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T20:12:01Z",
+      "updated_at": "2026-04-21T23:38:08Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1690,7 +1597,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T20:12:01Z",
+      "updated_at": "2026-04-21T23:38:08Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1899,16 +1806,16 @@
       }
     },
     "tier3_used": 180,
-    "tier3_keyword_matched": 28,
-    "tier3_keyword_qualified": 28,
-    "tier3_scoring_qualified": 23,
-    "tier3_cluster_count": 13,
-    "tier3_kept": 23,
-    "tier3_qualified": 13,
-    "tier3_final_events": 13,
+    "tier3_keyword_matched": 26,
+    "tier3_keyword_qualified": 26,
+    "tier3_scoring_qualified": 21,
+    "tier3_cluster_count": 12,
+    "tier3_kept": 21,
+    "tier3_qualified": 12,
+    "tier3_final_events": 12,
     "tier3_priority_signals": 4,
     "tier3_routing_audit": {
-      "primary_accepted": 23,
+      "primary_accepted": 21,
       "primary_rejected": 5,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
@@ -1957,11 +1864,19 @@
     },
     "daily_signal_audit_summary": {
       "signal_refresh_status": "refreshed",
-      "reason_code": "inventory_changed",
-      "today_events": 115,
-      "today_signals": 115,
-      "delta_events": 115,
-      "delta_signals": 115
+      "reason_code": "baseline_initialized",
+      "inventory_changed": true,
+      "public_state_changed": true,
+      "today_events": 114,
+      "today_signals": 114,
+      "delta_events": 114,
+      "delta_signals": 114,
+      "changed_domains_count": 0,
+      "changed_domains": [],
+      "overall_score_delta": null,
+      "trend_changed": false,
+      "band_changed": false,
+      "public_overall_score": 53.2
     },
     "contract_integrity": {
       "public_daily_compatibility_fields_retained": [
