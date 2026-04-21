@@ -1,7 +1,7 @@
 {
   "as_of": "2026-04-21",
-  "generated_at": "2026-04-21T14:10:03Z",
-  "generated_at_operational": "2026-04-21T07:10:03-07:00",
+  "generated_at": "2026-04-21T14:20:41Z",
+  "generated_at_operational": "2026-04-21T07:20:41-07:00",
   "overall_score": 53.2,
   "score": 53.2,
   "status_band": "Balanced / Watch",
@@ -238,7 +238,7 @@
       "military_family_readiness": 59.7
     },
     {
-      "time": "2026-04-21T14:10:03Z",
+      "time": "2026-04-21T14:20:41Z",
       "as_of": "2026-04-21",
       "overall_score": 53.2,
       "trend": "stable",
@@ -977,8 +977,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortage:dominant_negative",
           "shortages:dominant_negative",
+          "shortage:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1600,7 +1600,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T14:10:06Z",
+      "updated_at": "2026-04-21T14:20:43Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1632,7 +1632,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T14:10:06Z",
+      "updated_at": "2026-04-21T14:20:43Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1664,7 +1664,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T14:10:06Z",
+      "updated_at": "2026-04-21T14:20:43Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1692,7 +1692,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T14:10:06Z",
+      "updated_at": "2026-04-21T14:20:43Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1918,8 +1918,8 @@
     "history_integrity": {
       "input_history": {
         "source": "local",
-        "input_rows": 15,
-        "output_rows": 15,
+        "input_rows": 16,
+        "output_rows": 16,
         "missing_as_of_rows": 0,
         "future_rows_filtered": 0,
         "duplicates_removed": 0,
