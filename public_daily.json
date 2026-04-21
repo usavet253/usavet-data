@@ -1,7 +1,7 @@
 {
   "as_of": "2026-04-21",
-  "generated_at": "2026-04-21T14:55:33Z",
-  "generated_at_operational": "2026-04-21T07:55:33-07:00",
+  "generated_at": "2026-04-21T16:21:43Z",
+  "generated_at_operational": "2026-04-21T09:21:43-07:00",
   "overall_score": 53.2,
   "score": 53.2,
   "status_band": "Balanced / Watch",
@@ -238,7 +238,7 @@
       "military_family_readiness": 59.7
     },
     {
-      "time": "2026-04-21T14:55:33Z",
+      "time": "2026-04-21T16:21:43Z",
       "as_of": "2026-04-21",
       "overall_score": 53.2,
       "trend": "stable",
@@ -463,12 +463,12 @@
       "tier3_scale": 1.0
     },
     {
-      "event_id": "evt_6f36fb6a03bb08a2",
-      "source_name": "MilitaryTimes",
-      "source_domain": "militarytimes.com",
+      "event_id": "evt_a670a9bdac742da9",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
       "title": "Advocates press for preventive programs, VA benefits for struggling vets",
       "summary": "Representatives from specialty courts and veterans\u2019 legal organizations pressed Congress Wednesday for expansion of the Veterans Treatment Courts system.",
-      "url": "https://www.militarytimes.com/news/pentagon-congress/2026/04/16/advocates-press-for-preventive-programs-va-benefits-for-struggling-vets/",
+      "url": "https://www.armytimes.com/news/pentagon-congress/2026/04/16/advocates-press-for-preventive-programs-va-benefits-for-struggling-vets/",
       "published_at": "2026-04-16T19:32:35Z",
       "domains": [
         "benefits"
@@ -538,8 +538,8 @@
       "drivers": [
         "benefits"
       ],
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
-      "evidence_count": 5,
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "evidence_count": 4,
       "region": "national",
       "regions": [
         "national"
@@ -552,18 +552,17 @@
       "freshness": 0.85,
       "weighted_contribution": 0.13,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.9333,
+      "tier3_normalization_factor": 0.8133,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
         "marinecorpstimes.com",
-        "militarytimes.com",
         "navytimes.com"
       ],
       "corroboration": {
         "score": 100,
-        "source_count": 5,
-        "independent_sources": 5,
+        "source_count": 4,
+        "independent_sources": 4,
         "domains": [
           "benefits"
         ]
@@ -1600,7 +1599,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T14:55:35Z",
+      "updated_at": "2026-04-21T16:21:46Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1626,23 +1625,22 @@
       }
     },
     {
-      "signal_id": "ps_33baed7da5e58a90",
+      "signal_id": "ps_201d862d642af618",
       "domain_key": "benefits",
       "headline": "Advocates press for preventive programs, VA benefits for struggling vets",
-      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T14:55:35Z",
-      "evidence_count": 5,
+      "updated_at": "2026-04-21T16:21:46Z",
+      "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
         "marinecorpstimes.com",
-        "militarytimes.com",
         "navytimes.com"
       ],
       "event_ids": [
-        "evt_6f36fb6a03bb08a2"
+        "evt_a670a9bdac742da9"
       ],
       "signal_type": "contextual",
       "region": "national",
@@ -1650,8 +1648,8 @@
       "source_state": "recent",
       "corroboration": {
         "score": 100,
-        "source_count": 5,
-        "independent_sources": 5,
+        "source_count": 4,
+        "independent_sources": 4,
         "domains": [
           "benefits"
         ]
@@ -1664,7 +1662,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T14:55:35Z",
+      "updated_at": "2026-04-21T16:21:46Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1692,7 +1690,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T14:55:35Z",
+      "updated_at": "2026-04-21T16:21:46Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1901,16 +1899,16 @@
       }
     },
     "tier3_used": 180,
-    "tier3_keyword_matched": 29,
-    "tier3_keyword_qualified": 29,
-    "tier3_scoring_qualified": 24,
+    "tier3_keyword_matched": 28,
+    "tier3_keyword_qualified": 28,
+    "tier3_scoring_qualified": 23,
     "tier3_cluster_count": 13,
-    "tier3_kept": 24,
+    "tier3_kept": 23,
     "tier3_qualified": 13,
     "tier3_final_events": 13,
     "tier3_priority_signals": 4,
     "tier3_routing_audit": {
-      "primary_accepted": 24,
+      "primary_accepted": 23,
       "primary_rejected": 5,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
@@ -1956,6 +1954,14 @@
       "stored_trend_mismatches": 0,
       "missing_trend_rows": 0,
       "mismatch_examples": []
+    },
+    "daily_signal_audit_summary": {
+      "signal_refresh_status": "refreshed",
+      "reason_code": "inventory_changed",
+      "today_events": 115,
+      "today_signals": 115,
+      "delta_events": 115,
+      "delta_signals": 115
     },
     "contract_integrity": {
       "public_daily_compatibility_fields_retained": [
