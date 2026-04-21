@@ -1,7 +1,7 @@
 {
   "as_of": "2026-04-21",
-  "generated_at": "2026-04-21T17:49:34Z",
-  "generated_at_operational": "2026-04-21T10:49:34-07:00",
+  "generated_at": "2026-04-21T19:42:38Z",
+  "generated_at_operational": "2026-04-21T12:42:38-07:00",
   "overall_score": 53.2,
   "score": 53.2,
   "status_band": "Balanced / Watch",
@@ -238,7 +238,7 @@
       "military_family_readiness": 59.7
     },
     {
-      "time": "2026-04-21T17:49:34Z",
+      "time": "2026-04-21T19:42:38Z",
       "as_of": "2026-04-21",
       "overall_score": 53.2,
       "trend": "stable",
@@ -1599,7 +1599,7 @@
       "forecast": "Contextual signal from curated MilitaryTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T17:49:38Z",
+      "updated_at": "2026-04-21T19:42:41Z",
       "evidence_count": 5,
       "source_domains": [
         "airforcetimes.com",
@@ -1631,7 +1631,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T17:49:38Z",
+      "updated_at": "2026-04-21T19:42:41Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1662,7 +1662,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T17:49:38Z",
+      "updated_at": "2026-04-21T19:42:41Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1690,7 +1690,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-21T17:49:38Z",
+      "updated_at": "2026-04-21T19:42:41Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
