@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-22",
-  "generated_at": "2026-04-22T06:38:17Z",
+  "generated_at": "2026-04-22T13:56:21Z",
   "overall_score": 52.2,
   "score": 52.2,
   "status_band": "Balanced / Watch",
@@ -32,13 +32,13 @@
     "Employment score: 54.4",
     "Benefits score: 49.0",
     "Healthcare system score: 56.1",
-    "Military family readiness score: 54.6",
+    "Military family readiness score: 54.7",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 49.8,
     "employment": 54.4,
-    "military_family_readiness": 54.6,
+    "military_family_readiness": 54.7,
     "cost_of_living": 50.4,
     "healthcare_system": 56.1,
     "benefits": 49.0
@@ -51,7 +51,7 @@
       "Employment score: 54.4",
       "Benefits score: 49.0",
       "Healthcare system score: 56.1",
-      "Military family readiness score: 54.6",
+      "Military family readiness score: 54.7",
       "Source confidence: High Confidence"
     ]
   },
@@ -249,7 +249,7 @@
       "military_family_readiness": 59.6
     },
     {
-      "time": "2026-04-22T06:38:17Z",
+      "time": "2026-04-22T13:56:21Z",
       "as_of": "2026-04-22",
       "overall_score": 52.2,
       "trend": "declining",
@@ -258,7 +258,7 @@
       "employment": 54.4,
       "benefits": 49.0,
       "healthcare_system": 56.1,
-      "military_family_readiness": 54.6
+      "military_family_readiness": 54.7
     }
   ],
   "events": [
@@ -654,12 +654,12 @@
         "national"
       ],
       "scope": "national",
-      "source_state": "recent",
+      "source_state": "reference",
       "age_hours": null,
       "tier": "tier_3",
       "trust_weight": 0.76,
-      "freshness": 0.85,
-      "weighted_contribution": 0.0619,
+      "freshness": 0.55,
+      "weighted_contribution": 0.0401,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.32,
       "source_domains": [
@@ -673,116 +673,8 @@
           "military_family_readiness"
         ]
       },
-      "raw_weighted_contribution": 0.1237,
+      "raw_weighted_contribution": 0.0801,
       "tier3_scale": 0.5
-    },
-    {
-      "event_id": "evt_9c1f9bf37f606441",
-      "source_name": "TheWarHorse",
-      "source_domain": "thewarhorse.org",
-      "title": "Are You a Veteran Struggling to Get Mental Health Care? These Resources May Help",
-      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"VA building\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/VA-Building-cover.jpg?w=2000&ssl=1 2000w, https://i0.wp.com/thew",
-      "url": "https://thewarhorse.org/veteran-mental-health-resources/",
-      "published_at": "2025-12-11T12:10:20Z",
-      "domains": [
-        "healthcare_system"
-      ],
-      "domain_keyword_hits": {
-        "healthcare_system": [
-          "mental health"
-        ]
-      },
-      "domain_routing": {
-        "accepted_primary": "healthcare_system",
-        "accepted_domains": [
-          "healthcare_system"
-        ],
-        "rejected_primary_candidates": [],
-        "blocked_propagation_domains": [],
-        "domain_audits": [
-          {
-            "domain": "healthcare_system",
-            "keyword_hits": [
-              "mental health"
-            ],
-            "exact_hits": 1,
-            "multiword_hits": 1,
-            "context_hits": 4,
-            "semantic_hits": 2,
-            "object_hits": 8,
-            "score": 17,
-            "evidence": [
-              "help:context",
-              "struggling:context",
-              "may help:semantic_support",
-              "resources:event_object",
-              "care:event_object",
-              "help:event_object",
-              "resources:event_object",
-              "care:event_object",
-              "help:context",
-              "struggling:context",
-              "may help:semantic_support",
-              "resources:event_object"
-            ],
-            "allowed": true,
-            "gate": "primary"
-          }
-        ]
-      },
-      "primary_domain": "healthcare_system",
-      "event_type": "context_signal",
-      "direction": "support",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "support",
-        "override": true,
-        "positive_hits": 5,
-        "negative_hits": 0,
-        "confidence": 0.94,
-        "method": "event_state_context",
-        "evidence": [
-          "resources:support_state",
-          "care:support_state",
-          "help:support_state",
-          "may help:semantic_support",
-          "may help:semantic_support"
-        ]
-      },
-      "impact_level": "watch",
-      "confidence": "high",
-      "relevance_score": 0.56,
-      "drivers": [
-        "healthcare_system"
-      ],
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "reference",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.76,
-      "freshness": 0.55,
-      "weighted_contribution": 0.0318,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.32,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "healthcare_system"
-        ]
-      },
-      "raw_weighted_contribution": 0.0749,
-      "tier3_scale": 0.425
     },
     {
       "event_id": "evt_824460898423d201",
@@ -877,7 +769,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0252,
+      "weighted_contribution": 0.0193,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2533,
       "source_domains": [
@@ -892,7 +784,7 @@
         ]
       },
       "raw_weighted_contribution": 0.0593,
-      "tier3_scale": 0.425
+      "tier3_scale": 0.325
     },
     {
       "event_id": "evt_be5bbe9595f1aa4d",
@@ -985,8 +877,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortages:dominant_negative",
           "shortage:dominant_negative",
+          "shortages:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1400,7 +1292,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0011,
+      "weighted_contribution": 0.0009,
       "qualified_for_scoring": true,
       "tier3_normalization_factor": 0.2867,
       "source_domains": [
@@ -1415,7 +1307,7 @@
         ]
       },
       "raw_weighted_contribution": 0.0027,
-      "tier3_scale": 0.425
+      "tier3_scale": 0.325
     },
     {
       "event_id": "evt_c3ec4de9a4b9495e",
@@ -1517,7 +1409,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T06:38:20Z",
+      "updated_at": "2026-04-22T13:56:24Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1548,7 +1440,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T06:38:20Z",
+      "updated_at": "2026-04-22T13:56:24Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1573,19 +1465,19 @@
       }
     },
     {
-      "signal_id": "ps_e9d8bf3921b470f2",
+      "signal_id": "ps_9e2e420e9421e179",
       "domain_key": "healthcare_system",
-      "headline": "Are You a Veteran Struggling to Get Mental Health Care? These Resources May Help",
+      "headline": "Mental Health Issues Plague New Moms in the Military. The Pentagon Is Supposed to Help",
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T06:38:20Z",
+      "updated_at": "2026-04-22T13:56:24Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
       ],
       "event_ids": [
-        "evt_9c1f9bf37f606441"
+        "evt_824460898423d201"
       ],
       "signal_type": "contextual",
       "region": "national",
@@ -1607,7 +1499,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T06:38:20Z",
+      "updated_at": "2026-04-22T13:56:24Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1797,16 +1689,16 @@
       }
     },
     "tier3_used": 180,
-    "tier3_keyword_matched": 28,
-    "tier3_keyword_qualified": 28,
-    "tier3_scoring_qualified": 20,
-    "tier3_cluster_count": 12,
-    "tier3_kept": 20,
-    "tier3_qualified": 12,
-    "tier3_final_events": 12,
+    "tier3_keyword_matched": 27,
+    "tier3_keyword_qualified": 27,
+    "tier3_scoring_qualified": 19,
+    "tier3_cluster_count": 11,
+    "tier3_kept": 19,
+    "tier3_qualified": 11,
+    "tier3_final_events": 11,
     "tier3_priority_signals": 4,
     "tier3_routing_audit": {
-      "primary_accepted": 20,
+      "primary_accepted": 19,
       "primary_rejected": 8,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
@@ -1922,10 +1814,10 @@
       "reason_code": "baseline_initialized",
       "inventory_changed": true,
       "public_state_changed": true,
-      "today_events": 95,
-      "today_signals": 95,
-      "delta_events": 95,
-      "delta_signals": 95,
+      "today_events": 94,
+      "today_signals": 94,
+      "delta_events": 94,
+      "delta_signals": 94,
       "changed_domains_count": 0,
       "changed_domains": [],
       "overall_score_delta": null,
@@ -1943,9 +1835,9 @@
         "reason": null
       },
       "signal_replacement": {
-        "new_signals": 95,
+        "new_signals": 94,
         "removed_signals": 0,
-        "new_events": 95,
+        "new_events": 94,
         "removed_events": 0,
         "net_same_count_but_different_content": false
       },
