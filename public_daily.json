@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-22",
-  "generated_at": "2026-04-22T00:03:11Z",
+  "generated_at": "2026-04-22T00:33:00Z",
   "overall_score": 53.2,
   "score": 53.2,
   "status_band": "Balanced / Watch",
@@ -249,7 +249,7 @@
       "military_family_readiness": 59.6
     },
     {
-      "time": "2026-04-22T00:03:11Z",
+      "time": "2026-04-22T00:33:00Z",
       "as_of": "2026-04-22",
       "overall_score": 53.2,
       "trend": "stable",
@@ -441,7 +441,7 @@
         "military_family_readiness"
       ],
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
-      "evidence_count": 4,
+      "evidence_count": 3,
       "region": "national",
       "regions": [
         "national"
@@ -452,25 +452,24 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.85,
-      "weighted_contribution": 0.2,
+      "weighted_contribution": 0.18,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.8467,
+      "tier3_normalization_factor": 0.7267,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
-        "marinecorpstimes.com",
-        "navytimes.com"
+        "marinecorpstimes.com"
       ],
       "corroboration": {
-        "score": 100,
-        "source_count": 4,
-        "independent_sources": 4,
+        "score": 95,
+        "source_count": 3,
+        "independent_sources": 3,
         "domains": [
           "military_family_readiness"
         ]
       },
       "raw_weighted_contribution": 0.2,
-      "tier3_scale": 1.0
+      "tier3_scale": 0.9
     },
     {
       "event_id": "evt_a670a9bdac742da9",
@@ -986,8 +985,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortage:dominant_negative",
           "shortages:dominant_negative",
+          "shortage:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1518,7 +1517,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T00:03:14Z",
+      "updated_at": "2026-04-22T00:33:02Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1549,7 +1548,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T00:03:14Z",
+      "updated_at": "2026-04-22T00:33:02Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1580,7 +1579,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T00:03:14Z",
+      "updated_at": "2026-04-22T00:33:02Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1608,7 +1607,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T00:03:14Z",
+      "updated_at": "2026-04-22T00:33:02Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1819,23 +1818,23 @@
     "tier3_used": 180,
     "tier3_keyword_matched": 26,
     "tier3_keyword_qualified": 26,
-    "tier3_scoring_qualified": 21,
+    "tier3_scoring_qualified": 20,
     "tier3_cluster_count": 12,
-    "tier3_kept": 21,
+    "tier3_kept": 20,
     "tier3_qualified": 12,
     "tier3_final_events": 12,
     "tier3_priority_signals": 4,
     "tier3_routing_audit": {
-      "primary_accepted": 21,
-      "primary_rejected": 5,
+      "primary_accepted": 20,
+      "primary_rejected": 6,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
     },
     "history_integrity": {
       "input_history": {
         "source": "local",
-        "input_rows": 16,
-        "output_rows": 16,
+        "input_rows": 17,
+        "output_rows": 17,
         "missing_as_of_rows": 0,
         "future_rows_filtered": 0,
         "duplicates_removed": 0,
