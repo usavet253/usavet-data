@@ -1,8 +1,8 @@
 {
   "as_of": "2026-04-22",
-  "generated_at": "2026-04-22T04:18:17Z",
-  "overall_score": 52.1,
-  "score": 52.1,
+  "generated_at": "2026-04-22T04:54:30Z",
+  "overall_score": 52.2,
+  "score": 52.2,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "declining",
@@ -10,7 +10,7 @@
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 52.1,
+    "overall_score": 52.2,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "declining",
@@ -25,33 +25,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.1.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.2.",
   "notes": [
-    "Housing score: 49.5",
-    "Cost of living score: 49.7",
-    "Employment score: 53.1",
-    "Benefits score: 48.6",
+    "Housing score: 49.8",
+    "Cost of living score: 50.4",
+    "Employment score: 54.4",
+    "Benefits score: 49.0",
     "Healthcare system score: 56.1",
-    "Military family readiness score: 58.2",
+    "Military family readiness score: 54.6",
     "Source confidence: High Confidence"
   ],
   "domains": {
-    "housing_stability": 49.5,
-    "employment": 53.1,
-    "military_family_readiness": 58.2,
-    "cost_of_living": 49.7,
+    "housing_stability": 49.8,
+    "employment": 54.4,
+    "military_family_readiness": 54.6,
+    "cost_of_living": 50.4,
     "healthcare_system": 56.1,
-    "benefits": 48.6
+    "benefits": 49.0
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.1.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.2.",
     "notes": [
-      "Housing score: 49.5",
-      "Cost of living score: 49.7",
-      "Employment score: 53.1",
-      "Benefits score: 48.6",
+      "Housing score: 49.8",
+      "Cost of living score: 50.4",
+      "Employment score: 54.4",
+      "Benefits score: 49.0",
       "Healthcare system score: 56.1",
-      "Military family readiness score: 58.2",
+      "Military family readiness score: 54.6",
       "Source confidence: High Confidence"
     ]
   },
@@ -249,16 +249,16 @@
       "military_family_readiness": 59.6
     },
     {
-      "time": "2026-04-22T04:18:17Z",
+      "time": "2026-04-22T04:54:30Z",
       "as_of": "2026-04-22",
-      "overall_score": 52.1,
+      "overall_score": 52.2,
       "trend": "declining",
-      "housing_stability": 49.5,
-      "cost_of_living": 49.7,
-      "employment": 53.1,
-      "benefits": 48.6,
+      "housing_stability": 49.8,
+      "cost_of_living": 50.4,
+      "employment": 54.4,
+      "benefits": 49.0,
       "healthcare_system": 56.1,
-      "military_family_readiness": 58.2
+      "military_family_readiness": 54.6
     }
   ],
   "events": [
@@ -1517,7 +1517,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T04:18:20Z",
+      "updated_at": "2026-04-22T04:54:33Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1548,7 +1548,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T04:18:20Z",
+      "updated_at": "2026-04-22T04:54:33Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1579,7 +1579,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T04:18:20Z",
+      "updated_at": "2026-04-22T04:54:33Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1607,7 +1607,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T04:18:20Z",
+      "updated_at": "2026-04-22T04:54:33Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1631,68 +1631,67 @@
   ],
   "audit": {
     "tier1": {
-      "signals_total": 25,
-      "total_contribution": 2.3238,
+      "signals_total": 24,
+      "total_contribution": 2.2445,
       "by_domain": {
         "housing_stability": {
           "signals_count": 4,
-          "contribution": 0.6026,
+          "contribution": 0.6295,
           "signal_names": [
-            "HUD statewide 2BR FMR measure",
-            "FRED CPI YoY [secondary:cost_of_living]",
-            "BLS CPI YoY [secondary:cost_of_living]",
-            "BEA real activity measure [secondary:cost_of_living]"
+            "HUD statewide 2BR FMR measured state",
+            "FRED CPI measured state [secondary:cost_of_living]",
+            "BLS CPI measured state [secondary:cost_of_living]",
+            "BEA structural measured state [secondary:cost_of_living]"
           ]
         },
         "employment": {
           "signals_count": 3,
-          "contribution": 0.3024,
+          "contribution": 0.432,
           "signal_names": [
-            "FRED unemployment",
-            "BLS unemployment",
-            "Census veteran unemployment measure"
+            "FRED unemployment measured state",
+            "BLS unemployment measured state",
+            "Census veteran unemployment measured state"
           ]
         },
         "military_family_readiness": {
-          "signals_count": 10,
-          "contribution": 0.7755,
+          "signals_count": 9,
+          "contribution": 0.4176,
           "signal_names": [
-            "HUD statewide 2BR FMR measure [secondary:housing_stability]",
-            "FRED unemployment [tertiary:employment]",
-            "BLS unemployment [tertiary:employment]",
-            "Census veteran unemployment measure [tertiary:employment]",
-            "Federal Register activity",
-            "FRED CPI YoY [tertiary:cost_of_living]",
-            "BLS CPI YoY [tertiary:cost_of_living]",
-            "BEA real activity measure [tertiary:cost_of_living]",
-            "VA facility access measure [secondary:healthcare_system]",
-            "VA benefits reference breadth measure [secondary:benefits]"
+            "HUD statewide 2BR FMR measured state [secondary:housing_stability]",
+            "FRED unemployment measured state [tertiary:employment]",
+            "BLS unemployment measured state [tertiary:employment]",
+            "Census veteran unemployment measured state [tertiary:employment]",
+            "FRED CPI measured state [tertiary:cost_of_living]",
+            "BLS CPI measured state [tertiary:cost_of_living]",
+            "BEA structural measured state [tertiary:cost_of_living]",
+            "VA facilities measured state [secondary:healthcare_system]",
+            "VA benefits reference measured state [secondary:benefits]"
           ]
         },
         "cost_of_living": {
           "signals_count": 3,
-          "contribution": 0.1789,
+          "contribution": 0.2556,
           "signal_names": [
-            "FRED CPI YoY",
-            "BLS CPI YoY",
-            "BEA real activity measure"
+            "FRED CPI measured state",
+            "BLS CPI measured state",
+            "BEA structural measured state"
           ]
         },
         "healthcare_system": {
           "signals_count": 1,
           "contribution": 0.54,
           "signal_names": [
-            "VA facility access measure"
+            "VA facilities measured state"
           ]
         },
         "benefits": {
           "signals_count": 4,
-          "contribution": -0.0756,
+          "contribution": -0.0302,
           "signal_names": [
-            "FRED unemployment [secondary:employment]",
-            "BLS unemployment [secondary:employment]",
-            "Census veteran unemployment measure [secondary:employment]",
-            "VA benefits reference breadth measure"
+            "FRED unemployment measured state [secondary:employment]",
+            "BLS unemployment measured state [secondary:employment]",
+            "Census veteran unemployment measured state [secondary:employment]",
+            "VA benefits reference measured state"
           ]
         }
       }
@@ -1876,10 +1875,10 @@
       "reason_code": "baseline_initialized",
       "inventory_changed": true,
       "public_state_changed": true,
-      "today_events": 96,
-      "today_signals": 96,
-      "delta_events": 96,
-      "delta_signals": 96,
+      "today_events": 95,
+      "today_signals": 95,
+      "delta_events": 95,
+      "delta_signals": 95,
       "changed_domains_count": 0,
       "changed_domains": [],
       "overall_score_delta": null,
@@ -1897,13 +1896,13 @@
         "reason": null
       },
       "signal_replacement": {
-        "new_signals": 96,
+        "new_signals": 95,
         "removed_signals": 0,
-        "new_events": 96,
+        "new_events": 95,
         "removed_events": 0,
         "net_same_count_but_different_content": false
       },
-      "public_overall_score": 52.1
+      "public_overall_score": 52.2
     },
     "contract_integrity": {
       "public_daily_compatibility_fields_retained": [
