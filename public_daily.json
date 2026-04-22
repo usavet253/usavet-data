@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-22",
-  "generated_at": "2026-04-22T04:54:30Z",
+  "generated_at": "2026-04-22T06:14:57Z",
   "overall_score": 52.2,
   "score": 52.2,
   "status_band": "Balanced / Watch",
@@ -249,7 +249,7 @@
       "military_family_readiness": 59.6
     },
     {
-      "time": "2026-04-22T04:54:30Z",
+      "time": "2026-04-22T06:14:57Z",
       "as_of": "2026-04-22",
       "overall_score": 52.2,
       "trend": "declining",
@@ -985,8 +985,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortage:dominant_negative",
           "shortages:dominant_negative",
+          "shortage:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1517,7 +1517,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T04:54:33Z",
+      "updated_at": "2026-04-22T06:14:59Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1548,7 +1548,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T04:54:33Z",
+      "updated_at": "2026-04-22T06:14:59Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1579,7 +1579,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T04:54:33Z",
+      "updated_at": "2026-04-22T06:14:59Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1607,7 +1607,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T04:54:33Z",
+      "updated_at": "2026-04-22T06:14:59Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1870,6 +1870,53 @@
       "missing_trend_rows": 0,
       "mismatch_examples": []
     },
+    "tier_entry_integrity": {
+      "tier1_api_sources_detected": true,
+      "tier1_authoritative_sources_present": [
+        "BEA",
+        "BLS",
+        "Census",
+        "FRED",
+        "HUD",
+        "VA Benefits",
+        "VA Facilities"
+      ],
+      "missing_expected_authoritative_sources": [],
+      "api_sources_in_tier2": [],
+      "status": "clean"
+    },
+    "propagation_ratio_check": {
+      "status": "aligned",
+      "signal_name": "Census veteran outcomes",
+      "source_name": "census_veteran_outcomes",
+      "source_primary_domain": "employment",
+      "primary_domain": "employment",
+      "secondary_domain": "benefits",
+      "tertiary_domain": "military_family_readiness",
+      "primary_contribution": 0.195,
+      "secondary_contribution": 0.0682,
+      "tertiary_contribution": 0.0292,
+      "primary_to_secondary_ratio": 0.3497,
+      "primary_to_tertiary_ratio": 0.1497,
+      "expected_primary_to_secondary_ratio": 0.35,
+      "expected_primary_to_tertiary_ratio": 0.15,
+      "tolerance": 0.03
+    },
+    "dominance_check": {
+      "status": "normal",
+      "largest_signal_name": "Census veteran outcomes",
+      "largest_signal_source_name": "census_veteran_outcomes",
+      "largest_signal_source_primary_domain": "employment",
+      "largest_signal_share": 0.079,
+      "largest_signal_abs_contribution": 0.2924,
+      "total_tier2_abs_contribution": 3.7011,
+      "largest_signal_domains": [
+        "benefits",
+        "employment",
+        "military_family_readiness"
+      ],
+      "threshold": 0.5
+    },
     "daily_signal_audit_summary": {
       "signal_refresh_status": "refreshed",
       "reason_code": "baseline_initialized",
@@ -1901,6 +1948,53 @@
         "new_events": 95,
         "removed_events": 0,
         "net_same_count_but_different_content": false
+      },
+      "tier_entry_integrity": {
+        "tier1_api_sources_detected": true,
+        "tier1_authoritative_sources_present": [
+          "BEA",
+          "BLS",
+          "Census",
+          "FRED",
+          "HUD",
+          "VA Benefits",
+          "VA Facilities"
+        ],
+        "missing_expected_authoritative_sources": [],
+        "api_sources_in_tier2": [],
+        "status": "clean"
+      },
+      "propagation_ratio_check": {
+        "status": "aligned",
+        "signal_name": "Census veteran outcomes",
+        "source_name": "census_veteran_outcomes",
+        "source_primary_domain": "employment",
+        "primary_domain": "employment",
+        "secondary_domain": "benefits",
+        "tertiary_domain": "military_family_readiness",
+        "primary_contribution": 0.195,
+        "secondary_contribution": 0.0682,
+        "tertiary_contribution": 0.0292,
+        "primary_to_secondary_ratio": 0.3497,
+        "primary_to_tertiary_ratio": 0.1497,
+        "expected_primary_to_secondary_ratio": 0.35,
+        "expected_primary_to_tertiary_ratio": 0.15,
+        "tolerance": 0.03
+      },
+      "dominance_check": {
+        "status": "normal",
+        "largest_signal_name": "Census veteran outcomes",
+        "largest_signal_source_name": "census_veteran_outcomes",
+        "largest_signal_source_primary_domain": "employment",
+        "largest_signal_share": 0.079,
+        "largest_signal_abs_contribution": 0.2924,
+        "total_tier2_abs_contribution": 3.7011,
+        "largest_signal_domains": [
+          "benefits",
+          "employment",
+          "military_family_readiness"
+        ],
+        "threshold": 0.5
       },
       "public_overall_score": 52.2
     },
