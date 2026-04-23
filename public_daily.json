@@ -1,19 +1,19 @@
 {
   "as_of": "2026-04-23",
-  "generated_at": "2026-04-23T18:36:27Z",
-  "overall_score": 52.22,
-  "score": 52.22,
+  "generated_at": "2026-04-23T19:02:01Z",
+  "overall_score": 51.48,
+  "score": 51.48,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
-  "trend": "stable",
+  "trend": "declining",
   "pressure_label": "Balanced / Watch",
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 52.22,
+    "overall_score": 51.48,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
-    "trend": "stable",
+    "trend": "declining",
     "pressure_label": "Balanced / Watch",
     "source_quality": "High Confidence",
     "weights": {
@@ -25,33 +25,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.22.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 51.48.",
   "notes": [
-    "Housing score: 49.79",
-    "Cost of living score: 50.43",
+    "Housing score: 48.90",
+    "Cost of living score: 47.88",
     "Employment score: 54.43",
     "Benefits score: 49.01",
     "Healthcare system score: 56.07",
-    "Military family readiness score: 54.98",
+    "Military family readiness score: 54.59",
     "Source confidence: High Confidence"
   ],
   "domains": {
-    "housing_stability": 49.79,
+    "housing_stability": 48.9,
     "employment": 54.43,
-    "military_family_readiness": 54.98,
-    "cost_of_living": 50.43,
+    "military_family_readiness": 54.59,
+    "cost_of_living": 47.88,
     "healthcare_system": 56.07,
     "benefits": 49.01
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.22.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 51.48.",
     "notes": [
-      "Housing score: 49.79",
-      "Cost of living score: 50.43",
+      "Housing score: 48.90",
+      "Cost of living score: 47.88",
       "Employment score: 54.43",
       "Benefits score: 49.01",
       "Healthcare system score: 56.07",
-      "Military family readiness score: 54.98",
+      "Military family readiness score: 54.59",
       "Source confidence: High Confidence"
     ]
   },
@@ -261,16 +261,16 @@
       "military_family_readiness": 54.7
     },
     {
-      "time": "2026-04-23T18:36:27Z",
+      "time": "2026-04-23T19:02:01Z",
       "as_of": "2026-04-23",
-      "overall_score": 52.22,
-      "trend": "stable",
-      "housing_stability": 49.79,
-      "cost_of_living": 50.43,
+      "overall_score": 51.48,
+      "trend": "declining",
+      "housing_stability": 48.9,
+      "cost_of_living": 47.88,
       "employment": 54.43,
       "benefits": 49.01,
       "healthcare_system": 56.07,
-      "military_family_readiness": 54.98
+      "military_family_readiness": 54.59
     }
   ],
   "events": [
@@ -1630,7 +1630,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T18:36:29Z",
+      "updated_at": "2026-04-23T19:02:05Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1661,7 +1661,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T18:36:29Z",
+      "updated_at": "2026-04-23T19:02:05Z",
       "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
@@ -1691,7 +1691,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T18:36:29Z",
+      "updated_at": "2026-04-23T19:02:05Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1719,7 +1719,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T18:36:29Z",
+      "updated_at": "2026-04-23T19:02:05Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1744,11 +1744,11 @@
   "audit": {
     "tier1": {
       "signals_total": 24,
-      "total_contribution": 2.2445,
+      "total_contribution": 1.8611,
       "by_domain": {
         "housing_stability": {
           "signals_count": 4,
-          "contribution": 0.6295,
+          "contribution": 0.54,
           "signal_names": [
             "HUD statewide 2BR FMR measured state",
             "FRED CPI measured state [secondary:cost_of_living]",
@@ -1767,7 +1767,7 @@
         },
         "military_family_readiness": {
           "signals_count": 9,
-          "contribution": 0.4176,
+          "contribution": 0.3793,
           "signal_names": [
             "HUD statewide 2BR FMR measured state [secondary:housing_stability]",
             "FRED unemployment measured state [tertiary:employment]",
@@ -1782,7 +1782,7 @@
         },
         "cost_of_living": {
           "signals_count": 3,
-          "contribution": 0.2556,
+          "contribution": 0.0,
           "signal_names": [
             "FRED CPI measured state",
             "BLS CPI measured state",
@@ -2108,7 +2108,7 @@
         ],
         "threshold": 0.5
       },
-      "public_overall_score": 52.22
+      "public_overall_score": 51.48
     },
     "contract_integrity": {
       "public_daily_compatibility_fields_retained": [
