@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-23",
-  "generated_at": "2026-04-23T15:22:29Z",
+  "generated_at": "2026-04-23T17:05:07Z",
   "overall_score": 52.2,
   "score": 52.2,
   "status_band": "Balanced / Watch",
@@ -32,13 +32,13 @@
     "Employment score: 54.4",
     "Benefits score: 49.0",
     "Healthcare system score: 56.1",
-    "Military family readiness score: 54.9",
+    "Military family readiness score: 55.0",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 49.8,
     "employment": 54.4,
-    "military_family_readiness": 54.9,
+    "military_family_readiness": 55.0,
     "cost_of_living": 50.4,
     "healthcare_system": 56.1,
     "benefits": 49.0
@@ -51,7 +51,7 @@
       "Employment score: 54.4",
       "Benefits score: 49.0",
       "Healthcare system score: 56.1",
-      "Military family readiness score: 54.9",
+      "Military family readiness score: 55.0",
       "Source confidence: High Confidence"
     ]
   },
@@ -261,7 +261,7 @@
       "military_family_readiness": 54.7
     },
     {
-      "time": "2026-04-23T15:22:29Z",
+      "time": "2026-04-23T17:05:07Z",
       "as_of": "2026-04-23",
       "overall_score": 52.2,
       "trend": "stable",
@@ -270,7 +270,7 @@
       "employment": 54.4,
       "benefits": 49.0,
       "healthcare_system": 56.1,
-      "military_family_readiness": 54.9
+      "military_family_readiness": 55.0
     }
   ],
   "events": [
@@ -359,7 +359,9 @@
       "freshness": 0.85,
       "weighted_contribution": 0.2,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.8133,
+      "fallback_origin": null,
+      "screening_metadata": {},
+      "tier3_normalization_factor": 0.8467,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
@@ -467,6 +469,8 @@
       "freshness": 0.85,
       "weighted_contribution": 0.117,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.6933,
       "source_domains": [
         "airforcetimes.com",
@@ -571,9 +575,11 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.85,
-      "weighted_contribution": 0.0491,
+      "weighted_contribution": 0.0549,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.2867,
+      "fallback_origin": null,
+      "screening_metadata": {},
+      "tier3_normalization_factor": 0.32,
       "source_domains": [
         "marinecorpstimes.com"
       ],
@@ -585,7 +591,7 @@
           "military_family_readiness"
         ]
       },
-      "raw_weighted_contribution": 0.0983,
+      "raw_weighted_contribution": 0.1097,
       "tier3_scale": 0.5
     },
     {
@@ -670,6 +676,8 @@
       "freshness": 0.55,
       "weighted_contribution": 0.0401,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.32,
       "source_domains": [
         "thewarhorse.org"
@@ -780,6 +788,8 @@
       "freshness": 0.55,
       "weighted_contribution": 0.0193,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.2533,
       "source_domains": [
         "thewarhorse.org"
@@ -912,6 +922,8 @@
       "freshness": 0.55,
       "weighted_contribution": 0.0143,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.2533,
       "source_domains": [
         "thewarhorse.org"
@@ -926,6 +938,103 @@
       },
       "raw_weighted_contribution": 0.0635,
       "tier3_scale": 0.225
+    },
+    {
+      "event_id": "evt_c9f5b65151f4b730",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "title": "US Marine Corps, Navy join forces to combat insufficient amphibious fleet size",
+      "summary": "The two services will work together to boost the country's amphibious fleet size and availability after the readiness rate of its ships dropped in 2025.",
+      "url": "https://www.militarytimes.com/news/your-military/2026/04/23/us-marine-corps-navy-join-forces-to-combat-insufficient-amphibious-fleet-size/",
+      "published_at": "2026-04-23T15:27:18Z",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "readiness"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "readiness"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 2,
+            "semantic_hits": 0,
+            "object_hits": 0,
+            "score": 4,
+            "evidence": [
+              "availability:context",
+              "drop:context"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.38,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated MilitaryTimes RSS.",
+      "evidence_count": 4,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.9,
+      "weighted_contribution": 0.012,
+      "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
+      "tier3_normalization_factor": 0.8133,
+      "source_domains": [
+        "defensenews.com",
+        "marinecorpstimes.com",
+        "militarytimes.com",
+        "navytimes.com"
+      ],
+      "corroboration": {
+        "score": 100,
+        "source_count": 4,
+        "independent_sources": 4,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.012,
+      "tier3_scale": 1.0
     },
     {
       "event_id": "evt_3a9a2818050e0cda",
@@ -1003,6 +1112,8 @@
       "freshness": 0.9,
       "weighted_contribution": 0.0025,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.32,
       "source_domains": [
         "thewarhorse.org"
@@ -1095,6 +1206,8 @@
       "freshness": 0.55,
       "weighted_contribution": 0.0015,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.32,
       "source_domains": [
         "thewarhorse.org"
@@ -1190,6 +1303,8 @@
       "freshness": 0.55,
       "weighted_contribution": 0.0015,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.32,
       "source_domains": [
         "thewarhorse.org"
@@ -1281,6 +1396,8 @@
       "freshness": 0.55,
       "weighted_contribution": 0.0015,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.32,
       "source_domains": [
         "thewarhorse.org"
@@ -1394,6 +1511,8 @@
       "freshness": 0.55,
       "weighted_contribution": 0.0009,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.2867,
       "source_domains": [
         "thewarhorse.org"
@@ -1485,6 +1604,8 @@
       "freshness": 0.55,
       "weighted_contribution": 0.0009,
       "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
       "tier3_normalization_factor": 0.2867,
       "source_domains": [
         "thewarhorse.org"
@@ -1509,7 +1630,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T15:22:31Z",
+      "updated_at": "2026-04-23T17:05:10Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1540,7 +1661,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T15:22:31Z",
+      "updated_at": "2026-04-23T17:05:10Z",
       "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
@@ -1570,7 +1691,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T15:22:31Z",
+      "updated_at": "2026-04-23T17:05:10Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1598,7 +1719,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T15:22:31Z",
+      "updated_at": "2026-04-23T17:05:10Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1788,16 +1909,16 @@
       }
     },
     "tier3_used": 180,
-    "tier3_keyword_matched": 24,
-    "tier3_keyword_qualified": 24,
-    "tier3_scoring_qualified": 17,
-    "tier3_cluster_count": 12,
-    "tier3_kept": 17,
-    "tier3_qualified": 12,
-    "tier3_final_events": 12,
+    "tier3_keyword_matched": 28,
+    "tier3_keyword_qualified": 28,
+    "tier3_scoring_qualified": 21,
+    "tier3_cluster_count": 13,
+    "tier3_kept": 21,
+    "tier3_qualified": 13,
+    "tier3_final_events": 13,
     "tier3_priority_signals": 4,
     "tier3_routing_audit": {
-      "primary_accepted": 17,
+      "primary_accepted": 21,
       "primary_rejected": 7,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
@@ -1913,10 +2034,10 @@
       "reason_code": "baseline_initialized",
       "inventory_changed": true,
       "public_state_changed": true,
-      "today_events": 95,
-      "today_signals": 95,
-      "delta_events": 95,
-      "delta_signals": 95,
+      "today_events": 96,
+      "today_signals": 96,
+      "delta_events": 96,
+      "delta_signals": 96,
       "changed_domains_count": 0,
       "changed_domains": [],
       "overall_score_delta": null,
@@ -1934,9 +2055,9 @@
         "reason": null
       },
       "signal_replacement": {
-        "new_signals": 95,
+        "new_signals": 96,
         "removed_signals": 0,
-        "new_events": 95,
+        "new_events": 96,
         "removed_events": 0,
         "net_same_count_but_different_content": false
       },
