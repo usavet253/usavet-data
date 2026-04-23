@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-23",
-  "generated_at": "2026-04-23T15:14:03Z",
+  "generated_at": "2026-04-23T15:22:29Z",
   "overall_score": 52.2,
   "score": 52.2,
   "status_band": "Balanced / Watch",
@@ -261,7 +261,7 @@
       "military_family_readiness": 54.7
     },
     {
-      "time": "2026-04-23T15:14:03Z",
+      "time": "2026-04-23T15:22:29Z",
       "as_of": "2026-04-23",
       "overall_score": 52.2,
       "trend": "stable",
@@ -1509,7 +1509,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T15:14:05Z",
+      "updated_at": "2026-04-23T15:22:31Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1540,7 +1540,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T15:14:05Z",
+      "updated_at": "2026-04-23T15:22:31Z",
       "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
@@ -1570,7 +1570,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T15:14:05Z",
+      "updated_at": "2026-04-23T15:22:31Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1598,7 +1598,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T15:14:05Z",
+      "updated_at": "2026-04-23T15:22:31Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1805,8 +1805,8 @@
     "history_integrity": {
       "input_history": {
         "source": "local",
-        "input_rows": 17,
-        "output_rows": 17,
+        "input_rows": 18,
+        "output_rows": 18,
         "missing_as_of_rows": 0,
         "future_rows_filtered": 0,
         "duplicates_removed": 0,
