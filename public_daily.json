@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-22",
-  "generated_at": "2026-04-22T14:56:14Z",
+  "as_of": "2026-04-23",
+  "generated_at": "2026-04-23T15:14:03Z",
   "overall_score": 52.2,
   "score": 52.2,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
-  "trend": "declining",
+  "trend": "stable",
   "pressure_label": "Balanced / Watch",
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
@@ -13,7 +13,7 @@
     "overall_score": 52.2,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
-    "trend": "declining",
+    "trend": "stable",
     "pressure_label": "Balanced / Watch",
     "source_quality": "High Confidence",
     "weights": {
@@ -32,13 +32,13 @@
     "Employment score: 54.4",
     "Benefits score: 49.0",
     "Healthcare system score: 56.1",
-    "Military family readiness score: 54.7",
+    "Military family readiness score: 54.9",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 49.8,
     "employment": 54.4,
-    "military_family_readiness": 54.7,
+    "military_family_readiness": 54.9,
     "cost_of_living": 50.4,
     "healthcare_system": 56.1,
     "benefits": 49.0
@@ -51,7 +51,7 @@
       "Employment score: 54.4",
       "Benefits score: 49.0",
       "Healthcare system score: 56.1",
-      "Military family readiness score: 54.7",
+      "Military family readiness score: 54.9",
       "Source confidence: High Confidence"
     ]
   },
@@ -259,6 +259,18 @@
       "benefits": 49.0,
       "healthcare_system": 56.1,
       "military_family_readiness": 54.7
+    },
+    {
+      "time": "2026-04-23T15:14:03Z",
+      "as_of": "2026-04-23",
+      "overall_score": 52.2,
+      "trend": "stable",
+      "housing_stability": 49.8,
+      "cost_of_living": 50.4,
+      "employment": 54.4,
+      "benefits": 49.0,
+      "healthcare_system": 56.1,
+      "military_family_readiness": 54.9
     }
   ],
   "events": [
@@ -366,112 +378,6 @@
       "tier3_scale": 1.0
     },
     {
-      "event_id": "evt_5d6e6d6871e2bee5",
-      "source_name": "ArmyTimes",
-      "source_domain": "armytimes.com",
-      "title": "Suicide rates among military families continue to climb",
-      "summary": "The total overall number decreased, a drop that coincides with smaller overall force numbers.",
-      "url": "https://www.armytimes.com/news/your-military/2026/04/15/suicide-rates-among-military-families-continue-to-climb/",
-      "published_at": "2026-04-15T19:14:20Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "military families"
-        ]
-      },
-      "domain_routing": {
-        "accepted_primary": "military_family_readiness",
-        "accepted_domains": [
-          "military_family_readiness"
-        ],
-        "rejected_primary_candidates": [],
-        "blocked_propagation_domains": [],
-        "domain_audits": [
-          {
-            "domain": "military_family_readiness",
-            "keyword_hits": [
-              "military families"
-            ],
-            "exact_hits": 1,
-            "multiword_hits": 1,
-            "context_hits": 6,
-            "semantic_hits": 1,
-            "object_hits": 1,
-            "score": 11,
-            "evidence": [
-              "ease:context",
-              "eased:context",
-              "climb:context",
-              "climb:context",
-              "decrease:context",
-              "drop:context",
-              "suicide:semantic_pressure",
-              "suicide:event_object"
-            ],
-            "allowed": true,
-            "gate": "primary"
-          }
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "pressure",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "pressure",
-        "override": true,
-        "positive_hits": 1,
-        "negative_hits": 7,
-        "confidence": 0.94,
-        "method": "event_state_context",
-        "evidence": [
-          "suicide:pressure_state",
-          "suicide:relief_state",
-          "suicide:dominant_negative",
-          "suicide:semantic_pressure",
-          "suicide:semantic_pressure"
-        ]
-      },
-      "impact_level": "watch",
-      "confidence": "high",
-      "relevance_score": 0.56,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Contextual signal from curated ArmyTimes RSS.",
-      "evidence_count": 3,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "recent",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.72,
-      "freshness": 0.85,
-      "weighted_contribution": 0.18,
-      "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.7267,
-      "source_domains": [
-        "airforcetimes.com",
-        "armytimes.com",
-        "marinecorpstimes.com"
-      ],
-      "corroboration": {
-        "score": 95,
-        "source_count": 3,
-        "independent_sources": 3,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.2,
-      "tier3_scale": 0.9
-    },
-    {
       "event_id": "evt_a670a9bdac742da9",
       "source_name": "ArmyTimes",
       "source_domain": "armytimes.com",
@@ -548,7 +454,7 @@
         "benefits"
       ],
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
-      "evidence_count": 4,
+      "evidence_count": 3,
       "region": "national",
       "regions": [
         "national"
@@ -559,25 +465,128 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.85,
-      "weighted_contribution": 0.13,
+      "weighted_contribution": 0.117,
       "qualified_for_scoring": true,
-      "tier3_normalization_factor": 0.8133,
+      "tier3_normalization_factor": 0.6933,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
-        "marinecorpstimes.com",
-        "navytimes.com"
+        "marinecorpstimes.com"
       ],
       "corroboration": {
-        "score": 100,
-        "source_count": 4,
-        "independent_sources": 4,
+        "score": 95,
+        "source_count": 3,
+        "independent_sources": 3,
         "domains": [
           "benefits"
         ]
       },
       "raw_weighted_contribution": 0.2,
-      "tier3_scale": 0.65
+      "tier3_scale": 0.585
+    },
+    {
+      "event_id": "evt_41000bb9fde4941b",
+      "source_name": "MarineCorpsTimes",
+      "source_domain": "marinecorpstimes.com",
+      "title": "Suicide rates among military families continue to climb",
+      "summary": "The total overall number decreased, a drop that coincides with smaller overall force numbers.",
+      "url": "https://www.marinecorpstimes.com/news/your-military/2026/04/15/suicide-rates-among-military-families-continue-to-climb/",
+      "published_at": "2026-04-15T19:14:20Z",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "military families"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "military families"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 1,
+            "context_hits": 6,
+            "semantic_hits": 1,
+            "object_hits": 1,
+            "score": 11,
+            "evidence": [
+              "ease:context",
+              "eased:context",
+              "climb:context",
+              "climb:context",
+              "decrease:context",
+              "drop:context",
+              "suicide:semantic_pressure",
+              "suicide:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "pressure",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "pressure",
+        "override": true,
+        "positive_hits": 1,
+        "negative_hits": 7,
+        "confidence": 0.94,
+        "method": "event_state_context",
+        "evidence": [
+          "suicide:pressure_state",
+          "suicide:relief_state",
+          "suicide:dominant_negative",
+          "suicide:semantic_pressure",
+          "suicide:semantic_pressure"
+        ]
+      },
+      "impact_level": "watch",
+      "confidence": "high",
+      "relevance_score": 0.56,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated MarineCorpsTimes RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "recent",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.72,
+      "freshness": 0.85,
+      "weighted_contribution": 0.0491,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.2867,
+      "source_domains": [
+        "marinecorpstimes.com"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.0983,
+      "tier3_scale": 0.5
     },
     {
       "event_id": "evt_19ba4d61a163e26c",
@@ -877,8 +886,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortages:dominant_negative",
           "shortage:dominant_negative",
+          "shortages:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -917,6 +926,97 @@
       },
       "raw_weighted_contribution": 0.0635,
       "tier3_scale": 0.225
+    },
+    {
+      "event_id": "evt_3a9a2818050e0cda",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "\u2018Got to Get Fixed:\u2019 Billing Delays, Coverage Issues Still Plague Tricare Patients and Providers",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/04/TriCare-1.png?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"\" decoding=\"async\" fetchpriority=\"high\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2026/04/TriCare-1.png?w=2000&ssl=1 2000w, https://i0.wp.com/thewarhorse.org/wp-conten",
+      "url": "https://thewarhorse.org/tricare-insurance-billing-coverage-service-members-veterans/",
+      "published_at": "2026-04-23T11:00:00Z",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "family"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "family"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 1,
+            "semantic_hits": 0,
+            "object_hits": 0,
+            "score": 3,
+            "evidence": [
+              "up:context"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.38,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "south",
+      "regions": [
+        "south"
+      ],
+      "scope": "regional",
+      "source_state": "live",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.9,
+      "weighted_contribution": 0.0025,
+      "qualified_for_scoring": true,
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.005,
+      "tier3_scale": 0.5
     },
     {
       "event_id": "evt_c68c8a38c32275f7",
@@ -1409,7 +1509,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T14:56:17Z",
+      "updated_at": "2026-04-23T15:14:05Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1440,13 +1540,12 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T14:56:17Z",
-      "evidence_count": 4,
+      "updated_at": "2026-04-23T15:14:05Z",
+      "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
         "armytimes.com",
-        "marinecorpstimes.com",
-        "navytimes.com"
+        "marinecorpstimes.com"
       ],
       "event_ids": [
         "evt_a670a9bdac742da9"
@@ -1456,9 +1555,9 @@
       "scope": "national",
       "source_state": "recent",
       "corroboration": {
-        "score": 100,
-        "source_count": 4,
-        "independent_sources": 4,
+        "score": 95,
+        "source_count": 3,
+        "independent_sources": 3,
         "domains": [
           "benefits"
         ]
@@ -1471,7 +1570,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T14:56:17Z",
+      "updated_at": "2026-04-23T15:14:05Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1499,7 +1598,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-22T14:56:17Z",
+      "updated_at": "2026-04-23T15:14:05Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1689,17 +1788,17 @@
       }
     },
     "tier3_used": 180,
-    "tier3_keyword_matched": 27,
-    "tier3_keyword_qualified": 27,
-    "tier3_scoring_qualified": 19,
-    "tier3_cluster_count": 11,
-    "tier3_kept": 19,
-    "tier3_qualified": 11,
-    "tier3_final_events": 11,
+    "tier3_keyword_matched": 24,
+    "tier3_keyword_qualified": 24,
+    "tier3_scoring_qualified": 17,
+    "tier3_cluster_count": 12,
+    "tier3_kept": 17,
+    "tier3_qualified": 12,
+    "tier3_final_events": 12,
     "tier3_priority_signals": 4,
     "tier3_routing_audit": {
-      "primary_accepted": 19,
-      "primary_rejected": 8,
+      "primary_accepted": 17,
+      "primary_rejected": 7,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
     },
@@ -1733,8 +1832,8 @@
         "utc_legacy_context_cutoff_date": "2026-04-20"
       },
       "final_history": {
-        "rows_total": 17,
-        "utc_z_rows": 17,
+        "rows_total": 18,
+        "utc_z_rows": 18,
         "non_utc_time_rows_remaining": 0,
         "time_parse_failures": 0,
         "future_as_of_rows_present": 0,
@@ -1757,7 +1856,7 @@
       }
     },
     "trend_integrity": {
-      "rows_total": 17,
+      "rows_total": 18,
       "stored_trend_mismatches": 0,
       "missing_trend_rows": 0,
       "mismatch_examples": []
@@ -1814,10 +1913,10 @@
       "reason_code": "baseline_initialized",
       "inventory_changed": true,
       "public_state_changed": true,
-      "today_events": 94,
-      "today_signals": 94,
-      "delta_events": 94,
-      "delta_signals": 94,
+      "today_events": 95,
+      "today_signals": 95,
+      "delta_events": 95,
+      "delta_signals": 95,
       "changed_domains_count": 0,
       "changed_domains": [],
       "overall_score_delta": null,
@@ -1835,9 +1934,9 @@
         "reason": null
       },
       "signal_replacement": {
-        "new_signals": 94,
+        "new_signals": 95,
         "removed_signals": 0,
-        "new_events": 94,
+        "new_events": 95,
         "removed_events": 0,
         "net_same_count_but_different_content": false
       },
