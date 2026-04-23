@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-23",
-  "generated_at": "2026-04-23T19:53:25Z",
+  "generated_at": "2026-04-23T20:11:35Z",
   "overall_score": 52.22,
   "score": 52.22,
   "status_band": "Balanced / Watch",
@@ -261,7 +261,7 @@
       "military_family_readiness": 54.7
     },
     {
-      "time": "2026-04-23T19:53:25Z",
+      "time": "2026-04-23T20:11:35Z",
       "as_of": "2026-04-23",
       "overall_score": 52.22,
       "trend": "stable",
@@ -896,8 +896,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortages:dominant_negative",
           "shortage:dominant_negative",
+          "shortages:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1630,7 +1630,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T19:53:29Z",
+      "updated_at": "2026-04-23T20:11:38Z",
       "evidence_count": 4,
       "source_domains": [
         "airforcetimes.com",
@@ -1661,7 +1661,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T19:53:29Z",
+      "updated_at": "2026-04-23T20:11:38Z",
       "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
@@ -1691,7 +1691,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T19:53:29Z",
+      "updated_at": "2026-04-23T20:11:38Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1719,7 +1719,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-23T19:53:29Z",
+      "updated_at": "2026-04-23T20:11:38Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
