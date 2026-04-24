@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-24",
-  "generated_at": "2026-04-24T06:31:20Z",
+  "generated_at": "2026-04-24T06:48:03Z",
   "overall_score": 52.23,
   "score": 52.23,
   "status_band": "Balanced / Watch",
@@ -273,7 +273,7 @@
       "military_family_readiness": 54.98
     },
     {
-      "time": "2026-04-24T06:31:20Z",
+      "time": "2026-04-24T06:48:03Z",
       "as_of": "2026-04-24",
       "overall_score": 52.23,
       "trend": "stable",
@@ -1535,7 +1535,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T06:31:24Z",
+      "updated_at": "2026-04-24T06:48:05Z",
       "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
@@ -1565,7 +1565,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T06:31:24Z",
+      "updated_at": "2026-04-24T06:48:05Z",
       "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
@@ -1595,7 +1595,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T06:31:24Z",
+      "updated_at": "2026-04-24T06:48:05Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1623,7 +1623,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T06:31:24Z",
+      "updated_at": "2026-04-24T06:48:05Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1968,7 +1968,7 @@
         "fresh_for_operational_day": 83,
         "valid_for_operational_day": 83,
         "revalidated_this_run": 83,
-        "same_day_validation_continuity": 0,
+        "same_day_validation_continuity": 83,
         "carried_stable": 12,
         "carried_changed": 0,
         "intensified": 0,
@@ -2006,7 +2006,7 @@
         "fresh_for_operational_day_signals": 83,
         "valid_for_operational_day_signals": 83,
         "revalidated_this_run_signals": 83,
-        "same_day_validation_continuity_signals": 0,
+        "same_day_validation_continuity_signals": 83,
         "existing_identity_new_observations": 82,
         "carried_stable_signals": 12,
         "carried_changed_signals": 0,
@@ -2025,7 +2025,7 @@
           "fresh_for_operational_day": 83,
           "valid_for_operational_day": 83,
           "revalidated_this_run": 83,
-          "same_day_validation_continuity": 0,
+          "same_day_validation_continuity": 83,
           "carried_stable": 12,
           "carried_changed": 0,
           "intensified": 0,
