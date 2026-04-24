@@ -1,8 +1,8 @@
 {
   "as_of": "2026-04-24",
-  "generated_at": "2026-04-24T15:46:48Z",
-  "overall_score": 52.24,
-  "score": 52.24,
+  "generated_at": "2026-04-24T19:39:30Z",
+  "overall_score": 52.23,
+  "score": 52.23,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "stable",
@@ -10,7 +10,7 @@
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 52.24,
+    "overall_score": 52.23,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
@@ -25,33 +25,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.24.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.23.",
   "notes": [
     "Housing score: 49.79",
     "Cost of living score: 50.51",
     "Employment score: 54.43",
-    "Benefits score: 48.95",
+    "Benefits score: 48.86",
     "Healthcare system score: 56.07",
-    "Military family readiness score: 55.07",
+    "Military family readiness score: 55.12",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 49.79,
     "employment": 54.43,
-    "military_family_readiness": 55.07,
+    "military_family_readiness": 55.12,
     "cost_of_living": 50.51,
     "healthcare_system": 56.07,
-    "benefits": 48.95
+    "benefits": 48.86
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.24.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.23.",
     "notes": [
       "Housing score: 49.79",
       "Cost of living score: 50.51",
       "Employment score: 54.43",
-      "Benefits score: 48.95",
+      "Benefits score: 48.86",
       "Healthcare system score: 56.07",
-      "Military family readiness score: 55.07",
+      "Military family readiness score: 55.12",
       "Source confidence: High Confidence"
     ]
   },
@@ -273,26 +273,26 @@
       "military_family_readiness": 54.98
     },
     {
-      "time": "2026-04-24T15:46:48Z",
+      "time": "2026-04-24T19:39:30Z",
       "as_of": "2026-04-24",
-      "overall_score": 52.24,
+      "overall_score": 52.23,
       "trend": "stable",
       "housing_stability": 49.79,
       "cost_of_living": 50.51,
       "employment": 54.43,
-      "benefits": 48.95,
+      "benefits": 48.86,
       "healthcare_system": 56.07,
-      "military_family_readiness": 55.07
+      "military_family_readiness": 55.12
     }
   ],
   "events": [
     {
-      "event_id": "evt_4ca1ca0b4597a645",
-      "source_name": "ArmyTimes",
-      "source_domain": "armytimes.com",
+      "event_id": "evt_e9770ff253a58f3e",
+      "source_name": "AirForceTimes",
+      "source_domain": "airforcetimes.com",
       "title": "How chest-thumping rhetoric erodes service member safety",
       "summary": "Defense Secretary Pete Hegseth's brash rhetoric is profoundly destabilizing for actively-serving military families, this military spouse argues.",
-      "url": "https://www.armytimes.com/opinion/2026/04/17/how-chest-thumping-rhetoric-erodes-service-member-safety/",
+      "url": "https://www.airforcetimes.com/opinion/2026/04/17/how-chest-thumping-rhetoric-erodes-service-member-safety/",
       "published_at": "2026-04-17T16:00:34Z",
       "domains": [
         "military_family_readiness"
@@ -357,115 +357,6 @@
       "drivers": [
         "military_family_readiness"
       ],
-      "forecast": "Contextual signal from curated ArmyTimes RSS.",
-      "evidence_count": 3,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "recent",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.72,
-      "freshness": 0.85,
-      "weighted_contribution": 0.18,
-      "qualified_for_scoring": true,
-      "fallback_origin": null,
-      "screening_metadata": {},
-      "tier3_normalization_factor": 0.7267,
-      "source_domains": [
-        "airforcetimes.com",
-        "armytimes.com",
-        "marinecorpstimes.com"
-      ],
-      "corroboration": {
-        "score": 95,
-        "source_count": 3,
-        "independent_sources": 3,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.2,
-      "tier3_scale": 0.9
-    },
-    {
-      "event_id": "evt_a95c96f015987f78",
-      "source_name": "AirForceTimes",
-      "source_domain": "airforcetimes.com",
-      "title": "Advocates press for preventive programs, VA benefits for struggling vets",
-      "summary": "Representatives from specialty courts and veterans\u2019 legal organizations pressed Congress Wednesday for expansion of the Veterans Treatment Courts system.",
-      "url": "https://www.airforcetimes.com/news/pentagon-congress/2026/04/16/advocates-press-for-preventive-programs-va-benefits-for-struggling-vets/",
-      "published_at": "2026-04-16T19:32:35Z",
-      "domains": [
-        "benefits"
-      ],
-      "domain_keyword_hits": {
-        "benefits": [
-          "benefits"
-        ]
-      },
-      "domain_routing": {
-        "accepted_primary": "benefits",
-        "accepted_domains": [
-          "benefits"
-        ],
-        "rejected_primary_candidates": [],
-        "blocked_propagation_domains": [],
-        "domain_audits": [
-          {
-            "domain": "benefits",
-            "keyword_hits": [
-              "benefits"
-            ],
-            "exact_hits": 1,
-            "multiword_hits": 0,
-            "context_hits": 2,
-            "semantic_hits": 2,
-            "object_hits": 2,
-            "score": 8,
-            "evidence": [
-              "preventive:context",
-              "struggling:context",
-              "struggling vets:semantic_pressure",
-              "preventive programs:semantic_support",
-              "preventive programs:event_object",
-              "benefits:event_object"
-            ],
-            "allowed": true,
-            "gate": "primary"
-          }
-        ]
-      },
-      "primary_domain": "benefits",
-      "event_type": "context_signal",
-      "direction": "support",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "support",
-        "override": true,
-        "positive_hits": 9,
-        "negative_hits": 2,
-        "confidence": 0.94,
-        "method": "event_state_context",
-        "evidence": [
-          "preventive programs:support_state",
-          "benefits:support_state",
-          "preventive programs:dominant_positive",
-          "struggling vets:semantic_pressure",
-          "preventive programs:semantic_support",
-          "struggling vets:semantic_pressure",
-          "preventive programs:semantic_support",
-          "treatment courts:semantic_support"
-        ]
-      },
-      "impact_level": "watch",
-      "confidence": "high",
-      "relevance_score": 0.56,
-      "drivers": [
-        "benefits"
-      ],
       "forecast": "Contextual signal from curated AirForceTimes RSS.",
       "evidence_count": 2,
       "region": "national",
@@ -478,11 +369,11 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.85,
-      "weighted_contribution": 0.0738,
+      "weighted_contribution": 0.14,
       "qualified_for_scoring": true,
       "fallback_origin": null,
       "screening_metadata": {},
-      "tier3_normalization_factor": 0.4733,
+      "tier3_normalization_factor": 0.5067,
       "source_domains": [
         "airforcetimes.com",
         "marinecorpstimes.com"
@@ -492,11 +383,11 @@
         "source_count": 2,
         "independent_sources": 2,
         "domains": [
-          "benefits"
+          "military_family_readiness"
         ]
       },
-      "raw_weighted_contribution": 0.1622,
-      "tier3_scale": 0.455
+      "raw_weighted_contribution": 0.2,
+      "tier3_scale": 0.7
     },
     {
       "event_id": "evt_19ba4d61a163e26c",
@@ -800,8 +691,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortages:dominant_negative",
           "shortage:dominant_negative",
+          "shortages:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1433,99 +1324,6 @@
       "tier3_scale": 0.325
     },
     {
-      "event_id": "evt_c3ec4de9a4b9495e",
-      "source_name": "TheWarHorse",
-      "source_domain": "thewarhorse.org",
-      "title": "A Look Back at Our Most Impactful News Stories of 2025",
-      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/News-1.webp?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"Illustration by Hrisanthi Pickett\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/News-1.webp?w=2000&ssl=1 2000w, https://i0.wp.com/th",
-      "url": "https://thewarhorse.org/top-news-stories-2025/",
-      "published_at": "2025-12-29T18:33:00Z",
-      "domains": [
-        "benefits"
-      ],
-      "domain_keyword_hits": {
-        "benefits": [
-          "benefits"
-        ]
-      },
-      "domain_routing": {
-        "accepted_primary": "benefits",
-        "accepted_domains": [
-          "benefits"
-        ],
-        "rejected_primary_candidates": [],
-        "blocked_propagation_domains": [],
-        "domain_audits": [
-          {
-            "domain": "benefits",
-            "keyword_hits": [
-              "benefits"
-            ],
-            "exact_hits": 1,
-            "multiword_hits": 0,
-            "context_hits": 0,
-            "semantic_hits": 0,
-            "object_hits": 1,
-            "score": 3,
-            "evidence": [
-              "benefits:event_object"
-            ],
-            "allowed": true,
-            "gate": "primary"
-          }
-        ]
-      },
-      "primary_domain": "benefits",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.45,
-        "method": "event_state_no_evidence",
-        "evidence": []
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "benefits"
-      ],
-      "forecast": "Contextual signal from curated TheWarHorse RSS.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "reference",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.76,
-      "freshness": 0.55,
-      "weighted_contribution": 0.0009,
-      "qualified_for_scoring": true,
-      "fallback_origin": null,
-      "screening_metadata": {},
-      "tier3_normalization_factor": 0.2867,
-      "source_domains": [
-        "thewarhorse.org"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "benefits"
-        ]
-      },
-      "raw_weighted_contribution": 0.0027,
-      "tier3_scale": 0.325
-    },
-    {
       "event_id": "evt_927a764f6af1d72e",
       "source_name": "DefenseNews",
       "source_domain": "defensenews.com",
@@ -1618,54 +1416,117 @@
       },
       "raw_weighted_contribution": 0.0035,
       "tier3_scale": 0.225
+    },
+    {
+      "event_id": "evt_c3ec4de9a4b9495e",
+      "source_name": "TheWarHorse",
+      "source_domain": "thewarhorse.org",
+      "title": "A Look Back at Our Most Impactful News Stories of 2025",
+      "summary": "<figure><img width=\"1024\" height=\"576\" src=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/News-1.webp?fit=1024%2C576&ssl=1\" class=\"attachment-rss-image-size size-rss-image-size wp-post-image\" alt=\"Illustration by Hrisanthi Pickett\" decoding=\"async\" loading=\"lazy\" srcset=\"https://i0.wp.com/thewarhorse.org/wp-content/uploads/2025/12/News-1.webp?w=2000&ssl=1 2000w, https://i0.wp.com/th",
+      "url": "https://thewarhorse.org/top-news-stories-2025/",
+      "published_at": "2025-12-29T18:33:00Z",
+      "domains": [
+        "benefits"
+      ],
+      "domain_keyword_hits": {
+        "benefits": [
+          "benefits"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "benefits",
+        "accepted_domains": [
+          "benefits"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "benefits",
+            "keyword_hits": [
+              "benefits"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 0,
+            "semantic_hits": 0,
+            "object_hits": 1,
+            "score": 3,
+            "evidence": [
+              "benefits:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
+      "primary_domain": "benefits",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.38,
+      "drivers": [
+        "benefits"
+      ],
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "reference",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.76,
+      "freshness": 0.55,
+      "weighted_contribution": 0.0005,
+      "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
+      "tier3_normalization_factor": 0.2533,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "benefits"
+        ]
+      },
+      "raw_weighted_contribution": 0.0024,
+      "tier3_scale": 0.225
     }
   ],
   "priority_signals": [
     {
-      "signal_id": "ps_171c75129d1024ac",
+      "signal_id": "ps_9ec91408e8d2be55",
       "domain_key": "military_family_readiness",
       "headline": "How chest-thumping rhetoric erodes service member safety",
-      "forecast": "Contextual signal from curated ArmyTimes RSS.",
-      "severity": "watch",
-      "confidence": "high",
-      "updated_at": "2026-04-24T15:46:52Z",
-      "evidence_count": 3,
-      "source_domains": [
-        "airforcetimes.com",
-        "armytimes.com",
-        "marinecorpstimes.com"
-      ],
-      "event_ids": [
-        "evt_4ca1ca0b4597a645"
-      ],
-      "signal_type": "contextual",
-      "region": "national",
-      "scope": "national",
-      "source_state": "recent",
-      "corroboration": {
-        "score": 95,
-        "source_count": 3,
-        "independent_sources": 3,
-        "domains": [
-          "military_family_readiness"
-        ]
-      }
-    },
-    {
-      "signal_id": "ps_35a536d11e8acd0a",
-      "domain_key": "benefits",
-      "headline": "Advocates press for preventive programs, VA benefits for struggling vets",
       "forecast": "Contextual signal from curated AirForceTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T15:46:52Z",
+      "updated_at": "2026-04-24T19:39:33Z",
       "evidence_count": 2,
       "source_domains": [
         "airforcetimes.com",
         "marinecorpstimes.com"
       ],
       "event_ids": [
-        "evt_a95c96f015987f78"
+        "evt_e9770ff253a58f3e"
       ],
       "signal_type": "contextual",
       "region": "national",
@@ -1676,7 +1537,7 @@
         "source_count": 2,
         "independent_sources": 2,
         "domains": [
-          "benefits"
+          "military_family_readiness"
         ]
       }
     },
@@ -1687,7 +1548,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T15:46:52Z",
+      "updated_at": "2026-04-24T19:39:33Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1715,7 +1576,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T15:46:52Z",
+      "updated_at": "2026-04-24T19:39:33Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1743,7 +1604,7 @@
       "forecast": "Contextual signal from curated DefenseNews RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-24T15:46:52Z",
+      "updated_at": "2026-04-24T19:39:33Z",
       "evidence_count": 1,
       "source_domains": [
         "defensenews.com"
@@ -1761,6 +1622,34 @@
         "independent_sources": 1,
         "domains": [
           "cost_of_living"
+        ]
+      }
+    },
+    {
+      "signal_id": "ps_934c8d63b200669a",
+      "domain_key": "benefits",
+      "headline": "A Look Back at Our Most Impactful News Stories of 2025",
+      "forecast": "Contextual signal from curated TheWarHorse RSS.",
+      "severity": "watch",
+      "confidence": "low",
+      "updated_at": "2026-04-24T19:39:33Z",
+      "evidence_count": 1,
+      "source_domains": [
+        "thewarhorse.org"
+      ],
+      "event_ids": [
+        "evt_c3ec4de9a4b9495e"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "reference",
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "benefits"
         ]
       }
     }
@@ -1933,16 +1822,16 @@
       }
     },
     "tier3_used": 180,
-    "tier3_keyword_matched": 26,
-    "tier3_keyword_qualified": 26,
-    "tier3_scoring_qualified": 19,
-    "tier3_cluster_count": 13,
-    "tier3_kept": 19,
-    "tier3_qualified": 13,
-    "tier3_final_events": 13,
+    "tier3_keyword_matched": 23,
+    "tier3_keyword_qualified": 23,
+    "tier3_scoring_qualified": 16,
+    "tier3_cluster_count": 12,
+    "tier3_kept": 16,
+    "tier3_qualified": 12,
+    "tier3_final_events": 12,
     "tier3_priority_signals": 5,
     "tier3_routing_audit": {
-      "primary_accepted": 19,
+      "primary_accepted": 16,
       "primary_rejected": 7,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
@@ -2058,42 +1947,42 @@
       "reason_code": "public_state_changed",
       "inventory_changed": true,
       "public_state_changed": true,
-      "today_events": 96,
-      "today_signals": 96,
-      "delta_events": 0,
-      "delta_signals": 0,
-      "new_signals": 84,
-      "new_signal_observations": 84,
-      "new_signal_identities": 3,
-      "new_identity_observations": 3,
-      "existing_identity_new_observations": 81,
-      "new_keyword_signals": 84,
+      "today_events": 95,
+      "today_signals": 95,
+      "delta_events": -1,
+      "delta_signals": -1,
+      "new_signals": 83,
+      "new_signal_observations": 83,
+      "new_signal_identities": 5,
+      "new_identity_observations": 5,
+      "existing_identity_new_observations": 78,
+      "new_keyword_signals": 83,
       "repeated_keyword_signals": 0,
       "retained_reference_signals": 12,
-      "carried_signals": 93,
+      "carried_signals": 90,
       "carried_stable_signals": 12,
       "carried_changed_signals": 0,
       "changed_signals": 0,
       "intensified_signals": 0,
       "weakened_signals": 0,
-      "removed_signals": 3,
+      "removed_signals": 6,
       "inventory_states": {
-        "new": 84,
-        "new_signal_observations": 84,
-        "new_signal_identities": 3,
-        "new_keyword_signals": 84,
+        "new": 83,
+        "new_signal_observations": 83,
+        "new_signal_identities": 5,
+        "new_keyword_signals": 83,
         "repeated_keyword_signals": 0,
-        "existing_identity_new_observations": 81,
+        "existing_identity_new_observations": 78,
         "retained_reference": 12,
-        "fresh_for_operational_day": 84,
-        "valid_for_operational_day": 84,
-        "revalidated_this_run": 84,
-        "same_day_validation_continuity": 80,
+        "fresh_for_operational_day": 83,
+        "valid_for_operational_day": 83,
+        "revalidated_this_run": 83,
+        "same_day_validation_continuity": 79,
         "carried_stable": 12,
         "carried_changed": 0,
         "intensified": 0,
         "weakened": 0,
-        "removed": 3
+        "removed": 6
       },
       "changed_signal_details": [],
       "changed_domains_count": 3,
@@ -2102,13 +1991,13 @@
         "cost_of_living",
         "benefits"
       ],
-      "overall_score_delta": 0.02,
+      "overall_score_delta": 0.01,
       "trend_changed": false,
       "band_changed": false,
       "tier_contribution_deltas": {
         "tier_1": 0.0,
         "tier_2": 0.0,
-        "tier_3": 0.0122
+        "tier_3": 0.0078
       },
       "changed_tiers": [
         "tier_3"
@@ -2119,43 +2008,43 @@
         "reason": null
       },
       "signal_replacement": {
-        "new_signals": 84,
-        "new_signal_observations": 84,
-        "new_signal_identities": 3,
-        "new_keyword_signals": 84,
+        "new_signals": 83,
+        "new_signal_observations": 83,
+        "new_signal_identities": 5,
+        "new_keyword_signals": 83,
         "repeated_keyword_signals": 0,
         "retained_reference_signals": 12,
-        "fresh_for_operational_day_signals": 84,
-        "valid_for_operational_day_signals": 84,
-        "revalidated_this_run_signals": 84,
-        "same_day_validation_continuity_signals": 80,
-        "existing_identity_new_observations": 81,
+        "fresh_for_operational_day_signals": 83,
+        "valid_for_operational_day_signals": 83,
+        "revalidated_this_run_signals": 83,
+        "same_day_validation_continuity_signals": 79,
+        "existing_identity_new_observations": 78,
         "carried_stable_signals": 12,
         "carried_changed_signals": 0,
         "changed_signals": 0,
         "intensified_signals": 0,
         "weakened_signals": 0,
-        "removed_signals": 3,
+        "removed_signals": 6,
         "inventory_states": {
-          "new": 84,
-          "new_signal_observations": 84,
-          "new_signal_identities": 3,
-          "new_keyword_signals": 84,
+          "new": 83,
+          "new_signal_observations": 83,
+          "new_signal_identities": 5,
+          "new_keyword_signals": 83,
           "repeated_keyword_signals": 0,
-          "existing_identity_new_observations": 81,
+          "existing_identity_new_observations": 78,
           "retained_reference": 12,
-          "fresh_for_operational_day": 84,
-          "valid_for_operational_day": 84,
-          "revalidated_this_run": 84,
-          "same_day_validation_continuity": 80,
+          "fresh_for_operational_day": 83,
+          "valid_for_operational_day": 83,
+          "revalidated_this_run": 83,
+          "same_day_validation_continuity": 79,
           "carried_stable": 12,
           "carried_changed": 0,
           "intensified": 0,
           "weakened": 0,
-          "removed": 3
+          "removed": 6
         },
         "new_events": 2,
-        "removed_events": 2,
+        "removed_events": 3,
         "net_same_count_but_different_content": true
       },
       "tier_entry_integrity": {
@@ -2205,7 +2094,7 @@
         ],
         "threshold": 0.5
       },
-      "public_overall_score": 52.24
+      "public_overall_score": 52.23
     },
     "contract_integrity": {
       "public_daily_compatibility_fields_retained": [
