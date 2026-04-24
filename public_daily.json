@@ -1,8 +1,8 @@
 {
   "as_of": "2026-04-24",
-  "generated_at": "2026-04-24T06:48:03Z",
-  "overall_score": 52.23,
-  "score": 52.23,
+  "generated_at": "2026-04-24T14:50:06Z",
+  "overall_score": 52.25,
+  "score": 52.25,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "stable",
@@ -10,7 +10,7 @@
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 52.23,
+    "overall_score": 52.25,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
@@ -25,33 +25,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.23.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.25.",
   "notes": [
     "Housing score: 49.79",
     "Cost of living score: 50.43",
     "Employment score: 54.43",
     "Benefits score: 49.01",
-    "Healthcare system score: 56.07",
-    "Military family readiness score: 55.07",
+    "Healthcare system score: 56.16",
+    "Military family readiness score: 55.15",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 49.79,
     "employment": 54.43,
-    "military_family_readiness": 55.07,
+    "military_family_readiness": 55.15,
     "cost_of_living": 50.43,
-    "healthcare_system": 56.07,
+    "healthcare_system": 56.16,
     "benefits": 49.01
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.23.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.25.",
     "notes": [
       "Housing score: 49.79",
       "Cost of living score: 50.43",
       "Employment score: 54.43",
       "Benefits score: 49.01",
-      "Healthcare system score: 56.07",
-      "Military family readiness score: 55.07",
+      "Healthcare system score: 56.16",
+      "Military family readiness score: 55.15",
       "Source confidence: High Confidence"
     ]
   },
@@ -273,16 +273,16 @@
       "military_family_readiness": 54.98
     },
     {
-      "time": "2026-04-24T06:48:03Z",
+      "time": "2026-04-24T14:50:06Z",
       "as_of": "2026-04-24",
-      "overall_score": 52.23,
+      "overall_score": 52.25,
       "trend": "stable",
       "housing_stability": 49.79,
       "cost_of_living": 50.43,
       "employment": 54.43,
       "benefits": 49.01,
-      "healthcare_system": 56.07,
-      "military_family_readiness": 55.07
+      "healthcare_system": 56.16,
+      "military_family_readiness": 55.15
     }
   ],
   "events": [
@@ -691,7 +691,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0193,
+      "weighted_contribution": 0.0252,
       "qualified_for_scoring": true,
       "fallback_origin": null,
       "screening_metadata": {},
@@ -708,7 +708,7 @@
         ]
       },
       "raw_weighted_contribution": 0.0593,
-      "tier3_scale": 0.325
+      "tier3_scale": 0.425
     },
     {
       "event_id": "evt_be5bbe9595f1aa4d",
@@ -1033,6 +1033,302 @@
       },
       "raw_weighted_contribution": 0.005,
       "tier3_scale": 0.5
+    },
+    {
+      "event_id": "evt_05c15129547dbbed",
+      "source_name": "Fox News",
+      "source_domain": "foxnews.com",
+      "title": "Zero-calorie sweeteners may impact future generations, study warns",
+      "summary": "The Fox News Lifestyle Newsletter brings you trending stories on family, travel, food, neighbors helping neighbors, pets, autos, military veterans, heroes, faith and American values.",
+      "url": "https://www.foxnews.com/lifestyle/zero-calorie-sweeteners-may-impact-future-generations-study-warns",
+      "published_at": "2026-04-23T14:35:03Z",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "domain_keyword_hits": {
+        "military_family_readiness": [
+          "family"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "military_family_readiness",
+            "keyword_hits": [
+              "family"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 2,
+            "semantic_hits": 0,
+            "object_hits": 0,
+            "score": 4,
+            "evidence": [
+              "help:context",
+              "helping:context"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
+      "primary_domain": "military_family_readiness",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.38,
+      "drivers": [
+        "military_family_readiness"
+      ],
+      "forecast": "Fallback contextual signal from NewsAPI after Tier 1 screen.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.68,
+      "freshness": 0.9,
+      "weighted_contribution": 0.0022,
+      "qualified_for_scoring": true,
+      "fallback_origin": "newsapi",
+      "screening_metadata": {
+        "accepted_primary_domain": "military_family_readiness",
+        "accepted_domains": [
+          "military_family_readiness"
+        ],
+        "matches": {
+          "military_family_readiness": [
+            "family"
+          ]
+        },
+        "qualified_matches": {
+          "military_family_readiness": [
+            "family"
+          ]
+        },
+        "routing": {
+          "accepted_primary": "military_family_readiness",
+          "accepted_domains": [
+            "military_family_readiness"
+          ],
+          "rejected_primary_candidates": [],
+          "blocked_propagation_domains": [],
+          "domain_audits": [
+            {
+              "domain": "military_family_readiness",
+              "keyword_hits": [
+                "family"
+              ],
+              "exact_hits": 1,
+              "multiword_hits": 0,
+              "context_hits": 2,
+              "semantic_hits": 0,
+              "object_hits": 0,
+              "score": 4,
+              "evidence": [
+                "help:context",
+                "helping:context"
+              ],
+              "allowed": true,
+              "gate": "primary"
+            }
+          ]
+        },
+        "direction_validation": {
+          "source_default": "neutral",
+          "validated": "neutral",
+          "override": false,
+          "positive_hits": 0,
+          "negative_hits": 0,
+          "confidence": 0.45,
+          "method": "event_state_no_evidence",
+          "evidence": []
+        },
+        "relevance": 0.28,
+        "failure_reason": "newsapi_discovery_not_tier1_authority"
+      },
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "foxnews.com"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "military_family_readiness"
+        ]
+      },
+      "raw_weighted_contribution": 0.0045,
+      "tier3_scale": 0.5
+    },
+    {
+      "event_id": "evt_08315c3ced40c7c5",
+      "source_name": "Fox News",
+      "source_domain": "foxnews.com",
+      "title": "READ: Dr. Oz puts all 50 governors on notice over billions lost to Medicaid fraud",
+      "summary": "Dr. Mehmet Oz directs all 50 governors to root out Medicaid fraud, giving states 10 days to identify and remove noncompliant healthcare providers.",
+      "url": "https://www.foxnews.com/politics/read-dr-oz-puts-all-50-governors-notice-over-billions-lost-medicaid-fraud",
+      "published_at": "2026-04-23T14:24:53Z",
+      "domains": [
+        "healthcare_system"
+      ],
+      "domain_keyword_hits": {
+        "healthcare_system": [
+          "healthcare"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "healthcare_system",
+        "accepted_domains": [
+          "healthcare_system"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "healthcare_system",
+            "keyword_hits": [
+              "healthcare"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 0,
+            "semantic_hits": 0,
+            "object_hits": 1,
+            "score": 3,
+            "evidence": [
+              "care:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
+      "primary_domain": "healthcare_system",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.38,
+      "drivers": [
+        "healthcare_system"
+      ],
+      "forecast": "Fallback contextual signal from NewsAPI after Tier 1 screen.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.68,
+      "freshness": 0.9,
+      "weighted_contribution": 0.0019,
+      "qualified_for_scoring": true,
+      "fallback_origin": "newsapi",
+      "screening_metadata": {
+        "accepted_primary_domain": "healthcare_system",
+        "accepted_domains": [
+          "healthcare_system"
+        ],
+        "matches": {
+          "healthcare_system": [
+            "healthcare"
+          ]
+        },
+        "qualified_matches": {
+          "healthcare_system": [
+            "healthcare"
+          ]
+        },
+        "routing": {
+          "accepted_primary": "healthcare_system",
+          "accepted_domains": [
+            "healthcare_system"
+          ],
+          "rejected_primary_candidates": [],
+          "blocked_propagation_domains": [],
+          "domain_audits": [
+            {
+              "domain": "healthcare_system",
+              "keyword_hits": [
+                "healthcare"
+              ],
+              "exact_hits": 1,
+              "multiword_hits": 0,
+              "context_hits": 0,
+              "semantic_hits": 0,
+              "object_hits": 1,
+              "score": 3,
+              "evidence": [
+                "care:event_object"
+              ],
+              "allowed": true,
+              "gate": "primary"
+            }
+          ]
+        },
+        "direction_validation": {
+          "source_default": "neutral",
+          "validated": "neutral",
+          "override": false,
+          "positive_hits": 0,
+          "negative_hits": 0,
+          "confidence": 0.45,
+          "method": "event_state_no_evidence",
+          "evidence": []
+        },
+        "relevance": 0.28,
+        "failure_reason": "newsapi_discovery_not_tier1_authority"
+      },
+      "tier3_normalization_factor": 0.32,
+      "source_domains": [
+        "foxnews.com"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "healthcare_system"
+        ]
+      },
+      "raw_weighted_contribution": 0.0045,
+      "tier3_scale": 0.425
     },
     {
       "event_id": "evt_c68c8a38c32275f7",
@@ -1414,7 +1710,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0009,
+      "weighted_contribution": 0.0011,
       "qualified_for_scoring": true,
       "fallback_origin": null,
       "screening_metadata": {},
@@ -1431,7 +1727,7 @@
         ]
       },
       "raw_weighted_contribution": 0.0027,
-      "tier3_scale": 0.325
+      "tier3_scale": 0.425
     },
     {
       "event_id": "evt_c3ec4de9a4b9495e",
@@ -1535,7 +1831,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T06:48:05Z",
+      "updated_at": "2026-04-24T14:50:09Z",
       "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
@@ -1565,7 +1861,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T06:48:05Z",
+      "updated_at": "2026-04-24T14:50:09Z",
       "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
@@ -1595,7 +1891,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T06:48:05Z",
+      "updated_at": "2026-04-24T14:50:09Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1623,7 +1919,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T06:48:05Z",
+      "updated_at": "2026-04-24T14:50:09Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1812,17 +2108,17 @@
         }
       }
     },
-    "tier3_used": 180,
-    "tier3_keyword_matched": 26,
-    "tier3_keyword_qualified": 26,
-    "tier3_scoring_qualified": 19,
-    "tier3_cluster_count": 12,
-    "tier3_kept": 19,
-    "tier3_qualified": 12,
-    "tier3_final_events": 12,
+    "tier3_used": 182,
+    "tier3_keyword_matched": 28,
+    "tier3_keyword_qualified": 28,
+    "tier3_scoring_qualified": 21,
+    "tier3_cluster_count": 14,
+    "tier3_kept": 21,
+    "tier3_qualified": 14,
+    "tier3_final_events": 14,
     "tier3_priority_signals": 4,
     "tier3_routing_audit": {
-      "primary_accepted": 19,
+      "primary_accepted": 21,
       "primary_rejected": 7,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
@@ -1938,55 +2234,56 @@
       "reason_code": "public_state_changed",
       "inventory_changed": true,
       "public_state_changed": true,
-      "today_events": 95,
-      "today_signals": 95,
-      "delta_events": -1,
-      "delta_signals": -1,
-      "new_signals": 83,
-      "new_signal_observations": 83,
-      "new_signal_identities": 1,
-      "new_identity_observations": 1,
-      "existing_identity_new_observations": 82,
-      "new_keyword_signals": 83,
+      "today_events": 97,
+      "today_signals": 97,
+      "delta_events": 1,
+      "delta_signals": 1,
+      "new_signals": 85,
+      "new_signal_observations": 85,
+      "new_signal_identities": 5,
+      "new_identity_observations": 5,
+      "existing_identity_new_observations": 80,
+      "new_keyword_signals": 85,
       "repeated_keyword_signals": 0,
       "retained_reference_signals": 12,
-      "carried_signals": 94,
+      "carried_signals": 92,
       "carried_stable_signals": 12,
       "carried_changed_signals": 0,
       "changed_signals": 0,
       "intensified_signals": 0,
       "weakened_signals": 0,
-      "removed_signals": 2,
+      "removed_signals": 4,
       "inventory_states": {
-        "new": 83,
-        "new_signal_observations": 83,
-        "new_signal_identities": 1,
-        "new_keyword_signals": 83,
+        "new": 85,
+        "new_signal_observations": 85,
+        "new_signal_identities": 5,
+        "new_keyword_signals": 85,
         "repeated_keyword_signals": 0,
-        "existing_identity_new_observations": 82,
+        "existing_identity_new_observations": 80,
         "retained_reference": 12,
-        "fresh_for_operational_day": 83,
-        "valid_for_operational_day": 83,
-        "revalidated_this_run": 83,
-        "same_day_validation_continuity": 83,
+        "fresh_for_operational_day": 85,
+        "valid_for_operational_day": 85,
+        "revalidated_this_run": 85,
+        "same_day_validation_continuity": 81,
         "carried_stable": 12,
         "carried_changed": 0,
         "intensified": 0,
         "weakened": 0,
-        "removed": 2
+        "removed": 4
       },
       "changed_signal_details": [],
-      "changed_domains_count": 1,
+      "changed_domains_count": 2,
       "changed_domains": [
-        "military_family_readiness"
+        "military_family_readiness",
+        "healthcare_system"
       ],
-      "overall_score_delta": 0.01,
+      "overall_score_delta": 0.03,
       "trend_changed": false,
       "band_changed": false,
       "tier_contribution_deltas": {
         "tier_1": 0.0,
         "tier_2": 0.0,
-        "tier_3": 0.0096
+        "tier_3": 0.0258
       },
       "changed_tiers": [
         "tier_3"
@@ -1997,42 +2294,42 @@
         "reason": null
       },
       "signal_replacement": {
-        "new_signals": 83,
-        "new_signal_observations": 83,
-        "new_signal_identities": 1,
-        "new_keyword_signals": 83,
+        "new_signals": 85,
+        "new_signal_observations": 85,
+        "new_signal_identities": 5,
+        "new_keyword_signals": 85,
         "repeated_keyword_signals": 0,
         "retained_reference_signals": 12,
-        "fresh_for_operational_day_signals": 83,
-        "valid_for_operational_day_signals": 83,
-        "revalidated_this_run_signals": 83,
-        "same_day_validation_continuity_signals": 83,
-        "existing_identity_new_observations": 82,
+        "fresh_for_operational_day_signals": 85,
+        "valid_for_operational_day_signals": 85,
+        "revalidated_this_run_signals": 85,
+        "same_day_validation_continuity_signals": 81,
+        "existing_identity_new_observations": 80,
         "carried_stable_signals": 12,
         "carried_changed_signals": 0,
         "changed_signals": 0,
         "intensified_signals": 0,
         "weakened_signals": 0,
-        "removed_signals": 2,
+        "removed_signals": 4,
         "inventory_states": {
-          "new": 83,
-          "new_signal_observations": 83,
-          "new_signal_identities": 1,
-          "new_keyword_signals": 83,
+          "new": 85,
+          "new_signal_observations": 85,
+          "new_signal_identities": 5,
+          "new_keyword_signals": 85,
           "repeated_keyword_signals": 0,
-          "existing_identity_new_observations": 82,
+          "existing_identity_new_observations": 80,
           "retained_reference": 12,
-          "fresh_for_operational_day": 83,
-          "valid_for_operational_day": 83,
-          "revalidated_this_run": 83,
-          "same_day_validation_continuity": 83,
+          "fresh_for_operational_day": 85,
+          "valid_for_operational_day": 85,
+          "revalidated_this_run": 85,
+          "same_day_validation_continuity": 81,
           "carried_stable": 12,
           "carried_changed": 0,
           "intensified": 0,
           "weakened": 0,
-          "removed": 2
+          "removed": 4
         },
-        "new_events": 0,
+        "new_events": 2,
         "removed_events": 1,
         "net_same_count_but_different_content": true
       },
@@ -2083,7 +2380,7 @@
         ],
         "threshold": 0.5
       },
-      "public_overall_score": 52.23
+      "public_overall_score": 52.25
     },
     "contract_integrity": {
       "public_daily_compatibility_fields_retained": [
