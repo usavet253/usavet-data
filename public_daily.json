@@ -1,8 +1,8 @@
 {
   "as_of": "2026-04-24",
-  "generated_at": "2026-04-24T19:52:59Z",
-  "overall_score": 52.23,
-  "score": 52.23,
+  "generated_at": "2026-04-24T20:32:56Z",
+  "overall_score": 52.24,
+  "score": 52.24,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "stable",
@@ -10,7 +10,7 @@
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 52.23,
+    "overall_score": 52.24,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
@@ -25,33 +25,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.23.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.24.",
   "notes": [
     "Housing score: 49.79",
     "Cost of living score: 50.51",
     "Employment score: 54.43",
     "Benefits score: 48.86",
     "Healthcare system score: 56.07",
-    "Military family readiness score: 55.12",
+    "Military family readiness score: 55.22",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 49.79,
     "employment": 54.43,
-    "military_family_readiness": 55.12,
+    "military_family_readiness": 55.22,
     "cost_of_living": 50.51,
     "healthcare_system": 56.07,
     "benefits": 48.86
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.23.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.24.",
     "notes": [
       "Housing score: 49.79",
       "Cost of living score: 50.51",
       "Employment score: 54.43",
       "Benefits score: 48.86",
       "Healthcare system score: 56.07",
-      "Military family readiness score: 55.12",
+      "Military family readiness score: 55.22",
       "Source confidence: High Confidence"
     ]
   },
@@ -273,16 +273,16 @@
       "military_family_readiness": 54.98
     },
     {
-      "time": "2026-04-24T19:52:59Z",
+      "time": "2026-04-24T20:32:56Z",
       "as_of": "2026-04-24",
-      "overall_score": 52.23,
+      "overall_score": 52.24,
       "trend": "stable",
       "housing_stability": 49.79,
       "cost_of_living": 50.51,
       "employment": 54.43,
       "benefits": 48.86,
       "healthcare_system": 56.07,
-      "military_family_readiness": 55.12
+      "military_family_readiness": 55.22
     }
   ],
   "events": [
@@ -358,7 +358,7 @@
         "military_family_readiness"
       ],
       "forecast": "Contextual signal from curated AirForceTimes RSS.",
-      "evidence_count": 2,
+      "evidence_count": 1,
       "region": "national",
       "regions": [
         "national"
@@ -369,25 +369,24 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.85,
-      "weighted_contribution": 0.14,
+      "weighted_contribution": 0.064,
       "qualified_for_scoring": true,
       "fallback_origin": null,
       "screening_metadata": {},
-      "tier3_normalization_factor": 0.5067,
+      "tier3_normalization_factor": 0.2867,
       "source_domains": [
-        "airforcetimes.com",
-        "marinecorpstimes.com"
+        "airforcetimes.com"
       ],
       "corroboration": {
-        "score": 75,
-        "source_count": 2,
-        "independent_sources": 2,
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
         "domains": [
           "military_family_readiness"
         ]
       },
-      "raw_weighted_contribution": 0.2,
-      "tier3_scale": 0.7
+      "raw_weighted_contribution": 0.1281,
+      "tier3_scale": 0.5
     },
     {
       "event_id": "evt_19ba4d61a163e26c",
@@ -691,8 +690,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortages:dominant_negative",
           "shortage:dominant_negative",
+          "shortages:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1519,11 +1518,10 @@
       "forecast": "Contextual signal from curated AirForceTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T19:53:02Z",
-      "evidence_count": 2,
+      "updated_at": "2026-04-24T20:32:59Z",
+      "evidence_count": 1,
       "source_domains": [
-        "airforcetimes.com",
-        "marinecorpstimes.com"
+        "airforcetimes.com"
       ],
       "event_ids": [
         "evt_e9770ff253a58f3e"
@@ -1533,9 +1531,9 @@
       "scope": "national",
       "source_state": "recent",
       "corroboration": {
-        "score": 75,
-        "source_count": 2,
-        "independent_sources": 2,
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
         "domains": [
           "military_family_readiness"
         ]
@@ -1548,7 +1546,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T19:53:02Z",
+      "updated_at": "2026-04-24T20:32:59Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1576,7 +1574,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T19:53:02Z",
+      "updated_at": "2026-04-24T20:32:59Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1604,7 +1602,7 @@
       "forecast": "Contextual signal from curated DefenseNews RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-24T19:53:02Z",
+      "updated_at": "2026-04-24T20:32:59Z",
       "evidence_count": 1,
       "source_domains": [
         "defensenews.com"
@@ -1632,7 +1630,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-24T19:53:02Z",
+      "updated_at": "2026-04-24T20:32:59Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1822,17 +1820,17 @@
       }
     },
     "tier3_used": 180,
-    "tier3_keyword_matched": 23,
-    "tier3_keyword_qualified": 23,
-    "tier3_scoring_qualified": 16,
+    "tier3_keyword_matched": 21,
+    "tier3_keyword_qualified": 21,
+    "tier3_scoring_qualified": 15,
     "tier3_cluster_count": 12,
-    "tier3_kept": 16,
+    "tier3_kept": 15,
     "tier3_qualified": 12,
     "tier3_final_events": 12,
     "tier3_priority_signals": 5,
     "tier3_routing_audit": {
-      "primary_accepted": 16,
-      "primary_rejected": 7,
+      "primary_accepted": 15,
+      "primary_rejected": 6,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
     },
@@ -1977,7 +1975,7 @@
         "fresh_for_operational_day": 83,
         "valid_for_operational_day": 83,
         "revalidated_this_run": 83,
-        "same_day_validation_continuity": 81,
+        "same_day_validation_continuity": 82,
         "carried_stable": 12,
         "carried_changed": 0,
         "intensified": 0,
@@ -1991,13 +1989,13 @@
         "cost_of_living",
         "benefits"
       ],
-      "overall_score_delta": 0.01,
+      "overall_score_delta": 0.02,
       "trend_changed": false,
       "band_changed": false,
       "tier_contribution_deltas": {
         "tier_1": 0.0,
         "tier_2": 0.0,
-        "tier_3": 0.0078
+        "tier_3": 0.0175
       },
       "changed_tiers": [
         "tier_3"
@@ -2017,7 +2015,7 @@
         "fresh_for_operational_day_signals": 83,
         "valid_for_operational_day_signals": 83,
         "revalidated_this_run_signals": 83,
-        "same_day_validation_continuity_signals": 81,
+        "same_day_validation_continuity_signals": 82,
         "existing_identity_new_observations": 80,
         "carried_stable_signals": 12,
         "carried_changed_signals": 0,
@@ -2036,7 +2034,7 @@
           "fresh_for_operational_day": 83,
           "valid_for_operational_day": 83,
           "revalidated_this_run": 83,
-          "same_day_validation_continuity": 81,
+          "same_day_validation_continuity": 82,
           "carried_stable": 12,
           "carried_changed": 0,
           "intensified": 0,
@@ -2094,7 +2092,7 @@
         ],
         "threshold": 0.5
       },
-      "public_overall_score": 52.23
+      "public_overall_score": 52.24
     },
     "contract_integrity": {
       "public_daily_compatibility_fields_retained": [

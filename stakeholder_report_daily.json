@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "report_type": "daily_stakeholder_intelligence_report",
   "status": "Draft Generated",
   "as_of": "2026-04-24",
-  "generated_at": "2026-04-24T19:52:59Z",
+  "generated_at": "2026-04-24T20:32:56Z",
   "operational_timezone": "UTC",
   "system_condition": "Elevated",
-  "overall_score": 52.23,
+  "overall_score": 52.24,
   "status_band": "Balanced / Watch",
   "trend": "stable",
   "source_quality": "High Confidence",
@@ -60,7 +60,7 @@
     }
   },
   "summary": {
-    "headline": "USAVET daily stakeholder intelligence report for 2026-04-24: Balanced / Watch condition, stable trend, 52.23 composite score.",
+    "headline": "USAVET daily stakeholder intelligence report for 2026-04-24: Balanced / Watch condition, stable trend, 52.24 composite score.",
     "system_condition": "Elevated",
     "top_pressure_domains": [
       "Benefits",
@@ -69,7 +69,7 @@
     ],
     "today_signals": 95,
     "today_events": 95,
-    "overall_delta": 0.01
+    "overall_delta": 0.02
   },
   "sections": [
     {
@@ -83,16 +83,16 @@
       ],
       "answers": [
         {
-          "answer": "The USAVET composite index is 52.23, placing the system in the Balanced / Watch band with a stable trend.",
+          "answer": "Today, the system is in the Balanced / Watch band with a stable trend and a composite score of 52.24. The most important development is that daily stakeholder reporting is active and populated from the current public, audit, and history outputs.",
           "metrics": {
-            "overall_score": 52.23,
+            "overall_score": 52.24,
             "band": "Balanced / Watch",
             "trend": "stable",
-            "overall_delta": 0.01
+            "overall_delta": 0.02
           }
         },
         {
-          "answer": "Current stakeholder condition is classified as Elevated. The lowest-scoring domains are Benefits, Housing Stability, Cost of Living.",
+          "answer": "The current stakeholder condition is Elevated, with the lowest-scoring pressure watch domains identified as Benefits, Housing Stability, Cost of Living.",
           "metrics": {
             "system_condition": "Elevated",
             "top_pressure_domains": [
@@ -100,6 +100,70 @@
               "Housing Stability",
               "Cost of Living"
             ]
+          }
+        },
+        {
+          "answer": "This matters now because the system is stable at the composite level but still showing pressure in specific domains, especially Benefits, Housing Stability, Cost of Living, which should be reviewed before external interpretation.",
+          "metrics": {
+            "status_band": "Balanced / Watch",
+            "top_pressure_domains": [
+              "Benefits",
+              "Housing Stability",
+              "Cost of Living"
+            ]
+          }
+        },
+        {
+          "answer": "Stakeholders should review the Elevated condition, the stable trend, and the current pressure watch domains before approving this report for public or partner-facing use.",
+          "metrics": {
+            "human_review_required": true,
+            "trend": "stable",
+            "system_condition": "Elevated"
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What are the most important developments today?",
+          "answer": "Today, the system is in the Balanced / Watch band with a stable trend and a composite score of 52.24. The most important development is that daily stakeholder reporting is active and populated from the current public, audit, and history outputs.",
+          "metrics": {
+            "overall_score": 52.24,
+            "band": "Balanced / Watch",
+            "trend": "stable",
+            "overall_delta": 0.02
+          }
+        },
+        {
+          "question": "What is the current system condition?",
+          "answer": "The current stakeholder condition is Elevated, with the lowest-scoring pressure watch domains identified as Benefits, Housing Stability, Cost of Living.",
+          "metrics": {
+            "system_condition": "Elevated",
+            "top_pressure_domains": [
+              "Benefits",
+              "Housing Stability",
+              "Cost of Living"
+            ]
+          }
+        },
+        {
+          "question": "Why does this matter now?",
+          "answer": "This matters now because the system is stable at the composite level but still showing pressure in specific domains, especially Benefits, Housing Stability, Cost of Living, which should be reviewed before external interpretation.",
+          "metrics": {
+            "status_band": "Balanced / Watch",
+            "top_pressure_domains": [
+              "Benefits",
+              "Housing Stability",
+              "Cost of Living"
+            ]
+          }
+        },
+        {
+          "question": "What requires stakeholder attention?",
+          "answer": "Stakeholders should review the Elevated condition, the stable trend, and the current pressure watch domains before approving this report for public or partner-facing use.",
+          "metrics": {
+            "human_review_required": true,
+            "trend": "stable",
+            "system_condition": "Elevated"
           }
         }
       ]
@@ -114,11 +178,32 @@
       ],
       "answers": [
         {
-          "answer": "The report advances early-signal awareness and system pressure detection for veterans and military families.",
+          "answer": "This report advances USAVET's mission objective of early-signal awareness, system pressure detection, and decision support for veterans and military families.",
           "metrics": {}
         },
         {
-          "answer": "The daily structure keeps USAVET.org focused on public trust, USAVET.ai focused on intelligence interpretation, and USAVET.app focused on operational review.",
+          "answer": "The report treats veterans and military families as equally important populations by monitoring pressure across benefits, housing, employment, healthcare, cost of living, and military family readiness rather than limiting attention to a single population or service channel.",
+          "metrics": {}
+        },
+        {
+          "answer": "The report aligns with stakeholder priorities by converting daily system outputs into a public-safe, reviewable artifact that supports prevention, transparency, coordination, and timely human review.",
+          "metrics": {}
+        }
+      ],
+      "qa": [
+        {
+          "question": "What mission objective is being advanced?",
+          "answer": "This report advances USAVET's mission objective of early-signal awareness, system pressure detection, and decision support for veterans and military families.",
+          "metrics": {}
+        },
+        {
+          "question": "How does this support veterans and military families equally?",
+          "answer": "The report treats veterans and military families as equally important populations by monitoring pressure across benefits, housing, employment, healthcare, cost of living, and military family readiness rather than limiting attention to a single population or service channel.",
+          "metrics": {}
+        },
+        {
+          "question": "How does this align with stakeholder priorities?",
+          "answer": "The report aligns with stakeholder priorities by converting daily system outputs into a public-safe, reviewable artifact that supports prevention, transparency, coordination, and timely human review.",
           "metrics": {}
         }
       ]
@@ -133,17 +218,31 @@
       ],
       "answers": [
         {
-          "answer": "The engine recorded 95 total signals and 95 total events for the UTC operational day.",
+          "answer": "Today, the engine completed a daily run with status 'success' and refresh status 'refreshed'.",
           "metrics": {
-            "today_signals": 95,
-            "today_events": 95,
-            "delta_signals": -1,
-            "delta_events": -1
+            "run_status": {
+              "engine_run": "success",
+              "signal_refresh_status": "refreshed",
+              "reason_code": "public_state_changed",
+              "inventory_changed": true,
+              "public_state_changed": true,
+              "baseline_initialized": false
+            }
           }
         },
         {
-          "answer": "The broadest domain representation today is Military Family Readiness.",
+          "answer": "The engine recorded 95 total signals and 95 total events for the UTC operational day.",
           "metrics": {
+            "today_signals": 95,
+            "today_events": 95
+          }
+        },
+        {
+          "answer": "Compared with the prior available history, signal count changed by -1 and event count changed by -1. The broadest current domain representation is Military Family Readiness.",
+          "metrics": {
+            "delta_signals": -1,
+            "delta_events": -1,
+            "dominant_domain": "Military Family Readiness",
             "domain_rows": [
               {
                 "domain_key": "housing_stability",
@@ -176,7 +275,126 @@
               {
                 "domain_key": "military_family_readiness",
                 "domain_name": "Military Family Readiness",
-                "score": 55.12,
+                "score": 55.22,
+                "status_band": "Balanced / Watch",
+                "signals": 42,
+                "events": 42,
+                "observed_signals": 38,
+                "retained_reference_signals": 4,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 2,
+                "delta_signals": -1
+              },
+              {
+                "domain_key": "cost_of_living",
+                "domain_name": "Cost of Living",
+                "score": 50.51,
+                "status_band": "Balanced / Watch",
+                "signals": 10,
+                "events": 10,
+                "observed_signals": 8,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 1
+              },
+              {
+                "domain_key": "healthcare_system",
+                "domain_name": "Healthcare System",
+                "score": 56.07,
+                "status_band": "Balanced / Watch",
+                "signals": 7,
+                "events": 7,
+                "observed_signals": 7,
+                "retained_reference_signals": 0,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 0
+              },
+              {
+                "domain_key": "benefits",
+                "domain_name": "Benefits",
+                "score": 48.86,
+                "status_band": "Elevated Pressure",
+                "signals": 13,
+                "events": 13,
+                "observed_signals": 11,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 2,
+                "delta_signals": -1
+              }
+            ]
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What happened today?",
+          "answer": "Today, the engine completed a daily run with status 'success' and refresh status 'refreshed'.",
+          "metrics": {
+            "run_status": {
+              "engine_run": "success",
+              "signal_refresh_status": "refreshed",
+              "reason_code": "public_state_changed",
+              "inventory_changed": true,
+              "public_state_changed": true,
+              "baseline_initialized": false
+            }
+          }
+        },
+        {
+          "question": "How many signals and events were observed?",
+          "answer": "The engine recorded 95 total signals and 95 total events for the UTC operational day.",
+          "metrics": {
+            "today_signals": 95,
+            "today_events": 95
+          }
+        },
+        {
+          "question": "What changed compared with the prior available history?",
+          "answer": "Compared with the prior available history, signal count changed by -1 and event count changed by -1. The broadest current domain representation is Military Family Readiness.",
+          "metrics": {
+            "delta_signals": -1,
+            "delta_events": -1,
+            "dominant_domain": "Military Family Readiness",
+            "domain_rows": [
+              {
+                "domain_key": "housing_stability",
+                "domain_name": "Housing Stability",
+                "score": 49.79,
+                "status_band": "Elevated Pressure",
+                "signals": 15,
+                "events": 15,
+                "observed_signals": 13,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 0
+              },
+              {
+                "domain_key": "employment",
+                "domain_name": "Employment",
+                "score": 54.43,
+                "status_band": "Balanced / Watch",
+                "signals": 8,
+                "events": 8,
+                "observed_signals": 6,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 0
+              },
+              {
+                "domain_key": "military_family_readiness",
+                "domain_name": "Military Family Readiness",
+                "score": 55.22,
                 "status_band": "Balanced / Watch",
                 "signals": 42,
                 "events": 42,
@@ -244,11 +462,36 @@
       ],
       "answers": [
         {
-          "answer": "The system converted daily public, historical, and audit outputs into a structured stakeholder view that can be displayed consistently across all three USAVET properties.",
+          "answer": "The system converted daily public, historical, and audit outputs into a structured stakeholder view that can be displayed consistently across USAVET.org, USAVET.ai, and USAVET.app.",
           "metrics": {}
         },
         {
-          "answer": "Success for the daily cycle is defined as synchronized generation, validation, publication of public-safe outputs, and preservation of human review boundaries.",
+          "answer": "The safe reportable impact is that stakeholders now have a synchronized daily view of current system condition, pressure domains, signal counts, and review priorities without exposing private audit mechanics or protected scoring logic.",
+          "metrics": {
+            "safe_for_public_data_repo": true
+          }
+        },
+        {
+          "answer": "Success for this reporting period is synchronized generation, validation, publication of public-safe outputs, and preservation of human review boundaries before external use.",
+          "metrics": {}
+        }
+      ],
+      "qa": [
+        {
+          "question": "What changed because of the system today?",
+          "answer": "The system converted daily public, historical, and audit outputs into a structured stakeholder view that can be displayed consistently across USAVET.org, USAVET.ai, and USAVET.app.",
+          "metrics": {}
+        },
+        {
+          "question": "What impact can be safely reported from current data?",
+          "answer": "The safe reportable impact is that stakeholders now have a synchronized daily view of current system condition, pressure domains, signal counts, and review priorities without exposing private audit mechanics or protected scoring logic.",
+          "metrics": {
+            "safe_for_public_data_repo": true
+          }
+        },
+        {
+          "question": "What does success look like for this reporting period?",
+          "answer": "Success for this reporting period is synchronized generation, validation, publication of public-safe outputs, and preservation of human review boundaries before external use.",
           "metrics": {}
         }
       ]
@@ -263,10 +506,11 @@
       ],
       "answers": [
         {
-          "answer": "Priority signals currently available for stakeholder review: 5. Public contextual events available: 12.",
+          "answer": "The emerging pattern is concentrated attention around Military Family Readiness, with 5 priority signals and 12 public contextual events available for stakeholder review.",
           "metrics": {
             "priority_signal_count": 5,
             "event_count": 12,
+            "dominant_domain": "Military Family Readiness",
             "priority_signals": [
               {
                 "signal_id": "ps_9ec91408e8d2be55",
@@ -275,11 +519,10 @@
                 "forecast": "Contextual signal from curated AirForceTimes RSS.",
                 "severity": "watch",
                 "confidence": "high",
-                "updated_at": "2026-04-24T19:53:02Z",
-                "evidence_count": 2,
+                "updated_at": "2026-04-24T20:32:59Z",
+                "evidence_count": 1,
                 "source_domains": [
-                  "airforcetimes.com",
-                  "marinecorpstimes.com"
+                  "airforcetimes.com"
                 ],
                 "event_ids": [
                   "evt_e9770ff253a58f3e"
@@ -289,9 +532,9 @@
                 "scope": "national",
                 "source_state": "recent",
                 "corroboration": {
-                  "score": 75,
-                  "source_count": 2,
-                  "independent_sources": 2,
+                  "score": 55,
+                  "source_count": 1,
+                  "independent_sources": 1,
                   "domains": [
                     "military_family_readiness"
                   ]
@@ -304,7 +547,7 @@
                 "forecast": "Contextual signal from curated TheWarHorse RSS.",
                 "severity": "watch",
                 "confidence": "high",
-                "updated_at": "2026-04-24T19:53:02Z",
+                "updated_at": "2026-04-24T20:32:59Z",
                 "evidence_count": 1,
                 "source_domains": [
                   "thewarhorse.org"
@@ -332,7 +575,7 @@
                 "forecast": "Contextual signal from curated TheWarHorse RSS.",
                 "severity": "watch",
                 "confidence": "high",
-                "updated_at": "2026-04-24T19:53:02Z",
+                "updated_at": "2026-04-24T20:32:59Z",
                 "evidence_count": 1,
                 "source_domains": [
                   "thewarhorse.org"
@@ -360,7 +603,7 @@
                 "forecast": "Contextual signal from curated DefenseNews RSS.",
                 "severity": "watch",
                 "confidence": "low",
-                "updated_at": "2026-04-24T19:53:02Z",
+                "updated_at": "2026-04-24T20:32:59Z",
                 "evidence_count": 1,
                 "source_domains": [
                   "defensenews.com"
@@ -388,7 +631,7 @@
                 "forecast": "Contextual signal from curated TheWarHorse RSS.",
                 "severity": "watch",
                 "confidence": "low",
-                "updated_at": "2026-04-24T19:53:02Z",
+                "updated_at": "2026-04-24T20:32:59Z",
                 "evidence_count": 1,
                 "source_domains": [
                   "thewarhorse.org"
@@ -413,28 +656,7 @@
           }
         },
         {
-          "answer": "Changed domains detected today: Military Family Readiness, Cost of Living, Benefits.",
-          "metrics": {
-            "changed_domains": [
-              "Military Family Readiness",
-              "Cost of Living",
-              "Benefits"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "number": 6,
-      "title": "Risk and System Pressure Assessment",
-      "questions": [
-        "What risks are emerging?",
-        "Which domains show the most pressure?",
-        "What could happen if pressure remains unaddressed?"
-      ],
-      "answers": [
-        {
-          "answer": "The primary pressure watch areas are Benefits, Housing Stability, Cost of Living. These domains should receive first-pass human review before external interpretation.",
+          "answer": "Pressure is currently building or requiring review in Benefits, Housing Stability, Cost of Living based on the current domain score distribution.",
           "metrics": {
             "pressure_domains": [
               {
@@ -483,8 +705,384 @@
           }
         },
         {
-          "answer": "Risk language remains signal-based and non-deterministic: the engine identifies pressure conditions and review priorities; it does not make eligibility, service, or policy decisions.",
-          "metrics": {}
+          "answer": "The audit layer reports 83 new signal observations, 12 retained reference signals, 0 intensified signals, 0 weakened signals, and 4 removed signals. Changed domains detected today: Military Family Readiness, Cost of Living, Benefits.",
+          "metrics": {
+            "changed_domains": [
+              "Military Family Readiness",
+              "Cost of Living",
+              "Benefits"
+            ],
+            "new_signal_observations": 83,
+            "retained_reference_signals": 12,
+            "intensified_signals": 0,
+            "weakened_signals": 0,
+            "removed_signals": 4
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What patterns are emerging?",
+          "answer": "The emerging pattern is concentrated attention around Military Family Readiness, with 5 priority signals and 12 public contextual events available for stakeholder review.",
+          "metrics": {
+            "priority_signal_count": 5,
+            "event_count": 12,
+            "dominant_domain": "Military Family Readiness",
+            "priority_signals": [
+              {
+                "signal_id": "ps_9ec91408e8d2be55",
+                "domain_key": "military_family_readiness",
+                "headline": "How chest-thumping rhetoric erodes service member safety",
+                "forecast": "Contextual signal from curated AirForceTimes RSS.",
+                "severity": "watch",
+                "confidence": "high",
+                "updated_at": "2026-04-24T20:32:59Z",
+                "evidence_count": 1,
+                "source_domains": [
+                  "airforcetimes.com"
+                ],
+                "event_ids": [
+                  "evt_e9770ff253a58f3e"
+                ],
+                "signal_type": "contextual",
+                "region": "national",
+                "scope": "national",
+                "source_state": "recent",
+                "corroboration": {
+                  "score": 55,
+                  "source_count": 1,
+                  "independent_sources": 1,
+                  "domains": [
+                    "military_family_readiness"
+                  ]
+                }
+              },
+              {
+                "signal_id": "ps_9e2e420e9421e179",
+                "domain_key": "healthcare_system",
+                "headline": "Mental Health Issues Plague New Moms in the Military. The Pentagon Is Supposed to Help",
+                "forecast": "Contextual signal from curated TheWarHorse RSS.",
+                "severity": "watch",
+                "confidence": "high",
+                "updated_at": "2026-04-24T20:32:59Z",
+                "evidence_count": 1,
+                "source_domains": [
+                  "thewarhorse.org"
+                ],
+                "event_ids": [
+                  "evt_824460898423d201"
+                ],
+                "signal_type": "contextual",
+                "region": "national",
+                "scope": "national",
+                "source_state": "reference",
+                "corroboration": {
+                  "score": 55,
+                  "source_count": 1,
+                  "independent_sources": 1,
+                  "domains": [
+                    "healthcare_system"
+                  ]
+                }
+              },
+              {
+                "signal_id": "ps_a38394527c5879c4",
+                "domain_key": "employment",
+                "headline": "\u2018I Felt Like a Factory Worker.\u2019 Why VA Psychologists Are Burning Out",
+                "forecast": "Contextual signal from curated TheWarHorse RSS.",
+                "severity": "watch",
+                "confidence": "high",
+                "updated_at": "2026-04-24T20:32:59Z",
+                "evidence_count": 1,
+                "source_domains": [
+                  "thewarhorse.org"
+                ],
+                "event_ids": [
+                  "evt_be5bbe9595f1aa4d"
+                ],
+                "signal_type": "contextual",
+                "region": "national",
+                "scope": "national",
+                "source_state": "reference",
+                "corroboration": {
+                  "score": 55,
+                  "source_count": 1,
+                  "independent_sources": 1,
+                  "domains": [
+                    "employment"
+                  ]
+                }
+              },
+              {
+                "signal_id": "ps_909126c4976a6004",
+                "domain_key": "cost_of_living",
+                "headline": "Italy forgoes $14 billion deficit spending on defense amid wobbling economy",
+                "forecast": "Contextual signal from curated DefenseNews RSS.",
+                "severity": "watch",
+                "confidence": "low",
+                "updated_at": "2026-04-24T20:32:59Z",
+                "evidence_count": 1,
+                "source_domains": [
+                  "defensenews.com"
+                ],
+                "event_ids": [
+                  "evt_927a764f6af1d72e"
+                ],
+                "signal_type": "contextual",
+                "region": "national",
+                "scope": "national",
+                "source_state": "live",
+                "corroboration": {
+                  "score": 55,
+                  "source_count": 1,
+                  "independent_sources": 1,
+                  "domains": [
+                    "cost_of_living"
+                  ]
+                }
+              },
+              {
+                "signal_id": "ps_934c8d63b200669a",
+                "domain_key": "benefits",
+                "headline": "A Look Back at Our Most Impactful News Stories of 2025",
+                "forecast": "Contextual signal from curated TheWarHorse RSS.",
+                "severity": "watch",
+                "confidence": "low",
+                "updated_at": "2026-04-24T20:32:59Z",
+                "evidence_count": 1,
+                "source_domains": [
+                  "thewarhorse.org"
+                ],
+                "event_ids": [
+                  "evt_c3ec4de9a4b9495e"
+                ],
+                "signal_type": "contextual",
+                "region": "national",
+                "scope": "national",
+                "source_state": "reference",
+                "corroboration": {
+                  "score": 55,
+                  "source_count": 1,
+                  "independent_sources": 1,
+                  "domains": [
+                    "benefits"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "question": "Where is pressure building?",
+          "answer": "Pressure is currently building or requiring review in Benefits, Housing Stability, Cost of Living based on the current domain score distribution.",
+          "metrics": {
+            "pressure_domains": [
+              {
+                "domain_key": "benefits",
+                "domain_name": "Benefits",
+                "score": 48.86,
+                "status_band": "Elevated Pressure",
+                "signals": 13,
+                "events": 13,
+                "observed_signals": 11,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 2,
+                "delta_signals": -1
+              },
+              {
+                "domain_key": "housing_stability",
+                "domain_name": "Housing Stability",
+                "score": 49.79,
+                "status_band": "Elevated Pressure",
+                "signals": 15,
+                "events": 15,
+                "observed_signals": 13,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 0
+              },
+              {
+                "domain_key": "cost_of_living",
+                "domain_name": "Cost of Living",
+                "score": 50.51,
+                "status_band": "Balanced / Watch",
+                "signals": 10,
+                "events": 10,
+                "observed_signals": 8,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 1
+              }
+            ]
+          }
+        },
+        {
+          "question": "Are signals isolated, repeating, increasing, or decreasing?",
+          "answer": "The audit layer reports 83 new signal observations, 12 retained reference signals, 0 intensified signals, 0 weakened signals, and 4 removed signals. Changed domains detected today: Military Family Readiness, Cost of Living, Benefits.",
+          "metrics": {
+            "changed_domains": [
+              "Military Family Readiness",
+              "Cost of Living",
+              "Benefits"
+            ],
+            "new_signal_observations": 83,
+            "retained_reference_signals": 12,
+            "intensified_signals": 0,
+            "weakened_signals": 0,
+            "removed_signals": 4
+          }
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Risk and System Pressure Assessment",
+      "questions": [
+        "What risks are emerging?",
+        "Which domains show the most pressure?",
+        "What could happen if pressure remains unaddressed?"
+      ],
+      "answers": [
+        {
+          "answer": "Emerging risk is concentrated in the pressure watch areas Benefits, Housing Stability, Cost of Living, where lower domain scores indicate the need for first-pass human review before external interpretation.",
+          "metrics": {
+            "pressure_domains": [
+              {
+                "domain_key": "benefits",
+                "domain_name": "Benefits",
+                "score": 48.86,
+                "status_band": "Elevated Pressure",
+                "signals": 13,
+                "events": 13,
+                "observed_signals": 11,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 2,
+                "delta_signals": -1
+              },
+              {
+                "domain_key": "housing_stability",
+                "domain_name": "Housing Stability",
+                "score": 49.79,
+                "status_band": "Elevated Pressure",
+                "signals": 15,
+                "events": 15,
+                "observed_signals": 13,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 0
+              },
+              {
+                "domain_key": "cost_of_living",
+                "domain_name": "Cost of Living",
+                "score": 50.51,
+                "status_band": "Balanced / Watch",
+                "signals": 10,
+                "events": 10,
+                "observed_signals": 8,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 1
+              }
+            ]
+          }
+        },
+        {
+          "answer": "The domains showing the most pressure are Benefits, Housing Stability, Cost of Living.",
+          "metrics": {
+            "top_pressure_domains": [
+              "Benefits",
+              "Housing Stability",
+              "Cost of Living"
+            ]
+          }
+        },
+        {
+          "answer": "If pressure remains unaddressed, the system may continue to show stable composite readings while strain persists inside specific domains. This report identifies review priorities only; it does not make eligibility, service, funding, clinical, or policy decisions.",
+          "metrics": {
+            "decision_support_only": true
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What risks are emerging?",
+          "answer": "Emerging risk is concentrated in the pressure watch areas Benefits, Housing Stability, Cost of Living, where lower domain scores indicate the need for first-pass human review before external interpretation.",
+          "metrics": {
+            "pressure_domains": [
+              {
+                "domain_key": "benefits",
+                "domain_name": "Benefits",
+                "score": 48.86,
+                "status_band": "Elevated Pressure",
+                "signals": 13,
+                "events": 13,
+                "observed_signals": 11,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 2,
+                "delta_signals": -1
+              },
+              {
+                "domain_key": "housing_stability",
+                "domain_name": "Housing Stability",
+                "score": 49.79,
+                "status_band": "Elevated Pressure",
+                "signals": 15,
+                "events": 15,
+                "observed_signals": 13,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 0
+              },
+              {
+                "domain_key": "cost_of_living",
+                "domain_name": "Cost of Living",
+                "score": 50.51,
+                "status_band": "Balanced / Watch",
+                "signals": 10,
+                "events": 10,
+                "observed_signals": 8,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 1
+              }
+            ]
+          }
+        },
+        {
+          "question": "Which domains show the most pressure?",
+          "answer": "The domains showing the most pressure are Benefits, Housing Stability, Cost of Living.",
+          "metrics": {
+            "top_pressure_domains": [
+              "Benefits",
+              "Housing Stability",
+              "Cost of Living"
+            ]
+          }
+        },
+        {
+          "question": "What could happen if pressure remains unaddressed?",
+          "answer": "If pressure remains unaddressed, the system may continue to show stable composite readings while strain persists inside specific domains. This report identifies review priorities only; it does not make eligibility, service, funding, clinical, or policy decisions.",
+          "metrics": {
+            "decision_support_only": true
+          }
         }
       ]
     },
@@ -498,7 +1096,7 @@
       ],
       "answers": [
         {
-          "answer": "Engine run status: success; signal refresh status: refreshed; reason code: public_state_changed.",
+          "answer": "The engine completed today's run with status 'success', signal refresh status 'refreshed', and reason code 'public_state_changed'.",
           "metrics": {
             "run_status": {
               "engine_run": "success",
@@ -511,8 +1109,66 @@
           }
         },
         {
-          "answer": "The daily cycle writes public_daily.json, history.json, internal audit files, markdown intelligence reports, and this stakeholder_report_daily.json object.",
-          "metrics": {}
+          "answer": "The daily cycle produced or refreshed public_daily.json, history.json, daily audit outputs, the daily intelligence markdown report, stakeholder_report_daily.json, and the stakeholder markdown report.",
+          "metrics": {
+            "source_files": [
+              "daily_audit.json",
+              "public_daily.json",
+              "history.json",
+              "usavet_real_data_engine_v1.py",
+              ".github/workflows/main.yml"
+            ]
+          }
+        },
+        {
+          "answer": "The stakeholder report coordinates the same public-safe source of truth across USAVET.org as the public trust layer, USAVET.ai as the intelligence interpretation layer, and USAVET.app as the operational review layer.",
+          "metrics": {
+            "display_targets": [
+              "usavet.org",
+              "usavet.ai",
+              "usavet.app"
+            ]
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What did the engine do today?",
+          "answer": "The engine completed today's run with status 'success', signal refresh status 'refreshed', and reason code 'public_state_changed'.",
+          "metrics": {
+            "run_status": {
+              "engine_run": "success",
+              "signal_refresh_status": "refreshed",
+              "reason_code": "public_state_changed",
+              "inventory_changed": true,
+              "public_state_changed": true,
+              "baseline_initialized": false
+            }
+          }
+        },
+        {
+          "question": "What validation or publication actions occurred?",
+          "answer": "The daily cycle produced or refreshed public_daily.json, history.json, daily audit outputs, the daily intelligence markdown report, stakeholder_report_daily.json, and the stakeholder markdown report.",
+          "metrics": {
+            "source_files": [
+              "daily_audit.json",
+              "public_daily.json",
+              "history.json",
+              "usavet_real_data_engine_v1.py",
+              ".github/workflows/main.yml"
+            ]
+          }
+        },
+        {
+          "question": "What coordination occurred across outputs?",
+          "answer": "The stakeholder report coordinates the same public-safe source of truth across USAVET.org as the public trust layer, USAVET.ai as the intelligence interpretation layer, and USAVET.app as the operational review layer.",
+          "metrics": {
+            "display_targets": [
+              "usavet.org",
+              "usavet.ai",
+              "usavet.app"
+            ]
+          }
         }
       ]
     },
@@ -526,471 +1182,63 @@
       ],
       "answers": [
         {
-          "answer": "Source quality is reported as High Confidence. Reviewers should verify low-availability domains, changed domains, and any major score movement before external use.",
+          "answer": "Current source quality is reported as High Confidence. Confidence may still be limited by missing, delayed, or retained-reference source states inside individual domains.",
           "metrics": {
-            "source_quality": "High Confidence",
-            "audit": {
-              "tier1": {
-                "signals_total": 24,
-                "total_contribution": 2.2445,
-                "by_domain": {
-                  "housing_stability": {
-                    "signals_count": 4,
-                    "contribution": 0.6295,
-                    "signal_names": [
-                      "HUD statewide 2BR FMR measured state",
-                      "FRED CPI measured state [secondary:cost_of_living]",
-                      "BLS CPI measured state [secondary:cost_of_living]",
-                      "BEA structural measured state [secondary:cost_of_living]"
-                    ]
-                  },
-                  "employment": {
-                    "signals_count": 3,
-                    "contribution": 0.432,
-                    "signal_names": [
-                      "FRED unemployment measured state",
-                      "BLS unemployment measured state",
-                      "Census veteran unemployment measured state"
-                    ]
-                  },
-                  "military_family_readiness": {
-                    "signals_count": 9,
-                    "contribution": 0.4176,
-                    "signal_names": [
-                      "HUD statewide 2BR FMR measured state [secondary:housing_stability]",
-                      "FRED unemployment measured state [tertiary:employment]",
-                      "BLS unemployment measured state [tertiary:employment]",
-                      "Census veteran unemployment measured state [tertiary:employment]",
-                      "FRED CPI measured state [tertiary:cost_of_living]",
-                      "BLS CPI measured state [tertiary:cost_of_living]",
-                      "BEA structural measured state [tertiary:cost_of_living]",
-                      "VA facilities measured state [secondary:healthcare_system]",
-                      "VA benefits reference measured state [secondary:benefits]"
-                    ]
-                  },
-                  "cost_of_living": {
-                    "signals_count": 3,
-                    "contribution": 0.2556,
-                    "signal_names": [
-                      "FRED CPI measured state",
-                      "BLS CPI measured state",
-                      "BEA structural measured state"
-                    ]
-                  },
-                  "healthcare_system": {
-                    "signals_count": 1,
-                    "contribution": 0.54,
-                    "signal_names": [
-                      "VA facilities measured state"
-                    ]
-                  },
-                  "benefits": {
-                    "signals_count": 4,
-                    "contribution": -0.0302,
-                    "signal_names": [
-                      "FRED unemployment measured state [secondary:employment]",
-                      "BLS unemployment measured state [secondary:employment]",
-                      "Census veteran unemployment measured state [secondary:employment]",
-                      "VA benefits reference measured state"
-                    ]
-                  }
-                }
-              },
-              "tier2": {
-                "signals_total": 58,
-                "total_contribution": -0.7837,
-                "by_domain": {
-                  "housing_stability": {
-                    "signals_count": 11,
-                    "contribution": -0.6503,
-                    "signal_names": [
-                      "MFAN housing burden benchmark",
-                      "NCHV veteran homelessness benchmark",
-                      "Bob Woodruff housing demand jump",
-                      "Blue Star housing stress",
-                      "VA Loan housing context",
-                      "Soldiers' Angels cost pressure [secondary:cost_of_living]",
-                      "NMFA cost-of-service [secondary:cost_of_living]",
-                      "DAV COLA benchmark [secondary:cost_of_living]",
-                      "VA COLA benchmark [secondary:cost_of_living]",
-                      "Veteran.com COLA benchmark [secondary:cost_of_living]",
-                      "VA Loan inflation context [secondary:cost_of_living]"
-                    ]
-                  },
-                  "employment": {
-                    "signals_count": 4,
-                    "contribution": 0.015,
-                    "signal_names": [
-                      "DOL spouse employment friction",
-                      "Census veteran outcomes",
-                      "IVMF spouse employment benchmark",
-                      "IVMF transition support"
-                    ]
-                  },
-                  "military_family_readiness": {
-                    "signals_count": 26,
-                    "contribution": 0.0854,
-                    "signal_names": [
-                      "MFAN housing burden benchmark [secondary:housing_stability]",
-                      "NCHV veteran homelessness benchmark [secondary:housing_stability]",
-                      "Bob Woodruff housing demand jump [secondary:housing_stability]",
-                      "Blue Star housing stress [secondary:housing_stability]",
-                      "VA Loan housing context [secondary:housing_stability]",
-                      "DOL spouse employment friction [tertiary:employment]",
-                      "Census veteran outcomes [tertiary:employment]",
-                      "IVMF spouse employment benchmark [tertiary:employment]",
-                      "IVMF transition support [tertiary:employment]",
-                      "Federal Register institutional activity structural",
-                      "10 USC 1781 readiness anchor",
-                      "NCSL legislation activity",
-                      "NMFA policy burden",
-                      "Soldiers' Angels cost pressure [tertiary:cost_of_living]",
-                      "NMFA cost-of-service [tertiary:cost_of_living]",
-                      "DAV COLA benchmark [tertiary:cost_of_living]",
-                      "VA COLA benchmark [tertiary:cost_of_living]",
-                      "Veteran.com COLA benchmark [tertiary:cost_of_living]",
-                      "VA Loan inflation context [tertiary:cost_of_living]",
-                      "NMFA family health friction [secondary:healthcare_system]",
-                      "GAO coordination context [secondary:healthcare_system]",
-                      "Healthcare fairness legislation [secondary:healthcare_system]",
-                      "CBPP veteran SNAP stress [secondary:benefits]",
-                      "VA caregiver support path [secondary:benefits]",
-                      "VFW implementation gap [secondary:benefits]",
-                      "Elizabeth Dole policy gap [secondary:benefits]"
-                    ]
-                  },
-                  "cost_of_living": {
-                    "signals_count": 6,
-                    "contribution": -0.2125,
-                    "signal_names": [
-                      "Soldiers' Angels cost pressure",
-                      "NMFA cost-of-service",
-                      "DAV COLA benchmark",
-                      "VA COLA benchmark",
-                      "Veteran.com COLA benchmark",
-                      "VA Loan inflation context"
-                    ]
-                  },
-                  "healthcare_system": {
-                    "signals_count": 3,
-                    "contribution": 0.0679,
-                    "signal_names": [
-                      "NMFA family health friction",
-                      "GAO coordination context",
-                      "Healthcare fairness legislation"
-                    ]
-                  },
-                  "benefits": {
-                    "signals_count": 8,
-                    "contribution": -0.0892,
-                    "signal_names": [
-                      "DOL spouse employment friction [secondary:employment]",
-                      "Census veteran outcomes [secondary:employment]",
-                      "IVMF spouse employment benchmark [secondary:employment]",
-                      "IVMF transition support [secondary:employment]",
-                      "CBPP veteran SNAP stress",
-                      "VA caregiver support path",
-                      "VFW implementation gap",
-                      "Elizabeth Dole policy gap"
-                    ]
-                  }
-                }
-              },
-              "tier3_used": 180,
-              "tier3_keyword_matched": 23,
-              "tier3_keyword_qualified": 23,
-              "tier3_scoring_qualified": 16,
-              "tier3_cluster_count": 12,
-              "tier3_kept": 16,
-              "tier3_qualified": 12,
-              "tier3_final_events": 12,
-              "tier3_priority_signals": 5,
-              "tier3_routing_audit": {
-                "primary_accepted": 16,
-                "primary_rejected": 7,
-                "secondary_or_tertiary_allowed": 1,
-                "secondary_or_tertiary_blocked": 1
-              },
-              "history_integrity": {
-                "input_history": {
-                  "source": "local",
-                  "input_rows": 19,
-                  "output_rows": 19,
-                  "missing_as_of_rows": 0,
-                  "future_rows_filtered": 0,
-                  "duplicates_removed": 0,
-                  "normalized_time_rows": 0,
-                  "time_parse_failures": 0,
-                  "time_as_of_mismatches": 0,
-                  "legacy_time_as_of_mismatches": 2,
-                  "mismatch_examples": [],
-                  "legacy_mismatch_examples": [
-                    {
-                      "type": "time_as_of_mismatch",
-                      "time": "2026-04-17T01:33:40Z",
-                      "time_utc_date": "2026-04-17",
-                      "as_of": "2026-04-16"
-                    },
-                    {
-                      "type": "time_as_of_mismatch",
-                      "time": "2026-04-19T01:32:54Z",
-                      "time_utc_date": "2026-04-19",
-                      "as_of": "2026-04-18"
-                    }
-                  ],
-                  "utc_legacy_context_cutoff_date": "2026-04-20"
-                },
-                "final_history": {
-                  "rows_total": 19,
-                  "utc_z_rows": 19,
-                  "non_utc_time_rows_remaining": 0,
-                  "time_parse_failures": 0,
-                  "future_as_of_rows_present": 0,
-                  "time_as_of_mismatches": 0,
-                  "legacy_time_as_of_mismatches": 2,
-                  "mismatch_examples": [],
-                  "legacy_mismatch_examples": [
-                    {
-                      "time": "2026-04-17T01:33:40Z",
-                      "time_utc_date": "2026-04-17",
-                      "as_of": "2026-04-16"
-                    },
-                    {
-                      "time": "2026-04-19T01:32:54Z",
-                      "time_utc_date": "2026-04-19",
-                      "as_of": "2026-04-18"
-                    }
-                  ],
-                  "utc_legacy_context_cutoff_date": "2026-04-20"
-                }
-              },
-              "trend_integrity": {
-                "rows_total": 19,
-                "stored_trend_mismatches": 0,
-                "missing_trend_rows": 0,
-                "mismatch_examples": []
-              },
-              "tier_entry_integrity": {
-                "tier1_api_sources_detected": true,
-                "tier1_authoritative_sources_present": [
-                  "BEA",
-                  "BLS",
-                  "Census",
-                  "FRED",
-                  "HUD",
-                  "VA Benefits",
-                  "VA Facilities"
-                ],
-                "missing_expected_authoritative_sources": [],
-                "api_sources_in_tier2": [],
-                "status": "clean"
-              },
-              "propagation_ratio_check": {
-                "status": "aligned",
-                "signal_name": "Census veteran outcomes",
-                "source_name": "census_veteran_outcomes",
-                "source_primary_domain": "employment",
-                "primary_domain": "employment",
-                "secondary_domain": "benefits",
-                "tertiary_domain": "military_family_readiness",
-                "primary_contribution": 0.195,
-                "secondary_contribution": 0.0682,
-                "tertiary_contribution": 0.0292,
-                "primary_to_secondary_ratio": 0.3497,
-                "primary_to_tertiary_ratio": 0.1497,
-                "expected_primary_to_secondary_ratio": 0.35,
-                "expected_primary_to_tertiary_ratio": 0.15,
-                "tolerance": 0.03
-              },
-              "dominance_check": {
-                "status": "normal",
-                "largest_signal_name": "Census veteran outcomes",
-                "largest_signal_source_name": "census_veteran_outcomes",
-                "largest_signal_source_primary_domain": "employment",
-                "largest_signal_share": 0.079,
-                "largest_signal_abs_contribution": 0.2924,
-                "total_tier2_abs_contribution": 3.7011,
-                "largest_signal_domains": [
-                  "benefits",
-                  "employment",
-                  "military_family_readiness"
-                ],
-                "threshold": 0.5
-              },
-              "daily_signal_audit_summary": {
-                "signal_refresh_status": "refreshed",
-                "reason_code": "public_state_changed",
-                "inventory_changed": true,
-                "public_state_changed": true,
-                "today_events": 95,
-                "today_signals": 95,
-                "delta_events": -1,
-                "delta_signals": -1,
-                "new_signals": 83,
-                "new_signal_observations": 83,
-                "new_signal_identities": 3,
-                "new_identity_observations": 3,
-                "existing_identity_new_observations": 80,
-                "new_keyword_signals": 83,
-                "repeated_keyword_signals": 0,
-                "retained_reference_signals": 12,
-                "carried_signals": 92,
-                "carried_stable_signals": 12,
-                "carried_changed_signals": 0,
-                "changed_signals": 0,
-                "intensified_signals": 0,
-                "weakened_signals": 0,
-                "removed_signals": 4,
-                "inventory_states": {
-                  "new": 83,
-                  "new_signal_observations": 83,
-                  "new_signal_identities": 3,
-                  "new_keyword_signals": 83,
-                  "repeated_keyword_signals": 0,
-                  "existing_identity_new_observations": 80,
-                  "retained_reference": 12,
-                  "fresh_for_operational_day": 83,
-                  "valid_for_operational_day": 83,
-                  "revalidated_this_run": 83,
-                  "same_day_validation_continuity": 81,
-                  "carried_stable": 12,
-                  "carried_changed": 0,
-                  "intensified": 0,
-                  "weakened": 0,
-                  "removed": 4
-                },
-                "changed_signal_details": [],
-                "changed_domains_count": 3,
-                "changed_domains": [
-                  "military_family_readiness",
-                  "cost_of_living",
-                  "benefits"
-                ],
-                "overall_score_delta": 0.01,
-                "trend_changed": false,
-                "band_changed": false,
-                "tier_contribution_deltas": {
-                  "tier_1": 0.0,
-                  "tier_2": 0.0,
-                  "tier_3": 0.0078
-                },
-                "changed_tiers": [
-                  "tier_3"
-                ],
-                "pre_confirmation_movement": {
-                  "detected": false,
-                  "domains": [],
-                  "reason": null
-                },
-                "signal_replacement": {
-                  "new_signals": 83,
-                  "new_signal_observations": 83,
-                  "new_signal_identities": 3,
-                  "new_keyword_signals": 83,
-                  "repeated_keyword_signals": 0,
-                  "retained_reference_signals": 12,
-                  "fresh_for_operational_day_signals": 83,
-                  "valid_for_operational_day_signals": 83,
-                  "revalidated_this_run_signals": 83,
-                  "same_day_validation_continuity_signals": 81,
-                  "existing_identity_new_observations": 80,
-                  "carried_stable_signals": 12,
-                  "carried_changed_signals": 0,
-                  "changed_signals": 0,
-                  "intensified_signals": 0,
-                  "weakened_signals": 0,
-                  "removed_signals": 4,
-                  "inventory_states": {
-                    "new": 83,
-                    "new_signal_observations": 83,
-                    "new_signal_identities": 3,
-                    "new_keyword_signals": 83,
-                    "repeated_keyword_signals": 0,
-                    "existing_identity_new_observations": 80,
-                    "retained_reference": 12,
-                    "fresh_for_operational_day": 83,
-                    "valid_for_operational_day": 83,
-                    "revalidated_this_run": 83,
-                    "same_day_validation_continuity": 81,
-                    "carried_stable": 12,
-                    "carried_changed": 0,
-                    "intensified": 0,
-                    "weakened": 0,
-                    "removed": 4
-                  },
-                  "new_events": 2,
-                  "removed_events": 3,
-                  "net_same_count_but_different_content": true
-                },
-                "tier_entry_integrity": {
-                  "tier1_api_sources_detected": true,
-                  "tier1_authoritative_sources_present": [
-                    "BEA",
-                    "BLS",
-                    "Census",
-                    "FRED",
-                    "HUD",
-                    "VA Benefits",
-                    "VA Facilities"
-                  ],
-                  "missing_expected_authoritative_sources": [],
-                  "api_sources_in_tier2": [],
-                  "status": "clean"
-                },
-                "propagation_ratio_check": {
-                  "status": "aligned",
-                  "signal_name": "Census veteran outcomes",
-                  "source_name": "census_veteran_outcomes",
-                  "source_primary_domain": "employment",
-                  "primary_domain": "employment",
-                  "secondary_domain": "benefits",
-                  "tertiary_domain": "military_family_readiness",
-                  "primary_contribution": 0.195,
-                  "secondary_contribution": 0.0682,
-                  "tertiary_contribution": 0.0292,
-                  "primary_to_secondary_ratio": 0.3497,
-                  "primary_to_tertiary_ratio": 0.1497,
-                  "expected_primary_to_secondary_ratio": 0.35,
-                  "expected_primary_to_tertiary_ratio": 0.15,
-                  "tolerance": 0.03
-                },
-                "dominance_check": {
-                  "status": "normal",
-                  "largest_signal_name": "Census veteran outcomes",
-                  "largest_signal_source_name": "census_veteran_outcomes",
-                  "largest_signal_source_primary_domain": "employment",
-                  "largest_signal_share": 0.079,
-                  "largest_signal_abs_contribution": 0.2924,
-                  "total_tier2_abs_contribution": 3.7011,
-                  "largest_signal_domains": [
-                    "benefits",
-                    "employment",
-                    "military_family_readiness"
-                  ],
-                  "threshold": 0.5
-                },
-                "public_overall_score": 52.23
-              },
-              "contract_integrity": {
-                "public_daily_compatibility_fields_retained": [
-                  "score",
-                  "status_band",
-                  "pressure_label",
-                  "brief"
-                ],
-                "canonical_fields": {
-                  "overall_score": "overall_score",
-                  "band_label": "band",
-                  "summary_text": "summary",
-                  "notes_list": "notes"
-                }
-              }
-            }
+            "source_quality": "High Confidence"
           }
         },
         {
-          "answer": "The report is generated from structured engine outputs; it should not be treated as a complete case-management record or a substitute for staff review.",
-          "metrics": {}
+          "answer": "Visible constraints include reliance on structured public outputs, daily audit summaries, and public-safe evidence. The report should not be treated as a complete case-management record or a replacement for staff review.",
+          "metrics": {
+            "case_management_record": false
+          }
+        },
+        {
+          "answer": "Reviewers should verify low-scoring domains (Benefits, Housing Stability, Cost of Living), changed domains (Military Family Readiness, Cost of Living, Benefits), and any major score movement before external distribution.",
+          "metrics": {
+            "top_pressure_domains": [
+              "Benefits",
+              "Housing Stability",
+              "Cost of Living"
+            ],
+            "changed_domains": [
+              "Military Family Readiness",
+              "Cost of Living",
+              "Benefits"
+            ]
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What limits confidence today?",
+          "answer": "Current source quality is reported as High Confidence. Confidence may still be limited by missing, delayed, or retained-reference source states inside individual domains.",
+          "metrics": {
+            "source_quality": "High Confidence"
+          }
+        },
+        {
+          "question": "What data or system constraints are visible?",
+          "answer": "Visible constraints include reliance on structured public outputs, daily audit summaries, and public-safe evidence. The report should not be treated as a complete case-management record or a replacement for staff review.",
+          "metrics": {
+            "case_management_record": false
+          }
+        },
+        {
+          "question": "What should reviewers verify?",
+          "answer": "Reviewers should verify low-scoring domains (Benefits, Housing Stability, Cost of Living), changed domains (Military Family Readiness, Cost of Living, Benefits), and any major score movement before external distribution.",
+          "metrics": {
+            "top_pressure_domains": [
+              "Benefits",
+              "Housing Stability",
+              "Cost of Living"
+            ],
+            "changed_domains": [
+              "Military Family Readiness",
+              "Cost of Living",
+              "Benefits"
+            ]
+          }
         }
       ]
     },
@@ -1004,12 +1252,53 @@
       ],
       "answers": [
         {
-          "answer": "Daily decision need: review the generated report, confirm whether the condition and pressure-domain language is appropriate, then approve or hold for revision inside USAVET.app.",
-          "metrics": {}
+          "answer": "Stakeholders need to decide whether the generated condition, pressure-domain language, and stakeholder-facing interpretation are ready to approve, hold, or revise inside USAVET.app.",
+          "metrics": {
+            "workflow_options": [
+              "approve",
+              "hold",
+              "revise"
+            ]
+          }
         },
         {
-          "answer": "Support need: maintain the shared data path so usavet.org, usavet.ai, and usavet.app can all read the same public-safe stakeholder report object.",
-          "metrics": {}
+          "answer": "Support is required to maintain the shared public-safe data path so USAVET.org, USAVET.ai, and USAVET.app can read the same stakeholder_report_daily.json object without exposing protected engine logic.",
+          "metrics": {
+            "shared_data_path_required": true
+          }
+        },
+        {
+          "answer": "Recommended timing is daily review after the automated run completes and before the report is treated as externally approved or partner-facing.",
+          "metrics": {
+            "recommended_review_cadence": "daily_after_engine_run"
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What do stakeholders need to decide?",
+          "answer": "Stakeholders need to decide whether the generated condition, pressure-domain language, and stakeholder-facing interpretation are ready to approve, hold, or revise inside USAVET.app.",
+          "metrics": {
+            "workflow_options": [
+              "approve",
+              "hold",
+              "revise"
+            ]
+          }
+        },
+        {
+          "question": "What support is required?",
+          "answer": "Support is required to maintain the shared public-safe data path so USAVET.org, USAVET.ai, and USAVET.app can read the same stakeholder_report_daily.json object without exposing protected engine logic.",
+          "metrics": {
+            "shared_data_path_required": true
+          }
+        },
+        {
+          "question": "What is the recommended timing?",
+          "answer": "Recommended timing is daily review after the automated run completes and before the report is treated as externally approved or partner-facing.",
+          "metrics": {
+            "recommended_review_cadence": "daily_after_engine_run"
+          }
         }
       ]
     },
@@ -1023,10 +1312,17 @@
       ],
       "answers": [
         {
-          "answer": "Near-term watch should focus on trend direction (stable), overall score movement (0.01), and repeated pressure in Benefits, Housing Stability, Cost of Living.",
+          "answer": "Stakeholders should expect the report to continue tracking whether the current stable trend and Balanced / Watch band persist, improve, or deteriorate over the next 30 to 90 days.",
           "metrics": {
             "trend": "stable",
-            "overall_delta": 0.01,
+            "band": "Balanced / Watch"
+          }
+        },
+        {
+          "answer": "Tomorrow's review should watch overall score movement (0.02 today), trend direction (stable), and repeated pressure in Benefits, Housing Stability, Cost of Living.",
+          "metrics": {
+            "overall_delta": 0.02,
+            "trend": "stable",
             "history_tail": [
               {
                 "time": "2026-04-06T23:29:37Z",
@@ -1245,23 +1541,280 @@
                 "military_family_readiness": 54.98
               },
               {
-                "time": "2026-04-24T19:52:59Z",
+                "time": "2026-04-24T20:32:56Z",
                 "as_of": "2026-04-24",
-                "overall_score": 52.23,
+                "overall_score": 52.24,
                 "trend": "stable",
                 "housing_stability": 49.79,
                 "cost_of_living": 50.51,
                 "employment": 54.43,
                 "benefits": 48.86,
                 "healthcare_system": 56.07,
-                "military_family_readiness": 55.12
+                "military_family_readiness": 55.22
               }
             ]
           }
         },
         {
-          "answer": "Escalation should be considered when the composite condition worsens, multiple domains decline together, or priority signals repeat across daily cycles.",
-          "metrics": {}
+          "answer": "Escalation should be considered when the composite condition worsens, multiple domains decline together, a low-scoring domain remains under pressure across repeated cycles, or priority signals repeat across daily reports.",
+          "metrics": {
+            "escalation_review_required": true
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What should stakeholders expect over the next 30 to 90 days?",
+          "answer": "Stakeholders should expect the report to continue tracking whether the current stable trend and Balanced / Watch band persist, improve, or deteriorate over the next 30 to 90 days.",
+          "metrics": {
+            "trend": "stable",
+            "band": "Balanced / Watch"
+          }
+        },
+        {
+          "question": "What trends should be watched tomorrow?",
+          "answer": "Tomorrow's review should watch overall score movement (0.02 today), trend direction (stable), and repeated pressure in Benefits, Housing Stability, Cost of Living.",
+          "metrics": {
+            "overall_delta": 0.02,
+            "trend": "stable",
+            "history_tail": [
+              {
+                "time": "2026-04-06T23:29:37Z",
+                "as_of": "2026-04-06",
+                "overall_score": 52.1,
+                "trend": "stable",
+                "housing_stability": 57.8,
+                "cost_of_living": 54.1,
+                "employment": 51.6,
+                "benefits": 44.5,
+                "healthcare_system": 50.5,
+                "military_family_readiness": 51.9
+              },
+              {
+                "time": "2026-04-07T01:51:00Z",
+                "as_of": "2026-04-07",
+                "overall_score": 52.1,
+                "trend": "stable",
+                "housing_stability": 57.8,
+                "cost_of_living": 54.1,
+                "employment": 51.6,
+                "benefits": 44.5,
+                "healthcare_system": 50.5,
+                "military_family_readiness": 51.9
+              },
+              {
+                "time": "2026-04-08T23:49:17Z",
+                "as_of": "2026-04-08",
+                "overall_score": 52.1,
+                "trend": "stable",
+                "housing_stability": 57.8,
+                "cost_of_living": 54.1,
+                "employment": 51.6,
+                "benefits": 44.5,
+                "healthcare_system": 50.5,
+                "military_family_readiness": 51.9
+              },
+              {
+                "time": "2026-04-09T23:46:47Z",
+                "as_of": "2026-04-09",
+                "overall_score": 50.5,
+                "trend": "declining",
+                "housing_stability": 55.4,
+                "cost_of_living": 53.6,
+                "employment": 51.4,
+                "benefits": 42.5,
+                "healthcare_system": 45.0,
+                "military_family_readiness": 53.0
+              },
+              {
+                "time": "2026-04-10T23:46:50Z",
+                "as_of": "2026-04-10",
+                "overall_score": 50.8,
+                "trend": "improving",
+                "housing_stability": 55.4,
+                "cost_of_living": 55.1,
+                "employment": 51.4,
+                "benefits": 42.8,
+                "healthcare_system": 45.0,
+                "military_family_readiness": 52.8
+              },
+              {
+                "time": "2026-04-11T22:18:27Z",
+                "as_of": "2026-04-11",
+                "overall_score": 50.7,
+                "trend": "stable",
+                "housing_stability": 55.4,
+                "cost_of_living": 55.1,
+                "employment": 51.4,
+                "benefits": 42.5,
+                "healthcare_system": 45.0,
+                "military_family_readiness": 52.7
+              },
+              {
+                "time": "2026-04-12T15:09:33Z",
+                "as_of": "2026-04-12",
+                "overall_score": 57.7,
+                "trend": "improving",
+                "housing_stability": 59.8,
+                "cost_of_living": 62.4,
+                "employment": 58.3,
+                "benefits": 53.1,
+                "healthcare_system": 54.1,
+                "military_family_readiness": 55.8
+              },
+              {
+                "time": "2026-04-13T07:09:57Z",
+                "as_of": "2026-04-13",
+                "overall_score": 57.7,
+                "trend": "stable",
+                "housing_stability": 59.8,
+                "cost_of_living": 62.4,
+                "employment": 58.3,
+                "benefits": 53.1,
+                "healthcare_system": 54.1,
+                "military_family_readiness": 55.8
+              },
+              {
+                "time": "2026-04-14T22:21:26Z",
+                "as_of": "2026-04-14",
+                "overall_score": 49.8,
+                "trend": "declining",
+                "housing_stability": 42.3,
+                "cost_of_living": 56.2,
+                "employment": 48.4,
+                "benefits": 51.0,
+                "healthcare_system": 52.1,
+                "military_family_readiness": 48.9
+              },
+              {
+                "time": "2026-04-15T16:45:20Z",
+                "as_of": "2026-04-15",
+                "overall_score": 48.7,
+                "trend": "declining",
+                "housing_stability": 44.8,
+                "cost_of_living": 48.9,
+                "employment": 52.9,
+                "benefits": 48.8,
+                "healthcare_system": 52.5,
+                "military_family_readiness": 43.6
+              },
+              {
+                "time": "2026-04-17T01:33:40Z",
+                "as_of": "2026-04-16",
+                "overall_score": 48.7,
+                "trend": "stable",
+                "housing_stability": 44.8,
+                "cost_of_living": 48.9,
+                "employment": 52.9,
+                "benefits": 48.8,
+                "healthcare_system": 52.6,
+                "military_family_readiness": 43.4
+              },
+              {
+                "time": "2026-04-17T16:31:35Z",
+                "as_of": "2026-04-17",
+                "overall_score": 48.7,
+                "trend": "stable",
+                "housing_stability": 44.8,
+                "cost_of_living": 48.9,
+                "employment": 52.9,
+                "benefits": 48.8,
+                "healthcare_system": 52.6,
+                "military_family_readiness": 43.6
+              },
+              {
+                "time": "2026-04-19T01:32:54Z",
+                "as_of": "2026-04-18",
+                "overall_score": 48.9,
+                "trend": "improving",
+                "housing_stability": 47.4,
+                "cost_of_living": 47.1,
+                "employment": 49.1,
+                "benefits": 50.2,
+                "healthcare_system": 51.0,
+                "military_family_readiness": 49.6
+              },
+              {
+                "time": "2026-04-19T22:14:06Z",
+                "as_of": "2026-04-19",
+                "overall_score": 48.2,
+                "trend": "declining",
+                "housing_stability": 46.2,
+                "cost_of_living": 47.1,
+                "employment": 49.1,
+                "benefits": 49.7,
+                "healthcare_system": 51.0,
+                "military_family_readiness": 46.1
+              },
+              {
+                "time": "2026-04-20T23:51:45Z",
+                "as_of": "2026-04-20",
+                "overall_score": 53.2,
+                "trend": "improving",
+                "housing_stability": 52.0,
+                "cost_of_living": 50.4,
+                "employment": 53.1,
+                "benefits": 47.8,
+                "healthcare_system": 58.4,
+                "military_family_readiness": 59.7
+              },
+              {
+                "time": "2026-04-21T23:52:28Z",
+                "as_of": "2026-04-21",
+                "overall_score": 53.2,
+                "trend": "stable",
+                "housing_stability": 52.0,
+                "cost_of_living": 50.4,
+                "employment": 53.1,
+                "benefits": 47.8,
+                "healthcare_system": 58.4,
+                "military_family_readiness": 59.6
+              },
+              {
+                "time": "2026-04-22T14:56:14Z",
+                "as_of": "2026-04-22",
+                "overall_score": 52.2,
+                "trend": "declining",
+                "housing_stability": 49.8,
+                "cost_of_living": 50.4,
+                "employment": 54.4,
+                "benefits": 49.0,
+                "healthcare_system": 56.1,
+                "military_family_readiness": 54.7
+              },
+              {
+                "time": "2026-04-23T20:11:35Z",
+                "as_of": "2026-04-23",
+                "overall_score": 52.22,
+                "trend": "stable",
+                "housing_stability": 49.79,
+                "cost_of_living": 50.43,
+                "employment": 54.43,
+                "benefits": 49.01,
+                "healthcare_system": 56.07,
+                "military_family_readiness": 54.98
+              },
+              {
+                "time": "2026-04-24T20:32:56Z",
+                "as_of": "2026-04-24",
+                "overall_score": 52.24,
+                "trend": "stable",
+                "housing_stability": 49.79,
+                "cost_of_living": 50.51,
+                "employment": 54.43,
+                "benefits": 48.86,
+                "healthcare_system": 56.07,
+                "military_family_readiness": 55.22
+              }
+            ]
+          }
+        },
+        {
+          "question": "What indicators would trigger escalation?",
+          "answer": "Escalation should be considered when the composite condition worsens, multiple domains decline together, a low-scoring domain remains under pressure across repeated cycles, or priority signals repeat across daily reports.",
+          "metrics": {
+            "escalation_review_required": true
+          }
         }
       ]
     },
@@ -1275,12 +1828,149 @@
       ],
       "answers": [
         {
-          "answer": "The report layer turns daily engine outputs into a repeatable decision-support artifact while preserving the doctrine that USAVET detects signals and informs review rather than making decisions.",
-          "metrics": {}
+          "answer": "Today's report shows a system-level pattern of a Balanced / Watch composite condition with concentrated pressure in specific domains, rather than a uniform system-wide failure signal.",
+          "metrics": {
+            "band": "Balanced / Watch",
+            "top_pressure_domains": [
+              "Benefits",
+              "Housing Stability",
+              "Cost of Living"
+            ]
+          }
         },
         {
-          "answer": "The strategic value is one shared source of truth, displayed differently by platform role: public trust, intelligence interpretation, and operational review.",
-          "metrics": {}
+          "answer": "Future investment or policy review should prioritize persistent pressure areas, especially Benefits, Housing Stability, Cost of Living, while preserving the model's role as signal detection and decision support.",
+          "metrics": {
+            "pressure_domains": [
+              {
+                "domain_key": "benefits",
+                "domain_name": "Benefits",
+                "score": 48.86,
+                "status_band": "Elevated Pressure",
+                "signals": 13,
+                "events": 13,
+                "observed_signals": 11,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 2,
+                "delta_signals": -1
+              },
+              {
+                "domain_key": "housing_stability",
+                "domain_name": "Housing Stability",
+                "score": 49.79,
+                "status_band": "Elevated Pressure",
+                "signals": 15,
+                "events": 15,
+                "observed_signals": 13,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 0
+              },
+              {
+                "domain_key": "cost_of_living",
+                "domain_name": "Cost of Living",
+                "score": 50.51,
+                "status_band": "Balanced / Watch",
+                "signals": 10,
+                "events": 10,
+                "observed_signals": 8,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 1
+              }
+            ]
+          }
+        },
+        {
+          "answer": "The strategic value is a repeatable, public-safe decision-support artifact that turns daily engine outputs into one shared source of truth displayed differently by platform role: public trust, intelligence interpretation, and operational review.",
+          "metrics": {
+            "platform_roles": [
+              "public_trust_layer",
+              "intelligence_interpretation_layer",
+              "operational_review_layer"
+            ]
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What does today reveal at a systems level?",
+          "answer": "Today's report shows a system-level pattern of a Balanced / Watch composite condition with concentrated pressure in specific domains, rather than a uniform system-wide failure signal.",
+          "metrics": {
+            "band": "Balanced / Watch",
+            "top_pressure_domains": [
+              "Benefits",
+              "Housing Stability",
+              "Cost of Living"
+            ]
+          }
+        },
+        {
+          "question": "How should this shape future investment or policy?",
+          "answer": "Future investment or policy review should prioritize persistent pressure areas, especially Benefits, Housing Stability, Cost of Living, while preserving the model's role as signal detection and decision support.",
+          "metrics": {
+            "pressure_domains": [
+              {
+                "domain_key": "benefits",
+                "domain_name": "Benefits",
+                "score": 48.86,
+                "status_band": "Elevated Pressure",
+                "signals": 13,
+                "events": 13,
+                "observed_signals": 11,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 2,
+                "delta_signals": -1
+              },
+              {
+                "domain_key": "housing_stability",
+                "domain_name": "Housing Stability",
+                "score": 49.79,
+                "status_band": "Elevated Pressure",
+                "signals": 15,
+                "events": 15,
+                "observed_signals": 13,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 0
+              },
+              {
+                "domain_key": "cost_of_living",
+                "domain_name": "Cost of Living",
+                "score": 50.51,
+                "status_band": "Balanced / Watch",
+                "signals": 10,
+                "events": 10,
+                "observed_signals": 8,
+                "retained_reference_signals": 2,
+                "intensified_signals": 0,
+                "weakened_signals": 0,
+                "removed_signals": 0,
+                "delta_signals": 1
+              }
+            ]
+          }
+        },
+        {
+          "question": "What is the strategic value of the report layer?",
+          "answer": "The strategic value is a repeatable, public-safe decision-support artifact that turns daily engine outputs into one shared source of truth displayed differently by platform role: public trust, intelligence interpretation, and operational review.",
+          "metrics": {
+            "platform_roles": [
+              "public_trust_layer",
+              "intelligence_interpretation_layer",
+              "operational_review_layer"
+            ]
+          }
         }
       ]
     },
@@ -1294,7 +1984,7 @@
       ],
       "answers": [
         {
-          "answer": "This report is populated from the daily audit, public daily output, history output, engine run, and GitHub Actions workflow.",
+          "answer": "This report is populated from the daily audit, public daily output, history output, the engine run, and the GitHub Actions workflow.",
           "metrics": {
             "source_files": [
               "daily_audit.json",
@@ -1306,7 +1996,50 @@
           }
         },
         {
-          "answer": "Display targets are usavet.org, usavet.ai, and usavet.app, with USAVET.app retaining the full review workflow.",
+          "answer": "Metadata that should travel with the report includes schema version, report type, draft status, UTC generation time, system condition, composite score, band, trend, source quality, public contract, and human-review requirement.",
+          "metrics": {
+            "schema_version": "1.1.0",
+            "status": "Draft Generated",
+            "human_review_required": true
+          }
+        },
+        {
+          "answer": "The report should be displayed on USAVET.org, USAVET.ai, and USAVET.app, with USAVET.app retaining the full review workflow and approval statuses.",
+          "metrics": {
+            "display_targets": [
+              "usavet.org",
+              "usavet.ai",
+              "usavet.app"
+            ]
+          }
+        }
+      ],
+      "qa": [
+        {
+          "question": "What files populated this report?",
+          "answer": "This report is populated from the daily audit, public daily output, history output, the engine run, and the GitHub Actions workflow.",
+          "metrics": {
+            "source_files": [
+              "daily_audit.json",
+              "public_daily.json",
+              "history.json",
+              "usavet_real_data_engine_v1.py",
+              ".github/workflows/main.yml"
+            ]
+          }
+        },
+        {
+          "question": "What definitions or metadata should travel with the report?",
+          "answer": "Metadata that should travel with the report includes schema version, report type, draft status, UTC generation time, system condition, composite score, band, trend, source quality, public contract, and human-review requirement.",
+          "metrics": {
+            "schema_version": "1.1.0",
+            "status": "Draft Generated",
+            "human_review_required": true
+          }
+        },
+        {
+          "question": "Where should this be displayed?",
+          "answer": "The report should be displayed on USAVET.org, USAVET.ai, and USAVET.app, with USAVET.app retaining the full review workflow and approval statuses.",
           "metrics": {
             "display_targets": [
               "usavet.org",
@@ -1350,7 +2083,7 @@
     {
       "domain_key": "military_family_readiness",
       "domain_name": "Military Family Readiness",
-      "score": 55.12,
+      "score": 55.22,
       "status_band": "Balanced / Watch",
       "signals": 42,
       "events": 42,
@@ -1413,6 +2146,9 @@
   ],
   "public_contract": {
     "safe_for_public_data_repo": true,
+    "data_classification": "public_safe_derived_intelligence",
+    "contains_private_data": false,
+    "contains_algorithmic_logic": false,
     "excludes_private_audit_snapshots": true,
     "human_review_required_before_external_distribution": true
   }
