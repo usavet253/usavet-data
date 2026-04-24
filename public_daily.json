@@ -1,8 +1,8 @@
 {
   "as_of": "2026-04-24",
-  "generated_at": "2026-04-24T14:50:06Z",
-  "overall_score": 52.25,
-  "score": 52.25,
+  "generated_at": "2026-04-24T15:46:48Z",
+  "overall_score": 52.24,
+  "score": 52.24,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "stable",
@@ -10,7 +10,7 @@
   "source_quality": "High Confidence",
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 52.25,
+    "overall_score": 52.24,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "stable",
@@ -25,33 +25,33 @@
       "military_family_readiness": 0.12
     }
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.25.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.24.",
   "notes": [
     "Housing score: 49.79",
-    "Cost of living score: 50.43",
+    "Cost of living score: 50.51",
     "Employment score: 54.43",
-    "Benefits score: 49.01",
-    "Healthcare system score: 56.16",
-    "Military family readiness score: 55.15",
+    "Benefits score: 48.95",
+    "Healthcare system score: 56.07",
+    "Military family readiness score: 55.07",
     "Source confidence: High Confidence"
   ],
   "domains": {
     "housing_stability": 49.79,
     "employment": 54.43,
-    "military_family_readiness": 55.15,
-    "cost_of_living": 50.43,
-    "healthcare_system": 56.16,
-    "benefits": 49.01
+    "military_family_readiness": 55.07,
+    "cost_of_living": 50.51,
+    "healthcare_system": 56.07,
+    "benefits": 48.95
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.25.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.24.",
     "notes": [
       "Housing score: 49.79",
-      "Cost of living score: 50.43",
+      "Cost of living score: 50.51",
       "Employment score: 54.43",
-      "Benefits score: 49.01",
-      "Healthcare system score: 56.16",
-      "Military family readiness score: 55.15",
+      "Benefits score: 48.95",
+      "Healthcare system score: 56.07",
+      "Military family readiness score: 55.07",
       "Source confidence: High Confidence"
     ]
   },
@@ -273,16 +273,16 @@
       "military_family_readiness": 54.98
     },
     {
-      "time": "2026-04-24T14:50:06Z",
+      "time": "2026-04-24T15:46:48Z",
       "as_of": "2026-04-24",
-      "overall_score": 52.25,
+      "overall_score": 52.24,
       "trend": "stable",
       "housing_stability": 49.79,
-      "cost_of_living": 50.43,
+      "cost_of_living": 50.51,
       "employment": 54.43,
-      "benefits": 49.01,
-      "healthcare_system": 56.16,
-      "military_family_readiness": 55.15
+      "benefits": 48.95,
+      "healthcare_system": 56.07,
+      "military_family_readiness": 55.07
     }
   ],
   "events": [
@@ -391,12 +391,12 @@
       "tier3_scale": 0.9
     },
     {
-      "event_id": "evt_a670a9bdac742da9",
-      "source_name": "ArmyTimes",
-      "source_domain": "armytimes.com",
+      "event_id": "evt_a95c96f015987f78",
+      "source_name": "AirForceTimes",
+      "source_domain": "airforcetimes.com",
       "title": "Advocates press for preventive programs, VA benefits for struggling vets",
       "summary": "Representatives from specialty courts and veterans\u2019 legal organizations pressed Congress Wednesday for expansion of the Veterans Treatment Courts system.",
-      "url": "https://www.armytimes.com/news/pentagon-congress/2026/04/16/advocates-press-for-preventive-programs-va-benefits-for-struggling-vets/",
+      "url": "https://www.airforcetimes.com/news/pentagon-congress/2026/04/16/advocates-press-for-preventive-programs-va-benefits-for-struggling-vets/",
       "published_at": "2026-04-16T19:32:35Z",
       "domains": [
         "benefits"
@@ -466,8 +466,8 @@
       "drivers": [
         "benefits"
       ],
-      "forecast": "Contextual signal from curated ArmyTimes RSS.",
-      "evidence_count": 3,
+      "forecast": "Contextual signal from curated AirForceTimes RSS.",
+      "evidence_count": 2,
       "region": "national",
       "regions": [
         "national"
@@ -478,26 +478,25 @@
       "tier": "tier_3",
       "trust_weight": 0.72,
       "freshness": 0.85,
-      "weighted_contribution": 0.117,
+      "weighted_contribution": 0.0738,
       "qualified_for_scoring": true,
       "fallback_origin": null,
       "screening_metadata": {},
-      "tier3_normalization_factor": 0.6933,
+      "tier3_normalization_factor": 0.4733,
       "source_domains": [
         "airforcetimes.com",
-        "armytimes.com",
         "marinecorpstimes.com"
       ],
       "corroboration": {
-        "score": 95,
-        "source_count": 3,
-        "independent_sources": 3,
+        "score": 75,
+        "source_count": 2,
+        "independent_sources": 2,
         "domains": [
           "benefits"
         ]
       },
-      "raw_weighted_contribution": 0.2,
-      "tier3_scale": 0.585
+      "raw_weighted_contribution": 0.1622,
+      "tier3_scale": 0.455
     },
     {
       "event_id": "evt_19ba4d61a163e26c",
@@ -691,7 +690,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0252,
+      "weighted_contribution": 0.0193,
       "qualified_for_scoring": true,
       "fallback_origin": null,
       "screening_metadata": {},
@@ -708,7 +707,7 @@
         ]
       },
       "raw_weighted_contribution": 0.0593,
-      "tier3_scale": 0.425
+      "tier3_scale": 0.325
     },
     {
       "event_id": "evt_be5bbe9595f1aa4d",
@@ -801,8 +800,8 @@
         "method": "event_state_context",
         "evidence": [
           "shortage:pressure_state",
-          "shortage:dominant_negative",
           "shortages:dominant_negative",
+          "shortage:dominant_negative",
           "burning out:semantic_pressure"
         ]
       },
@@ -1033,302 +1032,6 @@
       },
       "raw_weighted_contribution": 0.005,
       "tier3_scale": 0.5
-    },
-    {
-      "event_id": "evt_05c15129547dbbed",
-      "source_name": "Fox News",
-      "source_domain": "foxnews.com",
-      "title": "Zero-calorie sweeteners may impact future generations, study warns",
-      "summary": "The Fox News Lifestyle Newsletter brings you trending stories on family, travel, food, neighbors helping neighbors, pets, autos, military veterans, heroes, faith and American values.",
-      "url": "https://www.foxnews.com/lifestyle/zero-calorie-sweeteners-may-impact-future-generations-study-warns",
-      "published_at": "2026-04-23T14:35:03Z",
-      "domains": [
-        "military_family_readiness"
-      ],
-      "domain_keyword_hits": {
-        "military_family_readiness": [
-          "family"
-        ]
-      },
-      "domain_routing": {
-        "accepted_primary": "military_family_readiness",
-        "accepted_domains": [
-          "military_family_readiness"
-        ],
-        "rejected_primary_candidates": [],
-        "blocked_propagation_domains": [],
-        "domain_audits": [
-          {
-            "domain": "military_family_readiness",
-            "keyword_hits": [
-              "family"
-            ],
-            "exact_hits": 1,
-            "multiword_hits": 0,
-            "context_hits": 2,
-            "semantic_hits": 0,
-            "object_hits": 0,
-            "score": 4,
-            "evidence": [
-              "help:context",
-              "helping:context"
-            ],
-            "allowed": true,
-            "gate": "primary"
-          }
-        ]
-      },
-      "primary_domain": "military_family_readiness",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.45,
-        "method": "event_state_no_evidence",
-        "evidence": []
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "military_family_readiness"
-      ],
-      "forecast": "Fallback contextual signal from NewsAPI after Tier 1 screen.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.68,
-      "freshness": 0.9,
-      "weighted_contribution": 0.0022,
-      "qualified_for_scoring": true,
-      "fallback_origin": "newsapi",
-      "screening_metadata": {
-        "accepted_primary_domain": "military_family_readiness",
-        "accepted_domains": [
-          "military_family_readiness"
-        ],
-        "matches": {
-          "military_family_readiness": [
-            "family"
-          ]
-        },
-        "qualified_matches": {
-          "military_family_readiness": [
-            "family"
-          ]
-        },
-        "routing": {
-          "accepted_primary": "military_family_readiness",
-          "accepted_domains": [
-            "military_family_readiness"
-          ],
-          "rejected_primary_candidates": [],
-          "blocked_propagation_domains": [],
-          "domain_audits": [
-            {
-              "domain": "military_family_readiness",
-              "keyword_hits": [
-                "family"
-              ],
-              "exact_hits": 1,
-              "multiword_hits": 0,
-              "context_hits": 2,
-              "semantic_hits": 0,
-              "object_hits": 0,
-              "score": 4,
-              "evidence": [
-                "help:context",
-                "helping:context"
-              ],
-              "allowed": true,
-              "gate": "primary"
-            }
-          ]
-        },
-        "direction_validation": {
-          "source_default": "neutral",
-          "validated": "neutral",
-          "override": false,
-          "positive_hits": 0,
-          "negative_hits": 0,
-          "confidence": 0.45,
-          "method": "event_state_no_evidence",
-          "evidence": []
-        },
-        "relevance": 0.28,
-        "failure_reason": "newsapi_discovery_not_tier1_authority"
-      },
-      "tier3_normalization_factor": 0.32,
-      "source_domains": [
-        "foxnews.com"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "military_family_readiness"
-        ]
-      },
-      "raw_weighted_contribution": 0.0045,
-      "tier3_scale": 0.5
-    },
-    {
-      "event_id": "evt_08315c3ced40c7c5",
-      "source_name": "Fox News",
-      "source_domain": "foxnews.com",
-      "title": "READ: Dr. Oz puts all 50 governors on notice over billions lost to Medicaid fraud",
-      "summary": "Dr. Mehmet Oz directs all 50 governors to root out Medicaid fraud, giving states 10 days to identify and remove noncompliant healthcare providers.",
-      "url": "https://www.foxnews.com/politics/read-dr-oz-puts-all-50-governors-notice-over-billions-lost-medicaid-fraud",
-      "published_at": "2026-04-23T14:24:53Z",
-      "domains": [
-        "healthcare_system"
-      ],
-      "domain_keyword_hits": {
-        "healthcare_system": [
-          "healthcare"
-        ]
-      },
-      "domain_routing": {
-        "accepted_primary": "healthcare_system",
-        "accepted_domains": [
-          "healthcare_system"
-        ],
-        "rejected_primary_candidates": [],
-        "blocked_propagation_domains": [],
-        "domain_audits": [
-          {
-            "domain": "healthcare_system",
-            "keyword_hits": [
-              "healthcare"
-            ],
-            "exact_hits": 1,
-            "multiword_hits": 0,
-            "context_hits": 0,
-            "semantic_hits": 0,
-            "object_hits": 1,
-            "score": 3,
-            "evidence": [
-              "care:event_object"
-            ],
-            "allowed": true,
-            "gate": "primary"
-          }
-        ]
-      },
-      "primary_domain": "healthcare_system",
-      "event_type": "context_signal",
-      "direction": "neutral",
-      "direction_validation": {
-        "source_default": "neutral",
-        "validated": "neutral",
-        "override": false,
-        "positive_hits": 0,
-        "negative_hits": 0,
-        "confidence": 0.45,
-        "method": "event_state_no_evidence",
-        "evidence": []
-      },
-      "impact_level": "watch",
-      "confidence": "low",
-      "relevance_score": 0.38,
-      "drivers": [
-        "healthcare_system"
-      ],
-      "forecast": "Fallback contextual signal from NewsAPI after Tier 1 screen.",
-      "evidence_count": 1,
-      "region": "national",
-      "regions": [
-        "national"
-      ],
-      "scope": "national",
-      "source_state": "live",
-      "age_hours": null,
-      "tier": "tier_3",
-      "trust_weight": 0.68,
-      "freshness": 0.9,
-      "weighted_contribution": 0.0019,
-      "qualified_for_scoring": true,
-      "fallback_origin": "newsapi",
-      "screening_metadata": {
-        "accepted_primary_domain": "healthcare_system",
-        "accepted_domains": [
-          "healthcare_system"
-        ],
-        "matches": {
-          "healthcare_system": [
-            "healthcare"
-          ]
-        },
-        "qualified_matches": {
-          "healthcare_system": [
-            "healthcare"
-          ]
-        },
-        "routing": {
-          "accepted_primary": "healthcare_system",
-          "accepted_domains": [
-            "healthcare_system"
-          ],
-          "rejected_primary_candidates": [],
-          "blocked_propagation_domains": [],
-          "domain_audits": [
-            {
-              "domain": "healthcare_system",
-              "keyword_hits": [
-                "healthcare"
-              ],
-              "exact_hits": 1,
-              "multiword_hits": 0,
-              "context_hits": 0,
-              "semantic_hits": 0,
-              "object_hits": 1,
-              "score": 3,
-              "evidence": [
-                "care:event_object"
-              ],
-              "allowed": true,
-              "gate": "primary"
-            }
-          ]
-        },
-        "direction_validation": {
-          "source_default": "neutral",
-          "validated": "neutral",
-          "override": false,
-          "positive_hits": 0,
-          "negative_hits": 0,
-          "confidence": 0.45,
-          "method": "event_state_no_evidence",
-          "evidence": []
-        },
-        "relevance": 0.28,
-        "failure_reason": "newsapi_discovery_not_tier1_authority"
-      },
-      "tier3_normalization_factor": 0.32,
-      "source_domains": [
-        "foxnews.com"
-      ],
-      "corroboration": {
-        "score": 55,
-        "source_count": 1,
-        "independent_sources": 1,
-        "domains": [
-          "healthcare_system"
-        ]
-      },
-      "raw_weighted_contribution": 0.0045,
-      "tier3_scale": 0.425
     },
     {
       "event_id": "evt_c68c8a38c32275f7",
@@ -1710,7 +1413,7 @@
       "tier": "tier_3",
       "trust_weight": 0.76,
       "freshness": 0.55,
-      "weighted_contribution": 0.0011,
+      "weighted_contribution": 0.0009,
       "qualified_for_scoring": true,
       "fallback_origin": null,
       "screening_metadata": {},
@@ -1727,7 +1430,7 @@
         ]
       },
       "raw_weighted_contribution": 0.0027,
-      "tier3_scale": 0.425
+      "tier3_scale": 0.325
     },
     {
       "event_id": "evt_c3ec4de9a4b9495e",
@@ -1821,6 +1524,100 @@
       },
       "raw_weighted_contribution": 0.0027,
       "tier3_scale": 0.325
+    },
+    {
+      "event_id": "evt_927a764f6af1d72e",
+      "source_name": "DefenseNews",
+      "source_domain": "defensenews.com",
+      "title": "Italy forgoes $14 billion deficit spending on defense amid wobbling economy",
+      "summary": "\u201cToday we have other priorities. I have the priority of energy costs and the priority of responding to the needs of citizens,\" said the prime minister.",
+      "url": "https://www.defensenews.com/global/europe/2026/04/24/italy-forgoes-14-billion-deficit-spending-on-defense-amid-wobbling-economy/",
+      "published_at": "2026-04-24T15:16:48Z",
+      "domains": [
+        "cost_of_living"
+      ],
+      "domain_keyword_hits": {
+        "cost_of_living": [
+          "costs"
+        ]
+      },
+      "domain_routing": {
+        "accepted_primary": "cost_of_living",
+        "accepted_domains": [
+          "cost_of_living"
+        ],
+        "rejected_primary_candidates": [],
+        "blocked_propagation_domains": [],
+        "domain_audits": [
+          {
+            "domain": "cost_of_living",
+            "keyword_hits": [
+              "costs"
+            ],
+            "exact_hits": 1,
+            "multiword_hits": 0,
+            "context_hits": 0,
+            "semantic_hits": 0,
+            "object_hits": 2,
+            "score": 4,
+            "evidence": [
+              "cost:event_object",
+              "costs:event_object"
+            ],
+            "allowed": true,
+            "gate": "primary"
+          }
+        ]
+      },
+      "primary_domain": "cost_of_living",
+      "event_type": "context_signal",
+      "direction": "neutral",
+      "direction_validation": {
+        "source_default": "neutral",
+        "validated": "neutral",
+        "override": false,
+        "positive_hits": 0,
+        "negative_hits": 0,
+        "confidence": 0.45,
+        "method": "event_state_no_evidence",
+        "evidence": []
+      },
+      "impact_level": "watch",
+      "confidence": "low",
+      "relevance_score": 0.38,
+      "drivers": [
+        "cost_of_living"
+      ],
+      "forecast": "Contextual signal from curated DefenseNews RSS.",
+      "evidence_count": 1,
+      "region": "national",
+      "regions": [
+        "national"
+      ],
+      "scope": "national",
+      "source_state": "live",
+      "age_hours": null,
+      "tier": "tier_3",
+      "trust_weight": 0.68,
+      "freshness": 0.9,
+      "weighted_contribution": 0.0008,
+      "qualified_for_scoring": true,
+      "fallback_origin": null,
+      "screening_metadata": {},
+      "tier3_normalization_factor": 0.2533,
+      "source_domains": [
+        "defensenews.com"
+      ],
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "cost_of_living"
+        ]
+      },
+      "raw_weighted_contribution": 0.0035,
+      "tier3_scale": 0.225
     }
   ],
   "priority_signals": [
@@ -1831,7 +1628,7 @@
       "forecast": "Contextual signal from curated ArmyTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T14:50:09Z",
+      "updated_at": "2026-04-24T15:46:52Z",
       "evidence_count": 3,
       "source_domains": [
         "airforcetimes.com",
@@ -1855,30 +1652,29 @@
       }
     },
     {
-      "signal_id": "ps_201d862d642af618",
+      "signal_id": "ps_35a536d11e8acd0a",
       "domain_key": "benefits",
       "headline": "Advocates press for preventive programs, VA benefits for struggling vets",
-      "forecast": "Contextual signal from curated ArmyTimes RSS.",
+      "forecast": "Contextual signal from curated AirForceTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T14:50:09Z",
-      "evidence_count": 3,
+      "updated_at": "2026-04-24T15:46:52Z",
+      "evidence_count": 2,
       "source_domains": [
         "airforcetimes.com",
-        "armytimes.com",
         "marinecorpstimes.com"
       ],
       "event_ids": [
-        "evt_a670a9bdac742da9"
+        "evt_a95c96f015987f78"
       ],
       "signal_type": "contextual",
       "region": "national",
       "scope": "national",
       "source_state": "recent",
       "corroboration": {
-        "score": 95,
-        "source_count": 3,
-        "independent_sources": 3,
+        "score": 75,
+        "source_count": 2,
+        "independent_sources": 2,
         "domains": [
           "benefits"
         ]
@@ -1891,7 +1687,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T14:50:09Z",
+      "updated_at": "2026-04-24T15:46:52Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1919,7 +1715,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T14:50:09Z",
+      "updated_at": "2026-04-24T15:46:52Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1937,6 +1733,34 @@
         "independent_sources": 1,
         "domains": [
           "employment"
+        ]
+      }
+    },
+    {
+      "signal_id": "ps_909126c4976a6004",
+      "domain_key": "cost_of_living",
+      "headline": "Italy forgoes $14 billion deficit spending on defense amid wobbling economy",
+      "forecast": "Contextual signal from curated DefenseNews RSS.",
+      "severity": "watch",
+      "confidence": "low",
+      "updated_at": "2026-04-24T15:46:52Z",
+      "evidence_count": 1,
+      "source_domains": [
+        "defensenews.com"
+      ],
+      "event_ids": [
+        "evt_927a764f6af1d72e"
+      ],
+      "signal_type": "contextual",
+      "region": "national",
+      "scope": "national",
+      "source_state": "live",
+      "corroboration": {
+        "score": 55,
+        "source_count": 1,
+        "independent_sources": 1,
+        "domains": [
+          "cost_of_living"
         ]
       }
     }
@@ -2108,17 +1932,17 @@
         }
       }
     },
-    "tier3_used": 182,
-    "tier3_keyword_matched": 28,
-    "tier3_keyword_qualified": 28,
-    "tier3_scoring_qualified": 21,
-    "tier3_cluster_count": 14,
-    "tier3_kept": 21,
-    "tier3_qualified": 14,
-    "tier3_final_events": 14,
-    "tier3_priority_signals": 4,
+    "tier3_used": 180,
+    "tier3_keyword_matched": 26,
+    "tier3_keyword_qualified": 26,
+    "tier3_scoring_qualified": 19,
+    "tier3_cluster_count": 13,
+    "tier3_kept": 19,
+    "tier3_qualified": 13,
+    "tier3_final_events": 13,
+    "tier3_priority_signals": 5,
     "tier3_routing_audit": {
-      "primary_accepted": 21,
+      "primary_accepted": 19,
       "primary_rejected": 7,
       "secondary_or_tertiary_allowed": 1,
       "secondary_or_tertiary_blocked": 1
@@ -2234,56 +2058,57 @@
       "reason_code": "public_state_changed",
       "inventory_changed": true,
       "public_state_changed": true,
-      "today_events": 97,
-      "today_signals": 97,
-      "delta_events": 1,
-      "delta_signals": 1,
-      "new_signals": 85,
-      "new_signal_observations": 85,
-      "new_signal_identities": 5,
-      "new_identity_observations": 5,
-      "existing_identity_new_observations": 80,
-      "new_keyword_signals": 85,
+      "today_events": 96,
+      "today_signals": 96,
+      "delta_events": 0,
+      "delta_signals": 0,
+      "new_signals": 84,
+      "new_signal_observations": 84,
+      "new_signal_identities": 3,
+      "new_identity_observations": 3,
+      "existing_identity_new_observations": 81,
+      "new_keyword_signals": 84,
       "repeated_keyword_signals": 0,
       "retained_reference_signals": 12,
-      "carried_signals": 92,
+      "carried_signals": 93,
       "carried_stable_signals": 12,
       "carried_changed_signals": 0,
       "changed_signals": 0,
       "intensified_signals": 0,
       "weakened_signals": 0,
-      "removed_signals": 4,
+      "removed_signals": 3,
       "inventory_states": {
-        "new": 85,
-        "new_signal_observations": 85,
-        "new_signal_identities": 5,
-        "new_keyword_signals": 85,
+        "new": 84,
+        "new_signal_observations": 84,
+        "new_signal_identities": 3,
+        "new_keyword_signals": 84,
         "repeated_keyword_signals": 0,
-        "existing_identity_new_observations": 80,
+        "existing_identity_new_observations": 81,
         "retained_reference": 12,
-        "fresh_for_operational_day": 85,
-        "valid_for_operational_day": 85,
-        "revalidated_this_run": 85,
-        "same_day_validation_continuity": 81,
+        "fresh_for_operational_day": 84,
+        "valid_for_operational_day": 84,
+        "revalidated_this_run": 84,
+        "same_day_validation_continuity": 80,
         "carried_stable": 12,
         "carried_changed": 0,
         "intensified": 0,
         "weakened": 0,
-        "removed": 4
+        "removed": 3
       },
       "changed_signal_details": [],
-      "changed_domains_count": 2,
+      "changed_domains_count": 3,
       "changed_domains": [
         "military_family_readiness",
-        "healthcare_system"
+        "cost_of_living",
+        "benefits"
       ],
-      "overall_score_delta": 0.03,
+      "overall_score_delta": 0.02,
       "trend_changed": false,
       "band_changed": false,
       "tier_contribution_deltas": {
         "tier_1": 0.0,
         "tier_2": 0.0,
-        "tier_3": 0.0258
+        "tier_3": 0.0122
       },
       "changed_tiers": [
         "tier_3"
@@ -2294,43 +2119,43 @@
         "reason": null
       },
       "signal_replacement": {
-        "new_signals": 85,
-        "new_signal_observations": 85,
-        "new_signal_identities": 5,
-        "new_keyword_signals": 85,
+        "new_signals": 84,
+        "new_signal_observations": 84,
+        "new_signal_identities": 3,
+        "new_keyword_signals": 84,
         "repeated_keyword_signals": 0,
         "retained_reference_signals": 12,
-        "fresh_for_operational_day_signals": 85,
-        "valid_for_operational_day_signals": 85,
-        "revalidated_this_run_signals": 85,
-        "same_day_validation_continuity_signals": 81,
-        "existing_identity_new_observations": 80,
+        "fresh_for_operational_day_signals": 84,
+        "valid_for_operational_day_signals": 84,
+        "revalidated_this_run_signals": 84,
+        "same_day_validation_continuity_signals": 80,
+        "existing_identity_new_observations": 81,
         "carried_stable_signals": 12,
         "carried_changed_signals": 0,
         "changed_signals": 0,
         "intensified_signals": 0,
         "weakened_signals": 0,
-        "removed_signals": 4,
+        "removed_signals": 3,
         "inventory_states": {
-          "new": 85,
-          "new_signal_observations": 85,
-          "new_signal_identities": 5,
-          "new_keyword_signals": 85,
+          "new": 84,
+          "new_signal_observations": 84,
+          "new_signal_identities": 3,
+          "new_keyword_signals": 84,
           "repeated_keyword_signals": 0,
-          "existing_identity_new_observations": 80,
+          "existing_identity_new_observations": 81,
           "retained_reference": 12,
-          "fresh_for_operational_day": 85,
-          "valid_for_operational_day": 85,
-          "revalidated_this_run": 85,
-          "same_day_validation_continuity": 81,
+          "fresh_for_operational_day": 84,
+          "valid_for_operational_day": 84,
+          "revalidated_this_run": 84,
+          "same_day_validation_continuity": 80,
           "carried_stable": 12,
           "carried_changed": 0,
           "intensified": 0,
           "weakened": 0,
-          "removed": 4
+          "removed": 3
         },
         "new_events": 2,
-        "removed_events": 1,
+        "removed_events": 2,
         "net_same_count_but_different_content": true
       },
       "tier_entry_integrity": {
@@ -2380,7 +2205,7 @@
         ],
         "threshold": 0.5
       },
-      "public_overall_score": 52.25
+      "public_overall_score": 52.24
     },
     "contract_integrity": {
       "public_daily_compatibility_fields_retained": [
