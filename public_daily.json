@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-04-24",
-  "generated_at": "2026-04-24T20:32:56Z",
+  "as_of": "2026-04-25",
+  "generated_at": "2026-04-25T14:09:06Z",
   "overall_score": 52.24,
   "score": 52.24,
   "status_band": "Balanced / Watch",
@@ -275,6 +275,18 @@
     {
       "time": "2026-04-24T20:32:56Z",
       "as_of": "2026-04-24",
+      "overall_score": 52.24,
+      "trend": "stable",
+      "housing_stability": 49.79,
+      "cost_of_living": 50.51,
+      "employment": 54.43,
+      "benefits": 48.86,
+      "healthcare_system": 56.07,
+      "military_family_readiness": 55.22
+    },
+    {
+      "time": "2026-04-25T14:09:06Z",
+      "as_of": "2026-04-25",
       "overall_score": 52.24,
       "trend": "stable",
       "housing_stability": 49.79,
@@ -1518,7 +1530,7 @@
       "forecast": "Contextual signal from curated AirForceTimes RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T20:32:59Z",
+      "updated_at": "2026-04-25T14:09:09Z",
       "evidence_count": 1,
       "source_domains": [
         "airforcetimes.com"
@@ -1546,7 +1558,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T20:32:59Z",
+      "updated_at": "2026-04-25T14:09:09Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1574,7 +1586,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "high",
-      "updated_at": "2026-04-24T20:32:59Z",
+      "updated_at": "2026-04-25T14:09:09Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1602,7 +1614,7 @@
       "forecast": "Contextual signal from curated DefenseNews RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-24T20:32:59Z",
+      "updated_at": "2026-04-25T14:09:09Z",
       "evidence_count": 1,
       "source_domains": [
         "defensenews.com"
@@ -1630,7 +1642,7 @@
       "forecast": "Contextual signal from curated TheWarHorse RSS.",
       "severity": "watch",
       "confidence": "low",
-      "updated_at": "2026-04-24T20:32:59Z",
+      "updated_at": "2026-04-25T14:09:09Z",
       "evidence_count": 1,
       "source_domains": [
         "thewarhorse.org"
@@ -1864,8 +1876,8 @@
         "utc_legacy_context_cutoff_date": "2026-04-20"
       },
       "final_history": {
-        "rows_total": 19,
-        "utc_z_rows": 19,
+        "rows_total": 20,
+        "utc_z_rows": 20,
         "non_utc_time_rows_remaining": 0,
         "time_parse_failures": 0,
         "future_as_of_rows_present": 0,
@@ -1888,7 +1900,7 @@
       }
     },
     "trend_integrity": {
-      "rows_total": 19,
+      "rows_total": 20,
       "stored_trend_mismatches": 0,
       "missing_trend_rows": 0,
       "mismatch_examples": []
@@ -1941,65 +1953,59 @@
       "threshold": 0.5
     },
     "daily_signal_audit_summary": {
-      "signal_refresh_status": "refreshed",
-      "reason_code": "public_state_changed",
+      "signal_refresh_status": "unchanged",
+      "reason_code": "inventory_changed_only",
       "inventory_changed": true,
-      "public_state_changed": true,
+      "public_state_changed": false,
       "today_events": 95,
       "today_signals": 95,
-      "delta_events": -1,
-      "delta_signals": -1,
+      "delta_events": 0,
+      "delta_signals": 0,
       "new_signals": 83,
       "new_signal_observations": 83,
-      "new_signal_identities": 3,
-      "new_identity_observations": 3,
-      "existing_identity_new_observations": 80,
-      "new_keyword_signals": 83,
-      "repeated_keyword_signals": 0,
+      "new_signal_identities": 0,
+      "new_identity_observations": 0,
+      "existing_identity_new_observations": 83,
+      "new_keyword_signals": 0,
+      "repeated_keyword_signals": 83,
       "retained_reference_signals": 12,
-      "carried_signals": 92,
+      "carried_signals": 95,
       "carried_stable_signals": 12,
       "carried_changed_signals": 0,
       "changed_signals": 0,
       "intensified_signals": 0,
       "weakened_signals": 0,
-      "removed_signals": 4,
+      "removed_signals": 0,
       "inventory_states": {
         "new": 83,
         "new_signal_observations": 83,
-        "new_signal_identities": 3,
-        "new_keyword_signals": 83,
-        "repeated_keyword_signals": 0,
-        "existing_identity_new_observations": 80,
+        "new_signal_identities": 0,
+        "new_keyword_signals": 0,
+        "repeated_keyword_signals": 83,
+        "existing_identity_new_observations": 83,
         "retained_reference": 12,
         "fresh_for_operational_day": 83,
         "valid_for_operational_day": 83,
         "revalidated_this_run": 83,
-        "same_day_validation_continuity": 82,
+        "same_day_validation_continuity": 0,
         "carried_stable": 12,
         "carried_changed": 0,
         "intensified": 0,
         "weakened": 0,
-        "removed": 4
+        "removed": 0
       },
       "changed_signal_details": [],
-      "changed_domains_count": 3,
-      "changed_domains": [
-        "military_family_readiness",
-        "cost_of_living",
-        "benefits"
-      ],
-      "overall_score_delta": 0.02,
+      "changed_domains_count": 0,
+      "changed_domains": [],
+      "overall_score_delta": -0.0,
       "trend_changed": false,
       "band_changed": false,
       "tier_contribution_deltas": {
         "tier_1": 0.0,
         "tier_2": 0.0,
-        "tier_3": 0.0175
+        "tier_3": 0.0
       },
-      "changed_tiers": [
-        "tier_3"
-      ],
+      "changed_tiers": [],
       "pre_confirmation_movement": {
         "detected": false,
         "domains": [],
@@ -2008,42 +2014,42 @@
       "signal_replacement": {
         "new_signals": 83,
         "new_signal_observations": 83,
-        "new_signal_identities": 3,
-        "new_keyword_signals": 83,
-        "repeated_keyword_signals": 0,
+        "new_signal_identities": 0,
+        "new_keyword_signals": 0,
+        "repeated_keyword_signals": 83,
         "retained_reference_signals": 12,
         "fresh_for_operational_day_signals": 83,
         "valid_for_operational_day_signals": 83,
         "revalidated_this_run_signals": 83,
-        "same_day_validation_continuity_signals": 82,
-        "existing_identity_new_observations": 80,
+        "same_day_validation_continuity_signals": 0,
+        "existing_identity_new_observations": 83,
         "carried_stable_signals": 12,
         "carried_changed_signals": 0,
         "changed_signals": 0,
         "intensified_signals": 0,
         "weakened_signals": 0,
-        "removed_signals": 4,
+        "removed_signals": 0,
         "inventory_states": {
           "new": 83,
           "new_signal_observations": 83,
-          "new_signal_identities": 3,
-          "new_keyword_signals": 83,
-          "repeated_keyword_signals": 0,
-          "existing_identity_new_observations": 80,
+          "new_signal_identities": 0,
+          "new_keyword_signals": 0,
+          "repeated_keyword_signals": 83,
+          "existing_identity_new_observations": 83,
           "retained_reference": 12,
           "fresh_for_operational_day": 83,
           "valid_for_operational_day": 83,
           "revalidated_this_run": 83,
-          "same_day_validation_continuity": 82,
+          "same_day_validation_continuity": 0,
           "carried_stable": 12,
           "carried_changed": 0,
           "intensified": 0,
           "weakened": 0,
-          "removed": 4
+          "removed": 0
         },
-        "new_events": 2,
-        "removed_events": 3,
-        "net_same_count_but_different_content": true
+        "new_events": 0,
+        "removed_events": 0,
+        "net_same_count_but_different_content": false
       },
       "tier_entry_integrity": {
         "tier1_api_sources_detected": true,
