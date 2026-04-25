@@ -1,7 +1,7 @@
 # USAVET Daily Stakeholder Intelligence Report
 
 **Date:** 2026-04-25
-**Generated (UTC):** 2026-04-25T21:21:05Z
+**Generated (UTC):** 2026-04-25T22:43:25Z
 **Status:** Draft Generated
 **Composite Score:** 55.38
 **Band:** Balanced / Watch
@@ -30,7 +30,7 @@ USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch co
 
 ## 3. Operational Snapshot
 - **Q: What happened today?**
-  - **A:** The engine completed today's run and generated governed public outputs at 2026-04-25T21:21:05Z.
+  - **A:** The engine completed today's run and generated governed public outputs at 2026-04-25T22:43:25Z.
 - **Q: How many signals and events were observed?**
   - **A:** The engine recorded 40 total signals and 40 total events.
 - **Q: What changed compared with the prior available history?**

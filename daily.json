@@ -1,6 +1,6 @@
 {
   "as_of": "2026-04-25",
-  "generated_at": "2026-04-25T21:21:05Z",
+  "generated_at": "2026-04-25T22:43:25Z",
   "overall_score": 55.38,
   "trend": "improving",
   "domains": {
@@ -2763,13 +2763,13 @@
         "key_present": true,
         "fetch_ok": true,
         "parsed_ok": true,
-        "latest_value": 148,
+        "latest_value": 149,
         "latest_date": null,
         "domain_score": null,
         "contribution": 0.6,
         "status": "flowed_to_domain",
         "reason": null,
-        "candidate_articles": 148,
+        "candidate_articles": 149,
         "tier3_primary_signals": 13,
         "tier3_routed_signals": 13,
         "tier3_events": 13
