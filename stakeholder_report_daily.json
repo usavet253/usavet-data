@@ -5,10 +5,10 @@
   "display_doctrine": "engine_generates_meaning_web_pages_display_json_only",
   "status": "Draft Generated",
   "as_of": "2026-04-25",
-  "generated_at": "2026-04-25T21:06:06Z",
+  "generated_at": "2026-04-25T21:21:05Z",
   "operational_timezone": "UTC",
   "system_condition": "Watch",
-  "overall_score": 54.38,
+  "overall_score": 55.38,
   "status_band": "Balanced / Watch",
   "trend": "improving",
   "source_quality": "High Confidence",
@@ -62,71 +62,71 @@
     }
   },
   "summary": {
-    "headline": "USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch condition, improving trend, 54.38 composite score.",
+    "headline": "USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch condition, improving trend, 55.38 composite score.",
     "system_condition": "Watch",
     "top_pressure_domains": [
-      "Military Family Readiness",
       "Housing Stability",
-      "Employment"
+      "Employment",
+      "Healthcare System"
     ],
-    "today_signals": 23,
-    "today_events": 23,
-    "overall_delta": 2.14
+    "today_signals": 40,
+    "today_events": 40,
+    "overall_delta": 3.14
   },
   "domain_rows": [
-    {
-      "domain_key": "military_family_readiness",
-      "domain_name": "Military Family Readiness",
-      "score": 50.3,
-      "status_band": "Balanced / Watch",
-      "signals": 0,
-      "events": 0,
-      "delta_signals": 0
-    },
     {
       "domain_key": "housing_stability",
       "domain_name": "Housing Stability",
       "score": 52.0,
       "status_band": "Balanced / Watch",
-      "signals": 0,
-      "events": 0,
-      "delta_signals": 0
+      "signals": 6,
+      "events": 6,
+      "delta_signals": 6
     },
     {
       "domain_key": "employment",
       "domain_name": "Employment",
       "score": 54.0,
       "status_band": "Balanced / Watch",
-      "signals": 0,
-      "events": 0,
-      "delta_signals": 0
+      "signals": 4,
+      "events": 4,
+      "delta_signals": 4
     },
     {
       "domain_key": "healthcare_system",
       "domain_name": "Healthcare System",
       "score": 56.0,
       "status_band": "Balanced / Watch",
-      "signals": 0,
-      "events": 0,
-      "delta_signals": 0
+      "signals": 2,
+      "events": 2,
+      "delta_signals": 2
     },
     {
       "domain_key": "benefits",
       "domain_name": "Benefits",
       "score": 56.0,
       "status_band": "Balanced / Watch",
-      "signals": 0,
-      "events": 0,
-      "delta_signals": 0
+      "signals": 1,
+      "events": 1,
+      "delta_signals": 1
+    },
+    {
+      "domain_key": "military_family_readiness",
+      "domain_name": "Military Family Readiness",
+      "score": 56.3,
+      "status_band": "Balanced / Watch",
+      "signals": 21,
+      "events": 21,
+      "delta_signals": 21
     },
     {
       "domain_key": "cost_of_living",
       "domain_name": "Cost of Living",
       "score": 58.0,
       "status_band": "Balanced / Watch",
-      "signals": 0,
-      "events": 0,
-      "delta_signals": 0
+      "signals": 6,
+      "events": 6,
+      "delta_signals": 6
     }
   ],
   "sections": [
@@ -141,15 +141,15 @@
       ],
       "answers": [
         {
-          "answer": "Today, the system is in the Balanced / Watch band with a improving trend and a composite score of 54.38.",
+          "answer": "Today, the system is in the Balanced / Watch band with a improving trend and a composite score of 55.38.",
           "metrics": {}
         },
         {
-          "answer": "The current stakeholder condition is Watch, with pressure watch domains identified as Military Family Readiness, Housing Stability, Employment.",
+          "answer": "The current stakeholder condition is Watch, with pressure watch domains identified as Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
-          "answer": "This matters because the composite can remain balanced while pressure persists inside specific domains: Military Family Readiness, Housing Stability, Employment.",
+          "answer": "This matters because the composite can remain balanced while pressure persists inside specific domains: Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
@@ -160,17 +160,17 @@
       "qa": [
         {
           "question": "What are the most important developments today?",
-          "answer": "Today, the system is in the Balanced / Watch band with a improving trend and a composite score of 54.38.",
+          "answer": "Today, the system is in the Balanced / Watch band with a improving trend and a composite score of 55.38.",
           "metrics": {}
         },
         {
           "question": "What is the current system condition?",
-          "answer": "The current stakeholder condition is Watch, with pressure watch domains identified as Military Family Readiness, Housing Stability, Employment.",
+          "answer": "The current stakeholder condition is Watch, with pressure watch domains identified as Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
           "question": "Why does this matter now?",
-          "answer": "This matters because the composite can remain balanced while pressure persists inside specific domains: Military Family Readiness, Housing Stability, Employment.",
+          "answer": "This matters because the composite can remain balanced while pressure persists inside specific domains: Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
@@ -232,11 +232,11 @@
       ],
       "answers": [
         {
-          "answer": "The engine completed today's run and generated governed public outputs at 2026-04-25T21:06:06Z.",
+          "answer": "The engine completed today's run and generated governed public outputs at 2026-04-25T21:21:05Z.",
           "metrics": {}
         },
         {
-          "answer": "The engine recorded 23 total signals and 23 total events.",
+          "answer": "The engine recorded 40 total signals and 40 total events.",
           "metrics": {}
         },
         {
@@ -247,12 +247,12 @@
       "qa": [
         {
           "question": "What happened today?",
-          "answer": "The engine completed today's run and generated governed public outputs at 2026-04-25T21:06:06Z.",
+          "answer": "The engine completed today's run and generated governed public outputs at 2026-04-25T21:21:05Z.",
           "metrics": {}
         },
         {
           "question": "How many signals and events were observed?",
-          "answer": "The engine recorded 23 total signals and 23 total events.",
+          "answer": "The engine recorded 40 total signals and 40 total events.",
           "metrics": {}
         },
         {
@@ -318,7 +318,7 @@
           "metrics": {}
         },
         {
-          "answer": "Pressure is concentrated in Military Family Readiness, Housing Stability, Employment.",
+          "answer": "Pressure is concentrated in Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
@@ -334,7 +334,7 @@
         },
         {
           "question": "Where is pressure building?",
-          "answer": "Pressure is concentrated in Military Family Readiness, Housing Stability, Employment.",
+          "answer": "Pressure is concentrated in Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
@@ -355,11 +355,11 @@
       ],
       "answers": [
         {
-          "answer": "Emerging risk is concentrated in Military Family Readiness, Housing Stability, Employment.",
+          "answer": "Emerging risk is concentrated in Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
-          "answer": "The domains showing the most pressure are Military Family Readiness, Housing Stability, Employment.",
+          "answer": "The domains showing the most pressure are Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
@@ -370,12 +370,12 @@
       "qa": [
         {
           "question": "What risks are emerging?",
-          "answer": "Emerging risk is concentrated in Military Family Readiness, Housing Stability, Employment.",
+          "answer": "Emerging risk is concentrated in Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
           "question": "Which domains show the most pressure?",
-          "answer": "The domains showing the most pressure are Military Family Readiness, Housing Stability, Employment.",
+          "answer": "The domains showing the most pressure are Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
@@ -519,7 +519,7 @@
       ],
       "answers": [
         {
-          "answer": "Externally, it is safe to say the system is Balanced / Watch with watch focus on Military Family Readiness, Housing Stability, Employment.",
+          "answer": "Externally, it is safe to say the system is Balanced / Watch with watch focus on Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
@@ -534,7 +534,7 @@
       "qa": [
         {
           "question": "What can be said externally?",
-          "answer": "Externally, it is safe to say the system is Balanced / Watch with watch focus on Military Family Readiness, Housing Stability, Employment.",
+          "answer": "Externally, it is safe to say the system is Balanced / Watch with watch focus on Housing Stability, Employment, Healthcare System.",
           "metrics": {}
         },
         {
@@ -564,7 +564,7 @@
           "metrics": {}
         },
         {
-          "answer": "Watch Military Family Readiness, Housing Stability, Employment in the next run.",
+          "answer": "Watch Housing Stability, Employment, Healthcare System in the next run.",
           "metrics": {}
         },
         {
@@ -580,7 +580,7 @@
         },
         {
           "question": "What should be watched in the next run?",
-          "answer": "Watch Military Family Readiness, Housing Stability, Employment in the next run.",
+          "answer": "Watch Housing Stability, Employment, Healthcare System in the next run.",
           "metrics": {}
         },
         {
@@ -609,7 +609,7 @@
           "metrics": {}
         },
         {
-          "answer": "Final posture: Balanced / Watch, improving, 54.38.",
+          "answer": "Final posture: Balanced / Watch, improving, 55.38.",
           "metrics": {}
         }
       ],
@@ -626,7 +626,7 @@
         },
         {
           "question": "What is the final daily posture?",
-          "answer": "Final posture: Balanced / Watch, improving, 54.38.",
+          "answer": "Final posture: Balanced / Watch, improving, 55.38.",
           "metrics": {}
         }
       ],

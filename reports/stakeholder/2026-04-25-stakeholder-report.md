@@ -1,22 +1,22 @@
 # USAVET Daily Stakeholder Intelligence Report
 
 **Date:** 2026-04-25
-**Generated (UTC):** 2026-04-25T21:06:06Z
+**Generated (UTC):** 2026-04-25T21:21:05Z
 **Status:** Draft Generated
-**Composite Score:** 54.38
+**Composite Score:** 55.38
 **Band:** Balanced / Watch
 **Trend:** improving
 
 ## Stakeholder Summary
-USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch condition, improving trend, 54.38 composite score.
+USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch condition, improving trend, 55.38 composite score.
 
 ## 1. Executive Summary
 - **Q: What are the most important developments today?**
-  - **A:** Today, the system is in the Balanced / Watch band with a improving trend and a composite score of 54.38.
+  - **A:** Today, the system is in the Balanced / Watch band with a improving trend and a composite score of 55.38.
 - **Q: What is the current system condition?**
-  - **A:** The current stakeholder condition is Watch, with pressure watch domains identified as Military Family Readiness, Housing Stability, Employment.
+  - **A:** The current stakeholder condition is Watch, with pressure watch domains identified as Housing Stability, Employment, Healthcare System.
 - **Q: Why does this matter now?**
-  - **A:** This matters because the composite can remain balanced while pressure persists inside specific domains: Military Family Readiness, Housing Stability, Employment.
+  - **A:** This matters because the composite can remain balanced while pressure persists inside specific domains: Housing Stability, Employment, Healthcare System.
 - **Q: What requires stakeholder attention?**
   - **A:** Stakeholders should review the pressure watch domains before external interpretation.
 
@@ -30,9 +30,9 @@ USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch co
 
 ## 3. Operational Snapshot
 - **Q: What happened today?**
-  - **A:** The engine completed today's run and generated governed public outputs at 2026-04-25T21:06:06Z.
+  - **A:** The engine completed today's run and generated governed public outputs at 2026-04-25T21:21:05Z.
 - **Q: How many signals and events were observed?**
-  - **A:** The engine recorded 23 total signals and 23 total events.
+  - **A:** The engine recorded 40 total signals and 40 total events.
 - **Q: What changed compared with the prior available history?**
   - **A:** The current domain ordering identifies the lowest-score domains for review.
 
@@ -48,15 +48,15 @@ USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch co
 - **Q: What patterns are emerging?**
   - **A:** The system is tracking repeated signal structure across the six domains.
 - **Q: Where is pressure building?**
-  - **A:** Pressure is concentrated in Military Family Readiness, Housing Stability, Employment.
+  - **A:** Pressure is concentrated in Housing Stability, Employment, Healthcare System.
 - **Q: Are signals isolated, repeating, increasing, or decreasing?**
   - **A:** Signal movement should be read through the audit layer before interpretation.
 
 ## 6. Risk and System Pressure Assessment
 - **Q: What risks are emerging?**
-  - **A:** Emerging risk is concentrated in Military Family Readiness, Housing Stability, Employment.
+  - **A:** Emerging risk is concentrated in Housing Stability, Employment, Healthcare System.
 - **Q: Which domains show the most pressure?**
-  - **A:** The domains showing the most pressure are Military Family Readiness, Housing Stability, Employment.
+  - **A:** The domains showing the most pressure are Housing Stability, Employment, Healthcare System.
 - **Q: What could happen if pressure remains unaddressed?**
   - **A:** If pressure persists, stable composite readings may still mask domain-level strain.
 
@@ -86,7 +86,7 @@ USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch co
 
 ## 10. Partner and Public Communication
 - **Q: What can be said externally?**
-  - **A:** Externally, it is safe to say the system is Balanced / Watch with watch focus on Military Family Readiness, Housing Stability, Employment.
+  - **A:** Externally, it is safe to say the system is Balanced / Watch with watch focus on Housing Stability, Employment, Healthcare System.
 - **Q: What should not be overstated?**
   - **A:** Do not overstate the report as a benefits, clinical, eligibility, funding, or policy decision.
 - **Q: What language is safest for partners?**
@@ -96,7 +96,7 @@ USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch co
 - **Q: What should operators do next?**
   - **A:** Operators should validate source-flow warnings and review pressure domains.
 - **Q: What should be watched in the next run?**
-  - **A:** Watch Military Family Readiness, Housing Stability, Employment in the next run.
+  - **A:** Watch Housing Stability, Employment, Healthcare System in the next run.
 - **Q: What should not be changed casually?**
   - **A:** Do not casually change weights, tiers, propagation, or public schema.
 
@@ -106,4 +106,4 @@ USAVET daily stakeholder intelligence report for 2026-04-25: Balanced / Watch co
 - **Q: Is this ready for publication?**
   - **A:** This artifact is a draft until approved.
 - **Q: What is the final daily posture?**
-  - **A:** Final posture: Balanced / Watch, improving, 54.38.
+  - **A:** Final posture: Balanced / Watch, improving, 55.38.

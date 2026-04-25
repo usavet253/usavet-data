@@ -1,7 +1,7 @@
 {
   "as_of": "2026-04-25",
-  "generated_at": "2026-04-25T21:06:06Z",
-  "overall_score": 54.38,
+  "generated_at": "2026-04-25T21:21:05Z",
+  "overall_score": 55.38,
   "trend": "improving",
   "domains": {
     "housing_stability": {
@@ -172,7 +172,7 @@
       "status": "Balanced / Watch",
       "tier_1_effect": 0.6,
       "tier_2_effect": -0.2,
-      "tier_3_effect": 0,
+      "tier_3_effect": 0.0,
       "signals": [
         {
           "signal_key": "sig_7c31612f40b8b40e",
@@ -250,15 +250,38 @@
           "domain_role": "primary",
           "domain_propagation_factor": 1.0,
           "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_1b1610c04ff315a4",
+          "name": "Navy ‘going to study’ possibility of building ships outside US, Phelan says",
+          "tier": "tier_3",
+          "domain": "employment",
+          "source_name": "NavyTimes",
+          "source_kind": "contextual",
+          "domain_score": 50.0,
+          "direction": "neutral",
+          "contribution": 0.0,
+          "freshness": 1.0,
+          "confidence": 0.5,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.navytimes.com/news/your-navy/2026/04/22/navy-going-to-study-possibility-of-building-ships-outside-us-phelan-says/",
+            "published_at": "Wed, 22 Apr 2026 00:27:50 +0000"
+          },
+          "detail": "Contextual signal from NavyTimes",
+          "source_primary_domain": "employment",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
         }
       ]
     },
     "military_family_readiness": {
-      "score": 50.3,
+      "score": 56.3,
       "status": "Balanced / Watch",
       "tier_1_effect": 0,
       "tier_2_effect": 0.03,
-      "tier_3_effect": 0,
+      "tier_3_effect": 0.6,
       "signals": [
         {
           "signal_key": "sig_f47a1ae8997c4a03",
@@ -284,10 +307,62 @@
               "2025-17710"
             ]
           },
-          "detail": "Federal Register items: 25. Evidence hits: family readiness, family, readiness",
+          "detail": "Federal Register items: 25. Evidence hits: military, veteran, family readiness, family, readiness",
           "source_primary_domain": "military_family_readiness",
           "domain_role": "primary",
           "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_b31cfcac95cd522d",
+          "name": "NCHV veteran homelessness benchmark [secondary:military_family_readiness]",
+          "tier": "tier_2",
+          "domain": "military_family_readiness",
+          "source_name": "static_benchmark",
+          "source_kind": "benchmark",
+          "domain_score": 41.0,
+          "direction": "pressure",
+          "contribution": -0.035,
+          "freshness": 0.4,
+          "confidence": 0.64,
+          "state": "static_valid",
+          "raw_value": {
+            "key": "nchv_housing",
+            "pressure_score": 66,
+            "evidence_hits": [
+              "homelessness"
+            ]
+          },
+          "detail": "NCHV veteran homelessness benchmark Evidence-routed by: homelessness Evidence-routed secondary domain: Military Family Readiness. Hits: veteran.",
+          "source_primary_domain": "housing_stability",
+          "domain_role": "secondary",
+          "domain_propagation_factor": 0.35,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_82a3cf18966893b8",
+          "name": "Veteran.com COLA benchmark [secondary:military_family_readiness]",
+          "tier": "tier_2",
+          "domain": "military_family_readiness",
+          "source_name": "static_benchmark",
+          "source_kind": "benchmark",
+          "domain_score": 53.3333,
+          "direction": "support",
+          "contribution": 0.035,
+          "freshness": 0.4,
+          "confidence": 0.64,
+          "state": "static_valid",
+          "raw_value": {
+            "key": "veteran_dot_com_cola",
+            "pressure_score": 58,
+            "evidence_hits": [
+              "cola"
+            ]
+          },
+          "detail": "Veteran.com COLA benchmark Evidence-routed by: cola Evidence-routed secondary domain: Military Family Readiness. Hits: veteran.",
+          "source_primary_domain": "cost_of_living",
+          "domain_role": "secondary",
+          "domain_propagation_factor": 0.35,
           "qualified_for_scoring": true
         },
         {
@@ -317,6 +392,32 @@
           "qualified_for_scoring": true
         },
         {
+          "signal_key": "sig_01a8aa9c8f286157",
+          "name": "Census veteran outcomes",
+          "tier": "tier_2",
+          "domain": "military_family_readiness",
+          "source_name": "static_benchmark",
+          "source_kind": "benchmark",
+          "domain_score": 77.0,
+          "direction": "support",
+          "contribution": 0.1,
+          "freshness": 0.4,
+          "confidence": 0.64,
+          "state": "static_valid",
+          "raw_value": {
+            "key": "census_veteran_outcomes",
+            "pressure_score": 42,
+            "evidence_hits": [
+              "veteran"
+            ]
+          },
+          "detail": "Census veteran outcomes Evidence-routed by: veteran",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
           "signal_key": "sig_86c8d3608797e164",
           "name": "IVMF spouse employment benchmark [secondary:military_family_readiness]",
           "tier": "tier_2",
@@ -340,6 +441,32 @@
           "source_primary_domain": "employment",
           "domain_role": "secondary",
           "domain_propagation_factor": 0.35,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_987d1fdd90159040",
+          "name": "CBPP veteran SNAP stress",
+          "tier": "tier_2",
+          "domain": "military_family_readiness",
+          "source_name": "static_benchmark",
+          "source_kind": "benchmark",
+          "domain_score": 41.0,
+          "direction": "pressure",
+          "contribution": -0.1,
+          "freshness": 0.4,
+          "confidence": 0.64,
+          "state": "static_valid",
+          "raw_value": {
+            "key": "cbpp_veteran_snap",
+            "pressure_score": 66,
+            "evidence_hits": [
+              "veteran"
+            ]
+          },
+          "detail": "CBPP veteran SNAP stress Evidence-routed by: veteran",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
           "qualified_for_scoring": true
         },
         {
@@ -419,6 +546,259 @@
           "domain_role": "primary",
           "domain_propagation_factor": 1.0,
           "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_aa6cf326c3905280",
+          "name": "The US military wants a fleet of missile-killing laser drones",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "MilitaryTimes",
+          "source_kind": "contextual",
+          "domain_score": 50.0,
+          "direction": "neutral",
+          "contribution": 0.0,
+          "freshness": 1.0,
+          "confidence": 0.5,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.militarytimes.com/industry/techwatch/2026/04/24/the-us-military-wants-a-fleet-of-missile-killing-laser-drones/",
+            "published_at": "Fri, 24 Apr 2026 16:00:27 +0000"
+          },
+          "detail": "Contextual signal from MilitaryTimes",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_6de8ae3fe73a7eac",
+          "name": "Could the US military handle a monster invasion? Monarch: Legacy of Monsters begs the question",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "MilitaryTimes",
+          "source_kind": "contextual",
+          "domain_score": 50.0,
+          "direction": "neutral",
+          "contribution": 0.0,
+          "freshness": 1.0,
+          "confidence": 0.5,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.militarytimes.com/off-duty/2026/04/23/could-the-us-military-handle-a-monster-invasion-monarch-legacy-of-monsters-begs-the-question/",
+            "published_at": "Thu, 23 Apr 2026 23:00:00 +0000"
+          },
+          "detail": "Contextual signal from MilitaryTimes",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_3458b204e04caec4",
+          "name": "Marine creates ride-hailing app to combat impaired driving among service members",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "MilitaryTimes",
+          "source_kind": "contextual",
+          "domain_score": 50.0,
+          "direction": "neutral",
+          "contribution": 0.0,
+          "freshness": 1.0,
+          "confidence": 0.5,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.militarytimes.com/news/your-military/2026/04/23/marine-creates-ride-hailing-app-to-combat-impaired-driving-among-service-members/",
+            "published_at": "Thu, 23 Apr 2026 19:52:32 +0000"
+          },
+          "detail": "Contextual signal from MilitaryTimes",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_d9a3353aa4946b26",
+          "name": "US Marine Corps, Navy join forces to combat insufficient amphibious fleet size",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "MilitaryTimes",
+          "source_kind": "contextual",
+          "domain_score": 50.0,
+          "direction": "neutral",
+          "contribution": 0.0,
+          "freshness": 1.0,
+          "confidence": 0.5,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.militarytimes.com/news/your-military/2026/04/23/us-marine-corps-navy-join-forces-to-combat-insufficient-amphibious-fleet-size/",
+            "published_at": "Thu, 23 Apr 2026 15:27:18 +0000"
+          },
+          "detail": "Contextual signal from MilitaryTimes",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_1c4839d7cc49ba81",
+          "name": "Used as an ‘individual target’ by the Germans, this Medal of Honor recipient kept up the fight",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "MilitaryTimes",
+          "source_kind": "contextual",
+          "domain_score": 60.3956,
+          "direction": "support",
+          "contribution": 0.15,
+          "freshness": 1.0,
+          "confidence": 0.66,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.militarytimes.com/veterans/military-history/2026/04/23/used-as-an-individual-target-by-the-germans-this-medal-of-honor-recipient-kept-up-the-fight/",
+            "published_at": "Thu, 23 Apr 2026 00:00:00 +0000"
+          },
+          "detail": "Contextual signal from MilitaryTimes",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_538355d474db4a20",
+          "name": "Pentagon to upgrade valor awards for Marines at site of Abbey Gate bombing",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "MilitaryTimes",
+          "source_kind": "contextual",
+          "domain_score": 60.9284,
+          "direction": "support",
+          "contribution": 0.15,
+          "freshness": 1.0,
+          "confidence": 0.74,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.militarytimes.com/news/pentagon-congress/2026/04/22/pentagon-to-upgrade-valor-awards-for-marines-at-site-of-abbey-gate-bombing/",
+            "published_at": "Wed, 22 Apr 2026 18:43:24 +0000"
+          },
+          "detail": "Contextual signal from MilitaryTimes",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_49fdbfa6de468fa9",
+          "name": "The Spanish Flu — a deadly postscript to WWI — started at a US military base",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "MilitaryTimes",
+          "source_kind": "contextual",
+          "domain_score": 50.0,
+          "direction": "neutral",
+          "contribution": 0.0,
+          "freshness": 1.0,
+          "confidence": 0.5,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.militarytimes.com/veterans/military-history/2026/04/22/the-spanish-flu-a-deadly-postscript-to-wwi-started-at-a-us-military-base/",
+            "published_at": "Wed, 22 Apr 2026 17:59:05 +0000"
+          },
+          "detail": "Contextual signal from MilitaryTimes",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_37aa5386c90ea92a",
+          "name": "Flu vaccine requirement discarded ‘effective immediately,’ Hegseth says",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "ArmyTimes",
+          "source_kind": "contextual",
+          "domain_score": 50.0,
+          "direction": "neutral",
+          "contribution": 0.0,
+          "freshness": 1.0,
+          "confidence": 0.5,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.armytimes.com/news/your-military/2026/04/21/flu-vaccine-requirement-discarded-effective-immediately-hegseth-says/",
+            "published_at": "Tue, 21 Apr 2026 15:39:19 +0000"
+          },
+          "detail": "Contextual signal from ArmyTimes",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_f9021872e965fe50",
+          "name": "Trump clears path for expanded psychedelic research to treat veterans’ PTSD",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "ArmyTimes",
+          "source_kind": "contextual",
+          "domain_score": 60.3956,
+          "direction": "support",
+          "contribution": 0.15,
+          "freshness": 1.0,
+          "confidence": 0.66,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.armytimes.com/veterans/2026/04/20/trump-clears-path-for-expanded-psychedelic-research-to-treat-veterans-ptsd/",
+            "published_at": "Mon, 20 Apr 2026 21:18:57 +0000"
+          },
+          "detail": "Contextual signal from ArmyTimes",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_fd04a6ed9c35d2f9",
+          "name": "Australia awards contracts for counter-drone tech based on lasers, interceptors",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "DefenseNews",
+          "source_kind": "contextual",
+          "domain_score": 60.9284,
+          "direction": "support",
+          "contribution": 0.15,
+          "freshness": 1.0,
+          "confidence": 0.74,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.defensenews.com/global/asia-pacific/2026/04/24/australia-awards-contracts-for-counter-drone-tech-based-on-lasers-interceptors/",
+            "published_at": "Fri, 24 Apr 2026 09:59:41 +0000"
+          },
+          "detail": "Contextual signal from DefenseNews",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_6bdda8a10f3a9203",
+          "name": "Germany unveils strategy for becoming Europe’s strongest military by 2039",
+          "tier": "tier_3",
+          "domain": "military_family_readiness",
+          "source_name": "DefenseNews",
+          "source_kind": "contextual",
+          "domain_score": 50.0,
+          "direction": "neutral",
+          "contribution": 0.0,
+          "freshness": 1.0,
+          "confidence": 0.5,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.defensenews.com/global/europe/2026/04/22/germany-unveils-strategy-for-becoming-europes-strongest-military-by-2039/",
+            "published_at": "Wed, 22 Apr 2026 11:57:42 +0000"
+          },
+          "detail": "Contextual signal from DefenseNews",
+          "source_primary_domain": "military_family_readiness",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
         }
       ]
     },
@@ -427,7 +807,7 @@
       "status": "Balanced / Watch",
       "tier_1_effect": 0.6,
       "tier_2_effect": 0.2,
-      "tier_3_effect": 0,
+      "tier_3_effect": 0.0,
       "signals": [
         {
           "signal_key": "sig_bbcab42ad1066404",
@@ -552,6 +932,29 @@
             ]
           },
           "detail": "VA Loan inflation context Evidence-routed by: inflation",
+          "source_primary_domain": "cost_of_living",
+          "domain_role": "primary",
+          "domain_propagation_factor": 1.0,
+          "qualified_for_scoring": true
+        },
+        {
+          "signal_key": "sig_7f009dd95cc67142",
+          "name": "Italy forgoes $14 billion deficit spending on defense amid wobbling economy",
+          "tier": "tier_3",
+          "domain": "cost_of_living",
+          "source_name": "DefenseNews",
+          "source_kind": "contextual",
+          "domain_score": 50.0,
+          "direction": "neutral",
+          "contribution": 0.0,
+          "freshness": 1.0,
+          "confidence": 0.5,
+          "state": "recent",
+          "raw_value": {
+            "url": "https://www.defensenews.com/global/europe/2026/04/24/italy-forgoes-14-billion-deficit-spending-on-defense-amid-wobbling-economy/",
+            "published_at": "Fri, 24 Apr 2026 15:16:48 +0000"
+          },
+          "detail": "Contextual signal from DefenseNews",
           "source_primary_domain": "cost_of_living",
           "domain_role": "primary",
           "domain_propagation_factor": 1.0,
@@ -798,7 +1201,7 @@
           "2025-17710"
         ]
       },
-      "detail": "Federal Register items: 25. Evidence hits: family readiness, family, readiness",
+      "detail": "Federal Register items: 25. Evidence hits: military, veteran, family readiness, family, readiness",
       "source_primary_domain": "military_family_readiness",
       "domain_role": "primary",
       "domain_propagation_factor": 1.0,
@@ -854,6 +1257,32 @@
       "source_primary_domain": "housing_stability",
       "domain_role": "primary",
       "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_b31cfcac95cd522d",
+      "name": "NCHV veteran homelessness benchmark [secondary:military_family_readiness]",
+      "tier": "tier_2",
+      "domain": "military_family_readiness",
+      "source_name": "static_benchmark",
+      "source_kind": "benchmark",
+      "domain_score": 41.0,
+      "direction": "pressure",
+      "contribution": -0.035,
+      "freshness": 0.4,
+      "confidence": 0.64,
+      "state": "static_valid",
+      "raw_value": {
+        "key": "nchv_housing",
+        "pressure_score": 66,
+        "evidence_hits": [
+          "homelessness"
+        ]
+      },
+      "detail": "NCHV veteran homelessness benchmark Evidence-routed by: homelessness Evidence-routed secondary domain: Military Family Readiness. Hits: veteran.",
+      "source_primary_domain": "housing_stability",
+      "domain_role": "secondary",
+      "domain_propagation_factor": 0.35,
       "qualified_for_scoring": true
     },
     {
@@ -1013,6 +1442,32 @@
       "qualified_for_scoring": true
     },
     {
+      "signal_key": "sig_82a3cf18966893b8",
+      "name": "Veteran.com COLA benchmark [secondary:military_family_readiness]",
+      "tier": "tier_2",
+      "domain": "military_family_readiness",
+      "source_name": "static_benchmark",
+      "source_kind": "benchmark",
+      "domain_score": 53.3333,
+      "direction": "support",
+      "contribution": 0.035,
+      "freshness": 0.4,
+      "confidence": 0.64,
+      "state": "static_valid",
+      "raw_value": {
+        "key": "veteran_dot_com_cola",
+        "pressure_score": 58,
+        "evidence_hits": [
+          "cola"
+        ]
+      },
+      "detail": "Veteran.com COLA benchmark Evidence-routed by: cola Evidence-routed secondary domain: Military Family Readiness. Hits: veteran.",
+      "source_primary_domain": "cost_of_living",
+      "domain_role": "secondary",
+      "domain_propagation_factor": 0.35,
+      "qualified_for_scoring": true
+    },
+    {
       "signal_key": "sig_563f94567cd8cbbe",
       "name": "VA Loan inflation context",
       "tier": "tier_2",
@@ -1091,6 +1546,32 @@
       "qualified_for_scoring": true
     },
     {
+      "signal_key": "sig_01a8aa9c8f286157",
+      "name": "Census veteran outcomes",
+      "tier": "tier_2",
+      "domain": "military_family_readiness",
+      "source_name": "static_benchmark",
+      "source_kind": "benchmark",
+      "domain_score": 77.0,
+      "direction": "support",
+      "contribution": 0.1,
+      "freshness": 0.4,
+      "confidence": 0.64,
+      "state": "static_valid",
+      "raw_value": {
+        "key": "census_veteran_outcomes",
+        "pressure_score": 42,
+        "evidence_hits": [
+          "veteran"
+        ]
+      },
+      "detail": "Census veteran outcomes Evidence-routed by: veteran",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
       "signal_key": "sig_b904c8183e06ca9a",
       "name": "IVMF spouse employment benchmark",
       "tier": "tier_2",
@@ -1140,6 +1621,32 @@
       "source_primary_domain": "employment",
       "domain_role": "secondary",
       "domain_propagation_factor": 0.35,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_987d1fdd90159040",
+      "name": "CBPP veteran SNAP stress",
+      "tier": "tier_2",
+      "domain": "military_family_readiness",
+      "source_name": "static_benchmark",
+      "source_kind": "benchmark",
+      "domain_score": 41.0,
+      "direction": "pressure",
+      "contribution": -0.1,
+      "freshness": 0.4,
+      "confidence": 0.64,
+      "state": "static_valid",
+      "raw_value": {
+        "key": "cbpp_veteran_snap",
+        "pressure_score": 66,
+        "evidence_hits": [
+          "veteran"
+        ]
+      },
+      "detail": "CBPP veteran SNAP stress Evidence-routed by: veteran",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
       "qualified_for_scoring": true
     },
     {
@@ -1245,9 +1752,517 @@
       "domain_role": "primary",
       "domain_propagation_factor": 1.0,
       "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_aa6cf326c3905280",
+      "name": "The US military wants a fleet of missile-killing laser drones",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "MilitaryTimes",
+      "source_kind": "contextual",
+      "domain_score": 50.0,
+      "direction": "neutral",
+      "contribution": 0.0,
+      "freshness": 1.0,
+      "confidence": 0.5,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.militarytimes.com/industry/techwatch/2026/04/24/the-us-military-wants-a-fleet-of-missile-killing-laser-drones/",
+        "published_at": "Fri, 24 Apr 2026 16:00:27 +0000"
+      },
+      "detail": "Contextual signal from MilitaryTimes",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_6de8ae3fe73a7eac",
+      "name": "Could the US military handle a monster invasion? Monarch: Legacy of Monsters begs the question",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "MilitaryTimes",
+      "source_kind": "contextual",
+      "domain_score": 50.0,
+      "direction": "neutral",
+      "contribution": 0.0,
+      "freshness": 1.0,
+      "confidence": 0.5,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.militarytimes.com/off-duty/2026/04/23/could-the-us-military-handle-a-monster-invasion-monarch-legacy-of-monsters-begs-the-question/",
+        "published_at": "Thu, 23 Apr 2026 23:00:00 +0000"
+      },
+      "detail": "Contextual signal from MilitaryTimes",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_3458b204e04caec4",
+      "name": "Marine creates ride-hailing app to combat impaired driving among service members",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "MilitaryTimes",
+      "source_kind": "contextual",
+      "domain_score": 50.0,
+      "direction": "neutral",
+      "contribution": 0.0,
+      "freshness": 1.0,
+      "confidence": 0.5,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.militarytimes.com/news/your-military/2026/04/23/marine-creates-ride-hailing-app-to-combat-impaired-driving-among-service-members/",
+        "published_at": "Thu, 23 Apr 2026 19:52:32 +0000"
+      },
+      "detail": "Contextual signal from MilitaryTimes",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_d9a3353aa4946b26",
+      "name": "US Marine Corps, Navy join forces to combat insufficient amphibious fleet size",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "MilitaryTimes",
+      "source_kind": "contextual",
+      "domain_score": 50.0,
+      "direction": "neutral",
+      "contribution": 0.0,
+      "freshness": 1.0,
+      "confidence": 0.5,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.militarytimes.com/news/your-military/2026/04/23/us-marine-corps-navy-join-forces-to-combat-insufficient-amphibious-fleet-size/",
+        "published_at": "Thu, 23 Apr 2026 15:27:18 +0000"
+      },
+      "detail": "Contextual signal from MilitaryTimes",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_1c4839d7cc49ba81",
+      "name": "Used as an ‘individual target’ by the Germans, this Medal of Honor recipient kept up the fight",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "MilitaryTimes",
+      "source_kind": "contextual",
+      "domain_score": 60.3956,
+      "direction": "support",
+      "contribution": 0.15,
+      "freshness": 1.0,
+      "confidence": 0.66,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.militarytimes.com/veterans/military-history/2026/04/23/used-as-an-individual-target-by-the-germans-this-medal-of-honor-recipient-kept-up-the-fight/",
+        "published_at": "Thu, 23 Apr 2026 00:00:00 +0000"
+      },
+      "detail": "Contextual signal from MilitaryTimes",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_538355d474db4a20",
+      "name": "Pentagon to upgrade valor awards for Marines at site of Abbey Gate bombing",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "MilitaryTimes",
+      "source_kind": "contextual",
+      "domain_score": 60.9284,
+      "direction": "support",
+      "contribution": 0.15,
+      "freshness": 1.0,
+      "confidence": 0.74,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.militarytimes.com/news/pentagon-congress/2026/04/22/pentagon-to-upgrade-valor-awards-for-marines-at-site-of-abbey-gate-bombing/",
+        "published_at": "Wed, 22 Apr 2026 18:43:24 +0000"
+      },
+      "detail": "Contextual signal from MilitaryTimes",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_49fdbfa6de468fa9",
+      "name": "The Spanish Flu — a deadly postscript to WWI — started at a US military base",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "MilitaryTimes",
+      "source_kind": "contextual",
+      "domain_score": 50.0,
+      "direction": "neutral",
+      "contribution": 0.0,
+      "freshness": 1.0,
+      "confidence": 0.5,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.militarytimes.com/veterans/military-history/2026/04/22/the-spanish-flu-a-deadly-postscript-to-wwi-started-at-a-us-military-base/",
+        "published_at": "Wed, 22 Apr 2026 17:59:05 +0000"
+      },
+      "detail": "Contextual signal from MilitaryTimes",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_37aa5386c90ea92a",
+      "name": "Flu vaccine requirement discarded ‘effective immediately,’ Hegseth says",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "ArmyTimes",
+      "source_kind": "contextual",
+      "domain_score": 50.0,
+      "direction": "neutral",
+      "contribution": 0.0,
+      "freshness": 1.0,
+      "confidence": 0.5,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.armytimes.com/news/your-military/2026/04/21/flu-vaccine-requirement-discarded-effective-immediately-hegseth-says/",
+        "published_at": "Tue, 21 Apr 2026 15:39:19 +0000"
+      },
+      "detail": "Contextual signal from ArmyTimes",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_f9021872e965fe50",
+      "name": "Trump clears path for expanded psychedelic research to treat veterans’ PTSD",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "ArmyTimes",
+      "source_kind": "contextual",
+      "domain_score": 60.3956,
+      "direction": "support",
+      "contribution": 0.15,
+      "freshness": 1.0,
+      "confidence": 0.66,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.armytimes.com/veterans/2026/04/20/trump-clears-path-for-expanded-psychedelic-research-to-treat-veterans-ptsd/",
+        "published_at": "Mon, 20 Apr 2026 21:18:57 +0000"
+      },
+      "detail": "Contextual signal from ArmyTimes",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_1b1610c04ff315a4",
+      "name": "Navy ‘going to study’ possibility of building ships outside US, Phelan says",
+      "tier": "tier_3",
+      "domain": "employment",
+      "source_name": "NavyTimes",
+      "source_kind": "contextual",
+      "domain_score": 50.0,
+      "direction": "neutral",
+      "contribution": 0.0,
+      "freshness": 1.0,
+      "confidence": 0.5,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.navytimes.com/news/your-navy/2026/04/22/navy-going-to-study-possibility-of-building-ships-outside-us-phelan-says/",
+        "published_at": "Wed, 22 Apr 2026 00:27:50 +0000"
+      },
+      "detail": "Contextual signal from NavyTimes",
+      "source_primary_domain": "employment",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_7f009dd95cc67142",
+      "name": "Italy forgoes $14 billion deficit spending on defense amid wobbling economy",
+      "tier": "tier_3",
+      "domain": "cost_of_living",
+      "source_name": "DefenseNews",
+      "source_kind": "contextual",
+      "domain_score": 50.0,
+      "direction": "neutral",
+      "contribution": 0.0,
+      "freshness": 1.0,
+      "confidence": 0.5,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.defensenews.com/global/europe/2026/04/24/italy-forgoes-14-billion-deficit-spending-on-defense-amid-wobbling-economy/",
+        "published_at": "Fri, 24 Apr 2026 15:16:48 +0000"
+      },
+      "detail": "Contextual signal from DefenseNews",
+      "source_primary_domain": "cost_of_living",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_fd04a6ed9c35d2f9",
+      "name": "Australia awards contracts for counter-drone tech based on lasers, interceptors",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "DefenseNews",
+      "source_kind": "contextual",
+      "domain_score": 60.9284,
+      "direction": "support",
+      "contribution": 0.15,
+      "freshness": 1.0,
+      "confidence": 0.74,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.defensenews.com/global/asia-pacific/2026/04/24/australia-awards-contracts-for-counter-drone-tech-based-on-lasers-interceptors/",
+        "published_at": "Fri, 24 Apr 2026 09:59:41 +0000"
+      },
+      "detail": "Contextual signal from DefenseNews",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
+    },
+    {
+      "signal_key": "sig_6bdda8a10f3a9203",
+      "name": "Germany unveils strategy for becoming Europe’s strongest military by 2039",
+      "tier": "tier_3",
+      "domain": "military_family_readiness",
+      "source_name": "DefenseNews",
+      "source_kind": "contextual",
+      "domain_score": 50.0,
+      "direction": "neutral",
+      "contribution": 0.0,
+      "freshness": 1.0,
+      "confidence": 0.5,
+      "state": "recent",
+      "raw_value": {
+        "url": "https://www.defensenews.com/global/europe/2026/04/22/germany-unveils-strategy-for-becoming-europes-strongest-military-by-2039/",
+        "published_at": "Wed, 22 Apr 2026 11:57:42 +0000"
+      },
+      "detail": "Contextual signal from DefenseNews",
+      "source_primary_domain": "military_family_readiness",
+      "domain_role": "primary",
+      "domain_propagation_factor": 1.0,
+      "qualified_for_scoring": true
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "event_id": "evt_c19a3e685ce12e48",
+      "title": "The US military wants a fleet of missile-killing laser drones",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "url": "https://www.militarytimes.com/industry/techwatch/2026/04/24/the-us-military-wants-a-fleet-of-missile-killing-laser-drones/",
+      "published_at": "Fri, 24 Apr 2026 16:00:27 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "neutral",
+      "confidence": 0.5,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_d661d75bce03f727",
+      "title": "Could the US military handle a monster invasion? Monarch: Legacy of Monsters begs the question",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "url": "https://www.militarytimes.com/off-duty/2026/04/23/could-the-us-military-handle-a-monster-invasion-monarch-legacy-of-monsters-begs-the-question/",
+      "published_at": "Thu, 23 Apr 2026 23:00:00 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "neutral",
+      "confidence": 0.5,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_1a45ef33b0543c43",
+      "title": "Marine creates ride-hailing app to combat impaired driving among service members",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "url": "https://www.militarytimes.com/news/your-military/2026/04/23/marine-creates-ride-hailing-app-to-combat-impaired-driving-among-service-members/",
+      "published_at": "Thu, 23 Apr 2026 19:52:32 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "neutral",
+      "confidence": 0.5,
+      "relevance_score": 0.49,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_c9f5b65151f4b730",
+      "title": "US Marine Corps, Navy join forces to combat insufficient amphibious fleet size",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "url": "https://www.militarytimes.com/news/your-military/2026/04/23/us-marine-corps-navy-join-forces-to-combat-insufficient-amphibious-fleet-size/",
+      "published_at": "Thu, 23 Apr 2026 15:27:18 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "neutral",
+      "confidence": 0.5,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_979052e2727608ad",
+      "title": "Used as an ‘individual target’ by the Germans, this Medal of Honor recipient kept up the fight",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "url": "https://www.militarytimes.com/veterans/military-history/2026/04/23/used-as-an-individual-target-by-the-germans-this-medal-of-honor-recipient-kept-up-the-fight/",
+      "published_at": "Thu, 23 Apr 2026 00:00:00 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "support",
+      "confidence": 0.6599999999999999,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_b23e6299d1e58474",
+      "title": "Pentagon to upgrade valor awards for Marines at site of Abbey Gate bombing",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "url": "https://www.militarytimes.com/news/pentagon-congress/2026/04/22/pentagon-to-upgrade-valor-awards-for-marines-at-site-of-abbey-gate-bombing/",
+      "published_at": "Wed, 22 Apr 2026 18:43:24 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "support",
+      "confidence": 0.74,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_ebff86ea46100fcc",
+      "title": "The Spanish Flu — a deadly postscript to WWI — started at a US military base",
+      "source_name": "MilitaryTimes",
+      "source_domain": "militarytimes.com",
+      "url": "https://www.militarytimes.com/veterans/military-history/2026/04/22/the-spanish-flu-a-deadly-postscript-to-wwi-started-at-a-us-military-base/",
+      "published_at": "Wed, 22 Apr 2026 17:59:05 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "neutral",
+      "confidence": 0.5,
+      "relevance_score": 0.61,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_e34a959b54eb79dc",
+      "title": "Flu vaccine requirement discarded ‘effective immediately,’ Hegseth says",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
+      "url": "https://www.armytimes.com/news/your-military/2026/04/21/flu-vaccine-requirement-discarded-effective-immediately-hegseth-says/",
+      "published_at": "Tue, 21 Apr 2026 15:39:19 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "neutral",
+      "confidence": 0.5,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_9b192c3ee712e760",
+      "title": "Trump clears path for expanded psychedelic research to treat veterans’ PTSD",
+      "source_name": "ArmyTimes",
+      "source_domain": "armytimes.com",
+      "url": "https://www.armytimes.com/veterans/2026/04/20/trump-clears-path-for-expanded-psychedelic-research-to-treat-veterans-ptsd/",
+      "published_at": "Mon, 20 Apr 2026 21:18:57 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "support",
+      "confidence": 0.6599999999999999,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_22e0695e8549d6bb",
+      "title": "Navy ‘going to study’ possibility of building ships outside US, Phelan says",
+      "source_name": "NavyTimes",
+      "source_domain": "navytimes.com",
+      "url": "https://www.navytimes.com/news/your-navy/2026/04/22/navy-going-to-study-possibility-of-building-ships-outside-us-phelan-says/",
+      "published_at": "Wed, 22 Apr 2026 00:27:50 +0000",
+      "primary_domain": "employment",
+      "domains": [
+        "employment"
+      ],
+      "direction": "neutral",
+      "confidence": 0.5,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_927a764f6af1d72e",
+      "title": "Italy forgoes $14 billion deficit spending on defense amid wobbling economy",
+      "source_name": "DefenseNews",
+      "source_domain": "defensenews.com",
+      "url": "https://www.defensenews.com/global/europe/2026/04/24/italy-forgoes-14-billion-deficit-spending-on-defense-amid-wobbling-economy/",
+      "published_at": "Fri, 24 Apr 2026 15:16:48 +0000",
+      "primary_domain": "cost_of_living",
+      "domains": [
+        "cost_of_living"
+      ],
+      "direction": "neutral",
+      "confidence": 0.5,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_bbb9d24d6fb26523",
+      "title": "Australia awards contracts for counter-drone tech based on lasers, interceptors",
+      "source_name": "DefenseNews",
+      "source_domain": "defensenews.com",
+      "url": "https://www.defensenews.com/global/asia-pacific/2026/04/24/australia-awards-contracts-for-counter-drone-tech-based-on-lasers-interceptors/",
+      "published_at": "Fri, 24 Apr 2026 09:59:41 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "support",
+      "confidence": 0.74,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    },
+    {
+      "event_id": "evt_06f9facd1949f598",
+      "title": "Germany unveils strategy for becoming Europe’s strongest military by 2039",
+      "source_name": "DefenseNews",
+      "source_domain": "defensenews.com",
+      "url": "https://www.defensenews.com/global/europe/2026/04/22/germany-unveils-strategy-for-becoming-europes-strongest-military-by-2039/",
+      "published_at": "Wed, 22 Apr 2026 11:57:42 +0000",
+      "primary_domain": "military_family_readiness",
+      "domains": [
+        "military_family_readiness"
+      ],
+      "direction": "neutral",
+      "confidence": 0.5,
+      "relevance_score": 0.37,
+      "tier": "tier_3"
+    }
+  ],
   "source_flow_integrity": {
     "status": "warning",
     "records": [
@@ -1562,16 +2577,16 @@
       {
         "source_name": "Census veteran outcomes",
         "tier": "tier_2",
-        "primary_domain": "unrouted",
+        "primary_domain": "military_family_readiness",
         "key_present": true,
         "fetch_ok": true,
         "parsed_ok": true,
         "latest_value": 42,
         "latest_date": "static",
-        "domain_score": null,
-        "contribution": null,
-        "status": "blocked_no_signal",
-        "reason": "no_domain_evidence_no_score"
+        "domain_score": 77.0,
+        "contribution": 0.1,
+        "status": "flowed_to_domain",
+        "reason": null
       },
       {
         "source_name": "IVMF spouse employment benchmark",
@@ -1604,16 +2619,16 @@
       {
         "source_name": "CBPP veteran SNAP stress",
         "tier": "tier_2",
-        "primary_domain": "unrouted",
+        "primary_domain": "military_family_readiness",
         "key_present": true,
         "fetch_ok": true,
         "parsed_ok": true,
         "latest_value": 66,
         "latest_date": "static",
-        "domain_score": null,
-        "contribution": null,
-        "status": "blocked_no_signal",
-        "reason": "no_domain_evidence_no_score"
+        "domain_score": 41.0,
+        "contribution": -0.1,
+        "status": "flowed_to_domain",
+        "reason": null
       },
       {
         "source_name": "VA caregiver support path",
@@ -1751,13 +2766,17 @@
         "latest_value": 148,
         "latest_date": null,
         "domain_score": null,
-        "contribution": null,
-        "status": "blocked_no_signal",
-        "reason": null
+        "contribution": 0.6,
+        "status": "flowed_to_domain",
+        "reason": null,
+        "candidate_articles": 148,
+        "tier3_primary_signals": 13,
+        "tier3_routed_signals": 13,
+        "tier3_events": 13
       }
     ],
-    "blocked_count": 15,
-    "flowed_count": 21,
+    "blocked_count": 12,
+    "flowed_count": 24,
     "missing_authoritative_sources": [
       "BLS unemployment",
       "BLS CPI",
