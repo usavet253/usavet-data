@@ -2,11 +2,11 @@
   "schema_version": "1.0.0",
   "artifact_type": "public_signal_guide",
   "generated_by": "guide_builder.py",
-  "generated_at": "2026-04-29T17:40:51Z",
+  "generated_at": "2026-04-29T18:12:20Z",
   "as_of": "2026-04-29",
-  "public_data_generated_at": "2026-04-29T17:40:06Z",
+  "public_data_generated_at": "2026-04-29T18:11:56Z",
   "source": "public_safe_signal_guide_builder",
-  "current_score": 48.17,
+  "current_score": 48.69,
   "status_band": "Elevated Pressure",
   "trend": "declining",
   "source_quality": "High Confidence",
@@ -19,7 +19,7 @@
     "Employment",
     "Healthcare System"
   ],
-  "plain_language_summary": "The current system remains in Elevated Pressure, with a declining trend. Pressure is concentrated in Benefits, Military Family Readiness, and Cost of Living, while Employment and Healthcare System are helping stabilize the broader reading. The overall score declined by 5.37 points compared with the prior available public reading.",
+  "plain_language_summary": "The current system remains in Elevated Pressure, with a declining trend. Pressure is concentrated in Benefits, Military Family Readiness, and Cost of Living, while Employment and Healthcare System are helping stabilize the broader reading. The overall score declined by 4.85 points compared with the prior available public reading.",
   "homepage_script": "Welcome to USAVET.AI. The current system reading is Elevated Pressure, with a declining trend. That means the overall signal remains inside the watch range, but pressure is visible in specific areas. The main pressure-watch domains are Benefits, Military Family Readiness, and Cost of Living. Employment and Healthcare System are currently helping stabilize the broader reading. The key watch point is whether pressure remains concentrated, continues to decline, or begins spreading into other domains. USAVET.AI explains public system conditions and does not make benefits, clinical, legal, funding, or policy decisions.",
   "signal_validation_alignment": {
     "what_is_happening": "The current public signal is Elevated Pressure with a declining trend.",
@@ -30,14 +30,14 @@
   "movement_summary": {
     "prior_as_of": "2026-04-28",
     "prior_score": 53.54,
-    "current_score": 48.17,
-    "overall_delta": -5.37,
-    "plain_language": "The overall score declined by 5.37 points compared with the prior available public reading.",
+    "current_score": 48.69,
+    "overall_delta": -4.85,
+    "plain_language": "The overall score declined by 4.85 points compared with the prior available public reading.",
     "domain_deltas": {
       "housing_stability": 0.77,
       "employment": -8.98,
       "military_family_readiness": -7.05,
-      "cost_of_living": 1.46,
+      "cost_of_living": 4.58,
       "healthcare_system": -1.46,
       "benefits": -16.96
     }
@@ -72,15 +72,15 @@
     {
       "domain_key": "cost_of_living",
       "domain_name": "Cost of Living",
-      "score": 42.51,
+      "score": 45.63,
       "status_band": "Elevated Pressure",
       "role": "pressure_watch",
-      "delta": 1.46,
-      "signals": 18,
-      "events": 18,
-      "delta_signals": 0,
-      "plain_language": "Cost of Living is a current pressure-watch domain at 42.51.",
-      "movement": "Cost of Living improved by 1.46 points compared with the prior public reading."
+      "delta": 4.58,
+      "signals": 17,
+      "events": 17,
+      "delta_signals": -1,
+      "plain_language": "Cost of Living is a current pressure-watch domain at 45.63.",
+      "movement": "Cost of Living improved by 4.58 points compared with the prior public reading."
     },
     {
       "domain_key": "housing_stability",
@@ -175,7 +175,7 @@
     {
       "id": "recent_movement",
       "label": "What changed recently?",
-      "answer": "The overall score declined by 5.37 points compared with the prior available public reading."
+      "answer": "The overall score declined by 4.85 points compared with the prior available public reading."
     },
     {
       "id": "score_boundary",
