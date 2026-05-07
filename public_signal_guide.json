@@ -2,14 +2,14 @@
   "schema_version": "1.0.0",
   "artifact_type": "public_signal_guide",
   "generated_by": "guide_builder.py",
-  "generated_at": "2026-05-07T05:30:44Z",
+  "generated_at": "2026-05-07T05:52:11Z",
   "as_of": "2026-05-07",
-  "public_data_generated_at": "2026-05-07T05:30:26Z",
+  "public_data_generated_at": "2026-05-07T05:51:45Z",
   "source": "public_safe_signal_guide_builder",
-  "current_score": 53.14,
+  "current_score": 52.97,
   "status_band": "Balanced / Watch",
-  "trend": "stable",
-  "source_quality": "High Confidence / Minor Intake Watch",
+  "trend": "declining",
+  "source_quality": "High Confidence",
   "pressure_watch_domains": [
     "Benefits",
     "Cost of Living",
@@ -19,10 +19,10 @@
     "Employment",
     "Healthcare System"
   ],
-  "plain_language_summary": "The current system remains in Balanced / Watch, with a stable trend. Pressure is concentrated in Benefits, Cost of Living, and Housing Stability, while Employment and Healthcare System are helping stabilize the broader reading. The overall score declined by 0.10 points compared with the prior available public reading.",
-  "homepage_script": "Welcome to USAVET.AI. The current system reading is Balanced / Watch, with a stable trend. That means the overall signal remains inside the watch range, but pressure is visible in specific areas. The main pressure-watch domains are Benefits, Cost of Living, and Housing Stability. Employment and Healthcare System are currently helping stabilize the broader reading. The key watch point is whether pressure remains concentrated, continues to decline, or begins spreading into other domains. USAVET.AI explains public system conditions and does not make benefits, clinical, legal, funding, or policy decisions.",
+  "plain_language_summary": "The current system remains in Balanced / Watch, with a declining trend. Pressure is concentrated in Benefits, Cost of Living, and Housing Stability, while Employment and Healthcare System are helping stabilize the broader reading. The overall score declined by 0.27 points compared with the prior available public reading.",
+  "homepage_script": "Welcome to USAVET.AI. The current system reading is Balanced / Watch, with a declining trend. That means the overall signal remains inside the watch range, but pressure is visible in specific areas. The main pressure-watch domains are Benefits, Cost of Living, and Housing Stability. Employment and Healthcare System are currently helping stabilize the broader reading. The key watch point is whether pressure remains concentrated, continues to decline, or begins spreading into other domains. USAVET.AI explains public system conditions and does not make benefits, clinical, legal, funding, or policy decisions.",
   "signal_validation_alignment": {
-    "what_is_happening": "The current public signal is Balanced / Watch with a stable trend.",
+    "what_is_happening": "The current public signal is Balanced / Watch with a declining trend.",
     "why_it_is_happening": "Some domains are creating pressure while stronger domains are offsetting part of that pressure.",
     "what_is_holding_steady": "Employment and Healthcare System are the strongest current stabilizers. Domains with little movement remain visible but are not necessarily driving the latest change.",
     "what_to_watch_next": "Watch whether pressure remains clustered, whether the trend continues or stabilizes, and whether stabilizing domains remain strong enough to offset pressure-watch areas."
@@ -30,14 +30,14 @@
   "movement_summary": {
     "prior_as_of": "2026-05-06",
     "prior_score": 53.24,
-    "current_score": 53.14,
-    "overall_delta": -0.1,
-    "plain_language": "The overall score declined by 0.10 points compared with the prior available public reading.",
+    "current_score": 52.97,
+    "overall_delta": -0.27,
+    "plain_language": "The overall score declined by 0.27 points compared with the prior available public reading.",
     "domain_deltas": {
       "housing_stability": -1.36,
       "employment": -0.12,
       "military_family_readiness": 1.03,
-      "cost_of_living": -0.17,
+      "cost_of_living": -1.17,
       "healthcare_system": -0.13,
       "benefits": 0.14
     }
@@ -59,15 +59,15 @@
     {
       "domain_key": "cost_of_living",
       "domain_name": "Cost of Living",
-      "score": 51.94,
+      "score": 50.94,
       "status_band": "Balanced / Watch",
       "role": "monitor",
-      "delta": -0.17,
-      "signals": 18,
-      "events": 18,
-      "delta_signals": -1,
-      "plain_language": "Cost of Living is in the watch range at 51.94.",
-      "movement": "Cost of Living declined by 0.17 points compared with the prior public reading."
+      "delta": -1.17,
+      "signals": 19,
+      "events": 19,
+      "delta_signals": 0,
+      "plain_language": "Cost of Living is in the watch range at 50.94.",
+      "movement": "Cost of Living declined by 1.17 points compared with the prior public reading."
     },
     {
       "domain_key": "housing_stability",
@@ -140,12 +140,12 @@
     {
       "id": "what_is_happening",
       "label": "What is happening now?",
-      "answer": "The current USAVET.AI signal is Balanced / Watch with a stable trend. The system remains inside the watch range, but pressure is concentrated in specific domains."
+      "answer": "The current USAVET.AI signal is Balanced / Watch with a declining trend. The system remains inside the watch range, but pressure is concentrated in specific domains."
     },
     {
       "id": "why_declining",
       "label": "Why is the trend declining?",
-      "answer": "The trend is stable. Current pressure is concentrated in Benefits, Cost of Living, and Housing Stability, while Employment and Healthcare System are helping stabilize the broader reading."
+      "answer": "The trend is declining. Current pressure is concentrated in Benefits, Cost of Living, and Housing Stability, while Employment and Healthcare System are helping stabilize the broader reading."
     },
     {
       "id": "under_pressure",
@@ -175,7 +175,7 @@
     {
       "id": "recent_movement",
       "label": "What changed recently?",
-      "answer": "The overall score declined by 0.10 points compared with the prior available public reading."
+      "answer": "The overall score declined by 0.27 points compared with the prior available public reading."
     },
     {
       "id": "score_boundary",
