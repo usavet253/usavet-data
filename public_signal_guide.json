@@ -2,14 +2,14 @@
   "schema_version": "1.0.0",
   "artifact_type": "public_signal_guide",
   "generated_by": "guide_builder.py",
-  "generated_at": "2026-05-12T03:37:18Z",
+  "generated_at": "2026-05-12T15:48:27Z",
   "as_of": "2026-05-12",
-  "public_data_generated_at": "2026-05-12T03:36:30Z",
+  "public_data_generated_at": "2026-05-12T15:47:04Z",
   "source": "public_safe_signal_guide_builder",
-  "current_score": 51.02,
+  "current_score": 50.43,
   "status_band": "Balanced / Watch",
   "trend": "improving",
-  "source_quality": "High Confidence",
+  "source_quality": "High Confidence / Minor Intake Watch",
   "pressure_watch_domains": [
     "Benefits",
     "Military Family Readiness",
@@ -19,7 +19,7 @@
     "Employment",
     "Healthcare System"
   ],
-  "plain_language_summary": "The current system remains in Balanced / Watch, with a improving trend. Pressure is concentrated in Benefits, Military Family Readiness, and Cost of Living, while Employment and Healthcare System are helping stabilize the broader reading. The overall score improved by 3.84 points compared with the prior available public reading.",
+  "plain_language_summary": "The current system remains in Balanced / Watch, with a improving trend. Pressure is concentrated in Benefits, Military Family Readiness, and Cost of Living, while Employment and Healthcare System are helping stabilize the broader reading. The overall score improved by 3.25 points compared with the prior available public reading.",
   "homepage_script": "Welcome to USAVET.AI. The current system reading is Balanced / Watch, with a improving trend. That means the overall signal remains inside the watch range, but pressure is visible in specific areas. The main pressure-watch domains are Benefits, Military Family Readiness, and Cost of Living. Employment and Healthcare System are currently helping stabilize the broader reading. The key watch point is whether pressure remains concentrated, continues to decline, or begins spreading into other domains. USAVET.AI explains public system conditions and does not make benefits, clinical, legal, funding, or policy decisions.",
   "signal_validation_alignment": {
     "what_is_happening": "The current public signal is Balanced / Watch with a improving trend.",
@@ -30,44 +30,44 @@
   "movement_summary": {
     "prior_as_of": "2026-05-11",
     "prior_score": 47.18,
-    "current_score": 51.02,
-    "overall_delta": 3.84,
-    "plain_language": "The overall score improved by 3.84 points compared with the prior available public reading.",
+    "current_score": 50.43,
+    "overall_delta": 3.25,
+    "plain_language": "The overall score improved by 3.25 points compared with the prior available public reading.",
     "domain_deltas": {
       "housing_stability": 4.9,
-      "employment": -6.38,
-      "military_family_readiness": -1.42,
+      "employment": -8.76,
+      "military_family_readiness": -2.12,
       "cost_of_living": 10.4,
-      "healthcare_system": 0.34,
-      "benefits": 15.21
+      "healthcare_system": 0.26,
+      "benefits": 14.86
     }
   },
   "domain_summaries": [
     {
       "domain_key": "benefits",
       "domain_name": "Benefits",
-      "score": 40.96,
+      "score": 40.61,
       "status_band": "Elevated Pressure",
       "role": "pressure_watch",
-      "delta": 15.21,
-      "signals": 14,
-      "events": 14,
-      "delta_signals": -13,
-      "plain_language": "Benefits is a current pressure-watch domain at 40.96.",
-      "movement": "Benefits improved by 15.21 points compared with the prior public reading."
+      "delta": 14.86,
+      "signals": 15,
+      "events": 15,
+      "delta_signals": -12,
+      "plain_language": "Benefits is a current pressure-watch domain at 40.61.",
+      "movement": "Benefits improved by 14.86 points compared with the prior public reading."
     },
     {
       "domain_key": "military_family_readiness",
       "domain_name": "Military Family Readiness",
-      "score": 44.05,
+      "score": 43.35,
       "status_band": "Elevated Pressure",
       "role": "pressure_watch",
-      "delta": -1.42,
-      "signals": 19,
-      "events": 19,
-      "delta_signals": -29,
-      "plain_language": "Military Family Readiness is a current pressure-watch domain at 44.05.",
-      "movement": "Military Family Readiness declined by 1.42 points compared with the prior public reading."
+      "delta": -2.12,
+      "signals": 20,
+      "events": 20,
+      "delta_signals": -28,
+      "plain_language": "Military Family Readiness is a current pressure-watch domain at 43.35.",
+      "movement": "Military Family Readiness declined by 2.12 points compared with the prior public reading."
     },
     {
       "domain_key": "cost_of_living",
@@ -98,28 +98,28 @@
     {
       "domain_key": "healthcare_system",
       "domain_name": "Healthcare System",
-      "score": 55.63,
+      "score": 55.55,
       "status_band": "Balanced / Watch",
       "role": "monitor",
-      "delta": 0.34,
-      "signals": 2,
-      "events": 2,
-      "delta_signals": -3,
-      "plain_language": "Healthcare System is in the watch range at 55.63.",
-      "movement": "Healthcare System improved by 0.34 points compared with the prior public reading."
+      "delta": 0.26,
+      "signals": 4,
+      "events": 4,
+      "delta_signals": -1,
+      "plain_language": "Healthcare System is in the watch range at 55.55.",
+      "movement": "Healthcare System improved by 0.26 points compared with the prior public reading."
     },
     {
       "domain_key": "employment",
       "domain_name": "Employment",
-      "score": 58.45,
+      "score": 56.07,
       "status_band": "Balanced / Watch",
       "role": "monitor",
-      "delta": -6.38,
-      "signals": 8,
-      "events": 8,
-      "delta_signals": -22,
-      "plain_language": "Employment is in the watch range at 58.45.",
-      "movement": "Employment declined by 6.38 points compared with the prior public reading."
+      "delta": -8.76,
+      "signals": 6,
+      "events": 6,
+      "delta_signals": -24,
+      "plain_language": "Employment is in the watch range at 56.07.",
+      "movement": "Employment declined by 8.76 points compared with the prior public reading."
     }
   ],
   "what_to_watch_next": [
@@ -175,7 +175,7 @@
     {
       "id": "recent_movement",
       "label": "What changed recently?",
-      "answer": "The overall score improved by 3.84 points compared with the prior available public reading."
+      "answer": "The overall score improved by 3.25 points compared with the prior available public reading."
     },
     {
       "id": "score_boundary",
