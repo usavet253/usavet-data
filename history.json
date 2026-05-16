@@ -468,15 +468,15 @@
     "military_family_readiness": 53.66
   },
   {
-    "time": "2026-05-16T19:03:32Z",
+    "time": "2026-05-16T19:32:11Z",
     "as_of": "2026-05-16",
-    "overall_score": 52.99,
+    "overall_score": 53.06,
     "trend": "declining",
-    "housing_stability": 58.13,
-    "cost_of_living": 44.53,
-    "employment": 76.52,
-    "benefits": 37.69,
-    "healthcare_system": 55.26,
-    "military_family_readiness": 45.78
+    "housing_stability": 54.84,
+    "cost_of_living": 50.82,
+    "employment": 68.43,
+    "benefits": 39.28,
+    "healthcare_system": 55.33,
+    "military_family_readiness": 49.65
   }
 ]
