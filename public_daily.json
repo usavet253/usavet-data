@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-05-19",
-  "generated_at": "2026-05-19T16:32:44Z",
-  "overall_score": 53.87,
-  "score": 53.87,
+  "as_of": "2026-05-20",
+  "generated_at": "2026-05-20T02:19:29Z",
+  "overall_score": 53.78,
+  "score": 53.78,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
-  "trend": "declining",
+  "trend": "stable",
   "pressure_label": "Balanced / Watch",
   "source_quality": "High Confidence",
   "source_watch": {
@@ -15,39 +15,39 @@
   },
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 53.87,
+    "overall_score": 53.78,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
-    "trend": "declining",
+    "trend": "stable",
     "pressure_label": "Balanced / Watch",
     "source_quality": "High Confidence"
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 53.87.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 53.78.",
   "notes": [
-    "Housing Stability score: 51.54",
-    "Employment score: 79.01",
-    "Military Family Readiness score: 48.30",
-    "Cost of Living score: 51.26",
-    "Healthcare System score: 54.43",
-    "Benefits score: 38.68"
+    "Housing Stability score: 51.48",
+    "Employment score: 78.13",
+    "Military Family Readiness score: 49.07",
+    "Cost of Living score: 51.17",
+    "Healthcare System score: 53.75",
+    "Benefits score: 39.06"
   ],
   "domains": {
-    "housing_stability": 51.54,
-    "employment": 79.01,
-    "military_family_readiness": 48.3,
-    "cost_of_living": 51.26,
-    "healthcare_system": 54.43,
-    "benefits": 38.68
+    "housing_stability": 51.48,
+    "employment": 78.13,
+    "military_family_readiness": 49.07,
+    "cost_of_living": 51.17,
+    "healthcare_system": 53.75,
+    "benefits": 39.06
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 53.87.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 53.78.",
     "notes": [
-      "Housing Stability score: 51.54",
-      "Employment score: 79.01",
-      "Military Family Readiness score: 48.30",
-      "Cost of Living score: 51.26",
-      "Healthcare System score: 54.43",
-      "Benefits score: 38.68"
+      "Housing Stability score: 51.48",
+      "Employment score: 78.13",
+      "Military Family Readiness score: 49.07",
+      "Cost of Living score: 51.17",
+      "Healthcare System score: 53.75",
+      "Benefits score: 39.06"
     ]
   },
   "history": [
@@ -566,6 +566,18 @@
       "benefits": 38.68,
       "healthcare_system": 54.43,
       "military_family_readiness": 48.3
+    },
+    {
+      "time": "2026-05-20T02:19:29Z",
+      "as_of": "2026-05-20",
+      "overall_score": 53.78,
+      "trend": "stable",
+      "housing_stability": 51.48,
+      "cost_of_living": 51.17,
+      "employment": 78.13,
+      "benefits": 39.06,
+      "healthcare_system": 53.75,
+      "military_family_readiness": 49.07
     }
   ]
 }
