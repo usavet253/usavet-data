@@ -2,9 +2,9 @@
   "schema_version": "1.0.0",
   "artifact_type": "public_signal_guide",
   "generated_by": "guide_builder.py",
-  "generated_at": "2026-05-27T00:45:53Z",
+  "generated_at": "2026-05-27T01:08:26Z",
   "as_of": "2026-05-27",
-  "public_data_generated_at": "2026-05-27T00:44:50Z",
+  "public_data_generated_at": "2026-05-27T01:06:59Z",
   "source": "public_safe_signal_guide_builder",
   "current_score": 52.39,
   "status_band": "Balanced / Watch",
@@ -19,11 +19,11 @@
     "Employment",
     "Healthcare System"
   ],
-  "plain_language_summary": "The current system remains in Balanced / Watch, with a declining trend. Pressure is concentrated in Benefits, Military Family Readiness, and Housing Stability, while Employment and Healthcare System are helping stabilize the broader reading. The overall score declined by 2.98 points compared with the prior available public reading.",
+  "plain_language_summary": "The current system remains in Balanced / Watch, with a declining trend. Pressure is concentrated in Benefits, Military Family Readiness, and Housing Stability, while Employment and Healthcare System are helping stabilize the broader reading. The overall score declined by 2.98 points compared with the prior available public reading. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs.",
   "homepage_script": "Welcome to USAVET.AI. The current system reading is Balanced / Watch, with a declining trend. That means the overall signal remains inside the watch range, but pressure is visible in specific areas. The main pressure-watch domains are Benefits, Military Family Readiness, and Housing Stability. Employment and Healthcare System are currently helping stabilize the broader reading. The key watch point is whether pressure remains concentrated, continues to decline, or begins spreading into other domains. USAVET.AI explains public system conditions and does not make benefits, clinical, legal, funding, or policy decisions.",
   "signal_validation_alignment": {
     "what_is_happening": "The current public signal is Balanced / Watch with a declining trend.",
-    "why_it_is_happening": "Some domains are creating pressure while stronger domains are offsetting part of that pressure.",
+    "why_it_is_happening": "Some domains are creating pressure while stronger domains are offsetting part of that pressure. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs.",
     "what_is_holding_steady": "Employment and Healthcare System are the strongest current stabilizers. Domains with little movement remain visible but are not necessarily driving the latest change.",
     "what_to_watch_next": "Watch whether pressure remains clustered, whether the trend continues or stabilizes, and whether stabilizing domains remain strong enough to offset pressure-watch areas."
   },
@@ -32,7 +32,8 @@
     "prior_score": 55.37,
     "current_score": 52.39,
     "overall_delta": -2.98,
-    "plain_language": "The overall score declined by 2.98 points compared with the prior available public reading.",
+    "plain_language": "The overall score declined by 2.98 points compared with the prior available public reading. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs.",
+    "current_input_governance_note": "Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs.",
     "domain_deltas": {
       "housing_stability": -1.22,
       "employment": -11.95,
@@ -175,7 +176,7 @@
     {
       "id": "recent_movement",
       "label": "What changed recently?",
-      "answer": "The overall score declined by 2.98 points compared with the prior available public reading."
+      "answer": "The overall score declined by 2.98 points compared with the prior available public reading. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs."
     },
     {
       "id": "score_boundary",
