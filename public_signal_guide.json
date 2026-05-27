@@ -2,11 +2,11 @@
   "schema_version": "1.0.0",
   "artifact_type": "public_signal_guide",
   "generated_by": "guide_builder.py",
-  "generated_at": "2026-05-27T06:25:56Z",
+  "generated_at": "2026-05-27T06:53:59Z",
   "as_of": "2026-05-27",
-  "public_data_generated_at": "2026-05-27T06:24:28Z",
+  "public_data_generated_at": "2026-05-27T06:52:35Z",
   "source": "public_safe_signal_guide_builder",
-  "current_score": 52.08,
+  "current_score": 52.13,
   "status_band": "Balanced / Watch",
   "trend": "declining",
   "source_quality": "High Confidence",
@@ -19,7 +19,7 @@
     "Employment",
     "Healthcare System"
   ],
-  "plain_language_summary": "The current system remains in Balanced / Watch, with a declining trend. Pressure is concentrated in Benefits, Cost of Living, and Military Family Readiness, while Employment and Healthcare System are helping stabilize the broader reading. The overall score declined by 3.29 points compared with the prior available public reading. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs.",
+  "plain_language_summary": "The current system remains in Balanced / Watch, with a declining trend. Pressure is concentrated in Benefits, Cost of Living, and Military Family Readiness, while Employment and Healthcare System are helping stabilize the broader reading. The overall score declined by 3.24 points compared with the prior available public reading. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs.",
   "homepage_script": "Welcome to USAVET.AI. The current system reading is Balanced / Watch, with a declining trend. That means the overall signal remains inside the watch range, but pressure is visible in specific areas. The main pressure-watch domains are Benefits, Cost of Living, and Military Family Readiness. Employment and Healthcare System are currently helping stabilize the broader reading. The key watch point is whether pressure remains concentrated, continues to decline, or begins spreading into other domains. USAVET.AI explains public system conditions and does not make benefits, clinical, legal, funding, or policy decisions.",
   "signal_validation_alignment": {
     "what_is_happening": "The current public signal is Balanced / Watch with a declining trend.",
@@ -30,58 +30,58 @@
   "movement_summary": {
     "prior_as_of": "2026-05-26",
     "prior_score": 55.37,
-    "current_score": 52.08,
-    "overall_delta": -3.29,
-    "plain_language": "The overall score declined by 3.29 points compared with the prior available public reading. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs.",
+    "current_score": 52.13,
+    "overall_delta": -3.24,
+    "plain_language": "The overall score declined by 3.24 points compared with the prior available public reading. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs.",
     "current_input_governance_note": "Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs.",
     "domain_deltas": {
       "housing_stability": -1.09,
       "employment": -8.73,
-      "military_family_readiness": -1.0,
-      "cost_of_living": -11.25,
+      "military_family_readiness": -1.26,
+      "cost_of_living": -10.0,
       "healthcare_system": 1.42,
-      "benefits": 0.94
+      "benefits": 0.2
     }
   },
   "domain_summaries": [
     {
       "domain_key": "benefits",
       "domain_name": "Benefits",
-      "score": 39.43,
+      "score": 38.69,
       "status_band": "High Pressure",
       "role": "pressure_watch",
-      "delta": 0.94,
-      "signals": 12,
-      "events": 12,
-      "delta_signals": -2,
-      "plain_language": "Benefits is a current pressure-watch domain at 39.43.",
-      "movement": "Benefits improved by 0.94 points compared with the prior public reading."
+      "delta": 0.2,
+      "signals": 13,
+      "events": 13,
+      "delta_signals": -1,
+      "plain_language": "Benefits is a current pressure-watch domain at 38.69.",
+      "movement": "Benefits improved by 0.20 points compared with the prior public reading."
     },
     {
       "domain_key": "cost_of_living",
       "domain_name": "Cost of Living",
-      "score": 44.71,
+      "score": 45.96,
       "status_band": "Elevated Pressure",
       "role": "pressure_watch",
-      "delta": -11.25,
-      "signals": 21,
-      "events": 21,
-      "delta_signals": 10,
-      "plain_language": "Cost of Living is a current pressure-watch domain at 44.71.",
-      "movement": "Cost of Living declined by 11.25 points compared with the prior public reading."
+      "delta": -10.0,
+      "signals": 20,
+      "events": 20,
+      "delta_signals": 9,
+      "plain_language": "Cost of Living is a current pressure-watch domain at 45.96.",
+      "movement": "Cost of Living declined by 10.00 points compared with the prior public reading."
     },
     {
       "domain_key": "military_family_readiness",
       "domain_name": "Military Family Readiness",
-      "score": 50.46,
+      "score": 50.2,
       "status_band": "Balanced / Watch",
       "role": "monitor",
-      "delta": -1.0,
-      "signals": 39,
-      "events": 39,
-      "delta_signals": -2,
-      "plain_language": "Military Family Readiness is in the watch range at 50.46.",
-      "movement": "Military Family Readiness declined by 1.00 points compared with the prior public reading."
+      "delta": -1.26,
+      "signals": 40,
+      "events": 40,
+      "delta_signals": -1,
+      "plain_language": "Military Family Readiness is in the watch range at 50.20.",
+      "movement": "Military Family Readiness declined by 1.26 points compared with the prior public reading."
     },
     {
       "domain_key": "housing_stability",
@@ -176,7 +176,7 @@
     {
       "id": "recent_movement",
       "label": "What changed recently?",
-      "answer": "The overall score declined by 3.29 points compared with the prior available public reading. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs."
+      "answer": "The overall score declined by 3.24 points compared with the prior available public reading. Part of the recent movement may reflect current-input governance: older structured observations can remain visible as context while no longer being treated as current active inputs."
     },
     {
       "id": "score_boundary",
