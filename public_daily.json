@@ -1,8 +1,8 @@
 {
   "as_of": "2026-05-27",
-  "generated_at": "2026-05-27T01:43:40Z",
-  "overall_score": 52.39,
-  "score": 52.39,
+  "generated_at": "2026-05-27T01:49:43Z",
+  "overall_score": 52.63,
+  "score": 52.63,
   "status_band": "Balanced / Watch",
   "band": "Balanced / Watch",
   "trend": "declining",
@@ -15,16 +15,16 @@
   },
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 52.39,
+    "overall_score": 52.63,
     "band": "Balanced / Watch",
     "status_band": "Balanced / Watch",
     "trend": "declining",
     "pressure_label": "Balanced / Watch",
     "source_quality": "High Confidence"
   },
-  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.39.",
+  "summary": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.63.",
   "notes": [
-    "Housing Stability score: 50.34",
+    "Housing Stability score: 51.80",
     "Employment score: 67.94",
     "Military Family Readiness score: 48.74",
     "Cost of Living score: 54.20",
@@ -32,7 +32,7 @@
     "Benefits score: 38.37"
   ],
   "domains": {
-    "housing_stability": 50.34,
+    "housing_stability": 51.8,
     "employment": 67.94,
     "military_family_readiness": 48.74,
     "cost_of_living": 54.2,
@@ -40,9 +40,9 @@
     "benefits": 38.37
   },
   "brief": {
-    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.39.",
+    "headline": "The national system is currently operating in the balanced / watch range with an official composite index reading of 52.63.",
     "notes": [
-      "Housing Stability score: 50.34",
+      "Housing Stability score: 51.80",
       "Employment score: 67.94",
       "Military Family Readiness score: 48.74",
       "Cost of Living score: 54.20",
@@ -652,11 +652,11 @@
       "military_family_readiness": 51.46
     },
     {
-      "time": "2026-05-27T01:43:40Z",
+      "time": "2026-05-27T01:49:43Z",
       "as_of": "2026-05-27",
-      "overall_score": 52.39,
+      "overall_score": 52.63,
       "trend": "declining",
-      "housing_stability": 50.34,
+      "housing_stability": 51.8,
       "cost_of_living": 54.2,
       "employment": 67.94,
       "benefits": 38.37,
