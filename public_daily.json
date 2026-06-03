@@ -1,6 +1,6 @@
 {
   "as_of": "2026-06-03",
-  "generated_at": "2026-06-03T00:48:25Z",
+  "generated_at": "2026-06-03T01:14:10Z",
   "overall_score": 50.71,
   "score": 50.71,
   "status_band": "Balanced / Watch",
@@ -736,7 +736,7 @@
       "military_family_readiness": 43.88
     },
     {
-      "time": "2026-06-03T00:48:25Z",
+      "time": "2026-06-03T01:14:10Z",
       "as_of": "2026-06-03",
       "overall_score": 50.71,
       "trend": "declining",
