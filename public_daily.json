@@ -1,56 +1,53 @@
 {
-  "as_of": "2026-06-16",
-  "generated_at": "2026-06-16T18:12:09Z",
-  "overall_score": 45.54,
-  "score": 45.54,
+  "as_of": "2026-06-17",
+  "generated_at": "2026-06-17T16:44:48Z",
+  "overall_score": 43.26,
+  "score": 43.26,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
   "trend": "declining",
   "pressure_label": "Elevated Pressure",
-  "source_quality": "High Confidence / Intake Watch",
+  "source_quality": "High Confidence",
   "source_watch": {
-    "blocked_count": 2,
-    "tier1_blocked_count": 2,
-    "tier1_blocked_sources": [
-      "VA Facilities",
-      "VA Benefits"
-    ]
+    "blocked_count": 0,
+    "tier1_blocked_count": 0,
+    "tier1_blocked_sources": []
   },
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 45.54,
+    "overall_score": 43.26,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
     "trend": "declining",
     "pressure_label": "Elevated Pressure",
-    "source_quality": "High Confidence / Intake Watch"
+    "source_quality": "High Confidence"
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 45.54.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 43.26.",
   "notes": [
-    "Housing Stability score: 50.56",
-    "Employment score: 70.38",
-    "Military Family Readiness score: 34.41",
-    "Cost of Living score: 42.00",
-    "Healthcare System score: 49.05",
-    "Benefits score: 26.83"
+    "Housing Stability score: 46.08",
+    "Employment score: 63.40",
+    "Military Family Readiness score: 22.77",
+    "Cost of Living score: 42.29",
+    "Healthcare System score: 54.40",
+    "Benefits score: 30.63"
   ],
   "domains": {
-    "housing_stability": 50.56,
-    "employment": 70.38,
-    "military_family_readiness": 34.41,
-    "cost_of_living": 42.0,
-    "healthcare_system": 49.05,
-    "benefits": 26.83
+    "housing_stability": 46.08,
+    "employment": 63.4,
+    "military_family_readiness": 22.77,
+    "cost_of_living": 42.29,
+    "healthcare_system": 54.4,
+    "benefits": 30.63
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 45.54.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 43.26.",
     "notes": [
-      "Housing Stability score: 50.56",
-      "Employment score: 70.38",
-      "Military Family Readiness score: 34.41",
-      "Cost of Living score: 42.00",
-      "Healthcare System score: 49.05",
-      "Benefits score: 26.83"
+      "Housing Stability score: 46.08",
+      "Employment score: 63.40",
+      "Military Family Readiness score: 22.77",
+      "Cost of Living score: 42.29",
+      "Healthcare System score: 54.40",
+      "Benefits score: 30.63"
     ]
   },
   "history": [
@@ -905,6 +902,18 @@
       "benefits": 26.83,
       "healthcare_system": 49.05,
       "military_family_readiness": 34.41
+    },
+    {
+      "time": "2026-06-17T16:44:48Z",
+      "as_of": "2026-06-17",
+      "overall_score": 43.26,
+      "trend": "declining",
+      "housing_stability": 46.08,
+      "cost_of_living": 42.29,
+      "employment": 63.4,
+      "benefits": 30.63,
+      "healthcare_system": 54.4,
+      "military_family_readiness": 22.77
     }
   ]
 }
