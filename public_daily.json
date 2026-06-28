@@ -1,6 +1,6 @@
 {
   "as_of": "2026-06-28",
-  "generated_at": "2026-06-28T21:54:32Z",
+  "generated_at": "2026-06-28T22:05:58Z",
   "overall_score": 49.78,
   "score": 49.78,
   "status_band": "Elevated Pressure",
@@ -1036,7 +1036,7 @@
       "military_family_readiness": 40.02
     },
     {
-      "time": "2026-06-28T21:54:32Z",
+      "time": "2026-06-28T22:05:58Z",
       "as_of": "2026-06-28",
       "overall_score": 49.78,
       "trend": "declining",
