@@ -1212,15 +1212,15 @@
     "military_family_readiness": 54.28
   },
   {
-    "time": "2026-07-17T14:54:42Z",
+    "time": "2026-07-17T23:33:30Z",
     "as_of": "2026-07-17",
-    "overall_score": 51.33,
+    "overall_score": 52.9,
     "trend": "improving",
-    "housing_stability": 52.94,
-    "cost_of_living": 44.4,
-    "employment": 67.91,
-    "benefits": 32.01,
-    "healthcare_system": 56.62,
-    "military_family_readiness": 54.11
+    "housing_stability": 56.72,
+    "cost_of_living": 44.01,
+    "employment": 71.62,
+    "benefits": 33.12,
+    "healthcare_system": 57.03,
+    "military_family_readiness": 54.89
   }
 ]
