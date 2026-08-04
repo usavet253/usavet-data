@@ -2,11 +2,11 @@
   "schema_version": "1.0.0",
   "artifact_type": "public_signal_guide",
   "generated_by": "guide_builder.py",
-  "generated_at": "2026-08-03T16:00:39Z",
-  "as_of": "2026-08-03",
-  "public_data_generated_at": "2026-08-03T15:56:24Z",
+  "generated_at": "2026-08-04T15:43:30Z",
+  "as_of": "2026-08-04",
+  "public_data_generated_at": "2026-08-04T15:38:15Z",
   "source": "public_safe_signal_guide_builder",
-  "current_score": 52.42,
+  "current_score": 53.11,
   "status_band": "Balanced / Watch",
   "trend": "improving",
   "source_quality": "High Confidence",
@@ -19,7 +19,7 @@
     "Employment",
     "Military Family Readiness"
   ],
-  "plain_language_summary": "The current system remains in Balanced / Watch, with a improving trend. Pressure is concentrated in Benefits, Cost of Living, and Healthcare System, while Employment and Military Family Readiness are helping stabilize the broader reading. The overall score improved by 0.99 points compared with the prior available public reading.",
+  "plain_language_summary": "The current system remains in Balanced / Watch, with a improving trend. Pressure is concentrated in Benefits, Cost of Living, and Healthcare System, while Employment and Military Family Readiness are helping stabilize the broader reading. The overall score improved by 0.69 points compared with the prior available public reading.",
   "homepage_script": "Welcome to USAVET.AI. The current system reading is Balanced / Watch, with a improving trend. That means the overall signal remains inside the watch range, but pressure is visible in specific areas. The main pressure-watch domains are Benefits, Cost of Living, and Healthcare System. Employment and Military Family Readiness are currently helping stabilize the broader reading. The key watch point is whether pressure remains concentrated, continues to decline, or begins spreading into other domains. USAVET.AI explains public system conditions and does not make benefits, clinical, legal, funding, or policy decisions.",
   "signal_validation_alignment": {
     "what_is_happening": "The current public signal is Balanced / Watch with a improving trend.",
@@ -28,99 +28,99 @@
     "what_to_watch_next": "Watch whether pressure remains clustered, whether the trend continues or stabilizes, and whether stabilizing domains remain strong enough to offset pressure-watch areas."
   },
   "movement_summary": {
-    "prior_as_of": "2026-08-02",
-    "prior_score": 51.43,
-    "current_score": 52.42,
-    "overall_delta": 0.99,
-    "plain_language": "The overall score improved by 0.99 points compared with the prior available public reading.",
+    "prior_as_of": "2026-08-03",
+    "prior_score": 52.42,
+    "current_score": 53.11,
+    "overall_delta": 0.69,
+    "plain_language": "The overall score improved by 0.69 points compared with the prior available public reading.",
     "current_input_governance_note": "",
     "domain_deltas": {
-      "housing_stability": 0.28,
-      "employment": 9.12,
-      "military_family_readiness": -1.5,
-      "cost_of_living": -0.6,
-      "healthcare_system": 1.45,
-      "benefits": -2.8
+      "housing_stability": 0.1,
+      "employment": 0.29,
+      "military_family_readiness": 0.86,
+      "cost_of_living": 1.16,
+      "healthcare_system": -0.36,
+      "benefits": 2.08
     }
   },
   "domain_summaries": [
     {
       "domain_key": "benefits",
       "domain_name": "Benefits",
-      "score": 30.1,
+      "score": 32.18,
       "status_band": "High Pressure",
       "role": "pressure_watch",
-      "delta": -2.8,
-      "signals": 25,
-      "events": 25,
-      "delta_signals": 3,
-      "plain_language": "Benefits is a current pressure-watch domain at 30.10.",
-      "movement": "Benefits declined by 2.80 points compared with the prior public reading."
+      "delta": 2.08,
+      "signals": 21,
+      "events": 21,
+      "delta_signals": -3,
+      "plain_language": "Benefits is a current pressure-watch domain at 32.18.",
+      "movement": "Benefits improved by 2.08 points compared with the prior public reading."
     },
     {
       "domain_key": "cost_of_living",
       "domain_name": "Cost of Living",
-      "score": 44.0,
+      "score": 45.16,
       "status_band": "Elevated Pressure",
       "role": "pressure_watch",
-      "delta": -0.6,
-      "signals": 25,
-      "events": 25,
+      "delta": 1.16,
+      "signals": 23,
+      "events": 23,
       "delta_signals": -2,
-      "plain_language": "Cost of Living is a current pressure-watch domain at 44.00.",
-      "movement": "Cost of Living declined by 0.60 points compared with the prior public reading."
+      "plain_language": "Cost of Living is a current pressure-watch domain at 45.16.",
+      "movement": "Cost of Living improved by 1.16 points compared with the prior public reading."
     },
     {
       "domain_key": "healthcare_system",
       "domain_name": "Healthcare System",
-      "score": 52.01,
+      "score": 51.65,
       "status_band": "Balanced / Watch",
       "role": "monitor",
-      "delta": 1.45,
-      "signals": 12,
-      "events": 12,
-      "delta_signals": -4,
-      "plain_language": "Healthcare System is in the watch range at 52.01.",
-      "movement": "Healthcare System improved by 1.45 points compared with the prior public reading."
+      "delta": -0.36,
+      "signals": 13,
+      "events": 13,
+      "delta_signals": 1,
+      "plain_language": "Healthcare System is in the watch range at 51.65.",
+      "movement": "Healthcare System declined by 0.36 points compared with the prior public reading."
     },
     {
       "domain_key": "housing_stability",
       "domain_name": "Housing Stability",
-      "score": 54.1,
+      "score": 54.2,
       "status_band": "Balanced / Watch",
       "role": "monitor",
-      "delta": 0.28,
-      "signals": 26,
-      "events": 26,
-      "delta_signals": 2,
-      "plain_language": "Housing Stability is in the watch range at 54.10.",
-      "movement": "Housing Stability improved by 0.28 points compared with the prior public reading."
+      "delta": 0.1,
+      "signals": 25,
+      "events": 25,
+      "delta_signals": -1,
+      "plain_language": "Housing Stability is in the watch range at 54.20.",
+      "movement": "Housing Stability improved by 0.10 points compared with the prior public reading."
     },
     {
       "domain_key": "military_family_readiness",
       "domain_name": "Military Family Readiness",
-      "score": 60.35,
+      "score": 61.21,
       "status_band": "Stable",
       "role": "stabilizer",
-      "delta": -1.5,
-      "signals": 82,
-      "events": 82,
-      "delta_signals": 0,
-      "plain_language": "Military Family Readiness is currently helping stabilize the broader reading at 60.35.",
-      "movement": "Military Family Readiness declined by 1.50 points compared with the prior public reading."
+      "delta": 0.86,
+      "signals": 78,
+      "events": 78,
+      "delta_signals": -3,
+      "plain_language": "Military Family Readiness is currently helping stabilize the broader reading at 61.21.",
+      "movement": "Military Family Readiness improved by 0.86 points compared with the prior public reading."
     },
     {
       "domain_key": "employment",
       "domain_name": "Employment",
-      "score": 73.95,
+      "score": 74.24,
       "status_band": "Strong Stability",
       "role": "stabilizer",
-      "delta": 9.12,
-      "signals": 44,
-      "events": 44,
-      "delta_signals": 3,
-      "plain_language": "Employment is currently helping stabilize the broader reading at 73.95.",
-      "movement": "Employment improved by 9.12 points compared with the prior public reading."
+      "delta": 0.29,
+      "signals": 39,
+      "events": 39,
+      "delta_signals": -5,
+      "plain_language": "Employment is currently helping stabilize the broader reading at 74.24.",
+      "movement": "Employment improved by 0.29 points compared with the prior public reading."
     }
   ],
   "what_to_watch_next": [
@@ -171,12 +171,12 @@
     {
       "id": "housing_steady",
       "label": "Why is Housing holding steady?",
-      "answer": "Housing Stability is currently 54.10. If it is holding steady, that means the public housing reading is visible but is not currently driving the latest movement."
+      "answer": "Housing Stability is currently 54.20. If it is holding steady, that means the public housing reading is visible but is not currently driving the latest movement."
     },
     {
       "id": "recent_movement",
       "label": "What changed recently?",
-      "answer": "The overall score improved by 0.99 points compared with the prior available public reading."
+      "answer": "The overall score improved by 0.69 points compared with the prior available public reading."
     },
     {
       "id": "score_boundary",
