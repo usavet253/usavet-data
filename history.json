@@ -1474,5 +1474,17 @@
     "benefits": 28.27,
     "healthcare_system": 52.27,
     "military_family_readiness": 36.33
+  },
+  {
+    "time": "2026-08-08T13:59:38Z",
+    "as_of": "2026-08-08",
+    "overall_score": 48.71,
+    "trend": "improving",
+    "housing_stability": 50.54,
+    "cost_of_living": 44.61,
+    "employment": 68.55,
+    "benefits": 27.61,
+    "healthcare_system": 54.46,
+    "military_family_readiness": 46.46
   }
 ]
