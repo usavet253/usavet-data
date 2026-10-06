@@ -1,17 +1,5 @@
 [
   {
-    "time": "2026-04-08T23:49:17Z",
-    "as_of": "2026-04-08",
-    "overall_score": 52.1,
-    "trend": "stable",
-    "housing_stability": 57.8,
-    "cost_of_living": 54.1,
-    "employment": 51.6,
-    "benefits": 44.5,
-    "healthcare_system": 50.5,
-    "military_family_readiness": 51.9
-  },
-  {
     "time": "2026-04-09T23:46:47Z",
     "as_of": "2026-04-09",
     "overall_score": 50.5,
@@ -2158,5 +2146,17 @@
     "benefits": 30.31,
     "healthcare_system": 58.83,
     "military_family_readiness": 66.62
+  },
+  {
+    "time": "2026-10-06T18:56:26Z",
+    "as_of": "2026-10-06",
+    "overall_score": 45.12,
+    "trend": "declining",
+    "housing_stability": 50.61,
+    "cost_of_living": 41.94,
+    "employment": 66.67,
+    "benefits": 27.19,
+    "healthcare_system": 37.4,
+    "military_family_readiness": 46.93
   }
 ]
