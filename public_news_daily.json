@@ -1,20 +1,22 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-17",
-  "generated_at": "2026-10-18T05:47:45.783501+00:00",
+  "as_of": "2026-10-18",
+  "generated_at": "2026-10-18T16:39:55.930979+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
     {
       "key": "benefits",
       "name": "Benefits",
-      "story_ids": [],
-      "coverage_status": "no_suitable_story",
+      "story_ids": [
+        "203354452caa2a01ccf5"
+      ],
+      "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
       "domain_context": "Benefits navigation can connect eligible households with support across several services.",
       "planning_option": "Check official VA and Social Security announcements before advising households about payment changes. A reported possibility is not a confirmed VA rate change.",
-      "watch_next": "Payment confirmation: Look for an official VA announcement establishing whether a 2027 adjustment applies, its effective date and payment timing."
+      "watch_next": "Payment confirmation: Look for an official VA announcement establishing whether a 2027 adjustment applies, its effective date and payment timing. Payment confirmation: Look for an official VA announcement establishing whether a adjustment applies, its effective date and payment timing."
     },
     {
       "key": "military_family_readiness",
@@ -79,6 +81,18 @@
     }
   ],
   "stories": [
+    {
+      "id": "203354452caa2a01ccf5",
+      "title": "VA Benefits Will Get COLA Boost, Some Veterans Worry It's Not Enough",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/0d167df8d9e130ef",
+      "source_published_at": "2026-10-16",
+      "content_label": "Recent source context",
+      "excerpt": "Millions of veterans are set to receive a boost to their disability benefits next year after the federal government announced a 3.6 percent cost-of-living adjustment ...",
+      "domains": [
+        "benefits"
+      ]
+    },
     {
       "id": "236af77e6843f687cef2",
       "title": "Blue Star Families and SonderMind Partner to Expand Affordable, In-Network Mental Healthcare Access for Military Families across the U.S.",
