@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "public_news_daily",
+  "as_of": "2026-10-17",
+  "generated_at": "2026-10-18T03:09:40.592372+00:00",
+  "editorial_status": "automated_selection_for_review",
+  "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
+  "domains": [
+    {
+      "key": "benefits",
+      "name": "Benefits",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
+      "audience": "Veterans, dependents and benefits-navigation teams",
+      "domain_context": "Benefits navigation can connect eligible households with support across several services.",
+      "planning_option": "Check official VA and Social Security announcements before advising households about payment changes. A reported possibility is not a confirmed VA rate change.",
+      "watch_next": "Payment confirmation: Look for an official VA announcement establishing whether a 2027 adjustment applies, its effective date and payment timing."
+    },
+    {
+      "key": "military_family_readiness",
+      "name": "Military Family Readiness",
+      "story_ids": [
+        "236af77e6843f687cef2",
+        "f18d865ab85e6e147910"
+      ],
+      "coverage_status": "selected_context",
+      "audience": "Military households, spouses and family-support organizations",
+      "domain_context": "Family support and career continuity can be addressed together rather than through separate referrals.",
+      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
+      "watch_next": "Family access: Look for household eligibility, participating locations and enrollment instructions for the support described. Spouse entrepreneurship: Check whether the linked article identifies business-support resources, eligibility requirements or startup steps useful after relocation."
+    },
+    {
+      "key": "cost_of_living",
+      "name": "Cost of Living",
+      "story_ids": [
+        "f18d865ab85e6e147910"
+      ],
+      "coverage_status": "selected_context",
+      "audience": "Military and veteran households; assistance providers",
+      "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
+      "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
+      "watch_next": "Spouse entrepreneurship: Check whether the linked article identifies business-support resources, eligibility requirements or startup steps useful after relocation."
+    },
+    {
+      "key": "housing_stability",
+      "name": "Housing Stability",
+      "story_ids": [
+        "b5e4682fc0bdd79fe1e1"
+      ],
+      "coverage_status": "selected_context",
+      "audience": "Veterans facing housing instability; housing and community partners",
+      "domain_context": "Housing support can connect rental assistance with care and case management.",
+      "planning_option": "Review the underlying state's definition and coordination approach for lessons relevant to local housing partners; verify details with the responsible agencies.",
+      "watch_next": "Housing coordination: Verify the underlying state's definition, measurement period and referral-to-housing process before treating this as a model for local partners."
+    },
+    {
+      "key": "healthcare_system",
+      "name": "Healthcare System",
+      "story_ids": [
+        "236af77e6843f687cef2"
+      ],
+      "coverage_status": "selected_context",
+      "audience": "Veterans, caregivers and healthcare-navigation teams",
+      "domain_context": "Care access should be considered alongside housing continuity and family support.",
+      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
+      "watch_next": "Care delivery: Look for participating providers, insurance coverage, referral procedures and local appointment availability."
+    },
+    {
+      "key": "employment",
+      "name": "Employment",
+      "story_ids": [
+        "a127decdbe863ab6e2ef"
+      ],
+      "coverage_status": "selected_context",
+      "audience": "Veterans, military spouses, employers and workforce partners",
+      "domain_context": "Career mobility can connect workforce policy, employers and military-family support.",
+      "planning_option": "Check occupation-specific licensing and credential-transfer rules in the relevant state before advising a career move.",
+      "watch_next": "Career portability: Look for state- and occupation-specific implementation dates, credential-transfer requirements and application instructions."
+    }
+  ],
+  "stories": [
+    {
+      "id": "236af77e6843f687cef2",
+      "title": "Blue Star Families and SonderMind Partner to Expand Affordable, In-Network Mental Healthcare Access for Military Families across the U.S.",
+      "source_host": "bluestarfam.org",
+      "source_url": "https://bluestarfam.org/news/statements-releases/blue-star-families-and-sondermind-partner-to-expand-mental-healthcare-access-for-military",
+      "source_published_at": "2026-10-14",
+      "content_label": "Recent source context",
+      "excerpt": "WASHINGTON D.C. — October 14, 2026 Blue Star Families (BSF), the nation’s largest military and Veteran family support organization, and SonderMind, a Veteran-owned and Veteran-led ...",
+      "domains": [
+        "military_family_readiness",
+        "healthcare_system"
+      ]
+    },
+    {
+      "id": "f18d865ab85e6e147910",
+      "title": "Guam spouses turn to entrepreneurship to create their own business opportunities",
+      "source_host": "militaryfamilies.com",
+      "source_url": "https://militaryfamilies.com/entrepreneurship/guam-spouses-turn-to-entrepreneurship-to-create-their-own-business-opportunities",
+      "source_published_at": "2026-10-16",
+      "content_label": "Recent source context",
+      "excerpt": "When my husband received orders for Guam, I sent my resume to every private school on the island. Thankfully, I was offered a teaching position, ...",
+      "domains": [
+        "military_family_readiness",
+        "cost_of_living"
+      ]
+    },
+    {
+      "id": "b5e4682fc0bdd79fe1e1",
+      "title": "Minn. Reaches 'Functional Zero' on Veteran Homelessness",
+      "source_host": "www.newser.com",
+      "source_url": "https://www.newser.com/story/398214/minn-reaches-functional-zero-on-veteran-homelessness.html",
+      "source_published_at": "2026-10-15",
+      "content_label": "Recent source context",
+      "excerpt": "Minnesota says it has effectively ended veteran homelessness, becoming the fourth state to hit what officials call \"functional zero.\" The label doesn't mean no veteran ...",
+      "domains": [
+        "housing_stability"
+      ]
+    },
+    {
+      "id": "a127decdbe863ab6e2ef",
+      "title": "Barriers to Work: Improving Access to Licensed Occupations for Veterans and Military Spouses",
+      "source_host": "www.ncsl.org",
+      "source_url": "https://www.ncsl.org/labor-and-employment/barriers-to-work-improving-access-to-licensed-occupations-for-veterans-and-military-spouses",
+      "source_published_at": "2026-09-09",
+      "content_label": "Background / reference",
+      "excerpt": "Examines occupational licensing barriers facing veterans and military spouses, highlighting workforce trends, policy challenges, and state reforms that improve career mobility and employment access.",
+      "domains": [
+        "employment"
+      ]
+    }
+  ]
+}
