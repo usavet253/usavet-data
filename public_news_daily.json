@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-18",
-  "generated_at": "2026-10-18T16:39:55.930979+00:00",
+  "as_of": "2026-10-20",
+  "generated_at": "2026-10-20T20:01:09.878768+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,85 +10,83 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "203354452caa2a01ccf5"
+        "215a57b87f7b779fcbd8"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
       "domain_context": "Benefits navigation can connect eligible households with support across several services.",
-      "planning_option": "Check official VA and Social Security announcements before advising households about payment changes. A reported possibility is not a confirmed VA rate change.",
-      "watch_next": "Payment confirmation: Look for an official VA announcement establishing whether a 2027 adjustment applies, its effective date and payment timing. Payment confirmation: Look for an official VA announcement establishing whether a adjustment applies, its effective date and payment timing."
+      "planning_option": "Review unresolved applications and referral handoffs before promising payment or eligibility.",
+      "watch_next": "Benefits updates: Look for official VA rate-table revisions, effective dates and affected payment categories; a reference page alone does not announce a change."
     },
     {
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
         "236af77e6843f687cef2",
-        "f18d865ab85e6e147910"
+        "014c61446f28cf02bfe0"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
       "domain_context": "Family support and career continuity can be addressed together rather than through separate referrals.",
       "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "Family access: Look for household eligibility, participating locations and enrollment instructions for the support described. Spouse entrepreneurship: Check whether the linked article identifies business-support resources, eligibility requirements or startup steps useful after relocation."
+      "watch_next": "Family access: Look for household eligibility, participating locations and enrollment instructions for the support described. The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
-      "story_ids": [
-        "f18d865ab85e6e147910"
-      ],
-      "coverage_status": "selected_context",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
       "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
-      "watch_next": "Spouse entrepreneurship: Check whether the linked article identifies business-support resources, eligibility requirements or startup steps useful after relocation."
+      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
     },
     {
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "b5e4682fc0bdd79fe1e1"
+        "3855a3ce5e911b062485"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
       "domain_context": "Housing support can connect rental assistance with care and case management.",
-      "planning_option": "Review the underlying state's definition and coordination approach for lessons relevant to local housing partners; verify details with the responsible agencies.",
-      "watch_next": "Housing coordination: Verify the underlying state's definition, measurement period and referral-to-housing process before treating this as a model for local partners."
+      "planning_option": "Confirm local housing referral routes, eligibility and available capacity with the responsible provider.",
+      "watch_next": "Housing access: Look for current eligibility, referral contacts, capacity and application instructions in the linked program information."
     },
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "236af77e6843f687cef2"
+        "a089141d5f57f827c2f3"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
-      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "Care delivery: Look for participating providers, insurance coverage, referral procedures and local appointment availability."
+      "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "a127decdbe863ab6e2ef"
+        "e52f3c46e2bbb1ebfde1"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
       "domain_context": "Career mobility can connect workforce policy, employers and military-family support.",
-      "planning_option": "Check occupation-specific licensing and credential-transfer rules in the relevant state before advising a career move.",
-      "watch_next": "Career portability: Look for state- and occupation-specific implementation dates, credential-transfer requirements and application instructions."
+      "planning_option": "Check licensing and credential-transfer requirements in the relevant state before advising a career move.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     }
   ],
   "stories": [
     {
-      "id": "203354452caa2a01ccf5",
-      "title": "VA Benefits Will Get COLA Boost, Some Veterans Worry It's Not Enough",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/0d167df8d9e130ef",
-      "source_published_at": "2026-10-16",
-      "content_label": "Recent source context",
-      "excerpt": "Millions of veterans are set to receive a boost to their disability benefits next year after the federal government announced a 3.6 percent cost-of-living adjustment ...",
+      "id": "215a57b87f7b779fcbd8",
+      "title": "Current Veterans disability compensation rates",
+      "source_host": "www.va.gov",
+      "source_url": "https://www.va.gov/disability/compensation-rates/veteran-rates",
+      "source_published_at": "",
+      "content_label": "Background / reference",
+      "excerpt": "Review 2026 Veterans disability compensation rates. Use our compensation benefits rate tables to find your monthly payment amount.",
       "domains": [
         "benefits"
       ]
@@ -102,43 +100,53 @@
       "content_label": "Recent source context",
       "excerpt": "WASHINGTON D.C. — October 14, 2026 Blue Star Families (BSF), the nation’s largest military and Veteran family support organization, and SonderMind, a Veteran-owned and Veteran-led ...",
       "domains": [
-        "military_family_readiness",
-        "healthcare_system"
+        "military_family_readiness"
       ]
     },
     {
-      "id": "f18d865ab85e6e147910",
-      "title": "Guam spouses turn to entrepreneurship to create their own business opportunities",
-      "source_host": "militaryfamilies.com",
-      "source_url": "https://militaryfamilies.com/entrepreneurship/guam-spouses-turn-to-entrepreneurship-to-create-their-own-business-opportunities",
-      "source_published_at": "2026-10-16",
+      "id": "014c61446f28cf02bfe0",
+      "title": "“I had an opportunity to see how hard it is on those families”: How George Kittle turned a family connection into more than $250,000 in military charity support",
+      "source_host": "timesofindia.indiatimes.com",
+      "source_url": "https://timesofindia.indiatimes.com/sports/nfl/news/i-had-an-opportunity-to-see-how-hard-it-is-on-those-families-how-george-kittle-turned-a-family-connection-into-more-than-250000-in-military-charity-support/articleshow/135026144.cms",
+      "source_published_at": "2026-10-18",
       "content_label": "Recent source context",
-      "excerpt": "When my husband received orders for Guam, I sent my resume to every private school on the island. Thankfully, I was offered a teaching position, ...",
+      "excerpt": "George Kittle's philanthropic efforts have surpassed $250,000 in donations to military nonprofits, greatly impacting veteran initiatives. He founded the Hidden Pearls Podcast to amplify the ...",
       "domains": [
-        "military_family_readiness",
-        "cost_of_living"
+        "military_family_readiness"
       ]
     },
     {
-      "id": "b5e4682fc0bdd79fe1e1",
-      "title": "Minn. Reaches 'Functional Zero' on Veteran Homelessness",
-      "source_host": "www.newser.com",
-      "source_url": "https://www.newser.com/story/398214/minn-reaches-functional-zero-on-veteran-homelessness.html",
-      "source_published_at": "2026-10-15",
-      "content_label": "Recent source context",
-      "excerpt": "Minnesota says it has effectively ended veteran homelessness, becoming the fourth state to hit what officials call \"functional zero.\" The label doesn't mean no veteran ...",
+      "id": "3855a3ce5e911b062485",
+      "title": "HUD-VASH - VA Homeless Programs",
+      "source_host": "department.va.gov",
+      "source_url": "https://department.va.gov/homeless/hud-vash",
+      "source_published_at": "2026-04-02",
+      "content_label": "Background / reference",
+      "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
       "domains": [
         "housing_stability"
       ]
     },
     {
-      "id": "a127decdbe863ab6e2ef",
-      "title": "Barriers to Work: Improving Access to Licensed Occupations for Veterans and Military Spouses",
-      "source_host": "www.ncsl.org",
-      "source_url": "https://www.ncsl.org/labor-and-employment/barriers-to-work-improving-access-to-licensed-occupations-for-veterans-and-military-spouses",
-      "source_published_at": "2026-09-09",
+      "id": "a089141d5f57f827c2f3",
+      "title": "Washington, D.C., VA Medical Center",
+      "source_host": "www.va.gov",
+      "source_url": "https://www.va.gov/washington-dc-health-care/locations/washington-va-medical-center",
+      "source_published_at": "",
       "content_label": "Background / reference",
-      "excerpt": "Examines occupational licensing barriers facing veterans and military spouses, highlighting workforce trends, policy challenges, and state reforms that improve career mobility and employment access.",
+      "excerpt": "recently had the opportunity to experience a new kind of care that supports their health and wellness: immersive technology . The D.C. VAMC hosted Immersive ...",
+      "domains": [
+        "healthcare_system"
+      ]
+    },
+    {
+      "id": "e52f3c46e2bbb1ebfde1",
+      "title": "General Atomics’ FQ-42A Vengeance",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/industry/techwatch/2026/09/21/general-atomics-delivers-fq-42-vengeance-to-nevada-air-base",
+      "source_published_at": "2026-10-20",
+      "content_label": "Published on report date",
+      "excerpt": ", which was delivered to Creech Air Force Base, Nevada, last month to continue regular test and evaluation operations. Anduril has yet to announce which ...",
       "domains": [
         "employment"
       ]
