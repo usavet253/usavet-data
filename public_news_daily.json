@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
   "as_of": "2026-10-22",
-  "generated_at": "2026-10-22T05:20:31.662733+00:00",
+  "generated_at": "2026-10-22T18:06:10.544830+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,7 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "5bbbb8ae78d7804b08e1"
+        "15ffeb77569165369440"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -22,14 +22,14 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "236af77e6843f687cef2",
-        "b5a4b532eb3685f7bacd"
+        "b5a4b532eb3685f7bacd",
+        "0ad13b87c654675ef650"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
       "domain_context": "Family support and career continuity can be addressed together rather than through separate referrals.",
-      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "Family access: Look for household eligibility, participating locations and enrollment instructions for the support described. The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "Check whether relocation, caregiving and career support referrals can be coordinated across partner organizations.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "cost_of_living",
@@ -59,7 +59,7 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "55903d0954d3fac1af70"
+        "0bc4c84aa4910ab5b75f"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -82,27 +82,15 @@
   ],
   "stories": [
     {
-      "id": "5bbbb8ae78d7804b08e1",
-      "title": "Union seeks new avenue to restore VA contract",
-      "source_host": "www.govexec.com",
-      "source_url": "https://www.govexec.com/workforce/2026/10/union-seeks-new-avenue-restore-va-contract/416691?oref=ge-homepage-river",
-      "source_published_at": "2026-10-20",
+      "id": "15ffeb77569165369440",
+      "title": "Trump’s fixation on transactional politics becomes an election season scandal",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/c36e902ebf45d301",
+      "source_published_at": "2026-10-21",
       "content_label": "Recent source context",
-      "excerpt": "The American Federation of Government Employees asked a federal judge to issue an “indicative” ruling that would only take effect if OKed by the First ...",
+      "excerpt": "A group of veterans has made very serious claims about contaminated water at Camp Lejeune, a U.S. Marine Corps training facility in North Carolina. The ...",
       "domains": [
         "benefits"
-      ]
-    },
-    {
-      "id": "236af77e6843f687cef2",
-      "title": "Blue Star Families and SonderMind Partner to Expand Affordable, In-Network Mental Healthcare Access for Military Families across the U.S.",
-      "source_host": "bluestarfam.org",
-      "source_url": "https://bluestarfam.org/news/statements-releases/blue-star-families-and-sondermind-partner-to-expand-mental-healthcare-access-for-military",
-      "source_published_at": "2026-10-14",
-      "content_label": "Recent source context",
-      "excerpt": "WASHINGTON D.C. — October 14, 2026 Blue Star Families (BSF), the nation’s largest military and Veteran family support organization, and SonderMind, a Veteran-owned and Veteran-led ...",
-      "domains": [
-        "military_family_readiness"
       ]
     },
     {
@@ -119,6 +107,18 @@
       ]
     },
     {
+      "id": "0ad13b87c654675ef650",
+      "title": "Military spouse commission weighs expanding employment programs across services",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/your-military/2026/10/21/military-spouse-commission-weighs-expanding-employment-programs-across-services",
+      "source_published_at": "2026-10-21",
+      "content_label": "Recent source context",
+      "excerpt": "The President’s Military Spouse Commission is examining how to expand existing employment programs across the military services and federal agencies.",
+      "domains": [
+        "military_family_readiness"
+      ]
+    },
+    {
       "id": "3855a3ce5e911b062485",
       "title": "HUD-VASH - VA Homeless Programs",
       "source_host": "department.va.gov",
@@ -131,13 +131,13 @@
       ]
     },
     {
-      "id": "55903d0954d3fac1af70",
-      "title": "VA Texas Valley Coastal Bend Healthcare System",
-      "source_host": "www.va.gov",
-      "source_url": "https://www.va.gov/texas-valley-health-care",
-      "source_published_at": "",
-      "content_label": "Background / reference",
-      "excerpt": "was launched in July 2026 to make brief, supportive conversations about stress a routine part of Veteran care and to connect those conversations to practical ...",
+      "id": "0bc4c84aa4910ab5b75f",
+      "title": "Beyond the tray: VA Memphis earns nutrition excellence honor",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/150398/va-memphis-earns-nutrition-excellence-honor",
+      "source_published_at": "2026-10-20",
+      "content_label": "Recent source context",
+      "excerpt": "Lt. Col. Luke Weathers, Jr. VA Medical Center is the first VAMC to earn the Academy’s nutrition designation across all four domains of excellence.",
       "domains": [
         "healthcare_system"
       ]
