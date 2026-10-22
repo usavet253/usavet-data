@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-20",
-  "generated_at": "2026-10-20T20:01:09.878768+00:00",
+  "as_of": "2026-10-22",
+  "generated_at": "2026-10-22T05:20:31.662733+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,20 +10,20 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "215a57b87f7b779fcbd8"
+        "5bbbb8ae78d7804b08e1"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
       "domain_context": "Benefits navigation can connect eligible households with support across several services.",
       "planning_option": "Review unresolved applications and referral handoffs before promising payment or eligibility.",
-      "watch_next": "Benefits updates: Look for official VA rate-table revisions, effective dates and affected payment categories; a reference page alone does not announce a change."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
         "236af77e6843f687cef2",
-        "014c61446f28cf02bfe0"
+        "b5a4b532eb3685f7bacd"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -34,12 +34,14 @@
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
-      "story_ids": [],
-      "coverage_status": "no_suitable_story",
+      "story_ids": [
+        "b5a4b532eb3685f7bacd"
+      ],
+      "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
       "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
-      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "housing_stability",
@@ -57,7 +59,7 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "a089141d5f57f827c2f3"
+        "55903d0954d3fac1af70"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -69,7 +71,7 @@
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "e52f3c46e2bbb1ebfde1"
+        "f06a707ecdc4f0df53cb"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -80,13 +82,13 @@
   ],
   "stories": [
     {
-      "id": "215a57b87f7b779fcbd8",
-      "title": "Current Veterans disability compensation rates",
-      "source_host": "www.va.gov",
-      "source_url": "https://www.va.gov/disability/compensation-rates/veteran-rates",
-      "source_published_at": "",
-      "content_label": "Background / reference",
-      "excerpt": "Review 2026 Veterans disability compensation rates. Use our compensation benefits rate tables to find your monthly payment amount.",
+      "id": "5bbbb8ae78d7804b08e1",
+      "title": "Union seeks new avenue to restore VA contract",
+      "source_host": "www.govexec.com",
+      "source_url": "https://www.govexec.com/workforce/2026/10/union-seeks-new-avenue-restore-va-contract/416691?oref=ge-homepage-river",
+      "source_published_at": "2026-10-20",
+      "content_label": "Recent source context",
+      "excerpt": "The American Federation of Government Employees asked a federal judge to issue an “indicative” ruling that would only take effect if OKed by the First ...",
       "domains": [
         "benefits"
       ]
@@ -104,15 +106,16 @@
       ]
     },
     {
-      "id": "014c61446f28cf02bfe0",
-      "title": "“I had an opportunity to see how hard it is on those families”: How George Kittle turned a family connection into more than $250,000 in military charity support",
-      "source_host": "timesofindia.indiatimes.com",
-      "source_url": "https://timesofindia.indiatimes.com/sports/nfl/news/i-had-an-opportunity-to-see-how-hard-it-is-on-those-families-how-george-kittle-turned-a-family-connection-into-more-than-250000-in-military-charity-support/articleshow/135026144.cms",
-      "source_published_at": "2026-10-18",
+      "id": "b5a4b532eb3685f7bacd",
+      "title": "TRICARE Young Adult Premiums Are Rising Again: What Military Families Should Know",
+      "source_host": "www.militaryfamily.org",
+      "source_url": "https://www.militaryfamily.org/tricare-young-adult-premiums-are-rising-again-what-military-families-should-know",
+      "source_published_at": "2026-10-21",
       "content_label": "Recent source context",
-      "excerpt": "George Kittle's philanthropic efforts have surpassed $250,000 in donations to military nonprofits, greatly impacting veteran initiatives. He founded the Hidden Pearls Podcast to amplify the ...",
+      "excerpt": "TRICARE Young Adult premiums are rising in 2027. Learn the new Prime and Select rates, why costs are increasing, and what military families should know.",
       "domains": [
-        "military_family_readiness"
+        "military_family_readiness",
+        "cost_of_living"
       ]
     },
     {
@@ -128,25 +131,25 @@
       ]
     },
     {
-      "id": "a089141d5f57f827c2f3",
-      "title": "Washington, D.C., VA Medical Center",
+      "id": "55903d0954d3fac1af70",
+      "title": "VA Texas Valley Coastal Bend Healthcare System",
       "source_host": "www.va.gov",
-      "source_url": "https://www.va.gov/washington-dc-health-care/locations/washington-va-medical-center",
+      "source_url": "https://www.va.gov/texas-valley-health-care",
       "source_published_at": "",
       "content_label": "Background / reference",
-      "excerpt": "recently had the opportunity to experience a new kind of care that supports their health and wellness: immersive technology . The D.C. VAMC hosted Immersive ...",
+      "excerpt": "was launched in July 2026 to make brief, supportive conversations about stress a routine part of Veteran care and to connect those conversations to practical ...",
       "domains": [
         "healthcare_system"
       ]
     },
     {
-      "id": "e52f3c46e2bbb1ebfde1",
-      "title": "General Atomics’ FQ-42A Vengeance",
+      "id": "f06a707ecdc4f0df53cb",
+      "title": "Navy establishes dedicated rating for submarine Chiefs of the Boat",
       "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/industry/techwatch/2026/09/21/general-atomics-delivers-fq-42-vengeance-to-nevada-air-base",
+      "source_url": "https://www.militarytimes.com/news/your-military/2026/10/20/navy-establishes-dedicated-rating-for-submarine-chiefs-of-the-boat",
       "source_published_at": "2026-10-20",
-      "content_label": "Published on report date",
-      "excerpt": ", which was delivered to Creech Air Force Base, Nevada, last month to continue regular test and evaluation operations. Anduril has yet to announce which ...",
+      "content_label": "Recent source context",
+      "excerpt": "The Navy said the change is intended to provide a clearer career path, specialized training and advancement opportunities for submarine sailors.",
       "domains": [
         "employment"
       ]
