@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-22",
-  "generated_at": "2026-10-22T18:06:10.544830+00:00",
+  "as_of": "2026-10-23",
+  "generated_at": "2026-10-23T17:57:57.912220+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,7 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "15ffeb77569165369440"
+        "39c80d4b185a4075c5f5"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -22,8 +22,8 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "b5a4b532eb3685f7bacd",
-        "0ad13b87c654675ef650"
+        "99639d11520a385117fc",
+        "b5a4b532eb3685f7bacd"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -47,19 +47,19 @@
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "3855a3ce5e911b062485"
+        "4d9bf673642dc904a434"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
       "domain_context": "Housing support can connect rental assistance with care and case management.",
       "planning_option": "Confirm local housing referral routes, eligibility and available capacity with the responsible provider.",
-      "watch_next": "Housing access: Look for current eligibility, referral contacts, capacity and application instructions in the linked program information."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "0bc4c84aa4910ab5b75f"
+        "b5a4b532eb3685f7bacd"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -71,7 +71,7 @@
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "f06a707ecdc4f0df53cb"
+        "d949a24c3c377ef2dd91"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -82,15 +82,27 @@
   ],
   "stories": [
     {
-      "id": "15ffeb77569165369440",
-      "title": "Trump’s fixation on transactional politics becomes an election season scandal",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/c36e902ebf45d301",
-      "source_published_at": "2026-10-21",
+      "id": "39c80d4b185a4075c5f5",
+      "title": "Errors in disability cases for ‘painful scars’ resulted in overpayment: VA watchdog",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/pentagon-congress/2026/10/22/errors-in-disability-cases-for-painful-scars-resulted-in-overpayment-va-watchdog",
+      "source_published_at": "2026-10-22",
       "content_label": "Recent source context",
-      "excerpt": "A group of veterans has made very serious claims about contaminated water at Camp Lejeune, a U.S. Marine Corps training facility in North Carolina. The ...",
+      "excerpt": "During a review period from June 1, 2024, through May 31, 2025, the VA made at least one error in 17,900 cases regarding disability decisions.",
       "domains": [
         "benefits"
+      ]
+    },
+    {
+      "id": "99639d11520a385117fc",
+      "title": "No One-Size-Fits-All: New Study Finds Multiple Paths to Acceptable Firearm Safety Conversations with Military Populations",
+      "source_host": "www.prnewswire.com",
+      "source_url": "https://www.prnewswire.com/news-releases/no-one-size-fits-all-new-study-finds-multiple-paths-to-acceptable-firearm-safety-conversations-with-military-populations-302916193.html",
+      "source_published_at": "2026-10-22",
+      "content_label": "Recent source context",
+      "excerpt": "Face the Fight®-supported research informs a new clinician toolkit and policy recommendations to advance suicide prevention efforts for veterans, service members and their families STAMFORD, ...",
+      "domains": [
+        "military_family_readiness"
       ]
     },
     {
@@ -103,53 +115,30 @@
       "excerpt": "TRICARE Young Adult premiums are rising in 2027. Learn the new Prime and Select rates, why costs are increasing, and what military families should know.",
       "domains": [
         "military_family_readiness",
-        "cost_of_living"
+        "cost_of_living",
+        "healthcare_system"
       ]
     },
     {
-      "id": "0ad13b87c654675ef650",
-      "title": "Military spouse commission weighs expanding employment programs across services",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/your-military/2026/10/21/military-spouse-commission-weighs-expanding-employment-programs-across-services",
-      "source_published_at": "2026-10-21",
+      "id": "4d9bf673642dc904a434",
+      "title": "The Home Depot Foundation Pledges $1 Billion to Veteran Causes by 2032",
+      "source_host": "www.prnewswire.com",
+      "source_url": "https://www.prnewswire.com/news-releases/the-home-depot-foundation-pledges-1-billion-to-veteran-causes-by-2032-302915941.html",
+      "source_published_at": "2026-10-22",
       "content_label": "Recent source context",
-      "excerpt": "The President’s Military Spouse Commission is examining how to expand existing employment programs across the military services and federal agencies.",
-      "domains": [
-        "military_family_readiness"
-      ]
-    },
-    {
-      "id": "3855a3ce5e911b062485",
-      "title": "HUD-VASH - VA Homeless Programs",
-      "source_host": "department.va.gov",
-      "source_url": "https://department.va.gov/homeless/hud-vash",
-      "source_published_at": "2026-04-02",
-      "content_label": "Background / reference",
-      "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
+      "excerpt": "Expanded commitment will develop and grow innovative housing solutions to help end veteran homelessness Key Facts: $1 Billion: The Home Depot Foundation's total commitment to ...",
       "domains": [
         "housing_stability"
       ]
     },
     {
-      "id": "0bc4c84aa4910ab5b75f",
-      "title": "Beyond the tray: VA Memphis earns nutrition excellence honor",
-      "source_host": "news.va.gov",
-      "source_url": "https://news.va.gov/150398/va-memphis-earns-nutrition-excellence-honor",
-      "source_published_at": "2026-10-20",
+      "id": "d949a24c3c377ef2dd91",
+      "title": "Good Greek Moving & Storage Recruits Decorated U.S. Army Leader Through SkillBridge to Lead Flagship West Palm Beach Operation",
+      "source_host": "www.prnewswire.com",
+      "source_url": "https://www.prnewswire.com/news-releases/good-greek-moving--storage-recruits-decorated-us-army-leader-through-skillbridge-to-lead-flagship-west-palm-beach-operation-302916077.html",
+      "source_published_at": "2026-10-21",
       "content_label": "Recent source context",
-      "excerpt": "Lt. Col. Luke Weathers, Jr. VA Medical Center is the first VAMC to earn the Academy’s nutrition designation across all four domains of excellence.",
-      "domains": [
-        "healthcare_system"
-      ]
-    },
-    {
-      "id": "f06a707ecdc4f0df53cb",
-      "title": "Navy establishes dedicated rating for submarine Chiefs of the Boat",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/your-military/2026/10/20/navy-establishes-dedicated-rating-for-submarine-chiefs-of-the-boat",
-      "source_published_at": "2026-10-20",
-      "content_label": "Recent source context",
-      "excerpt": "The Navy said the change is intended to provide a clearer career path, specialized training and advancement opportunities for submarine sailors.",
+      "excerpt": "Sergeant First Class Rex S. Whitzel brings nearly two decades of distinguished military service to Good Greek's largest location, marking the company's first SkillBridge recruitment ...",
       "domains": [
         "employment"
       ]
