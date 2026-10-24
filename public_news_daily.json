@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-23",
-  "generated_at": "2026-10-23T17:57:57.912220+00:00",
+  "as_of": "2026-10-24",
+  "generated_at": "2026-10-24T16:42:48.191123+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,7 +10,8 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "39c80d4b185a4075c5f5"
+        "0c901515ae04155882b8",
+        "763e8914fdf2bbdf960a"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -22,8 +23,8 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "99639d11520a385117fc",
-        "b5a4b532eb3685f7bacd"
+        "b8f85ca93f520dfd881a",
+        "99639d11520a385117fc"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -34,32 +35,31 @@
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
-      "story_ids": [
-        "b5a4b532eb3685f7bacd"
-      ],
-      "coverage_status": "selected_context",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
       "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
     },
     {
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
+        "c87377e7e775cec0d2ad",
         "4d9bf673642dc904a434"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
       "domain_context": "Housing support can connect rental assistance with care and case management.",
       "planning_option": "Confirm local housing referral routes, eligibility and available capacity with the responsible provider.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "watch_next": "Housing access: Look for current eligibility, referral contacts, capacity and application instructions in the linked program information. The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "b5a4b532eb3685f7bacd"
+        "f84e136ea998e6774316"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -71,26 +71,50 @@
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "d949a24c3c377ef2dd91"
+        "a127decdbe863ab6e2ef"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
       "domain_context": "Career mobility can connect workforce policy, employers and military-family support.",
-      "planning_option": "Check licensing and credential-transfer requirements in the relevant state before advising a career move.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "Check occupation-specific licensing and credential-transfer rules in the relevant state before advising a career move.",
+      "watch_next": "Career portability: Look for state- and occupation-specific implementation dates, credential-transfer requirements and application instructions."
     }
   ],
   "stories": [
     {
-      "id": "39c80d4b185a4075c5f5",
+      "id": "0c901515ae04155882b8",
+      "title": "82 Yr Old VA Senator Charged w/ Being GRANNY Drug Kingpin! (DETAILS)",
+      "source_host": "mediatakeout.com",
+      "source_url": "https://mediatakeout.com/82-yr-old-va-senator-charged-w-being-granny-drug-kingpin-details",
+      "source_published_at": "2026-10-23",
+      "content_label": "Recent source context",
+      "excerpt": "MEET THE 82-YEAR-OLD STATE SENATOR CHARGED WITH BEING A DRUG KINGPIN!! Feds Slap Powerful Democrat L. Louise Lucas With BOMBSSHELL Marijuana RICO Charges… Claims She ...",
+      "domains": [
+        "benefits"
+      ]
+    },
+    {
+      "id": "763e8914fdf2bbdf960a",
       "title": "Errors in disability cases for ‘painful scars’ resulted in overpayment: VA watchdog",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/pentagon-congress/2026/10/22/errors-in-disability-cases-for-painful-scars-resulted-in-overpayment-va-watchdog",
+      "source_host": "www.armytimes.com",
+      "source_url": "https://www.armytimes.com/news/pentagon-congress/2026/10/22/errors-in-disability-cases-for-painful-scars-resulted-in-overpayment-va-watchdog",
       "source_published_at": "2026-10-22",
       "content_label": "Recent source context",
       "excerpt": "During a review period from June 1, 2024, through May 31, 2025, the VA made at least one error in 17,900 cases regarding disability decisions.",
       "domains": [
         "benefits"
+      ]
+    },
+    {
+      "id": "b8f85ca93f520dfd881a",
+      "title": "October 2026 State of the Military Family® Video Newsletter",
+      "source_host": "www.militaryfamily.org",
+      "source_url": "https://www.militaryfamily.org/october-2026-state-of-the-military-family-video-newsletter",
+      "source_published_at": "2026-10-23",
+      "content_label": "Recent source context",
+      "excerpt": "NMFA's October 2026 update covers MCON, military children's education, rising TRICARE Young Adult premiums, and advocacy for military families.",
+      "domains": [
+        "military_family_readiness"
       ]
     },
     {
@@ -106,17 +130,15 @@
       ]
     },
     {
-      "id": "b5a4b532eb3685f7bacd",
-      "title": "TRICARE Young Adult Premiums Are Rising Again: What Military Families Should Know",
-      "source_host": "www.militaryfamily.org",
-      "source_url": "https://www.militaryfamily.org/tricare-young-adult-premiums-are-rising-again-what-military-families-should-know",
-      "source_published_at": "2026-10-21",
+      "id": "c87377e7e775cec0d2ad",
+      "title": "Beyond choice: How listening shapes VA’s approach to homelessness",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/150427/how-listening-shapes-vas-approach-homelessness",
+      "source_published_at": "2026-10-23",
       "content_label": "Recent source context",
-      "excerpt": "TRICARE Young Adult premiums are rising in 2027. Learn the new Prime and Select rates, why costs are increasing, and what military families should know.",
+      "excerpt": "Ending Veteran homelessness requires listening, reducing barriers, expanding housing and support options, and improving services.",
       "domains": [
-        "military_family_readiness",
-        "cost_of_living",
-        "healthcare_system"
+        "housing_stability"
       ]
     },
     {
@@ -132,13 +154,25 @@
       ]
     },
     {
-      "id": "d949a24c3c377ef2dd91",
-      "title": "Good Greek Moving & Storage Recruits Decorated U.S. Army Leader Through SkillBridge to Lead Flagship West Palm Beach Operation",
-      "source_host": "www.prnewswire.com",
-      "source_url": "https://www.prnewswire.com/news-releases/good-greek-moving--storage-recruits-decorated-us-army-leader-through-skillbridge-to-lead-flagship-west-palm-beach-operation-302916077.html",
-      "source_published_at": "2026-10-21",
+      "id": "f84e136ea998e6774316",
+      "title": "Rural community profile: Exploring Salem, Virginia",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/150327/rural-community-profile-exploring-salem-virginia",
+      "source_published_at": "2026-10-23",
       "content_label": "Recent source context",
-      "excerpt": "Sergeant First Class Rex S. Whitzel brings nearly two decades of distinguished military service to Good Greek's largest location, marking the company's first SkillBridge recruitment ...",
+      "excerpt": "The Salem VA Medical Center in Virginia is a rural facility providing care to and community for our Veterans.",
+      "domains": [
+        "healthcare_system"
+      ]
+    },
+    {
+      "id": "a127decdbe863ab6e2ef",
+      "title": "Barriers to Work: Improving Access to Licensed Occupations for Veterans and Military Spouses",
+      "source_host": "www.ncsl.org",
+      "source_url": "https://www.ncsl.org/labor-and-employment/barriers-to-work-improving-access-to-licensed-occupations-for-veterans-and-military-spouses",
+      "source_published_at": "2026-09-09",
+      "content_label": "Background / reference",
+      "excerpt": "Examines occupational licensing barriers facing veterans and military spouses, highlighting workforce trends, policy challenges, and state reforms that improve career mobility and employment access.",
       "domains": [
         "employment"
       ]
