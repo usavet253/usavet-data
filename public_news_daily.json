@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-24",
-  "generated_at": "2026-10-24T16:42:48.191123+00:00",
+  "as_of": "2026-10-25",
+  "generated_at": "2026-10-25T17:09:15.904627+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,7 +10,6 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "0c901515ae04155882b8",
         "763e8914fdf2bbdf960a"
       ],
       "coverage_status": "selected_context",
@@ -81,18 +80,6 @@
     }
   ],
   "stories": [
-    {
-      "id": "0c901515ae04155882b8",
-      "title": "82 Yr Old VA Senator Charged w/ Being GRANNY Drug Kingpin! (DETAILS)",
-      "source_host": "mediatakeout.com",
-      "source_url": "https://mediatakeout.com/82-yr-old-va-senator-charged-w-being-granny-drug-kingpin-details",
-      "source_published_at": "2026-10-23",
-      "content_label": "Recent source context",
-      "excerpt": "MEET THE 82-YEAR-OLD STATE SENATOR CHARGED WITH BEING A DRUG KINGPIN!! Feds Slap Powerful Democrat L. Louise Lucas With BOMBSSHELL Marijuana RICO Charges… Claims She ...",
-      "domains": [
-        "benefits"
-      ]
-    },
     {
       "id": "763e8914fdf2bbdf960a",
       "title": "Errors in disability cases for ‘painful scars’ resulted in overpayment: VA watchdog",
