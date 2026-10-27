@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-26",
-  "generated_at": "2026-10-26T19:25:55.754085+00:00",
+  "as_of": "2026-10-27",
+  "generated_at": "2026-10-27T18:49:00.375423+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -22,8 +22,8 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "757356e2faa766f89a26",
-        "b8f85ca93f520dfd881a"
+        "b8f85ca93f520dfd881a",
+        "b5a4b532eb3685f7bacd"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -34,12 +34,14 @@
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
-      "story_ids": [],
-      "coverage_status": "no_suitable_story",
+      "story_ids": [
+        "b5a4b532eb3685f7bacd"
+      ],
+      "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
       "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
-      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "housing_stability",
@@ -92,18 +94,6 @@
       ]
     },
     {
-      "id": "757356e2faa766f89a26",
-      "title": "‘An end to this long journey’: Veterans, families welcome long-awaited Gulf War memorial to nation’s capital",
-      "source_host": "www.stripes.com",
-      "source_url": "https://www.stripes.com/veterans/2026-10-24/desert-shield-desert-storm-memorial-dedication-23249383.html",
-      "source_published_at": "2026-10-23",
-      "content_label": "Recent source context",
-      "excerpt": "A dedication ceremony for the Desert Shield and Desert Storm Memorial on the National Mall marked the formal opening of the landmark and its official ...",
-      "domains": [
-        "military_family_readiness"
-      ]
-    },
-    {
       "id": "b8f85ca93f520dfd881a",
       "title": "October 2026 State of the Military Family® Video Newsletter",
       "source_host": "www.militaryfamily.org",
@@ -114,6 +104,19 @@
       "domains": [
         "military_family_readiness",
         "healthcare_system"
+      ]
+    },
+    {
+      "id": "b5a4b532eb3685f7bacd",
+      "title": "TRICARE Young Adult Premiums Are Rising Again: What Military Families Should Know",
+      "source_host": "www.militaryfamily.org",
+      "source_url": "https://www.militaryfamily.org/tricare-young-adult-premiums-are-rising-again-what-military-families-should-know",
+      "source_published_at": "2026-10-21",
+      "content_label": "Recent source context",
+      "excerpt": "TRICARE Young Adult premiums are rising in 2027. Learn the new Prime and Select rates, why costs are increasing, and what military families should know.",
+      "domains": [
+        "military_family_readiness",
+        "cost_of_living"
       ]
     },
     {

@@ -1,22 +1,22 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_topic_daily",
-  "as_of": "2026-10-26",
-  "generated_at": "2026-10-26T19:25:56.486526+00:00",
-  "overall_score": 48.13,
+  "as_of": "2026-10-27",
+  "generated_at": "2026-10-27T18:49:01.076759+00:00",
+  "overall_score": 42.98,
   "coverage_note": "Automated reader explanations from saved EagleONE outputs. Selected source records do not independently verify claims or establish the cause of a score change.",
   "domains": [
     {
       "key": "benefits",
       "name": "Benefits",
-      "score": 34.22,
-      "prior_score": 31.26,
-      "delta": 2.96,
-      "prior_as_of": "2026-10-25",
+      "score": 29.07,
+      "prior_score": 34.22,
+      "delta": -5.15,
+      "prior_as_of": "2026-10-26",
       "scope": "Access to benefits, compensation, and benefits-navigation support.",
-      "reading_meaning": "EagleONE's published reading is 34.22. It describes the model's assessment of this domain rather than every household's experience.",
+      "reading_meaning": "EagleONE's published reading is 29.07. It describes the model's assessment of this domain rather than every household's experience.",
       "what_informed": "Selected records associated with this topic come from www.vfw.org, www.va.gov. The dated titles below identify their subjects. Reference pages and indicators are included alongside stories; their presence alone does not establish a new event or explain the full score.",
-      "comparison_text": "The report dated 2026-10-26 records 34.22, compared with 31.26 in the report dated 2026-10-25. The reported change is +2.96 points.",
+      "comparison_text": "The report dated 2026-10-27 records 29.07, compared with 34.22 in the report dated 2026-10-26. The reported change is -5.15 points.",
       "why_it_matters": "Benefits information can affect household income and planning. Relevance depends on the benefit and household circumstances.",
       "sources": [
         {
@@ -25,7 +25,7 @@
           "publisher": "www.vfw.org",
           "url": "https://www.vfw.org/join/vfw-auxiliary",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -34,7 +34,7 @@
           "publisher": "www.va.gov",
           "url": "https://www.va.gov/disability/compensation-rates/veteran-rates/past-rates-2025",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -43,7 +43,7 @@
           "publisher": "www.va.gov",
           "url": "https://www.va.gov/disability/compensation-rates/veteran-rates/",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -52,7 +52,7 @@
           "publisher": "www.va.gov",
           "url": "https://www.va.gov/disability/compensation-rates/veteran-rates/past-rates-2023",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -61,14 +61,14 @@
           "publisher": "www.va.gov",
           "url": "https://www.va.gov/disability/compensation-rates/veteran-rates/past-rates-2024",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         }
       ],
       "questions": [
         {
           "question": "Does this reading mean my benefits changed?",
-          "answer": "A domain reading alone does not establish a change to your payments, eligibility, or claim. Check the linked benefit information and any official notice that applies to you. The report dated 2026-10-26 records 34.22, compared with 31.26 in the report dated 2026-10-25. The reported change is +2.96 points.",
+          "answer": "A domain reading alone does not establish a change to your payments, eligibility, or claim. Check the linked benefit information and any official notice that applies to you. The report dated 2026-10-27 records 29.07, compared with 34.22 in the report dated 2026-10-26. The reported change is -5.15 points.",
           "source_ids": []
         },
         {
@@ -85,14 +85,14 @@
     {
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
-      "score": 36.62,
-      "prior_score": 39.69,
-      "delta": -3.07,
-      "prior_as_of": "2026-10-25",
+      "score": 24.57,
+      "prior_score": 36.62,
+      "delta": -12.05,
+      "prior_as_of": "2026-10-26",
       "scope": "Conditions supporting military households through moves, deployment, caregiving, and everyday responsibilities.",
-      "reading_meaning": "EagleONE's published reading is 36.62. It describes the model's assessment of this domain rather than every household's experience.",
+      "reading_meaning": "EagleONE's published reading is 24.57. It describes the model's assessment of this domain rather than every household's experience.",
       "what_informed": "Selected records associated with this topic come from www.militaryfamily.org. The dated titles below identify their subjects. Reference pages and indicators are included alongside stories; their presence alone does not establish a new event or explain the full score.",
-      "comparison_text": "The report dated 2026-10-26 records 36.62, compared with 39.69 in the report dated 2026-10-25. The reported change is -3.07 points.",
+      "comparison_text": "The report dated 2026-10-27 records 24.57, compared with 36.62 in the report dated 2026-10-26. The reported change is -12.05 points.",
       "why_it_matters": "Work, childcare, care access, and relocation can interact within a household. The relevant combination differs for each family.",
       "sources": [
         {
@@ -101,7 +101,7 @@
           "publisher": "www.militaryfamily.org",
           "url": "https://www.militaryfamily.org/navy-spouse-lara-morris-on-building-and-sustaining-a-career-in-nursing/",
           "published": "2026-10-04",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -110,7 +110,7 @@
           "publisher": "www.militaryfamily.org",
           "url": "https://www.militaryfamily.org/the-strength-to-begin-again-jacquelines-story-as-a-military-spouse-nurse/",
           "published": "2026-05-31",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -119,14 +119,14 @@
           "publisher": "www.militaryfamily.org",
           "url": "https://www.militaryfamily.org/aislinns-story-nursing-service-and-building-a-career-in-motion/",
           "published": "2026-04-12",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         }
       ],
       "questions": [
         {
           "question": "Does this reading describe my family's readiness?",
-          "answer": "It describes conditions assessed across this topic rather than your family's readiness. Consider which developments relate to your location, work, childcare, caregiving, or deployment situation. The report dated 2026-10-26 records 36.62, compared with 39.69 in the report dated 2026-10-25. The reported change is -3.07 points.",
+          "answer": "It describes conditions assessed across this topic rather than your family's readiness. Consider which developments relate to your location, work, childcare, caregiving, or deployment situation. The report dated 2026-10-27 records 24.57, compared with 36.62 in the report dated 2026-10-26. The reported change is -12.05 points.",
           "source_ids": []
         },
         {
@@ -143,14 +143,14 @@
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
-      "score": 44.01,
-      "prior_score": 42.99,
-      "delta": 1.02,
-      "prior_as_of": "2026-10-25",
+      "score": 42.03,
+      "prior_score": 44.01,
+      "delta": -1.98,
+      "prior_as_of": "2026-10-26",
       "scope": "Household affordability and the relationship between expenses and available income.",
-      "reading_meaning": "EagleONE's published reading is 44.01. It describes the model's assessment of this domain rather than every household's experience.",
+      "reading_meaning": "EagleONE's published reading is 42.03. It describes the model's assessment of this domain rather than every household's experience.",
       "what_informed": "Selected records associated with this topic come from veteran.com. The dated titles below identify their subjects. Reference pages and indicators are included alongside stories; their presence alone does not establish a new event or explain the full score.",
-      "comparison_text": "The report dated 2026-10-26 records 44.01, compared with 42.99 in the report dated 2026-10-25. The reported change is +1.02 points.",
+      "comparison_text": "The report dated 2026-10-27 records 42.03, compared with 44.01 in the report dated 2026-10-26. The reported change is -1.98 points.",
       "why_it_matters": "Housing, food, transportation, childcare, and other expenses affect how far income goes. Compare the information with your own household budget.",
       "sources": [
         {
@@ -159,7 +159,7 @@
           "publisher": "veteran.com",
           "url": "https://veteran.com/2026-basic-allowance-for-housing-bah-rates/",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -168,7 +168,7 @@
           "publisher": "veteran.com",
           "url": "https://veteran.com/2026-military-pay-charts/",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -177,14 +177,14 @@
           "publisher": "veteran.com",
           "url": "https://veteran.com/va-disability-pay-dates/",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         }
       ],
       "questions": [
         {
           "question": "Does this reading mean my household costs changed?",
-          "answer": "It does not measure your personal expenses. Compare relevant source information with your own income and expenses. A pay or allowance reference alone does not confirm a change in your income. The report dated 2026-10-26 records 44.01, compared with 42.99 in the report dated 2026-10-25. The reported change is +1.02 points.",
+          "answer": "It does not measure your personal expenses. Compare relevant source information with your own income and expenses. A pay or allowance reference alone does not confirm a change in your income. The report dated 2026-10-27 records 42.03, compared with 44.01 in the report dated 2026-10-26. The reported change is -1.98 points.",
           "source_ids": []
         },
         {
@@ -201,14 +201,14 @@
     {
       "key": "housing_stability",
       "name": "Housing",
-      "score": 51.22,
-      "prior_score": 41.61,
-      "delta": 9.61,
-      "prior_as_of": "2026-10-25",
+      "score": 51.32,
+      "prior_score": 51.22,
+      "delta": 0.1,
+      "prior_as_of": "2026-10-26",
       "scope": "Conditions related to maintaining housing, relocating, and accessing housing assistance.",
-      "reading_meaning": "EagleONE's published reading is 51.22. It describes the model's assessment of this domain rather than every household's experience.",
+      "reading_meaning": "EagleONE's published reading is 51.32. It describes the model's assessment of this domain rather than every household's experience.",
       "what_informed": "Selected records associated with this topic come from HUD, department.va.gov, nchv.org. The dated titles below identify their subjects. Reference pages and indicators are included alongside stories; their presence alone does not establish a new event or explain the full score.",
-      "comparison_text": "The report dated 2026-10-26 records 51.22, compared with 41.61 in the report dated 2026-10-25. The reported change is +9.61 points.",
+      "comparison_text": "The report dated 2026-10-27 records 51.32, compared with 51.22 in the report dated 2026-10-26. The reported change is +0.10 points.",
       "why_it_matters": "Rent, deposits, moving costs, and assistance availability can affect household continuity. Local circumstances matter.",
       "sources": [
         {
@@ -217,7 +217,7 @@
           "publisher": "HUD",
           "url": "",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "indicator"
         },
         {
@@ -226,7 +226,7 @@
           "publisher": "department.va.gov",
           "url": "https://department.va.gov/homeless/feed/",
           "published": "2026-10-23",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -235,7 +235,7 @@
           "publisher": "department.va.gov",
           "url": "https://department.va.gov/homeless/hud-vash/",
           "published": "2026-04-02",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -244,7 +244,7 @@
           "publisher": "nchv.org",
           "url": "https://nchv.org/veteran-homelessness/",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -253,14 +253,14 @@
           "publisher": "department.va.gov",
           "url": "https://department.va.gov/homeless/grant-per-diem/",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         }
       ],
       "questions": [
         {
           "question": "Does this reading describe housing in my area?",
-          "answer": "The domain reading alone does not establish local rent levels or assistance availability. Check each source's geography, reporting period, and program requirements. The report dated 2026-10-26 records 51.22, compared with 41.61 in the report dated 2026-10-25. The reported change is +9.61 points.",
+          "answer": "The domain reading alone does not establish local rent levels or assistance availability. Check each source's geography, reporting period, and program requirements. The report dated 2026-10-27 records 51.32, compared with 51.22 in the report dated 2026-10-26. The reported change is +0.10 points.",
           "source_ids": []
         },
         {
@@ -277,14 +277,14 @@
     {
       "key": "healthcare_system",
       "name": "Health & Care",
-      "score": 53.73,
-      "prior_score": 55.61,
-      "delta": -1.88,
-      "prior_as_of": "2026-10-25",
+      "score": 52.56,
+      "prior_score": 53.73,
+      "delta": -1.17,
+      "prior_as_of": "2026-10-26",
       "scope": "Healthcare-system conditions relevant to finding and navigating care.",
-      "reading_meaning": "EagleONE's published reading is 53.73. It describes the model's assessment of this domain rather than every household's experience.",
-      "what_informed": "Selected records associated with this topic come from VA Facilities, biztoc.com, department.va.gov, www.militaryfamily.org. The dated titles below identify their subjects. Reference pages and indicators are included alongside stories; their presence alone does not establish a new event or explain the full score.",
-      "comparison_text": "The report dated 2026-10-26 records 53.73, compared with 55.61 in the report dated 2026-10-25. The reported change is -1.88 points.",
+      "reading_meaning": "EagleONE's published reading is 52.56. It describes the model's assessment of this domain rather than every household's experience.",
+      "what_informed": "Selected records associated with this topic come from VA Facilities, department.va.gov, www.militaryfamily.org. The dated titles below identify their subjects. Reference pages and indicators are included alongside stories; their presence alone does not establish a new event or explain the full score.",
+      "comparison_text": "The report dated 2026-10-27 records 52.56, compared with 53.73 in the report dated 2026-10-26. The reported change is -1.17 points.",
       "why_it_matters": "Referrals, travel, coverage, appointment availability, and caregiving responsibilities can affect families differently.",
       "sources": [
         {
@@ -293,17 +293,8 @@
           "publisher": "VA Facilities",
           "url": "",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "indicator"
-        },
-        {
-          "id": "f69ff200c6e8642dd864",
-          "title": "Map Shows VA Clinic Boom As 300,000 Enroll for Healthcare",
-          "publisher": "biztoc.com",
-          "url": "https://biztoc.com/x/00e394a97ebd8619",
-          "published": "2026-10-23",
-          "captured": "2026-10-26",
-          "source_type": "source_reference"
         },
         {
           "id": "bbb9f4f2526927c35a50",
@@ -311,7 +302,7 @@
           "publisher": "department.va.gov",
           "url": "https://department.va.gov/homeless/hud-vash/",
           "published": "2026-04-02",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -320,32 +311,23 @@
           "publisher": "www.militaryfamily.org",
           "url": "https://www.militaryfamily.org/the-strength-to-begin-again-jacquelines-story-as-a-military-spouse-nurse/",
           "published": "2026-05-31",
-          "captured": "2026-10-26",
-          "source_type": "source_reference"
-        },
-        {
-          "id": "d7750b24138223b294c1",
-          "title": "Aislinn’s Story: Nursing, Service, and Building a Career in Motion",
-          "publisher": "www.militaryfamily.org",
-          "url": "https://www.militaryfamily.org/aislinns-story-nursing-service-and-building-a-career-in-motion/",
-          "published": "2026-04-12",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         }
       ],
       "questions": [
         {
           "question": "Does this reading tell me when I can get care?",
-          "answer": "The domain reading does not establish appointment availability at a particular facility. Confirm services, referrals, coverage, and appointment options with the provider. The report dated 2026-10-26 records 53.73, compared with 55.61 in the report dated 2026-10-25. The reported change is -1.88 points.",
+          "answer": "The domain reading does not establish appointment availability at a particular facility. Confirm services, referrals, coverage, and appointment options with the provider. The report dated 2026-10-27 records 52.56, compared with 53.73 in the report dated 2026-10-26. The reported change is -1.17 points.",
           "source_ids": []
         },
         {
           "question": "Which source information can I check in this report?",
-          "answer": "This report lists VA facility indicator; Map Shows VA Clinic Boom As 300,000 Enroll for Healthcare; HUD-VASH - VA Homeless Programs. Check the recorded dates and open the available source links below. Confirm which details apply to your location and circumstances.",
+          "answer": "This report lists VA facility indicator; HUD-VASH - VA Homeless Programs; The Strength to Begin Again: Jacqueline’s Story as a Military Spouse Nurse. Check the recorded dates and open the available source links below. Confirm which details apply to your location and circumstances.",
           "source_ids": [
             "f9916d4bfb774b75edd7",
-            "f69ff200c6e8642dd864",
-            "bbb9f4f2526927c35a50"
+            "bbb9f4f2526927c35a50",
+            "4d35d8c81f8b3ec2320a"
           ]
         }
       ]
@@ -353,14 +335,14 @@
     {
       "key": "employment",
       "name": "Work & Careers",
-      "score": 68.97,
-      "prior_score": 60.74,
-      "delta": 8.23,
-      "prior_as_of": "2026-10-25",
+      "score": 58.31,
+      "prior_score": 68.97,
+      "delta": -10.66,
+      "prior_as_of": "2026-10-26",
       "scope": "Employment conditions relevant to veterans, transitioning service members, and military spouses.",
-      "reading_meaning": "EagleONE's published reading is 68.97. It describes the model's assessment of this domain rather than every household's experience.",
-      "what_informed": "Selected records associated with this topic come from Census, www.dol.gov, www.apprenticeship.gov, www.ncsl.org, vetstodrones.org. The dated titles below identify their subjects. Reference pages and indicators are included alongside stories; their presence alone does not establish a new event or explain the full score.",
-      "comparison_text": "The report dated 2026-10-26 records 68.97, compared with 60.74 in the report dated 2026-10-25. The reported change is +8.23 points.",
+      "reading_meaning": "EagleONE's published reading is 58.31. It describes the model's assessment of this domain rather than every household's experience.",
+      "what_informed": "Selected records associated with this topic come from Census, www.dol.gov, www.apprenticeship.gov, www.ncsl.org. The dated titles below identify their subjects. Reference pages and indicators are included alongside stories; their presence alone does not establish a new event or explain the full score.",
+      "comparison_text": "The report dated 2026-10-27 records 58.31, compared with 68.97 in the report dated 2026-10-26. The reported change is -10.66 points.",
       "why_it_matters": "Job opportunities, licensing, credentials, and relocation can affect income continuity. Requirements vary by occupation and location.",
       "sources": [
         {
@@ -369,7 +351,7 @@
           "publisher": "Census",
           "url": "",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "indicator"
         },
         {
@@ -378,7 +360,7 @@
           "publisher": "www.dol.gov",
           "url": "https://www.dol.gov/agencies/vets/resources/news",
           "published": "2026-01-30",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -387,7 +369,7 @@
           "publisher": "www.apprenticeship.gov",
           "url": "https://www.apprenticeship.gov/employers/registered-apprenticeship-program",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
@@ -396,23 +378,23 @@
           "publisher": "www.ncsl.org",
           "url": "https://www.ncsl.org/labor-and-employment/barriers-to-work-improving-access-to-licensed-occupations-for-veterans-and-military-spouses",
           "published": "2026-09-09",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         },
         {
-          "id": "142aa3bab483a246d684",
-          "title": "Vets to Drones: Take the next step toward a career in drones",
-          "publisher": "vetstodrones.org",
-          "url": "https://vetstodrones.org/join.html",
+          "id": "aa69d969b6a9f1facf2a",
+          "title": "Health Plans and Benefits",
+          "publisher": "www.dol.gov",
+          "url": "https://www.dol.gov/general/topic/health-plans",
           "published": "",
-          "captured": "2026-10-26",
+          "captured": "2026-10-27",
           "source_type": "source_reference"
         }
       ],
       "questions": [
         {
           "question": "Does this reading predict whether I will find a job?",
-          "answer": "It assesses employment-related conditions within the model. Your opportunities depend on occupation, location, experience, credentials, and the requirements of individual positions. The report dated 2026-10-26 records 68.97, compared with 60.74 in the report dated 2026-10-25. The reported change is +8.23 points.",
+          "answer": "It assesses employment-related conditions within the model. Your opportunities depend on occupation, location, experience, credentials, and the requirements of individual positions. The report dated 2026-10-27 records 58.31, compared with 68.97 in the report dated 2026-10-26. The reported change is -10.66 points.",
           "source_ids": []
         },
         {
