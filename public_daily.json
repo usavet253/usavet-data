@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-10-27",
-  "generated_at": "2026-10-27T18:45:33Z",
-  "overall_score": 42.98,
-  "score": 42.98,
+  "as_of": "2026-10-28",
+  "generated_at": "2026-10-28T18:55:10Z",
+  "overall_score": 41.89,
+  "score": 41.89,
   "status_band": "Elevated Pressure",
   "band": "Elevated Pressure",
   "trend": "declining",
@@ -15,54 +15,42 @@
   },
   "schema_version": "1.0.0",
   "index": {
-    "overall_score": 42.98,
+    "overall_score": 41.89,
     "band": "Elevated Pressure",
     "status_band": "Elevated Pressure",
     "trend": "declining",
     "pressure_label": "Elevated Pressure",
     "source_quality": "High Confidence"
   },
-  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 42.98.",
+  "summary": "The national system is currently operating in the elevated pressure range with an official composite index reading of 41.89.",
   "notes": [
-    "Housing Stability score: 51.32",
-    "Employment score: 58.31",
-    "Military Family Readiness score: 24.57",
-    "Cost of Living score: 42.03",
-    "Healthcare System score: 52.56",
-    "Benefits score: 29.07"
+    "Housing Stability score: 52.05",
+    "Employment score: 59.08",
+    "Military Family Readiness score: 24.16",
+    "Cost of Living score: 40.56",
+    "Healthcare System score: 45.52",
+    "Benefits score: 29.98"
   ],
   "domains": {
-    "housing_stability": 51.32,
-    "employment": 58.31,
-    "military_family_readiness": 24.57,
-    "cost_of_living": 42.03,
-    "healthcare_system": 52.56,
-    "benefits": 29.07
+    "housing_stability": 52.05,
+    "employment": 59.08,
+    "military_family_readiness": 24.16,
+    "cost_of_living": 40.56,
+    "healthcare_system": 45.52,
+    "benefits": 29.98
   },
   "brief": {
-    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 42.98.",
+    "headline": "The national system is currently operating in the elevated pressure range with an official composite index reading of 41.89.",
     "notes": [
-      "Housing Stability score: 51.32",
-      "Employment score: 58.31",
-      "Military Family Readiness score: 24.57",
-      "Cost of Living score: 42.03",
-      "Healthcare System score: 52.56",
-      "Benefits score: 29.07"
+      "Housing Stability score: 52.05",
+      "Employment score: 59.08",
+      "Military Family Readiness score: 24.16",
+      "Cost of Living score: 40.56",
+      "Healthcare System score: 45.52",
+      "Benefits score: 29.98"
     ]
   },
   "history": [
-    {
-      "time": "2026-04-29T19:15:30Z",
-      "as_of": "2026-04-29",
-      "overall_score": 48.4,
-      "trend": "declining",
-      "housing_stability": 53.07,
-      "cost_of_living": 45.63,
-      "employment": 59.37,
-      "benefits": 38.35,
-      "healthcare_system": 54.87,
-      "military_family_readiness": 39.11
-    },
     {
       "time": "2026-04-30T16:06:36Z",
       "as_of": "2026-04-30",
@@ -2210,6 +2198,18 @@
       "benefits": 29.07,
       "healthcare_system": 52.56,
       "military_family_readiness": 24.57
+    },
+    {
+      "time": "2026-10-28T18:55:10Z",
+      "as_of": "2026-10-28",
+      "overall_score": 41.89,
+      "trend": "declining",
+      "housing_stability": 52.05,
+      "cost_of_living": 40.56,
+      "employment": 59.08,
+      "benefits": 29.98,
+      "healthcare_system": 45.52,
+      "military_family_readiness": 24.16
     }
   ]
 }
