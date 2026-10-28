@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-27",
-  "generated_at": "2026-10-27T18:49:00.375423+00:00",
+  "as_of": "2026-10-28",
+  "generated_at": "2026-10-28T18:59:27.825500+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -22,8 +22,8 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "b8f85ca93f520dfd881a",
-        "b5a4b532eb3685f7bacd"
+        "77da7f43ba25e53142ef",
+        "d9ccb081fd72b06f777b"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -35,19 +35,20 @@
       "key": "cost_of_living",
       "name": "Cost of Living",
       "story_ids": [
-        "b5a4b532eb3685f7bacd"
+        "f1a2efd687da0a04ae65",
+        "2e2bd75205555426c059"
       ],
       "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
-      "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "Check official VA and Social Security announcements before advising households about payment changes. A reported possibility is not a confirmed VA rate change.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions. Payment confirmation: Look for an official VA announcement establishing whether a 2027 adjustment applies, its effective date and payment timing."
     },
     {
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "3855a3ce5e911b062485"
+        "e2eab418ac943fef8bf8"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
@@ -59,7 +60,7 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "b8f85ca93f520dfd881a"
+        "ae64e3161b453a6cfdaa"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -94,41 +95,75 @@
       ]
     },
     {
-      "id": "b8f85ca93f520dfd881a",
-      "title": "October 2026 State of the Military Family® Video Newsletter",
-      "source_host": "www.militaryfamily.org",
-      "source_url": "https://www.militaryfamily.org/october-2026-state-of-the-military-family-video-newsletter",
-      "source_published_at": "2026-10-23",
-      "content_label": "Recent source context",
-      "excerpt": "NMFA's October 2026 update covers MCON, military children's education, rising TRICARE Young Adult premiums, and advocacy for military families.",
+      "id": "77da7f43ba25e53142ef",
+      "title": "Military childcare staffing shortages leave families struggling to find care",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/2026/10/28/military-childcare-staffing-shortages-leave-families-struggling-to-find-care",
+      "source_published_at": "2026-10-28",
+      "content_label": "Published on report date",
+      "excerpt": "Low wages, lengthy hiring processes and limited availability are leaving some military parents unable to work and making it difficult for childcare centers to recruit ...",
       "domains": [
-        "military_family_readiness",
-        "healthcare_system"
+        "military_family_readiness"
       ]
     },
     {
-      "id": "b5a4b532eb3685f7bacd",
-      "title": "TRICARE Young Adult Premiums Are Rising Again: What Military Families Should Know",
-      "source_host": "www.militaryfamily.org",
-      "source_url": "https://www.militaryfamily.org/tricare-young-adult-premiums-are-rising-again-what-military-families-should-know",
-      "source_published_at": "2026-10-21",
+      "id": "d9ccb081fd72b06f777b",
+      "title": "5 Reasons to Love Being a Military Spouse",
+      "source_host": "military.com",
+      "source_url": "https://military.com/military-family-appreciation-month/why-do-you-love-being-a-milspouse.html",
+      "source_published_at": "2026-10-27",
       "content_label": "Recent source context",
-      "excerpt": "TRICARE Young Adult premiums are rising in 2027. Learn the new Prime and Select rates, why costs are increasing, and what military families should know.",
+      "excerpt": "It may not always be fun or easy, but there are plenty of reasons to love being a military spouse.",
       "domains": [
-        "military_family_readiness",
+        "military_family_readiness"
+      ]
+    },
+    {
+      "id": "f1a2efd687da0a04ae65",
+      "title": "US costs of Iran war rise to over $47 billion, according to Pentagon estimate",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/2026/10/28/us-costs-of-iran-war-rise-to-over-47-billion-according-to-pentagon-estimate",
+      "source_published_at": "2026-10-28",
+      "content_label": "Published on report date",
+      "excerpt": "The U.S. military has spent over $47 billion so far to prosecute the war in Iran, more than 25% higher than the Defense Department's estimate ...",
+      "domains": [
         "cost_of_living"
       ]
     },
     {
-      "id": "3855a3ce5e911b062485",
-      "title": "HUD-VASH - VA Homeless Programs",
-      "source_host": "department.va.gov",
-      "source_url": "https://department.va.gov/homeless/hud-vash",
-      "source_published_at": "2026-04-02",
-      "content_label": "Background / reference",
-      "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
+      "id": "2e2bd75205555426c059",
+      "title": "Veterans Are Getting a 3.6% COLA Raise in 2027. Rising Costs Could Eat Into the Increase.",
+      "source_host": "military.com",
+      "source_url": "https://military.com/veterans-are-getting-36-percent-cola-raise-in-2027-rising-costs-could-eat-into-the-increase",
+      "source_published_at": "2026-10-27",
+      "content_label": "Recent source context",
+      "excerpt": "Overall consumer prices rose 3.7% in the 12 months through September 2026, while the energy index climbed 20.4%.",
+      "domains": [
+        "cost_of_living"
+      ]
+    },
+    {
+      "id": "e2eab418ac943fef8bf8",
+      "title": "Improving HUD-VASH Utilization Under Changing Income Eligibility Requirements",
+      "source_host": "www.rand.org",
+      "source_url": "https://www.rand.org/pubs/research_reports/RRA4405-7.html",
+      "source_published_at": "2026-10-27",
+      "content_label": "Recent source context",
+      "excerpt": "Researchers examined how income-related policy changes are affecting utilization of the Housing and Urban Development–VA Supportive Housing program to determine whether supply and demand for ...",
       "domains": [
         "housing_stability"
+      ]
+    },
+    {
+      "id": "ae64e3161b453a6cfdaa",
+      "title": "VA Video Connect",
+      "source_host": "mobile.va.gov",
+      "source_url": "https://mobile.va.gov/app/va-video-connect",
+      "source_published_at": "",
+      "content_label": "Background / reference",
+      "excerpt": ", VA’s secure videoconferencing app. He has since used virtual care for several types of VA appointments, including general surgery, nutrition and VA’s MOVE! ® ...",
+      "domains": [
+        "healthcare_system"
       ]
     },
     {
