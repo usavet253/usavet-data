@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-28",
-  "generated_at": "2026-10-28T18:59:27.825500+00:00",
+  "as_of": "2026-10-29",
+  "generated_at": "2026-10-29T19:03:31.987628+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -22,7 +22,7 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "77da7f43ba25e53142ef",
+        "06ec0ba69ef4cef4f7e3",
         "d9ccb081fd72b06f777b"
       ],
       "coverage_status": "selected_context",
@@ -35,14 +35,13 @@
       "key": "cost_of_living",
       "name": "Cost of Living",
       "story_ids": [
-        "f1a2efd687da0a04ae65",
-        "2e2bd75205555426c059"
+        "f1a2efd687da0a04ae65"
       ],
       "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
-      "planning_option": "Check official VA and Social Security announcements before advising households about payment changes. A reported possibility is not a confirmed VA rate change.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions. Payment confirmation: Look for an official VA announcement establishing whether a 2027 adjustment applies, its effective date and payment timing."
+      "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "housing_stability",
@@ -60,7 +59,7 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "ae64e3161b453a6cfdaa"
+        "98f132815337524aaa93"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -95,12 +94,12 @@
       ]
     },
     {
-      "id": "77da7f43ba25e53142ef",
+      "id": "06ec0ba69ef4cef4f7e3",
       "title": "Military childcare staffing shortages leave families struggling to find care",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/2026/10/28/military-childcare-staffing-shortages-leave-families-struggling-to-find-care",
+      "source_host": "www.armytimes.com",
+      "source_url": "https://www.armytimes.com/news/your-army/2026/10/28/military-childcare-staffing-shortages-leave-families-struggling-to-find-care",
       "source_published_at": "2026-10-28",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "Low wages, lengthy hiring processes and limited availability are leaving some military parents unable to work and making it difficult for childcare centers to recruit ...",
       "domains": [
         "military_family_readiness"
@@ -124,20 +123,8 @@
       "source_host": "www.militarytimes.com",
       "source_url": "https://www.militarytimes.com/news/2026/10/28/us-costs-of-iran-war-rise-to-over-47-billion-according-to-pentagon-estimate",
       "source_published_at": "2026-10-28",
-      "content_label": "Published on report date",
-      "excerpt": "The U.S. military has spent over $47 billion so far to prosecute the war in Iran, more than 25% higher than the Defense Department's estimate ...",
-      "domains": [
-        "cost_of_living"
-      ]
-    },
-    {
-      "id": "2e2bd75205555426c059",
-      "title": "Veterans Are Getting a 3.6% COLA Raise in 2027. Rising Costs Could Eat Into the Increase.",
-      "source_host": "military.com",
-      "source_url": "https://military.com/veterans-are-getting-36-percent-cola-raise-in-2027-rising-costs-could-eat-into-the-increase",
-      "source_published_at": "2026-10-27",
       "content_label": "Recent source context",
-      "excerpt": "Overall consumer prices rose 3.7% in the 12 months through September 2026, while the energy index climbed 20.4%.",
+      "excerpt": "The U.S. military has spent over $47 billion so far to prosecute the war in Iran, more than 25% higher than the Defense Department's estimate ...",
       "domains": [
         "cost_of_living"
       ]
@@ -155,13 +142,13 @@
       ]
     },
     {
-      "id": "ae64e3161b453a6cfdaa",
-      "title": "VA Video Connect",
-      "source_host": "mobile.va.gov",
-      "source_url": "https://mobile.va.gov/app/va-video-connect",
+      "id": "98f132815337524aaa93",
+      "title": "Fourth Mission",
+      "source_host": "www.va.gov",
+      "source_url": "https://www.va.gov/VHAEMERGENCYMANAGEMENT/4thMission.asp",
       "source_published_at": "",
       "content_label": "Background / reference",
-      "excerpt": ", VA’s secure videoconferencing app. He has since used virtual care for several types of VA appointments, including general surgery, nutrition and VA’s MOVE! ® ...",
+      "excerpt": "provides medical backup to DOW during war and national emergencies while sustaining care for Veterans. The exercise tested command activation, notifications, staffing and communications. It ...",
       "domains": [
         "healthcare_system"
       ]
