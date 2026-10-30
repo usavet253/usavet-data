@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-29",
-  "generated_at": "2026-10-29T19:03:31.987628+00:00",
+  "as_of": "2026-10-30",
+  "generated_at": "2026-10-30T18:43:00.127141+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,19 +10,19 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "215a57b87f7b779fcbd8"
+        "faf66dc592511a446807"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
       "domain_context": "Benefits navigation can connect eligible households with support across several services.",
       "planning_option": "Review unresolved applications and referral handoffs before promising payment or eligibility.",
-      "watch_next": "Benefits updates: Look for official VA rate-table revisions, effective dates and affected payment categories; a reference page alone does not announce a change."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "06ec0ba69ef4cef4f7e3",
+        "893bd679bde078bfaeb4",
         "d9ccb081fd72b06f777b"
       ],
       "coverage_status": "selected_context",
@@ -35,7 +35,7 @@
       "key": "cost_of_living",
       "name": "Cost of Living",
       "story_ids": [
-        "f1a2efd687da0a04ae65"
+        "f4c0ec2cc3535c60f70d"
       ],
       "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
@@ -47,7 +47,7 @@
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "e2eab418ac943fef8bf8"
+        "3855a3ce5e911b062485"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
@@ -82,22 +82,22 @@
   ],
   "stories": [
     {
-      "id": "215a57b87f7b779fcbd8",
-      "title": "Current Veterans disability compensation rates",
-      "source_host": "www.va.gov",
-      "source_url": "https://www.va.gov/disability/compensation-rates/veteran-rates",
-      "source_published_at": "",
-      "content_label": "Background / reference",
-      "excerpt": "Review 2026 Veterans disability compensation rates. Use our compensation benefits rate tables to find your monthly payment amount.",
+      "id": "faf66dc592511a446807",
+      "title": "VA Benefits Update: Hundreds of Veterans Eligible for Payouts in Arizona",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/0f43c0394dd70131",
+      "source_published_at": "2026-10-29",
+      "content_label": "Recent source context",
+      "excerpt": "Hundreds of veterans are set to receive restitution payments from a $1.2 million fund in Arizona following a settlement involving a company accused of misleading ...",
       "domains": [
         "benefits"
       ]
     },
     {
-      "id": "06ec0ba69ef4cef4f7e3",
+      "id": "893bd679bde078bfaeb4",
       "title": "Military childcare staffing shortages leave families struggling to find care",
-      "source_host": "www.armytimes.com",
-      "source_url": "https://www.armytimes.com/news/your-army/2026/10/28/military-childcare-staffing-shortages-leave-families-struggling-to-find-care",
+      "source_host": "www.airforcetimes.com",
+      "source_url": "https://www.airforcetimes.com/news/your-air-force/2026/10/28/military-childcare-staffing-shortages-leave-families-struggling-to-find-care",
       "source_published_at": "2026-10-28",
       "content_label": "Recent source context",
       "excerpt": "Low wages, lengthy hiring processes and limited availability are leaving some military parents unable to work and making it difficult for childcare centers to recruit ...",
@@ -118,10 +118,10 @@
       ]
     },
     {
-      "id": "f1a2efd687da0a04ae65",
+      "id": "f4c0ec2cc3535c60f70d",
       "title": "US costs of Iran war rise to over $47 billion, according to Pentagon estimate",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/2026/10/28/us-costs-of-iran-war-rise-to-over-47-billion-according-to-pentagon-estimate",
+      "source_host": "www.armytimes.com",
+      "source_url": "https://www.armytimes.com/pentagon/2026/10/28/us-costs-of-iran-war-rise-to-over-47-billion-according-to-pentagon-estimate",
       "source_published_at": "2026-10-28",
       "content_label": "Recent source context",
       "excerpt": "The U.S. military has spent over $47 billion so far to prosecute the war in Iran, more than 25% higher than the Defense Department's estimate ...",
@@ -130,13 +130,13 @@
       ]
     },
     {
-      "id": "e2eab418ac943fef8bf8",
-      "title": "Improving HUD-VASH Utilization Under Changing Income Eligibility Requirements",
-      "source_host": "www.rand.org",
-      "source_url": "https://www.rand.org/pubs/research_reports/RRA4405-7.html",
-      "source_published_at": "2026-10-27",
-      "content_label": "Recent source context",
-      "excerpt": "Researchers examined how income-related policy changes are affecting utilization of the Housing and Urban Development–VA Supportive Housing program to determine whether supply and demand for ...",
+      "id": "3855a3ce5e911b062485",
+      "title": "HUD-VASH - VA Homeless Programs",
+      "source_host": "department.va.gov",
+      "source_url": "https://department.va.gov/homeless/hud-vash",
+      "source_published_at": "2026-04-02",
+      "content_label": "Background / reference",
+      "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
       "domains": [
         "housing_stability"
       ]
