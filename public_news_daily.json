@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-30",
-  "generated_at": "2026-10-30T18:43:00.127141+00:00",
+  "as_of": "2026-10-31",
+  "generated_at": "2026-10-31T17:51:10.133873+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,20 +10,20 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "faf66dc592511a446807"
+        "215a57b87f7b779fcbd8"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
       "domain_context": "Benefits navigation can connect eligible households with support across several services.",
       "planning_option": "Review unresolved applications and referral handoffs before promising payment or eligibility.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "watch_next": "Benefits updates: Look for official VA rate-table revisions, effective dates and affected payment categories; a reference page alone does not announce a change."
     },
     {
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
         "893bd679bde078bfaeb4",
-        "d9ccb081fd72b06f777b"
+        "b5a4b532eb3685f7bacd"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -59,7 +59,7 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "98f132815337524aaa93"
+        "893bd679bde078bfaeb4"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -82,13 +82,13 @@
   ],
   "stories": [
     {
-      "id": "faf66dc592511a446807",
-      "title": "VA Benefits Update: Hundreds of Veterans Eligible for Payouts in Arizona",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/0f43c0394dd70131",
-      "source_published_at": "2026-10-29",
-      "content_label": "Recent source context",
-      "excerpt": "Hundreds of veterans are set to receive restitution payments from a $1.2 million fund in Arizona following a settlement involving a company accused of misleading ...",
+      "id": "215a57b87f7b779fcbd8",
+      "title": "Current Veterans disability compensation rates",
+      "source_host": "www.va.gov",
+      "source_url": "https://www.va.gov/disability/compensation-rates/veteran-rates",
+      "source_published_at": "",
+      "content_label": "Background / reference",
+      "excerpt": "Review 2026 Veterans disability compensation rates. Use our compensation benefits rate tables to find your monthly payment amount.",
       "domains": [
         "benefits"
       ]
@@ -102,17 +102,18 @@
       "content_label": "Recent source context",
       "excerpt": "Low wages, lengthy hiring processes and limited availability are leaving some military parents unable to work and making it difficult for childcare centers to recruit ...",
       "domains": [
-        "military_family_readiness"
+        "military_family_readiness",
+        "healthcare_system"
       ]
     },
     {
-      "id": "d9ccb081fd72b06f777b",
-      "title": "5 Reasons to Love Being a Military Spouse",
-      "source_host": "military.com",
-      "source_url": "https://military.com/military-family-appreciation-month/why-do-you-love-being-a-milspouse.html",
-      "source_published_at": "2026-10-27",
+      "id": "b5a4b532eb3685f7bacd",
+      "title": "TRICARE Young Adult Premiums Are Rising Again: What Military Families Should Know",
+      "source_host": "www.militaryfamily.org",
+      "source_url": "https://www.militaryfamily.org/tricare-young-adult-premiums-are-rising-again-what-military-families-should-know",
+      "source_published_at": "2026-10-21",
       "content_label": "Recent source context",
-      "excerpt": "It may not always be fun or easy, but there are plenty of reasons to love being a military spouse.",
+      "excerpt": "TRICARE Young Adult premiums are rising in 2027. Learn the new Prime and Select rates, why costs are increasing, and what military families should know.",
       "domains": [
         "military_family_readiness"
       ]
@@ -139,18 +140,6 @@
       "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
       "domains": [
         "housing_stability"
-      ]
-    },
-    {
-      "id": "98f132815337524aaa93",
-      "title": "Fourth Mission",
-      "source_host": "www.va.gov",
-      "source_url": "https://www.va.gov/VHAEMERGENCYMANAGEMENT/4thMission.asp",
-      "source_published_at": "",
-      "content_label": "Background / reference",
-      "excerpt": "provides medical backup to DOW during war and national emergencies while sustaining care for Veterans. The exercise tested command activation, notifications, staffing and communications. It ...",
-      "domains": [
-        "healthcare_system"
       ]
     },
     {
