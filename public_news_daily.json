@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-10-31",
-  "generated_at": "2026-10-31T17:51:10.133873+00:00",
+  "as_of": "2026-11-01",
+  "generated_at": "2026-11-01T18:30:37.540264+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -22,8 +22,8 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "893bd679bde078bfaeb4",
-        "b5a4b532eb3685f7bacd"
+        "b5a4b532eb3685f7bacd",
+        "5e88f78e62f405aebee3"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -35,7 +35,7 @@
       "key": "cost_of_living",
       "name": "Cost of Living",
       "story_ids": [
-        "f4c0ec2cc3535c60f70d"
+        "b5a4b532eb3685f7bacd"
       ],
       "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
@@ -59,7 +59,7 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "893bd679bde078bfaeb4"
+        "eedb01728b78f56ab4f6"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -94,19 +94,6 @@
       ]
     },
     {
-      "id": "893bd679bde078bfaeb4",
-      "title": "Military childcare staffing shortages leave families struggling to find care",
-      "source_host": "www.airforcetimes.com",
-      "source_url": "https://www.airforcetimes.com/news/your-air-force/2026/10/28/military-childcare-staffing-shortages-leave-families-struggling-to-find-care",
-      "source_published_at": "2026-10-28",
-      "content_label": "Recent source context",
-      "excerpt": "Low wages, lengthy hiring processes and limited availability are leaving some military parents unable to work and making it difficult for childcare centers to recruit ...",
-      "domains": [
-        "military_family_readiness",
-        "healthcare_system"
-      ]
-    },
-    {
       "id": "b5a4b532eb3685f7bacd",
       "title": "TRICARE Young Adult Premiums Are Rising Again: What Military Families Should Know",
       "source_host": "www.militaryfamily.org",
@@ -115,19 +102,20 @@
       "content_label": "Recent source context",
       "excerpt": "TRICARE Young Adult premiums are rising in 2027. Learn the new Prime and Select rates, why costs are increasing, and what military families should know.",
       "domains": [
-        "military_family_readiness"
+        "military_family_readiness",
+        "cost_of_living"
       ]
     },
     {
-      "id": "f4c0ec2cc3535c60f70d",
-      "title": "US costs of Iran war rise to over $47 billion, according to Pentagon estimate",
-      "source_host": "www.armytimes.com",
-      "source_url": "https://www.armytimes.com/pentagon/2026/10/28/us-costs-of-iran-war-rise-to-over-47-billion-according-to-pentagon-estimate",
-      "source_published_at": "2026-10-28",
+      "id": "5e88f78e62f405aebee3",
+      "title": "Record deployment for destroyer USS Spruance casts doubt over US Navy maintenance",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/your-military/2026/10/29/record-deployment-for-destroyer-uss-spruance-casts-doubt-over-us-navy-maintenance",
+      "source_published_at": "2026-10-29",
       "content_label": "Recent source context",
-      "excerpt": "The U.S. military has spent over $47 billion so far to prosecute the war in Iran, more than 25% higher than the Defense Department's estimate ...",
+      "excerpt": "The Arleigh-Burke class destroyer USS Spruance has set a post-World War II record for a U.S. Navy destroyer deployment and is raising questions about the ...",
       "domains": [
-        "cost_of_living"
+        "military_family_readiness"
       ]
     },
     {
@@ -140,6 +128,18 @@
       "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
       "domains": [
         "housing_stability"
+      ]
+    },
+    {
+      "id": "eedb01728b78f56ab4f6",
+      "title": "Direct Secure Messaging",
+      "source_host": "directtrust.org",
+      "source_url": "https://directtrust.org/what-we-do/direct-secure-messaging",
+      "source_published_at": "",
+      "content_label": "Background / reference",
+      "excerpt": "system works behind the scenes to help VA and non-VA (community) providers share health information securely and reliably. This steady communication keeps information flowing smoothly, ...",
+      "domains": [
+        "healthcare_system"
       ]
     },
     {
