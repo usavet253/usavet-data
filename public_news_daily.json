@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-01",
-  "generated_at": "2026-11-01T18:30:37.540264+00:00",
+  "as_of": "2026-11-02",
+  "generated_at": "2026-11-02T22:25:51.476133+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -22,8 +22,8 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "b5a4b532eb3685f7bacd",
-        "5e88f78e62f405aebee3"
+        "b8f85ca93f520dfd881a",
+        "b5a4b532eb3685f7bacd"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -35,7 +35,7 @@
       "key": "cost_of_living",
       "name": "Cost of Living",
       "story_ids": [
-        "b5a4b532eb3685f7bacd"
+        "34a410a8fd7ec91f8d93"
       ],
       "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
@@ -59,7 +59,7 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "eedb01728b78f56ab4f6"
+        "b8f85ca93f520dfd881a"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -94,6 +94,19 @@
       ]
     },
     {
+      "id": "b8f85ca93f520dfd881a",
+      "title": "October 2026 State of the Military Family® Video Newsletter",
+      "source_host": "www.militaryfamily.org",
+      "source_url": "https://www.militaryfamily.org/october-2026-state-of-the-military-family-video-newsletter",
+      "source_published_at": "2026-10-23",
+      "content_label": "Recent source context",
+      "excerpt": "NMFA's October 2026 update covers MCON, military children's education, rising TRICARE Young Adult premiums, and advocacy for military families.",
+      "domains": [
+        "military_family_readiness",
+        "healthcare_system"
+      ]
+    },
+    {
       "id": "b5a4b532eb3685f7bacd",
       "title": "TRICARE Young Adult Premiums Are Rising Again: What Military Families Should Know",
       "source_host": "www.militaryfamily.org",
@@ -102,20 +115,19 @@
       "content_label": "Recent source context",
       "excerpt": "TRICARE Young Adult premiums are rising in 2027. Learn the new Prime and Select rates, why costs are increasing, and what military families should know.",
       "domains": [
-        "military_family_readiness",
-        "cost_of_living"
+        "military_family_readiness"
       ]
     },
     {
-      "id": "5e88f78e62f405aebee3",
-      "title": "Record deployment for destroyer USS Spruance casts doubt over US Navy maintenance",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/your-military/2026/10/29/record-deployment-for-destroyer-uss-spruance-casts-doubt-over-us-navy-maintenance",
-      "source_published_at": "2026-10-29",
+      "id": "34a410a8fd7ec91f8d93",
+      "title": "From California to Rhode Island, US military bases hit by mysterious freezer failures as Pentagon probes possible link to French supermarket cyberattacks",
+      "source_host": "economictimes.indiatimes.com",
+      "source_url": "https://economictimes.indiatimes.com/news/international/world-news/military-commissary-refrigeration-cyberattack-probe-from-california-to-rhode-island-us-military-bases-hit-by-mysterious-freezer-failures-as-pentagon-probes-possible-link-to-french-supermarket-cyberattacks/articleshow/135435222.cms",
+      "source_published_at": "2026-11-01",
       "content_label": "Recent source context",
-      "excerpt": "The Arleigh-Burke class destroyer USS Spruance has set a post-World War II record for a U.S. Navy destroyer deployment and is raising questions about the ...",
+      "excerpt": "Military commissary refrigeration cyberattack probe: The Pentagon is investigating a series of unusual freezer malfunctions at US military commissaries after food worth thousands of dollars ...",
       "domains": [
-        "military_family_readiness"
+        "cost_of_living"
       ]
     },
     {
@@ -128,18 +140,6 @@
       "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
       "domains": [
         "housing_stability"
-      ]
-    },
-    {
-      "id": "eedb01728b78f56ab4f6",
-      "title": "Direct Secure Messaging",
-      "source_host": "directtrust.org",
-      "source_url": "https://directtrust.org/what-we-do/direct-secure-messaging",
-      "source_published_at": "",
-      "content_label": "Background / reference",
-      "excerpt": "system works behind the scenes to help VA and non-VA (community) providers share health information securely and reliably. This steady communication keeps information flowing smoothly, ...",
-      "domains": [
-        "healthcare_system"
       ]
     },
     {
