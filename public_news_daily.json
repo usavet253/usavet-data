@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-02",
-  "generated_at": "2026-11-02T22:25:51.476133+00:00",
+  "as_of": "2026-11-03",
+  "generated_at": "2026-11-03T20:13:17.982293+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
