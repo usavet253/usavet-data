@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-03",
-  "generated_at": "2026-11-03T20:13:17.982293+00:00",
+  "as_of": "2026-11-04",
+  "generated_at": "2026-11-04T20:31:19.608240+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,20 +10,20 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "215a57b87f7b779fcbd8"
+        "3b86e3b58864199072d7"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
       "domain_context": "Benefits navigation can connect eligible households with support across several services.",
       "planning_option": "Review unresolved applications and referral handoffs before promising payment or eligibility.",
-      "watch_next": "Benefits updates: Look for official VA rate-table revisions, effective dates and affected payment categories; a reference page alone does not announce a change."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "b8f85ca93f520dfd881a",
-        "b5a4b532eb3685f7bacd"
+        "987611c79c84fd9af9ef",
+        "0e802bf8ce8151bee598"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -34,14 +34,12 @@
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
-      "story_ids": [
-        "34a410a8fd7ec91f8d93"
-      ],
-      "coverage_status": "selected_context",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
       "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
     },
     {
       "key": "housing_stability",
@@ -58,76 +56,61 @@
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
-      "story_ids": [
-        "b8f85ca93f520dfd881a"
-      ],
-      "coverage_status": "selected_context",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
       "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
     },
     {
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "a127decdbe863ab6e2ef"
+        "18b4234000ae418004f3"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
       "domain_context": "Career mobility can connect workforce policy, employers and military-family support.",
-      "planning_option": "Check occupation-specific licensing and credential-transfer rules in the relevant state before advising a career move.",
-      "watch_next": "Career portability: Look for state- and occupation-specific implementation dates, credential-transfer requirements and application instructions."
+      "planning_option": "Check licensing and credential-transfer requirements in the relevant state before advising a career move.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     }
   ],
   "stories": [
     {
-      "id": "215a57b87f7b779fcbd8",
-      "title": "Current Veterans disability compensation rates",
-      "source_host": "www.va.gov",
-      "source_url": "https://www.va.gov/disability/compensation-rates/veteran-rates",
-      "source_published_at": "",
-      "content_label": "Background / reference",
-      "excerpt": "Review 2026 Veterans disability compensation rates. Use our compensation benefits rate tables to find your monthly payment amount.",
+      "id": "3b86e3b58864199072d7",
+      "title": "VA Hiring 2,000+ Employees to Process Rising Number of Veteran Claims",
+      "source_host": "soldiersystems.net",
+      "source_url": "https://soldiersystems.net/2026/11/03/va-hiring-2000-employees-to-process-rising-number-of-veteran-claims",
+      "source_published_at": "2026-11-03",
+      "content_label": "Recent source context",
+      "excerpt": "WASHINGTON — The Department of Veterans Affairs plans to hire more than 2,000 employees in fiscal year 2027 to process a record number of benefits ...",
       "domains": [
         "benefits"
       ]
     },
     {
-      "id": "b8f85ca93f520dfd881a",
-      "title": "October 2026 State of the Military Family® Video Newsletter",
-      "source_host": "www.militaryfamily.org",
-      "source_url": "https://www.militaryfamily.org/october-2026-state-of-the-military-family-video-newsletter",
-      "source_published_at": "2026-10-23",
-      "content_label": "Recent source context",
-      "excerpt": "NMFA's October 2026 update covers MCON, military children's education, rising TRICARE Young Adult premiums, and advocacy for military families.",
-      "domains": [
-        "military_family_readiness",
-        "healthcare_system"
-      ]
-    },
-    {
-      "id": "b5a4b532eb3685f7bacd",
-      "title": "TRICARE Young Adult Premiums Are Rising Again: What Military Families Should Know",
-      "source_host": "www.militaryfamily.org",
-      "source_url": "https://www.militaryfamily.org/tricare-young-adult-premiums-are-rising-again-what-military-families-should-know",
-      "source_published_at": "2026-10-21",
-      "content_label": "Recent source context",
-      "excerpt": "TRICARE Young Adult premiums are rising in 2027. Learn the new Prime and Select rates, why costs are increasing, and what military families should know.",
+      "id": "987611c79c84fd9af9ef",
+      "title": "Your next mission starts here: Free Salesforce training for Veterans and military spouses",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/150489/salesforce-training-veterans-military-spouses",
+      "source_published_at": "2026-11-04",
+      "content_label": "Published on report date",
+      "excerpt": "Discover free Salesforce training, certification opportunities and career resources for Veterans, service members and military spouses.",
       "domains": [
         "military_family_readiness"
       ]
     },
     {
-      "id": "34a410a8fd7ec91f8d93",
-      "title": "From California to Rhode Island, US military bases hit by mysterious freezer failures as Pentagon probes possible link to French supermarket cyberattacks",
-      "source_host": "economictimes.indiatimes.com",
-      "source_url": "https://economictimes.indiatimes.com/news/international/world-news/military-commissary-refrigeration-cyberattack-probe-from-california-to-rhode-island-us-military-bases-hit-by-mysterious-freezer-failures-as-pentagon-probes-possible-link-to-french-supermarket-cyberattacks/articleshow/135435222.cms",
-      "source_published_at": "2026-11-01",
+      "id": "0e802bf8ce8151bee598",
+      "title": "Pentagon Accused of 'Unacceptable' Treatment of Navy Families Evacuated from Middle East Base",
+      "source_host": "military.com",
+      "source_url": "https://military.com/pentagon-accused-of-unacceptable-treatment-of-navy-families-evacuated-from-middle-east-base",
+      "source_published_at": "2026-11-03",
       "content_label": "Recent source context",
-      "excerpt": "Military commissary refrigeration cyberattack probe: The Pentagon is investigating a series of unusual freezer malfunctions at US military commissaries after food worth thousands of dollars ...",
+      "excerpt": "Thirty Democrats claims military families \"are continuing to face significant hardship\" because of the evacuation from Naval Support Activity Bahrain.",
       "domains": [
-        "cost_of_living"
+        "military_family_readiness"
       ]
     },
     {
@@ -143,13 +126,13 @@
       ]
     },
     {
-      "id": "a127decdbe863ab6e2ef",
-      "title": "Barriers to Work: Improving Access to Licensed Occupations for Veterans and Military Spouses",
-      "source_host": "www.ncsl.org",
-      "source_url": "https://www.ncsl.org/labor-and-employment/barriers-to-work-improving-access-to-licensed-occupations-for-veterans-and-military-spouses",
-      "source_published_at": "2026-09-09",
-      "content_label": "Background / reference",
-      "excerpt": "Examines occupational licensing barriers facing veterans and military spouses, highlighting workforce trends, policy challenges, and state reforms that improve career mobility and employment access.",
+      "id": "18b4234000ae418004f3",
+      "title": "Advance your dental career with VA",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/150714/advance-your-dental-career-with-va",
+      "source_published_at": "2026-11-03",
+      "content_label": "Recent source context",
+      "excerpt": "Nearly half of all dentists in postgrad dental programs nationwide rotate through a VA facility, making VA one of the best places for training in ...",
       "domains": [
         "employment"
       ]
