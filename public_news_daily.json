@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-04",
-  "generated_at": "2026-11-04T20:31:19.608240+00:00",
+  "as_of": "2026-11-05",
+  "generated_at": "2026-11-05T20:45:57.964282+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,6 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
+        "8281a8932b6a58695371",
         "3b86e3b58864199072d7"
       ],
       "coverage_status": "selected_context",
@@ -67,7 +68,8 @@
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "18b4234000ae418004f3"
+        "18b4234000ae418004f3",
+        "ccc67b4bfd1885e82ab6"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -77,6 +79,18 @@
     }
   ],
   "stories": [
+    {
+      "id": "8281a8932b6a58695371",
+      "title": "As the VA leans on automation, errors in veterans’ claims soar",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/2026/11/05/as-the-va-leans-on-automation-errors-in-veterans-claims-soar",
+      "source_published_at": "2026-11-05",
+      "content_label": "Published on report date",
+      "excerpt": "Veterans Affairs employees said an automated tool designed to speed claims review makes mistakes that can cause errors, delay or deny benefits.",
+      "domains": [
+        "benefits"
+      ]
+    },
     {
       "id": "3b86e3b58864199072d7",
       "title": "VA Hiring 2,000+ Employees to Process Rising Number of Veteran Claims",
@@ -95,7 +109,7 @@
       "source_host": "news.va.gov",
       "source_url": "https://news.va.gov/150489/salesforce-training-veterans-military-spouses",
       "source_published_at": "2026-11-04",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "Discover free Salesforce training, certification opportunities and career resources for Veterans, service members and military spouses.",
       "domains": [
         "military_family_readiness"
@@ -133,6 +147,18 @@
       "source_published_at": "2026-11-03",
       "content_label": "Recent source context",
       "excerpt": "Nearly half of all dentists in postgrad dental programs nationwide rotate through a VA facility, making VA one of the best places for training in ...",
+      "domains": [
+        "employment"
+      ]
+    },
+    {
+      "id": "ccc67b4bfd1885e82ab6",
+      "title": "Your Clearance Can Get You Hired. It Can’t Tell You Who You Are.",
+      "source_host": "news.clearancejobs.com",
+      "source_url": "https://news.clearancejobs.com/2026/11/05/your-clearance-can-get-you-hired-it-cant-tell-you-who-you-are",
+      "source_published_at": "2026-11-05",
+      "content_label": "Published on report date",
+      "excerpt": "Leaving the military? Army NCO Brian McGovern explains why cleared jobs can delay your identity shift, plus the money mistakes that put clearances at risk.",
       "domains": [
         "employment"
       ]
