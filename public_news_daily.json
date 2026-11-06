@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-05",
-  "generated_at": "2026-11-05T20:45:57.964282+00:00",
+  "as_of": "2026-11-06",
+  "generated_at": "2026-11-06T20:02:08.095153+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,8 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "8281a8932b6a58695371",
-        "3b86e3b58864199072d7"
+        "ed2da9e629058f96bdab"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -24,7 +23,7 @@
       "name": "Military Family Readiness",
       "story_ids": [
         "987611c79c84fd9af9ef",
-        "0e802bf8ce8151bee598"
+        "b8f85ca93f520dfd881a"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -46,29 +45,31 @@
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "3855a3ce5e911b062485"
+        "2ae99aa81fe440ac4784",
+        "87bd0817478ec0b74b04"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
       "domain_context": "Housing support can connect rental assistance with care and case management.",
       "planning_option": "Confirm local housing referral routes, eligibility and available capacity with the responsible provider.",
-      "watch_next": "Housing access: Look for current eligibility, referral contacts, capacity and application instructions in the linked program information."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions. Housing access: Look for current eligibility, referral contacts, capacity and application instructions in the linked program information."
     },
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
-      "story_ids": [],
-      "coverage_status": "no_suitable_story",
+      "story_ids": [
+        "b8f85ca93f520dfd881a"
+      ],
+      "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
       "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
-      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "18b4234000ae418004f3",
         "ccc67b4bfd1885e82ab6"
       ],
       "coverage_status": "selected_context",
@@ -80,25 +81,13 @@
   ],
   "stories": [
     {
-      "id": "8281a8932b6a58695371",
+      "id": "ed2da9e629058f96bdab",
       "title": "As the VA leans on automation, errors in veterans’ claims soar",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/2026/11/05/as-the-va-leans-on-automation-errors-in-veterans-claims-soar",
+      "source_host": "www.armytimes.com",
+      "source_url": "https://www.armytimes.com/pentagon/2026/11/05/as-the-va-leans-on-automation-errors-in-veterans-claims-soar",
       "source_published_at": "2026-11-05",
-      "content_label": "Published on report date",
-      "excerpt": "Veterans Affairs employees said an automated tool designed to speed claims review makes mistakes that can cause errors, delay or deny benefits.",
-      "domains": [
-        "benefits"
-      ]
-    },
-    {
-      "id": "3b86e3b58864199072d7",
-      "title": "VA Hiring 2,000+ Employees to Process Rising Number of Veteran Claims",
-      "source_host": "soldiersystems.net",
-      "source_url": "https://soldiersystems.net/2026/11/03/va-hiring-2000-employees-to-process-rising-number-of-veteran-claims",
-      "source_published_at": "2026-11-03",
       "content_label": "Recent source context",
-      "excerpt": "WASHINGTON — The Department of Veterans Affairs plans to hire more than 2,000 employees in fiscal year 2027 to process a record number of benefits ...",
+      "excerpt": "Veterans Affairs employees said an automated tool designed to speed claims review makes mistakes that can cause errors, delay or deny benefits.",
       "domains": [
         "benefits"
       ]
@@ -116,39 +105,40 @@
       ]
     },
     {
-      "id": "0e802bf8ce8151bee598",
-      "title": "Pentagon Accused of 'Unacceptable' Treatment of Navy Families Evacuated from Middle East Base",
-      "source_host": "military.com",
-      "source_url": "https://military.com/pentagon-accused-of-unacceptable-treatment-of-navy-families-evacuated-from-middle-east-base",
-      "source_published_at": "2026-11-03",
+      "id": "b8f85ca93f520dfd881a",
+      "title": "October 2026 State of the Military Family® Video Newsletter",
+      "source_host": "www.militaryfamily.org",
+      "source_url": "https://www.militaryfamily.org/october-2026-state-of-the-military-family-video-newsletter",
+      "source_published_at": "2026-10-23",
       "content_label": "Recent source context",
-      "excerpt": "Thirty Democrats claims military families \"are continuing to face significant hardship\" because of the evacuation from Naval Support Activity Bahrain.",
+      "excerpt": "NMFA's October 2026 update covers MCON, military children's education, rising TRICARE Young Adult premiums, and advocacy for military families.",
       "domains": [
-        "military_family_readiness"
+        "military_family_readiness",
+        "healthcare_system"
       ]
     },
     {
-      "id": "3855a3ce5e911b062485",
-      "title": "HUD-VASH - VA Homeless Programs",
-      "source_host": "department.va.gov",
-      "source_url": "https://department.va.gov/homeless/hud-vash",
-      "source_published_at": "2026-04-02",
-      "content_label": "Background / reference",
-      "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
+      "id": "2ae99aa81fe440ac4784",
+      "title": "Fox, USVETS renew 'Make Camo Your Cause' campaign dedicated to ending veteran homelessness",
+      "source_host": "www.foxnews.com",
+      "source_url": "https://www.foxnews.com/media/fox-usvets-renew-make-camo-your-cause-campaign-dedicated-ending-veteran-homelessness",
+      "source_published_at": "2026-11-05",
+      "content_label": "Recent source context",
+      "excerpt": "FOX Corporation is partnering with U.S.VETS for the \"Make Camo Your Cause\" campaign for the sixth straight year to help end veteran homelessness.",
       "domains": [
         "housing_stability"
       ]
     },
     {
-      "id": "18b4234000ae418004f3",
-      "title": "Advance your dental career with VA",
-      "source_host": "news.va.gov",
-      "source_url": "https://news.va.gov/150714/advance-your-dental-career-with-va",
-      "source_published_at": "2026-11-03",
+      "id": "87bd0817478ec0b74b04",
+      "title": "Does Winnipeg need permanent, supportive housing for veterans experiencing homelessness?",
+      "source_host": "www.cbc.ca",
+      "source_url": "https://www.cbc.ca/news/canada/manitoba/winnnipeg-veteran-homelessness-9.7409564",
+      "source_published_at": "2026-11-05",
       "content_label": "Recent source context",
-      "excerpt": "Nearly half of all dentists in postgrad dental programs nationwide rotate through a VA facility, making VA one of the best places for training in ...",
+      "excerpt": "As a Canadian charity providing supportive, permanent housing to veterans experiencing homelessness prepares to open its second project in the country, some would like to ...",
       "domains": [
-        "employment"
+        "housing_stability"
       ]
     },
     {
@@ -157,7 +147,7 @@
       "source_host": "news.clearancejobs.com",
       "source_url": "https://news.clearancejobs.com/2026/11/05/your-clearance-can-get-you-hired-it-cant-tell-you-who-you-are",
       "source_published_at": "2026-11-05",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "Leaving the military? Army NCO Brian McGovern explains why cleared jobs can delay your identity shift, plus the money mistakes that put clearances at risk.",
       "domains": [
         "employment"
