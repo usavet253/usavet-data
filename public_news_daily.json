@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-06",
-  "generated_at": "2026-11-06T20:02:08.095153+00:00",
+  "as_of": "2026-11-07",
+  "generated_at": "2026-11-07T18:07:11.751283+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,7 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "ed2da9e629058f96bdab"
+        "5a55ab745314353ae9af"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -22,8 +22,8 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "987611c79c84fd9af9ef",
-        "b8f85ca93f520dfd881a"
+        "d598ea0b238d1cc43d6b",
+        "0cef131dbfb468046d46"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -34,12 +34,14 @@
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
-      "story_ids": [],
-      "coverage_status": "no_suitable_story",
+      "story_ids": [
+        "672c4d394ac0cb1f294d"
+      ],
+      "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
       "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
-      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "housing_stability",
@@ -58,7 +60,7 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "b8f85ca93f520dfd881a"
+        "672c4d394ac0cb1f294d"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -70,7 +72,8 @@
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "ccc67b4bfd1885e82ab6"
+        "78825cee083030f436b3",
+        "655b57cbd64b5de1ecab"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -81,10 +84,10 @@
   ],
   "stories": [
     {
-      "id": "ed2da9e629058f96bdab",
+      "id": "5a55ab745314353ae9af",
       "title": "As the VA leans on automation, errors in veterans’ claims soar",
-      "source_host": "www.armytimes.com",
-      "source_url": "https://www.armytimes.com/pentagon/2026/11/05/as-the-va-leans-on-automation-errors-in-veterans-claims-soar",
+      "source_host": "www.navytimes.com",
+      "source_url": "https://www.navytimes.com/pentagon/2026/11/05/as-the-va-leans-on-automation-errors-in-veterans-claims-soar",
       "source_published_at": "2026-11-05",
       "content_label": "Recent source context",
       "excerpt": "Veterans Affairs employees said an automated tool designed to speed claims review makes mistakes that can cause errors, delay or deny benefits.",
@@ -93,27 +96,39 @@
       ]
     },
     {
-      "id": "987611c79c84fd9af9ef",
-      "title": "Your next mission starts here: Free Salesforce training for Veterans and military spouses",
-      "source_host": "news.va.gov",
-      "source_url": "https://news.va.gov/150489/salesforce-training-veterans-military-spouses",
-      "source_published_at": "2026-11-04",
+      "id": "d598ea0b238d1cc43d6b",
+      "title": "Celebrating You: Military Family Appreciation Month 2026",
+      "source_host": "www.militaryfamily.org",
+      "source_url": "https://www.militaryfamily.org/celebrating-you-military-family-appreciation-month-2026",
+      "source_published_at": "2026-11-01",
       "content_label": "Recent source context",
-      "excerpt": "Discover free Salesforce training, certification opportunities and career resources for Veterans, service members and military spouses.",
+      "excerpt": "Celebrate Military Family Appreciation Month with NMFA as we honor the achievements and contributions of military families.",
       "domains": [
         "military_family_readiness"
       ]
     },
     {
-      "id": "b8f85ca93f520dfd881a",
-      "title": "October 2026 State of the Military Family® Video Newsletter",
-      "source_host": "www.militaryfamily.org",
-      "source_url": "https://www.militaryfamily.org/october-2026-state-of-the-military-family-video-newsletter",
-      "source_published_at": "2026-10-23",
-      "content_label": "Recent source context",
-      "excerpt": "NMFA's October 2026 update covers MCON, military children's education, rising TRICARE Young Adult premiums, and advocacy for military families.",
+      "id": "0cef131dbfb468046d46",
+      "title": "European troops set to train in Poland for postwar Ukraine deployment",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment",
+      "source_published_at": "2026-11-07",
+      "content_label": "Published on report date",
+      "excerpt": "Britain and France will lead 2,800 troops from 11 nations in a two-week exercise testing how to move, protect and supply a force to rebuild ...",
       "domains": [
-        "military_family_readiness",
+        "military_family_readiness"
+      ]
+    },
+    {
+      "id": "672c4d394ac0cb1f294d",
+      "title": "Tricare Prime Coverage Details: 2027 Enrollment Fees, Copays and Catastrophic Cap",
+      "source_host": "military.com",
+      "source_url": "https://military.com/benefits/tricare/prime/tricare-prime-coverage-details.html",
+      "source_published_at": "2026-11-05",
+      "content_label": "Recent source context",
+      "excerpt": "Learn the 2027 Tricare Prime plan costs for active-duty service members, retirees and their families.",
+      "domains": [
+        "cost_of_living",
         "healthcare_system"
       ]
     },
@@ -142,13 +157,25 @@
       ]
     },
     {
-      "id": "ccc67b4bfd1885e82ab6",
-      "title": "Your Clearance Can Get You Hired. It Can’t Tell You Who You Are.",
-      "source_host": "news.clearancejobs.com",
-      "source_url": "https://news.clearancejobs.com/2026/11/05/your-clearance-can-get-you-hired-it-cant-tell-you-who-you-are",
-      "source_published_at": "2026-11-05",
+      "id": "78825cee083030f436b3",
+      "title": "Veterans career fair will provide veterans with job opportunities",
+      "source_host": "www.newsminer.com",
+      "source_url": "https://www.newsminer.com/news/local_news/veterans-career-fair-will-provide-veterans-with-job-opportunities/article_efbd3183-57d2-42ee-991f-4ee30224c60f.html",
+      "source_published_at": "2026-11-06",
       "content_label": "Recent source context",
-      "excerpt": "Leaving the military? Army NCO Brian McGovern explains why cleared jobs can delay your identity shift, plus the money mistakes that put clearances at risk.",
+      "excerpt": "A Veterans Career Fair will be held on Nov. 10 from 1 to 4 p.m. at the Muldoon Family Center at 1251 Muldoon Road in ...",
+      "domains": [
+        "employment"
+      ]
+    },
+    {
+      "id": "655b57cbd64b5de1ecab",
+      "title": "October surge in hiring lowers veterans’ unemployment to 2.7%",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/2026/11/06/october-surge-in-hiring-lowers-veterans-unemployment-to-2-7",
+      "source_published_at": "2026-11-06",
+      "content_label": "Recent source context",
+      "excerpt": "The jobless rate for veterans fell to a stunning 2.7% in October as employers added 165,000 hires.",
       "domains": [
         "employment"
       ]
