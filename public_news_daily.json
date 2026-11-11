@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-10",
-  "generated_at": "2026-11-10T20:33:49.184038+00:00",
+  "as_of": "2026-11-11",
+  "generated_at": "2026-11-11T21:00:29.091684+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,7 +10,8 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "4ad21fb1350be6a47d3a"
+        "de9fee11f8ed99b8085c",
+        "9fbd90d0dcafbf8eb2f8"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -34,14 +35,12 @@
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
-      "story_ids": [
-        "a1288c54fc11953a9409"
-      ],
-      "coverage_status": "selected_context",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
       "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
     },
     {
       "key": "housing_stability",
@@ -71,7 +70,8 @@
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "dd59539d73a72b338aa0"
+        "dd59539d73a72b338aa0",
+        "d8bc2b58ab5e8d0356f1"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -82,13 +82,25 @@
   ],
   "stories": [
     {
-      "id": "4ad21fb1350be6a47d3a",
-      "title": "VA Worker Sues Trump Admin for $2.5M After Reporting Sex Assault",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/6ffebd11cd9fcdbd",
-      "source_published_at": "2026-11-09",
+      "id": "de9fee11f8ed99b8085c",
+      "title": "Sen. Duckworth wants VA to identify toxic threats before veterans get sick",
+      "source_host": "abcnews.com",
+      "source_url": "https://abcnews.com/Politics/sen-duckworth-va-identify-toxic-threats-veterans-sick/story?id=137920895",
+      "source_published_at": "2026-11-10",
       "content_label": "Recent source context",
-      "excerpt": "A former Veterans Affairs worker is suing the Trump administration for $2.5 million after claiming he was blacklisted from federal employment after reporting a sexual ...",
+      "excerpt": "Sen. Tammy Duckworth to introduce legislation that would require VA to more quickly assess toxic hazards, expanding access to health care and disability benefits.",
+      "domains": [
+        "benefits"
+      ]
+    },
+    {
+      "id": "9fbd90d0dcafbf8eb2f8",
+      "title": "WWII submarine vet ruled in landmark case that led to Agent Orange exposure settlement",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/2026/11/11/wwii-submarine-vet-ruled-in-landmark-case-that-led-to-agent-orange-exposure-settlement",
+      "source_published_at": "2026-11-11",
+      "content_label": "Published on report date",
+      "excerpt": "A submariner in WWII presided over the 1984 class action suit brought by Vietnam veterans seeking compensation from the defoliant Agent Orange.",
       "domains": [
         "benefits"
       ]
@@ -119,18 +131,6 @@
       ]
     },
     {
-      "id": "a1288c54fc11953a9409",
-      "title": "Check out new costs for military families as Tricare open season starts",
-      "source_host": "www.armytimes.com",
-      "source_url": "https://www.armytimes.com/pay-benefits/military-benefits/health-care-benefits/2026/11/09/check-out-new-costs-for-military-families-as-tricare-open-season-starts",
-      "source_published_at": "2026-11-09",
-      "content_label": "Recent source context",
-      "excerpt": "Generally, beneficiaries paying out-of-pocket for healthcare under Tricare in 2026 will pay extra in 2027, according to new fee schedules.",
-      "domains": [
-        "cost_of_living"
-      ]
-    },
-    {
       "id": "3855a3ce5e911b062485",
       "title": "HUD-VASH - VA Homeless Programs",
       "source_host": "department.va.gov",
@@ -148,8 +148,20 @@
       "source_host": "news.clearancejobs.com",
       "source_url": "https://news.clearancejobs.com/2026/11/10/your-next-mission-turning-military-service-into-an-aviation-maintenance-career",
       "source_published_at": "2026-11-10",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "Veterans can build on military experience with aviation training, civilian credentials, and a plan for their next mission.",
+      "domains": [
+        "employment"
+      ]
+    },
+    {
+      "id": "d8bc2b58ab5e8d0356f1",
+      "title": "What federal agencies stand to gain by hiring more veterans",
+      "source_host": "www.govexec.com",
+      "source_url": "https://www.govexec.com/defense/2026/11/what-federal-agencies-stand-gain-hiring-more-veterans/417102",
+      "source_published_at": "2026-11-11",
+      "content_label": "Published on report date",
+      "excerpt": "COMMENTARY| The IRS has made veteran recruitment a workforce priority. Its chief human capital officer explains why military experience can be an asset across government.",
       "domains": [
         "employment"
       ]
