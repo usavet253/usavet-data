@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-11",
-  "generated_at": "2026-11-11T21:00:29.091684+00:00",
+  "as_of": "2026-11-12",
+  "generated_at": "2026-11-12T20:55:45.179345+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,8 +10,8 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "de9fee11f8ed99b8085c",
-        "9fbd90d0dcafbf8eb2f8"
+        "60ae6414c951c8d9649e",
+        "c5614528e60f143358a2"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -23,14 +23,14 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "0e466432cc513663f8eb",
-        "9fff850f964461e97f63"
+        "677b86c47af297a96540",
+        "bcd47c364163fe5eb2d5"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
       "domain_context": "Family support and career continuity can be addressed together rather than through separate referrals.",
-      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "Family access: Look for household eligibility, participating locations and enrollment instructions for the support described. The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "Check whether relocation, caregiving and career support referrals can be coordinated across partner organizations.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "cost_of_living",
@@ -58,20 +58,20 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "0e466432cc513663f8eb"
+        "3bf113dfeb7d02e41fb2"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
-      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "Care delivery: Look for participating providers, insurance coverage, referral procedures and local appointment availability."
+      "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "employment",
       "name": "Employment",
       "story_ids": [
         "dd59539d73a72b338aa0",
-        "d8bc2b58ab5e8d0356f1"
+        "5228a21c43d1ce66c33d"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -82,50 +82,49 @@
   ],
   "stories": [
     {
-      "id": "de9fee11f8ed99b8085c",
-      "title": "Sen. Duckworth wants VA to identify toxic threats before veterans get sick",
-      "source_host": "abcnews.com",
-      "source_url": "https://abcnews.com/Politics/sen-duckworth-va-identify-toxic-threats-veterans-sick/story?id=137920895",
-      "source_published_at": "2026-11-10",
-      "content_label": "Recent source context",
-      "excerpt": "Sen. Tammy Duckworth to introduce legislation that would require VA to more quickly assess toxic hazards, expanding access to health care and disability benefits.",
-      "domains": [
-        "benefits"
-      ]
-    },
-    {
-      "id": "9fbd90d0dcafbf8eb2f8",
-      "title": "WWII submarine vet ruled in landmark case that led to Agent Orange exposure settlement",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/2026/11/11/wwii-submarine-vet-ruled-in-landmark-case-that-led-to-agent-orange-exposure-settlement",
-      "source_published_at": "2026-11-11",
+      "id": "60ae6414c951c8d9649e",
+      "title": "House approves bill to boost compensation for many veterans, with some floor drama",
+      "source_host": "federalnewsnetwork.com",
+      "source_url": "https://federalnewsnetwork.com/veterans-affairs/2026/11/house-approves-bill-to-boost-compensation-for-many-veterans-with-some-floor-drama",
+      "source_published_at": "2026-11-12",
       "content_label": "Published on report date",
-      "excerpt": "A submariner in WWII presided over the 1984 class action suit brought by Vietnam veterans seeking compensation from the defoliant Agent Orange.",
+      "excerpt": "The centerpiece of the package is an effort to boost compensation for an estimated 58,000 veterans who are medically retired because of combat-related injuries.",
       "domains": [
         "benefits"
       ]
     },
     {
-      "id": "0e466432cc513663f8eb",
-      "title": "Nonprofits Launch Mental Health Partnership To Support Hundreds of New Jersey Veterans",
-      "source_host": "military.com",
-      "source_url": "https://military.com/veteran-nonprofits-launch-mental-health-partnership-new-jersey-veterans-day",
-      "source_published_at": "2026-11-09",
+      "id": "c5614528e60f143358a2",
+      "title": "“We Have No One”: How Trump’s Dismantling of the VA Left a Veterans Hospital in Crisis",
+      "source_host": "www.propublica.org",
+      "source_url": "https://www.propublica.org/article/east-orange-va-hospital-veterans-decline-new-jersey",
+      "source_published_at": "2026-11-11",
       "content_label": "Recent source context",
-      "excerpt": "A former governor's reentry nonprofit and a military family clinic are teaming up. Here's who qualifies and what else the program covers.",
+      "excerpt": "A vet who couldn’t get cancer treatment. Another unable to get surgery for a burst appendix. Trump officials claim their VA overhaul hasn’t harmed veterans, ...",
       "domains": [
-        "military_family_readiness",
-        "healthcare_system"
+        "benefits"
       ]
     },
     {
-      "id": "9fff850f964461e97f63",
-      "title": "Military Scams: 5 Frauds Targeting Veterans and Families",
-      "source_host": "military.com",
-      "source_url": "https://military.com/military-families-and-veterans-lost-584-million-to-fraud-here-are-5-scams-to-watch-for",
-      "source_published_at": "2026-11-09",
+      "id": "677b86c47af297a96540",
+      "title": "How to Adopt-A-Family For The Holidays",
+      "source_host": "soldiersangels.org",
+      "source_url": "https://soldiersangels.org/how-to-adopt-a-family-for-the-holidays",
+      "source_published_at": "2026-11-12",
+      "content_label": "Published on report date",
+      "excerpt": "Spread holiday cheer with our Adopt-A-Family step-by-step guide to supporting Service Members and Veteran families this season.",
+      "domains": [
+        "military_family_readiness"
+      ]
+    },
+    {
+      "id": "bcd47c364163fe5eb2d5",
+      "title": "This veteran thinks his brain cancer is linked to his deployment. He pushed for special benefits — and won",
+      "source_host": "www.cbc.ca",
+      "source_url": "https://www.cbc.ca/news/canada/southwest-asia-deployment-link-cancer-veteran-fight-for-benefits-9.7412811",
+      "source_published_at": "2026-11-11",
       "content_label": "Recent source context",
-      "excerpt": "Military scams cost service members, veterans and families $584 million in 2024. Learn to spot VA benefits, PCS, AI voice and job scams.",
+      "excerpt": "It took three attempts for a retired military officer diagnosed with a rare brain cancer to receive special benefits from Veterans Affairs Canada. Bruce Mayo ...",
       "domains": [
         "military_family_readiness"
       ]
@@ -143,6 +142,18 @@
       ]
     },
     {
+      "id": "3bf113dfeb7d02e41fb2",
+      "title": "VA staffing losses are disrupting critical services at multiple hospitals",
+      "source_host": "www.govexec.com",
+      "source_url": "https://www.govexec.com/management/2026/11/va-staffing-losses-disrupting-critical-services-multiple-hospitals/417177?oref=ge-featured-river-secondary",
+      "source_published_at": "",
+      "content_label": "Background / reference",
+      "excerpt": "At one New Jersey facility, departures left gaps in surgery, wound care and other services. ProPublica found similar disruptions at VA hospitals in three other ...",
+      "domains": [
+        "healthcare_system"
+      ]
+    },
+    {
       "id": "dd59539d73a72b338aa0",
       "title": "Your Next Mission: Turning Military Service Into an Aviation Maintenance Career",
       "source_host": "news.clearancejobs.com",
@@ -155,13 +166,13 @@
       ]
     },
     {
-      "id": "d8bc2b58ab5e8d0356f1",
+      "id": "5228a21c43d1ce66c33d",
       "title": "What federal agencies stand to gain by hiring more veterans",
       "source_host": "www.govexec.com",
-      "source_url": "https://www.govexec.com/defense/2026/11/what-federal-agencies-stand-gain-hiring-more-veterans/417102",
+      "source_url": "https://www.govexec.com/defense/2026/11/what-federal-agencies-stand-gain-hiring-more-veterans/417102?oref=ge-featured-river-secondary",
       "source_published_at": "2026-11-11",
-      "content_label": "Published on report date",
-      "excerpt": "COMMENTARY| The IRS has made veteran recruitment a workforce priority. Its chief human capital officer explains why military experience can be an asset across government.",
+      "content_label": "Recent source context",
+      "excerpt": "COMMENTARY| The IRS has made veteran recruitment a workforce priority. Its chief human capital officer explains why military experience can be an asset across government. ...",
       "domains": [
         "employment"
       ]
