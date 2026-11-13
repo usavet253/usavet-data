@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-12",
-  "generated_at": "2026-11-12T20:55:45.179345+00:00",
+  "as_of": "2026-11-13",
+  "generated_at": "2026-11-13T20:35:23.869560+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,8 +10,8 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "60ae6414c951c8d9649e",
-        "c5614528e60f143358a2"
+        "b511cf629ada4758cbb2",
+        "56f57e2802429540d9f5"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -23,8 +23,8 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "677b86c47af297a96540",
-        "bcd47c364163fe5eb2d5"
+        "c5f476db533f8829b89e",
+        "677b86c47af297a96540"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -58,7 +58,8 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "3bf113dfeb7d02e41fb2"
+        "527595b081cb6b0d4859",
+        "e88e88c7f6b3044ac420"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
@@ -71,7 +72,7 @@
       "name": "Employment",
       "story_ids": [
         "dd59539d73a72b338aa0",
-        "5228a21c43d1ce66c33d"
+        "bc76faff283d1374a8b6"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -82,27 +83,39 @@
   ],
   "stories": [
     {
-      "id": "60ae6414c951c8d9649e",
-      "title": "House approves bill to boost compensation for many veterans, with some floor drama",
-      "source_host": "federalnewsnetwork.com",
-      "source_url": "https://federalnewsnetwork.com/veterans-affairs/2026/11/house-approves-bill-to-boost-compensation-for-many-veterans-with-some-floor-drama",
+      "id": "b511cf629ada4758cbb2",
+      "title": "Veterans groups slam House for quietly passing divisive benefits bill on Veterans Day",
+      "source_host": "freerepublic.com",
+      "source_url": "https://freerepublic.com/focus/f-chat/4402823/posts",
       "source_published_at": "2026-11-12",
-      "content_label": "Published on report date",
-      "excerpt": "The centerpiece of the package is an effort to boost compensation for an estimated 58,000 veterans who are medically retired because of combat-related injuries.",
+      "content_label": "Recent source context",
+      "excerpt": "A divisive bill that cuts disability benefits for veterans with sleep apnea and tinnitus while simultaneously granting compensation for combat veterans was passed by the ...",
       "domains": [
         "benefits"
       ]
     },
     {
-      "id": "c5614528e60f143358a2",
-      "title": "“We Have No One”: How Trump’s Dismantling of the VA Left a Veterans Hospital in Crisis",
-      "source_host": "www.propublica.org",
-      "source_url": "https://www.propublica.org/article/east-orange-va-hospital-veterans-decline-new-jersey",
-      "source_published_at": "2026-11-11",
+      "id": "56f57e2802429540d9f5",
+      "title": "Veterans Bill Could Reduce Disability Benefits For Some Conditions",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/1dc1975cd0177ee4",
+      "source_published_at": "2026-11-12",
       "content_label": "Recent source context",
-      "excerpt": "A vet who couldn’t get cancer treatment. Another unable to get surgery for a burst appendix. Trump officials claim their VA overhaul hasn’t harmed veterans, ...",
+      "excerpt": "Some veterans who file future disability claims for sleep apnea or tinnitus could receive lower compensation under new legislation passed by the House on Veterans ...",
       "domains": [
         "benefits"
+      ]
+    },
+    {
+      "id": "c5f476db533f8829b89e",
+      "title": "Congress has access to IVF. Military families like mine do not.",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/opinion/2026/11/13/congress-has-access-to-ivf-military-families-like-mine-do-not",
+      "source_published_at": "2026-11-13",
+      "content_label": "Published on report date",
+      "excerpt": "The U.S. government asks military families to accept a lot. It should not deny us the medical care we need to have children, this active-duty ...",
+      "domains": [
+        "military_family_readiness"
       ]
     },
     {
@@ -111,20 +124,8 @@
       "source_host": "soldiersangels.org",
       "source_url": "https://soldiersangels.org/how-to-adopt-a-family-for-the-holidays",
       "source_published_at": "2026-11-12",
-      "content_label": "Published on report date",
-      "excerpt": "Spread holiday cheer with our Adopt-A-Family step-by-step guide to supporting Service Members and Veteran families this season.",
-      "domains": [
-        "military_family_readiness"
-      ]
-    },
-    {
-      "id": "bcd47c364163fe5eb2d5",
-      "title": "This veteran thinks his brain cancer is linked to his deployment. He pushed for special benefits — and won",
-      "source_host": "www.cbc.ca",
-      "source_url": "https://www.cbc.ca/news/canada/southwest-asia-deployment-link-cancer-veteran-fight-for-benefits-9.7412811",
-      "source_published_at": "2026-11-11",
       "content_label": "Recent source context",
-      "excerpt": "It took three attempts for a retired military officer diagnosed with a rare brain cancer to receive special benefits from Veterans Affairs Canada. Bruce Mayo ...",
+      "excerpt": "Spread holiday cheer with our Adopt-A-Family step-by-step guide to supporting Service Members and Veteran families this season.",
       "domains": [
         "military_family_readiness"
       ]
@@ -142,13 +143,25 @@
       ]
     },
     {
-      "id": "3bf113dfeb7d02e41fb2",
+      "id": "527595b081cb6b0d4859",
       "title": "VA staffing losses are disrupting critical services at multiple hospitals",
       "source_host": "www.govexec.com",
-      "source_url": "https://www.govexec.com/management/2026/11/va-staffing-losses-disrupting-critical-services-multiple-hospitals/417177?oref=ge-featured-river-secondary",
-      "source_published_at": "",
-      "content_label": "Background / reference",
+      "source_url": "https://www.govexec.com/management/2026/11/va-staffing-losses-disrupting-critical-services-multiple-hospitals/417177?oref=ge-homepage-river",
+      "source_published_at": "2026-11-12",
+      "content_label": "Recent source context",
       "excerpt": "At one New Jersey facility, departures left gaps in surgery, wound care and other services. ProPublica found similar disruptions at VA hospitals in three other ...",
+      "domains": [
+        "healthcare_system"
+      ]
+    },
+    {
+      "id": "e88e88c7f6b3044ac420",
+      "title": "'We Have No One': How Trump’s Dismantling of the VA Left a Veterans Hospital in Crisis",
+      "source_host": "www.huffpost.com",
+      "source_url": "https://www.huffpost.com/entry/propublica-veterans-affairs-hospital_n_6af54994e4b0914f133cbdfa",
+      "source_published_at": "2026-11-12",
+      "content_label": "Recent source context",
+      "excerpt": "Starting in July, ProPublica repeatedly asked the VA about evidence we’d found that short-staffing is hurting veterans‘ care.",
       "domains": [
         "healthcare_system"
       ]
@@ -166,10 +179,10 @@
       ]
     },
     {
-      "id": "5228a21c43d1ce66c33d",
+      "id": "bc76faff283d1374a8b6",
       "title": "What federal agencies stand to gain by hiring more veterans",
       "source_host": "www.govexec.com",
-      "source_url": "https://www.govexec.com/defense/2026/11/what-federal-agencies-stand-gain-hiring-more-veterans/417102?oref=ge-featured-river-secondary",
+      "source_url": "https://www.govexec.com/defense/2026/11/what-federal-agencies-stand-gain-hiring-more-veterans/417102?oref=ge-homepage-river",
       "source_published_at": "2026-11-11",
       "content_label": "Recent source context",
       "excerpt": "COMMENTARY| The IRS has made veteran recruitment a workforce priority. Its chief human capital officer explains why military experience can be an asset across government. ...",
