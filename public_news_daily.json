@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-13",
-  "generated_at": "2026-11-13T20:35:23.869560+00:00",
+  "as_of": "2026-11-14",
+  "generated_at": "2026-11-14T18:49:01.653585+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,8 +10,8 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "b511cf629ada4758cbb2",
-        "56f57e2802429540d9f5"
+        "19e3d21d6f0488f86282",
+        "4c6bfd0ca5e29d357c55"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -46,19 +46,19 @@
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "3855a3ce5e911b062485"
+        "baa27c99adda05492e16"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
       "domain_context": "Housing support can connect rental assistance with care and case management.",
       "planning_option": "Confirm local housing referral routes, eligibility and available capacity with the responsible provider.",
-      "watch_next": "Housing access: Look for current eligibility, referral contacts, capacity and application instructions in the linked program information."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "527595b081cb6b0d4859",
+        "20b8cea804b82539d4b9",
         "e88e88c7f6b3044ac420"
       ],
       "coverage_status": "selected_context",
@@ -72,7 +72,7 @@
       "name": "Employment",
       "story_ids": [
         "dd59539d73a72b338aa0",
-        "bc76faff283d1374a8b6"
+        "d8bc2b58ab5e8d0356f1"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -83,25 +83,25 @@
   ],
   "stories": [
     {
-      "id": "b511cf629ada4758cbb2",
-      "title": "Veterans groups slam House for quietly passing divisive benefits bill on Veterans Day",
-      "source_host": "freerepublic.com",
-      "source_url": "https://freerepublic.com/focus/f-chat/4402823/posts",
+      "id": "19e3d21d6f0488f86282",
+      "title": "House pushes competing veterans’ benefits bills through in unusual votes",
+      "source_host": "www.govexec.com",
+      "source_url": "https://www.govexec.com/pay-benefits/2026/11/house-pushes-competing-veterans-benefits-bills-unusual-votes/417198",
       "source_published_at": "2026-11-12",
       "content_label": "Recent source context",
-      "excerpt": "A divisive bill that cuts disability benefits for veterans with sleep apnea and tinnitus while simultaneously granting compensation for combat veterans was passed by the ...",
+      "excerpt": "Lawmakers passed a bill ending a provision preventing some combat-wounded veterans from collecting both military retirement pay and veterans’ disability compensation as well as a ...",
       "domains": [
         "benefits"
       ]
     },
     {
-      "id": "56f57e2802429540d9f5",
-      "title": "Veterans Bill Could Reduce Disability Benefits For Some Conditions",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/1dc1975cd0177ee4",
+      "id": "4c6bfd0ca5e29d357c55",
+      "title": "House passes bill to expand benefits for combat-injured veterans",
+      "source_host": "www.defensenews.com",
+      "source_url": "https://www.defensenews.com/news/2026/11/12/house-passes-bill-to-expand-benefits-for-combat-injured-veterans",
       "source_published_at": "2026-11-12",
       "content_label": "Recent source context",
-      "excerpt": "Some veterans who file future disability claims for sleep apnea or tinnitus could receive lower compensation under new legislation passed by the House on Veterans ...",
+      "excerpt": "The House approved legislation Thursday that would allow combat-injured military retirees with less than 20 years of service to collect their full military retirement pay ...",
       "domains": [
         "benefits"
       ]
@@ -112,7 +112,7 @@
       "source_host": "www.militarytimes.com",
       "source_url": "https://www.militarytimes.com/opinion/2026/11/13/congress-has-access-to-ivf-military-families-like-mine-do-not",
       "source_published_at": "2026-11-13",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "The U.S. government asks military families to accept a lot. It should not deny us the medical care we need to have children, this active-duty ...",
       "domains": [
         "military_family_readiness"
@@ -131,22 +131,22 @@
       ]
     },
     {
-      "id": "3855a3ce5e911b062485",
-      "title": "HUD-VASH - VA Homeless Programs",
-      "source_host": "department.va.gov",
-      "source_url": "https://department.va.gov/homeless/hud-vash",
-      "source_published_at": "2026-04-02",
-      "content_label": "Background / reference",
-      "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
+      "id": "baa27c99adda05492e16",
+      "title": "VA Housed Nearly 49,000 Homeless Veterans in 2026",
+      "source_host": "military.com",
+      "source_url": "https://military.com/va-housed-nearly-49000-homeless-veterans-in-2026",
+      "source_published_at": "2026-11-13",
+      "content_label": "Recent source context",
+      "excerpt": "VA reports its fiscal 2026 count of homeless veterans permanently housed, plus the grants and projects aimed at cutting veteran homelessness.",
       "domains": [
         "housing_stability"
       ]
     },
     {
-      "id": "527595b081cb6b0d4859",
+      "id": "20b8cea804b82539d4b9",
       "title": "VA staffing losses are disrupting critical services at multiple hospitals",
       "source_host": "www.govexec.com",
-      "source_url": "https://www.govexec.com/management/2026/11/va-staffing-losses-disrupting-critical-services-multiple-hospitals/417177?oref=ge-homepage-river",
+      "source_url": "https://www.govexec.com/management/2026/11/va-staffing-losses-disrupting-critical-services-multiple-hospitals/417177",
       "source_published_at": "2026-11-12",
       "content_label": "Recent source context",
       "excerpt": "At one New Jersey facility, departures left gaps in surgery, wound care and other services. ProPublica found similar disruptions at VA hospitals in three other ...",
@@ -179,13 +179,13 @@
       ]
     },
     {
-      "id": "bc76faff283d1374a8b6",
+      "id": "d8bc2b58ab5e8d0356f1",
       "title": "What federal agencies stand to gain by hiring more veterans",
       "source_host": "www.govexec.com",
-      "source_url": "https://www.govexec.com/defense/2026/11/what-federal-agencies-stand-gain-hiring-more-veterans/417102?oref=ge-homepage-river",
+      "source_url": "https://www.govexec.com/defense/2026/11/what-federal-agencies-stand-gain-hiring-more-veterans/417102",
       "source_published_at": "2026-11-11",
       "content_label": "Recent source context",
-      "excerpt": "COMMENTARY| The IRS has made veteran recruitment a workforce priority. Its chief human capital officer explains why military experience can be an asset across government. ...",
+      "excerpt": "COMMENTARY| The IRS has made veteran recruitment a workforce priority. Its chief human capital officer explains why military experience can be an asset across government.",
       "domains": [
         "employment"
       ]
