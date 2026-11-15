@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-14",
-  "generated_at": "2026-11-14T18:49:01.653585+00:00",
+  "as_of": "2026-11-15",
+  "generated_at": "2026-11-15T19:27:16.484277+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -23,8 +23,8 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "c5f476db533f8829b89e",
-        "677b86c47af297a96540"
+        "8d80f1cf8c74ed2d44e1",
+        "c5f476db533f8829b89e"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -70,15 +70,12 @@
     {
       "key": "employment",
       "name": "Employment",
-      "story_ids": [
-        "dd59539d73a72b338aa0",
-        "d8bc2b58ab5e8d0356f1"
-      ],
-      "coverage_status": "selected_context",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
       "audience": "Veterans, military spouses, employers and workforce partners",
       "domain_context": "Career mobility can connect workforce policy, employers and military-family support.",
       "planning_option": "Check licensing and credential-transfer requirements in the relevant state before advising a career move.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
     }
   ],
   "stories": [
@@ -107,6 +104,18 @@
       ]
     },
     {
+      "id": "8d80f1cf8c74ed2d44e1",
+      "title": "CM Yogi Adityanath doubles gallantry award amount, raises stamp duty exemption for UP veterans and fallen soldiers' families",
+      "source_host": "timesofindia.indiatimes.com",
+      "source_url": "https://timesofindia.indiatimes.com/city/lucknow/cm-yogi-adityanath-doubles-gallantry-award-amount-raises-stamp-duty-exemption-for-up-veterans-and-fallen-soldiers-families/articleshow/135832093.cms",
+      "source_published_at": "2026-11-14",
+      "content_label": "Recent source context",
+      "excerpt": "UP Chief Minister Yogi Adityanath announced welfare measures for ex-servicemen during a rally in Meerut on Saturday. The measures include doubling the Veerta Puraskar amount ...",
+      "domains": [
+        "military_family_readiness"
+      ]
+    },
+    {
       "id": "c5f476db533f8829b89e",
       "title": "Congress has access to IVF. Military families like mine do not.",
       "source_host": "www.militarytimes.com",
@@ -114,18 +123,6 @@
       "source_published_at": "2026-11-13",
       "content_label": "Recent source context",
       "excerpt": "The U.S. government asks military families to accept a lot. It should not deny us the medical care we need to have children, this active-duty ...",
-      "domains": [
-        "military_family_readiness"
-      ]
-    },
-    {
-      "id": "677b86c47af297a96540",
-      "title": "How to Adopt-A-Family For The Holidays",
-      "source_host": "soldiersangels.org",
-      "source_url": "https://soldiersangels.org/how-to-adopt-a-family-for-the-holidays",
-      "source_published_at": "2026-11-12",
-      "content_label": "Recent source context",
-      "excerpt": "Spread holiday cheer with our Adopt-A-Family step-by-step guide to supporting Service Members and Veteran families this season.",
       "domains": [
         "military_family_readiness"
       ]
@@ -164,30 +161,6 @@
       "excerpt": "Starting in July, ProPublica repeatedly asked the VA about evidence we’d found that short-staffing is hurting veterans‘ care.",
       "domains": [
         "healthcare_system"
-      ]
-    },
-    {
-      "id": "dd59539d73a72b338aa0",
-      "title": "Your Next Mission: Turning Military Service Into an Aviation Maintenance Career",
-      "source_host": "news.clearancejobs.com",
-      "source_url": "https://news.clearancejobs.com/2026/11/10/your-next-mission-turning-military-service-into-an-aviation-maintenance-career",
-      "source_published_at": "2026-11-10",
-      "content_label": "Recent source context",
-      "excerpt": "Veterans can build on military experience with aviation training, civilian credentials, and a plan for their next mission.",
-      "domains": [
-        "employment"
-      ]
-    },
-    {
-      "id": "d8bc2b58ab5e8d0356f1",
-      "title": "What federal agencies stand to gain by hiring more veterans",
-      "source_host": "www.govexec.com",
-      "source_url": "https://www.govexec.com/defense/2026/11/what-federal-agencies-stand-gain-hiring-more-veterans/417102",
-      "source_published_at": "2026-11-11",
-      "content_label": "Recent source context",
-      "excerpt": "COMMENTARY| The IRS has made veteran recruitment a workforce priority. Its chief human capital officer explains why military experience can be an asset across government.",
-      "domains": [
-        "employment"
       ]
     }
   ]
