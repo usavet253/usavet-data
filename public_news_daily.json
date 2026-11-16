@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-15",
-  "generated_at": "2026-11-15T19:27:16.484277+00:00",
+  "as_of": "2026-11-16",
+  "generated_at": "2026-11-16T22:58:35.640770+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,21 +10,20 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "19e3d21d6f0488f86282",
-        "4c6bfd0ca5e29d357c55"
+        "215a57b87f7b779fcbd8"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
       "domain_context": "Benefits navigation can connect eligible households with support across several services.",
       "planning_option": "Review unresolved applications and referral handoffs before promising payment or eligibility.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "watch_next": "Benefits updates: Look for official VA rate-table revisions, effective dates and affected payment categories; a reference page alone does not announce a change."
     },
     {
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "8d80f1cf8c74ed2d44e1",
-        "c5f476db533f8829b89e"
+        "15b8f15e93454bbfee91",
+        "8d80f1cf8c74ed2d44e1"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -58,49 +57,50 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "20b8cea804b82539d4b9",
-        "e88e88c7f6b3044ac420"
+        "7d2ed4b440a3bc6ac862"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
-      "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
+      "watch_next": "Care delivery: Look for participating providers, insurance coverage, referral procedures and local appointment availability."
     },
     {
       "key": "employment",
       "name": "Employment",
-      "story_ids": [],
-      "coverage_status": "no_suitable_story",
+      "story_ids": [
+        "5ae887cd9cbf9e5a1db6"
+      ],
+      "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
       "domain_context": "Career mobility can connect workforce policy, employers and military-family support.",
       "planning_option": "Check licensing and credential-transfer requirements in the relevant state before advising a career move.",
-      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     }
   ],
   "stories": [
     {
-      "id": "19e3d21d6f0488f86282",
-      "title": "House pushes competing veterans’ benefits bills through in unusual votes",
-      "source_host": "www.govexec.com",
-      "source_url": "https://www.govexec.com/pay-benefits/2026/11/house-pushes-competing-veterans-benefits-bills-unusual-votes/417198",
-      "source_published_at": "2026-11-12",
-      "content_label": "Recent source context",
-      "excerpt": "Lawmakers passed a bill ending a provision preventing some combat-wounded veterans from collecting both military retirement pay and veterans’ disability compensation as well as a ...",
+      "id": "215a57b87f7b779fcbd8",
+      "title": "Current Veterans disability compensation rates",
+      "source_host": "www.va.gov",
+      "source_url": "https://www.va.gov/disability/compensation-rates/veteran-rates",
+      "source_published_at": "",
+      "content_label": "Background / reference",
+      "excerpt": "Review 2026 Veterans disability compensation rates. Use our compensation benefits rate tables to find your monthly payment amount.",
       "domains": [
         "benefits"
       ]
     },
     {
-      "id": "4c6bfd0ca5e29d357c55",
-      "title": "House passes bill to expand benefits for combat-injured veterans",
-      "source_host": "www.defensenews.com",
-      "source_url": "https://www.defensenews.com/news/2026/11/12/house-passes-bill-to-expand-benefits-for-combat-injured-veterans",
-      "source_published_at": "2026-11-12",
-      "content_label": "Recent source context",
-      "excerpt": "The House approved legislation Thursday that would allow combat-injured military retirees with less than 20 years of service to collect their full military retirement pay ...",
+      "id": "15b8f15e93454bbfee91",
+      "title": "From VA benefits to belonging: how the VFW helps military families after service",
+      "source_host": "militaryfamilies.com",
+      "source_url": "https://militaryfamilies.com/military-benefits/from-va-benefits-to-belonging-how-the-vfw-helps-military-families-after-service",
+      "source_published_at": "2026-11-16",
+      "content_label": "Published on report date",
+      "excerpt": "Leaving the military may mark the end of one mission, but it also begins another — building a fulfilling life after service. Whether separation is ...",
       "domains": [
-        "benefits"
+        "military_family_readiness"
       ]
     },
     {
@@ -111,18 +111,6 @@
       "source_published_at": "2026-11-14",
       "content_label": "Recent source context",
       "excerpt": "UP Chief Minister Yogi Adityanath announced welfare measures for ex-servicemen during a rally in Meerut on Saturday. The measures include doubling the Veerta Puraskar amount ...",
-      "domains": [
-        "military_family_readiness"
-      ]
-    },
-    {
-      "id": "c5f476db533f8829b89e",
-      "title": "Congress has access to IVF. Military families like mine do not.",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/opinion/2026/11/13/congress-has-access-to-ivf-military-families-like-mine-do-not",
-      "source_published_at": "2026-11-13",
-      "content_label": "Recent source context",
-      "excerpt": "The U.S. government asks military families to accept a lot. It should not deny us the medical care we need to have children, this active-duty ...",
       "domains": [
         "military_family_readiness"
       ]
@@ -140,27 +128,27 @@
       ]
     },
     {
-      "id": "20b8cea804b82539d4b9",
-      "title": "VA staffing losses are disrupting critical services at multiple hospitals",
-      "source_host": "www.govexec.com",
-      "source_url": "https://www.govexec.com/management/2026/11/va-staffing-losses-disrupting-critical-services-multiple-hospitals/417177",
-      "source_published_at": "2026-11-12",
+      "id": "7d2ed4b440a3bc6ac862",
+      "title": "VA Research on Veterans' Health Led by UCLA Fielding Alums",
+      "source_host": "military.com",
+      "source_url": "https://military.com/how-a-pipleline-of-ucla-alums-is-shaping-va-research-on-veterans-health",
+      "source_published_at": "2026-11-15",
       "content_label": "Recent source context",
-      "excerpt": "At one New Jersey facility, departures left gaps in surgery, wound care and other services. ProPublica found similar disruptions at VA hospitals in three other ...",
+      "excerpt": "VA research on veterans' health is a priority for UCLA Fielding graduates studying COPD, cancer, mental health and chronic pain at VA Greater LA.",
       "domains": [
         "healthcare_system"
       ]
     },
     {
-      "id": "e88e88c7f6b3044ac420",
-      "title": "'We Have No One': How Trump’s Dismantling of the VA Left a Veterans Hospital in Crisis",
-      "source_host": "www.huffpost.com",
-      "source_url": "https://www.huffpost.com/entry/propublica-veterans-affairs-hospital_n_6af54994e4b0914f133cbdfa",
-      "source_published_at": "2026-11-12",
-      "content_label": "Recent source context",
-      "excerpt": "Starting in July, ProPublica repeatedly asked the VA about evidence we’d found that short-staffing is hurting veterans‘ care.",
+      "id": "5ae887cd9cbf9e5a1db6",
+      "title": "DoD and HHS expand career path programs for veterans",
+      "source_host": "federalnewsnetwork.com",
+      "source_url": "https://federalnewsnetwork.com/federal-newscast/2026/11/dod-and-hhs-expand-career-path-programs-for-veterans",
+      "source_published_at": "2026-11-16",
+      "content_label": "Published on report date",
+      "excerpt": "The efforts build on the Trump administration's goal of increasing veteran employment rates and advancing merit-based hiring.",
       "domains": [
-        "healthcare_system"
+        "employment"
       ]
     }
   ]
