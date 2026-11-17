@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-16",
-  "generated_at": "2026-11-16T22:58:35.640770+00:00",
+  "as_of": "2026-11-17",
+  "generated_at": "2026-11-17T21:53:19.537318+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,26 +10,27 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "215a57b87f7b779fcbd8"
+        "34aea34de98acbfafea9",
+        "89752723d89cc72e5a7c"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
       "domain_context": "Benefits navigation can connect eligible households with support across several services.",
       "planning_option": "Review unresolved applications and referral handoffs before promising payment or eligibility.",
-      "watch_next": "Benefits updates: Look for official VA rate-table revisions, effective dates and affected payment categories; a reference page alone does not announce a change."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
         "15b8f15e93454bbfee91",
-        "8d80f1cf8c74ed2d44e1"
+        "53a96140996e38b13275"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
       "domain_context": "Family support and career continuity can be addressed together rather than through separate referrals.",
-      "planning_option": "Check whether relocation, caregiving and career support referrals can be coordinated across partner organizations.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions. Family access: Look for household eligibility, participating locations and enrollment instructions for the support described."
     },
     {
       "key": "cost_of_living",
@@ -45,7 +46,7 @@
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "baa27c99adda05492e16"
+        "f9402bc70097efcd3e7c"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
@@ -69,7 +70,8 @@
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "5ae887cd9cbf9e5a1db6"
+        "5ae887cd9cbf9e5a1db6",
+        "a7953954110d960b0e4f"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -80,13 +82,25 @@
   ],
   "stories": [
     {
-      "id": "215a57b87f7b779fcbd8",
-      "title": "Current Veterans disability compensation rates",
-      "source_host": "www.va.gov",
-      "source_url": "https://www.va.gov/disability/compensation-rates/veteran-rates",
-      "source_published_at": "",
-      "content_label": "Background / reference",
-      "excerpt": "Review 2026 Veterans disability compensation rates. Use our compensation benefits rate tables to find your monthly payment amount.",
+      "id": "34aea34de98acbfafea9",
+      "title": "At 67 With $800,000, He’ll Finally Win His VA Disability Claim and Get a Lump-Sum Back Payment. Here’s How It Affects His Taxes and Other Benefits",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/6939e81fafd263ed",
+      "source_published_at": "2026-11-16",
+      "content_label": "Recent source context",
+      "excerpt": "appeared first on 24/7 Wall St.. He’s 67 and sitting at the kitchen table with the VA envelope he’s wai…",
+      "domains": [
+        "benefits"
+      ]
+    },
+    {
+      "id": "89752723d89cc72e5a7c",
+      "title": "Can Green Card Holders Join the Military? 2026 Rules",
+      "source_host": "military.com",
+      "source_url": "https://military.com/join-the-military/can-green-card-holders-join-the-us-military",
+      "source_published_at": "2026-11-16",
+      "content_label": "Recent source context",
+      "excerpt": "Green Card holders can join the U.S. military in 2026. See eligibility rules, documents, restricted jobs and expedited naturalization steps.",
       "domains": [
         "benefits"
       ]
@@ -97,32 +111,32 @@
       "source_host": "militaryfamilies.com",
       "source_url": "https://militaryfamilies.com/military-benefits/from-va-benefits-to-belonging-how-the-vfw-helps-military-families-after-service",
       "source_published_at": "2026-11-16",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "Leaving the military may mark the end of one mission, but it also begins another — building a fulfilling life after service. Whether separation is ...",
       "domains": [
         "military_family_readiness"
       ]
     },
     {
-      "id": "8d80f1cf8c74ed2d44e1",
-      "title": "CM Yogi Adityanath doubles gallantry award amount, raises stamp duty exemption for UP veterans and fallen soldiers' families",
-      "source_host": "timesofindia.indiatimes.com",
-      "source_url": "https://timesofindia.indiatimes.com/city/lucknow/cm-yogi-adityanath-doubles-gallantry-award-amount-raises-stamp-duty-exemption-for-up-veterans-and-fallen-soldiers-families/articleshow/135832093.cms",
-      "source_published_at": "2026-11-14",
+      "id": "53a96140996e38b13275",
+      "title": "Make mental health screening mandatory after military deployments",
+      "source_host": "petition.parliament.uk",
+      "source_url": "https://petition.parliament.uk/petitions/768482",
+      "source_published_at": "2026-11-16",
       "content_label": "Recent source context",
-      "excerpt": "UP Chief Minister Yogi Adityanath announced welfare measures for ex-servicemen during a rally in Meerut on Saturday. The measures include doubling the Veerta Puraskar amount ...",
+      "excerpt": "Require all Armed Forces personnel to have a mental health screening with a qualified clinician before post-deployment leave. This could help identify hidden struggles, provide ...",
       "domains": [
         "military_family_readiness"
       ]
     },
     {
-      "id": "baa27c99adda05492e16",
-      "title": "VA Housed Nearly 49,000 Homeless Veterans in 2026",
-      "source_host": "military.com",
-      "source_url": "https://military.com/va-housed-nearly-49000-homeless-veterans-in-2026",
-      "source_published_at": "2026-11-13",
-      "content_label": "Recent source context",
-      "excerpt": "VA reports its fiscal 2026 count of homeless veterans permanently housed, plus the grants and projects aimed at cutting veteran homelessness.",
+      "id": "f9402bc70097efcd3e7c",
+      "title": "VA works to provide stable housing for homeless veterans as overall numbers decline",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/veterans/2026/11/17/va-works-to-provide-stable-housing-for-homeless-veterans-as-overall-numbers-decline",
+      "source_published_at": "2026-11-17",
+      "content_label": "Published on report date",
+      "excerpt": "The VA provided stable housing in fiscal 2026 to nearly 49,000 veterans, the equivalent of about 4,000 veterans moving every month into permanent quarters.",
       "domains": [
         "housing_stability"
       ]
@@ -145,8 +159,20 @@
       "source_host": "federalnewsnetwork.com",
       "source_url": "https://federalnewsnetwork.com/federal-newscast/2026/11/dod-and-hhs-expand-career-path-programs-for-veterans",
       "source_published_at": "2026-11-16",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "The efforts build on the Trump administration's goal of increasing veteran employment rates and advancing merit-based hiring.",
+      "domains": [
+        "employment"
+      ]
+    },
+    {
+      "id": "a7953954110d960b0e4f",
+      "title": "Civilian staff shortages disrupt essential services at isolated bases, report finds",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/your-military/2026/11/17/civilian-staff-shortages-disrupt-essential-services-at-isolated-bases-report-finds",
+      "source_published_at": "2026-11-17",
+      "content_label": "Published on report date",
+      "excerpt": "Hundreds of civilian vacancies have strained baseline services at remote military installations, while a Government Accountability Report found that the Pentagon had not assessed the ...",
       "domains": [
         "employment"
       ]
