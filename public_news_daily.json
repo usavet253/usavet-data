@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-17",
-  "generated_at": "2026-11-17T21:53:19.537318+00:00",
+  "as_of": "2026-11-18",
+  "generated_at": "2026-11-18T21:31:37.748998+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,8 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "34aea34de98acbfafea9",
-        "89752723d89cc72e5a7c"
+        "46986eacaa6f07e1e322"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -24,13 +23,13 @@
       "name": "Military Family Readiness",
       "story_ids": [
         "15b8f15e93454bbfee91",
-        "53a96140996e38b13275"
+        "2c762b4e52abb9b8e3b1"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
       "domain_context": "Family support and career continuity can be addressed together rather than through separate referrals.",
-      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions. Family access: Look for household eligibility, participating locations and enrollment instructions for the support described."
+      "planning_option": "Check whether relocation, caregiving and career support referrals can be coordinated across partner organizations.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "cost_of_living",
@@ -46,7 +45,8 @@
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "f9402bc70097efcd3e7c"
+        "5ac62964094aa61ffd23",
+        "9bda4d4cdbc1ac1e3c05"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
@@ -57,21 +57,18 @@
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
-      "story_ids": [
-        "7d2ed4b440a3bc6ac862"
-      ],
-      "coverage_status": "selected_context",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
-      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "Care delivery: Look for participating providers, insurance coverage, referral procedures and local appointment availability."
+      "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
+      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
     },
     {
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "5ae887cd9cbf9e5a1db6",
-        "a7953954110d960b0e4f"
+        "5ae887cd9cbf9e5a1db6"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -82,25 +79,13 @@
   ],
   "stories": [
     {
-      "id": "34aea34de98acbfafea9",
-      "title": "At 67 With $800,000, He’ll Finally Win His VA Disability Claim and Get a Lump-Sum Back Payment. Here’s How It Affects His Taxes and Other Benefits",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/6939e81fafd263ed",
-      "source_published_at": "2026-11-16",
-      "content_label": "Recent source context",
-      "excerpt": "appeared first on 24/7 Wall St.. He’s 67 and sitting at the kitchen table with the VA envelope he’s wai…",
-      "domains": [
-        "benefits"
-      ]
-    },
-    {
-      "id": "89752723d89cc72e5a7c",
-      "title": "Can Green Card Holders Join the Military? 2026 Rules",
-      "source_host": "military.com",
-      "source_url": "https://military.com/join-the-military/can-green-card-holders-join-the-us-military",
-      "source_published_at": "2026-11-16",
-      "content_label": "Recent source context",
-      "excerpt": "Green Card holders can join the U.S. military in 2026. See eligibility rules, documents, restricted jobs and expedited naturalization steps.",
+      "id": "46986eacaa6f07e1e322",
+      "title": "Safety warnings went unresolved during VA health record modernization, former employee claims",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/veterans/2026/11/18/safety-warnings-went-unresolved-during-va-health-record-modernization-former-employee-claims",
+      "source_published_at": "2026-11-18",
+      "content_label": "Published on report date",
+      "excerpt": "A former Oracle employee alleges she was laid of for warning supervisors that inadequate training and unresolved clinical problems could put veterans at risk.",
       "domains": [
         "benefits"
       ]
@@ -118,39 +103,39 @@
       ]
     },
     {
-      "id": "53a96140996e38b13275",
-      "title": "Make mental health screening mandatory after military deployments",
-      "source_host": "petition.parliament.uk",
-      "source_url": "https://petition.parliament.uk/petitions/768482",
-      "source_published_at": "2026-11-16",
-      "content_label": "Recent source context",
-      "excerpt": "Require all Armed Forces personnel to have a mental health screening with a qualified clinician before post-deployment leave. This could help identify hidden struggles, provide ...",
+      "id": "2c762b4e52abb9b8e3b1",
+      "title": "‘Have You Landed?’ shares stories of military spouses",
+      "source_host": "militaryfamilies.com",
+      "source_url": "https://militaryfamilies.com/book-review/emma-comery-shares-stories-of-military-spouses",
+      "source_published_at": "2026-11-18",
+      "content_label": "Published on report date",
+      "excerpt": "In her debut work of nonfiction, writer Emma Comery — military spouse and powerhouse essayist — tackles the complex realities of marrying into the military. ...",
       "domains": [
         "military_family_readiness"
       ]
     },
     {
-      "id": "f9402bc70097efcd3e7c",
+      "id": "5ac62964094aa61ffd23",
       "title": "VA works to provide stable housing for homeless veterans as overall numbers decline",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/veterans/2026/11/17/va-works-to-provide-stable-housing-for-homeless-veterans-as-overall-numbers-decline",
+      "source_host": "www.armytimes.com",
+      "source_url": "https://www.armytimes.com/veterans/2026/11/17/va-works-to-provide-stable-housing-for-homeless-veterans-as-overall-numbers-decline",
       "source_published_at": "2026-11-17",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "The VA provided stable housing in fiscal 2026 to nearly 49,000 veterans, the equivalent of about 4,000 veterans moving every month into permanent quarters.",
       "domains": [
         "housing_stability"
       ]
     },
     {
-      "id": "7d2ed4b440a3bc6ac862",
-      "title": "VA Research on Veterans' Health Led by UCLA Fielding Alums",
-      "source_host": "military.com",
-      "source_url": "https://military.com/how-a-pipleline-of-ucla-alums-is-shaping-va-research-on-veterans-health",
-      "source_published_at": "2026-11-15",
+      "id": "9bda4d4cdbc1ac1e3c05",
+      "title": "Hegseth Cracks Down On Military Housing Nightmare As Approval Ratings Sink",
+      "source_host": "dailycaller.com",
+      "source_url": "https://dailycaller.com/2026/11/17/hegseth-military-barracks-memo-iran-war-approval-ratings",
+      "source_published_at": "2026-11-17",
       "content_label": "Recent source context",
-      "excerpt": "VA research on veterans' health is a priority for UCLA Fielding graduates studying COPD, cancer, mental health and chronic pain at VA Greater LA.",
+      "excerpt": "Hegseth is cracking down on dangerous military barracks conditions that have plagued American troops for decades, as he faces mounting unpopularity.",
       "domains": [
-        "healthcare_system"
+        "housing_stability"
       ]
     },
     {
@@ -161,18 +146,6 @@
       "source_published_at": "2026-11-16",
       "content_label": "Recent source context",
       "excerpt": "The efforts build on the Trump administration's goal of increasing veteran employment rates and advancing merit-based hiring.",
-      "domains": [
-        "employment"
-      ]
-    },
-    {
-      "id": "a7953954110d960b0e4f",
-      "title": "Civilian staff shortages disrupt essential services at isolated bases, report finds",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/your-military/2026/11/17/civilian-staff-shortages-disrupt-essential-services-at-isolated-bases-report-finds",
-      "source_published_at": "2026-11-17",
-      "content_label": "Published on report date",
-      "excerpt": "Hundreds of civilian vacancies have strained baseline services at remote military installations, while a Government Accountability Report found that the Pentagon had not assessed the ...",
       "domains": [
         "employment"
       ]
