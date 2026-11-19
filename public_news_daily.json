@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-18",
-  "generated_at": "2026-11-18T21:31:37.748998+00:00",
+  "as_of": "2026-11-19",
+  "generated_at": "2026-11-19T21:43:20.724683+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,6 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
+        "7fb1392e8e58bc9b09fd",
         "46986eacaa6f07e1e322"
       ],
       "coverage_status": "selected_context",
@@ -45,7 +46,6 @@
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "5ac62964094aa61ffd23",
         "9bda4d4cdbc1ac1e3c05"
       ],
       "coverage_status": "selected_context",
@@ -68,6 +68,7 @@
       "key": "employment",
       "name": "Employment",
       "story_ids": [
+        "d1394ab8801b8450e985",
         "5ae887cd9cbf9e5a1db6"
       ],
       "coverage_status": "selected_context",
@@ -79,12 +80,24 @@
   ],
   "stories": [
     {
+      "id": "7fb1392e8e58bc9b09fd",
+      "title": "Thousands of Veterans Could Get Disability Benefits Under New Bill",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/11afcece90bd6d7d",
+      "source_published_at": "2026-11-18",
+      "content_label": "Recent source context",
+      "excerpt": "Thousands of U.S. veterans living with sarcoidosis, dementia, Parkinson’s disease and other chronic illnesses could gain easier access to Department of Veterans Affairs disability benefits ...",
+      "domains": [
+        "benefits"
+      ]
+    },
+    {
       "id": "46986eacaa6f07e1e322",
       "title": "Safety warnings went unresolved during VA health record modernization, former employee claims",
       "source_host": "www.militarytimes.com",
       "source_url": "https://www.militarytimes.com/veterans/2026/11/18/safety-warnings-went-unresolved-during-va-health-record-modernization-former-employee-claims",
       "source_published_at": "2026-11-18",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "A former Oracle employee alleges she was laid of for warning supervisors that inadequate training and unresolved clinical problems could put veterans at risk.",
       "domains": [
         "benefits"
@@ -108,22 +121,10 @@
       "source_host": "militaryfamilies.com",
       "source_url": "https://militaryfamilies.com/book-review/emma-comery-shares-stories-of-military-spouses",
       "source_published_at": "2026-11-18",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "In her debut work of nonfiction, writer Emma Comery — military spouse and powerhouse essayist — tackles the complex realities of marrying into the military. ...",
       "domains": [
         "military_family_readiness"
-      ]
-    },
-    {
-      "id": "5ac62964094aa61ffd23",
-      "title": "VA works to provide stable housing for homeless veterans as overall numbers decline",
-      "source_host": "www.armytimes.com",
-      "source_url": "https://www.armytimes.com/veterans/2026/11/17/va-works-to-provide-stable-housing-for-homeless-veterans-as-overall-numbers-decline",
-      "source_published_at": "2026-11-17",
-      "content_label": "Recent source context",
-      "excerpt": "The VA provided stable housing in fiscal 2026 to nearly 49,000 veterans, the equivalent of about 4,000 veterans moving every month into permanent quarters.",
-      "domains": [
-        "housing_stability"
       ]
     },
     {
@@ -136,6 +137,18 @@
       "excerpt": "Hegseth is cracking down on dangerous military barracks conditions that have plagued American troops for decades, as he faces mounting unpopularity.",
       "domains": [
         "housing_stability"
+      ]
+    },
+    {
+      "id": "d1394ab8801b8450e985",
+      "title": "Veterans: Find your edge in the federal hiring process",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/150975/veterans-find-edge-federal-hiring-process",
+      "source_published_at": "2026-11-17",
+      "content_label": "Recent source context",
+      "excerpt": "Learn how to identify opportunities on USAJOBS, prepare a stronger application, and make the most of the federal hiring process options available to you.",
+      "domains": [
+        "employment"
       ]
     },
     {
