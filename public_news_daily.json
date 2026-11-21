@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-20",
-  "generated_at": "2026-11-20T21:16:21.357574+00:00",
+  "as_of": "2026-11-21",
+  "generated_at": "2026-11-21T20:12:03.815083+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,20 +10,21 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "215a57b87f7b779fcbd8"
+        "15996970943076735fc1",
+        "47344f0230c1ba1e7827"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
       "domain_context": "Benefits navigation can connect eligible households with support across several services.",
       "planning_option": "Review unresolved applications and referral handoffs before promising payment or eligibility.",
-      "watch_next": "Benefits updates: Look for official VA rate-table revisions, effective dates and affected payment categories; a reference page alone does not announce a change."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
         "b5ea4a3fae174d36794c",
-        "2c762b4e52abb9b8e3b1"
+        "e4edec7e3a20ca08a27a"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
@@ -58,18 +59,20 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "735b017754aace62467c"
+        "011b6a7f440adccc40cb",
+        "515a74d8e649e7eed06a"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
-      "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
+      "watch_next": "Care delivery: Look for participating providers, insurance coverage, referral procedures and local appointment availability. The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "employment",
       "name": "Employment",
       "story_ids": [
+        "a2396ddf21c3b0687617",
         "8afecfe825bcfca4a9f8"
       ],
       "coverage_status": "selected_context",
@@ -81,13 +84,25 @@
   ],
   "stories": [
     {
-      "id": "215a57b87f7b779fcbd8",
-      "title": "Current Veterans disability compensation rates",
-      "source_host": "www.va.gov",
-      "source_url": "https://www.va.gov/disability/compensation-rates/veteran-rates",
-      "source_published_at": "",
-      "content_label": "Background / reference",
-      "excerpt": "Review 2026 Veterans disability compensation rates. Use our compensation benefits rate tables to find your monthly payment amount.",
+      "id": "15996970943076735fc1",
+      "title": "Senator moves to strip controversial cuts from sweeping veterans benefits bill",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/pentagon-congress/2026/11/20/senator-moves-to-strip-controversial-cuts-from-sweeping-veterans-benefits-bill",
+      "source_published_at": "2026-11-20",
+      "content_label": "Recent source context",
+      "excerpt": "Sen. Jerry Moran's amendment would eliminate the House's proposed fee increases on VA home loans and revise changes to disability compensation for tinnitus.",
+      "domains": [
+        "benefits"
+      ]
+    },
+    {
+      "id": "47344f0230c1ba1e7827",
+      "title": "Federal Prosecutors Charge 15 People in Alleged $3.4 Million Schemes Targeting Veterans' Disability, Equipment and Education Benefits",
+      "source_host": "www.medicaldaily.com",
+      "source_url": "https://www.medicaldaily.com/federal-prosecutors-charge-15-veterans-benefits-fraud-481467",
+      "source_published_at": "2026-11-20",
+      "content_label": "Recent source context",
+      "excerpt": "Federal prosecutors charged 15 people in alleged schemes targeting veterans' disability, medical equipment and education benefits, while offering guidance on detecting and reporting suspected fraud.",
       "domains": [
         "benefits"
       ]
@@ -98,20 +113,20 @@
       "source_host": "militaryfamilies.com",
       "source_url": "https://militaryfamilies.com/military-life/war-widow-veteran-says-choose-courage-joy-in-new-book",
       "source_published_at": "2026-11-20",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "This week, veteran and Gold Star spouse Jennifer Ballou debuted her new book, “Own Your Resilience” near the military installation that is central to her ...",
       "domains": [
         "military_family_readiness"
       ]
     },
     {
-      "id": "2c762b4e52abb9b8e3b1",
-      "title": "‘Have You Landed?’ shares stories of military spouses",
-      "source_host": "militaryfamilies.com",
-      "source_url": "https://militaryfamilies.com/book-review/emma-comery-shares-stories-of-military-spouses",
-      "source_published_at": "2026-11-18",
+      "id": "e4edec7e3a20ca08a27a",
+      "title": "Best Black Friday Deals for Military Families in 2026: 30 Places to Save",
+      "source_host": "www.military.com",
+      "source_url": "https://www.military.com/best-black-friday-deals-for-military-families-30-places-to-save",
+      "source_published_at": "2026-11-20",
       "content_label": "Recent source context",
-      "excerpt": "In her debut work of nonfiction, writer Emma Comery — military spouse and powerhouse essayist — tackles the complex realities of marrying into the military. ...",
+      "excerpt": "A guide to 30 retailers offering Black Friday sales and military discounts on baby gear, home goods, PCS moves, travel and gifts in 2026.",
       "domains": [
         "military_family_readiness"
       ]
@@ -122,7 +137,7 @@
       "source_host": "www.stripes.com",
       "source_url": "https://www.stripes.com/veterans/2026-11-18/veterans-congress-psychedelic-therapies-23509021.html",
       "source_published_at": "2026-11-20",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "criminal penalties against scammers and the VA identifies 10 centers to support psychedelic therapies. RELATED Nearly 49,000 homeless veterans found housing with VA’s help in ...",
       "domains": [
         "housing_stability"
@@ -141,15 +156,39 @@
       ]
     },
     {
-      "id": "735b017754aace62467c",
-      "title": "Arizona Veterans Research and Education Foundation in support of Phoenix VA Health Care System and Young Blood Institute Announce Cooperativ",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/554cf00e84cb2a25",
-      "source_published_at": "2026-11-19",
+      "id": "011b6a7f440adccc40cb",
+      "title": "Innovations in mental healthcare: Discover new paths to heal Veterans",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/150981/innovations-mental-healthcare-new-paths-heal",
+      "source_published_at": "2026-11-20",
       "content_label": "Recent source context",
-      "excerpt": "PHOENIX, Nov. 19, 2026 /CNW/ -- AmBARI Healthcare, Inc., The Phoenix VA Health Care System, the Arizona Veterans Research and Education Foundation, and",
+      "excerpt": "VA continues to widen its mental healthcare toolkit to provide the most current, accessible care to our Veterans.",
       "domains": [
         "healthcare_system"
+      ]
+    },
+    {
+      "id": "515a74d8e649e7eed06a",
+      "title": "Day by day: How VA social workers helped a Veteran find recovery",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/151141/va-social-workers-helped-veteran-find-recovery",
+      "source_published_at": "2026-11-21",
+      "content_label": "Published on report date",
+      "excerpt": "A Veteran’s recovery shows how VA posttraumatic stress disorder and substance use care, and social work, create pathways to healing and hope.",
+      "domains": [
+        "healthcare_system"
+      ]
+    },
+    {
+      "id": "a2396ddf21c3b0687617",
+      "title": "Trump Admin Proposes Changes to Job Training Benefits for Disabled Veterans",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/7a4eea2af297cd86",
+      "source_published_at": "2026-11-20",
+      "content_label": "Recent source context",
+      "excerpt": "The Trump administration is proposing changes to a federal employment program for disabled veterans that could make it easier for some to pursue education or ...",
+      "domains": [
+        "employment"
       ]
     },
     {
