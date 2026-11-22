@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-21",
-  "generated_at": "2026-11-21T20:12:03.815083+00:00",
+  "as_of": "2026-11-22",
+  "generated_at": "2026-11-22T20:26:36.667154+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,8 +10,8 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "15996970943076735fc1",
-        "47344f0230c1ba1e7827"
+        "7ac78f1fb5a2aaa4ba81",
+        "15996970943076735fc1"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -73,7 +73,7 @@
       "name": "Employment",
       "story_ids": [
         "a2396ddf21c3b0687617",
-        "8afecfe825bcfca4a9f8"
+        "5736ff3df0a9e8cc916e"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -84,6 +84,18 @@
   ],
   "stories": [
     {
+      "id": "7ac78f1fb5a2aaa4ba81",
+      "title": "Trump Administration Seeks Input on Veterans Benefits Dependent Checks",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/a2383d43e6b1961d",
+      "source_published_at": "2026-11-20",
+      "content_label": "Recent source context",
+      "excerpt": "The Trump administration is seeking public input on a Department of Veterans Affairs process used to verify that veterans receiving additional disability compensation for dependents ...",
+      "domains": [
+        "benefits"
+      ]
+    },
+    {
       "id": "15996970943076735fc1",
       "title": "Senator moves to strip controversial cuts from sweeping veterans benefits bill",
       "source_host": "www.militarytimes.com",
@@ -91,18 +103,6 @@
       "source_published_at": "2026-11-20",
       "content_label": "Recent source context",
       "excerpt": "Sen. Jerry Moran's amendment would eliminate the House's proposed fee increases on VA home loans and revise changes to disability compensation for tinnitus.",
-      "domains": [
-        "benefits"
-      ]
-    },
-    {
-      "id": "47344f0230c1ba1e7827",
-      "title": "Federal Prosecutors Charge 15 People in Alleged $3.4 Million Schemes Targeting Veterans' Disability, Equipment and Education Benefits",
-      "source_host": "www.medicaldaily.com",
-      "source_url": "https://www.medicaldaily.com/federal-prosecutors-charge-15-veterans-benefits-fraud-481467",
-      "source_published_at": "2026-11-20",
-      "content_label": "Recent source context",
-      "excerpt": "Federal prosecutors charged 15 people in alleged schemes targeting veterans' disability, medical equipment and education benefits, while offering guidance on detecting and reporting suspected fraud.",
       "domains": [
         "benefits"
       ]
@@ -173,7 +173,7 @@
       "source_host": "news.va.gov",
       "source_url": "https://news.va.gov/151141/va-social-workers-helped-veteran-find-recovery",
       "source_published_at": "2026-11-21",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "A Veteran’s recovery shows how VA posttraumatic stress disorder and substance use care, and social work, create pathways to healing and hope.",
       "domains": [
         "healthcare_system"
@@ -192,13 +192,13 @@
       ]
     },
     {
-      "id": "8afecfe825bcfca4a9f8",
-      "title": "At RIS, Veterans and Recruiters Confront the Hiring Gap",
-      "source_host": "www.ere.net",
-      "source_url": "https://www.ere.net/articles/at-ris-veterans-and-recruiters-confront-the-hiring-gap",
-      "source_published_at": "2026-11-18",
+      "id": "5736ff3df0a9e8cc916e",
+      "title": "AI anxiety sparks new ventures as techies ditch jobs",
+      "source_host": "timesofindia.indiatimes.com",
+      "source_url": "https://timesofindia.indiatimes.com/city/ahmedabad/ai-anxiety-sparks-new-ventures-as-techies-ditch-jobs/articleshow/136062192.cms",
+      "source_published_at": "2026-11-21",
       "content_label": "Recent source context",
-      "excerpt": "Most employers claim to support veteran hiring. At the ERE Recruiting Innovation Summit, two veterans walked recruiters through where it falls apart.",
+      "excerpt": "Ahmedabad IT veterans quit amid AI job fears, launching ventures like namkeen, nankhatai, car perfumes and thrift stores to seek stability and returns.",
       "domains": [
         "employment"
       ]
