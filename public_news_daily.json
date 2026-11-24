@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-22",
-  "generated_at": "2026-11-22T20:26:36.667154+00:00",
+  "as_of": "2026-11-24",
+  "generated_at": "2026-11-24T01:02:15.927494+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,8 +10,8 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "7ac78f1fb5a2aaa4ba81",
-        "15996970943076735fc1"
+        "6fc0dc9e1ca1bc2e4d10",
+        "873c6528884e1eb282a1"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -23,14 +23,14 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "b5ea4a3fae174d36794c",
-        "e4edec7e3a20ca08a27a"
+        "0ed011fa20863fab7487",
+        "97597dee50092326bc2b"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
       "domain_context": "Family support and career continuity can be addressed together rather than through separate referrals.",
-      "planning_option": "Check whether relocation, caregiving and career support referrals can be coordinated across partner organizations.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "Check occupation-specific licensing and credential-transfer rules in the relevant state before advising a career move.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions. Career portability: Look for state- and occupation-specific implementation dates, credential-transfer requirements and application instructions."
     },
     {
       "key": "cost_of_living",
@@ -46,34 +46,30 @@
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "e509c29814bf6ab2fdfb",
-        "f29560619ff2d90c8b3c"
+        "3855a3ce5e911b062485"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
       "domain_context": "Housing support can connect rental assistance with care and case management.",
-      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "Family access: Look for household eligibility, participating locations and enrollment instructions for the support described. The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "Confirm local housing referral routes, eligibility and available capacity with the responsible provider.",
+      "watch_next": "Housing access: Look for current eligibility, referral contacts, capacity and application instructions in the linked program information."
     },
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
-      "story_ids": [
-        "011b6a7f440adccc40cb",
-        "515a74d8e649e7eed06a"
-      ],
-      "coverage_status": "selected_context",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
-      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "Care delivery: Look for participating providers, insurance coverage, referral procedures and local appointment availability. The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
+      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
     },
     {
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "a2396ddf21c3b0687617",
-        "5736ff3df0a9e8cc916e"
+        "187ff3ad25fca6137b87",
+        "a2396ddf21c3b0687617"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -84,99 +80,75 @@
   ],
   "stories": [
     {
-      "id": "7ac78f1fb5a2aaa4ba81",
-      "title": "Trump Administration Seeks Input on Veterans Benefits Dependent Checks",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/a2383d43e6b1961d",
-      "source_published_at": "2026-11-20",
-      "content_label": "Recent source context",
-      "excerpt": "The Trump administration is seeking public input on a Department of Veterans Affairs process used to verify that veterans receiving additional disability compensation for dependents ...",
-      "domains": [
-        "benefits"
-      ]
-    },
-    {
-      "id": "15996970943076735fc1",
-      "title": "Senator moves to strip controversial cuts from sweeping veterans benefits bill",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/pentagon-congress/2026/11/20/senator-moves-to-strip-controversial-cuts-from-sweeping-veterans-benefits-bill",
-      "source_published_at": "2026-11-20",
-      "content_label": "Recent source context",
-      "excerpt": "Sen. Jerry Moran's amendment would eliminate the House's proposed fee increases on VA home loans and revise changes to disability compensation for tinnitus.",
-      "domains": [
-        "benefits"
-      ]
-    },
-    {
-      "id": "b5ea4a3fae174d36794c",
-      "title": "War widow, veteran says ‘choose courage + joy’ in new book",
-      "source_host": "militaryfamilies.com",
-      "source_url": "https://militaryfamilies.com/military-life/war-widow-veteran-says-choose-courage-joy-in-new-book",
-      "source_published_at": "2026-11-20",
-      "content_label": "Recent source context",
-      "excerpt": "This week, veteran and Gold Star spouse Jennifer Ballou debuted her new book, “Own Your Resilience” near the military installation that is central to her ...",
-      "domains": [
-        "military_family_readiness"
-      ]
-    },
-    {
-      "id": "e4edec7e3a20ca08a27a",
-      "title": "Best Black Friday Deals for Military Families in 2026: 30 Places to Save",
-      "source_host": "www.military.com",
-      "source_url": "https://www.military.com/best-black-friday-deals-for-military-families-30-places-to-save",
-      "source_published_at": "2026-11-20",
-      "content_label": "Recent source context",
-      "excerpt": "A guide to 30 retailers offering Black Friday sales and military discounts on baby gear, home goods, PCS moves, travel and gifts in 2026.",
-      "domains": [
-        "military_family_readiness"
-      ]
-    },
-    {
-      "id": "e509c29814bf6ab2fdfb",
-      "title": "Veterans groups urge VA, Congress to prepare for FDA-approved psychedelics for mental health treatment",
-      "source_host": "www.stripes.com",
-      "source_url": "https://www.stripes.com/veterans/2026-11-18/veterans-congress-psychedelic-therapies-23509021.html",
-      "source_published_at": "2026-11-20",
-      "content_label": "Recent source context",
-      "excerpt": "criminal penalties against scammers and the VA identifies 10 centers to support psychedelic therapies. RELATED Nearly 49,000 homeless veterans found housing with VA’s help in ...",
-      "domains": [
-        "housing_stability"
-      ]
-    },
-    {
-      "id": "f29560619ff2d90c8b3c",
-      "title": "Did Trump's VA provide housing to nearly 49K homeless veterans in 2026?",
-      "source_host": "www.snopes.com",
-      "source_url": "https://www.snopes.com/fact-check/trump-va-homeless-veterans",
-      "source_published_at": "2026-11-19",
-      "content_label": "Recent source context",
-      "excerpt": "As of November, the Department of Veterans Affairs announced that nearly 49,000 homeless veterans have been permanently housed in 2026 so far under U.S. President ...",
-      "domains": [
-        "housing_stability"
-      ]
-    },
-    {
-      "id": "011b6a7f440adccc40cb",
-      "title": "Innovations in mental healthcare: Discover new paths to heal Veterans",
-      "source_host": "news.va.gov",
-      "source_url": "https://news.va.gov/150981/innovations-mental-healthcare-new-paths-heal",
-      "source_published_at": "2026-11-20",
-      "content_label": "Recent source context",
-      "excerpt": "VA continues to widen its mental healthcare toolkit to provide the most current, accessible care to our Veterans.",
-      "domains": [
-        "healthcare_system"
-      ]
-    },
-    {
-      "id": "515a74d8e649e7eed06a",
-      "title": "Day by day: How VA social workers helped a Veteran find recovery",
-      "source_host": "news.va.gov",
-      "source_url": "https://news.va.gov/151141/va-social-workers-helped-veteran-find-recovery",
+      "id": "6fc0dc9e1ca1bc2e4d10",
+      "title": "Samsung - [EDU/EPP] Samsung ViewFinity S8 40\" 5K2K 144Hz VA Curved Monitor $599.99",
+      "source_host": "www.dealcatcher.com",
+      "source_url": "https://www.dealcatcher.com/deals/computers-office/desktops/samsung-viewfinity-va-curved-monitor-472697",
       "source_published_at": "2026-11-21",
       "content_label": "Recent source context",
-      "excerpt": "A Veteran’s recovery shows how VA posttraumatic stress disorder and substance use care, and social work, create pathways to healing and hope.",
+      "excerpt": "**How to Get This Deal** - Visit the [Samsung Discount Program](https://brandcycle.shop/d9van) page and check your eligibility. - If you're eligible, sign in or create an ...",
       "domains": [
-        "healthcare_system"
+        "benefits"
+      ]
+    },
+    {
+      "id": "873c6528884e1eb282a1",
+      "title": "Samsung - [EDU/EPP] Samsung 49\" Odyssey G9 DQHD 240Hz VA Curved Gaming Monitor $629.99",
+      "source_host": "www.dealcatcher.com",
+      "source_url": "https://www.dealcatcher.com/deals/computers-office/desktops/samsung-odyssey-dqhd-va-curved-gaming-monitor-472751",
+      "source_published_at": "2026-11-21",
+      "content_label": "Recent source context",
+      "excerpt": "**How to Get This Deal** - Visit the Samsung Discount Program on Samsung.com and check your eligibility as an [EDU or EPP member](https://brandcycle.shop/d9van). - If ...",
+      "domains": [
+        "benefits"
+      ]
+    },
+    {
+      "id": "0ed011fa20863fab7487",
+      "title": "left Naval Station Norfolk, Virginia, on March 31, and arrived",
+      "source_host": "www.usff.navy.mil",
+      "source_url": "https://www.usff.navy.mil/Press-Room/Press-Releases/Article/4449573/george-h-w-bush-carrier-strike-group-departs-for-deployment",
+      "source_published_at": "2026-11-23",
+      "content_label": "Recent source context",
+      "excerpt": "in the Middle East in April. Families of sailors onboard the Bush were told at a November town hall meeting with Acting Navy Secretary Hung ...",
+      "domains": [
+        "military_family_readiness"
+      ]
+    },
+    {
+      "id": "97597dee50092326bc2b",
+      "title": "New Mexico faces federal lawsuit after rejecting military spouse’s law license",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/2026/11/23/new-mexico-faces-federal-lawsuit-after-rejecting-military-spouses-law-license",
+      "source_published_at": "2026-11-23",
+      "content_label": "Recent source context",
+      "excerpt": "New Mexico must face a federal lawsuit over its rejection of a military spouse’s law license application.",
+      "domains": [
+        "military_family_readiness"
+      ]
+    },
+    {
+      "id": "3855a3ce5e911b062485",
+      "title": "HUD-VASH - VA Homeless Programs",
+      "source_host": "department.va.gov",
+      "source_url": "https://department.va.gov/homeless/hud-vash",
+      "source_published_at": "2026-04-02",
+      "content_label": "Background / reference",
+      "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
+      "domains": [
+        "housing_stability"
+      ]
+    },
+    {
+      "id": "187ff3ad25fca6137b87",
+      "title": "Leaving the Military? Don’t Leave Free Career Training on the Table",
+      "source_host": "news.clearancejobs.com",
+      "source_url": "https://news.clearancejobs.com/2026/11/23/leaving-the-military-dont-leave-free-career-training-on-the-table",
+      "source_published_at": "2026-11-23",
+      "content_label": "Recent source context",
+      "excerpt": "Military transition success starts before your last day in uniform. Here's some free training, certifications, and career resources.",
+      "domains": [
+        "employment"
       ]
     },
     {
@@ -187,18 +159,6 @@
       "source_published_at": "2026-11-20",
       "content_label": "Recent source context",
       "excerpt": "The Trump administration is proposing changes to a federal employment program for disabled veterans that could make it easier for some to pursue education or ...",
-      "domains": [
-        "employment"
-      ]
-    },
-    {
-      "id": "5736ff3df0a9e8cc916e",
-      "title": "AI anxiety sparks new ventures as techies ditch jobs",
-      "source_host": "timesofindia.indiatimes.com",
-      "source_url": "https://timesofindia.indiatimes.com/city/ahmedabad/ai-anxiety-sparks-new-ventures-as-techies-ditch-jobs/articleshow/136062192.cms",
-      "source_published_at": "2026-11-21",
-      "content_label": "Recent source context",
-      "excerpt": "Ahmedabad IT veterans quit amid AI job fears, launching ventures like namkeen, nankhatai, car perfumes and thrift stores to seek stability and returns.",
       "domains": [
         "employment"
       ]
