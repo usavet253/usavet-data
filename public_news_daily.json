@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
   "as_of": "2026-11-24",
-  "generated_at": "2026-11-24T01:02:15.927494+00:00",
+  "generated_at": "2026-11-24T23:06:34.441623+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,8 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "6fc0dc9e1ca1bc2e4d10",
-        "873c6528884e1eb282a1"
+        "e958707a9096e53e6b6f"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -23,7 +22,7 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "0ed011fa20863fab7487",
+        "917e2889c93524367487",
         "97597dee50092326bc2b"
       ],
       "coverage_status": "selected_context",
@@ -35,12 +34,14 @@
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
-      "story_ids": [],
-      "coverage_status": "no_suitable_story",
+      "story_ids": [
+        "b1ce15b6d81abe9eab5a"
+      ],
+      "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
       "domain_context": "Benefit access, housing costs and household budgets may need a joint response.",
       "planning_option": "Review current assistance criteria and local capacity before directing households to financial support.",
-      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "housing_stability",
@@ -57,19 +58,21 @@
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
-      "story_ids": [],
-      "coverage_status": "no_suitable_story",
+      "story_ids": [
+        "44f60899cc642be410bc"
+      ],
+      "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
       "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
-      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "employment",
       "name": "Employment",
       "story_ids": [
-        "187ff3ad25fca6137b87",
-        "a2396ddf21c3b0687617"
+        "a771fbfa20191170dff4",
+        "187ff3ad25fca6137b87"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, military spouses, employers and workforce partners",
@@ -80,37 +83,25 @@
   ],
   "stories": [
     {
-      "id": "6fc0dc9e1ca1bc2e4d10",
-      "title": "Samsung - [EDU/EPP] Samsung ViewFinity S8 40\" 5K2K 144Hz VA Curved Monitor $599.99",
-      "source_host": "www.dealcatcher.com",
-      "source_url": "https://www.dealcatcher.com/deals/computers-office/desktops/samsung-viewfinity-va-curved-monitor-472697",
-      "source_published_at": "2026-11-21",
-      "content_label": "Recent source context",
-      "excerpt": "**How to Get This Deal** - Visit the [Samsung Discount Program](https://brandcycle.shop/d9van) page and check your eligibility. - If you're eligible, sign in or create an ...",
-      "domains": [
-        "benefits"
-      ]
-    },
-    {
-      "id": "873c6528884e1eb282a1",
-      "title": "Samsung - [EDU/EPP] Samsung 49\" Odyssey G9 DQHD 240Hz VA Curved Gaming Monitor $629.99",
-      "source_host": "www.dealcatcher.com",
-      "source_url": "https://www.dealcatcher.com/deals/computers-office/desktops/samsung-odyssey-dqhd-va-curved-gaming-monitor-472751",
-      "source_published_at": "2026-11-21",
-      "content_label": "Recent source context",
-      "excerpt": "**How to Get This Deal** - Visit the Samsung Discount Program on Samsung.com and check your eligibility as an [EDU or EPP member](https://brandcycle.shop/d9van). - If ...",
-      "domains": [
-        "benefits"
-      ]
-    },
-    {
-      "id": "0ed011fa20863fab7487",
-      "title": "left Naval Station Norfolk, Virginia, on March 31, and arrived",
-      "source_host": "www.usff.navy.mil",
-      "source_url": "https://www.usff.navy.mil/Press-Room/Press-Releases/Article/4449573/george-h-w-bush-carrier-strike-group-departs-for-deployment",
+      "id": "e958707a9096e53e6b6f",
+      "title": "Navy Veteran Who Rebuilt His Life After Prison Now Helps Veterans Leaving Jail",
+      "source_host": "www.military.com",
+      "source_url": "https://www.military.com/navy-veteran-who-rebuilt-his-life-after-prison-now-helps-veterans-leaving-jail",
       "source_published_at": "2026-11-23",
       "content_label": "Recent source context",
-      "excerpt": "in the Middle East in April. Families of sailors onboard the Bush were told at a November town hall meeting with Acting Navy Secretary Hung ...",
+      "excerpt": "Manny Gomez’s VetPhoenix helps veterans leaving jail find housing and care while navigating discharge and court eligibility rules.",
+      "domains": [
+        "benefits"
+      ]
+    },
+    {
+      "id": "917e2889c93524367487",
+      "title": "House measure aims to fill gaps in prenatal care after PCS moves",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/pentagon-congress/2026/11/24/house-measure-aims-to-fill-gaps-in-prenatal-care-after-pcs-moves",
+      "source_published_at": "2026-11-24",
+      "content_label": "Published on report date",
+      "excerpt": "A House proposal would require the Pentagon to assign pregnant service members and spouses a receiving healthcare provider before they relocate.",
       "domains": [
         "military_family_readiness"
       ]
@@ -128,6 +119,18 @@
       ]
     },
     {
+      "id": "b1ce15b6d81abe9eab5a",
+      "title": "Dodging space junk costs $58 million a year. Meet the Space Force contractor who made ‘autopilot for satellites’ to save money for taxpayers",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/59d39b3b3783cd1f",
+      "source_published_at": "2026-11-23",
+      "content_label": "Recent source context",
+      "excerpt": "Every time a satellite swerves around a piece of space junk, it can burn about $1 million worth of fuel, according to NASA. Across U.S. ...",
+      "domains": [
+        "cost_of_living"
+      ]
+    },
+    {
       "id": "3855a3ce5e911b062485",
       "title": "HUD-VASH - VA Homeless Programs",
       "source_host": "department.va.gov",
@@ -140,6 +143,30 @@
       ]
     },
     {
+      "id": "44f60899cc642be410bc",
+      "title": "Section 708 of the National Defense Authorization Act",
+      "source_host": "www.govinfo.gov",
+      "source_url": "https://www.govinfo.gov/content/pkg/BILLS-119hr8800eh/html/BILLS-119hr8800eh.htm",
+      "source_published_at": "",
+      "content_label": "Background / reference",
+      "excerpt": ", sponsored by Rep. Kat Cammack, R-Fla., would also require coordination between military treatment facilities, timely transfers of medical records and measures to prevent disruptions ...",
+      "domains": [
+        "healthcare_system"
+      ]
+    },
+    {
+      "id": "a771fbfa20191170dff4",
+      "title": "Transition Programs Help Veterans Bridge Gap to Civilian Career",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/98989b8d0208e8ab",
+      "source_published_at": "2026-11-23",
+      "content_label": "Recent source context",
+      "excerpt": "Moving from military service to a civilian career should be a seamless process: Veterans have led people, learned a trade and solved problems under pressure. ...",
+      "domains": [
+        "employment"
+      ]
+    },
+    {
       "id": "187ff3ad25fca6137b87",
       "title": "Leaving the Military? Don’t Leave Free Career Training on the Table",
       "source_host": "news.clearancejobs.com",
@@ -147,18 +174,6 @@
       "source_published_at": "2026-11-23",
       "content_label": "Recent source context",
       "excerpt": "Military transition success starts before your last day in uniform. Here's some free training, certifications, and career resources.",
-      "domains": [
-        "employment"
-      ]
-    },
-    {
-      "id": "a2396ddf21c3b0687617",
-      "title": "Trump Admin Proposes Changes to Job Training Benefits for Disabled Veterans",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/7a4eea2af297cd86",
-      "source_published_at": "2026-11-20",
-      "content_label": "Recent source context",
-      "excerpt": "The Trump administration is proposing changes to a federal employment program for disabled veterans that could make it easier for some to pursue education or ...",
       "domains": [
         "employment"
       ]
