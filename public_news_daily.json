@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-24",
-  "generated_at": "2026-11-24T23:06:34.441623+00:00",
+  "as_of": "2026-11-25",
+  "generated_at": "2026-11-25T22:39:36.943046+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,6 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
+        "65dad16e2671caf5d983",
         "e958707a9096e53e6b6f"
       ],
       "coverage_status": "selected_context",
@@ -22,20 +23,21 @@
       "key": "military_family_readiness",
       "name": "Military Family Readiness",
       "story_ids": [
-        "917e2889c93524367487",
-        "97597dee50092326bc2b"
+        "ae53ae7408ae924e890f",
+        "3c1bc91126da052ca6f2"
       ],
       "coverage_status": "selected_context",
       "audience": "Military households, spouses and family-support organizations",
       "domain_context": "Family support and career continuity can be addressed together rather than through separate referrals.",
-      "planning_option": "Check occupation-specific licensing and credential-transfer rules in the relevant state before advising a career move.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions. Career portability: Look for state- and occupation-specific implementation dates, credential-transfer requirements and application instructions."
+      "planning_option": "Check whether relocation, caregiving and career support referrals can be coordinated across partner organizations.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "cost_of_living",
       "name": "Cost of Living",
       "story_ids": [
-        "b1ce15b6d81abe9eab5a"
+        "93c0d5be8d087c0d4396",
+        "8c28340ccdf6dd97a1e2"
       ],
       "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
@@ -59,13 +61,13 @@
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "44f60899cc642be410bc"
+        "f634f7febbe543bbfda4"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
-      "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
+      "watch_next": "Care delivery: Look for participating providers, insurance coverage, referral procedures and local appointment availability."
     },
     {
       "key": "employment",
@@ -83,6 +85,18 @@
   ],
   "stories": [
     {
+      "id": "65dad16e2671caf5d983",
+      "title": "Improving the VA education benefits experience for Veterans and families",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/151263/improving-va-education-benefits-experience",
+      "source_published_at": "2026-11-25",
+      "content_label": "Published on report date",
+      "excerpt": "Automation is helping VA process G.I. Bill claims faster than ever, with more than 70% handled in one day. See how it's speeding up your ...",
+      "domains": [
+        "benefits"
+      ]
+    },
+    {
       "id": "e958707a9096e53e6b6f",
       "title": "Navy Veteran Who Rebuilt His Life After Prison Now Helps Veterans Leaving Jail",
       "source_host": "www.military.com",
@@ -95,37 +109,49 @@
       ]
     },
     {
-      "id": "917e2889c93524367487",
-      "title": "House measure aims to fill gaps in prenatal care after PCS moves",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/pentagon-congress/2026/11/24/house-measure-aims-to-fill-gaps-in-prenatal-care-after-pcs-moves",
-      "source_published_at": "2026-11-24",
-      "content_label": "Published on report date",
-      "excerpt": "A House proposal would require the Pentagon to assign pregnant service members and spouses a receiving healthcare provider before they relocate.",
-      "domains": [
-        "military_family_readiness"
-      ]
-    },
-    {
-      "id": "97597dee50092326bc2b",
-      "title": "New Mexico faces federal lawsuit after rejecting military spouse’s law license",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/2026/11/23/new-mexico-faces-federal-lawsuit-after-rejecting-military-spouses-law-license",
-      "source_published_at": "2026-11-23",
-      "content_label": "Recent source context",
-      "excerpt": "New Mexico must face a federal lawsuit over its rejection of a military spouse’s law license application.",
-      "domains": [
-        "military_family_readiness"
-      ]
-    },
-    {
-      "id": "b1ce15b6d81abe9eab5a",
-      "title": "Dodging space junk costs $58 million a year. Meet the Space Force contractor who made ‘autopilot for satellites’ to save money for taxpayers",
+      "id": "ae53ae7408ae924e890f",
+      "title": "What military families see as their biggest challenges as Trump's new military spouse commission convenes",
       "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/59d39b3b3783cd1f",
+      "source_url": "https://biztoc.com/x/4f61753fdb1ddee1",
       "source_published_at": "2026-11-23",
       "content_label": "Recent source context",
-      "excerpt": "Every time a satellite swerves around a piece of space junk, it can burn about $1 million worth of fuel, according to NASA. Across U.S. ...",
+      "excerpt": "Military spouses interviewed by PBS News say there is more to do to improve quality of life for military families.",
+      "domains": [
+        "military_family_readiness"
+      ]
+    },
+    {
+      "id": "3c1bc91126da052ca6f2",
+      "title": "Why Thanksgiving Reminds Me of the Heart of Soldiers’ Angels",
+      "source_host": "soldiersangels.org",
+      "source_url": "https://soldiersangels.org/why-thanksgiving-reminds-me-of-the-heart-of-soldiers-angels",
+      "source_published_at": "2026-11-25",
+      "content_label": "Published on report date",
+      "excerpt": "This Thanksgiving, Soldiers' Angels President and CEO Amy Palmer reflects on the volunteers, donors, corporate partners, and staff who turn compassion into action. They make ...",
+      "domains": [
+        "military_family_readiness"
+      ]
+    },
+    {
+      "id": "93c0d5be8d087c0d4396",
+      "title": "The service has said",
+      "source_host": "www.af.mil",
+      "source_url": "https://www.af.mil/News/Article-Display/Article/4484901/air-force-boeing-accelerate-kc-46-upgrades-to-target-readiness",
+      "source_published_at": "2026-11-25",
+      "content_label": "Published on report date",
+      "excerpt": "the main issues keeping KC-46s from being ready to fly are the reliability of the aerial refueling system and parts shortages. In May, the Air ...",
+      "domains": [
+        "cost_of_living"
+      ]
+    },
+    {
+      "id": "8c28340ccdf6dd97a1e2",
+      "title": "Hegseth Directs Military Pay System Modernization Prioritizing Warfighters",
+      "source_host": "www.war.gov",
+      "source_url": "https://www.war.gov/News/News-Stories/Article/Article/4660118/hegseth-directs-military-pay-system-modernization-prioritizing-warfighters",
+      "source_published_at": "2026-11-25",
+      "content_label": "Published on report date",
+      "excerpt": "Secretary of War Pete Hegseth announced a Warrior Pay Modernization initiative that will serve as a comprehensive transformation of military pay systems to ensure warfighters ...",
       "domains": [
         "cost_of_living"
       ]
@@ -143,13 +169,13 @@
       ]
     },
     {
-      "id": "44f60899cc642be410bc",
-      "title": "Section 708 of the National Defense Authorization Act",
-      "source_host": "www.govinfo.gov",
-      "source_url": "https://www.govinfo.gov/content/pkg/BILLS-119hr8800eh/html/BILLS-119hr8800eh.htm",
-      "source_published_at": "",
-      "content_label": "Background / reference",
-      "excerpt": ", sponsored by Rep. Kat Cammack, R-Fla., would also require coordination between military treatment facilities, timely transfers of medical records and measures to prevent disruptions ...",
+      "id": "f634f7febbe543bbfda4",
+      "title": "Mental health and suicide prevention: The overlaps and differences",
+      "source_host": "news.va.gov",
+      "source_url": "https://news.va.gov/151286/mental-health-suicide-prevention-differences",
+      "source_published_at": "2026-11-25",
+      "content_label": "Published on report date",
+      "excerpt": "Mental health care and suicide prevention are closely connected, but not the same. Understanding the difference can help more Veterans get support.",
       "domains": [
         "healthcare_system"
       ]
