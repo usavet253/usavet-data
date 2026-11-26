@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-25",
-  "generated_at": "2026-11-25T22:39:36.943046+00:00",
+  "as_of": "2026-11-26",
+  "generated_at": "2026-11-26T22:26:37.213269+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,7 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "65dad16e2671caf5d983",
+        "569d9a8620207b4bb98b",
         "e958707a9096e53e6b6f"
       ],
       "coverage_status": "selected_context",
@@ -36,8 +36,8 @@
       "key": "cost_of_living",
       "name": "Cost of Living",
       "story_ids": [
-        "93c0d5be8d087c0d4396",
-        "8c28340ccdf6dd97a1e2"
+        "8c28340ccdf6dd97a1e2",
+        "ef5cb3aba5fbdf697bd4"
       ],
       "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
@@ -49,25 +49,25 @@
       "key": "housing_stability",
       "name": "Housing Stability",
       "story_ids": [
-        "3855a3ce5e911b062485"
+        "0352a612ab5dd17cf1fe"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans facing housing instability; housing and community partners",
       "domain_context": "Housing support can connect rental assistance with care and case management.",
       "planning_option": "Confirm local housing referral routes, eligibility and available capacity with the responsible provider.",
-      "watch_next": "Housing access: Look for current eligibility, referral contacts, capacity and application instructions in the linked program information."
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "healthcare_system",
       "name": "Healthcare System",
       "story_ids": [
-        "f634f7febbe543bbfda4"
+        "44f60899cc642be410bc"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, caregivers and healthcare-navigation teams",
       "domain_context": "Care access should be considered alongside housing continuity and family support.",
-      "planning_option": "If considering the source for care referrals, confirm eligibility, coverage, location and current availability with the provider first.",
-      "watch_next": "Care delivery: Look for participating providers, insurance coverage, referral procedures and local appointment availability."
+      "planning_option": "Check care-navigation handoffs and current service availability with the provider before changing referrals.",
+      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
     },
     {
       "key": "employment",
@@ -85,13 +85,13 @@
   ],
   "stories": [
     {
-      "id": "65dad16e2671caf5d983",
-      "title": "Improving the VA education benefits experience for Veterans and families",
-      "source_host": "news.va.gov",
-      "source_url": "https://news.va.gov/151263/improving-va-education-benefits-experience",
+      "id": "569d9a8620207b4bb98b",
+      "title": "VA Update: Major Changes to Benefits, Home Loans Debated in Congress",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/160475fd6eaec705",
       "source_published_at": "2026-11-25",
-      "content_label": "Published on report date",
-      "excerpt": "Automation is helping VA process G.I. Bill claims faster than ever, with more than 70% handled in one day. See how it's speeding up your ...",
+      "content_label": "Recent source context",
+      "excerpt": "A sweeping bill that could reshape everything from disability compensation and survivor benefits to military retirement pay and VA-backed home loans is entering a critical ...",
       "domains": [
         "benefits"
       ]
@@ -126,22 +126,10 @@
       "source_host": "soldiersangels.org",
       "source_url": "https://soldiersangels.org/why-thanksgiving-reminds-me-of-the-heart-of-soldiers-angels",
       "source_published_at": "2026-11-25",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "This Thanksgiving, Soldiers' Angels President and CEO Amy Palmer reflects on the volunteers, donors, corporate partners, and staff who turn compassion into action. They make ...",
       "domains": [
         "military_family_readiness"
-      ]
-    },
-    {
-      "id": "93c0d5be8d087c0d4396",
-      "title": "The service has said",
-      "source_host": "www.af.mil",
-      "source_url": "https://www.af.mil/News/Article-Display/Article/4484901/air-force-boeing-accelerate-kc-46-upgrades-to-target-readiness",
-      "source_published_at": "2026-11-25",
-      "content_label": "Published on report date",
-      "excerpt": "the main issues keeping KC-46s from being ready to fly are the reliability of the aerial refueling system and parts shortages. In May, the Air ...",
-      "domains": [
-        "cost_of_living"
       ]
     },
     {
@@ -150,32 +138,44 @@
       "source_host": "www.war.gov",
       "source_url": "https://www.war.gov/News/News-Stories/Article/Article/4660118/hegseth-directs-military-pay-system-modernization-prioritizing-warfighters",
       "source_published_at": "2026-11-25",
-      "content_label": "Published on report date",
+      "content_label": "Recent source context",
       "excerpt": "Secretary of War Pete Hegseth announced a Warrior Pay Modernization initiative that will serve as a comprehensive transformation of military pay systems to ensure warfighters ...",
       "domains": [
         "cost_of_living"
       ]
     },
     {
-      "id": "3855a3ce5e911b062485",
-      "title": "HUD-VASH - VA Homeless Programs",
-      "source_host": "department.va.gov",
-      "source_url": "https://department.va.gov/homeless/hud-vash",
-      "source_published_at": "2026-04-02",
-      "content_label": "Background / reference",
-      "excerpt": "The Housing and Urban Development-VA Supportive Housing (HUD-VASH) program offers veteran housing assistance through a VA housing voucher program that pairs HUD rental support with ...",
+      "id": "ef5cb3aba5fbdf697bd4",
+      "title": "Air Force expands training with EARL, an AI-enhanced simulator",
+      "source_host": "www.militarytimes.com",
+      "source_url": "https://www.militarytimes.com/news/your-military/2026/11/25/air-force-expands-training-with-earl-an-ai-enhanced-simulator",
+      "source_published_at": "2026-11-25",
+      "content_label": "Recent source context",
+      "excerpt": "The U.S. Air Force aims to cut down on fuel costs for training scenarios using a virtual reality system known as EARL.",
+      "domains": [
+        "cost_of_living"
+      ]
+    },
+    {
+      "id": "0352a612ab5dd17cf1fe",
+      "title": "Hundreds of Florida Air Force Base Residents Sue Over Mold, ‘Unsafe’ Housing",
+      "source_host": "biztoc.com",
+      "source_url": "https://biztoc.com/x/4f62bb21efca79fc",
+      "source_published_at": "2026-11-25",
+      "content_label": "Recent source context",
+      "excerpt": "More than 100 military families living at Tampa's MacDill Air Force Base are suing over allegedly unsafe housing conditions and toxic mold in their homes, ...",
       "domains": [
         "housing_stability"
       ]
     },
     {
-      "id": "f634f7febbe543bbfda4",
-      "title": "Mental health and suicide prevention: The overlaps and differences",
-      "source_host": "news.va.gov",
-      "source_url": "https://news.va.gov/151286/mental-health-suicide-prevention-differences",
-      "source_published_at": "2026-11-25",
-      "content_label": "Published on report date",
-      "excerpt": "Mental health care and suicide prevention are closely connected, but not the same. Understanding the difference can help more Veterans get support.",
+      "id": "44f60899cc642be410bc",
+      "title": "Section 708 of the National Defense Authorization Act",
+      "source_host": "www.govinfo.gov",
+      "source_url": "https://www.govinfo.gov/content/pkg/BILLS-119hr8800eh/html/BILLS-119hr8800eh.htm",
+      "source_published_at": "",
+      "content_label": "Background / reference",
+      "excerpt": ", sponsored by Rep. Kat Cammack, R-Fla., would also require coordination between military treatment facilities, timely transfers of medical records and measures to prevent disruptions ...",
       "domains": [
         "healthcare_system"
       ]
