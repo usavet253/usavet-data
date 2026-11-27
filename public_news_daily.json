@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "public_news_daily",
-  "as_of": "2026-11-26",
-  "generated_at": "2026-11-26T22:26:37.213269+00:00",
+  "as_of": "2026-11-27",
+  "generated_at": "2026-11-27T22:04:58.676136+00:00",
   "editorial_status": "automated_selection_for_review",
   "coverage_note": "Selected source context, not independent verification. Publication dates are distinct from the report date. Planning options are editorial follow-up suggestions.",
   "domains": [
@@ -10,8 +10,7 @@
       "key": "benefits",
       "name": "Benefits",
       "story_ids": [
-        "569d9a8620207b4bb98b",
-        "e958707a9096e53e6b6f"
+        "569d9a8620207b4bb98b"
       ],
       "coverage_status": "selected_context",
       "audience": "Veterans, dependents and benefits-navigation teams",
@@ -36,8 +35,8 @@
       "key": "cost_of_living",
       "name": "Cost of Living",
       "story_ids": [
-        "8c28340ccdf6dd97a1e2",
-        "ef5cb3aba5fbdf697bd4"
+        "93c0d5be8d087c0d4396",
+        "8c28340ccdf6dd97a1e2"
       ],
       "coverage_status": "selected_context",
       "audience": "Military and veteran households; assistance providers",
@@ -72,15 +71,12 @@
     {
       "key": "employment",
       "name": "Employment",
-      "story_ids": [
-        "a771fbfa20191170dff4",
-        "187ff3ad25fca6137b87"
-      ],
-      "coverage_status": "selected_context",
+      "story_ids": [],
+      "coverage_status": "no_suitable_story",
       "audience": "Veterans, military spouses, employers and workforce partners",
       "domain_context": "Career mobility can connect workforce policy, employers and military-family support.",
       "planning_option": "Check licensing and credential-transfer requirements in the relevant state before advising a career move.",
-      "watch_next": "The captured excerpt does not establish a specific follow-up. Review the linked source for dated commitments or unanswered questions."
+      "watch_next": "No source-backed follow-up can be specified from the material available for this domain."
     }
   ],
   "stories": [
@@ -92,18 +88,6 @@
       "source_published_at": "2026-11-25",
       "content_label": "Recent source context",
       "excerpt": "A sweeping bill that could reshape everything from disability compensation and survivor benefits to military retirement pay and VA-backed home loans is entering a critical ...",
-      "domains": [
-        "benefits"
-      ]
-    },
-    {
-      "id": "e958707a9096e53e6b6f",
-      "title": "Navy Veteran Who Rebuilt His Life After Prison Now Helps Veterans Leaving Jail",
-      "source_host": "www.military.com",
-      "source_url": "https://www.military.com/navy-veteran-who-rebuilt-his-life-after-prison-now-helps-veterans-leaving-jail",
-      "source_published_at": "2026-11-23",
-      "content_label": "Recent source context",
-      "excerpt": "Manny Gomez’s VetPhoenix helps veterans leaving jail find housing and care while navigating discharge and court eligibility rules.",
       "domains": [
         "benefits"
       ]
@@ -133,6 +117,18 @@
       ]
     },
     {
+      "id": "93c0d5be8d087c0d4396",
+      "title": "The service has said",
+      "source_host": "www.af.mil",
+      "source_url": "https://www.af.mil/News/Article-Display/Article/4484901/air-force-boeing-accelerate-kc-46-upgrades-to-target-readiness",
+      "source_published_at": "2026-11-25",
+      "content_label": "Recent source context",
+      "excerpt": "the main issues keeping KC-46s from being ready to fly are the reliability of the aerial refueling system and parts shortages. In May, the Air ...",
+      "domains": [
+        "cost_of_living"
+      ]
+    },
+    {
       "id": "8c28340ccdf6dd97a1e2",
       "title": "Hegseth Directs Military Pay System Modernization Prioritizing Warfighters",
       "source_host": "www.war.gov",
@@ -140,18 +136,6 @@
       "source_published_at": "2026-11-25",
       "content_label": "Recent source context",
       "excerpt": "Secretary of War Pete Hegseth announced a Warrior Pay Modernization initiative that will serve as a comprehensive transformation of military pay systems to ensure warfighters ...",
-      "domains": [
-        "cost_of_living"
-      ]
-    },
-    {
-      "id": "ef5cb3aba5fbdf697bd4",
-      "title": "Air Force expands training with EARL, an AI-enhanced simulator",
-      "source_host": "www.militarytimes.com",
-      "source_url": "https://www.militarytimes.com/news/your-military/2026/11/25/air-force-expands-training-with-earl-an-ai-enhanced-simulator",
-      "source_published_at": "2026-11-25",
-      "content_label": "Recent source context",
-      "excerpt": "The U.S. Air Force aims to cut down on fuel costs for training scenarios using a virtual reality system known as EARL.",
       "domains": [
         "cost_of_living"
       ]
@@ -178,30 +162,6 @@
       "excerpt": ", sponsored by Rep. Kat Cammack, R-Fla., would also require coordination between military treatment facilities, timely transfers of medical records and measures to prevent disruptions ...",
       "domains": [
         "healthcare_system"
-      ]
-    },
-    {
-      "id": "a771fbfa20191170dff4",
-      "title": "Transition Programs Help Veterans Bridge Gap to Civilian Career",
-      "source_host": "biztoc.com",
-      "source_url": "https://biztoc.com/x/98989b8d0208e8ab",
-      "source_published_at": "2026-11-23",
-      "content_label": "Recent source context",
-      "excerpt": "Moving from military service to a civilian career should be a seamless process: Veterans have led people, learned a trade and solved problems under pressure. ...",
-      "domains": [
-        "employment"
-      ]
-    },
-    {
-      "id": "187ff3ad25fca6137b87",
-      "title": "Leaving the Military? Don’t Leave Free Career Training on the Table",
-      "source_host": "news.clearancejobs.com",
-      "source_url": "https://news.clearancejobs.com/2026/11/23/leaving-the-military-dont-leave-free-career-training-on-the-table",
-      "source_published_at": "2026-11-23",
-      "content_label": "Recent source context",
-      "excerpt": "Military transition success starts before your last day in uniform. Here's some free training, certifications, and career resources.",
-      "domains": [
-        "employment"
       ]
     }
   ]
